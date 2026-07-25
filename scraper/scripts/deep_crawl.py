@@ -348,10 +348,41 @@ def extract_summary_fields(text: str) -> dict:
     out = {"raw_text": text.strip()}
     lines = [l.strip() for l in text.split("\n") if l.strip()]
 
-    for l in lines:
-        if len(l) > 8 and not l.lower().startswith(("idea", "sign", "log", "menu", "browse")):
-            out["title"] = l
+    # Title extraction: a first version grabbed the first "substantial"
+    # line, which on a real logged-in page is sidebar nav/account text
+    # ("My Profile") rather than the actual idea title. The real idea
+    # title reliably appears as the line right after the badge emojis
+    # (e.g. "⏰\nPerfect Timing\n⚡\nUnfair Advantage\n+16 More") and before
+    # the long pitch paragraph — anchor on "Idea of the Day" and
+    # "Browse all" markers (present in the sidebar nav on every load) and
+    # take the first sufficiently long, non-nav line found AFTER them,
+    # skipping the "+N More" badge-count line too.
+    title = None
+    if "Browse all" in text:
+        after_nav = text.split("Browse all", 1)[1]
+        candidate_lines = [l.strip() for l in after_nav.split("\n") if l.strip()]
+        skip_markers = (
+            "idea actions", "roast", "build with", "previous", "|",
+        )
+        for l in candidate_lines:
+            low = l.lower()
+            if len(l) < 15:
+                continue
+            if low.startswith(skip_markers):
+                continue
+            if re.match(r"^[+\d]", l):  # e.g. "+16 More"
+                continue
+            if re.match(r"^[\U0001F000-\U0001FFFF\u2600-\u27BF]", l):  # emoji badge lines
+                continue
+            title = l
             break
+    if not title:
+        # Fallback to old heuristic if the anchor text isn't found
+        for l in lines:
+            if len(l) > 8 and not l.lower().startswith(("idea", "sign", "log", "menu", "browse")):
+                title = l
+                break
+    out["title"] = title
 
     def score_after(label):
         m = re.search(rf"{label}\s*\n?\s*(\d{{1,2}})\s*\n?\s*([A-Za-z ]+)", text)
@@ -364,8 +395,24 @@ def extract_summary_fields(text: str) -> dict:
     out["feasibility"] = score_after("Feasibility")
     out["why_now"] = score_after("Why Now")
 
-    def field_after(label):
-        m = re.search(rf"{label}\s*\n\s*([^\n]+)", text)
+    # Categorization fields (Type/Market/Target/Main Competitor) reliably
+    # appear together as a labeled block near "Categorization" in the page
+    # text (seen in real captures as "Categorization\n\nType\n\nSaas\n\n
+    # Market\n\nB2B\n\nTarget\n\nSolo Operators\n\nMain Competitor\n\n
+    # BuzzSumo"). A first version searched the WHOLE page text for each
+    # label independently, which incorrectly matched "Market" inside
+    # "Go-To-Market" (a different section, appearing earlier in the page)
+    # instead of the real "Market" field in this block. Anchoring the
+    # search to text AFTER the literal "Categorization" heading avoids
+    # that collision entirely.
+    categorization_text = text
+    if "Categorization" in text:
+        categorization_text = text.split("Categorization", 1)[1]
+        # Don't search past this section, in case any field-name reappears later
+        categorization_text = categorization_text.split("Community Signals", 1)[0]
+
+    def field_after(label, source=categorization_text):
+        m = re.search(rf"(?<!-){label}\s*\n\s*([^\n]+)", source)
         return m.group(1).strip() if m else None
 
     out["type"] = field_after("Type")
@@ -469,15 +516,31 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
         return True
 
     def open_time_dropdown():
+        # The same regex matching "6 Months"/"1 Year"/etc. matches BOTH the
+        # closed dropdown's current-value trigger label AND (once opened)
+        # every option inside the now-visible list — since they're the same
+        # 4 strings. That ambiguity was causing the follow-up option click
+        # to land on the wrong (possibly hidden) match. Fix: only click to
+        # OPEN using an element we can confirm is a trigger, by picking the
+        # single visible match BEFORE the dropdown opens (there should only
+        # be one visible match pre-open: the current value shown in the
+        # closed control). After this click, the caller's own subsequent
+        # click for the target range is expected to disambiguate using
+        # exact=True plus its own visibility check.
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(300)
         candidates = page.get_by_text(re.compile(r"^(6 Months|1 Year|2 Years|All Time)$"))
         count = candidates.count()
-        for i in range(count):
-            c = candidates.nth(i)
-            if c.is_visible():
-                c.click(timeout=8000)
-                page.wait_for_timeout(WAIT_SHORT)
-                return
-        candidates.first.click(timeout=8000)
+        visible_indices = [i for i in range(count) if candidates.nth(i).is_visible()]
+        if len(visible_indices) == 1:
+            candidates.nth(visible_indices[0]).click(timeout=8000)
+        elif visible_indices:
+            # Ambiguous — multiple visible matches even before opening.
+            # Take the first as best effort; this is logged by the caller
+            # if the subsequent option click still fails.
+            candidates.nth(visible_indices[0]).click(timeout=8000)
+        else:
+            candidates.first.click(timeout=8000, force=True)
         page.wait_for_timeout(WAIT_SHORT)
 
     def read_current_stats():
@@ -556,10 +619,18 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
 
         for tr in TIME_RANGES:
             def select_time_range(t=tr):
-                page.keyboard.press("Escape")
-                page.wait_for_timeout(300)
                 open_time_dropdown()
-                page.get_by_text(t, exact=True).first.click(timeout=8000)
+                option_candidates = page.get_by_text(t, exact=True)
+                count = option_candidates.count()
+                clicked = False
+                for i in range(count):
+                    c = option_candidates.nth(i)
+                    if c.is_visible():
+                        c.click(timeout=8000)
+                        clicked = True
+                        break
+                if not clicked:
+                    option_candidates.first.click(timeout=8000, force=True)
                 page.wait_for_timeout(WAIT_CHART)
 
             ok = crawler.safe(select_time_range, f"select_time_range:{kw_clean}:{tr}")
