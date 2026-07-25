@@ -1,0 +1,41 @@
+name: Daily Idea Crawl + Library Update
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # 07:00 UTC daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  crawl-and-normalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Run deep crawl
+        working-directory: scraper
+        run: python scripts/deep_crawl.py
+
+      - name: Normalize output + rebuild manifest
+        working-directory: scraper
+        run: python scripts/normalize_and_build_manifest.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "idea-archive-bot"
+          git config user.email "actions@github.com"
+          git add scraper/library/
+          git diff --cached --quiet || git commit -m "Idea library update: $(date -u +%Y-%m-%d)"
+          git push
