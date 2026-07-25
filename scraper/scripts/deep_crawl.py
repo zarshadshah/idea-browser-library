@@ -181,28 +181,45 @@ def login(page, log) -> bool:
 
         page.wait_for_timeout(1500)
 
-        # Fill email field — try common attribute patterns
-        email_filled = False
-        for selector in ['input[type="email"]', 'input[name="email"]', 'input[placeholder*="email" i]']:
-            try:
-                page.locator(selector).first.fill(email, timeout=3000)
-                email_filled = True
-                break
-            except Exception:
-                continue
+        def fill_first_visible(selectors, value, field_label):
+            """Try each selector, and within each, prefer a visible match
+            over just .first — since this page appears to render duplicate
+            (likely responsive mobile/desktop) copies of form elements."""
+            for selector in selectors:
+                try:
+                    loc = page.locator(selector)
+                    count = loc.count()
+                    for i in range(count):
+                        candidate = loc.nth(i)
+                        if candidate.is_visible():
+                            candidate.fill(value, timeout=3000)
+                            log.append({"step": "login", "note": f"Filled {field_label} via '{selector}' (match {i+1}/{count})"})
+                            return True
+                except Exception:
+                    continue
+            return False
+
+        # Fill email field — try common attribute patterns, preferring a
+        # genuinely visible match given this page has duplicate elements.
+        email_filled = fill_first_visible(
+            ['input[type="email"]', 'input[name="email"]', 'input[placeholder*="email" i]'],
+            email, "email",
+        )
         if not email_filled:
-            log.append({"step": "login", "error": "Could not find email input field"})
+            try:
+                screenshot_path = str(ROOT / "library" / "login_debug_screenshot.png")
+                page.screenshot(path=screenshot_path, full_page=True)
+                log.append({"step": "login", "note": f"Saved debug screenshot to {screenshot_path}"})
+            except Exception as e:
+                log.append({"step": "login", "note": f"Could not save debug screenshot: {e}"})
+            log.append({"step": "login", "error": "Could not find a visible email input field"})
             return False
 
         # Fill password field
-        password_filled = False
-        for selector in ['input[type="password"]', 'input[name="password"]']:
-            try:
-                page.locator(selector).first.fill(password, timeout=3000)
-                password_filled = True
-                break
-            except Exception:
-                continue
+        password_filled = fill_first_visible(
+            ['input[type="password"]', 'input[name="password"]'],
+            password, "password",
+        )
         if not password_filled:
             log.append({"step": "login", "error": "Could not find password input field"})
             return False
@@ -211,9 +228,18 @@ def login(page, log) -> bool:
         submitted = False
         for label in ["Sign in", "Log in", "Continue", "Submit"]:
             try:
-                page.get_by_role("button", name=re.compile(label, re.I)).first.click(timeout=3000)
-                submitted = True
-                break
+                candidates = page.get_by_role("button", name=re.compile(label, re.I))
+                count = candidates.count()
+                clicked_submit = False
+                for i in range(count):
+                    candidate = candidates.nth(i)
+                    if candidate.is_visible():
+                        candidate.click(timeout=3000)
+                        clicked_submit = True
+                        break
+                if clicked_submit:
+                    submitted = True
+                    break
             except Exception:
                 continue
         if not submitted:
