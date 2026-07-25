@@ -26,6 +26,24 @@ selector attempt is wrapped in try/except and logged, and raw HTML +
 screenshots are saved at every step so nothing is silently lost — if a
 selector is wrong you'll be able to see exactly what the DOM looked like
 and patch the selector.
+
+BOT DETECTION — ideabrowser.com sits behind a Vercel bot-detection
+checkpoint that blocks plain headless browsers outright (confirmed via a
+real run: every "keyword" the crawler saw was actually checkpoint
+interstitial text like "Vercel Security Checkpoint" / "Verifying your
+browser"). This version adds:
+  - playwright-stealth, patching the common automated-browser fingerprints
+    (navigator.webdriver, missing plugins, etc)
+  - launching real installed Chrome (channel="chrome") instead of bundled
+    Chromium, which has a more genuine fingerprint
+  - a wait_out_bot_checkpoint() step that polls for checkpoint text and
+    gives its JS challenge time to clear before proceeding
+These measures may still not be enough — Vercel's checkpoint is
+specifically designed to catch automated traffic, and there's no
+guarantee of success. If a run still gets blocked, it now detects that
+explicitly (rather than crawling checkpoint text as if it were real
+content) and stops early, saving diagnostic info instead of wasting the
+full ~10 minute run on a wall.
 """
 
 import json
@@ -36,6 +54,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
+from playwright_stealth import Stealth
 
 URL = "https://www.ideabrowser.com/hub/ideas/today"
 ROOT = Path(__file__).resolve().parent.parent
@@ -62,15 +81,57 @@ class Crawler:
 
 
 def build_browser(p):
-    browser = p.chromium.launch(headless=True)
+    # Real Chrome (not the bundled Chromium) is meaningfully harder for
+    # bot-detection services (Vercel's checkpoint, Cloudflare, etc) to flag,
+    # since it has a genuine Chrome fingerprint rather than headless
+    # Chromium's. Falls back to bundled Chromium if Chrome isn't installed
+    # on the runner.
+    try:
+        browser = p.chromium.launch(headless=True, channel="chrome")
+    except Exception:
+        browser = p.chromium.launch(headless=True)
+
     context = browser.new_context(
         user_agent=(
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
             "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
         ),
-        viewport={"width": 1400, "height": 1000},
+        viewport={"width": 1440, "height": 900},
+        locale="en-US",
+        timezone_id="America/New_York",
+        color_scheme="light",
     )
     return browser, context
+
+
+def wait_out_bot_checkpoint(page, log, max_wait_ms=15000):
+    """
+    Vercel's bot-detection checkpoint shows an interstitial page (text like
+    "Verifying your browser", "Vercel Security Checkpoint") before the real
+    content loads, then auto-redirects once its JS challenge passes (or
+    blocks permanently if the browser is flagged as automated).
+
+    This polls the page for that interstitial text and waits for it to
+    disappear before proceeding, instead of immediately trying to interact
+    with what might just be the checkpoint page.
+    """
+    checkpoint_markers = ["Security Checkpoint", "Verifying your browser", "verify you are human"]
+    waited = 0
+    interval = 1000
+    while waited < max_wait_ms:
+        try:
+            text = page.inner_text("body")
+        except Exception:
+            text = ""
+        if not any(m.lower() in text.lower() for m in checkpoint_markers):
+            return True  # checkpoint cleared (or was never shown)
+        page.wait_for_timeout(interval)
+        waited += interval
+    log.append({
+        "step": "bot_checkpoint",
+        "error": f"Checkpoint still present after {max_wait_ms}ms — likely blocked as automated.",
+    })
+    return False
 
 
 def get_visible_text(page):
@@ -291,7 +352,7 @@ def main():
         "subpages": {},
     }
 
-    with sync_playwright() as p:
+    with Stealth().use_sync(sync_playwright()) as p:
         browser, context = build_browser(p)
         page = context.new_page()
         crawler = Crawler(page, log)
@@ -299,6 +360,17 @@ def main():
         try:
             page.goto(URL, wait_until="networkidle", timeout=NAV_TIMEOUT)
             page.wait_for_timeout(3000)
+            cleared = wait_out_bot_checkpoint(page, log)
+            if not cleared:
+                # Save whatever the checkpoint page looked like, for debugging,
+                # and stop early rather than burning the full crawl on a wall.
+                record["summary"] = {"raw_text": get_visible_text(page), "blocked_by_checkpoint": True}
+                record["crawl_log"] = log
+                out_json.write_text(json.dumps(record, indent=2), encoding="utf-8")
+                log_path.write_text(json.dumps(log, indent=2), encoding="utf-8")
+                print("Blocked by bot checkpoint — saved diagnostic info and stopping early.")
+                browser.close()
+                return
         except PWTimeout:
             log.append({"step": "initial_load", "error": "timeout"})
 
@@ -312,6 +384,7 @@ def main():
         # Return to a clean main-page state before sub-page crawling
         crawler.safe(lambda: page.goto(URL, wait_until="networkidle", timeout=NAV_TIMEOUT), "reload_before_subpages")
         page.wait_for_timeout(2000)
+        wait_out_bot_checkpoint(page, log, max_wait_ms=8000)
 
         record["subpages"] = crawler.safe(
             lambda: crawl_subpages(crawler, URL), "crawl_subpages", default={}
