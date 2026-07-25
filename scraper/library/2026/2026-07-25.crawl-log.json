@@ -1,7 +1,7 @@
 [
   {
     "step": "login",
-    "note": "Found 0 element(s) matching 'Sign in with Password' text."
+    "note": "Found 2 element(s) matching 'Sign in with Password' text."
   },
   {
     "step": "login",
@@ -24,150 +24,38 @@
     "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Link building services\", exact=True).first\n    - locator resolved to <span class=\"text-xs md:text-sm truncate\">Link building services</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
   },
   {
-    "step": "select_time_range:Link building services:6 Months",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Link building services:1 Year",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Link building services:2 Years",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Link building services:All Time",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
     "step": "keyword_done",
     "keyword": "Link building services",
-    "time_ranges_captured": 4
-  },
-  {
-    "step": "select_time_range:Backlink building service:6 Months",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Backlink building service:1 Year",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Backlink building service:2 Years",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Backlink building service:All Time",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
+    "stats_captured": true
   },
   {
     "step": "keyword_done",
     "keyword": "Backlink building service",
-    "time_ranges_captured": 4
-  },
-  {
-    "step": "select_time_range:Artificial intelligence search engine optimization:6 Months",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Artificial intelligence search engine optimization:1 Year",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Artificial intelligence search engine optimization:2 Years",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Artificial intelligence search engine optimization:All Time",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
+    "stats_captured": true
   },
   {
     "step": "keyword_done",
     "keyword": "Artificial intelligence search engine optimization",
-    "time_ranges_captured": 4
-  },
-  {
-    "step": "select_time_range:Ai seo tools:6 Months",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Ai seo tools:1 Year",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Ai seo tools:2 Years",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Ai seo tools:All Time",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
+    "stats_captured": true
   },
   {
     "step": "keyword_done",
     "keyword": "Ai seo tools",
-    "time_ranges_captured": 4
-  },
-  {
-    "step": "select_time_range:Content marketing for link building:6 Months",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Content marketing for link building:1 Year",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Content marketing for link building:2 Years",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Content marketing for link building:All Time",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
+    "stats_captured": true
   },
   {
     "step": "keyword_done",
     "keyword": "Content marketing for link building",
-    "time_ranges_captured": 4
-  },
-  {
-    "step": "select_time_range:Seo link building services:6 Months",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Seo link building services:1 Year",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Seo link building services:2 Years",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Seo link building services:All Time",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
+    "stats_captured": true
   },
   {
     "step": "keyword_done",
     "keyword": "Seo link building services",
-    "time_ranges_captured": 4
-  },
-  {
-    "step": "select_time_range:Ai seo platform:6 Months",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Ai seo platform:1 Year",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Ai seo platform:2 Years",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
-  },
-  {
-    "step": "select_time_range:Ai seo platform:All Time",
-    "error": "No visible '6 Months/1 Year/2 Years/All Time' text found on page (count=0, all hidden). Saved debug screenshot. This control likely isn't plain text, or needs a different trigger interaction."
+    "stats_captured": true
   },
   {
     "step": "keyword_done",
     "keyword": "Ai seo platform",
-    "time_ranges_captured": 4
+    "stats_captured": true
   }
 ]

@@ -28,162 +28,50 @@
       "keyword": "Link building services",
       "volume": 8100,
       "growth": 50.0,
-      "all_time_ranges": {
-        "6 Months": {
-          "volume": "8.1K",
-          "growth": "+50%"
-        },
-        "1 Year": {
-          "volume": "8.1K",
-          "growth": "+50%"
-        },
-        "2 Years": {
-          "volume": "8.1K",
-          "growth": "+50%"
-        },
-        "All Time": {
-          "volume": "8.1K",
-          "growth": "+50%"
-        }
-      }
+      "cpc": null,
+      "competition": null
     },
     {
       "keyword": "Backlink building service",
       "volume": 1900,
       "growth": 296.0,
-      "all_time_ranges": {
-        "6 Months": {
-          "volume": "1.9K",
-          "growth": "+296%"
-        },
-        "1 Year": {
-          "volume": "1.9K",
-          "growth": "+296%"
-        },
-        "2 Years": {
-          "volume": "1.9K",
-          "growth": "+296%"
-        },
-        "All Time": {
-          "volume": "1.9K",
-          "growth": "+296%"
-        }
-      }
+      "cpc": null,
+      "competition": null
     },
     {
       "keyword": "Artificial intelligence search engine optimization",
       "volume": 27100,
       "growth": 1594.0,
-      "all_time_ranges": {
-        "6 Months": {
-          "volume": "27.1K",
-          "growth": "+1594%"
-        },
-        "1 Year": {
-          "volume": "27.1K",
-          "growth": "+1594%"
-        },
-        "2 Years": {
-          "volume": "27.1K",
-          "growth": "+1594%"
-        },
-        "All Time": {
-          "volume": "27.1K",
-          "growth": "+1594%"
-        }
-      }
+      "cpc": null,
+      "competition": null
     },
     {
       "keyword": "Ai seo tools",
       "volume": 5400,
       "growth": 1588.0,
-      "all_time_ranges": {
-        "6 Months": {
-          "volume": "5.4K",
-          "growth": "+1588%"
-        },
-        "1 Year": {
-          "volume": "5.4K",
-          "growth": "+1588%"
-        },
-        "2 Years": {
-          "volume": "5.4K",
-          "growth": "+1588%"
-        },
-        "All Time": {
-          "volume": "5.4K",
-          "growth": "+1588%"
-        }
-      }
+      "cpc": null,
+      "competition": null
     },
     {
       "keyword": "Content marketing for link building",
       "volume": 480,
       "growth": 4700.0,
-      "all_time_ranges": {
-        "6 Months": {
-          "volume": "480",
-          "growth": "+4700%"
-        },
-        "1 Year": {
-          "volume": "480",
-          "growth": "+4700%"
-        },
-        "2 Years": {
-          "volume": "480",
-          "growth": "+4700%"
-        },
-        "All Time": {
-          "volume": "480",
-          "growth": "+4700%"
-        }
-      }
+      "cpc": null,
+      "competition": null
     },
     {
       "keyword": "Seo link building services",
       "volume": 2900,
       "growth": 21.0,
-      "all_time_ranges": {
-        "6 Months": {
-          "volume": "2.9K",
-          "growth": "+21%"
-        },
-        "1 Year": {
-          "volume": "2.9K",
-          "growth": "+21%"
-        },
-        "2 Years": {
-          "volume": "2.9K",
-          "growth": "+21%"
-        },
-        "All Time": {
-          "volume": "2.9K",
-          "growth": "+21%"
-        }
-      }
+      "cpc": null,
+      "competition": null
     },
     {
       "keyword": "Ai seo platform",
       "volume": 260,
       "growth": 2500.0,
-      "all_time_ranges": {
-        "6 Months": {
-          "volume": "260",
-          "growth": "+2500%"
-        },
-        "1 Year": {
-          "volume": "260",
-          "growth": "+2500%"
-        },
-        "2 Years": {
-          "volume": "260",
-          "growth": "+2500%"
-        },
-        "All Time": {
-          "volume": "260",
-          "growth": "+2500%"
-        }
-      }
+      "cpc": null,
+      "competition": null
     }
   ],
   "marketGap": "",
@@ -209,6 +97,6 @@
   "status": "not_started",
   "notes": "",
   "_source_url": "https://www.ideabrowser.com/hub/ideas/today",
-  "_scraped_at": "2026-07-25T23:36:06.291377+00:00",
+  "_scraped_at": "2026-07-25T23:53:37.185199+00:00",
   "_crawl_had_errors": true
 }
