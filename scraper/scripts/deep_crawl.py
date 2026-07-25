@@ -247,25 +247,34 @@ def login(page, log) -> bool:
 
         page.wait_for_timeout(4000)
 
-        # Verify: the login page's distinctive "Welcome back!" / "Sign in with your
-        # email" text should now be gone if login succeeded.
+        # Verify login succeeded. A first attempt checked for "welcome back"
+        # being gone, but the real dashboard ALSO has a "Welcome Back"
+        # heading (just without the exclamation mark the login page uses),
+        # producing a false negative even on successful login. Instead,
+        # check for markers that only exist once actually logged in
+        # (profile/account nav, plan status) — much less ambiguous.
         text = ""
         try:
             text = page.inner_text("body")
         except Exception:
             pass
 
-        still_on_login = "welcome back" in text.lower() or "sign in with your email" in text.lower()
-        if still_on_login:
-            log.append({
-                "step": "login",
-                "error": "Still appears to be on login page after submit attempt.",
-                "page_text_sample": text[:500],
-            })
-            return False
+        dashboard_markers = ["My Profile", "My Stuff", "Free plan", "Toggle Sidebar", "Build Gallery"]
+        login_form_markers = ["Sign in with Password", "Continue with Google", "Don't have an account"]
 
-        log.append({"step": "login", "success": True})
-        return True
+        looks_logged_in = any(m.lower() in text.lower() for m in dashboard_markers)
+        still_has_login_form = any(m.lower() in text.lower() for m in login_form_markers)
+
+        if looks_logged_in and not still_has_login_form:
+            log.append({"step": "login", "success": True})
+            return True
+
+        log.append({
+            "step": "login",
+            "error": "Could not confirm successful login (no dashboard markers found, or login form still present).",
+            "page_text_sample": text[:500],
+        })
+        return False
 
     except Exception as e:
         log.append({"step": "login", "error": f"Unexpected error during login: {e}"})
