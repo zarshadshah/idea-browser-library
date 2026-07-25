@@ -801,11 +801,12 @@ def main():
 
     md += ["## Summary", "", "```json", json.dumps(record["summary"], indent=2)[:3000], "```", ""]
 
-    md += ["## Keyword Analysis (all keywords x all time ranges)", ""]
+    md += ["## Keyword Analysis", ""]
     for kw in record["keyword_analysis"]:
         md.append(f"### {kw['keyword']}")
-        for tr, stats in kw["by_time_range"].items():
-            md.append(f"- **{tr}**: {stats}")
+        stats = kw.get("stats", {})
+        for metric, value in stats.items():
+            md.append(f"- **{metric}**: {value}")
         md.append("")
 
     md += ["## Sub-pages", ""]
