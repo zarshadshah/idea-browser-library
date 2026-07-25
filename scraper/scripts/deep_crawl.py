@@ -135,21 +135,49 @@ def login(page, log) -> bool:
         page.goto(LOGIN_URL, wait_until="networkidle", timeout=NAV_TIMEOUT)
         page.wait_for_timeout(3000)
 
-        # Switch from default magic-link view to password mode. The button
-        # was confirmed present in the DOM but reported "not visible" on the
-        # first real run — likely still animating in, off-screen, or behind
-        # an overlay right after navigation. Scroll it into view and give it
-        # more time before clicking; fall back to a forced click (bypasses
-        # Playwright's actionability/visibility check) if it still won't
-        # click normally, since we know from the logs the element does exist.
-        password_toggle = page.get_by_text("Sign in with Password", exact=False).first
+        # Switch from default magic-link view to password mode. A first
+        # attempt found the button in the DOM but Playwright reported it as
+        # never visible (even forced), which usually means either: (a) there
+        # are multiple matching elements and we're grabbing a hidden
+        # duplicate (e.g. a mobile/desktop responsive variant), or (b) the
+        # button is genuinely inside a collapsed/hidden panel. We check how
+        # many matches exist and log that, then try a role-based locator
+        # (often more robust than text matching for real <button> elements),
+        # and save a screenshot either way so a human can see exactly what
+        # the page looked like if this still fails.
+        text_matches = page.get_by_text("Sign in with Password", exact=False)
+        match_count = text_matches.count()
+        log.append({"step": "login", "note": f"Found {match_count} element(s) matching 'Sign in with Password' text."})
+
+        clicked = False
         try:
-            password_toggle.scroll_into_view_if_needed(timeout=5000)
-            page.wait_for_timeout(1000)
-            password_toggle.click(timeout=10000)
+            # Prefer a visible match if there are multiple
+            for i in range(match_count):
+                candidate = text_matches.nth(i)
+                if candidate.is_visible():
+                    candidate.click(timeout=5000)
+                    clicked = True
+                    break
         except Exception as e:
-            log.append({"step": "login", "note": f"Normal click on password toggle failed ({e}), trying forced click."})
-            password_toggle.click(timeout=5000, force=True)
+            log.append({"step": "login", "note": f"Visible-match click attempt failed: {e}"})
+
+        if not clicked:
+            try:
+                page.get_by_role("button", name=re.compile("Sign in with Password", re.I)).first.click(timeout=5000)
+                clicked = True
+            except Exception as e:
+                log.append({"step": "login", "note": f"Role-based click attempt failed: {e}"})
+
+        if not clicked:
+            # Save a screenshot for human debugging before giving up on this step
+            try:
+                screenshot_path = str(ROOT / "library" / "login_debug_screenshot.png")
+                page.screenshot(path=screenshot_path, full_page=True)
+                log.append({"step": "login", "note": f"Saved debug screenshot to {screenshot_path}"})
+            except Exception as e:
+                log.append({"step": "login", "note": f"Could not save debug screenshot: {e}"})
+            log.append({"step": "login", "error": "Could not click 'Sign in with Password' by any method."})
+            return False
 
         page.wait_for_timeout(1500)
 
