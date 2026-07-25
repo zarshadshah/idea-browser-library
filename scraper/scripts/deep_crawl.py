@@ -532,15 +532,33 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
         candidates = page.get_by_text(re.compile(r"^(6 Months|1 Year|2 Years|All Time)$"))
         count = candidates.count()
         visible_indices = [i for i in range(count) if candidates.nth(i).is_visible()]
+
+        if not visible_indices:
+            # Every real run so far has hit this branch — meaning this
+            # regex finds ZERO visible matches on the page at this point,
+            # not just ambiguous ones. That suggests either: the time-range
+            # control isn't simple text (e.g. it's an icon-only button, a
+            # <select>, or uses different wording than assumed from
+            # months-old screenshots), or it only renders after some other
+            # interaction settles. Save a screenshot + a text dump of
+            # anything resembling a dropdown/button near "Keyword" so a
+            # human can see the real current state directly instead of
+            # guessing blindly again.
+            try:
+                screenshot_path = str(ROOT / "library" / "time_dropdown_debug_screenshot.png")
+                page.screenshot(path=screenshot_path, full_page=True)
+            except Exception:
+                pass
+            raise Exception(
+                f"No visible '6 Months/1 Year/2 Years/All Time' text found on page "
+                f"(count={count}, all hidden). Saved debug screenshot. This control "
+                f"likely isn't plain text, or needs a different trigger interaction."
+            )
+
         if len(visible_indices) == 1:
             candidates.nth(visible_indices[0]).click(timeout=8000)
-        elif visible_indices:
-            # Ambiguous — multiple visible matches even before opening.
-            # Take the first as best effort; this is logged by the caller
-            # if the subsequent option click still fails.
-            candidates.nth(visible_indices[0]).click(timeout=8000)
         else:
-            candidates.first.click(timeout=8000, force=True)
+            candidates.nth(visible_indices[0]).click(timeout=8000)
         page.wait_for_timeout(WAIT_SHORT)
 
     def read_current_stats():
