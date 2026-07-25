@@ -511,6 +511,18 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
 
     log.append({"step": "keyword_discovery", "note": f"Found {len(keyword_names)} plausible keyword option(s) after filtering."})
 
+    # IMPORTANT: close the dropdown now that we're done listing its options.
+    # Leaving it open causes the next open_keyword_dropdown() call (inside
+    # select_keyword below) to just toggle it CLOSED again instead of
+    # opening it fresh — since the trigger is almost certainly a toggle
+    # button, not an "always opens" button. That previously caused every
+    # subsequent click to land on a leftover overlay ("<html> intercepts
+    # pointer events") and every keyword to silently keep reading the same
+    # still-selected default keyword's stats. Escape is a safe universal
+    # way to close most dropdown/popover implementations.
+    page.keyboard.press("Escape")
+    page.wait_for_timeout(WAIT_SHORT)
+
     # Fallback: if we can't enumerate reliably, at least capture the
     # currently-selected keyword's stats across time ranges.
     if not keyword_names:
@@ -531,6 +543,11 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
         entry = {"keyword": kw_clean, "by_time_range": {}}
 
         def select_keyword(k=kw_clean):
+            # Safety net: ensure no dropdown/popover is already open before
+            # trying to open this one, since toggle-style triggers would
+            # otherwise close instead of open on this click.
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(300)
             open_keyword_dropdown()
             page.get_by_text(k, exact=True).first.click(timeout=8000)
             page.wait_for_timeout(WAIT_CHART)
@@ -539,6 +556,8 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
 
         for tr in TIME_RANGES:
             def select_time_range(t=tr):
+                page.keyboard.press("Escape")
+                page.wait_for_timeout(300)
                 open_time_dropdown()
                 page.get_by_text(t, exact=True).first.click(timeout=8000)
                 page.wait_for_timeout(WAIT_CHART)
