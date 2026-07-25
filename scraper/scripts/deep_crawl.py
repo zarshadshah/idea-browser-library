@@ -133,11 +133,25 @@ def login(page, log) -> bool:
 
     try:
         page.goto(LOGIN_URL, wait_until="networkidle", timeout=NAV_TIMEOUT)
-        page.wait_for_timeout(2000)
+        page.wait_for_timeout(3000)
 
-        # Switch from default magic-link view to password mode
-        page.get_by_text("Sign in with Password", exact=False).first.click(timeout=8000)
-        page.wait_for_timeout(1000)
+        # Switch from default magic-link view to password mode. The button
+        # was confirmed present in the DOM but reported "not visible" on the
+        # first real run — likely still animating in, off-screen, or behind
+        # an overlay right after navigation. Scroll it into view and give it
+        # more time before clicking; fall back to a forced click (bypasses
+        # Playwright's actionability/visibility check) if it still won't
+        # click normally, since we know from the logs the element does exist.
+        password_toggle = page.get_by_text("Sign in with Password", exact=False).first
+        try:
+            password_toggle.scroll_into_view_if_needed(timeout=5000)
+            page.wait_for_timeout(1000)
+            password_toggle.click(timeout=10000)
+        except Exception as e:
+            log.append({"step": "login", "note": f"Normal click on password toggle failed ({e}), trying forced click."})
+            password_toggle.click(timeout=5000, force=True)
+
+        page.wait_for_timeout(1500)
 
         # Fill email field — try common attribute patterns
         email_filled = False
