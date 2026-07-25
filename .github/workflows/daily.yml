@@ -21,8 +21,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install playwright
-          playwright install --with-deps chromium
+          pip install -r scraper/requirements.txt
+          playwright install --with-deps chromium chrome
 
       - name: Run deep crawl
         working-directory: scraper
