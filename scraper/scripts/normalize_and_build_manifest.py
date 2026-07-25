@@ -67,17 +67,54 @@ def normalize_keywords(keyword_analysis: list) -> list:
     return out
 
 
+def extract_pitch(raw_text: str, title: str) -> str:
+    """
+    The raw page text starts with sidebar navigation junk before the real
+    pitch paragraph. If we know the real title (extracted by the crawler),
+    the actual pitch is everything after it, up to the next major section
+    marker (e.g. "*Analysis, scores" disclaimer or "Keyword:").
+    """
+    if not title or title not in raw_text:
+        return raw_text[:2000]
+    after_title = raw_text.split(title, 1)[1]
+    for stop_marker in ["*Analysis, scores", "\nKeyword:"]:
+        if stop_marker in after_title:
+            after_title = after_title.split(stop_marker, 1)[0]
+            break
+
+    # Trim leading badge/emoji lines (e.g. "⏰\nPerfect Timing\n⚡\n
+    # Unfair Advantage\n+16 More") so the pitch starts at the first real
+    # sentence, not decorative badges.
+    lines = after_title.strip().split("\n")
+    start_idx = 0
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if re.match(r"^[+\d]", stripped):  # "+16 More"
+            continue
+        if re.match(r"^[\U0001F000-\U0001FFFF\u2600-\u27BF]", stripped):  # emoji-only line
+            continue
+        if len(stripped) < 25:  # short badge labels like "Perfect Timing"
+            continue
+        start_idx = i
+        break
+    return "\n".join(lines[start_idx:]).strip()
+
+
 def normalize_day(raw: dict) -> dict:
     summary = raw.get("summary", {})
     subpages = raw.get("subpages", {})
+    title = summary.get("title") or "Untitled idea"
+    pitch = extract_pitch(summary.get("raw_text", ""), summary.get("title"))
 
     normalized = {
         "id": raw["date"],
         "date": raw["date"],
-        "title": summary.get("title") or "Untitled idea",
-        "tagline": (summary.get("raw_text", "")[:160] + "...") if summary.get("raw_text") else "",
+        "title": title,
+        "tagline": (pitch[:160] + "...") if len(pitch) > 160 else pitch,
         "badges": [],
-        "description": summary.get("raw_text", "")[:2000],
+        "description": pitch[:2000],
         "scores": {
             "opportunity": extract_score(summary, "opportunity"),
             "problem": extract_score(summary, "problem"),
