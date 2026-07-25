@@ -34,15 +34,17 @@ def extract_score(raw_scores: dict, key: str) -> dict:
 def normalize_keywords(keyword_analysis: list) -> list:
     """
     deep_crawl.py's keyword_analysis is a list of:
-      {"keyword": str, "by_time_range": {"6 Months": {...}, "1 Year": {...}, ...}}
-    The app wants a flat list of {keyword, volume, growth}. We prefer the
-    "1 Year" figures as the representative snapshot (matches what the site
-    shows by default), falling back to whichever time range has data.
+      {"keyword": str, "stats": {"volume": "8.1K", "growth": "+50%", ...}}
+
+    (Earlier version had a "by_time_range" dict with 4 time-range variants,
+    but a real run confirmed the main Idea-of-the-Day page has no such
+    control at all — that assumption came from a different, dedicated
+    "Keyword Analysis" sub-page seen in early screenshots. Each keyword now
+    has one real stats snapshot, matching what's actually shown inline.)
     """
     out = []
     for kw in keyword_analysis or []:
-        by_range = kw.get("by_time_range", {})
-        stats = by_range.get("1 Year") or next(iter(by_range.values()), {})
+        stats = kw.get("stats", {})
         volume_raw = stats.get("volume", "0")
         growth_raw = stats.get("growth", "0%")
 
@@ -62,9 +64,11 @@ def normalize_keywords(keyword_analysis: list) -> list:
             "keyword": kw["keyword"],
             "volume": volume,
             "growth": growth,
-            "all_time_ranges": by_range,  # kept for the app's future use / debugging
+            "cpc": stats.get("cpc"),
+            "competition": stats.get("competition"),
         })
     return out
+
 
 
 def extract_pitch(raw_text: str, title: str) -> str:
