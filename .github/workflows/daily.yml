@@ -1,0 +1,56 @@
+name: Daily Idea Crawl + Library Update
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # 07:00 UTC daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  crawl-and-normalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r scraper/requirements.txt
+          playwright install --with-deps chromium chrome
+
+      - name: Run deep crawl
+        working-directory: scraper
+        env:
+          IDEABROWSER_EMAIL: ${{ secrets.IDEABROWSER_EMAIL }}
+          IDEABROWSER_PASSWORD: ${{ secrets.IDEABROWSER_PASSWORD }}
+        run: python scripts/deep_crawl.py
+
+      - name: Print today's crawl log (always visible here, even if nothing new to commit)
+        working-directory: scraper
+        if: always()
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          YEAR=$(date -u +%Y)
+          echo "===== Crawl log for $TODAY ====="
+          cat "library/$YEAR/$TODAY.crawl-log.json" 2>/dev/null || echo "(no crawl-log file found for today)"
+          echo ""
+          echo "===== deep.json for $TODAY (first 150 lines) ====="
+          head -150 "library/$YEAR/$TODAY.deep.json" 2>/dev/null || echo "(no deep.json file found for today)"
+
+      - name: Normalize output + rebuild manifest
+        working-directory: scraper
+        run: python scripts/normalize_and_build_manifest.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "idea-archive-bot"
+          git config user.email "actions@github.com"
+          git add scraper/library/
+          git diff --cached --quiet || git commit -m "Idea library update: $(date -u +%Y-%m-%d)"
+          git push
