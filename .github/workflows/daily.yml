@@ -43,12 +43,12 @@ jobs:
           echo "===== deep.json for $TODAY (first 150 lines) ====="
           head -150 "library/$YEAR/$TODAY.deep.json" 2>/dev/null || echo "(no deep.json file found for today)"
 
-      - name: Upload debug screenshot (if login failed)
+      - name: Upload debug screenshots (if any step failed and saved one)
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: login-debug-screenshot
-          path: scraper/library/login_debug_screenshot.png
+          name: debug-screenshots
+          path: scraper/library/*_debug_screenshot.png
           if-no-files-found: ignore
           retention-days: 7
 
