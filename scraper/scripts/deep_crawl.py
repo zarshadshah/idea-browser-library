@@ -400,18 +400,84 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
     results = []
 
     def open_keyword_dropdown():
-        # Best-effort: the dropdown appears to be a clickable row showing
-        # "Keyword: <current selection>" with a chevron.
-        page.get_by_text(re.compile(r"^Keyword:", re.I)).first.click(timeout=8000)
+        # The dropdown is a clickable row showing "Keyword: <current
+        # selection>" with a chevron. Prefer a visible match since this
+        # page renders duplicate (responsive) copies of many elements.
+        candidates = page.get_by_text(re.compile(r"^Keyword:", re.I))
+        count = candidates.count()
+        for i in range(count):
+            c = candidates.nth(i)
+            if c.is_visible():
+                c.click(timeout=8000)
+                page.wait_for_timeout(WAIT_SHORT)
+                return
+        # fallback
+        candidates.first.click(timeout=8000)
         page.wait_for_timeout(WAIT_SHORT)
 
     def get_keyword_options():
-        # Options appear to be plain text rows below the current selection
-        # inside the opened dropdown panel.
-        return page.locator("text=/^[A-Z][a-z].{2,60}$/").all()
+        """
+        A first version matched generic `div`/`li` elements across the
+        WHOLE page, which accidentally captured sidebar navigation text
+        ("ideabrowser HUB Browse Build...") as if it were keyword data.
+        Real keyword options only exist inside the dropdown panel that
+        appears after clicking the "Keyword:" label — from earlier
+        screenshots of this page, that panel is a short, clean list (e.g.
+        "Link building services", "Backlink building service", "Ai seo
+        tools"...) usually rendered with role="option" or as list items
+        inside a popover/listbox container, NOT generic page divs.
+
+        Strategy: look specifically for role="option" or role="listbox"
+        descendants first (most specific, least likely to false-match);
+        only fall back to broader matching if that finds nothing, and even
+        then filter out obvious navigation/page-chrome text.
+        """
+        # Most specific: proper ARIA listbox/option roles (common in
+        # shadcn/ui and Radix-based dropdowns, which this site's other
+        # components — like the Execution Difficulty modal — also use)
+        options = page.locator("[role='option']").all()
+        if options:
+            return options
+
+        options = page.locator("[role='listbox'] li, [role='listbox'] div").all()
+        if options:
+            return options
+
+        # Broader fallback: a popover/dropdown panel is usually a small
+        # floating container near the top of the page, positioned after
+        # the "Keyword:" trigger in the DOM. This is still imperfect, so
+        # results get filtered for junk below regardless.
+        return page.locator("[data-radix-popper-content-wrapper] div, [role='menu'] div").all()
+
+    NAV_JUNK_MARKERS = [
+        "ideabrowser", "hub", "browse\nbuild", "my profile", "my stuff",
+        "toggle sidebar", "build gallery", "upgrade", "free plan",
+        "training", "trends", "market insights", "updates", "empire",
+        "support", "discover your founder archetype", "take the quiz",
+        "idea of the day", "start here",
+    ]
+
+    def is_plausible_keyword(text: str) -> bool:
+        t = text.strip()
+        if not t or len(t) < 3 or len(t) > 80:
+            return False
+        if "\n" in t:  # real keyword options are single short phrases, not multi-line blocks
+            return False
+        lower = t.lower()
+        if any(marker in lower for marker in NAV_JUNK_MARKERS):
+            return False
+        return True
 
     def open_time_dropdown():
-        page.get_by_text(re.compile(r"^(6 Months|1 Year|2 Years|All Time)$")).first.click(timeout=8000)
+        candidates = page.get_by_text(re.compile(r"^(6 Months|1 Year|2 Years|All Time)$"))
+        count = candidates.count()
+        for i in range(count):
+            c = candidates.nth(i)
+            if c.is_visible():
+                c.click(timeout=8000)
+                page.wait_for_timeout(WAIT_SHORT)
+                return
+        candidates.first.click(timeout=8000)
         page.wait_for_timeout(WAIT_SHORT)
 
     def read_current_stats():
@@ -428,16 +494,22 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
                 stats[metric] = m.group(1)
         return stats
 
-    keyword_names = crawler.safe(
-        lambda: [
-            el.inner_text().strip()
-            for el in page.locator("[role='option'], li, div").filter(
-                has_text=re.compile(r".+")
-            ).all()[:30]
-        ],
-        "list_keyword_options",
-        default=[],
-    )
+    # Open the dropdown FIRST, then look for options — options likely don't
+    # exist in the DOM at all until the dropdown is actually open.
+    crawler.safe(open_keyword_dropdown, "open_keyword_dropdown_for_listing")
+    page.wait_for_timeout(WAIT_SHORT)
+
+    raw_options = crawler.safe(get_keyword_options, "list_keyword_options", default=[])
+    keyword_names = []
+    for el in raw_options[:30]:
+        try:
+            t = el.inner_text().strip()
+            if is_plausible_keyword(t):
+                keyword_names.append(t)
+        except Exception:
+            continue
+
+    log.append({"step": "keyword_discovery", "note": f"Found {len(keyword_names)} plausible keyword option(s) after filtering."})
 
     # Fallback: if we can't enumerate reliably, at least capture the
     # currently-selected keyword's stats across time ranges.
@@ -486,47 +558,91 @@ def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
     Follows every 'View Analysis' style link/button on the main page into
     its sub-page, captures the rendered text, then returns to the main page.
     Also attempts to open the 'Execution Difficulty' modal in place.
+
+    A real run showed two things worth noting for future maintenance:
+    1. Text-based locators here can match hidden duplicate elements (same
+       responsive-layout pattern seen elsewhere on this page), so every
+       match must be checked with is_visible() rather than assumed usable.
+    2. "Market Gap" and "Execution Plan" appear to primarily be inline
+       section headings on the main page (e.g. "The Market Gap" followed
+       directly by descriptive text), with dedicated CTA links worded
+       differently ("Understand the market opportunity", "View detailed
+       execution strategy") rather than the section heading itself. Both
+       label variants are tried below.
     """
     page = crawler.page
     log = crawler.log
     subpages = {}
 
     link_labels = [
-        "View Analysis",       # appears multiple times (Value Equation, Market Matrix, Value Ladder)
-        "View detailed breakdown",  # Community Signals
-        "Execution Plan",
-        "Market Gap",
+        "View Analysis",                     # Value Equation, Market Matrix, Value Ladder, A.C.P. Framework
+        "View detailed breakdown",           # Community Signals
+        "Understand the market opportunity", # Market Gap CTA
+        "View detailed execution strategy",  # Execution Plan CTA
+        "Explore proof & signals",           # Proof & Signals CTA
+        "See why this opportunity matters now",  # Why Now CTA
+        "View full keyword analysis",
+        "View full value ladder",
     ]
 
     for label in link_labels:
-        locs = crawler.safe(lambda l=label: page.get_by_text(l, exact=False).all(), f"find_links:{label}", default=[])
-        for i, loc in enumerate(locs or []):
-            key = f"{label} #{i+1}" if len(locs) > 1 else label
+        locs = crawler.safe(lambda l=label: page.get_by_text(l, exact=False), f"find_links:{label}", default=None)
+        if locs is None:
+            continue
+        count = crawler.safe(lambda l=locs: l.count(), f"count_links:{label}", default=0)
 
-            def click_and_capture(loc=loc, key=key):
-                loc.scroll_into_view_if_needed(timeout=5000)
-                loc.click(timeout=8000)
+        clicked_indices = []
+        for i in range(count):
+
+            def click_and_capture(locs=locs, i=i, label=label):
+                candidate = locs.nth(i)
+                if not candidate.is_visible():
+                    raise Exception(f"Match {i} for '{label}' is not visible, skipping.")
+                key = f"{label} #{i+1}" if count > 1 else label
+                candidate.scroll_into_view_if_needed(timeout=5000)
+                candidate.click(timeout=8000)
                 page.wait_for_timeout(WAIT_CHART)
                 text = get_visible_text(page)
-                subpages[key] = {
-                    "text": text.strip(),
-                    "url": page.url,
-                }
-                # Navigate back to main page for the next link
+                subpages[key] = {"text": text.strip(), "url": page.url}
                 page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
                 page.wait_for_timeout(WAIT_CHART)
 
-            crawler.safe(click_and_capture, f"subpage:{key}")
+            crawler.safe(click_and_capture, f"subpage:{label}#{i}")
 
-    # Execution Difficulty modal (has visible X close button in screenshot)
+    # Execution Difficulty modal (has visible X close button in screenshot,
+    # but a generic "button with svg icon" selector matched the WRONG
+    # button on a real run — likely one of several icon-buttons on the
+    # page. Use a more specific modal-scoped close button selector, and
+    # fall back to pressing Escape, which closes most modal/dialog
+    # implementations regardless of the close button's exact markup.
     def open_execution_modal():
-        page.get_by_text("Execution Difficulty", exact=False).first.click(timeout=8000)
+        candidates = page.get_by_text("Execution Difficulty", exact=False)
+        count = candidates.count()
+        opened = False
+        for i in range(count):
+            c = candidates.nth(i)
+            if c.is_visible():
+                c.click(timeout=8000)
+                opened = True
+                break
+        if not opened:
+            raise Exception("Could not find a visible 'Execution Difficulty' element to click.")
+
         page.wait_for_timeout(WAIT_CHART)
         text = get_visible_text(page)
         subpages["Execution Difficulty"] = {"text": text.strip(), "url": page.url}
-        # Close modal
-        close_btn = page.locator("button:has(svg)").first
-        crawler.safe(lambda: close_btn.click(timeout=5000), "close_execution_modal")
+
+        # Close modal — prefer a close button scoped inside an open dialog,
+        # fall back to Escape key which works for most modal libraries
+        # (including Radix-based dialogs, which this site appears to use).
+        try:
+            dialog_close = page.locator("[role='dialog'] button").first
+            if dialog_close.is_visible():
+                dialog_close.click(timeout=3000)
+                return
+        except Exception:
+            pass
+        page.keyboard.press("Escape")
 
     crawler.safe(open_execution_modal, "execution_difficulty_modal")
 
