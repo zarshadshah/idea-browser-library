@@ -61,7 +61,6 @@ URL = "https://www.ideabrowser.com/hub/ideas/today"
 LOGIN_URL = "https://www.ideabrowser.com/login"
 ROOT = Path(__file__).resolve().parent.parent
 LIBRARY_DIR = ROOT / "library"
-TIME_RANGES = ["6 Months", "1 Year", "2 Years", "All Time"]
 
 WAIT_SHORT = 1200   # ms, after simple UI clicks
 WAIT_CHART = 2000   # ms, after triggering a chart/data re-render
@@ -515,52 +514,6 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
             return False
         return True
 
-    def open_time_dropdown():
-        # The same regex matching "6 Months"/"1 Year"/etc. matches BOTH the
-        # closed dropdown's current-value trigger label AND (once opened)
-        # every option inside the now-visible list — since they're the same
-        # 4 strings. That ambiguity was causing the follow-up option click
-        # to land on the wrong (possibly hidden) match. Fix: only click to
-        # OPEN using an element we can confirm is a trigger, by picking the
-        # single visible match BEFORE the dropdown opens (there should only
-        # be one visible match pre-open: the current value shown in the
-        # closed control). After this click, the caller's own subsequent
-        # click for the target range is expected to disambiguate using
-        # exact=True plus its own visibility check.
-        page.keyboard.press("Escape")
-        page.wait_for_timeout(300)
-        candidates = page.get_by_text(re.compile(r"^(6 Months|1 Year|2 Years|All Time)$"))
-        count = candidates.count()
-        visible_indices = [i for i in range(count) if candidates.nth(i).is_visible()]
-
-        if not visible_indices:
-            # Every real run so far has hit this branch — meaning this
-            # regex finds ZERO visible matches on the page at this point,
-            # not just ambiguous ones. That suggests either: the time-range
-            # control isn't simple text (e.g. it's an icon-only button, a
-            # <select>, or uses different wording than assumed from
-            # months-old screenshots), or it only renders after some other
-            # interaction settles. Save a screenshot + a text dump of
-            # anything resembling a dropdown/button near "Keyword" so a
-            # human can see the real current state directly instead of
-            # guessing blindly again.
-            try:
-                screenshot_path = str(ROOT / "library" / "time_dropdown_debug_screenshot.png")
-                page.screenshot(path=screenshot_path, full_page=True)
-            except Exception:
-                pass
-            raise Exception(
-                f"No visible '6 Months/1 Year/2 Years/All Time' text found on page "
-                f"(count={count}, all hidden). Saved debug screenshot. This control "
-                f"likely isn't plain text, or needs a different trigger interaction."
-            )
-
-        if len(visible_indices) == 1:
-            candidates.nth(visible_indices[0]).click(timeout=8000)
-        else:
-            candidates.nth(visible_indices[0]).click(timeout=8000)
-        page.wait_for_timeout(WAIT_SHORT)
-
     def read_current_stats():
         text = get_visible_text(page)
         stats = {}
@@ -621,7 +574,7 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
             continue
         seen.add(kw_clean)
 
-        entry = {"keyword": kw_clean, "by_time_range": {}}
+        entry = {"keyword": kw_clean, "stats": {}}
 
         def select_keyword(k=kw_clean):
             # Safety net: ensure no dropdown/popover is already open before
@@ -635,28 +588,21 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
 
         crawler.safe(select_keyword, f"select_keyword:{kw_clean}")
 
-        for tr in TIME_RANGES:
-            def select_time_range(t=tr):
-                open_time_dropdown()
-                option_candidates = page.get_by_text(t, exact=True)
-                count = option_candidates.count()
-                clicked = False
-                for i in range(count):
-                    c = option_candidates.nth(i)
-                    if c.is_visible():
-                        c.click(timeout=8000)
-                        clicked = True
-                        break
-                if not clicked:
-                    option_candidates.first.click(timeout=8000, force=True)
-                page.wait_for_timeout(WAIT_CHART)
-
-            ok = crawler.safe(select_time_range, f"select_time_range:{kw_clean}:{tr}")
-            stats = crawler.safe(read_current_stats, f"read_stats:{kw_clean}:{tr}", default={})
-            entry["by_time_range"][tr] = stats
+        # A debug screenshot confirmed this page has NO separate "6 Months /
+        # 1 Year / 2 Years / All Time" dropdown at all — that control was a
+        # correct memory from a genuinely DIFFERENT page (a dedicated
+        # "Keyword Analysis" sub-page seen in earlier screenshots), not this
+        # main Idea-of-the-Day view. Here there's just one Keyword dropdown
+        # next to a single Volume/Growth snapshot and chart — so we capture
+        # that snapshot once per keyword instead of pretending 4 separate
+        # time ranges exist inline. (If the dedicated Keyword Analysis
+        # sub-page gets crawled in future, ITS time-range dropdown is a
+        # separate, real feature worth adding then.)
+        stats = crawler.safe(read_current_stats, f"read_stats:{kw_clean}", default={})
+        entry["stats"] = stats
 
         results.append(entry)
-        log.append({"step": "keyword_done", "keyword": kw_clean, "time_ranges_captured": len(entry["by_time_range"])})
+        log.append({"step": "keyword_done", "keyword": kw_clean, "stats_captured": bool(stats)})
 
     return results
 
