@@ -1,6 +1,6 @@
 {
   "date": "2026-07-25",
-  "scraped_at": "2026-07-25T22:14:28.556297+00:00",
+  "scraped_at": "2026-07-25T22:20:44.788554+00:00",
   "source_url": "https://www.ideabrowser.com/hub/ideas/today",
   "summary": {
     "raw_text": "",
@@ -11,11 +11,11 @@
   "crawl_log": [
     {
       "step": "login",
-      "note": "Normal click on password toggle failed (Locator.scroll_into_view_if_needed: Timeout 4964ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    9 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 500ms\n), trying forced click."
+      "note": "Found 2 element(s) matching 'Sign in with Password' text."
     },
     {
       "step": "login",
-      "error": "Unexpected error during login: Locator.click: Element is not visible\nCall log:\n  - waiting for get_by_text(\"Sign in with Password\").first\n    - locator resolved to <button class=\"whitespace-nowrap inline-flex h-11 items-center justify-center rounded-xl px-8 py-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground w-full\">Sign in with Password</button>\n  - attempting click action\n    - scrolling into view if needed\n"
+      "error": "Could not find email input field"
     }
   ]
 }
