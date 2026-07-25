@@ -1,0 +1,129 @@
+{
+  "date": "2026-07-25",
+  "scraped_at": "2026-07-25T17:53:19.441166+00:00",
+  "source_url": "https://www.ideabrowser.com/hub/ideas/today",
+  "summary": {
+    "raw_text": "Failed to verify your browser\n\nCode 21\n\nVercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ",
+    "title": "Failed to verify your browser",
+    "opportunity": null,
+    "problem": null,
+    "feasibility": null,
+    "why_now": null,
+    "type": null,
+    "market": null,
+    "target": null,
+    "main_competitor": null,
+    "community_signals_summary": {}
+  },
+  "keyword_analysis": [
+    {
+      "keyword": "Failed to verify your browser\n\nCode 21\n\nVercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ",
+      "by_time_range": {
+        "6 Months": {},
+        "1 Year": {},
+        "2 Years": {},
+        "All Time": {}
+      }
+    },
+    {
+      "keyword": "Website owner? Click here to fix",
+      "by_time_range": {
+        "6 Months": {},
+        "1 Year": {},
+        "2 Years": {},
+        "All Time": {}
+      }
+    },
+    {
+      "keyword": "Vercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ",
+      "by_time_range": {
+        "6 Months": {},
+        "1 Year": {},
+        "2 Years": {},
+        "All Time": {}
+      }
+    }
+  ],
+  "subpages": {},
+  "crawl_log": [
+    {
+      "step": "select_keyword:Failed to verify your browser\n\nCode 21\n\nVercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n"
+    },
+    {
+      "step": "select_time_range:Failed to verify your browser\n\nCode 21\n\nVercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ:6 Months",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "select_time_range:Failed to verify your browser\n\nCode 21\n\nVercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ:1 Year",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "select_time_range:Failed to verify your browser\n\nCode 21\n\nVercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ:2 Years",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "select_time_range:Failed to verify your browser\n\nCode 21\n\nVercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ:All Time",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Failed to verify your browser\n\nCode 21\n\nVercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ",
+      "time_ranges_captured": 4
+    },
+    {
+      "step": "select_keyword:Website owner? Click here to fix",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n"
+    },
+    {
+      "step": "select_time_range:Website owner? Click here to fix:6 Months",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "select_time_range:Website owner? Click here to fix:1 Year",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "select_time_range:Website owner? Click here to fix:2 Years",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "select_time_range:Website owner? Click here to fix:All Time",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Website owner? Click here to fix",
+      "time_ranges_captured": 4
+    },
+    {
+      "step": "select_keyword:Vercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n"
+    },
+    {
+      "step": "select_time_range:Vercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ:6 Months",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "select_time_range:Vercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ:1 Year",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "select_time_range:Vercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ:2 Years",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "select_time_range:Vercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ:All Time",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Vercel Security Checkpoint\n\n|\n\ncle1::1785002002-JRxsPRtdbvPFZ2mikMrdpyAqxulRevNZ",
+      "time_ranges_captured": 4
+    },
+    {
+      "step": "execution_difficulty_modal",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Execution Difficulty\").first\n"
+    }
+  ]
+}
