@@ -13,7 +13,568 @@
   },
   {
     "step": "login",
-    "error": "Still appears to be on login page after submit attempt.",
-    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\n\nWelcome Back\n\nFind, Validate, and Build\nIdea of th"
+    "success": true
+  },
+  {
+    "step": "select_keyword:ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nJul 25, 2026\n|\nBrowse all\nIdea Actions\nRoast\nBuild with Google AI Studio\nPodcast and newsletter placement engine for small business operators\n\u23f0\nPerfect Timing\n\u26a1\nUnfair Advantage\n+16 More\n\nSolo operators fired their agencies, wired up an AI content stack, and started shipping 20 posts a month. Traffic flatlined. External links, podcast mentions, newsletter pickups all sat at zero. Google reads a publishing spike with no earned signals behind it and files the whole batch as spam. Publishing more posts adds to the pile.\n\nOffpage opens with a paid audit that crawls a client's site and counts posts published since the AI stack went live with no outside link or mention. When 18 of 20 come back invisible, the audit is the pitch. From there, clients subscribe, submit their best posts, and Offpage matches each to podcast bookings, newsletter placements, and expert quote requests. BuzzSumo shows what content is working and who is linking to it, then stops. Offpage does the outreach and lands the placement, and paid links stay out of the model.\n\nBuild starts with backlink-crawling tools for the audit and a database of vetted placement contacts: podcast hosts, newsletter editors, journalists. Deliver the first ten audits by hand to prove the audit converts skeptics into subscribers. Early batches also reveal which verticals convert fastest. Load 50 qualified hosts and editors into the database and keep the matchmaking manual until the submission flow works. Automate the crawl and reporting layer first, and keep placements hands-on until they come back reliably.\n\nPricing opens at $200 for the audit, then runs $500 to $1500 per earned placement. Professionals in high-trust verticals like dental practices, law firms, and real estate agencies buy first, because their online presence drives direct revenue. Distribution runs through search-marketing communities and content forums where AI-publishing frustration surfaces daily. Refusing paid links is the durable wedge, because earned placements run on editorial relationships a per-click link shop has no way to broker.\n\n*Analysis, scores, and revenue estimates are educational and based on assumptions. Results vary by execution and market conditions.\n\nKeyword:\nLink building services\n8.1K\nVolume\n+50%\nGrowth\n2023\n2024\n2025\n2026\n0\n6k\n12k\n18k\n24k\nOpportunity\n9\nExceptional\nProblem\n9\nSevere Pain\nFeasibility\n9\nVery Easy\nWhy Now\n9\nPerfect Timing\nBusiness Fit\n\ud83d\udcb0\nRevenue Potential\n$1M-$10M ARR potential with strong niche focus on ethical distribution.\n$$$\n\ud83d\udee0\ufe0f\nExecution Difficulty\nSolo-friendly build, 1-2 week MVP with Cursor.\n3/10\n\ud83d\ude80\nGo-To-Market\nStrong traction with clear demand for ethical content distribution across digital marketing communities.\n8/10\n\ud83e\udde0\nRight for You?\nIdeal for founders with AI and digital marketing expertise.\nFind Out\nRESEARCH TOOL\nGet a Report Exactly Like This for Your Idea\n\nHave your own business idea? Our AI Research Agent conducts a comprehensive 40-step analysis to validate and research any idea you give it.\n\nResearch My Idea\nOffer\n1\nLEAD MAGNET\nVisibility Insight Guide (Free)\n\nA free downloadable guide offering strategies to improve content visibility ethically.\n\n2\nFRONTEND\nInvisibility Audit Report ($200)\n\nA detailed, AI-powered audit report highlighting invisible content on a user's site.\n\n3\nCORE\nEarned Distribution Package ($500\u2013$1500/placement)\n\nEarned media placements like podcast bookings and expert quotes, priced per placement.\n\nView full value ladder\n\u2192\nWhy Now?\n\nThe intersection of market trends, technological advances, and consumer behavior shifts make launching an earned distribution platform for solo AI content creators imperative. Riding the wave of AI-generated content and addressing the visibility crisis offers a timely opportunity in 2026.\n\nSee why this opportunity matters now\nProof & Signals\n\nThe business idea addresses a critical visibility crisis for solo operators overwhelmed by AI-generated content. It leverages ethical earned distribution and visibility audits to solve this problem effectively, aligning well with current market trends and technological shifts.\n\nExplore proof & signals\nThe Market Gap\n\nThe biggest market gap lies in providing ethical, earned visibility solutions for solo operators overwhelmed by AI-generated content. By leveraging invisibility audits and strategic media placements, the business offers a unique edge in a crowded market.\n\nUnderstand the market opportunity\nExecution Plan\n\nLaunch the \"Invisibility Audit Report,\" an automated tool uncovering hidden content by analyzing its lack of external visibility. Integrate with platforms like LinkedIn and Reddit for immediate reach, then expand with real-time tracking and subscriptions. Ready to redefine ethical media presence?\n\nView detailed execution strategy\nFramework Fit\n\nSee how this idea fits into popular frameworks\n\nThe Value Equation\n6Good\nView Analysis\nMarket Matrix\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nView Analysis\nThe A.C.P. Framework\nAudience\n8/10\nCommunity\n6/10\nProduct\n9/10\nView Analysis\nThe Value Ladder\nBait\nFrontend\nCore Offer\nBackend\nContinuity\nView Analysis\nCategorization\n\nType\n\nSaas\n\nMarket\n\nB2B\n\nTarget\n\nSolo Operators\n\nMain Competitor\n\nBuzzSumo\n\nTrend Analysis\n\nThe surge in AI-generated content has led to a discoverability crisis, increasing demand for visibility solutions. The market is trending upwards due to the need for ethical distribution models and earned media, aligning with the platform's focus.\n\nCommunity Signals\nReddit\n5 subreddits found\nFacebook\n8 groups found\nYouTube\n13 channels \u00b7 16 themes\nOther\n4 segments \u00b7 4 priorities\nView detailed breakdown\nTop Keywords\nFastest Growing\nContent Marketing For Link Building\nLOW competition\n2.4K\nAi Seo Platform\nLOW competition\n720\nSeo Services Link Building\nLOW competition\n2.9K\nHighest Volume\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nMost Relevant\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nView full keyword analysis\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\n\nImportant: Revenue estimates, scores, and market data are illustrative based on research and assumptions. Results vary by execution, timing, and market conditions. Not investment or business advice.",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"ideabrowser\\nHUB\\nBrowse\\nBuild\\nHome\\nTraining\\nMy Profile\\nMy Stuff\\nIdeas\\nDiscover\\nResearch\\nGenerate\\nTrends\\nDiscover\\nResearch\\nMarket Insights\\nDiscover\\nResearch\\nUpdates\\nEmpire\\nSupport\\nS\\nsneakerconsultant98\\nFree plan\\nToggle Sidebar\\nIdea of the Day\\nBuild Gallery\\nUpgrade\\n\\nSTART HERE\\n\\nDiscover your founder archetype\\n\\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\\n\\nTake the quiz\\nIdea of the Day\\nPrevious\\n|\\nJul 25, 2026\\n|\\nBrowse all\\nIdea Actions\\nRoast\\nBuild with Google AI Studio\\nPodcast and newsletter placement engine for small business operators\\n\u23f0\\nPerfect Timing\\n\u26a1\\nUnfair Advantage\\n+16 More\\n\\nSolo operators fired their agencies, wired up an AI content stack, and started shipping 20 posts a month. Traffic flatlined. External links, podcast mentions, newsletter pickups all sat at zero. Google reads a publishing spike with no earned signals behind it and files the whole batch as spam. Publishing more posts adds to the pile.\\n\\nOffpage opens with a paid audit that crawls a client's site and counts posts published since the AI stack went live with no outside link or mention. When 18 of 20 come back invisible, the audit is the pitch. From there, clients subscribe, submit their best posts, and Offpage matches each to podcast bookings, newsletter placements, and expert quote requests. BuzzSumo shows what content is working and who is linking to it, then stops. Offpage does the outreach and lands the placement, and paid links stay out of the model.\\n\\nBuild starts with backlink-crawling tools for the audit and a database of vetted placement contacts: podcast hosts, newsletter editors, journalists. Deliver the first ten audits by hand to prove the audit converts skeptics into subscribers. Early batches also reveal which verticals convert fastest. Load 50 qualified hosts and editors into the database and keep the matchmaking manual until the submission flow works. Automate the crawl and reporting layer first, and keep placements hands-on until they come back reliably.\\n\\nPricing opens at $200 for the audit, then runs $500 to $1500 per earned placement. Professionals in high-trust verticals like dental practices, law firms, and real estate agencies buy first, because their online presence drives direct revenue. Distribution runs through search-marketing communities and content forums where AI-publishing frustration surfaces daily. Refusing paid links is the durable wedge, because earned placements run on editorial relationships a per-click link shop has no way to broker.\\n\\n*Analysis, scores, and revenue estimates are educational and based on assumptions. Results vary by execution and market conditions.\\n\\nKeyword:\\nLink building services\\n8.1K\\nVolume\\n+50%\\nGrowth\\n2023\\n2024\\n2025\\n2026\\n0\\n6k\\n12k\\n18k\\n24k\\nOpportunity\\n9\\nExceptional\\nProblem\\n9\\nSevere Pain\\nFeasibility\\n9\\nVery Easy\\nWhy Now\\n9\\nPerfect Timing\\nBusiness Fit\\n\ud83d\udcb0\\nRevenue Potential\\n$1M-$10M ARR potential with strong niche focus on ethical distribution.\\n$$$\\n\ud83d\udee0\ufe0f\\nExecution Difficulty\\nSolo-friendly build, 1-2 week MVP with Cursor.\\n3/10\\n\ud83d\ude80\\nGo-To-Market\\nStrong traction with clear demand for ethical content distribution across digital marketing communities.\\n8/10\\n\ud83e\udde0\\nRight for You?\\nIdeal for founders with AI and digital marketing expertise.\\nFind Out\\nRESEARCH TOOL\\nGet a Report Exactly Like This for Your Idea\\n\\nHave your own business idea? Our AI Research Agent conducts a comprehensive 40-step analysis to validate and research any idea you give it.\\n\\nResearch My Idea\\nOffer\\n1\\nLEAD MAGNET\\nVisibility Insight Guide (Free)\\n\\nA free downloadable guide offering strategies to improve content visibility ethically.\\n\\n2\\nFRONTEND\\nInvisibility Audit Report ($200)\\n\\nA detailed, AI-powered audit report highlighting invisible content on a user's site.\\n\\n3\\nCORE\\nEarned Distribution Package ($500\u2013$1500/placement)\\n\\nEarned media placements like podcast bookings and expert quotes, priced per placement.\\n\\nView full value ladder\\n\u2192\\nWhy Now?\\n\\nThe intersection of market trends, technological advances, and consumer behavior shifts make launching an earned distribution platform for solo AI content creators imperative. Riding the wave of AI-generated content and addressing the visibility crisis offers a timely opportunity in 2026.\\n\\nSee why this opportunity matters now\\nProof & Signals\\n\\nThe business idea addresses a critical visibility crisis for solo operators overwhelmed by AI-generated content. It leverages ethical earned distribution and visibility audits to solve this problem effectively, aligning well with current market trends and technological shifts.\\n\\nExplore proof & signals\\nThe Market Gap\\n\\nThe biggest market gap lies in providing ethical, earned visibility solutions for solo operators overwhelmed by AI-generated content. By leveraging invisibility audits and strategic media placements, the business offers a unique edge in a crowded market.\\n\\nUnderstand the market opportunity\\nExecution Plan\\n\\nLaunch the \\\"Invisibility Audit Report,\\\" an automated tool uncovering hidden content by analyzing its lack of external visibility. Integrate with platforms like LinkedIn and Reddit for immediate reach, then expand with real-time tracking and subscriptions. Ready to redefine ethical media presence?\\n\\nView detailed execution strategy\\nFramework Fit\\n\\nSee how this idea fits into popular frameworks\\n\\nThe Value Equation\\n6Good\\nView Analysis\\nMarket Matrix\\nTech Novelty\\n\\nHigh uniqueness\\n\\nLow value\\n\\nCategory King\\n\\nHigh uniqueness\\n\\nHigh value\\n\\nLow Impact\\n\\nLow uniqueness\\n\\nLow value\\n\\nCommodity Play\\n\\nLow uniqueness\\n\\nHigh value\\n\\nView Analysis\\nThe A.C.P. Framework\\nAudience\\n8/10\\nCommunity\\n6/10\\nProduct\\n9/10\\nView Analysis\\nThe Value Ladder\\nBait\\nFrontend\\nCore Offer\\nBackend\\nContinuity\\nView Analysis\\nCategorization\\n\\nType\\n\\nSaas\\n\\nMarket\\n\\nB2B\\n\\nTarget\\n\\nSolo Operators\\n\\nMain Competitor\\n\\nBuzzSumo\\n\\nTrend Analysis\\n\\nThe surge in AI-generated content has led to a discoverability crisis, increasing demand for visibility solutions. The market is trending upwards due to the need for ethical distribution models and earned media, aligning with the platform's focus.\\n\\nCommunity Signals\\nReddit\\n5 subreddits found\\nFacebook\\n8 groups found\\nYouTube\\n13 channels \u00b7 16 themes\\nOther\\n4 segments \u00b7 4 priorities\\nView detailed breakdown\\nTop Keywords\\nFastest Growing\\nContent Marketing For Link Building\\nLOW competition\\n2.4K\\nAi Seo Platform\\nLOW competition\\n720\\nSeo Services Link Building\\nLOW competition\\n2.9K\\nHighest Volume\\nArtificial Intelligence Search Engine Optimization\\nMEDIUM competition\\n33.1K\\nLink Building Services\\nLOW competition\\n9.9K\\nAi Seo Tools\\nLOW competition\\n5.4K\\nMost Relevant\\nArtificial Intelligence Search Engine Optimization\\nMEDIUM competition\\n33.1K\\nLink Building Services\\nLOW competition\\n9.9K\\nAi Seo Tools\\nLOW competition\\n5.4K\\nView full keyword analysis\\nWhat'd you think of this idea?\\nChef's kiss\\nPretty interesting\\nYou didn't bring the heat\\n\\nImportant: Revenue estimates, scores, and market data are illustrative based on research and assumptions. Results vary by execution, timing, and market conditions. Not investment or business advice.\", exact=True).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nJul 25, 2026\n|\nBrowse all\nIdea Actions\nRoast\nBuild with Google AI Studio\nPodcast and newsletter placement engine for small business operators\n\u23f0\nPerfect Timing\n\u26a1\nUnfair Advantage\n+16 More\n\nSolo operators fired their agencies, wired up an AI content stack, and started shipping 20 posts a month. Traffic flatlined. External links, podcast mentions, newsletter pickups all sat at zero. Google reads a publishing spike with no earned signals behind it and files the whole batch as spam. Publishing more posts adds to the pile.\n\nOffpage opens with a paid audit that crawls a client's site and counts posts published since the AI stack went live with no outside link or mention. When 18 of 20 come back invisible, the audit is the pitch. From there, clients subscribe, submit their best posts, and Offpage matches each to podcast bookings, newsletter placements, and expert quote requests. BuzzSumo shows what content is working and who is linking to it, then stops. Offpage does the outreach and lands the placement, and paid links stay out of the model.\n\nBuild starts with backlink-crawling tools for the audit and a database of vetted placement contacts: podcast hosts, newsletter editors, journalists. Deliver the first ten audits by hand to prove the audit converts skeptics into subscribers. Early batches also reveal which verticals convert fastest. Load 50 qualified hosts and editors into the database and keep the matchmaking manual until the submission flow works. Automate the crawl and reporting layer first, and keep placements hands-on until they come back reliably.\n\nPricing opens at $200 for the audit, then runs $500 to $1500 per earned placement. Professionals in high-trust verticals like dental practices, law firms, and real estate agencies buy first, because their online presence drives direct revenue. Distribution runs through search-marketing communities and content forums where AI-publishing frustration surfaces daily. Refusing paid links is the durable wedge, because earned placements run on editorial relationships a per-click link shop has no way to broker.\n\n*Analysis, scores, and revenue estimates are educational and based on assumptions. Results vary by execution and market conditions.\n\nKeyword:\nLink building services\n8.1K\nVolume\n+50%\nGrowth\n2023\n2024\n2025\n2026\n0\n6k\n12k\n18k\n24k\nOpportunity\n9\nExceptional\nProblem\n9\nSevere Pain\nFeasibility\n9\nVery Easy\nWhy Now\n9\nPerfect Timing\nBusiness Fit\n\ud83d\udcb0\nRevenue Potential\n$1M-$10M ARR potential with strong niche focus on ethical distribution.\n$$$\n\ud83d\udee0\ufe0f\nExecution Difficulty\nSolo-friendly build, 1-2 week MVP with Cursor.\n3/10\n\ud83d\ude80\nGo-To-Market\nStrong traction with clear demand for ethical content distribution across digital marketing communities.\n8/10\n\ud83e\udde0\nRight for You?\nIdeal for founders with AI and digital marketing expertise.\nFind Out\nRESEARCH TOOL\nGet a Report Exactly Like This for Your Idea\n\nHave your own business idea? Our AI Research Agent conducts a comprehensive 40-step analysis to validate and research any idea you give it.\n\nResearch My Idea\nOffer\n1\nLEAD MAGNET\nVisibility Insight Guide (Free)\n\nA free downloadable guide offering strategies to improve content visibility ethically.\n\n2\nFRONTEND\nInvisibility Audit Report ($200)\n\nA detailed, AI-powered audit report highlighting invisible content on a user's site.\n\n3\nCORE\nEarned Distribution Package ($500\u2013$1500/placement)\n\nEarned media placements like podcast bookings and expert quotes, priced per placement.\n\nView full value ladder\n\u2192\nWhy Now?\n\nThe intersection of market trends, technological advances, and consumer behavior shifts make launching an earned distribution platform for solo AI content creators imperative. Riding the wave of AI-generated content and addressing the visibility crisis offers a timely opportunity in 2026.\n\nSee why this opportunity matters now\nProof & Signals\n\nThe business idea addresses a critical visibility crisis for solo operators overwhelmed by AI-generated content. It leverages ethical earned distribution and visibility audits to solve this problem effectively, aligning well with current market trends and technological shifts.\n\nExplore proof & signals\nThe Market Gap\n\nThe biggest market gap lies in providing ethical, earned visibility solutions for solo operators overwhelmed by AI-generated content. By leveraging invisibility audits and strategic media placements, the business offers a unique edge in a crowded market.\n\nUnderstand the market opportunity\nExecution Plan\n\nLaunch the \"Invisibility Audit Report,\" an automated tool uncovering hidden content by analyzing its lack of external visibility. Integrate with platforms like LinkedIn and Reddit for immediate reach, then expand with real-time tracking and subscriptions. Ready to redefine ethical media presence?\n\nView detailed execution strategy\nFramework Fit\n\nSee how this idea fits into popular frameworks\n\nThe Value Equation\n6Good\nView Analysis\nMarket Matrix\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nView Analysis\nThe A.C.P. Framework\nAudience\n8/10\nCommunity\n6/10\nProduct\n9/10\nView Analysis\nThe Value Ladder\nBait\nFrontend\nCore Offer\nBackend\nContinuity\nView Analysis\nCategorization\n\nType\n\nSaas\n\nMarket\n\nB2B\n\nTarget\n\nSolo Operators\n\nMain Competitor\n\nBuzzSumo\n\nTrend Analysis\n\nThe surge in AI-generated content has led to a discoverability crisis, increasing demand for visibility solutions. The market is trending upwards due to the need for ethical distribution models and earned media, aligning with the platform's focus.\n\nCommunity Signals\nReddit\n5 subreddits found\nFacebook\n8 groups found\nYouTube\n13 channels \u00b7 16 themes\nOther\n4 segments \u00b7 4 priorities\nView detailed breakdown\nTop Keywords\nFastest Growing\nContent Marketing For Link Building\nLOW competition\n2.4K\nAi Seo Platform\nLOW competition\n720\nSeo Services Link Building\nLOW competition\n2.9K\nHighest Volume\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nMost Relevant\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nView full keyword analysis\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\n\nImportant: Revenue estimates, scores, and market data are illustrative based on research and assumptions. Results vary by execution, timing, and market conditions. Not investment or business advice.:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nJul 25, 2026\n|\nBrowse all\nIdea Actions\nRoast\nBuild with Google AI Studio\nPodcast and newsletter placement engine for small business operators\n\u23f0\nPerfect Timing\n\u26a1\nUnfair Advantage\n+16 More\n\nSolo operators fired their agencies, wired up an AI content stack, and started shipping 20 posts a month. Traffic flatlined. External links, podcast mentions, newsletter pickups all sat at zero. Google reads a publishing spike with no earned signals behind it and files the whole batch as spam. Publishing more posts adds to the pile.\n\nOffpage opens with a paid audit that crawls a client's site and counts posts published since the AI stack went live with no outside link or mention. When 18 of 20 come back invisible, the audit is the pitch. From there, clients subscribe, submit their best posts, and Offpage matches each to podcast bookings, newsletter placements, and expert quote requests. BuzzSumo shows what content is working and who is linking to it, then stops. Offpage does the outreach and lands the placement, and paid links stay out of the model.\n\nBuild starts with backlink-crawling tools for the audit and a database of vetted placement contacts: podcast hosts, newsletter editors, journalists. Deliver the first ten audits by hand to prove the audit converts skeptics into subscribers. Early batches also reveal which verticals convert fastest. Load 50 qualified hosts and editors into the database and keep the matchmaking manual until the submission flow works. Automate the crawl and reporting layer first, and keep placements hands-on until they come back reliably.\n\nPricing opens at $200 for the audit, then runs $500 to $1500 per earned placement. Professionals in high-trust verticals like dental practices, law firms, and real estate agencies buy first, because their online presence drives direct revenue. Distribution runs through search-marketing communities and content forums where AI-publishing frustration surfaces daily. Refusing paid links is the durable wedge, because earned placements run on editorial relationships a per-click link shop has no way to broker.\n\n*Analysis, scores, and revenue estimates are educational and based on assumptions. Results vary by execution and market conditions.\n\nKeyword:\nLink building services\n8.1K\nVolume\n+50%\nGrowth\n2023\n2024\n2025\n2026\n0\n6k\n12k\n18k\n24k\nOpportunity\n9\nExceptional\nProblem\n9\nSevere Pain\nFeasibility\n9\nVery Easy\nWhy Now\n9\nPerfect Timing\nBusiness Fit\n\ud83d\udcb0\nRevenue Potential\n$1M-$10M ARR potential with strong niche focus on ethical distribution.\n$$$\n\ud83d\udee0\ufe0f\nExecution Difficulty\nSolo-friendly build, 1-2 week MVP with Cursor.\n3/10\n\ud83d\ude80\nGo-To-Market\nStrong traction with clear demand for ethical content distribution across digital marketing communities.\n8/10\n\ud83e\udde0\nRight for You?\nIdeal for founders with AI and digital marketing expertise.\nFind Out\nRESEARCH TOOL\nGet a Report Exactly Like This for Your Idea\n\nHave your own business idea? Our AI Research Agent conducts a comprehensive 40-step analysis to validate and research any idea you give it.\n\nResearch My Idea\nOffer\n1\nLEAD MAGNET\nVisibility Insight Guide (Free)\n\nA free downloadable guide offering strategies to improve content visibility ethically.\n\n2\nFRONTEND\nInvisibility Audit Report ($200)\n\nA detailed, AI-powered audit report highlighting invisible content on a user's site.\n\n3\nCORE\nEarned Distribution Package ($500\u2013$1500/placement)\n\nEarned media placements like podcast bookings and expert quotes, priced per placement.\n\nView full value ladder\n\u2192\nWhy Now?\n\nThe intersection of market trends, technological advances, and consumer behavior shifts make launching an earned distribution platform for solo AI content creators imperative. Riding the wave of AI-generated content and addressing the visibility crisis offers a timely opportunity in 2026.\n\nSee why this opportunity matters now\nProof & Signals\n\nThe business idea addresses a critical visibility crisis for solo operators overwhelmed by AI-generated content. It leverages ethical earned distribution and visibility audits to solve this problem effectively, aligning well with current market trends and technological shifts.\n\nExplore proof & signals\nThe Market Gap\n\nThe biggest market gap lies in providing ethical, earned visibility solutions for solo operators overwhelmed by AI-generated content. By leveraging invisibility audits and strategic media placements, the business offers a unique edge in a crowded market.\n\nUnderstand the market opportunity\nExecution Plan\n\nLaunch the \"Invisibility Audit Report,\" an automated tool uncovering hidden content by analyzing its lack of external visibility. Integrate with platforms like LinkedIn and Reddit for immediate reach, then expand with real-time tracking and subscriptions. Ready to redefine ethical media presence?\n\nView detailed execution strategy\nFramework Fit\n\nSee how this idea fits into popular frameworks\n\nThe Value Equation\n6Good\nView Analysis\nMarket Matrix\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nView Analysis\nThe A.C.P. Framework\nAudience\n8/10\nCommunity\n6/10\nProduct\n9/10\nView Analysis\nThe Value Ladder\nBait\nFrontend\nCore Offer\nBackend\nContinuity\nView Analysis\nCategorization\n\nType\n\nSaas\n\nMarket\n\nB2B\n\nTarget\n\nSolo Operators\n\nMain Competitor\n\nBuzzSumo\n\nTrend Analysis\n\nThe surge in AI-generated content has led to a discoverability crisis, increasing demand for visibility solutions. The market is trending upwards due to the need for ethical distribution models and earned media, aligning with the platform's focus.\n\nCommunity Signals\nReddit\n5 subreddits found\nFacebook\n8 groups found\nYouTube\n13 channels \u00b7 16 themes\nOther\n4 segments \u00b7 4 priorities\nView detailed breakdown\nTop Keywords\nFastest Growing\nContent Marketing For Link Building\nLOW competition\n2.4K\nAi Seo Platform\nLOW competition\n720\nSeo Services Link Building\nLOW competition\n2.9K\nHighest Volume\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nMost Relevant\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nView full keyword analysis\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\n\nImportant: Revenue estimates, scores, and market data are illustrative based on research and assumptions. Results vary by execution, timing, and market conditions. Not investment or business advice.:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nJul 25, 2026\n|\nBrowse all\nIdea Actions\nRoast\nBuild with Google AI Studio\nPodcast and newsletter placement engine for small business operators\n\u23f0\nPerfect Timing\n\u26a1\nUnfair Advantage\n+16 More\n\nSolo operators fired their agencies, wired up an AI content stack, and started shipping 20 posts a month. Traffic flatlined. External links, podcast mentions, newsletter pickups all sat at zero. Google reads a publishing spike with no earned signals behind it and files the whole batch as spam. Publishing more posts adds to the pile.\n\nOffpage opens with a paid audit that crawls a client's site and counts posts published since the AI stack went live with no outside link or mention. When 18 of 20 come back invisible, the audit is the pitch. From there, clients subscribe, submit their best posts, and Offpage matches each to podcast bookings, newsletter placements, and expert quote requests. BuzzSumo shows what content is working and who is linking to it, then stops. Offpage does the outreach and lands the placement, and paid links stay out of the model.\n\nBuild starts with backlink-crawling tools for the audit and a database of vetted placement contacts: podcast hosts, newsletter editors, journalists. Deliver the first ten audits by hand to prove the audit converts skeptics into subscribers. Early batches also reveal which verticals convert fastest. Load 50 qualified hosts and editors into the database and keep the matchmaking manual until the submission flow works. Automate the crawl and reporting layer first, and keep placements hands-on until they come back reliably.\n\nPricing opens at $200 for the audit, then runs $500 to $1500 per earned placement. Professionals in high-trust verticals like dental practices, law firms, and real estate agencies buy first, because their online presence drives direct revenue. Distribution runs through search-marketing communities and content forums where AI-publishing frustration surfaces daily. Refusing paid links is the durable wedge, because earned placements run on editorial relationships a per-click link shop has no way to broker.\n\n*Analysis, scores, and revenue estimates are educational and based on assumptions. Results vary by execution and market conditions.\n\nKeyword:\nLink building services\n8.1K\nVolume\n+50%\nGrowth\n2023\n2024\n2025\n2026\n0\n6k\n12k\n18k\n24k\nOpportunity\n9\nExceptional\nProblem\n9\nSevere Pain\nFeasibility\n9\nVery Easy\nWhy Now\n9\nPerfect Timing\nBusiness Fit\n\ud83d\udcb0\nRevenue Potential\n$1M-$10M ARR potential with strong niche focus on ethical distribution.\n$$$\n\ud83d\udee0\ufe0f\nExecution Difficulty\nSolo-friendly build, 1-2 week MVP with Cursor.\n3/10\n\ud83d\ude80\nGo-To-Market\nStrong traction with clear demand for ethical content distribution across digital marketing communities.\n8/10\n\ud83e\udde0\nRight for You?\nIdeal for founders with AI and digital marketing expertise.\nFind Out\nRESEARCH TOOL\nGet a Report Exactly Like This for Your Idea\n\nHave your own business idea? Our AI Research Agent conducts a comprehensive 40-step analysis to validate and research any idea you give it.\n\nResearch My Idea\nOffer\n1\nLEAD MAGNET\nVisibility Insight Guide (Free)\n\nA free downloadable guide offering strategies to improve content visibility ethically.\n\n2\nFRONTEND\nInvisibility Audit Report ($200)\n\nA detailed, AI-powered audit report highlighting invisible content on a user's site.\n\n3\nCORE\nEarned Distribution Package ($500\u2013$1500/placement)\n\nEarned media placements like podcast bookings and expert quotes, priced per placement.\n\nView full value ladder\n\u2192\nWhy Now?\n\nThe intersection of market trends, technological advances, and consumer behavior shifts make launching an earned distribution platform for solo AI content creators imperative. Riding the wave of AI-generated content and addressing the visibility crisis offers a timely opportunity in 2026.\n\nSee why this opportunity matters now\nProof & Signals\n\nThe business idea addresses a critical visibility crisis for solo operators overwhelmed by AI-generated content. It leverages ethical earned distribution and visibility audits to solve this problem effectively, aligning well with current market trends and technological shifts.\n\nExplore proof & signals\nThe Market Gap\n\nThe biggest market gap lies in providing ethical, earned visibility solutions for solo operators overwhelmed by AI-generated content. By leveraging invisibility audits and strategic media placements, the business offers a unique edge in a crowded market.\n\nUnderstand the market opportunity\nExecution Plan\n\nLaunch the \"Invisibility Audit Report,\" an automated tool uncovering hidden content by analyzing its lack of external visibility. Integrate with platforms like LinkedIn and Reddit for immediate reach, then expand with real-time tracking and subscriptions. Ready to redefine ethical media presence?\n\nView detailed execution strategy\nFramework Fit\n\nSee how this idea fits into popular frameworks\n\nThe Value Equation\n6Good\nView Analysis\nMarket Matrix\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nView Analysis\nThe A.C.P. Framework\nAudience\n8/10\nCommunity\n6/10\nProduct\n9/10\nView Analysis\nThe Value Ladder\nBait\nFrontend\nCore Offer\nBackend\nContinuity\nView Analysis\nCategorization\n\nType\n\nSaas\n\nMarket\n\nB2B\n\nTarget\n\nSolo Operators\n\nMain Competitor\n\nBuzzSumo\n\nTrend Analysis\n\nThe surge in AI-generated content has led to a discoverability crisis, increasing demand for visibility solutions. The market is trending upwards due to the need for ethical distribution models and earned media, aligning with the platform's focus.\n\nCommunity Signals\nReddit\n5 subreddits found\nFacebook\n8 groups found\nYouTube\n13 channels \u00b7 16 themes\nOther\n4 segments \u00b7 4 priorities\nView detailed breakdown\nTop Keywords\nFastest Growing\nContent Marketing For Link Building\nLOW competition\n2.4K\nAi Seo Platform\nLOW competition\n720\nSeo Services Link Building\nLOW competition\n2.9K\nHighest Volume\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nMost Relevant\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nView full keyword analysis\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\n\nImportant: Revenue estimates, scores, and market data are illustrative based on research and assumptions. Results vary by execution, timing, and market conditions. Not investment or business advice.:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nJul 25, 2026\n|\nBrowse all\nIdea Actions\nRoast\nBuild with Google AI Studio\nPodcast and newsletter placement engine for small business operators\n\u23f0\nPerfect Timing\n\u26a1\nUnfair Advantage\n+16 More\n\nSolo operators fired their agencies, wired up an AI content stack, and started shipping 20 posts a month. Traffic flatlined. External links, podcast mentions, newsletter pickups all sat at zero. Google reads a publishing spike with no earned signals behind it and files the whole batch as spam. Publishing more posts adds to the pile.\n\nOffpage opens with a paid audit that crawls a client's site and counts posts published since the AI stack went live with no outside link or mention. When 18 of 20 come back invisible, the audit is the pitch. From there, clients subscribe, submit their best posts, and Offpage matches each to podcast bookings, newsletter placements, and expert quote requests. BuzzSumo shows what content is working and who is linking to it, then stops. Offpage does the outreach and lands the placement, and paid links stay out of the model.\n\nBuild starts with backlink-crawling tools for the audit and a database of vetted placement contacts: podcast hosts, newsletter editors, journalists. Deliver the first ten audits by hand to prove the audit converts skeptics into subscribers. Early batches also reveal which verticals convert fastest. Load 50 qualified hosts and editors into the database and keep the matchmaking manual until the submission flow works. Automate the crawl and reporting layer first, and keep placements hands-on until they come back reliably.\n\nPricing opens at $200 for the audit, then runs $500 to $1500 per earned placement. Professionals in high-trust verticals like dental practices, law firms, and real estate agencies buy first, because their online presence drives direct revenue. Distribution runs through search-marketing communities and content forums where AI-publishing frustration surfaces daily. Refusing paid links is the durable wedge, because earned placements run on editorial relationships a per-click link shop has no way to broker.\n\n*Analysis, scores, and revenue estimates are educational and based on assumptions. Results vary by execution and market conditions.\n\nKeyword:\nLink building services\n8.1K\nVolume\n+50%\nGrowth\n2023\n2024\n2025\n2026\n0\n6k\n12k\n18k\n24k\nOpportunity\n9\nExceptional\nProblem\n9\nSevere Pain\nFeasibility\n9\nVery Easy\nWhy Now\n9\nPerfect Timing\nBusiness Fit\n\ud83d\udcb0\nRevenue Potential\n$1M-$10M ARR potential with strong niche focus on ethical distribution.\n$$$\n\ud83d\udee0\ufe0f\nExecution Difficulty\nSolo-friendly build, 1-2 week MVP with Cursor.\n3/10\n\ud83d\ude80\nGo-To-Market\nStrong traction with clear demand for ethical content distribution across digital marketing communities.\n8/10\n\ud83e\udde0\nRight for You?\nIdeal for founders with AI and digital marketing expertise.\nFind Out\nRESEARCH TOOL\nGet a Report Exactly Like This for Your Idea\n\nHave your own business idea? Our AI Research Agent conducts a comprehensive 40-step analysis to validate and research any idea you give it.\n\nResearch My Idea\nOffer\n1\nLEAD MAGNET\nVisibility Insight Guide (Free)\n\nA free downloadable guide offering strategies to improve content visibility ethically.\n\n2\nFRONTEND\nInvisibility Audit Report ($200)\n\nA detailed, AI-powered audit report highlighting invisible content on a user's site.\n\n3\nCORE\nEarned Distribution Package ($500\u2013$1500/placement)\n\nEarned media placements like podcast bookings and expert quotes, priced per placement.\n\nView full value ladder\n\u2192\nWhy Now?\n\nThe intersection of market trends, technological advances, and consumer behavior shifts make launching an earned distribution platform for solo AI content creators imperative. Riding the wave of AI-generated content and addressing the visibility crisis offers a timely opportunity in 2026.\n\nSee why this opportunity matters now\nProof & Signals\n\nThe business idea addresses a critical visibility crisis for solo operators overwhelmed by AI-generated content. It leverages ethical earned distribution and visibility audits to solve this problem effectively, aligning well with current market trends and technological shifts.\n\nExplore proof & signals\nThe Market Gap\n\nThe biggest market gap lies in providing ethical, earned visibility solutions for solo operators overwhelmed by AI-generated content. By leveraging invisibility audits and strategic media placements, the business offers a unique edge in a crowded market.\n\nUnderstand the market opportunity\nExecution Plan\n\nLaunch the \"Invisibility Audit Report,\" an automated tool uncovering hidden content by analyzing its lack of external visibility. Integrate with platforms like LinkedIn and Reddit for immediate reach, then expand with real-time tracking and subscriptions. Ready to redefine ethical media presence?\n\nView detailed execution strategy\nFramework Fit\n\nSee how this idea fits into popular frameworks\n\nThe Value Equation\n6Good\nView Analysis\nMarket Matrix\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nView Analysis\nThe A.C.P. Framework\nAudience\n8/10\nCommunity\n6/10\nProduct\n9/10\nView Analysis\nThe Value Ladder\nBait\nFrontend\nCore Offer\nBackend\nContinuity\nView Analysis\nCategorization\n\nType\n\nSaas\n\nMarket\n\nB2B\n\nTarget\n\nSolo Operators\n\nMain Competitor\n\nBuzzSumo\n\nTrend Analysis\n\nThe surge in AI-generated content has led to a discoverability crisis, increasing demand for visibility solutions. The market is trending upwards due to the need for ethical distribution models and earned media, aligning with the platform's focus.\n\nCommunity Signals\nReddit\n5 subreddits found\nFacebook\n8 groups found\nYouTube\n13 channels \u00b7 16 themes\nOther\n4 segments \u00b7 4 priorities\nView detailed breakdown\nTop Keywords\nFastest Growing\nContent Marketing For Link Building\nLOW competition\n2.4K\nAi Seo Platform\nLOW competition\n720\nSeo Services Link Building\nLOW competition\n2.9K\nHighest Volume\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nMost Relevant\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nView full keyword analysis\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\n\nImportant: Revenue estimates, scores, and market data are illustrative based on research and assumptions. Results vary by execution, timing, and market conditions. Not investment or business advice.:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nJul 25, 2026\n|\nBrowse all\nIdea Actions\nRoast\nBuild with Google AI Studio\nPodcast and newsletter placement engine for small business operators\n\u23f0\nPerfect Timing\n\u26a1\nUnfair Advantage\n+16 More\n\nSolo operators fired their agencies, wired up an AI content stack, and started shipping 20 posts a month. Traffic flatlined. External links, podcast mentions, newsletter pickups all sat at zero. Google reads a publishing spike with no earned signals behind it and files the whole batch as spam. Publishing more posts adds to the pile.\n\nOffpage opens with a paid audit that crawls a client's site and counts posts published since the AI stack went live with no outside link or mention. When 18 of 20 come back invisible, the audit is the pitch. From there, clients subscribe, submit their best posts, and Offpage matches each to podcast bookings, newsletter placements, and expert quote requests. BuzzSumo shows what content is working and who is linking to it, then stops. Offpage does the outreach and lands the placement, and paid links stay out of the model.\n\nBuild starts with backlink-crawling tools for the audit and a database of vetted placement contacts: podcast hosts, newsletter editors, journalists. Deliver the first ten audits by hand to prove the audit converts skeptics into subscribers. Early batches also reveal which verticals convert fastest. Load 50 qualified hosts and editors into the database and keep the matchmaking manual until the submission flow works. Automate the crawl and reporting layer first, and keep placements hands-on until they come back reliably.\n\nPricing opens at $200 for the audit, then runs $500 to $1500 per earned placement. Professionals in high-trust verticals like dental practices, law firms, and real estate agencies buy first, because their online presence drives direct revenue. Distribution runs through search-marketing communities and content forums where AI-publishing frustration surfaces daily. Refusing paid links is the durable wedge, because earned placements run on editorial relationships a per-click link shop has no way to broker.\n\n*Analysis, scores, and revenue estimates are educational and based on assumptions. Results vary by execution and market conditions.\n\nKeyword:\nLink building services\n8.1K\nVolume\n+50%\nGrowth\n2023\n2024\n2025\n2026\n0\n6k\n12k\n18k\n24k\nOpportunity\n9\nExceptional\nProblem\n9\nSevere Pain\nFeasibility\n9\nVery Easy\nWhy Now\n9\nPerfect Timing\nBusiness Fit\n\ud83d\udcb0\nRevenue Potential\n$1M-$10M ARR potential with strong niche focus on ethical distribution.\n$$$\n\ud83d\udee0\ufe0f\nExecution Difficulty\nSolo-friendly build, 1-2 week MVP with Cursor.\n3/10\n\ud83d\ude80\nGo-To-Market\nStrong traction with clear demand for ethical content distribution across digital marketing communities.\n8/10\n\ud83e\udde0\nRight for You?\nIdeal for founders with AI and digital marketing expertise.\nFind Out\nRESEARCH TOOL\nGet a Report Exactly Like This for Your Idea\n\nHave your own business idea? Our AI Research Agent conducts a comprehensive 40-step analysis to validate and research any idea you give it.\n\nResearch My Idea\nOffer\n1\nLEAD MAGNET\nVisibility Insight Guide (Free)\n\nA free downloadable guide offering strategies to improve content visibility ethically.\n\n2\nFRONTEND\nInvisibility Audit Report ($200)\n\nA detailed, AI-powered audit report highlighting invisible content on a user's site.\n\n3\nCORE\nEarned Distribution Package ($500\u2013$1500/placement)\n\nEarned media placements like podcast bookings and expert quotes, priced per placement.\n\nView full value ladder\n\u2192\nWhy Now?\n\nThe intersection of market trends, technological advances, and consumer behavior shifts make launching an earned distribution platform for solo AI content creators imperative. Riding the wave of AI-generated content and addressing the visibility crisis offers a timely opportunity in 2026.\n\nSee why this opportunity matters now\nProof & Signals\n\nThe business idea addresses a critical visibility crisis for solo operators overwhelmed by AI-generated content. It leverages ethical earned distribution and visibility audits to solve this problem effectively, aligning well with current market trends and technological shifts.\n\nExplore proof & signals\nThe Market Gap\n\nThe biggest market gap lies in providing ethical, earned visibility solutions for solo operators overwhelmed by AI-generated content. By leveraging invisibility audits and strategic media placements, the business offers a unique edge in a crowded market.\n\nUnderstand the market opportunity\nExecution Plan\n\nLaunch the \"Invisibility Audit Report,\" an automated tool uncovering hidden content by analyzing its lack of external visibility. Integrate with platforms like LinkedIn and Reddit for immediate reach, then expand with real-time tracking and subscriptions. Ready to redefine ethical media presence?\n\nView detailed execution strategy\nFramework Fit\n\nSee how this idea fits into popular frameworks\n\nThe Value Equation\n6Good\nView Analysis\nMarket Matrix\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nView Analysis\nThe A.C.P. Framework\nAudience\n8/10\nCommunity\n6/10\nProduct\n9/10\nView Analysis\nThe Value Ladder\nBait\nFrontend\nCore Offer\nBackend\nContinuity\nView Analysis\nCategorization\n\nType\n\nSaas\n\nMarket\n\nB2B\n\nTarget\n\nSolo Operators\n\nMain Competitor\n\nBuzzSumo\n\nTrend Analysis\n\nThe surge in AI-generated content has led to a discoverability crisis, increasing demand for visibility solutions. The market is trending upwards due to the need for ethical distribution models and earned media, aligning with the platform's focus.\n\nCommunity Signals\nReddit\n5 subreddits found\nFacebook\n8 groups found\nYouTube\n13 channels \u00b7 16 themes\nOther\n4 segments \u00b7 4 priorities\nView detailed breakdown\nTop Keywords\nFastest Growing\nContent Marketing For Link Building\nLOW competition\n2.4K\nAi Seo Platform\nLOW competition\n720\nSeo Services Link Building\nLOW competition\n2.9K\nHighest Volume\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nMost Relevant\nArtificial Intelligence Search Engine Optimization\nMEDIUM competition\n33.1K\nLink Building Services\nLOW competition\n9.9K\nAi Seo Tools\nLOW competition\n5.4K\nView full keyword analysis\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\n\nImportant: Revenue estimates, scores, and market data are illustrative based on research and assumptions. Results vary by execution, timing, and market conditions. Not investment or business advice.",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:ideabrowser\nHUB\nBrowse\nBuild",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB\nBrowse\nBuild:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "ideabrowser\nHUB\nBrowse\nBuild",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:ideabrowser\nHUB",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:ideabrowser\nHUB:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "ideabrowser\nHUB",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Browse\nBuild",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Browse\nBuild:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Browse\nBuild:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Browse\nBuild:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Browse\nBuild:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Browse\nBuild",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Home\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Home\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Home\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Home\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Home\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Home\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Home\nTraining\nMy Profile\nMy Stuff",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Home\nTraining\nMy Profile\nMy Stuff:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Home\nTraining\nMy Profile\nMy Stuff:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Home\nTraining\nMy Profile\nMy Stuff:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Home\nTraining\nMy Profile\nMy Stuff:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Home\nTraining\nMy Profile\nMy Stuff",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Home",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Home:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Home:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Home:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Home:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Home",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Training",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Training:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Training:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Training:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Training:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Training",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:My Profile",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:My Profile:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:My Profile:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:My Profile:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:My Profile:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "My Profile",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:My Stuff",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:My Stuff:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:My Stuff:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:My Stuff:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:My Stuff:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "My Stuff",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Ideas\nDiscover\nResearch\nGenerate",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Ideas\nDiscover\nResearch\nGenerate:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Ideas\nDiscover\nResearch\nGenerate:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Ideas\nDiscover\nResearch\nGenerate:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Ideas\nDiscover\nResearch\nGenerate:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Ideas\nDiscover\nResearch\nGenerate",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Ideas",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Ideas:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Ideas:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Ideas:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Ideas:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Ideas",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Discover\nResearch\nGenerate",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Discover\nResearch\nGenerate:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Discover\nResearch\nGenerate:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Discover\nResearch\nGenerate:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Discover\nResearch\nGenerate:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Discover\nResearch\nGenerate",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Discover",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Discover:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Discover:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Discover:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Discover:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Discover",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Research",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Research:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Research:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Research:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Research:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Research",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Generate",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Generate:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Generate:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Generate:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Generate:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Generate",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Trends\nDiscover\nResearch",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Trends\nDiscover\nResearch:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Trends\nDiscover\nResearch:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Trends\nDiscover\nResearch:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Trends\nDiscover\nResearch:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Trends\nDiscover\nResearch",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Trends",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Trends:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Trends:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Trends:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Trends:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Trends",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Discover\nResearch",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Discover\nResearch:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Discover\nResearch:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Discover\nResearch:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Discover\nResearch:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Discover\nResearch",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Market Insights\nDiscover\nResearch",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Market Insights\nDiscover\nResearch:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Market Insights\nDiscover\nResearch:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Market Insights\nDiscover\nResearch:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Market Insights\nDiscover\nResearch:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Market Insights\nDiscover\nResearch",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "select_keyword:Market Insights",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n    - locator resolved to <span class=\"text-xs md:text-sm text-gray-500 shrink-0\">Keyword:</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "select_time_range:Market Insights:6 Months",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Market Insights:1 Year",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Market Insights:2 Years",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "select_time_range:Market Insights:All Time",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^(6 Months|1 Year|2 Years|All Time)$\")).first\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Market Insights",
+    "time_ranges_captured": 4
+  },
+  {
+    "step": "subpage:Execution Plan #1",
+    "error": "Locator.scroll_into_view_if_needed: Timeout 4988ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    9 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 500ms\n"
+  },
+  {
+    "step": "subpage:Market Gap #1",
+    "error": "Locator.scroll_into_view_if_needed: Timeout 4987ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    9 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 500ms\n"
+  },
+  {
+    "step": "close_execution_modal",
+    "error": "Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"button:has(svg)\").first\n    - locator resolved to <button type=\"button\" data-state=\"closed\" aria-expanded=\"false\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_14piuqtb_\" class=\"inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-gray-100 hover:bg-gray-200 border border-gray-200 text-[10px] font-semibold text-gray-500 tracking-wider uppercase transition-colors shrink-0 cursor-pointer\">\u2026</button>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" class=\"fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" class=\"fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    9 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" class=\"fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n"
   }
 ]
