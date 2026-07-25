@@ -1,6 +1,6 @@
 {
   "date": "2026-07-25",
-  "scraped_at": "2026-07-25T22:20:44.788554+00:00",
+  "scraped_at": "2026-07-25T22:37:06.470472+00:00",
   "source_url": "https://www.ideabrowser.com/hub/ideas/today",
   "summary": {
     "raw_text": "",
@@ -15,7 +15,16 @@
     },
     {
       "step": "login",
-      "error": "Could not find email input field"
+      "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+    },
+    {
+      "step": "login",
+      "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+    },
+    {
+      "step": "login",
+      "error": "Still appears to be on login page after submit attempt.",
+      "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\n\nWelcome Back\n\nFind, Validate, and Build\nIdea of th"
     }
   ]
 }
