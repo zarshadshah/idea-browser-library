@@ -1,10 +1,10 @@
 {
   "id": "2026-07-25",
   "date": "2026-07-25",
-  "title": "My Profile",
-  "tagline": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdat...",
+  "title": "Podcast and newsletter placement engine for small business operators",
+  "tagline": "Solo operators fired their agencies, wired up an AI content stack, and started shipping 20 posts a month. Traffic flatlined. External links, podcast mentions, n...",
   "badges": [],
-  "description": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nJul 25, 2026\n|\nBrowse all\nIdea Actions\nRoast\nBuild with Google AI Studio\nPodcast and newsletter placement engine for small business operators\n\u23f0\nPerfect Timing\n\u26a1\nUnfair Advantage\n+16 More\n\nSolo operators fired their agencies, wired up an AI content stack, and started shipping 20 posts a month. Traffic flatlined. External links, podcast mentions, newsletter pickups all sat at zero. Google reads a publishing spike with no earned signals behind it and files the whole batch as spam. Publishing more posts adds to the pile.\n\nOffpage opens with a paid audit that crawls a client's site and counts posts published since the AI stack went live with no outside link or mention. When 18 of 20 come back invisible, the audit is the pitch. From there, clients subscribe, submit their best posts, and Offpage matches each to podcast bookings, newsletter placements, and expert quote requests. BuzzSumo shows what content is working and who is linking to it, then stops. Offpage does the outreach and lands the placement, and paid links stay out of the model.\n\nBuild starts with backlink-crawling tools for the audit and a database of vetted placement contacts: podcast hosts, newsletter editors, journalists. Deliver the first ten audits by hand to prove the audit converts skeptics into subscribers. Early batches also reveal which verticals convert fastest. Load 50 qualified hosts and editors into the database and keep the matchmaking manual until the submission flow works. Automate the crawl and reporting layer",
+  "description": "Solo operators fired their agencies, wired up an AI content stack, and started shipping 20 posts a month. Traffic flatlined. External links, podcast mentions, newsletter pickups all sat at zero. Google reads a publishing spike with no earned signals behind it and files the whole batch as spam. Publishing more posts adds to the pile.\n\nOffpage opens with a paid audit that crawls a client's site and counts posts published since the AI stack went live with no outside link or mention. When 18 of 20 come back invisible, the audit is the pitch. From there, clients subscribe, submit their best posts, and Offpage matches each to podcast bookings, newsletter placements, and expert quote requests. BuzzSumo shows what content is working and who is linking to it, then stops. Offpage does the outreach and lands the placement, and paid links stay out of the model.\n\nBuild starts with backlink-crawling tools for the audit and a database of vetted placement contacts: podcast hosts, newsletter editors, journalists. Deliver the first ten audits by hand to prove the audit converts skeptics into subscribers. Early batches also reveal which verticals convert fastest. Load 50 qualified hosts and editors into the database and keep the matchmaking manual until the submission flow works. Automate the crawl and reporting layer first, and keep placements hands-on until they come back reliably.\n\nPricing opens at $200 for the audit, then runs $500 to $1500 per earned placement. Professionals in high-trust verticals like dental practices, law firms, and real estate agencies buy first, because their online presence drives direct revenue. Distribution runs through search-marketing communities and content forums where AI-publishing frustration surfaces daily. Refusing paid links is the durable wedge, because earned placements run on editorial relationships a per-click link shop has no way to broker.",
   "scores": {
     "opportunity": {
       "score": 9,
@@ -194,7 +194,7 @@
   },
   "categorization": {
     "type": "Saas",
-    "market": "Strong traction with clear demand for ethical content distribution across digital marketing communities.",
+    "market": "B2B",
     "target": "Solo Operators",
     "competitor": "BuzzSumo"
   },
@@ -209,6 +209,6 @@
   "status": "not_started",
   "notes": "",
   "_source_url": "https://www.ideabrowser.com/hub/ideas/today",
-  "_scraped_at": "2026-07-25T23:13:12.743874+00:00",
+  "_scraped_at": "2026-07-25T23:26:04.295290+00:00",
   "_crawl_had_errors": true
 }
