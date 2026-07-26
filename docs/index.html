@@ -25,7 +25,13 @@
 <!-- Babel standalone, so the browser can transpile JSX directly (no build step needed) -->
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-<!-- lucide icons, exposed as a global for our component to destructure from -->
+<!-- lucide (vanilla icon data package — NOT lucide-react). Its UMD build
+     exposes icons as raw SVG path-node arrays, not React components, so our
+     component file wraps them into real React components itself via a
+     small adapter (see idea-library-component.jsx) rather than depending
+     on lucide-react's UMD build, whose availability/global name is
+     uncertain across versions (some releases dropped UMD builds entirely
+     except for this base package). -->
 <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js"></script>
 
 <style>
