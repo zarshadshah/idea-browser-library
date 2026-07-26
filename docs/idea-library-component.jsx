@@ -261,14 +261,25 @@ function parseStructuredSections(text) {
 // all-caps) makes this a distinct, reliable second pattern rather than a
 // fuzzy guess.
 function parseAllCapsSections(text) {
-  if (!text) return { intro: "", sections: [] };
+  if (!text) return { intro: [], sections: [] };
   const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
-  // A real section header line: short (under ~50 chars), letters/spaces/
-  // digits/colon/ampersand only, and genuinely all-uppercase where it has
-  // any letters at all (so pure-number or pure-punctuation lines don't
-  // false-positive).
-  const isCapsHeader = (l) =>
-    l.length > 2 && l.length < 50 && /^[A-Z0-9 &:'\-]+$/.test(l) && /[A-Z]/.test(l);
+  // A real section header line (e.g. "LEAD MAGNET", "PART 1: BUSINESS
+  // CLASSIFICATION") always has multiple words separated by spaces. Short
+  // value-tokens the scraper also renders in all caps — "B2B", numbers,
+  // acronyms standing alone as a field's actual value rather than a
+  // heading — do NOT have that shape. Requiring at least 2 space-
+  // separated words (and each "word" containing a real letter, not just
+  // digits/punctuation) is what actually distinguishes a genuine section
+  // heading from a short caps-cased value that happens to appear on its
+  // own line; confirmed directly against real broken output where "B2B"
+  // alone was being mis-treated as a heading.
+  const isCapsHeader = (l) => {
+    if (l.length < 6 || l.length > 60) return false;
+    if (!/^[A-Z0-9 &:'()\-]+$/.test(l)) return false;
+    const words = l.split(/\s+/).filter(Boolean);
+    if (words.length < 2) return false;
+    return words.some((w) => /[A-Z]{2,}/.test(w));
+  };
 
   const sections = [];
   let intro = [];
@@ -276,17 +287,55 @@ function parseAllCapsSections(text) {
   for (const line of lines) {
     if (isCapsHeader(line)) {
       if (current) sections.push(current);
-      current = { title: line, body: [] };
+      current = { title: line, lines: [] };
       continue;
     }
-    if (current) current.body.push(line);
+    if (current) current.lines.push(line);
     else intro.push(line);
   }
   if (current) sections.push(current);
-  return {
-    intro: intro.join(" ").trim(),
-    sections: sections.map((s) => ({ ...s, body: s.body.join(" ").trim() })),
-  };
+  return { intro, sections };
+}
+
+// Real scraped text (Execution Plan, ACP Framework, etc) contains many
+// short "Label" / "Value" line pairs — e.g. "Timeline" then "1-2 weeks"
+// on the very next line — alongside genuine full sentences. Detecting
+// this shape lets us render those as a clean label:value list instead of
+// mashing everything into one run-on paragraph.
+//
+// A genuine label in this data (confirmed against real examples: "Type",
+// "Timeline", "Budget", "Business Type", "Market Position", "Key Pain
+// Points") is consistently: short (under ~25 chars), Title Case or every
+// word capitalized, contains no digits/currency symbols/percent signs
+// itself, and has no ending sentence punctuation. A genuine VALUE line
+// can be anything (a sentence, a price, a short answer) — but critically,
+// two labels never appear back-to-back in real data, so if the line
+// immediately following a label also looks like a label, that first line
+// was actually a standalone item, not a real label for what follows.
+function groupIntoLabelValuePairs(lines) {
+  const isLikelyLabel = (l) =>
+    l.length > 0 &&
+    l.length < 25 &&
+    !/[.!?]$/.test(l) &&
+    !/\d/.test(l) &&
+    !/[$%]/.test(l) &&
+    /^[A-Z]/.test(l) &&
+    l.split(/\s+/).every((w) => /^[A-Z]/.test(w) || w.length <= 3);
+
+  const items = [];
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+    const next = lines[i + 1];
+    if (isLikelyLabel(line) && next && !isLikelyLabel(next)) {
+      items.push({ label: line, value: next });
+      i += 2;
+    } else {
+      items.push({ label: null, value: line });
+      i += 1;
+    }
+  }
+  return items;
 }
 
 // Renders a long scraped field with real visual structure: an intro
@@ -327,18 +376,19 @@ function StructuredSection({ text }) {
 
   const capsParsed = parseAllCapsSections(clean);
   if (capsParsed.sections.length >= 2) {
+    const introItems = groupIntoLabelValuePairs(capsParsed.intro);
     return (
       <div className="space-y-4">
-        {capsParsed.intro && <p className="leading-relaxed">{capsParsed.intro}</p>}
+        {introItems.length > 0 && <LabelValueList items={introItems} />}
         {capsParsed.sections.map((s, i) => (
           <div key={i}>
             <h4
-              className="text-xs font-bold uppercase tracking-wider mb-1 pb-1 border-b border-black/10"
+              className="text-xs font-bold uppercase tracking-wider mb-1.5 pb-1 border-b border-black/10"
               style={{ color: "#E8A33D", fontFamily: "'JetBrains Mono', monospace" }}
             >
               {s.title}
             </h4>
-            <p className="text-sm leading-relaxed whitespace-pre-line opacity-80">{s.body}</p>
+            <LabelValueList items={groupIntoLabelValuePairs(s.lines)} />
           </div>
         ))}
       </div>
@@ -346,6 +396,28 @@ function StructuredSection({ text }) {
   }
 
   return <p className="leading-relaxed whitespace-pre-line">{clean}</p>;
+}
+
+// Renders the label/value (or plain-sentence) items produced by
+// groupIntoLabelValuePairs: a bold short label with its value beside it
+// where a real label was detected, or just a plain paragraph line for
+// genuine full sentences that don't fit that pattern.
+function LabelValueList({ items }) {
+  if (!items.length) return null;
+  return (
+    <div className="space-y-1.5">
+      {items.map((item, i) =>
+        item.label ? (
+          <div key={i} className="flex flex-wrap gap-x-2 text-sm">
+            <span className="font-semibold shrink-0">{item.label}:</span>
+            <span className="opacity-80">{item.value}</span>
+          </div>
+        ) : (
+          <p key={i} className="text-sm leading-relaxed opacity-80">{item.value}</p>
+        )
+      )}
+    </div>
+  );
 }
 
 function ScoreBar({ label, score, icon: Icon }) {
@@ -735,7 +807,11 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                 <div className="text-[10px] uppercase tracking-wider opacity-40" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                   The pitch — see Market, Execution & Keywords tabs for the rest
                 </div>
-                <p className="text-sm leading-relaxed">{idea.description}</p>
+                <div className="space-y-3 text-sm leading-relaxed">
+                  {(idea.description || "").split(/\n\s*\n/).filter(Boolean).map((para, i) => (
+                    <p key={i}>{para.trim()}</p>
+                  ))}
+                </div>
                 <div className="grid grid-cols-2 gap-x-6 gap-y-2 pt-2">
                   <ScoreBar label="Opp." score={idea.scores.opportunity.score} icon={TrendingUp} />
                   <ScoreBar label="Problem" score={idea.scores.problem.score} icon={AlertCircle} />
