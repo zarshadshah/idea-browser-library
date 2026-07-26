@@ -227,6 +227,115 @@ function Stamp({ status }) {
 // visual shape: a smooth rising/falling curve whose steepness reflects the
 // actual growth percentage, clearly conveying "this is trending up fast"
 // vs "this is flat" at a glance, without pretending to show exact history.
+// Real interactive hover chart for a keyword's volume history, built by
+// hand with plain SVG (no charting library dependency, given the CDN/UMD
+// reliability issues we've hit elsewhere in this app) — matches the site's
+// own line-chart style. Only renders when real chartHistory data exists
+// for this keyword (captured by hovering the site's actual chart during
+// scraping); if that data is missing for a given day/keyword, the caller
+// falls back to the plain volume/growth summary instead of showing a fake
+// or empty chart.
+function KeywordHistoryChart({ history }) {
+  const [hoverIndex, setHoverIndex] = useState(null);
+  const width = 600;
+  const height = 220;
+  const padding = { top: 20, right: 20, bottom: 30, left: 50 };
+  const plotW = width - padding.left - padding.right;
+  const plotH = height - padding.top - padding.bottom;
+
+  // Parse numeric values out of strings like "8,100 searches" -> 8100.
+  const points = history
+    .map((h) => {
+      const m = String(h.value || "").replace(/,/g, "").match(/(\d+)/);
+      return { label: h.label, raw: h.value, num: m ? Number(m[1]) : 0 };
+    })
+    .filter((p) => p.label);
+
+  if (points.length < 2) return null;
+
+  const maxVal = Math.max(...points.map((p) => p.num), 1);
+  const toX = (i) => padding.left + (i / (points.length - 1)) * plotW;
+  const toY = (v) => padding.top + plotH - (v / maxVal) * plotH;
+
+  const linePath = points.map((p, i) => `${i === 0 ? "M" : "L"} ${toX(i)} ${toY(p.num)}`).join(" ");
+  const areaPath = `${linePath} L ${toX(points.length - 1)} ${padding.top + plotH} L ${toX(0)} ${padding.top + plotH} Z`;
+
+  const handleMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const relX = ((e.clientX - rect.left) / rect.width) * width;
+    const frac = Math.max(0, Math.min(1, (relX - padding.left) / plotW));
+    setHoverIndex(Math.round(frac * (points.length - 1)));
+  };
+
+  const active = hoverIndex != null ? points[hoverIndex] : null;
+
+  return (
+    <div className="relative">
+      <svg
+        viewBox={`0 0 ${width} ${height}`}
+        className="w-full h-auto"
+        onMouseMove={handleMove}
+        onMouseLeave={() => setHoverIndex(null)}
+      >
+        {/* Y-axis gridlines + labels */}
+        {[0, 0.25, 0.5, 0.75, 1].map((frac) => (
+          <g key={frac}>
+            <line
+              x1={padding.left}
+              x2={width - padding.right}
+              y1={padding.top + plotH * (1 - frac)}
+              y2={padding.top + plotH * (1 - frac)}
+              stroke="rgba(0,0,0,0.06)"
+              strokeWidth="1"
+            />
+            <text x={padding.left - 8} y={padding.top + plotH * (1 - frac) + 4} textAnchor="end" fontSize="10" fill="rgba(0,0,0,0.4)" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              {Math.round(maxVal * frac).toLocaleString()}
+            </text>
+          </g>
+        ))}
+        {/* Area fill + line */}
+        <path d={areaPath} fill="#E8A33D" opacity="0.12" />
+        <path d={linePath} fill="none" stroke="#E8A33D" strokeWidth="2" />
+        {/* X-axis labels: show a handful evenly spaced, not every point */}
+        {points
+          .filter((_, i) => i % Math.ceil(points.length / 6) === 0)
+          .map((p) => {
+            const i = points.indexOf(p);
+            return (
+              <text key={i} x={toX(i)} y={height - 8} textAnchor="middle" fontSize="10" fill="rgba(0,0,0,0.4)" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                {p.label}
+              </text>
+            );
+          })}
+        {/* Hover indicator */}
+        {active && (
+          <>
+            <line x1={toX(hoverIndex)} x2={toX(hoverIndex)} y1={padding.top} y2={padding.top + plotH} stroke="#12151C" strokeWidth="1" strokeDasharray="3,3" opacity="0.4" />
+            <circle cx={toX(hoverIndex)} cy={toY(active.num)} r="4" fill="#12151C" stroke="#E8A33D" strokeWidth="2" />
+          </>
+        )}
+      </svg>
+      {active && (
+        <div
+          className="absolute pointer-events-none px-2 py-1 rounded text-xs shadow-lg"
+          style={{
+            left: `${(toX(hoverIndex) / width) * 100}%`,
+            top: `${(toY(active.num) / height) * 100}%`,
+            transform: "translate(-50%, -130%)",
+            backgroundColor: "#12151C",
+            color: "#F7F4EC",
+            fontFamily: "'JetBrains Mono', monospace",
+            whiteSpace: "nowrap",
+          }}
+        >
+          <div className="font-bold">{active.label}</div>
+          <div>{active.raw}</div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function KeywordSparkline({ growth, color }) {
   const width = 72;
   const height = 28;
@@ -472,6 +581,15 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                 <div className="text-[10px] uppercase tracking-wider opacity-40 mb-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                   Search demand data — sorted by growth
                 </div>
+                {idea.keywords?.[0]?.chartHistory?.length >= 2 && (
+                  <div className="mb-4 pb-4 border-b border-black/10">
+                    <div className="text-xs font-semibold mb-2" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      {idea.keywords[0].keyword} — search volume over time
+                    </div>
+                    <KeywordHistoryChart history={idea.keywords[0].chartHistory} />
+                    <div className="text-[10px] opacity-40 mt-1">Hover the chart to see monthly values</div>
+                  </div>
+                )}
                 {idea.keywords?.length ? (
                   idea.keywords
                     .slice()
@@ -619,13 +737,74 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     </div>
                   ))}
                 </div>
-                {idea.communitySignalsDetail && (
-                  <details className="pt-2 border-t border-black/10">
-                    <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                      Full Community Breakdown ▾
-                    </summary>
-                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.communitySignalsDetail}</p>
-                  </details>
+                {idea.communitySignalsRich && Object.values(idea.communitySignalsRich).some((arr) => arr?.length) ? (
+                  <div className="space-y-3 pt-2">
+                    {Object.entries(idea.communitySignalsRich).map(([platform, communities]) =>
+                      (communities || []).length > 0 ? (
+                        <div key={platform}>
+                          <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1.5 capitalize" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                            {platform}
+                          </div>
+                          <div className="space-y-2">
+                            {communities.map((community, i) => (
+                              <details key={i} className="rounded-lg border border-black/10 overflow-hidden">
+                                <summary className="cursor-pointer px-3 py-2 font-semibold flex items-center justify-between gap-2">
+                                  <span className="truncate">{community.name || "Community"}</span>
+                                  <ChevronRight size={14} className="opacity-40 shrink-0" />
+                                </summary>
+                                <div className="px-3 pb-3 space-y-2 border-t border-black/5 pt-2">
+                                  {community.summary && (
+                                    <p className="text-xs opacity-70 leading-relaxed">{community.summary}</p>
+                                  )}
+                                  {community.discussions?.length > 0 && (
+                                    <div className="space-y-1.5">
+                                      <div className="text-[10px] uppercase tracking-wider opacity-40">
+                                        {community.discussions.length} discussion{community.discussions.length !== 1 ? "s" : ""} found
+                                      </div>
+                                      {community.discussions.map((d, di) => (
+                                        <a
+                                          key={di}
+                                          href={d.url}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          className="flex items-center gap-2 text-xs px-2 py-1.5 rounded hover:bg-black/5 transition-colors"
+                                          style={{ color: "#12151C" }}
+                                        >
+                                          <ExternalLink size={12} className="opacity-50 shrink-0" />
+                                          <span className="truncate underline decoration-black/20">{d.title}</span>
+                                        </a>
+                                      ))}
+                                    </div>
+                                  )}
+                                  {community.url && !community.discussions?.length && (
+                                    <a
+                                      href={community.url}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="inline-flex items-center gap-1 text-xs underline"
+                                      style={{ color: "#6B8F71" }}
+                                    >
+                                      <ExternalLink size={12} />
+                                      View source
+                                    </a>
+                                  )}
+                                </div>
+                              </details>
+                            ))}
+                          </div>
+                        </div>
+                      ) : null
+                    )}
+                  </div>
+                ) : (
+                  idea.communitySignalsDetail && (
+                    <details className="pt-2 border-t border-black/10">
+                      <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                        Full Community Breakdown ▾
+                      </summary>
+                      <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.communitySignalsDetail}</p>
+                    </details>
+                  )
                 )}
               </div>
             )}
