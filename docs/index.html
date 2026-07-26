@@ -54,7 +54,14 @@
     })
     .then((source) => {
       const transformed = Babel.transform(source, {
-        presets: ['react'],
+        // "classic" runtime compiles JSX to React.createElement(...) calls
+        // using the global React object we already load via CDN. The
+        // default "automatic" runtime (Babel's modern default since React
+        // 17) instead injects `require("react/jsx-runtime")` into the
+        // output, assuming a bundler/Node environment will resolve that
+        // import — which fails outright in a plain browser with "require
+        // is not defined". Classic mode needs no module resolution at all.
+        presets: [['react', { runtime: 'classic' }]],
         filename: 'idea-library-component.jsx',
         sourceType: 'script',
       }).code;
