@@ -36,23 +36,40 @@
 <body>
 <div id="root"></div>
 
-<script type="text/babel" data-presets="react" src="idea-library-component.jsx"></script>
-<script type="text/babel" data-presets="react">
-  // Babel standalone transforms <script type="text/babel"> tags in
-  // document order and runs them as soon as each is transformed — but a
-  // script loaded via src= is fetched asynchronously, so this inline
-  // mounting code could in theory run before idea-library-component.jsx
-  // has finished loading and attached window.IdeaLibraryApp. Poll briefly
-  // to guarantee correct ordering regardless of network timing.
-  function mountWhenReady() {
-    if (window.IdeaLibraryApp) {
+<script>
+  // Load and transpile idea-library-component.jsx manually instead of
+  // relying on Babel Standalone's automatic <script type="text/babel"
+  // src="..."> handling. A real deployment hit an opaque error inside
+  // Babel's own script-loading path ("Cannot use import statement outside
+  // a module", traced through Babel's internal transformScriptTags code)
+  // even though the source file itself was verified correct and contains
+  // no import/export statements at all. Fetching the raw source and
+  // transforming it explicitly with Babel.transform() avoids that internal
+  // code path entirely and gives us a real, visible error message if
+  // something still goes wrong, instead of an opaque internal stack trace.
+  fetch('idea-library-component.jsx')
+    .then((res) => {
+      if (!res.ok) throw new Error(`Failed to fetch component source: ${res.status}`);
+      return res.text();
+    })
+    .then((source) => {
+      const transformed = Babel.transform(source, {
+        presets: ['react'],
+        filename: 'idea-library-component.jsx',
+      }).code;
+      // Execute the transformed code in global scope so it can attach
+      // window.IdeaLibraryApp, then mount it.
+      (0, eval)(transformed);
       const root = ReactDOM.createRoot(document.getElementById('root'));
       root.render(React.createElement(window.IdeaLibraryApp));
-    } else {
-      setTimeout(mountWhenReady, 30);
-    }
-  }
-  mountWhenReady();
+    })
+    .catch((err) => {
+      document.getElementById('root').innerHTML =
+        '<div style="color: #F7F4EC; font-family: monospace; padding: 20px; white-space: pre-wrap;">' +
+        'Failed to load app:\n' + (err && err.message ? err.message : String(err)) +
+        '</div>';
+      console.error('Idea Library load error:', err);
+    });
 </script>
 </body>
 </html>
