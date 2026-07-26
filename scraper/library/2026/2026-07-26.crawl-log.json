@@ -85,13 +85,13 @@
     "x": 380.6521739130435,
     "y": 711.40625,
     "tooltip_count": 1,
-    "tooltip_visible": false,
-    "tooltip_text_raw": "",
-    "has_real_tooltip_content": false
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Jul 2022\n\n0 searches",
+    "has_real_tooltip_content": true
   },
   {
     "step": "crawl_chart_history:finished",
-    "points_captured": 0
+    "points_captured": 21
   },
   {
     "step": "keyword_done",
