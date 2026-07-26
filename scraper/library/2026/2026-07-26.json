@@ -122,42 +122,558 @@
       "volume": 1600,
       "growth": 15900.0,
       "cpc": null,
-      "competition": null
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Aug 2022",
+          "value": "30 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "40 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "210 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "210 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "170 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "320 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "390 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "390 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "390 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "720 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "880 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "1,600 searches"
+        }
+      ]
     },
     {
       "keyword": "Ai code review",
       "volume": 4400,
       "growth": 2488.0,
       "cpc": null,
-      "competition": null
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Aug 2022",
+          "value": "210 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "320 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "5,400 searches"
+        }
+      ]
     },
     {
       "keyword": "Ai powered code review",
       "volume": 590,
       "growth": 5800.0,
       "cpc": null,
-      "competition": null
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Jul 2022",
+          "value": "10 searches"
+        },
+        {
+          "label": "Sep 2022",
+          "value": "10 searches"
+        },
+        {
+          "label": "Nov 2022",
+          "value": "20 searches"
+        },
+        {
+          "label": "Jan 2023",
+          "value": "70 searches"
+        },
+        {
+          "label": "Mar 2023",
+          "value": "90 searches"
+        },
+        {
+          "label": "Jun 2023",
+          "value": "50 searches"
+        },
+        {
+          "label": "Aug 2023",
+          "value": "70 searches"
+        },
+        {
+          "label": "Oct 2023",
+          "value": "40 searches"
+        },
+        {
+          "label": "Dec 2023",
+          "value": "70 searches"
+        },
+        {
+          "label": "Feb 2024",
+          "value": "40 searches"
+        },
+        {
+          "label": "Apr 2024",
+          "value": "50 searches"
+        },
+        {
+          "label": "Jul 2024",
+          "value": "90 searches"
+        },
+        {
+          "label": "Sep 2024",
+          "value": "70 searches"
+        },
+        {
+          "label": "Nov 2024",
+          "value": "110 searches"
+        },
+        {
+          "label": "Jan 2025",
+          "value": "210 searches"
+        },
+        {
+          "label": "Mar 2025",
+          "value": "170 searches"
+        },
+        {
+          "label": "May 2025",
+          "value": "210 searches"
+        },
+        {
+          "label": "Jul 2025",
+          "value": "260 searches"
+        },
+        {
+          "label": "Oct 2025",
+          "value": "720 searches"
+        },
+        {
+          "label": "Dec 2025",
+          "value": "590 searches"
+        },
+        {
+          "label": "Feb 2026",
+          "value": "1,300 searches"
+        }
+      ]
     },
     {
       "keyword": "Copilot code review",
       "volume": 1600,
       "growth": 15900.0,
       "cpc": null,
-      "competition": null
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Jul 2022",
+          "value": "10 searches"
+        },
+        {
+          "label": "Sep 2022",
+          "value": "10 searches"
+        },
+        {
+          "label": "Nov 2022",
+          "value": "50 searches"
+        },
+        {
+          "label": "Jan 2023",
+          "value": "170 searches"
+        },
+        {
+          "label": "Mar 2023",
+          "value": "390 searches"
+        },
+        {
+          "label": "Jun 2023",
+          "value": "320 searches"
+        },
+        {
+          "label": "Aug 2023",
+          "value": "320 searches"
+        },
+        {
+          "label": "Oct 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Dec 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Feb 2024",
+          "value": "720 searches"
+        },
+        {
+          "label": "Apr 2024",
+          "value": "720 searches"
+        },
+        {
+          "label": "Jul 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Sep 2024",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Nov 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Jan 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Mar 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "May 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Jul 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Oct 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Dec 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Feb 2026",
+          "value": "2,900 searches"
+        }
+      ]
     },
     {
       "keyword": "Code review ai",
       "volume": 4400,
       "growth": 2488.0,
       "cpc": null,
-      "competition": null
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Aug 2022",
+          "value": "210 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "320 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "5,400 searches"
+        }
+      ]
     },
     {
       "keyword": "Staging production",
       "volume": 2400,
       "growth": 0.0,
       "cpc": null,
-      "competition": null
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Jul 2022",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Sep 2022",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Nov 2022",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Jan 2023",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Mar 2023",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Jun 2023",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Aug 2023",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Oct 2023",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Dec 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Feb 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Apr 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Jul 2024",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Sep 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Nov 2024",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Jan 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Mar 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "May 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Jul 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Oct 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Dec 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Feb 2026",
+          "value": "2,900 searches"
+        }
+      ]
     }
   ],
   "marketGap": "Market Gap\n\nOverall Rating\n\n8\n/10\n\nThe biggest market gap is in creating a secure, AI-specific sandbox environment for developers to safely execute AI coding agents without risking live systems. This matters because traditional staging solutions lack AI-oriented safety features, leaving founders vulnerable to costly production errors.\n\n\ud83d\udeab\nUnderserved Customer Segments\n9\n/10\nSolo SaaS Founders\nTools focus on infra teams and enterprises, leaving solo founders under-supported for safely using AI coding agents in live apps. [1]\n\ud83e\udde9\nFeature Gaps\n8\n/10\nBlack-box Recorder\nCurrent tools do not document AI actions with logs, diff reports, or approval workflows essential for production safety. [1]\n\ud83c\udf0d\nGeographic Opportunities\n7\n/10\nRegulated Regions\nVendors are US/EU-centric, offering potential for compliance-friendly offerings in APAC, LATAM, Africa. [1]\n\ud83d\udd17\nIntegration Opportunities\n9\n/10\nAI IDE Plugins\nPopular AI tools lack default deep sandbox integration, presenting a gap for a standard safety plugin. [1]\n\ud83d\udca1\nDifferentiation Levers\n8\n/10\nSafety-focused Staging\nUnlike Vercel or GitHub, this solution emphasizes agent-specific isolation, fake data, and command tracking for SaaS applications. [1]\nCitations & Sources\n1 - https://www.precedenceresearch.com/ai-code-tools-market\n0",
@@ -227,8 +743,7 @@
             "title": "IBM Technology and IBM Developer",
             "url": "https://youtube.com/results?search_query=BeyondCoding"
           }
-        ],
-        "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/youtube-analysis"
+        ]
       },
       {
         "name": "Jeff Su",
@@ -274,8 +789,7 @@
             "title": "IBM Technology and IBM Developer",
             "url": "https://youtube.com/results?search_query=BeyondCoding"
           }
-        ],
-        "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/youtube-analysis"
+        ]
       },
       {
         "name": "Tech With Tim",
@@ -321,8 +835,7 @@
             "title": "IBM Technology and IBM Developer",
             "url": "https://youtube.com/results?search_query=BeyondCoding"
           }
-        ],
-        "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/youtube-analysis"
+        ]
       },
       {
         "name": "AI Engineer",
@@ -368,8 +881,7 @@
             "title": "IBM Technology and IBM Developer",
             "url": "https://youtube.com/results?search_query=BeyondCoding"
           }
-        ],
-        "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/youtube-analysis"
+        ]
       },
       {
         "name": "CodeRabbitAI",
@@ -415,8 +927,7 @@
             "title": "IBM Technology and IBM Developer",
             "url": "https://youtube.com/results?search_query=BeyondCoding"
           }
-        ],
-        "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/youtube-analysis"
+        ]
       }
     ],
     "other": []
@@ -431,6 +942,6 @@
   "status": "not_started",
   "notes": "",
   "_source_url": "https://www.ideabrowser.com/hub/ideas/today",
-  "_scraped_at": "2026-07-26T16:44:30.017804+00:00",
+  "_scraped_at": "2026-07-26T17:33:53.432208+00:00",
   "_crawl_had_errors": true
 }
