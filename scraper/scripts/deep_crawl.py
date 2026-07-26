@@ -585,6 +585,17 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
             open_keyword_dropdown()
             page.get_by_text(k, exact=True).first.click(timeout=8000)
             page.wait_for_timeout(WAIT_CHART)
+            # CRITICAL — real debug screenshots (taken while investigating
+            # why the chart-hover tooltip never appeared) showed this
+            # dropdown remaining VISUALLY OPEN, covering the top-left
+            # portion of the chart, even after clicking a keyword option.
+            # The chart itself was real and rendering fine the whole time
+            # — every earlier "chart isn't responding" theory was wrong;
+            # our hover coordinates were simply landing on this leftover
+            # dropdown overlay instead of the chart underneath it. Close it
+            # explicitly now that selection is done.
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(300)
 
         crawler.safe(select_keyword, f"select_keyword:{kw_clean}")
 
@@ -894,6 +905,15 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
     # real run produced zero log entries for this function at all, so this
     # confirms on the next run whether execution reaches here.
     log.append({"step": "crawl_chart_history:entered", "selector": chart_container_selector})
+
+    # Defensive second safety net — real debug screenshots proved the
+    # keyword dropdown was staying visually open and covering part of the
+    # chart at this exact point in earlier runs, even though the caller
+    # (select_keyword) now also closes it explicitly. Belt-and-braces:
+    # ensure no popover/overlay is sitting over the chart before we start
+    # measuring its position or hovering over it.
+    page.keyboard.press("Escape")
+    page.wait_for_timeout(200)
 
     # A real run found the chart container (no "not found" error) but
     # captured zero tooltip points across 24 hover samples — meaning either
