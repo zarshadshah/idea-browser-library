@@ -129,12 +129,12 @@
   {
     "step": "crawl_platform:facebook:landed",
     "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/facebook-analysis",
-    "card_count": 15,
+    "card_count": 7,
     "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nSafe playground for AI agents before they reach production\nCommunity Signals\nPro welcome offer \u00b7 20d 18h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nSafe playground for AI agents before they reach production\nCommunity Signals\nFacebook Analysis\nFacebook Groups\n\n7 groups analyzed\n\nKey Findings\nThere's a vibrant conversation happening within Facebook groups about AI and code review, presenting a clear business opportunity. The \"Claude AI Community,\" with over 70 engaging comments, focuses on AI code management, offering a prime audience for introducing secure sandbox environments. The \"Developer Kaki\" group, with over 10 active discussions, highlights developer concerns about AI overreliance, underscoring the need for accurate code reviews \u2013 a perfect fit for enhanced safety mechanisms. Meanwhile, \"ICT Hub Kenya\" and \"Artificial Intelligence for Education\" discuss AI integration in workflows and educational scaling, pointing to potential partnerships in tech teams and educational platforms. Exploring these communities, where engagement is lively and discussions ar"
   },
   {
     "step": "crawl_platform:facebook:finished",
-    "communities_found": 15
+    "communities_found": 7
   },
   {
     "step": "crawl_platform:youtube:starting"
@@ -142,12 +142,12 @@
   {
     "step": "crawl_platform:youtube:landed",
     "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/youtube-analysis",
-    "card_count": 13,
+    "card_count": 15,
     "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nSafe playground for AI agents before they reach production\nCommunity Signals\nPro welcome offer \u00b7 20d 18h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nSafe playground for AI agents before they reach production\nCommunity Signals\nYouTube Analysis\nYouTube Content Analysis\n\nAnalyzed 11 channels with relevant content\n\nKey Findings\nIn the dynamic world of AI-related YouTube content, viewer engagement peaks when complex topics are made accessible and actionable. Videos that simplify AI for broader audiences, like those from Jeff Su, garner massive attention with an average of 4.5 million views, underscoring a keen interest in digestible explanations. In contrast, \"IBM Technology and IBM Developer\" channels attract consistent engagement, averaging around 200,000 views, by focusing on educational content about AI and software development. Notably, explainer videos dominate with approximately 500,000 average views, driven by the audience's preference for clear concepts, while interactive tutorials like those from \"Tech With Tim,\" with 119K views, encourage practical explor"
   },
   {
     "step": "crawl_platform:youtube:finished",
-    "communities_found": 13
+    "communities_found": 15
   },
   {
     "step": "crawl_platform:other:starting"
@@ -155,11 +155,11 @@
   {
     "step": "crawl_platform:other:landed",
     "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/other-communities",
-    "card_count": 15,
+    "card_count": 5,
     "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nSafe playground for AI agents before they reach production\nCommunity Signals\nPro welcome offer \u00b7 20d 18h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nSafe playground for AI agents before they reach production\nCommunity Signals\nOther Communities\nOther Communities\n\nAnalyzed 5 community segments across 5 types\n\nAnalysis Overview\n\nCommunity Segments\n\n5\n\nCommunity Types\n\n5\n\nPriority Communities\n\n5\n\nContent Strategies\n\n5\n\nPartnership Opportunities\n\n3\n\nCommunity Types\n\nAI Agent Builders\n\nSolo SaaS Founders\n\nDevSecOps Professionals\n\nDeveloper Tool Ecosystems\n\nEducational & Content Creators\n\nCommunity Segments\nAI Agent Builders & Early Adopters\n\nLLM engineers and advanced users of autonomous agents.\n\nPain Points\n\n\u2022 Production incidents\n\u2022 Lack of isolation\n\nInterests\n\n\u2022 Safe execution environments\n\u2022 Log and audit trails\nReddit\nDeepLearning.AI\nBlogs\nSolo SaaS Founders\n\nBootstrapper founders using AI tools on SaaS products.\n\nPain Points\n\n\u2022 AI agents too close to production\n\u2022 Complex dev vs. prod differences\n\nInterests\n\n\u2022 Low-ops safety layers\n\u2022 Seamless prompting workflows\n"
   },
   {
     "step": "crawl_platform:other:finished",
-    "communities_found": 15
+    "communities_found": 5
   }
 ]
