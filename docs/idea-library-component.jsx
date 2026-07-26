@@ -3,6 +3,14 @@
 // globals instead of using ES module imports.
 const { useState, useEffect, useCallback } = React;
 
+// TEMP DIAGNOSTIC — remove once we've confirmed lucide's actual export
+// shape in this UMD build version. Logs to console so we can inspect via
+// dev tools without needing another round-trip screenshot.
+console.log("LUCIDE DEBUG — typeof lucide:", typeof lucide);
+console.log("LUCIDE DEBUG — lucide.ChevronDown:", JSON.stringify(lucide?.ChevronDown));
+console.log("LUCIDE DEBUG — Array.isArray(lucide.ChevronDown):", Array.isArray(lucide?.ChevronDown));
+console.log("LUCIDE DEBUG — keys sample:", lucide ? Object.keys(lucide).slice(0, 10) : "lucide is undefined");
+
 // The plain "lucide" package (as opposed to "lucide-react") exposes each
 // icon as a PascalCase-named array of SVG node descriptors — e.g.
 // ChevronDown = [["path", {d: "..."}], ...] — meant for vanilla-JS use via
@@ -14,6 +22,17 @@ const { useState, useEffect, useCallback } = React;
 // function component on the fly.
 function makeLucideIcon(iconNode) {
   return function LucideIcon({ size = 24, className, style, ...rest }) {
+    // Defensive: some lucide UMD builds wrap icon data in an object like
+    // { name, icon: [...] } or { toSvg, iconNode } rather than exposing
+    // the raw node array directly under the icon's name. Unwrap common
+    // shapes here instead of assuming iconNode is always the raw array.
+    const nodes = Array.isArray(iconNode)
+      ? iconNode
+      : Array.isArray(iconNode?.iconNode)
+      ? iconNode.iconNode
+      : Array.isArray(iconNode?.icon)
+      ? iconNode.icon
+      : [];
     return React.createElement(
       "svg",
       {
@@ -30,7 +49,7 @@ function makeLucideIcon(iconNode) {
         style,
         ...rest,
       },
-      iconNode.map(([tag, attrs], i) => React.createElement(tag, { key: i, ...attrs }))
+      nodes.map(([tag, attrs], i) => React.createElement(tag, { key: i, ...attrs }))
     );
   };
 }
