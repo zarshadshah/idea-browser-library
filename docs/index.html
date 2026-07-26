@@ -56,6 +56,7 @@
       const transformed = Babel.transform(source, {
         presets: ['react'],
         filename: 'idea-library-component.jsx',
+        sourceType: 'script',
       }).code;
       // Execute the transformed code in global scope so it can attach
       // window.IdeaLibraryApp, then mount it.
