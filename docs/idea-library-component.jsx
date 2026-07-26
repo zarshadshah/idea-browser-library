@@ -322,12 +322,12 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
           </div>
 
           {/* Tabs */}
-          <div className="flex gap-1 mb-4 border-b border-black/10">
+          <div className="flex gap-1 mb-4 border-b border-black/10 overflow-x-auto" style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
             {TABS.map((t) => (
               <button
                 key={t}
                 onClick={() => setTab(t)}
-                className="px-3 py-2 text-xs font-semibold uppercase tracking-wide -mb-px border-b-2 transition-colors"
+                className="px-3 py-2 text-xs font-semibold uppercase tracking-wide -mb-px border-b-2 transition-colors shrink-0 whitespace-nowrap"
                 style={{
                   borderColor: tab === t ? "#E8A33D" : "transparent",
                   color: tab === t ? "#1A1A1A" : "rgba(0,0,0,0.4)",
