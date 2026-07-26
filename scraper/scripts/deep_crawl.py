@@ -711,6 +711,20 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
             card_count = card_links.count()
             platform_url = page.url
 
+            # DIAGNOSTIC — the previous run showed this whole function
+            # completing with zero errors AND zero data for every
+            # platform, which is only possible if it's silently finding 0
+            # cards each time (a "successful but empty" result that was
+            # never being logged, since only failures were logged before).
+            # This makes that visible: exactly what page we ended up on
+            # and how many "View Analysis" links (i.e. community cards)
+            # were actually found there.
+            log.append({
+                "step": f"crawl_platform:{platform_key}:landed",
+                "url": platform_url,
+                "card_count": card_count,
+            })
+
             for i in range(card_count):
 
                 def crawl_community_card(i=i):
@@ -767,6 +781,10 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
                 crawler.safe(crawl_community_card, f"community_card:{platform_key}:{i}")
 
         crawler.safe(crawl_platform, f"community_platform:{platform_key}")
+        log.append({
+            "step": f"crawl_platform:{platform_key}:finished",
+            "communities_found": len(result[platform_key]),
+        })
 
     return result
 
@@ -845,6 +863,7 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
             log.append({"step": f"crawl_chart_history:point_{i}", "error": str(e)})
             continue
 
+    log.append({"step": "crawl_chart_history:finished", "points_captured": len(history)})
     return history
 
 
