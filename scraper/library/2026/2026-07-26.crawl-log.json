@@ -1,0 +1,61 @@
+[
+  {
+    "step": "login",
+    "note": "Found 2 element(s) matching 'Sign in with Password' text."
+  },
+  {
+    "step": "login",
+    "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+  },
+  {
+    "step": "login",
+    "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+  },
+  {
+    "step": "login",
+    "success": true
+  },
+  {
+    "step": "keyword_discovery",
+    "note": "Found 7 plausible keyword option(s) after filtering."
+  },
+  {
+    "step": "select_keyword:Ai coding agents",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Ai coding agents\", exact=True).first\n    - locator resolved to <span class=\"text-xs md:text-sm truncate\">Ai coding agents</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Ai coding agents",
+    "stats_captured": true
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Ai code review tools",
+    "stats_captured": true
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Ai code review",
+    "stats_captured": true
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Ai powered code review",
+    "stats_captured": true
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Copilot code review",
+    "stats_captured": true
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Code review ai",
+    "stats_captured": true
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Staging production",
+    "stats_captured": true
+  }
+]

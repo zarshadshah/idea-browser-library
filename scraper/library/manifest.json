@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-07-26",
+      "title": "Safe playground for AI agents before they reach production",
+      "path": "library/2026/2026-07-26.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-07-25",
       "title": "Podcast and newsletter placement engine for small business operators",
       "path": "library/2026/2026-07-25.json",
