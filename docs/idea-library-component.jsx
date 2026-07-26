@@ -3,53 +3,53 @@
 // globals instead of using ES module imports.
 const { useState, useEffect, useCallback } = React;
 
-// TEMP DIAGNOSTIC — remove once we've confirmed lucide's actual export
-// shape in this UMD build version. Logs to console so we can inspect via
-// dev tools without needing another round-trip screenshot.
-console.log("LUCIDE DEBUG — typeof lucide:", typeof lucide);
-console.log("LUCIDE DEBUG — lucide.ChevronDown:", JSON.stringify(lucide?.ChevronDown));
-console.log("LUCIDE DEBUG — Array.isArray(lucide.ChevronDown):", Array.isArray(lucide?.ChevronDown));
-console.log("LUCIDE DEBUG — keys sample:", lucide ? Object.keys(lucide).slice(0, 10) : "lucide is undefined");
-
 // The plain "lucide" package (as opposed to "lucide-react") exposes each
-// icon as a PascalCase-named array of SVG node descriptors — e.g.
-// ChevronDown = [["path", {d: "..."}], ...] — meant for vanilla-JS use via
-// lucide.createElement(...) or the data-lucide="..." HTML attribute
-// approach, NOT as React components. Using these arrays directly as JSX
-// tags (<ChevronDown />) makes React try to render `undefined` as an
-// element type, crashing with a cryptic minified invariant error. This
-// adapter converts any lucide icon-node array into a real, usable React
-// function component on the fly.
-function makeLucideIcon(iconNode) {
+// icon as a single node-tuple describing the whole <svg> element, e.g.
+// ChevronDown = ["svg", {width, height, viewBox, ...attrs}, [["path", {d:
+// "..."}]]] — confirmed directly via runtime inspection of this build.
+// This is meant for vanilla-JS use via lucide.createElement(...) /
+// data-lucide="..." attributes, not as a React component. Using it
+// directly as a JSX tag (<ChevronDown />) makes React try to render
+// `undefined` as an element type. This adapter recursively converts any
+// lucide node-tuple (and its nested children, which use the same
+// [tag, attrs, children] shape) into real React elements.
+function nodeToReactElement([tag, attrs = {}, children = []], key) {
+  // camelCase a couple of attrs React insists on, since lucide's raw data
+  // uses plain SVG attribute names (kebab-case where applicable).
+  const { "stroke-width": strokeWidth, "stroke-linecap": strokeLinecap, "stroke-linejoin": strokeLinejoin, ...rest } = attrs;
+  const reactAttrs = {
+    key,
+    ...rest,
+    ...(strokeWidth != null && { strokeWidth }),
+    ...(strokeLinecap != null && { strokeLinecap }),
+    ...(strokeLinejoin != null && { strokeLinejoin }),
+  };
+  return React.createElement(
+    tag,
+    reactAttrs,
+    (children || []).map((child, i) => nodeToReactElement(child, i))
+  );
+}
+
+function makeLucideIcon(iconTuple) {
   return function LucideIcon({ size = 24, className, style, ...rest }) {
-    // Defensive: some lucide UMD builds wrap icon data in an object like
-    // { name, icon: [...] } or { toSvg, iconNode } rather than exposing
-    // the raw node array directly under the icon's name. Unwrap common
-    // shapes here instead of assuming iconNode is always the raw array.
-    const nodes = Array.isArray(iconNode)
-      ? iconNode
-      : Array.isArray(iconNode?.iconNode)
-      ? iconNode.iconNode
-      : Array.isArray(iconNode?.icon)
-      ? iconNode.icon
-      : [];
+    if (!Array.isArray(iconTuple)) return null;
+    const [tag, attrs = {}, children = []] = iconTuple;
+    const { "stroke-width": strokeWidth, "stroke-linecap": strokeLinecap, "stroke-linejoin": strokeLinejoin, ...restAttrs } = attrs;
     return React.createElement(
-      "svg",
+      tag,
       {
-        xmlns: "http://www.w3.org/2000/svg",
+        ...restAttrs,
         width: size,
         height: size,
-        viewBox: "0 0 24 24",
-        fill: "none",
-        stroke: "currentColor",
-        strokeWidth: 2,
-        strokeLinecap: "round",
-        strokeLinejoin: "round",
         className,
         style,
+        ...(strokeWidth != null && { strokeWidth }),
+        ...(strokeLinecap != null && { strokeLinecap }),
+        ...(strokeLinejoin != null && { strokeLinejoin }),
         ...rest,
       },
-      nodes.map(([tag, attrs], i) => React.createElement(tag, { key: i, ...attrs }))
+      (children || []).map((child, i) => nodeToReactElement(child, i))
     );
   };
 }
