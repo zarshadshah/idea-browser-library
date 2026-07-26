@@ -659,6 +659,15 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
     log = crawler.log
     result = {"reddit": [], "facebook": [], "youtube": [], "other": []}
 
+    # DIAGNOSTIC — a real run produced zero log entries for this function's
+    # inner steps at all (no errors, no successes), which is only possible
+    # if crawl_platform() below is failing in a way that never raises a
+    # real Python exception, or this function itself is never actually
+    # being reached. This unconditional log line proves definitively,
+    # on the next run, whether execution gets here in the first place —
+    # remove once that's confirmed either way.
+    log.append({"step": "crawl_community_signals_deep:entered", "url": community_signals_url})
+
     platform_labels = {
         "reddit": "Reddit",
         "facebook": "Facebook",
@@ -671,6 +680,7 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
         page.wait_for_timeout(WAIT_CHART)
 
     for platform_key, platform_label in platform_labels.items():
+        log.append({"step": f"crawl_platform:{platform_key}:starting"})
 
         def crawl_platform(platform_key=platform_key, platform_label=platform_label):
             open_community_signals_page()
@@ -789,6 +799,11 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
     page = crawler.page
     log = crawler.log
     history = []
+
+    # DIAGNOSTIC — see matching note in crawl_community_signals_deep; a
+    # real run produced zero log entries for this function at all, so this
+    # confirms on the next run whether execution reaches here.
+    log.append({"step": "crawl_chart_history:entered", "selector": chart_container_selector})
 
     chart = page.locator(chart_container_selector).first
     if chart.count() == 0:
