@@ -31,6 +31,35 @@ def extract_score(raw_scores: dict, key: str) -> dict:
     return {"score": None, "label": ""}
 
 
+def _is_boilerplate_community_name(name: str) -> bool:
+    """
+    Excludes page-navigation/section-heading text that the crawler's
+    heading-based community matching swept up alongside genuine community
+    entries — confirmed via real captured data showing entries like
+    "Discover your founder archetype" (a site-wide quiz CTA appearing on
+    every community-signals sub-page), "Reddit Community Analysis" /
+    "YouTube Content Analysis" (the page's own section title, repeated
+    per-platform), "Key Findings" / "Analysis Overview" / "Community
+    Types" / "Community Segments" (generic sub-headings), and bare
+    platform-name headings ("Facebook Groups", "Other Communities").
+    None of these are real community/channel/group names — genuine
+    entries look like "r/AI_Agents", "IBM Technology and IBM Developer",
+    "Jeff Su", etc.
+    """
+    if not name:
+        return True
+    noise_patterns = [
+        "discover your founder archetype",
+        "community analysis", "content analysis",
+        "key findings", "analysis overview",
+        "community types", "community segments",
+        "facebook groups", "other communities",
+        "top channels",
+    ]
+    name_lower = name.strip().lower()
+    return any(pattern in name_lower for pattern in noise_patterns)
+
+
 def normalize_keywords(keyword_analysis: list) -> list:
     """
     deep_crawl.py's keyword_analysis is a list of:
@@ -237,6 +266,16 @@ def normalize_day(raw: dict) -> dict:
         # raw paragraph text. Each discussion's "url" is a genuine href
         # captured from the live page, not fabricated. Trimmed defensively
         # in case a platform's community list is unexpectedly large.
+        #
+        # The crawler's heading-based matching (necessary since these pages
+        # don't reliably expose "View Analysis"-style links at this level)
+        # also sweeps up genuine page-navigation/boilerplate headings
+        # alongside real community entries — e.g. "Discover your founder
+        # archetype" (a site-wide quiz CTA), "Reddit Community Analysis" /
+        # "Analysis Overview" / generic platform-name headings (the page's
+        # own section titles, not real communities). Filter those out by
+        # name pattern so only genuine entries (e.g. "IBM Technology and
+        # IBM Developer", "r/AI_Agents") reach the app.
         "communitySignalsRich": {
             platform: [
                 {
@@ -246,6 +285,7 @@ def normalize_day(raw: dict) -> dict:
                     "url": community.get("url", ""),
                 }
                 for community in (communities or [])[:10]
+                if not _is_boilerplate_community_name(community.get("name", ""))
             ]
             for platform, communities in (raw.get("community_signals_deep") or {}).items()
         },
