@@ -96,12 +96,13 @@ def normalize_keywords(keyword_analysis: list) -> list:
             "cpc": stats.get("cpc"),
             "competition": stats.get("competition"),
             # Real month-by-month history from hovering the site's own
-            # chart (see deep_crawl.py's crawl_chart_history) — only ever
-            # present on the first/primary keyword, since capturing it for
-            # every keyword would make the crawl impractically slow. Absent
+            # chart (see deep_crawl.py's crawl_chart_history) — now
+            # captured for every keyword, not just the first, per explicit
+            # request (accepting the real added crawl time). Absent
             # entirely (rather than an empty list) if the scraper couldn't
-            # find/hover the chart that day, so the app can distinguish
-            # "no history captured" from "captured but genuinely empty".
+            # find/hover the chart for a given keyword that day, so the app
+            # can distinguish "no history captured" from "captured but
+            # genuinely empty".
             **({"chartHistory": kw["chart_history"]} if kw.get("chart_history") else {}),
         })
     return out
@@ -282,7 +283,12 @@ def normalize_day(raw: dict) -> dict:
                     "name": community.get("name", ""),
                     "summary": (community.get("raw_text", "") or "")[:1500],
                     "discussions": (community.get("discussions", []) or [])[:10],
-                    "url": community.get("url", ""),
+                    # Deliberately NOT including the community's own "url"
+                    # field here — that's the ideabrowser.com page it was
+                    # captured from, not a real external link, and per
+                    # explicit request only genuine external links
+                    # (Reddit/Facebook/YouTube/etc, already captured in
+                    # "discussions" above) should ever reach the app.
                 }
                 for community in (communities or [])[:10]
                 if not _is_boilerplate_community_name(community.get("name", ""))
