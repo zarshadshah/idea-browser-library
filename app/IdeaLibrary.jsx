@@ -170,7 +170,7 @@ function KeywordRow({ kw }) {
   );
 }
 
-function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAskClaude }) {
+function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAskClaude, onSummarize }) {
   const [tab, setTab] = useState("Overview");
   const [localNotes, setLocalNotes] = useState(idea.notes || "");
   const cfg = STATUS_CONFIG[idea.status];
@@ -278,6 +278,9 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
           <div className="min-h-[140px]">
             {tab === "Overview" && (
               <div className="space-y-4">
+                <div className="text-[10px] uppercase tracking-wider opacity-40" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                  The pitch — see Market, Execution & Keywords tabs for the rest
+                </div>
                 <p className="text-sm leading-relaxed">{idea.description}</p>
                 <div className="grid grid-cols-2 gap-x-6 gap-y-2 pt-2">
                   <ScoreBar label="Opp." score={idea.scores.opportunity.score} icon={TrendingUp} />
@@ -290,6 +293,9 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
 
             {tab === "Keywords" && (
               <div>
+                <div className="text-[10px] uppercase tracking-wider opacity-40 mb-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                  Search demand data — sorted by growth
+                </div>
                 {idea.keywords?.length ? (
                   idea.keywords
                     .slice()
@@ -303,6 +309,9 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
 
             {tab === "Market" && (
               <div className="space-y-4 text-sm">
+                <div className="text-[10px] uppercase tracking-wider opacity-40" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                  Market Gap, Why Now, Proof & Signals, framework fit
+                </div>
                 <div>
                   <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                     Market Gap
@@ -365,6 +374,9 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
 
             {tab === "Execution" && (
               <div className="space-y-3 text-sm">
+                <div className="text-[10px] uppercase tracking-wider opacity-40" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                  Difficulty, phased plan, value ladder
+                </div>
                 <div className="flex items-center gap-2">
                   <Wrench size={14} className="opacity-60" />
                   <span className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
@@ -391,6 +403,9 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
 
             {tab === "Community" && (
               <div className="space-y-3 text-sm">
+                <div className="text-[10px] uppercase tracking-wider opacity-40" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                  Reddit, Facebook, YouTube & other community signals
+                </div>
                 <div className="space-y-2">
                   {idea.communitySignals && Object.entries(idea.communitySignals).map(([k, v]) => (
                     <div key={k} className="flex items-center gap-2">
@@ -428,24 +443,35 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
             />
           </div>
 
-          {/* Build CTA */}
-          <button
-            onClick={() => onAskClaude(idea)}
-            className="mt-4 w-full flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-sm transition-transform hover:scale-[1.01]"
-            style={{ backgroundColor: "#12151C", color: "#E8A33D", fontFamily: "'JetBrains Mono', monospace" }}
-          >
-            <Sparkles size={16} />
-            Build this with Claude
-          </button>
+          {/* Action CTAs */}
+          <div className="mt-4 grid grid-cols-2 gap-2">
+            <button
+              onClick={() => onSummarize(idea)}
+              className="flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-sm transition-transform hover:scale-[1.01]"
+              style={{ backgroundColor: "rgba(18,21,28,0.06)", color: "#12151C", fontFamily: "'JetBrains Mono', monospace" }}
+            >
+              <MessageCircle size={16} />
+              Summarize
+            </button>
+            <button
+              onClick={() => onAskClaude(idea)}
+              className="flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-sm transition-transform hover:scale-[1.01]"
+              style={{ backgroundColor: "#12151C", color: "#E8A33D", fontFamily: "'JetBrains Mono', monospace" }}
+            >
+              <Sparkles size={16} />
+              Build this
+            </button>
+          </div>
         </div>
       )}
     </div>
   );
 }
 
-function CopyPromptModal({ idea, onClose }) {
+function CopyPromptModal({ idea, onClose, mode = "build" }) {
   const [copied, setCopied] = useState(false);
-  const prompt = `I want to build "${idea.title}" — ${idea.tagline}
+
+  const buildPrompt = `I want to build "${idea.title}" — ${idea.tagline}
 
 Here's the full research on this idea:
 
@@ -462,6 +488,58 @@ My notes: ${idea.notes || "(none yet)"}
 
 Let's scaffold this step by step — help me pick the right tech stack for a solo build, plan the MVP scope, and start building the actual project files, the way we've done with my other projects (Halal Finder, Gluco Diary, etc). Walk me through it like a real build session, not just a plan.`;
 
+  const summarizePrompt = `Give me an in-depth summary of this business idea, pulling together everything below into a clear, organized read — not just a repeat of each section, but genuine synthesis: what's the core opportunity, why does it hold up (or not), what's the realistic path to building it, and what would you personally flag as the biggest risk or open question.
+
+Idea: "${idea.title}"
+${idea.tagline}
+
+Full pitch:
+${idea.description}
+
+Scores: Opportunity ${idea.scores?.opportunity?.score}/10 (${idea.scores?.opportunity?.label}), Problem ${idea.scores?.problem?.score}/10 (${idea.scores?.problem?.label}), Feasibility ${idea.scores?.feasibility?.score}/10 (${idea.scores?.feasibility?.label}), Why Now ${idea.scores?.whyNow?.score}/10 (${idea.scores?.whyNow?.label})
+
+Categorization: ${idea.categorization?.type} | ${idea.categorization?.market} | Target: ${idea.categorization?.target} | Competitor: ${idea.categorization?.competitor}
+
+Market Gap:
+${safeText(idea.marketGap)}
+
+Execution Plan:
+${safeText(idea.executionPlan)}
+
+Execution Difficulty (${idea.executionDifficulty?.score}/10):
+${safeText(idea.executionDifficulty?.note)}
+
+Value Equation:
+${safeText(idea.valueEquation)}
+
+Market Matrix:
+${safeText(idea.marketMatrix)}
+
+Audience/Community/Product Framework:
+${safeText(idea.acpFramework)}
+
+Value Ladder:
+${safeText(idea.valueLadderDetail)}
+
+Proof & Signals:
+${safeText(idea.proofSignals)}
+
+Why Now (detail):
+${safeText(idea.whyNowDetail)}
+
+Community Signals: ${JSON.stringify(idea.communitySignals)}
+${safeText(idea.communitySignalsDetail)}
+
+Keywords: ${idea.keywords?.map(k => `${k.keyword} (${k.volume}/mo, ${k.growth > 0 ? "+" : ""}${k.growth}%)`).join(", ")}
+
+My notes: ${idea.notes || "(none yet)"}`;
+
+  const prompt = mode === "summarize" ? summarizePrompt : buildPrompt;
+  const title = mode === "summarize" ? `Summarize "${idea.title}"` : `Start building "${idea.title}"`;
+  const description = mode === "summarize"
+    ? "Copy this prompt and paste it into a chat with Claude for an in-depth, synthesized summary of this idea — not just a re-listing of the sections, but genuine analysis."
+    : "Copy this prompt and paste it into your chat with Claude. It carries over everything captured about this idea so the build session starts with full context — no re-explaining needed.";
+
   const copy = () => {
     navigator.clipboard?.writeText(prompt).catch(() => {});
     setCopied(true);
@@ -473,13 +551,12 @@ Let's scaffold this step by step — help me pick the right tech stack for a sol
       <div className="max-w-lg w-full rounded-xl p-6" style={{ backgroundColor: "#F7F4EC" }}>
         <div className="flex items-start justify-between mb-3">
           <h3 className="text-lg font-bold" style={{ fontFamily: "'Fraunces', serif" }}>
-            Start building "{idea.title}"
+            {title}
           </h3>
           <button onClick={onClose}><X size={18} /></button>
         </div>
         <p className="text-sm opacity-70 mb-4 leading-relaxed">
-          Copy this prompt and paste it into your chat with Claude. It carries over everything captured about
-          this idea so the build session starts with full context — no re-explaining needed.
+          {description}
         </p>
         <div className="rounded-lg p-3 mb-4 text-xs max-h-48 overflow-y-auto whitespace-pre-wrap" style={{ backgroundColor: "rgba(0,0,0,0.05)", fontFamily: "'JetBrains Mono', monospace" }}>
           {prompt}
@@ -527,6 +604,7 @@ export default function IdeaLibrary() {
   const [query, setQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState("all");
   const [modalIdea, setModalIdea] = useState(null);
+  const [modalMode, setModalMode] = useState("build");
   const [loaded, setLoaded] = useState(false);
   const [loadError, setLoadError] = useState(null);
   const [usingRemote, setUsingRemote] = useState(false);
@@ -692,7 +770,8 @@ export default function IdeaLibrary() {
               onToggle={() => setOpenId(openId === idea.id ? null : idea.id)}
               onStatusChange={(id, status) => updateIdea(id, { status })}
               onNotesChange={(id, notes) => updateIdea(id, { notes })}
-              onAskClaude={(idea) => setModalIdea(idea)}
+              onAskClaude={(idea) => { setModalIdea(idea); setModalMode("build"); }}
+              onSummarize={(idea) => { setModalIdea(idea); setModalMode("summarize"); }}
             />
           ))}
         </div>
@@ -702,7 +781,7 @@ export default function IdeaLibrary() {
         </div>
       </div>
 
-      {modalIdea && <CopyPromptModal idea={modalIdea} onClose={() => setModalIdea(null)} />}
+      {modalIdea && <CopyPromptModal idea={modalIdea} mode={modalMode} onClose={() => setModalIdea(null)} />}
     </div>
   );
 }
