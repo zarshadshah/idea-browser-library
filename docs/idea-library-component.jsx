@@ -2,11 +2,54 @@
 // as global UMD scripts by index.html, so we destructure from those
 // globals instead of using ES module imports.
 const { useState, useEffect, useCallback } = React;
+
+// The plain "lucide" package (as opposed to "lucide-react") exposes each
+// icon as a PascalCase-named array of SVG node descriptors — e.g.
+// ChevronDown = [["path", {d: "..."}], ...] — meant for vanilla-JS use via
+// lucide.createElement(...) or the data-lucide="..." HTML attribute
+// approach, NOT as React components. Using these arrays directly as JSX
+// tags (<ChevronDown />) makes React try to render `undefined` as an
+// element type, crashing with a cryptic minified invariant error. This
+// adapter converts any lucide icon-node array into a real, usable React
+// function component on the fly.
+function makeLucideIcon(iconNode) {
+  return function LucideIcon({ size = 24, className, style, ...rest }) {
+    return React.createElement(
+      "svg",
+      {
+        xmlns: "http://www.w3.org/2000/svg",
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "currentColor",
+        strokeWidth: 2,
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        className,
+        style,
+        ...rest,
+      },
+      iconNode.map(([tag, attrs], i) => React.createElement(tag, { key: i, ...attrs }))
+    );
+  };
+}
+
 const {
   ChevronDown, ChevronRight, Search, TrendingUp, Target, Wrench, Clock,
   Users, Tag, DollarSign, AlertCircle, CheckCircle2, PlayCircle,
   Archive, Sparkles, ExternalLink, X, Plus, MessageCircle
-} = lucide;
+} = Object.fromEntries(
+  Object.entries({
+    ChevronDown: lucide.ChevronDown, ChevronRight: lucide.ChevronRight,
+    Search: lucide.Search, TrendingUp: lucide.TrendingUp, Target: lucide.Target,
+    Wrench: lucide.Wrench, Clock: lucide.Clock, Users: lucide.Users,
+    Tag: lucide.Tag, DollarSign: lucide.DollarSign, AlertCircle: lucide.AlertCircle,
+    CheckCircle2: lucide.CheckCircle2, PlayCircle: lucide.PlayCircle,
+    Archive: lucide.Archive, Sparkles: lucide.Sparkles, ExternalLink: lucide.ExternalLink,
+    X: lucide.X, Plus: lucide.Plus, MessageCircle: lucide.MessageCircle,
+  }).map(([name, iconNode]) => [name, makeLucideIcon(iconNode)])
+);
 
 // ---------------------------------------------------------------------------
 // Sample seed data. Replace / append via the daily scraper pipeline — each
