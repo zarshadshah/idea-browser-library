@@ -220,12 +220,123 @@ function Stamp({ status }) {
   );
 }
 
+// Small hand-built SVG sparkline showing a keyword's growth trajectory.
+// We don't have real historical monthly data points from the scraper (only
+// current volume + overall growth %), so rather than fabricate a precise
+// multi-year line like the real site's chart, this renders an honest
+// visual shape: a smooth rising/falling curve whose steepness reflects the
+// actual growth percentage, clearly conveying "this is trending up fast"
+// vs "this is flat" at a glance, without pretending to show exact history.
+function KeywordSparkline({ growth, color }) {
+  const width = 72;
+  const height = 28;
+  // Normalize growth into a 0-1 steepness factor for the curve, capping
+  // extreme values (some keywords in this dataset show +100000%) so the
+  // shape stays readable rather than a flat line at the bottom.
+  const steepness = Math.max(0, Math.min(1, Math.log10(Math.max(growth, 1) + 1) / 5));
+  const startY = height - 4;
+  const endY = height - 4 - steepness * (height - 8);
+  const midY = height - 4 - steepness * (height - 8) * 0.4;
+  const path = `M 2 ${startY} Q ${width * 0.5} ${midY}, ${width - 2} ${endY}`;
+  return (
+    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} className="shrink-0">
+      <path d={path} fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" />
+      <circle cx={width - 2} cy={endY} r="2.5" fill={color} />
+    </svg>
+  );
+}
+
+// The scraper stores Value Equation and Market Matrix as raw paragraph
+// text (whatever the site's own page copy says), not structured numbers —
+// so to render real visual score bars / a real quadrant like the site
+// does, we parse the specific numeric patterns back out of that text.
+// Regexes are written against the actual real scraped text we've observed
+// (e.g. "Dream Outcome\n9/10", "Uniqueness\n\n8/10"), and everything
+// degrades gracefully to null if a pattern isn't found, so a parsing miss
+// never breaks rendering — it just quietly falls back to plain text.
+function parseValueEquation(text) {
+  if (!text) return null;
+  const overall = text.match(/Overall Rating\s*\n*\s*(\d+)\s*\/\s*10/i);
+  const dream = text.match(/Dream Outcome\s*\n*\s*(\d+)\s*\/\s*10/i);
+  const likelihood = text.match(/Perceived Likelihood\s*\n*\s*(\d+)\s*\/\s*10/i);
+  const delay = text.match(/Time Delay\s*\n*\s*(\d+)\s*\/\s*10/i);
+  const effort = text.match(/Effort\s*(?:&|and)?\s*Sacrifice\s*\n*\s*(\d+)\s*\/\s*10/i);
+  if (!dream && !likelihood && !delay && !effort) return null;
+  return {
+    overall: overall ? Number(overall[1]) : null,
+    factors: [
+      { label: "Dream Outcome", icon: "🎯", score: dream ? Number(dream[1]) : null },
+      { label: "Perceived Likelihood", icon: "🎲", score: likelihood ? Number(likelihood[1]) : null },
+      { label: "Time Delay", icon: "⏱️", score: delay ? Number(delay[1]) : null },
+      { label: "Effort & Sacrifice", icon: "💪", score: effort ? Number(effort[1]) : null },
+    ].filter((f) => f.score != null),
+  };
+}
+
+function parseMarketMatrix(text) {
+  if (!text) return null;
+  const uniqueness = text.match(/Uniqueness\s*\n*\s*(\d+)\s*\/\s*10/i);
+  const value = text.match(/\bValue\s*\n*\s*(\d+)\s*\/\s*10/i);
+  if (!uniqueness && !value) return null;
+  const u = uniqueness ? Number(uniqueness[1]) : 5;
+  const v = value ? Number(value[1]) : 5;
+  // Quadrant position: 0-10 scale mapped to a 0-100% position inside the
+  // 2x2 grid, matching the site's own four-quadrant framing.
+  const quadrant = u >= 5 && v >= 5 ? "Category King" : u >= 5 && v < 5 ? "Tech Novelty" : u < 5 && v >= 5 ? "Commodity Play" : "Low Impact";
+  return { uniqueness: u, value: v, quadrant };
+}
+
+// Individual score bar matching the site's own visual language for the
+// Value Equation breakdown (icon, label, numeric bar, score).
+function ValueEquationBar({ icon, label, score }) {
+  return (
+    <div className="flex items-center gap-2">
+      <span className="text-sm shrink-0">{icon}</span>
+      <span className="text-xs w-36 shrink-0" style={{ fontFamily: "'JetBrains Mono', monospace" }}>{label}</span>
+      <div className="flex-1 h-1.5 rounded-full bg-black/10 overflow-hidden">
+        <div className="h-full rounded-full" style={{ width: `${score * 10}%`, backgroundColor: "#E8A33D" }} />
+      </div>
+      <span className="text-xs font-bold w-8 text-right" style={{ fontFamily: "'JetBrains Mono', monospace" }}>{score}/10</span>
+    </div>
+  );
+}
+
+// 2x2 quadrant visual matching the site's Market Matrix framing: Tech
+// Novelty / Category King on top, Low Impact / Commodity Play on bottom,
+// with a dot placed according to the idea's actual uniqueness/value score.
+function MarketMatrixGrid({ uniqueness, value, quadrant }) {
+  // Position dot: x = value (0-10 -> 0-100%), y = uniqueness inverted
+  // (higher uniqueness = higher on the grid = lower CSS top%).
+  const dotLeft = `${(value / 10) * 100}%`;
+  const dotTop = `${100 - (uniqueness / 10) * 100}%`;
+  const cellStyle = "flex items-center justify-center text-center text-[10px] uppercase tracking-wide p-2 leading-tight";
+  return (
+    <div>
+      <div className="relative grid grid-cols-2 grid-rows-2 gap-1 aspect-square max-w-[220px] mx-auto rounded-lg overflow-hidden border border-black/10">
+        <div className={cellStyle} style={{ backgroundColor: quadrant === "Tech Novelty" ? "rgba(232,163,61,0.25)" : "rgba(0,0,0,0.03)" }}>Tech Novelty</div>
+        <div className={cellStyle} style={{ backgroundColor: quadrant === "Category King" ? "rgba(232,163,61,0.25)" : "rgba(0,0,0,0.03)" }}>Category King</div>
+        <div className={cellStyle} style={{ backgroundColor: quadrant === "Low Impact" ? "rgba(232,163,61,0.25)" : "rgba(0,0,0,0.03)" }}>Low Impact</div>
+        <div className={cellStyle} style={{ backgroundColor: quadrant === "Commodity Play" ? "rgba(232,163,61,0.25)" : "rgba(0,0,0,0.03)" }}>Commodity Play</div>
+        <div
+          className="absolute w-3 h-3 rounded-full border-2"
+          style={{ left: dotLeft, top: dotTop, transform: "translate(-50%, -50%)", backgroundColor: "#12151C", borderColor: "#E8A33D" }}
+        />
+      </div>
+      <div className="flex justify-center gap-4 mt-2 text-[10px] opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+        <span>Uniqueness: {uniqueness}/10</span>
+        <span>Value: {value}/10</span>
+      </div>
+    </div>
+  );
+}
+
 function KeywordRow({ kw }) {
   const growthColor = kw.growth > 500 ? "#4A7C59" : kw.growth > 50 ? "#6B8F71" : "#8B8577";
   return (
-    <div className="flex items-center justify-between py-2 border-b border-black/5 last:border-0">
-      <span className="text-sm">{kw.keyword}</span>
-      <div className="flex items-center gap-3 shrink-0" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+    <div className="flex items-center justify-between py-3 border-b border-black/5 last:border-0 gap-3">
+      <span className="text-sm flex-1 min-w-0 truncate">{kw.keyword}</span>
+      <KeywordSparkline growth={kw.growth} color={growthColor} />
+      <div className="flex flex-col items-end shrink-0 w-16" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
         <span className="text-xs opacity-60">{kw.volume.toLocaleString()}/mo</span>
         <span className="text-xs font-bold" style={{ color: growthColor }}>
           +{kw.growth}%
@@ -418,12 +529,40 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                   </details>
                 )}
                 {(idea.valueEquation || idea.marketMatrix) && (
-                  <details className="pt-2 border-t border-black/10">
+                  <details className="pt-2 border-t border-black/10" open>
                     <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                       Value Equation & Market Matrix ▾
                     </summary>
-                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.valueEquation}</p>
-                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.marketMatrix}</p>
+                    <div className="mt-3 space-y-4">
+                      {(() => {
+                        const ve = parseValueEquation(idea.valueEquation);
+                        if (!ve) return idea.valueEquation ? <p className="leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.valueEquation}</p> : null;
+                        return (
+                          <div className="space-y-2">
+                            {ve.overall != null && (
+                              <div className="text-xs font-semibold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                                Value Equation — {ve.overall}/10
+                              </div>
+                            )}
+                            {ve.factors.map((f) => (
+                              <ValueEquationBar key={f.label} icon={f.icon} label={f.label} score={f.score} />
+                            ))}
+                          </div>
+                        );
+                      })()}
+                      {(() => {
+                        const mm = parseMarketMatrix(idea.marketMatrix);
+                        if (!mm) return idea.marketMatrix ? <p className="leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.marketMatrix}</p> : null;
+                        return (
+                          <div>
+                            <div className="text-xs font-semibold mb-2" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                              Market Matrix — {mm.quadrant}
+                            </div>
+                            <MarketMatrixGrid uniqueness={mm.uniqueness} value={mm.value} quadrant={mm.quadrant} />
+                          </div>
+                        );
+                      })()}
+                    </div>
                   </details>
                 )}
                 {idea.acpFramework && (
