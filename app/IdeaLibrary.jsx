@@ -70,9 +70,13 @@ const SEED_IDEAS = [
     executionDifficulty: { score: 3, note: "Solo-friendly, 1-2 week MVP with Cursor" },
     categorization: { type: "SaaS", market: "B2B", target: "Solo Operators", competitor: "BuzzSumo" },
     communitySignals: { reddit: "5 subreddits found", facebook: "8 groups found", youtube: "13 channels, 16 themes", other: "4 segments, 4 priorities" },
-    valueEquation: { score: 6, label: "Good" },
-    marketMatrix: "Category King (high uniqueness, high value)",
-    audienceProductCommunity: { audience: 8, community: 6, product: 9 },
+    valueEquation: "Value Equation Analysis — Overall Rating: 6/10 (Good). Dream Outcome 8/10, Perceived Likelihood 6/10, Time Delay 5/10, Effort & Sacrifice 4/10.",
+    marketMatrix: "Market Matrix Analysis — Category King (high uniqueness, high value). Positioned for category leadership with a unique, ethical approach to earned distribution.",
+    acpFramework: "",
+    valueLadderDetail: "",
+    proofSignals: "",
+    whyNowDetail: "",
+    communitySignalsDetail: "",
     status: "researching",
     notes: "",
   },
@@ -87,6 +91,29 @@ const STATUS_CONFIG = {
 };
 
 const TABS = ["Overview", "Keywords", "Market", "Execution", "Community"];
+
+// Defensively converts any field value to a displayable string. Some data
+// (especially older/sample entries) may have fields as objects instead of
+// plain strings (e.g. {score, label} instead of a sentence) — rendering an
+// object directly in JSX throws and silently breaks the whole tab. This
+// keeps a card always renderable no matter what shape a field turns out to
+// be, rather than crashing on a single bad field.
+function safeText(value) {
+  if (value == null) return "";
+  if (typeof value === "string") return value;
+  if (typeof value === "number") return String(value);
+  if (typeof value === "object") {
+    if ("score" in value || "label" in value) {
+      return [value.label, value.score != null ? `${value.score}/10` : null].filter(Boolean).join(" — ");
+    }
+    try {
+      return JSON.stringify(value);
+    } catch {
+      return "";
+    }
+  }
+  return String(value);
+}
 
 function ScoreBar({ label, score, icon: Icon }) {
   const pct = (score / 10) * 100;
@@ -275,12 +302,12 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
             )}
 
             {tab === "Market" && (
-              <div className="space-y-3 text-sm">
+              <div className="space-y-4 text-sm">
                 <div>
                   <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                     Market Gap
                   </div>
-                  <p className="leading-relaxed">{idea.marketGap}</p>
+                  <p className="leading-relaxed">{safeText(idea.marketGap)}</p>
                 </div>
                 <div className="grid grid-cols-2 gap-3 pt-2">
                   <div>
@@ -300,6 +327,39 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     <div className="font-semibold">{idea.categorization?.competitor}</div>
                   </div>
                 </div>
+                {idea.whyNowDetail && (
+                  <details className="pt-2 border-t border-black/10">
+                    <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      Why Now (full analysis) ▾
+                    </summary>
+                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.whyNowDetail}</p>
+                  </details>
+                )}
+                {idea.proofSignals && (
+                  <details className="pt-2 border-t border-black/10">
+                    <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      Proof & Signals ▾
+                    </summary>
+                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.proofSignals}</p>
+                  </details>
+                )}
+                {(idea.valueEquation || idea.marketMatrix) && (
+                  <details className="pt-2 border-t border-black/10">
+                    <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      Value Equation & Market Matrix ▾
+                    </summary>
+                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.valueEquation}</p>
+                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.marketMatrix}</p>
+                  </details>
+                )}
+                {idea.acpFramework && (
+                  <details className="pt-2 border-t border-black/10">
+                    <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      Audience / Community / Product Framework ▾
+                    </summary>
+                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.acpFramework}</p>
+                  </details>
+                )}
               </div>
             )}
 
@@ -316,20 +376,38 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                   <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                     Suggested Plan
                   </div>
-                  <p className="leading-relaxed">{idea.executionPlan}</p>
+                  <p className="leading-relaxed whitespace-pre-line">{safeText(idea.executionPlan)}</p>
                 </div>
+                {idea.valueLadderDetail && (
+                  <details className="pt-2 border-t border-black/10">
+                    <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      Full Value Ladder ▾
+                    </summary>
+                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.valueLadderDetail}</p>
+                  </details>
+                )}
               </div>
             )}
 
             {tab === "Community" && (
-              <div className="space-y-2 text-sm">
-                {idea.communitySignals && Object.entries(idea.communitySignals).map(([k, v]) => (
-                  <div key={k} className="flex items-center gap-2">
-                    <Users size={13} className="opacity-50 shrink-0" />
-                    <span className="font-semibold capitalize w-16 shrink-0">{k}</span>
-                    <span className="opacity-70">{v}</span>
-                  </div>
-                ))}
+              <div className="space-y-3 text-sm">
+                <div className="space-y-2">
+                  {idea.communitySignals && Object.entries(idea.communitySignals).map(([k, v]) => (
+                    <div key={k} className="flex items-center gap-2">
+                      <Users size={13} className="opacity-50 shrink-0" />
+                      <span className="font-semibold capitalize w-16 shrink-0">{k}</span>
+                      <span className="opacity-70">{v}</span>
+                    </div>
+                  ))}
+                </div>
+                {idea.communitySignalsDetail && (
+                  <details className="pt-2 border-t border-black/10">
+                    <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      Full Community Breakdown ▾
+                    </summary>
+                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.communitySignalsDetail}</p>
+                  </details>
+                )}
               </div>
             )}
           </div>
@@ -373,8 +451,8 @@ Here's the full research on this idea:
 
 ${idea.description}
 
-Market gap: ${idea.marketGap}
-Suggested execution plan: ${idea.executionPlan}
+Market gap: ${safeText(idea.marketGap)}
+Suggested execution plan: ${safeText(idea.executionPlan)}
 Execution difficulty: ${idea.executionDifficulty?.score}/10 — ${idea.executionDifficulty?.note}
 Target: ${idea.categorization?.target} | Market: ${idea.categorization?.market} | Main competitor: ${idea.categorization?.competitor}
 
@@ -426,7 +504,7 @@ Let's scaffold this step by step — help me pick the right tech stack for a sol
 //   "https://<you>.github.io/<repo>"
 // Leave as null to run on the built-in seed data only (useful for testing
 // the app itself before the scraper/repo exists).
-const LIBRARY_BASE_URL = null;
+const LIBRARY_BASE_URL = "https://raw.githubusercontent.com/zarshadshah/idea-browser-library/main";
 
 async function loadLibraryFromRemote(baseUrl) {
   const manifestRes = await fetch(`${baseUrl}/library/manifest.json`);
