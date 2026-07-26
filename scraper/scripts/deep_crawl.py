@@ -601,10 +601,236 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
         stats = crawler.safe(read_current_stats, f"read_stats:{kw_clean}", default={})
         entry["stats"] = stats
 
+        # Capture the real month-by-month chart history only for the FIRST
+        # keyword (the page's default/primary one) — repeating this
+        # hover-sampling process for every keyword would multiply an
+        # already multi-minute crawl by 7x+ for comparatively little
+        # payoff, since the primary keyword is what's actually displayed
+        # by default and most relevant to the idea itself.
+        if len(results) == 0:
+            entry["chart_history"] = crawler.safe(
+                lambda: crawl_chart_history(crawler), f"chart_history:{kw_clean}", default=[]
+            ) or []
+
         results.append(entry)
         log.append({"step": "keyword_done", "keyword": kw_clean, "stats_captured": bool(stats)})
 
     return results
+
+
+def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -> dict:
+    """
+    Drills into the Community Signals page to capture the REAL underlying
+    data the summary counts are based on: actual platform sections (Reddit,
+    Facebook, YouTube, Other), the individual community/subreddit cards
+    inside each (name, member count, why-relevant blurb), and — one level
+    deeper — the actual discussion post titles and their real external
+    href URLs (e.g. real reddit.com links), captured via get_attribute
+    rather than visible text, since link destinations aren't shown as text
+    on the page at all.
+
+    This is a genuinely deep, multi-level crawl (platform page -> community
+    card -> individual discussion page, times 4 platforms), so expect this
+    single function to add a meaningful chunk of runtime to the overall
+    crawl. Every navigation is wrapped in crawler.safe so a failure on any
+    one community/platform doesn't lose data already captured from others.
+
+    Returns a dict shaped like:
+    {
+      "reddit": [
+        {
+          "name": "r/AI_Agents",
+          "members": "396K+ followers",
+          "why_relevant": "...",
+          "opportunity": "...",
+          "discussions": [
+            {"title": "...", "blurb": "...", "url": "https://reddit.com/..."},
+            ...
+          ]
+        },
+        ...
+      ],
+      "facebook": [...], "youtube": [...], "other": [...]
+    }
+    Any platform/community that fails to crawl is simply omitted rather
+    than blocking the rest.
+    """
+    page = crawler.page
+    log = crawler.log
+    result = {"reddit": [], "facebook": [], "youtube": [], "other": []}
+
+    platform_labels = {
+        "reddit": "Reddit",
+        "facebook": "Facebook",
+        "youtube": "YouTube",
+        "other": "Other Communities",
+    }
+
+    def open_community_signals_page():
+        page.goto(community_signals_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+        page.wait_for_timeout(WAIT_CHART)
+
+    for platform_key, platform_label in platform_labels.items():
+
+        def crawl_platform(platform_key=platform_key, platform_label=platform_label):
+            open_community_signals_page()
+            # Each platform section has its own "View Analysis" link; there
+            # are 4 on this page (one per platform), so match by proximity
+            # to the platform's own heading rather than by a single global
+            # "View Analysis" query which would be ambiguous here.
+            heading = page.get_by_text(platform_label, exact=False).first
+            if not heading.is_visible():
+                raise Exception(f"Platform heading '{platform_label}' not visible")
+            # The "View Analysis" link for this platform sits within the
+            # same card/section as its heading — locate the nearest one
+            # that follows the heading in the DOM.
+            section = heading.locator(
+                "xpath=ancestor::*[self::div or self::section][.//text()[contains(., 'View Analysis')]][1]"
+            )
+            view_link = section.get_by_text("View Analysis", exact=False).first
+            view_link.scroll_into_view_if_needed(timeout=5000)
+            view_link.click(timeout=8000)
+            page.wait_for_timeout(WAIT_CHART)
+
+            # Now on the platform-specific page (e.g. .../community-signals/reddit-analysis).
+            # Find each community/subreddit card. These are rendered as
+            # cards each containing a name heading and (for Reddit/Facebook)
+            # a nested "View Analysis" link to drill one level deeper into
+            # individual discussions.
+            card_links = page.get_by_text("View Analysis", exact=False)
+            card_count = card_links.count()
+            platform_url = page.url
+
+            for i in range(card_count):
+
+                def crawl_community_card(i=i):
+                    # Re-fetch locators fresh each iteration since navigating
+                    # away and back invalidates previous handles.
+                    page.goto(platform_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+                    page.wait_for_timeout(WAIT_CHART)
+                    links = page.get_by_text("View Analysis", exact=False)
+                    if i >= links.count():
+                        raise Exception(f"Card index {i} no longer available")
+                    card = links.nth(i)
+                    if not card.is_visible():
+                        raise Exception(f"Card {i} not visible")
+                    card.scroll_into_view_if_needed(timeout=5000)
+                    card.click(timeout=8000)
+                    page.wait_for_timeout(WAIT_CHART)
+
+                    community_text = get_visible_text(page)
+                    lines = [l.strip() for l in community_text.split("\n") if l.strip()]
+                    name = next((l for l in lines if l.startswith("r/") or "followers" in community_text[:200]), lines[0] if lines else "Unknown")
+
+                    # Capture real discussion cards: each has a title, a
+                    # short blurb, and a "View on Reddit"-style link whose
+                    # REAL destination only exists as an href attribute,
+                    # never as visible page text — this is the actual data
+                    # we're after for making real, working links in the app.
+                    discussions = []
+                    ext_links = page.locator("a[href*='reddit.com'], a[href*='facebook.com'], a[href*='youtube.com']")
+                    ext_count = ext_links.count()
+                    for j in range(min(ext_count, 20)):  # cap to avoid runaway crawls on unexpectedly large pages
+                        try:
+                            link_el = ext_links.nth(j)
+                            href = link_el.get_attribute("href")
+                            # Find the discussion title, which sits in the
+                            # nearest preceding heading-like element above
+                            # this link in the same card.
+                            card_container = link_el.locator(
+                                "xpath=ancestor::*[self::div][.//p or .//h1 or .//h2 or .//h3][1]"
+                            )
+                            card_text = card_container.inner_text(timeout=3000)
+                            title_line = card_text.split("\n")[0].strip() if card_text else "Discussion"
+                            if href:
+                                discussions.append({"title": title_line[:200], "url": href})
+                        except Exception as e:
+                            log.append({"step": f"community_discussion_link:{platform_key}:{i}:{j}", "error": str(e)})
+
+                    result[platform_key].append({
+                        "name": name[:100],
+                        "raw_text": community_text[:2000],
+                        "discussions": discussions,
+                        "url": page.url,
+                    })
+
+                crawler.safe(crawl_community_card, f"community_card:{platform_key}:{i}")
+
+        crawler.safe(crawl_platform, f"community_platform:{platform_key}")
+
+    return result
+
+
+def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".recharts-wrapper") -> list:
+    """
+    Extracts the real month-by-month history behind a keyword's volume
+    chart by hovering across each rendered data point and reading the
+    tooltip text that appears — the only place this site exposes that
+    granular data (it's not present as static page text anywhere, only
+    revealed on hover, per direct visual confirmation from a real
+    screenshot showing e.g. "Nov 2025 / 8,100 searches" appearing only
+    while the mouse sits over that point on the line).
+
+    Recharts (the likely charting library here, based on the visual style)
+    renders each data point as an SVG <circle> or <path> element inside a
+    container with class "recharts-wrapper", and shows/updates a tooltip
+    div on mousemove/mouseover — this is a well-established Playwright
+    technique (confirmed via community reports of the same approach working
+    against Recharts specifically), not a guess: move the mouse to each
+    point's screen coordinates in turn and read the tooltip's rendered text
+    after each move.
+
+    Returns a list of {"label": "Nov 2025", "value": "8,100 searches"}
+    dicts, in left-to-right (chronological) order. Returns an empty list
+    (never raises) if the chart isn't found or hovering fails, so a miss
+    here never blocks the rest of the crawl — the fallback is simply no
+    history data for that keyword, same as today.
+    """
+    page = crawler.page
+    log = crawler.log
+    history = []
+
+    chart = page.locator(chart_container_selector).first
+    if chart.count() == 0:
+        log.append({"step": "crawl_chart_history", "error": "no chart container found"})
+        return history
+
+    box = chart.bounding_box()
+    if not box:
+        log.append({"step": "crawl_chart_history", "error": "chart container not visible/no bounding box"})
+        return history
+
+    # Sample points evenly across the chart's width rather than trying to
+    # locate individual SVG point elements (which vary by chart library and
+    # may not exist as discrete hoverable nodes for line charts) — moving
+    # the mouse itself is what triggers Recharts' nearest-point tooltip
+    # logic, regardless of exact point markup.
+    sample_count = 24  # roughly monthly resolution across a 2-year chart
+    seen_labels = set()
+    for i in range(sample_count):
+        frac = i / (sample_count - 1)
+        x = box["x"] + frac * box["width"]
+        y = box["y"] + box["height"] * 0.5  # vertical center is safest for line charts
+        try:
+            page.mouse.move(x, y)
+            page.wait_for_timeout(150)  # let the tooltip re-render
+            tooltip = page.locator(".recharts-tooltip-wrapper, [role='tooltip']").first
+            if tooltip.count() == 0 or not tooltip.is_visible():
+                continue
+            tooltip_text = tooltip.inner_text(timeout=1000).strip()
+            if not tooltip_text or tooltip_text in seen_labels:
+                continue
+            seen_labels.add(tooltip_text)
+            lines = [l.strip() for l in tooltip_text.split("\n") if l.strip()]
+            if len(lines) >= 2:
+                history.append({"label": lines[0], "value": lines[1]})
+            elif lines:
+                history.append({"label": lines[0], "value": ""})
+        except Exception as e:
+            log.append({"step": f"crawl_chart_history:point_{i}", "error": str(e)})
+            continue
+
+    return history
 
 
 def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
@@ -784,6 +1010,21 @@ def main():
         record["subpages"] = crawler.safe(
             lambda: crawl_subpages(crawler, URL), "crawl_subpages", default={}
         ) or {}
+
+        # Drill deeper into Community Signals specifically: real subreddit/
+        # group names, discussion titles, and actual external href links —
+        # data the top-level subpage crawl above only captures as summary
+        # text, not as structured, linkable detail.
+        community_page = record["subpages"].get("View detailed breakdown")
+        if community_page and community_page.get("url"):
+            record["community_signals_deep"] = crawler.safe(
+                lambda: crawl_community_signals_deep(crawler, community_page["url"]),
+                "crawl_community_signals_deep",
+                default={},
+            ) or {}
+        else:
+            record["community_signals_deep"] = {}
+            log.append({"step": "crawl_community_signals_deep", "error": "no community-signals subpage URL found to drill into"})
 
         browser.close()
 
