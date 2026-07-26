@@ -9,6 +9,7 @@
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#12151C">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Idea Library">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -35,7 +36,7 @@
 <body>
 <div id="root"></div>
 
-<script type="text/babel" data-presets="react" src="idea-library-component.jsx" data-type="module" onload="window.__componentLoaded && window.__componentLoaded()"></script>
+<script type="text/babel" data-presets="react" src="idea-library-component.jsx"></script>
 <script type="text/babel" data-presets="react">
   // Babel standalone transforms <script type="text/babel"> tags in
   // document order and runs them as soon as each is transformed — but a
