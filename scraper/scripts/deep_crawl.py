@@ -674,32 +674,54 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
         "youtube": "YouTube",
         "other": "Other Communities",
     }
+    # Real screenshots of this page show the 4 platform cards always
+    # appearing in this exact order (Reddit, Facebook, YouTube, Other),
+    # each as its own card with a "View Analysis" link. The previous
+    # ancestor-XPath approach to scope each platform's own link ended up
+    # matching Reddit's link every single time (confirmed directly: a real
+    # run landed on the reddit-analysis URL for reddit, facebook, AND
+    # youtube), most likely because the XPath's ancestor search wasn't
+    # actually scoped tightly enough and kept resolving to a shared
+    # container. Matching "View Analysis" links by their fixed index on
+    # the page (0=Reddit, 1=Facebook, 2=YouTube; "Other" has none, using
+    # its own distinct link text instead) is far more reliable than trying
+    # to scope via DOM ancestry.
+    platform_order = ["reddit", "facebook", "youtube", "other"]
 
     def open_community_signals_page():
         page.goto(community_signals_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
         page.wait_for_timeout(WAIT_CHART)
 
-    for platform_key, platform_label in platform_labels.items():
+    for platform_index, platform_key in enumerate(platform_order):
+        platform_label = platform_labels[platform_key]
         log.append({"step": f"crawl_platform:{platform_key}:starting"})
 
-        def crawl_platform(platform_key=platform_key, platform_label=platform_label):
+        def crawl_platform(platform_key=platform_key, platform_label=platform_label, platform_index=platform_index):
             open_community_signals_page()
-            # Each platform section has its own "View Analysis" link; there
-            # are 4 on this page (one per platform), so match by proximity
-            # to the platform's own heading rather than by a single global
-            # "View Analysis" query which would be ambiguous here.
-            heading = page.get_by_text(platform_label, exact=False).first
-            if not heading.is_visible():
-                raise Exception(f"Platform heading '{platform_label}' not visible")
-            # The "View Analysis" link for this platform sits within the
-            # same card/section as its heading — locate the nearest one
-            # that follows the heading in the DOM.
-            section = heading.locator(
-                "xpath=ancestor::*[self::div or self::section][.//text()[contains(., 'View Analysis')]][1]"
-            )
-            view_link = section.get_by_text("View Analysis", exact=False).first
-            view_link.scroll_into_view_if_needed(timeout=5000)
-            view_link.click(timeout=8000)
+
+            if platform_key == "other":
+                # "Other Communities" doesn't share the "View Analysis"
+                # link pattern with the first 3 — it appears once, later
+                # on the page, matched by its own distinct label text.
+                view_link = page.get_by_text(platform_label, exact=False).first
+                if not view_link.is_visible():
+                    raise Exception(f"'{platform_label}' section not visible")
+                # Scroll to it and find ITS OWN following "View Analysis"
+                # link specifically (the one nearest below this heading).
+                view_link.scroll_into_view_if_needed(timeout=5000)
+                analysis_link = page.get_by_text("View Analysis", exact=False).last
+            else:
+                # Reddit/Facebook/YouTube's "View Analysis" links appear in
+                # that fixed left-to-right, top-to-bottom order on the
+                # page — index directly into them rather than trying to
+                # scope by DOM ancestry, which proved unreliable above.
+                all_links = page.get_by_text("View Analysis", exact=False)
+                if platform_index >= all_links.count():
+                    raise Exception(f"Expected 'View Analysis' link at index {platform_index} for {platform_label}, but only {all_links.count()} found")
+                analysis_link = all_links.nth(platform_index)
+
+            analysis_link.scroll_into_view_if_needed(timeout=5000)
+            analysis_link.click(timeout=8000)
             page.wait_for_timeout(WAIT_CHART)
 
             # Now on the platform-specific page (e.g. .../community-signals/reddit-analysis).
@@ -823,15 +845,50 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
     # confirms on the next run whether execution reaches here.
     log.append({"step": "crawl_chart_history:entered", "selector": chart_container_selector})
 
-    chart = page.locator(chart_container_selector).first
-    if chart.count() == 0:
-        log.append({"step": "crawl_chart_history", "error": "no chart container found"})
+    # A real run found the chart container (no "not found" error) but
+    # captured zero tooltip points across 24 hover samples — meaning either
+    # .recharts-wrapper matched something that ISN'T actually the visible
+    # chart (e.g. an off-screen/hidden duplicate, same responsive-layout
+    # pattern seen elsewhere on this site), or the real tooltip selector
+    # differs from what was tried. Broaden the container search across
+    # several common charting-library class names, and log which one
+    # actually matched (and its real bounding box) so a future pass can
+    # target the tooltip selector precisely instead of guessing again.
+    candidate_selectors = [
+        chart_container_selector,
+        "svg",  # last-resort: any visible SVG on the page containing the chart
+        "[class*='chart']",
+        "[class*='recharts']",
+    ]
+    chart = None
+    matched_selector = None
+    for sel in candidate_selectors:
+        candidate = page.locator(sel).first
+        if candidate.count() > 0:
+            box_check = candidate.bounding_box()
+            if box_check and box_check.get("width", 0) > 100:  # skip tiny/decorative svgs (icons etc)
+                chart = candidate
+                matched_selector = sel
+                break
+
+    log.append({
+        "step": "crawl_chart_history:container_search",
+        "matched_selector": matched_selector,
+        "candidates_tried": candidate_selectors,
+    })
+
+    if chart is None:
+        log.append({"step": "crawl_chart_history", "error": "no chart container found across all candidate selectors"})
+        log.append({"step": "crawl_chart_history:finished", "points_captured": 0})
         return history
 
     box = chart.bounding_box()
     if not box:
         log.append({"step": "crawl_chart_history", "error": "chart container not visible/no bounding box"})
+        log.append({"step": "crawl_chart_history:finished", "points_captured": 0})
         return history
+
+    log.append({"step": "crawl_chart_history:chart_found", "box": box})
 
     # Sample points evenly across the chart's width rather than trying to
     # locate individual SVG point elements (which vary by chart library and
@@ -848,7 +905,20 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
             page.mouse.move(x, y)
             page.wait_for_timeout(150)  # let the tooltip re-render
             tooltip = page.locator(".recharts-tooltip-wrapper, [role='tooltip']").first
-            if tooltip.count() == 0 or not tooltip.is_visible():
+            tooltip_count = tooltip.count()
+            tooltip_visible = tooltip.is_visible() if tooltip_count > 0 else False
+            if i < 3:
+                # DIAGNOSTIC — a real run found 0 points across all 24
+                # samples with no errors at all, meaning either the
+                # tooltip never appeared or its selector is wrong. Logging
+                # the first few samples' raw findings shows which.
+                log.append({
+                    "step": f"crawl_chart_history:sample_{i}",
+                    "x": x, "y": y,
+                    "tooltip_count": tooltip_count,
+                    "tooltip_visible": tooltip_visible,
+                })
+            if tooltip_count == 0 or not tooltip_visible:
                 continue
             tooltip_text = tooltip.inner_text(timeout=1000).strip()
             if not tooltip_text or tooltip_text in seen_labels:
