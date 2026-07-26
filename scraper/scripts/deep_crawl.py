@@ -940,6 +940,24 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
 
     log.append({"step": "crawl_chart_history:chart_found", "box": box})
 
+    # DIAGNOSTIC — 6 rounds of coordinate/event-based hover techniques have
+    # all failed to produce any tooltip content at all (most recently:
+    # tooltip_count=0, meaning the tooltip element doesn't even exist in
+    # the DOM during sampling, a materially different and more informative
+    # result than earlier rounds' tooltip_count=1/empty-text). Rather than
+    # keep guessing at interaction techniques blindly, save real screenshots
+    # of the actual chart area before and after a hover attempt, uploaded
+    # as workflow artifacts (same mechanism already used for login
+    # debugging) so a human can SEE what's genuinely on screen and
+    # determine the real trigger mechanism directly, instead of further
+    # blind iteration.
+    try:
+        chart_screenshot_before = str(ROOT / "library" / "chart_before_debug_screenshot.png")
+        chart.screenshot(path=chart_screenshot_before)
+        log.append({"step": "crawl_chart_history:screenshot_before", "path": chart_screenshot_before})
+    except Exception as e:
+        log.append({"step": "crawl_chart_history:screenshot_before", "error": str(e)})
+
     # Establish real pointer state before sampling — a bare page.mouse.move()
     # to an arbitrary first coordinate, with no prior pointer position, does
     # not reliably trigger hover-based UI transitions in Chromium under
@@ -950,6 +968,41 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
     # the browser a real "from A to B" pointer trajectory to react to.
     page.mouse.move(box["x"] - 20, box["y"] + box["height"] / 2)
     page.wait_for_timeout(200)
+
+    # Hover into the middle of the chart and screenshot again immediately,
+    # BEFORE the sampling loop below does anything else — this is the
+    # single clearest before/after comparison we can capture.
+    mid_x = box["x"] + box["width"] / 2
+    mid_y = box["y"] + box["height"] / 2
+    page.mouse.move(mid_x - 10, mid_y, steps=3)
+    page.mouse.move(mid_x, mid_y, steps=3)
+    page.wait_for_timeout(300)
+    try:
+        chart_screenshot_after = str(ROOT / "library" / "chart_after_hover_debug_screenshot.png")
+        chart.screenshot(path=chart_screenshot_after)
+        log.append({"step": "crawl_chart_history:screenshot_after_hover", "path": chart_screenshot_after})
+    except Exception as e:
+        log.append({"step": "crawl_chart_history:screenshot_after_hover", "error": str(e)})
+
+    # Also capture a full-page screenshot for broader context (e.g. in
+    # case the real chart/tooltip is rendered somewhere other than inside
+    # what we identified as the chart container).
+    try:
+        full_page_screenshot = str(ROOT / "library" / "chart_fullpage_debug_screenshot.png")
+        page.screenshot(path=full_page_screenshot, full_page=False)
+        log.append({"step": "crawl_chart_history:screenshot_fullpage", "path": full_page_screenshot})
+    except Exception as e:
+        log.append({"step": "crawl_chart_history:screenshot_fullpage", "error": str(e)})
+
+    # Also dump the chart container's raw outer HTML — this shows us
+    # directly, as text, exactly what library/markup is really being used
+    # (Recharts, a canvas-based lib, something custom, etc) rather than
+    # guessing from visual style alone.
+    try:
+        chart_html = chart.evaluate("el => el.outerHTML") or ""
+        log.append({"step": "crawl_chart_history:chart_html_sample", "html": chart_html[:3000]})
+    except Exception as e:
+        log.append({"step": "crawl_chart_history:chart_html_sample", "error": str(e)})
 
     # Sample points evenly across the chart's width rather than trying to
     # locate individual SVG point elements (which vary by chart library and
