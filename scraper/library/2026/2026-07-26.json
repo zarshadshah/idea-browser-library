@@ -212,75 +212,6 @@
           }
         ],
         "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/facebook-analysis"
-      },
-      {
-        "name": "Relevant Groups",
-        "summary": "Relevant Groups\n\n4 groups found\n\nClaude AI Community\n70+ comments\npublic\nDESCRIPTION\n\nFocused on AI code review and management. Lessons learned from reviewing and rewriting AI-generated code.\n\nWHY IT'S RELEVANT\n\nAn engaged community focused on AI code management and safety aligns directly with the benefits of sandbox environments, making it a crucial audience for product insights and feedback.\n\nRELEVANCE SIGNALS\nAI code review and management\nDiscussions about AI-driven development tools\nTarget audience: Solo SaaS founders and developers using AI tools\nVisit Group\nDeveloper Kaki\nActive discussions with over 10 comments\npublic\nDESCRIPTION\n\nDeveloper concerns about AI overreliance highlight the need for AI code review accuracy, aligning with the focus on sandbox safety.\n\nWHY IT'S RELEVANT\n\nThis group addresses developer skepticism about AI accuracy, a pain point the sandbox platform addresses with enhanced safety and review mechanisms.\n\nRELEVANCE SIGNALS\nDeveloper concerns about AI overreliance\nFocus on code review accuracy\nAudience: Indie developers and small teams\nVisit Group\nICT Hub Kenya\nVarious posts with discussions\npublic\nDESCRIPTION\n\nDiscussion around AI's role in code reviews and its integration into existing workflows, with mentions of GitHub Copilot.\n\nWHY IT'S RELEVANT\n\nDiscussions on AI integration in development processes align with AI sandboxing environments, providing partnership opportunities.\n\nRELEVANCE SIGNALS\nAI's integration in software development workflows\n",
-        "discussions": [
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/claudecommunity/posts/1036302625577069/"
-          },
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/developerkaki/posts/2686831718329391/"
-          },
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/icthubkenya/posts/4303853393091314/"
-          },
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/artificialintelligenceforeducation/posts/2077530169820105/"
-          }
-        ],
-        "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/facebook-analysis"
-      },
-      {
-        "name": "Claude AI Community",
-        "summary": "Claude AI Community\n70+ comments\npublic",
-        "discussions": [
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/claudecommunity/posts/1036302625577069/"
-          },
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/developerkaki/posts/2686831718329391/"
-          },
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/icthubkenya/posts/4303853393091314/"
-          },
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/artificialintelligenceforeducation/posts/2077530169820105/"
-          }
-        ],
-        "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/facebook-analysis"
-      },
-      {
-        "name": "DESCRIPTION",
-        "summary": "DESCRIPTION\n\nFocused on AI code review and management. Lessons learned from reviewing and rewriting AI-generated code.",
-        "discussions": [
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/claudecommunity/posts/1036302625577069/"
-          },
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/developerkaki/posts/2686831718329391/"
-          },
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/icthubkenya/posts/4303853393091314/"
-          },
-          {
-            "title": "Claude AI Community",
-            "url": "https://www.facebook.com/groups/artificialintelligenceforeducation/posts/2077530169820105/"
-          }
-        ],
-        "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/facebook-analysis"
       }
     ],
     "youtube": [
@@ -843,6 +774,6 @@
   "status": "not_started",
   "notes": "",
   "_source_url": "https://www.ideabrowser.com/hub/ideas/today",
-  "_scraped_at": "2026-07-26T15:21:35.805528+00:00",
+  "_scraped_at": "2026-07-26T15:33:25.198927+00:00",
   "_crawl_had_errors": true
 }
