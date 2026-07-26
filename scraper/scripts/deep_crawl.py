@@ -612,16 +612,15 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
         stats = crawler.safe(read_current_stats, f"read_stats:{kw_clean}", default={})
         entry["stats"] = stats
 
-        # Capture the real month-by-month chart history only for the FIRST
-        # keyword (the page's default/primary one) — repeating this
-        # hover-sampling process for every keyword would multiply an
-        # already multi-minute crawl by 7x+ for comparatively little
-        # payoff, since the primary keyword is what's actually displayed
-        # by default and most relevant to the idea itself.
-        if len(results) == 0:
-            entry["chart_history"] = crawler.safe(
-                lambda: crawl_chart_history(crawler), f"chart_history:{kw_clean}", default=[]
-            ) or []
+        # Capture real month-by-month chart history for EVERY keyword, not
+        # just the first — the user wants to compare trend charts across
+        # all keywords, not just the default one. This genuinely does add
+        # several minutes to the daily crawl (each keyword repeats the
+        # full 24-point hover-sampling process), which was accepted as a
+        # deliberate tradeoff.
+        entry["chart_history"] = crawler.safe(
+            lambda: crawl_chart_history(crawler), f"chart_history:{kw_clean}", default=[]
+        ) or []
 
         results.append(entry)
         log.append({"step": "keyword_done", "keyword": kw_clean, "stats_captured": bool(stats)})
