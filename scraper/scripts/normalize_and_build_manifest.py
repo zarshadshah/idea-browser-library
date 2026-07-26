@@ -106,11 +106,46 @@ def extract_pitch(raw_text: str, title: str) -> str:
     return "\n".join(lines[start_idx:]).strip()
 
 
+def find_subpage_by_url_pattern(subpages: dict, url_pattern: str) -> dict:
+    """
+    Sub-pages are stored keyed by the LINK TEXT that was clicked to reach
+    them (e.g. "Understand the market opportunity", "View Analysis #1"),
+    not by what the page actually contains — and several different links
+    share generic labels like "View Analysis" for genuinely different
+    pages (Value Equation, Market Matrix, ACP framework all use it). The
+    one reliable identifier is each sub-page's captured URL, which always
+    ends in a stable slug (e.g. "/market-gap", "/value-equation",
+    "/execution-plan"). Matching on that instead of the link label is far
+    more robust.
+    """
+    for entry in subpages.values():
+        if url_pattern in entry.get("url", ""):
+            return entry
+    return {}
+
+
 def normalize_day(raw: dict) -> dict:
     summary = raw.get("summary", {})
     subpages = raw.get("subpages", {})
     title = summary.get("title") or "Untitled idea"
     pitch = extract_pitch(summary.get("raw_text", ""), summary.get("title"))
+
+    market_gap_page = find_subpage_by_url_pattern(subpages, "/market-gap")
+    execution_plan_page = find_subpage_by_url_pattern(subpages, "/execution-plan")
+    value_equation_page = find_subpage_by_url_pattern(subpages, "/value-equation")
+    market_matrix_page = find_subpage_by_url_pattern(subpages, "/value-matrix")
+    acp_page = find_subpage_by_url_pattern(subpages, "/acp")
+    value_ladder_page = find_subpage_by_url_pattern(subpages, "/value-ladder")
+    community_page = find_subpage_by_url_pattern(subpages, "/community-signals")
+    proof_signals_page = find_subpage_by_url_pattern(subpages, "/proof-signals")
+    why_now_page = find_subpage_by_url_pattern(subpages, "/why-now")
+    keywords_page = find_subpage_by_url_pattern(subpages, "/keywords")
+    # Execution Difficulty is a modal on the main page itself, not a
+    # separate URL — its captured url stays "/hub/ideas/today" (or ends
+    # with the idea's own slug with no extra suffix). We identify it by
+    # matching on its own dict key instead, which the crawler always
+    # writes as exactly "Execution Difficulty".
+    execution_difficulty_entry = subpages.get("Execution Difficulty", {})
 
     normalized = {
         "id": raw["date"],
@@ -126,11 +161,11 @@ def normalize_day(raw: dict) -> dict:
             "whyNow": extract_score(summary, "why_now"),
         },
         "keywords": normalize_keywords(raw.get("keyword_analysis", [])),
-        "marketGap": subpages.get("Market Gap", {}).get("text", "")[:2000],
-        "executionPlan": subpages.get("Execution Plan", {}).get("text", "")[:2000],
+        "marketGap": market_gap_page.get("text", "")[:2000],
+        "executionPlan": execution_plan_page.get("text", "")[:2000],
         "executionDifficulty": {
             "score": None,
-            "note": subpages.get("Execution Difficulty", {}).get("text", "")[:500],
+            "note": execution_difficulty_entry.get("text", "")[:500],
         },
         "categorization": {
             "type": summary.get("type"),
@@ -139,8 +174,14 @@ def normalize_day(raw: dict) -> dict:
             "competitor": summary.get("main_competitor"),
         },
         "communitySignals": summary.get("community_signals_summary", {}),
-        "valueEquation": subpages.get("Value Equation", {}).get("text", "")[:500],
-        "marketMatrix": subpages.get("Market Matrix", {}).get("text", "")[:500],
+        "communitySignalsDetail": community_page.get("text", "")[:2000],
+        "valueEquation": value_equation_page.get("text", "")[:1500],
+        "marketMatrix": market_matrix_page.get("text", "")[:1500],
+        "acpFramework": acp_page.get("text", "")[:2000],
+        "valueLadderDetail": value_ladder_page.get("text", "")[:1500],
+        "proofSignals": proof_signals_page.get("text", "")[:2000],
+        "whyNowDetail": why_now_page.get("text", "")[:2000],
+        "keywordAnalysisDetail": keywords_page.get("text", "")[:2000],
         "status": "not_started",
         "notes": "",
         "_source_url": raw.get("source_url"),
