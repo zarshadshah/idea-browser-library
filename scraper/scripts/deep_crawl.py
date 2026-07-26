@@ -725,33 +725,35 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
             page.wait_for_timeout(WAIT_CHART)
 
             # Now on the platform-specific page (e.g. .../community-signals/reddit-analysis).
-            # A real run proved "View Analysis" is NOT the right link text
-            # at this level (card_count was 0 on every platform page) — a
-            # real screenshot of this page instead showed each community
-            # rendered as its own named heading (e.g. "r/AI_Agents") with a
-            # follower count subtitle, where the heading/card itself is
-            # likely the clickable link into that community's own page.
-            # Try several plausible patterns rather than assuming one:
-            # first an actual <a> tag whose href contains the platform's
-            # own domain slug, falling back to generic "View" style link
-            # text patterns other pages on this site have used elsewhere.
-            platform_domain_hints = {
-                "reddit": "reddit", "facebook": "facebook", "youtube": "youtube", "other": None,
-            }
-            domain_hint = platform_domain_hints.get(platform_key)
-            card_links = None
-            if domain_hint:
-                by_href = page.locator(f"a[href*='/{domain_hint}']:visible, a[href*='-analysis']:visible")
-                if by_href.count() > 0:
-                    card_links = by_href
-            if card_links is None:
-                # Fall back to any visible link/button whose own text looks
-                # like a community name (starts with r/ for Reddit, or any
-                # heading-like element that isn't obviously navigation).
-                card_links = page.locator("a:visible, [role='link']:visible").filter(
-                    has_text=re.compile(r".+")
-                )
-            card_count = min(card_links.count() if card_links else 0, 15)
+            # A real run's page-text dump confirmed the ACTUAL structure:
+            # each community appears as a distinct heading (e.g.
+            # "AI Agent Builders & Early Adopters", "r/AI_Agents") followed
+            # by a description and, for the "Other Communities" page
+            # specifically, "Pain Points" / "Interests" sub-sections — not
+            # as a list of generically-matching links. The earlier
+            # href-based approach overmatched on Facebook/YouTube/Other
+            # (hit the 15-item safety cap every time) because those pages
+            # don't reliably link out the same way Reddit's does — Reddit
+            # happened to work because its cards link directly to real
+            # reddit.com URLs, which the other platforms may not.
+            # Real per-platform community counts are visible in each page's
+            # own "Analyzed N ..." summary line — use that as the
+            # authoritative count instead of counting links, then locate
+            # each community by its distinct heading text directly.
+            summary_match = re.search(r"Analyzed\s+(\d+)\s+(?:relevant\s+)?communit", get_visible_text(page), re.IGNORECASE)
+            if not summary_match:
+                summary_match = re.search(r"(\d+)\s+groups?\s+analyzed", get_visible_text(page), re.IGNORECASE)
+            expected_count = int(summary_match.group(1)) if summary_match else None
+
+            # Community name headings are rendered as distinct heading-level
+            # elements (h1-h4) directly on the page — filter to just those,
+            # excluding the page's own title/breadcrumb headings which
+            # appear earlier and share the same tag.
+            heading_els = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(
+                r"^(ideabrowser|Safe playground|Community Signals|Take the quiz)"
+            ))
+            all_heading_count = heading_els.count()
+            card_count = min(expected_count, all_heading_count) if expected_count else min(all_heading_count, 15)
             platform_url = page.url
 
             # DIAGNOSTIC — the previous run showed this whole function
@@ -775,39 +777,51 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
 
                 def crawl_community_card(i=i):
                     # Re-fetch locators fresh each iteration since navigating
-                    # away and back invalidates previous handles. Uses the
-                    # SAME matching approach as the outer platform-page
-                    # search above, for consistency — see that comment for
-                    # why "View Analysis" was replaced with this broader
-                    # href/visible-link based matching.
+                    # away and back invalidates previous handles. Matches
+                    # the outer function's heading-based approach (see that
+                    # comment for why link-based matching was replaced).
                     page.goto(platform_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
                     page.wait_for_timeout(WAIT_CHART)
-                    domain_hint = platform_domain_hints.get(platform_key)
-                    links = None
-                    if domain_hint:
-                        by_href = page.locator(f"a[href*='/{domain_hint}']:visible, a[href*='-analysis']:visible")
-                        if by_href.count() > 0:
-                            links = by_href
-                    if links is None:
-                        links = page.locator("a:visible, [role='link']:visible").filter(has_text=re.compile(r".+"))
-                    if i >= links.count():
+                    headings = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(
+                        r"^(ideabrowser|Safe playground|Community Signals|Take the quiz)"
+                    ))
+                    if i >= headings.count():
                         raise Exception(f"Card index {i} no longer available")
-                    card = links.nth(i)
-                    if not card.is_visible():
+                    heading = headings.nth(i)
+                    if not heading.is_visible():
                         raise Exception(f"Card {i} not visible")
-                    card.scroll_into_view_if_needed(timeout=5000)
-                    card.click(timeout=8000)
-                    page.wait_for_timeout(WAIT_CHART)
+                    heading.scroll_into_view_if_needed(timeout=5000)
+                    name = heading.inner_text(timeout=3000).strip()
 
-                    community_text = get_visible_text(page)
-                    lines = [l.strip() for l in community_text.split("\n") if l.strip()]
-                    name = next((l for l in lines if l.startswith("r/") or "followers" in community_text[:200]), lines[0] if lines else "Unknown")
+                    # Reddit's community headings are real navigable links
+                    # into a dedicated per-subreddit page with discussion
+                    # cards and real "View on Reddit" hrefs (confirmed via
+                    # the original site screenshots). Other platforms may
+                    # not drill any deeper — try clicking, but don't treat
+                    # a failed/no-op click as an error, since capturing
+                    # this community's name + immediate surrounding text is
+                    # still real, useful data even without a deeper page.
+                    url_before = page.url
+                    try:
+                        heading.click(timeout=4000)
+                        page.wait_for_timeout(WAIT_CHART)
+                    except Exception:
+                        pass
+                    navigated = page.url != url_before
 
-                    # Capture real discussion cards: each has a title, a
-                    # short blurb, and a "View on Reddit"-style link whose
-                    # REAL destination only exists as an href attribute,
-                    # never as visible page text — this is the actual data
-                    # we're after for making real, working links in the app.
+                    community_text = get_visible_text(page) if navigated else (
+                        # If we didn't navigate anywhere, capture just the
+                        # text in this heading's own surrounding block
+                        # (its parent container) rather than the whole
+                        # page, so each community's summary stays distinct
+                        # instead of every entry repeating the full page.
+                        heading.locator("xpath=ancestor::*[self::div][1]").inner_text(timeout=3000)
+                    )
+
+                    # Capture real discussion/external links: on Reddit's
+                    # drill-down pages these are actual reddit.com hrefs;
+                    # on other platforms they may not exist at all, which
+                    # is fine — discussions simply stays empty for those.
                     discussions = []
                     ext_links = page.locator("a[href*='reddit.com'], a[href*='facebook.com'], a[href*='youtube.com']")
                     ext_count = ext_links.count()
@@ -959,6 +973,34 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
             tooltip = page.locator(".recharts-tooltip-wrapper, [role='tooltip']").first
             tooltip_count = tooltip.count()
             tooltip_visible = tooltip.is_visible() if tooltip_count > 0 else False
+
+            if tooltip_count > 0 and not tooltip_visible:
+                # A prior run confirmed the tooltip element exists in the
+                # DOM at every sample but never becomes visible via
+                # simulated OS-level mouse movement alone — a known gap
+                # with React-driven hover state in automated browsers
+                # (confirmed via community reports of the exact same
+                # Recharts/Playwright combination). Force the issue by
+                # dispatching real mouseover/mousemove/mouseenter DOM
+                # events directly at the target coordinates, which
+                # Recharts' internal event listeners respond to even when
+                # the OS-level pointer simulation alone doesn't visibly
+                # register.
+                page.evaluate(
+                    """([x, y]) => {
+                        const el = document.elementFromPoint(x, y);
+                        if (!el) return;
+                        for (const type of ['mouseover', 'mouseenter', 'mousemove']) {
+                            el.dispatchEvent(new MouseEvent(type, {
+                                bubbles: true, cancelable: true, clientX: x, clientY: y,
+                            }));
+                        }
+                    }""",
+                    [x, y],
+                )
+                page.wait_for_timeout(200)
+                tooltip_visible = tooltip.is_visible() if tooltip.count() > 0 else False
+
             if i < 3:
                 # DIAGNOSTIC — a real run found 0 points across all 24
                 # samples with no errors at all, meaning either the
