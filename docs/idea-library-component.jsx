@@ -180,6 +180,174 @@ function safeText(value) {
   return String(value);
 }
 
+// The scraper's long-form fields (Market Gap, Why Now, Proof & Signals,
+// Value Ladder, ACP Framework, Execution Plan) are captured as raw plain
+// text copied straight from the site's own page — genuinely accurate
+// content, but with no visual structure at all once dropped into a plain
+// <p>, making a long section read as one dense wall of text. The real
+// text does have a consistent, parseable shape though: each subsection
+// starts with an emoji, followed by a short title line, an optional
+// "N/10" score line, and then its body text — this parser splits on that
+// pattern (falling back gracefully to plain paragraphs for any text that
+// doesn't match, e.g. the intro paragraph before the first subsection)
+// so the app can render real headings and subheadings instead of one
+// undifferentiated block.
+function parseStructuredSections(text) {
+  if (!text) return [];
+  const lines = text.split("\n").map((l) => l.trim());
+  // Matches a line that's ONLY an emoji (optionally with variation
+  // selector), used as each subsection's boundary marker in the real data.
+  const emojiOnlyLine = /^\p{Extended_Pictographic}\uFE0F?$/u;
+  // The real scraped data renders a score as TWO separate lines — the bare
+  // number, then "/10" on its own line right after — not as one combined
+  // "N/10" string (confirmed directly against real Market Gap text).
+  const isDigitLine = (l) => /^\d{1,2}$/.test(l);
+  const isSlashTenLine = (l) => /^\/\s*10$/.test(l);
+
+  const sections = [];
+  let intro = [];
+  let current = null;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (!line) continue;
+    if (emojiOnlyLine.test(line)) {
+      if (current) sections.push(current);
+      const title = lines[i + 1] || "";
+      let score = null;
+      let consumed = 2; // emoji + title
+      if (isDigitLine(lines[i + 2] || "") && isSlashTenLine(lines[i + 3] || "")) {
+        score = Number(lines[i + 2]);
+        consumed = 4; // emoji + title + digit + "/10"
+      }
+      current = { emoji: line, title, score, body: [] };
+      i += consumed - 1;
+      continue;
+    }
+    if (current) {
+      current.body.push(line);
+    } else {
+      intro.push(line);
+    }
+  }
+  if (current) sections.push(current);
+
+  // The intro block commonly starts with a repeated section title
+  // ("Market Gap") followed by "Overall Rating" and its own split-line
+  // score ("8" then "/10") before the real descriptive paragraph begins
+  // — strip that boilerplate rather than showing it as prose.
+  const introLines = intro.filter((l) => l);
+  let introStart = 0;
+  if (introLines[introStart] && /overall rating/i.test(introLines[introStart])) introStart++;
+  else if (introLines[0] && introLines[1] && /overall rating/i.test(introLines[1])) introStart = 2;
+  while (
+    introStart < introLines.length &&
+    (isDigitLine(introLines[introStart]) || isSlashTenLine(introLines[introStart]) || /overall rating/i.test(introLines[introStart]))
+  ) {
+    introStart++;
+  }
+
+  return {
+    intro: introLines.slice(introStart).join(" ").trim(),
+    sections: sections.map((s) => ({ ...s, body: s.body.join(" ").trim() })),
+  };
+}
+
+// Alternate structure pattern seen in Value Ladder / Execution Plan style
+// text: sections are marked by a short ALL-CAPS heading line on its own
+// (e.g. "LEAD MAGNET", "FRONTEND OFFER", "PART 1: BUSINESS
+// CLASSIFICATION") rather than an emoji marker. Distinguishing an
+// all-caps line from a genuine sentence in normal prose (which won't be
+// all-caps) makes this a distinct, reliable second pattern rather than a
+// fuzzy guess.
+function parseAllCapsSections(text) {
+  if (!text) return { intro: "", sections: [] };
+  const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
+  // A real section header line: short (under ~50 chars), letters/spaces/
+  // digits/colon/ampersand only, and genuinely all-uppercase where it has
+  // any letters at all (so pure-number or pure-punctuation lines don't
+  // false-positive).
+  const isCapsHeader = (l) =>
+    l.length > 2 && l.length < 50 && /^[A-Z0-9 &:'\-]+$/.test(l) && /[A-Z]/.test(l);
+
+  const sections = [];
+  let intro = [];
+  let current = null;
+  for (const line of lines) {
+    if (isCapsHeader(line)) {
+      if (current) sections.push(current);
+      current = { title: line, body: [] };
+      continue;
+    }
+    if (current) current.body.push(line);
+    else intro.push(line);
+  }
+  if (current) sections.push(current);
+  return {
+    intro: intro.join(" ").trim(),
+    sections: sections.map((s) => ({ ...s, body: s.body.join(" ").trim() })),
+  };
+}
+
+// Renders a long scraped field with real visual structure: an intro
+// paragraph, then each subsection as its own labeled block with an emoji,
+// title, optional score bar, and body text — instead of one dense <p>.
+// Falls back to a single plain paragraph if the text doesn't match either
+// expected pattern at all, so nothing is ever lost even for oddly-shaped
+// input.
+function StructuredSection({ text }) {
+  const clean = safeText(text);
+  if (!clean) return null;
+
+  const emojiParsed = parseStructuredSections(clean);
+  if (emojiParsed.sections.length) {
+    return (
+      <div className="space-y-4">
+        {emojiParsed.intro && <p className="leading-relaxed">{emojiParsed.intro}</p>}
+        {emojiParsed.sections.map((s, i) => (
+          <div key={i} className="pl-3" style={{ borderLeft: "2px solid rgba(232,163,61,0.4)" }}>
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-base">{s.emoji}</span>
+              <h4 className="font-bold text-sm" style={{ fontFamily: "'Fraunces', serif" }}>{s.title}</h4>
+              {s.score != null && (
+                <span
+                  className="text-[10px] font-bold px-1.5 py-0.5 rounded ml-auto shrink-0"
+                  style={{ backgroundColor: "rgba(232,163,61,0.15)", color: "#E8A33D", fontFamily: "'JetBrains Mono', monospace" }}
+                >
+                  {s.score}/10
+                </span>
+              )}
+            </div>
+            <p className="text-sm leading-relaxed whitespace-pre-line opacity-80">{s.body}</p>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  const capsParsed = parseAllCapsSections(clean);
+  if (capsParsed.sections.length >= 2) {
+    return (
+      <div className="space-y-4">
+        {capsParsed.intro && <p className="leading-relaxed">{capsParsed.intro}</p>}
+        {capsParsed.sections.map((s, i) => (
+          <div key={i}>
+            <h4
+              className="text-xs font-bold uppercase tracking-wider mb-1 pb-1 border-b border-black/10"
+              style={{ color: "#E8A33D", fontFamily: "'JetBrains Mono', monospace" }}
+            >
+              {s.title}
+            </h4>
+            <p className="text-sm leading-relaxed whitespace-pre-line opacity-80">{s.body}</p>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  return <p className="leading-relaxed whitespace-pre-line">{clean}</p>;
+}
+
 function ScoreBar({ label, score, icon: Icon }) {
   const pct = (score / 10) * 100;
   return (
@@ -457,6 +625,7 @@ function KeywordRow({ kw }) {
 
 function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAskClaude, onSummarize }) {
   const [tab, setTab] = useState("Overview");
+  const [chartKeyword, setChartKeyword] = useState(null);
   const [localNotes, setLocalNotes] = useState(idea.notes || "");
   const cfg = STATUS_CONFIG[idea.status];
 
@@ -581,15 +750,32 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                 <div className="text-[10px] uppercase tracking-wider opacity-40 mb-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                   Search demand data — sorted by growth
                 </div>
-                {idea.keywords?.[0]?.chartHistory?.length >= 2 && (
-                  <div className="mb-4 pb-4 border-b border-black/10">
-                    <div className="text-xs font-semibold mb-2" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                      {idea.keywords[0].keyword} — search volume over time
+                {(() => {
+                  const withHistory = (idea.keywords || []).filter((k) => k.chartHistory?.length >= 2);
+                  if (!withHistory.length) return null;
+                  const selected = withHistory.find((k) => k.keyword === chartKeyword) || withHistory[0];
+                  return (
+                    <div className="mb-4 pb-4 border-b border-black/10">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-xs font-semibold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                          Search volume over time —
+                        </span>
+                        <select
+                          value={selected.keyword}
+                          onChange={(e) => setChartKeyword(e.target.value)}
+                          className="text-xs font-semibold px-1.5 py-0.5 rounded border border-black/10 bg-white/60"
+                          style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                        >
+                          {withHistory.map((k) => (
+                            <option key={k.keyword} value={k.keyword}>{k.keyword}</option>
+                          ))}
+                        </select>
+                      </div>
+                      <KeywordHistoryChart history={selected.chartHistory} />
+                      <div className="text-[10px] opacity-40 mt-1">Hover the chart to see monthly values</div>
                     </div>
-                    <KeywordHistoryChart history={idea.keywords[0].chartHistory} />
-                    <div className="text-[10px] opacity-40 mt-1">Hover the chart to see monthly values</div>
-                  </div>
-                )}
+                  );
+                })()}
                 {idea.keywords?.length ? (
                   idea.keywords
                     .slice()
@@ -610,7 +796,7 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                   <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                     Market Gap
                   </div>
-                  <p className="leading-relaxed">{safeText(idea.marketGap)}</p>
+                  <StructuredSection text={idea.marketGap} />
                 </div>
                 <div className="grid grid-cols-2 gap-3 pt-2">
                   <div>
@@ -635,7 +821,7 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                       Why Now (full analysis) ▾
                     </summary>
-                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.whyNowDetail}</p>
+                    <StructuredSection text={idea.whyNowDetail} />
                   </details>
                 )}
                 {idea.proofSignals && (
@@ -643,7 +829,7 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                       Proof & Signals ▾
                     </summary>
-                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.proofSignals}</p>
+                    <StructuredSection text={idea.proofSignals} />
                   </details>
                 )}
                 {(idea.valueEquation || idea.marketMatrix) && (
@@ -688,7 +874,7 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                       Audience / Community / Product Framework ▾
                     </summary>
-                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.acpFramework}</p>
+                    <StructuredSection text={idea.acpFramework} />
                   </details>
                 )}
               </div>
@@ -710,14 +896,14 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                   <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                     Suggested Plan
                   </div>
-                  <p className="leading-relaxed whitespace-pre-line">{safeText(idea.executionPlan)}</p>
+                  <StructuredSection text={idea.executionPlan} />
                 </div>
                 {idea.valueLadderDetail && (
                   <details className="pt-2 border-t border-black/10">
                     <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                       Full Value Ladder ▾
                     </summary>
-                    <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.valueLadderDetail}</p>
+                    <StructuredSection text={idea.valueLadderDetail} />
                   </details>
                 )}
               </div>
@@ -776,18 +962,10 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                                       ))}
                                     </div>
                                   )}
-                                  {community.url && !community.discussions?.length && (
-                                    <a
-                                      href={community.url}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="inline-flex items-center gap-1 text-xs underline"
-                                      style={{ color: "#6B8F71" }}
-                                    >
-                                      <ExternalLink size={12} />
-                                      View source
-                                    </a>
-                                  )}
+                                  {/* No fallback link to community.url here by design — that field
+                                      holds the ideabrowser.com page URL itself, not a real external
+                                      link, and per explicit request only genuine external links
+                                      (Reddit/Facebook/YouTube/etc) should ever be shown. */}
                                 </div>
                               </details>
                             ))}
