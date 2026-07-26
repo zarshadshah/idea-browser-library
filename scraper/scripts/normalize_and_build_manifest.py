@@ -66,6 +66,14 @@ def normalize_keywords(keyword_analysis: list) -> list:
             "growth": growth,
             "cpc": stats.get("cpc"),
             "competition": stats.get("competition"),
+            # Real month-by-month history from hovering the site's own
+            # chart (see deep_crawl.py's crawl_chart_history) — only ever
+            # present on the first/primary keyword, since capturing it for
+            # every keyword would make the crawl impractically slow. Absent
+            # entirely (rather than an empty list) if the scraper couldn't
+            # find/hover the chart that day, so the app can distinguish
+            # "no history captured" from "captured but genuinely empty".
+            **({"chartHistory": kw["chart_history"]} if kw.get("chart_history") else {}),
         })
     return out
 
@@ -222,6 +230,25 @@ def normalize_day(raw: dict) -> dict:
         },
         "communitySignals": summary.get("community_signals_summary", {}),
         "communitySignalsDetail": trim_subpage_nav(community_page.get("text", ""))[:6000],
+        # Real, structured community data (actual subreddit/group names,
+        # discussion titles, and real external links) from
+        # crawl_community_signals_deep in deep_crawl.py — distinct from
+        # communitySignalsDetail above, which is just the summary page's
+        # raw paragraph text. Each discussion's "url" is a genuine href
+        # captured from the live page, not fabricated. Trimmed defensively
+        # in case a platform's community list is unexpectedly large.
+        "communitySignalsRich": {
+            platform: [
+                {
+                    "name": community.get("name", ""),
+                    "summary": (community.get("raw_text", "") or "")[:1500],
+                    "discussions": (community.get("discussions", []) or [])[:10],
+                    "url": community.get("url", ""),
+                }
+                for community in (communities or [])[:10]
+            ]
+            for platform, communities in (raw.get("community_signals_deep") or {}).items()
+        },
         "valueEquation": trim_subpage_nav(value_equation_page.get("text", ""))[:6000],
         "marketMatrix": trim_subpage_nav(market_matrix_page.get("text", ""))[:6000],
         "acpFramework": trim_subpage_nav(acp_page.get("text", ""))[:6000],
