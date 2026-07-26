@@ -28,6 +28,46 @@
     "selector": ".recharts-wrapper"
   },
   {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 500.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false
+  },
+  {
     "step": "crawl_chart_history:finished",
     "points_captured": 0
   },
@@ -87,7 +127,7 @@
   },
   {
     "step": "crawl_platform:facebook:landed",
-    "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/reddit-analysis",
+    "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/facebook-analysis",
     "card_count": 0
   },
   {
@@ -99,7 +139,7 @@
   },
   {
     "step": "crawl_platform:youtube:landed",
-    "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/reddit-analysis",
+    "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/youtube-analysis",
     "card_count": 0
   },
   {
