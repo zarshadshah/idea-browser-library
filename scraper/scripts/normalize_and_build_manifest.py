@@ -124,6 +124,53 @@ def find_subpage_by_url_pattern(subpages: dict, url_pattern: str) -> dict:
     return {}
 
 
+def trim_subpage_nav(text: str) -> str:
+    """
+    Every sub-page's captured text starts with the same sidebar navigation
+    boilerplate before the real content: "...Free plan\nToggle Sidebar\n
+    Browse Ideas\n<idea title>\n<Section Name>\nBuild Gallery\nUpgrade\n\n
+    START HERE\n\nDiscover your founder archetype\n\n...Take the quiz\n"
+    then the actual section content begins. A first version of the
+    normalizer stored this raw, so every field (Market Gap, Execution
+    Plan, etc) displayed identical-looking nav junk before its real,
+    genuinely distinct content — confusing since the content WAS correct,
+    just buried under an unstripped, repeated prefix.
+
+    "Take the quiz" reliably marks the end of that boilerplate across every
+    sub-page sampled so far, so we cut everything up to and including it.
+    """
+    if not text:
+        return text
+    marker = "Take the quiz"
+    if marker in text:
+        return text.split(marker, 1)[1].strip()
+    return text.strip()
+
+
+def trim_execution_difficulty(text: str) -> str:
+    """
+    The Execution Difficulty modal is captured while the main Idea-of-the-
+    Day page is still showing underneath it, so its raw text is the ENTIRE
+    main page's content, with the actual modal content appended at the very
+    end (after the page's own "Execution Difficulty" section heading
+    appears a second time, this time followed by the real modal body:
+    "Overview", "Execution Risks", "Technical Challenges", etc). We want
+    only that final, real modal section, not the whole page above it.
+    """
+    if not text:
+        return text
+    # The modal's own content starts with a repeated "Execution Difficulty"
+    # heading immediately followed by the difficulty score (e.g. "3/10")
+    # and then "Solo-friendly build..." — find the LAST occurrence of this
+    # heading, since it appears once in the page's Framework Fit summary
+    # and again for the actual modal body.
+    marker = "Execution Difficulty"
+    last_idx = text.rfind(marker)
+    if last_idx == -1:
+        return text.strip()
+    return text[last_idx:].strip()
+
+
 def normalize_day(raw: dict) -> dict:
     summary = raw.get("summary", {})
     subpages = raw.get("subpages", {})
@@ -161,11 +208,11 @@ def normalize_day(raw: dict) -> dict:
             "whyNow": extract_score(summary, "why_now"),
         },
         "keywords": normalize_keywords(raw.get("keyword_analysis", [])),
-        "marketGap": market_gap_page.get("text", "")[:2000],
-        "executionPlan": execution_plan_page.get("text", "")[:2000],
+        "marketGap": trim_subpage_nav(market_gap_page.get("text", ""))[:2000],
+        "executionPlan": trim_subpage_nav(execution_plan_page.get("text", ""))[:2000],
         "executionDifficulty": {
             "score": None,
-            "note": execution_difficulty_entry.get("text", "")[:500],
+            "note": trim_execution_difficulty(execution_difficulty_entry.get("text", ""))[:800],
         },
         "categorization": {
             "type": summary.get("type"),
@@ -174,14 +221,14 @@ def normalize_day(raw: dict) -> dict:
             "competitor": summary.get("main_competitor"),
         },
         "communitySignals": summary.get("community_signals_summary", {}),
-        "communitySignalsDetail": community_page.get("text", "")[:2000],
-        "valueEquation": value_equation_page.get("text", "")[:1500],
-        "marketMatrix": market_matrix_page.get("text", "")[:1500],
-        "acpFramework": acp_page.get("text", "")[:2000],
-        "valueLadderDetail": value_ladder_page.get("text", "")[:1500],
-        "proofSignals": proof_signals_page.get("text", "")[:2000],
-        "whyNowDetail": why_now_page.get("text", "")[:2000],
-        "keywordAnalysisDetail": keywords_page.get("text", "")[:2000],
+        "communitySignalsDetail": trim_subpage_nav(community_page.get("text", ""))[:2000],
+        "valueEquation": trim_subpage_nav(value_equation_page.get("text", ""))[:1500],
+        "marketMatrix": trim_subpage_nav(market_matrix_page.get("text", ""))[:1500],
+        "acpFramework": trim_subpage_nav(acp_page.get("text", ""))[:2000],
+        "valueLadderDetail": trim_subpage_nav(value_ladder_page.get("text", ""))[:1500],
+        "proofSignals": trim_subpage_nav(proof_signals_page.get("text", ""))[:2000],
+        "whyNowDetail": trim_subpage_nav(why_now_page.get("text", ""))[:2000],
+        "keywordAnalysisDetail": trim_subpage_nav(keywords_page.get("text", ""))[:2000],
         "status": "not_started",
         "notes": "",
         "_source_url": raw.get("source_url"),
