@@ -28,6 +28,10 @@
     "selector": ".recharts-wrapper"
   },
   {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 0
+  },
+  {
     "step": "keyword_done",
     "keyword": "Ai coding agents",
     "stats_captured": true
@@ -70,12 +74,48 @@
     "step": "crawl_platform:reddit:starting"
   },
   {
+    "step": "crawl_platform:reddit:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/reddit-analysis",
+    "card_count": 0
+  },
+  {
+    "step": "crawl_platform:reddit:finished",
+    "communities_found": 0
+  },
+  {
     "step": "crawl_platform:facebook:starting"
+  },
+  {
+    "step": "crawl_platform:facebook:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/reddit-analysis",
+    "card_count": 0
+  },
+  {
+    "step": "crawl_platform:facebook:finished",
+    "communities_found": 0
   },
   {
     "step": "crawl_platform:youtube:starting"
   },
   {
+    "step": "crawl_platform:youtube:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/reddit-analysis",
+    "card_count": 0
+  },
+  {
+    "step": "crawl_platform:youtube:finished",
+    "communities_found": 0
+  },
+  {
     "step": "crawl_platform:other:starting"
+  },
+  {
+    "step": "crawl_platform:other:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/safe-test-server-for-ai-coding-agents-0897e33d/community-signals/other-communities",
+    "card_count": 0
+  },
+  {
+    "step": "crawl_platform:other:finished",
+    "communities_found": 0
   }
 ]
