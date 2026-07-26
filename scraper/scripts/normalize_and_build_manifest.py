@@ -79,7 +79,7 @@ def extract_pitch(raw_text: str, title: str) -> str:
     marker (e.g. "*Analysis, scores" disclaimer or "Keyword:").
     """
     if not title or title not in raw_text:
-        return raw_text[:2000]
+        return raw_text[:4000]
     after_title = raw_text.split(title, 1)[1]
     for stop_marker in ["*Analysis, scores", "\nKeyword:"]:
         if stop_marker in after_title:
@@ -200,7 +200,7 @@ def normalize_day(raw: dict) -> dict:
         "title": title,
         "tagline": (pitch[:160] + "...") if len(pitch) > 160 else pitch,
         "badges": [],
-        "description": pitch[:2000],
+        "description": pitch[:4000],
         "scores": {
             "opportunity": extract_score(summary, "opportunity"),
             "problem": extract_score(summary, "problem"),
@@ -208,11 +208,11 @@ def normalize_day(raw: dict) -> dict:
             "whyNow": extract_score(summary, "why_now"),
         },
         "keywords": normalize_keywords(raw.get("keyword_analysis", [])),
-        "marketGap": trim_subpage_nav(market_gap_page.get("text", ""))[:2000],
-        "executionPlan": trim_subpage_nav(execution_plan_page.get("text", ""))[:2000],
+        "marketGap": trim_subpage_nav(market_gap_page.get("text", ""))[:6000],
+        "executionPlan": trim_subpage_nav(execution_plan_page.get("text", ""))[:6000],
         "executionDifficulty": {
             "score": None,
-            "note": trim_execution_difficulty(execution_difficulty_entry.get("text", ""))[:800],
+            "note": trim_execution_difficulty(execution_difficulty_entry.get("text", ""))[:3000],
         },
         "categorization": {
             "type": summary.get("type"),
@@ -221,14 +221,14 @@ def normalize_day(raw: dict) -> dict:
             "competitor": summary.get("main_competitor"),
         },
         "communitySignals": summary.get("community_signals_summary", {}),
-        "communitySignalsDetail": trim_subpage_nav(community_page.get("text", ""))[:2000],
-        "valueEquation": trim_subpage_nav(value_equation_page.get("text", ""))[:1500],
-        "marketMatrix": trim_subpage_nav(market_matrix_page.get("text", ""))[:1500],
-        "acpFramework": trim_subpage_nav(acp_page.get("text", ""))[:2000],
-        "valueLadderDetail": trim_subpage_nav(value_ladder_page.get("text", ""))[:1500],
-        "proofSignals": trim_subpage_nav(proof_signals_page.get("text", ""))[:2000],
-        "whyNowDetail": trim_subpage_nav(why_now_page.get("text", ""))[:2000],
-        "keywordAnalysisDetail": trim_subpage_nav(keywords_page.get("text", ""))[:2000],
+        "communitySignalsDetail": trim_subpage_nav(community_page.get("text", ""))[:6000],
+        "valueEquation": trim_subpage_nav(value_equation_page.get("text", ""))[:6000],
+        "marketMatrix": trim_subpage_nav(market_matrix_page.get("text", ""))[:6000],
+        "acpFramework": trim_subpage_nav(acp_page.get("text", ""))[:6000],
+        "valueLadderDetail": trim_subpage_nav(value_ladder_page.get("text", ""))[:6000],
+        "proofSignals": trim_subpage_nav(proof_signals_page.get("text", ""))[:6000],
+        "whyNowDetail": trim_subpage_nav(why_now_page.get("text", ""))[:6000],
+        "keywordAnalysisDetail": trim_subpage_nav(keywords_page.get("text", ""))[:6000],
         "status": "not_started",
         "notes": "",
         "_source_url": raw.get("source_url"),
