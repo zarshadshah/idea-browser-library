@@ -53,7 +53,7 @@
   // transforming it explicitly with Babel.transform() avoids that internal
   // code path entirely and gives us a real, visible error message if
   // something still goes wrong, instead of an opaque internal stack trace.
-  fetch('idea-library-component.jsx')
+  fetch('idea-library-component.jsx?v=' + Date.now())
     .then((res) => {
       if (!res.ok) throw new Error(`Failed to fetch component source: ${res.status}`);
       return res.text();
