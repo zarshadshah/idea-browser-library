@@ -740,9 +740,10 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
             # own "Analyzed N ..." summary line — use that as the
             # authoritative count instead of counting links, then locate
             # each community by its distinct heading text directly.
-            summary_match = re.search(r"Analyzed\s+(\d+)\s+(?:relevant\s+)?communit", get_visible_text(page), re.IGNORECASE)
+            page_text_for_count = get_visible_text(page)
+            summary_match = re.search(r"Analyzed\s+(\d+)\s+(?:relevant\s+)?(?:communit\w*|channels?|groups?|segments?)", page_text_for_count, re.IGNORECASE)
             if not summary_match:
-                summary_match = re.search(r"(\d+)\s+groups?\s+analyzed", get_visible_text(page), re.IGNORECASE)
+                summary_match = re.search(r"(\d+)\s+groups?\s+analyzed", page_text_for_count, re.IGNORECASE)
             expected_count = int(summary_match.group(1)) if summary_match else None
 
             # Community name headings are rendered as distinct heading-level
@@ -1001,6 +1002,27 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
                 page.wait_for_timeout(200)
                 tooltip_visible = tooltip.is_visible() if tooltip.count() > 0 else False
 
+            # A second real run STILL showed tooltip_visible=false at every
+            # sample even after the JS-dispatch fallback above — Playwright
+            # docs confirm is_visible() reflects display:none / zero-size
+            # / visibility:hidden on the queried element specifically, NOT
+            # on that element's children. Recharts commonly renders the
+            # tooltip WRAPPER as an always-present positioned div, with
+            # the actual show/hide toggle happening on an INNER child
+            # element instead — meaning is_visible() on the wrapper itself
+            # may never reflect the real on-screen state. Sidestep this
+            # entirely: read the wrapper's actual rendered text content
+            # directly via evaluate(), regardless of what is_visible()
+            # reports on it, and treat "has real text" as the true
+            # visibility signal instead.
+            tooltip_text_raw = ""
+            if tooltip_count > 0:
+                try:
+                    tooltip_text_raw = tooltip.evaluate("el => el.innerText || el.textContent || ''") or ""
+                except Exception:
+                    tooltip_text_raw = ""
+            has_real_tooltip_content = bool(tooltip_text_raw.strip())
+
             if i < 3:
                 # DIAGNOSTIC — a real run found 0 points across all 24
                 # samples with no errors at all, meaning either the
@@ -1011,10 +1033,12 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
                     "x": x, "y": y,
                     "tooltip_count": tooltip_count,
                     "tooltip_visible": tooltip_visible,
+                    "tooltip_text_raw": tooltip_text_raw[:200],
+                    "has_real_tooltip_content": has_real_tooltip_content,
                 })
-            if tooltip_count == 0 or not tooltip_visible:
+            if not has_real_tooltip_content:
                 continue
-            tooltip_text = tooltip.inner_text(timeout=1000).strip()
+            tooltip_text = tooltip_text_raw.strip()
             if not tooltip_text or tooltip_text in seen_labels:
                 continue
             seen_labels.add(tooltip_text)
