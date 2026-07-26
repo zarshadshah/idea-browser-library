@@ -649,13 +649,13 @@ My notes: ${idea.notes || "(none yet)"}`;
 const LIBRARY_BASE_URL = "https://raw.githubusercontent.com/zarshadshah/idea-browser-library/main";
 
 async function loadLibraryFromRemote(baseUrl) {
-  const manifestRes = await fetch(`${baseUrl}/library/manifest.json`);
+  const manifestRes = await fetch(`${baseUrl}/scraper/library/manifest.json`);
   if (!manifestRes.ok) throw new Error(`manifest fetch failed: ${manifestRes.status}`);
   const manifest = await manifestRes.json();
 
   const ideas = await Promise.all(
     manifest.ideas.map(async (entry) => {
-      const res = await fetch(`${baseUrl}/${entry.path}`);
+      const res = await fetch(`${baseUrl}/scraper/${entry.path}`);
       if (!res.ok) throw new Error(`idea fetch failed for ${entry.id}: ${res.status}`);
       return res.json();
     })
