@@ -725,12 +725,33 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
             page.wait_for_timeout(WAIT_CHART)
 
             # Now on the platform-specific page (e.g. .../community-signals/reddit-analysis).
-            # Find each community/subreddit card. These are rendered as
-            # cards each containing a name heading and (for Reddit/Facebook)
-            # a nested "View Analysis" link to drill one level deeper into
-            # individual discussions.
-            card_links = page.get_by_text("View Analysis", exact=False)
-            card_count = card_links.count()
+            # A real run proved "View Analysis" is NOT the right link text
+            # at this level (card_count was 0 on every platform page) — a
+            # real screenshot of this page instead showed each community
+            # rendered as its own named heading (e.g. "r/AI_Agents") with a
+            # follower count subtitle, where the heading/card itself is
+            # likely the clickable link into that community's own page.
+            # Try several plausible patterns rather than assuming one:
+            # first an actual <a> tag whose href contains the platform's
+            # own domain slug, falling back to generic "View" style link
+            # text patterns other pages on this site have used elsewhere.
+            platform_domain_hints = {
+                "reddit": "reddit", "facebook": "facebook", "youtube": "youtube", "other": None,
+            }
+            domain_hint = platform_domain_hints.get(platform_key)
+            card_links = None
+            if domain_hint:
+                by_href = page.locator(f"a[href*='/{domain_hint}']:visible, a[href*='-analysis']:visible")
+                if by_href.count() > 0:
+                    card_links = by_href
+            if card_links is None:
+                # Fall back to any visible link/button whose own text looks
+                # like a community name (starts with r/ for Reddit, or any
+                # heading-like element that isn't obviously navigation).
+                card_links = page.locator("a:visible, [role='link']:visible").filter(
+                    has_text=re.compile(r".+")
+                )
+            card_count = min(card_links.count() if card_links else 0, 15)
             platform_url = page.url
 
             # DIAGNOSTIC — the previous run showed this whole function
@@ -739,22 +760,36 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
             # cards each time (a "successful but empty" result that was
             # never being logged, since only failures were logged before).
             # This makes that visible: exactly what page we ended up on
-            # and how many "View Analysis" links (i.e. community cards)
-            # were actually found there.
+            # and how many candidate links were actually found there. Also
+            # dump a slice of the page's own visible text so a human can
+            # see the REAL structure directly if this guess is also wrong,
+            # rather than needing yet another blind guess-and-check round.
             log.append({
                 "step": f"crawl_platform:{platform_key}:landed",
                 "url": platform_url,
                 "card_count": card_count,
+                "page_text_sample": get_visible_text(page)[:1500],
             })
 
             for i in range(card_count):
 
                 def crawl_community_card(i=i):
                     # Re-fetch locators fresh each iteration since navigating
-                    # away and back invalidates previous handles.
+                    # away and back invalidates previous handles. Uses the
+                    # SAME matching approach as the outer platform-page
+                    # search above, for consistency — see that comment for
+                    # why "View Analysis" was replaced with this broader
+                    # href/visible-link based matching.
                     page.goto(platform_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
                     page.wait_for_timeout(WAIT_CHART)
-                    links = page.get_by_text("View Analysis", exact=False)
+                    domain_hint = platform_domain_hints.get(platform_key)
+                    links = None
+                    if domain_hint:
+                        by_href = page.locator(f"a[href*='/{domain_hint}']:visible, a[href*='-analysis']:visible")
+                        if by_href.count() > 0:
+                            links = by_href
+                    if links is None:
+                        links = page.locator("a:visible, [role='link']:visible").filter(has_text=re.compile(r".+"))
                     if i >= links.count():
                         raise Exception(f"Card index {i} no longer available")
                     card = links.nth(i)
@@ -890,6 +925,17 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
 
     log.append({"step": "crawl_chart_history:chart_found", "box": box})
 
+    # Establish real pointer state before sampling — a bare page.mouse.move()
+    # to an arbitrary first coordinate, with no prior pointer position, does
+    # not reliably trigger hover-based UI transitions in Chromium under
+    # automation (confirmed: a real run got tooltip_count=1 — the element
+    # exists in the DOM at all times — but tooltip_visible=false at every
+    # single sample, meaning the hover/mouseover transition never actually
+    # fired). Moving to a neutral point first, then into the chart, gives
+    # the browser a real "from A to B" pointer trajectory to react to.
+    page.mouse.move(box["x"] - 20, box["y"] + box["height"] / 2)
+    page.wait_for_timeout(200)
+
     # Sample points evenly across the chart's width rather than trying to
     # locate individual SVG point elements (which vary by chart library and
     # may not exist as discrete hoverable nodes for line charts) — moving
@@ -902,8 +948,14 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
         x = box["x"] + frac * box["width"]
         y = box["y"] + box["height"] * 0.5  # vertical center is safest for line charts
         try:
-            page.mouse.move(x, y)
-            page.wait_for_timeout(150)  # let the tooltip re-render
+            # Move in two steps (a real, if small, trajectory) rather than
+            # teleporting directly to each new point — Recharts (and many
+            # chart libs) listen for mousemove deltas to update the active
+            # index, so an actual short movement is more reliable than a
+            # single jump, matching what a real mouse drag would produce.
+            page.mouse.move(x - 5, y, steps=3)
+            page.mouse.move(x, y, steps=3)
+            page.wait_for_timeout(200)  # let the tooltip re-render
             tooltip = page.locator(".recharts-tooltip-wrapper, [role='tooltip']").first
             tooltip_count = tooltip.count()
             tooltip_visible = tooltip.is_visible() if tooltip_count > 0 else False
