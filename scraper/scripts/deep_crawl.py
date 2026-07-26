@@ -1002,25 +1002,41 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
                 page.wait_for_timeout(200)
                 tooltip_visible = tooltip.is_visible() if tooltip.count() > 0 else False
 
-            # A second real run STILL showed tooltip_visible=false at every
-            # sample even after the JS-dispatch fallback above — Playwright
-            # docs confirm is_visible() reflects display:none / zero-size
-            # / visibility:hidden on the queried element specifically, NOT
-            # on that element's children. Recharts commonly renders the
-            # tooltip WRAPPER as an always-present positioned div, with
-            # the actual show/hide toggle happening on an INNER child
-            # element instead — meaning is_visible() on the wrapper itself
-            # may never reflect the real on-screen state. Sidestep this
-            # entirely: read the wrapper's actual rendered text content
-            # directly via evaluate(), regardless of what is_visible()
-            # reports on it, and treat "has real text" as the true
-            # visibility signal instead.
+            # A second real run showed the tooltip element with GENUINELY
+            # EMPTY text content at every sample (has_real_tooltip_content
+            # was false, not just is_visible() being unreliable) — proving
+            # the coordinate-based approaches above aren't reaching
+            # Recharts' actual hover-tracking layer at all. Recharts
+            # typically renders an invisible full-plot-area tracking
+            # rect/surface as the REAL mouse-event target (not the visible
+            # line/dots themselves), so try Playwright's own element-level
+            # .hover() directly on whatever SVG element sits at these
+            # coordinates, with force=True to bypass any pointer-
+            # interception checks — genuinely different from raw
+            # page.mouse.move, since Locator.hover() performs its own
+            # internal actionability + event sequence rather than just
+            # moving the OS cursor.
             tooltip_text_raw = ""
             if tooltip_count > 0:
                 try:
                     tooltip_text_raw = tooltip.evaluate("el => el.innerText || el.textContent || ''") or ""
                 except Exception:
                     tooltip_text_raw = ""
+
+            if not tooltip_text_raw.strip():
+                try:
+                    point_el = page.locator(f"xpath=//*[local-name()='svg']").first
+                    # Hover the specific coordinate within the SVG via a
+                    # relative-position hover on the chart container,
+                    # rather than a bare cursor move — this goes through
+                    # Playwright's full actionability + event pipeline.
+                    chart.hover(position={"x": x - box["x"], "y": y - box["y"]}, force=True, timeout=2000)
+                    page.wait_for_timeout(200)
+                    if tooltip.count() > 0:
+                        tooltip_text_raw = tooltip.evaluate("el => el.innerText || el.textContent || ''") or ""
+                except Exception as e:
+                    log.append({"step": f"crawl_chart_history:element_hover_fallback:{i}", "error": str(e)})
+
             has_real_tooltip_content = bool(tooltip_text_raw.strip())
 
             if i < 3:
