@@ -1025,7 +1025,6 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
 
             if not tooltip_text_raw.strip():
                 try:
-                    point_el = page.locator(f"xpath=//*[local-name()='svg']").first
                     # Hover the specific coordinate within the SVG via a
                     # relative-position hover on the chart container,
                     # rather than a bare cursor move — this goes through
