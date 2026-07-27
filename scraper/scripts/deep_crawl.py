@@ -701,6 +701,14 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
     def open_community_signals_page():
         page.goto(community_signals_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
         page.wait_for_timeout(WAIT_CHART)
+        # DIAGNOSTIC — a real run showed Reddit/Facebook ending up on the
+        # main idea page's own text instead of any community-signals page
+        # at all, meaning navigation itself may be silently failing or
+        # redirecting somewhere unexpected on some iterations but not
+        # others (YouTube/Other worked in the same run). Log the actual
+        # resulting URL every time this is called so we can see directly
+        # whether page.goto() itself is landing somewhere wrong.
+        log.append({"step": "open_community_signals_page:landed", "url": page.url})
 
     for platform_index, platform_key in enumerate(platform_order):
         platform_label = platform_labels[platform_key]
@@ -726,13 +734,31 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
                 # page — index directly into them rather than trying to
                 # scope by DOM ancestry, which proved unreliable above.
                 all_links = page.get_by_text("View Analysis", exact=False)
-                if platform_index >= all_links.count():
-                    raise Exception(f"Expected 'View Analysis' link at index {platform_index} for {platform_label}, but only {all_links.count()} found")
+                link_count = all_links.count()
+                # DIAGNOSTIC — shows exactly how many "View Analysis" links
+                # were actually found on the page at this point, for
+                # direct comparison against the expected 4 (Reddit,
+                # Facebook, YouTube) or however many actually render.
+                log.append({
+                    "step": f"crawl_platform:{platform_key}:view_analysis_links_found",
+                    "count": link_count,
+                    "current_url": page.url,
+                })
+                if platform_index >= link_count:
+                    raise Exception(f"Expected 'View Analysis' link at index {platform_index} for {platform_label}, but only {link_count} found")
                 analysis_link = all_links.nth(platform_index)
 
             analysis_link.scroll_into_view_if_needed(timeout=5000)
             analysis_link.click(timeout=8000)
             page.wait_for_timeout(WAIT_CHART)
+            # DIAGNOSTIC — the URL immediately after clicking, to confirm
+            # whether the click actually navigated to the expected
+            # platform-specific sub-page (e.g. .../reddit-analysis) or
+            # left us somewhere unexpected.
+            log.append({
+                "step": f"crawl_platform:{platform_key}:after_click",
+                "url": page.url,
+            })
 
             # Now on the platform-specific page (e.g. .../community-signals/reddit-analysis).
             # A real run's page-text dump confirmed the ACTUAL structure:
