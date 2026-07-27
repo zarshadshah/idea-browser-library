@@ -863,24 +863,70 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
                         pass
                     navigated = page.url != url_before
 
-                    # When no real navigation occurs (confirmed bug: this
-                    # was true for YouTube's channel headings), every
-                    # single community iteration was scanning the ENTIRE
-                    # page for external links — meaning all 5 YouTube
-                    # "channels" ended up with the identical fixed list of
-                    # 10 search-query URLs, since the page itself never
-                    # changed between iterations. Scope both the summary
-                    # text AND the link search to this heading's own
-                    # container in that case, so each community's captured
-                    # data is genuinely distinct rather than a repeat of
-                    # the same page-wide content.
-                    container = heading.locator("xpath=ancestor::*[self::div][1]") if not navigated else None
+                    # When no real navigation occurs (true for YouTube's
+                    # channel headings, confirmed via real captured data:
+                    # different channels like "Penguin & Pals" and
+                    # "BabyCenter" ended up with the IDENTICAL discussion
+                    # link list), every community iteration was scanning
+                    # too broad a scope for external links. The immediate
+                    # parent div (1 level up) proved too shallow to
+                    # reliably contain a card's own real boundary — walk
+                    # up several ancestor levels instead and verify the
+                    # resulting container's own text actually starts with
+                    # or closely matches this community's name, which is
+                    # the real signal that we've found its true card
+                    # boundary rather than some shared outer wrapper.
+                    container = None
+                    if not navigated:
+                        for depth in [1, 2, 3, 4, 5]:
+                            candidate = heading.locator(f"xpath=ancestor::*[self::div][{depth}]")
+                            if candidate.count() == 0:
+                                continue
+                            try:
+                                candidate_text = candidate.inner_text(timeout=2000)
+                            except Exception:
+                                continue
+                            # A genuine per-card container's text should be
+                            # meaningfully shorter than the whole page
+                            # (a real card, not the whole community list)
+                            # while still starting with this community's
+                            # own name.
+                            if candidate_text.strip().startswith(name[:20]) and len(candidate_text) < 2000:
+                                container = candidate
+                                break
+                        # Fall back to the shallowest ancestor if none of
+                        # the depths matched the "starts with this name"
+                        # check — better to have SOME scoped container
+                        # than silently fall through to page-wide search.
+                        if container is None:
+                            container = heading.locator("xpath=ancestor::*[self::div][1]")
+
                     community_text = get_visible_text(page) if navigated else container.inner_text(timeout=3000)
+
+                    if i < 2:
+                        # DIAGNOSTIC — confirms directly whether the
+                        # ancestor-depth search above actually found a
+                        # tight, name-matching container, or fell back to
+                        # the shallow default (which real data proved
+                        # insufficient to prevent link duplication across
+                        # cards).
+                        log.append({
+                            "step": f"crawl_platform:{platform_key}:card_{i}:container_check",
+                            "community_name": name,
+                            "container_text_length": len(community_text),
+                            "container_text_starts_with_name": community_text.strip().startswith(name[:20]) if not navigated else None,
+                        })
 
                     # Capture real discussion/external links: on Reddit's
                     # drill-down pages these are actual reddit.com hrefs;
                     # on other platforms they may not exist at all, which
                     # is fine — discussions simply stays empty for those.
+                    # Deliberately NEVER fall back to a page-wide link
+                    # search when not navigated — real captured data
+                    # proved that produces false, identical-across-cards
+                    # "discussions" data, which is worse than showing none
+                    # at all for a community that genuinely has no
+                    # per-card links of its own.
                     discussions = []
                     ext_links = (
                         page.locator("a[href*='reddit.com'], a[href*='facebook.com'], a[href*='youtube.com']")
