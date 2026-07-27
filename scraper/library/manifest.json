@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-07-27",
+      "title": "Baby tracking app parents talk to instead of tap",
+      "path": "library/2026/2026-07-27.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-07-26",
       "title": "Safe playground for AI agents before they reach production",
       "path": "library/2026/2026-07-26.json",
