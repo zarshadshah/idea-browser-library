@@ -1325,7 +1325,13 @@ def crawl_business_fit_deep(crawler: Crawler, base_url: str) -> dict:
     log = crawler.log
     result = {}
 
-    card_labels = ["Revenue Potential", "Execution Difficulty", "Go-To-Market", "Right for You"]
+    # "Right for You" is deliberately excluded here — two real attempts
+    # (modal detection, then a "Find Out" navigation fallback) both
+    # confirmed no accessible content opens for it on a free-plan account,
+    # most likely because it's gated behind ideabrowser.com's paid tier
+    # (the page consistently shows "Pro welcome offer" banners throughout).
+    # The other 3 cards are all confirmed working with real content.
+    card_labels = ["Revenue Potential", "Execution Difficulty", "Go-To-Market"]
 
     for card_label in card_labels:
 
