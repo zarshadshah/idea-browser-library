@@ -628,7 +628,7 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
     return results
 
 
-def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -> dict:
+def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, idea_title: str = "") -> dict:
     """
     Drills into the Community Signals page to capture the REAL underlying
     data the summary counts are based on: actual platform sections (Reddit,
@@ -785,10 +785,24 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
             # Community name headings are rendered as distinct heading-level
             # elements (h1-h4) directly on the page — filter to just those,
             # excluding the page's own title/breadcrumb headings which
-            # appear earlier and share the same tag.
-            heading_els = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(
-                r"^(ideabrowser|Safe playground|Community Signals|Take the quiz)"
-            ))
+            # appear earlier and share the same tag. The exclusion list was
+            # previously hardcoded to one specific prior idea's title
+            # ("Safe playground..."), which meant it silently stopped
+            # working for every OTHER idea's own page-title heading —
+            # confirmed directly: a later run on a different idea ("Baby
+            # tracking app...") picked up a generic section label
+            # ("Relevant Communities") as if it were the first real
+            # community, merging all 4 real subreddits' text into one
+            # entry instead of 4 separate ones. Build the exclusion
+            # dynamically from this run's OWN idea_title (first ~40 chars,
+            # since the page often truncates/repeats it slightly
+            # differently across headings), plus the other genuine
+            # boilerplate section-label headings confirmed across BOTH
+            # ideas we've now inspected directly (not just one).
+            exclude_pattern = r"^(ideabrowser|Community Signals|Take the quiz|Relevant Communities|Relevant Groups|Analysis Overview|Community Types|Community Segments|Key Findings|In-Depth)"
+            if idea_title:
+                exclude_pattern = re.escape(idea_title[:40]) + "|" + exclude_pattern
+            heading_els = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(exclude_pattern))
             all_heading_count = heading_els.count()
             card_count = min(expected_count, all_heading_count) if expected_count else min(all_heading_count, 15)
             platform_url = page.url
@@ -833,12 +847,12 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
                     # Re-fetch locators fresh each iteration since navigating
                     # away and back invalidates previous handles. Matches
                     # the outer function's heading-based approach (see that
-                    # comment for why link-based matching was replaced).
+                    # comment for why link-based matching was replaced, and
+                    # the dynamic-title comment above for why this can't be
+                    # a hardcoded exclusion string).
                     page.goto(platform_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
                     page.wait_for_timeout(WAIT_CHART)
-                    headings = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(
-                        r"^(ideabrowser|Safe playground|Community Signals|Take the quiz)"
-                    ))
+                    headings = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(exclude_pattern))
                     if i >= headings.count():
                         raise Exception(f"Card index {i} no longer available")
                     heading = headings.nth(i)
@@ -1425,7 +1439,7 @@ def main():
         community_page = record["subpages"].get("View detailed breakdown")
         if community_page and community_page.get("url"):
             record["community_signals_deep"] = crawler.safe(
-                lambda: crawl_community_signals_deep(crawler, community_page["url"]),
+                lambda: crawl_community_signals_deep(crawler, community_page["url"], record["summary"].get("title", "")),
                 "crawl_community_signals_deep",
                 default={},
             ) or {}
