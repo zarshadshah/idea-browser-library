@@ -892,6 +892,21 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     <div className="font-semibold">{idea.categorization?.competitor}</div>
                   </div>
                 </div>
+                {idea.businessFitDeep && Object.keys(idea.businessFitDeep).length > 0 && (
+                  <details className="pt-2 border-t border-black/10">
+                    <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      Business Fit (full detail) ▾
+                    </summary>
+                    <div className="mt-2 space-y-3">
+                      {Object.entries(idea.businessFitDeep).map(([label, text]) => (
+                        <div key={label}>
+                          <div className="text-xs font-bold mb-1" style={{ fontFamily: "'Fraunces', serif" }}>{label}</div>
+                          <StructuredSection text={text} />
+                        </div>
+                      ))}
+                    </div>
+                  </details>
+                )}
                 {idea.whyNowDetail && (
                   <details className="pt-2 border-t border-black/10">
                     <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
