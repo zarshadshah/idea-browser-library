@@ -281,7 +281,13 @@ def normalize_day(raw: dict) -> dict:
             platform: [
                 {
                     "name": community.get("name", ""),
-                    "summary": (community.get("raw_text", "") or "")[:1500],
+                    # A real screenshot confirmed each community's own
+                    # summary text still started with the same repeated
+                    # sidebar/quiz boilerplate every other sub-page field
+                    # already has stripped via trim_subpage_nav — this was
+                    # simply never applied here, unlike valueEquation,
+                    # marketMatrix, etc below. Fixed for consistency.
+                    "summary": trim_subpage_nav(community.get("raw_text", "") or "")[:1500],
                     "discussions": (community.get("discussions", []) or [])[:10],
                     # Deliberately NOT including the community's own "url"
                     # field here — that's the ideabrowser.com page it was
