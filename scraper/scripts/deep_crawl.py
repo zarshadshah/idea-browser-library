@@ -767,6 +767,23 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
             card_count = min(expected_count, all_heading_count) if expected_count else min(all_heading_count, 15)
             platform_url = page.url
 
+            # DIAGNOSTIC — a real run showed Reddit and Facebook both
+            # getting card_count=0 while YouTube and Other worked
+            # correctly on the SAME crawl, meaning something genuinely
+            # differs between these platform pages specifically (not a
+            # generic flake). Log the actual regex match result and the
+            # raw (pre-filter) heading count so we can see directly
+            # whether the summary-count regex failed to match this
+            # platform's real text, or whether the page genuinely had zero
+            # heading elements at all.
+            log.append({
+                "step": f"crawl_platform:{platform_key}:count_diagnostic",
+                "summary_match_found": bool(summary_match),
+                "expected_count": expected_count,
+                "all_heading_count": all_heading_count,
+                "page_text_first_400": page_text_for_count[:400],
+            })
+
             # DIAGNOSTIC — the previous run showed this whole function
             # completing with zero errors AND zero data for every
             # platform, which is only possible if it's silently finding 0
@@ -820,21 +837,30 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str) -
                         pass
                     navigated = page.url != url_before
 
-                    community_text = get_visible_text(page) if navigated else (
-                        # If we didn't navigate anywhere, capture just the
-                        # text in this heading's own surrounding block
-                        # (its parent container) rather than the whole
-                        # page, so each community's summary stays distinct
-                        # instead of every entry repeating the full page.
-                        heading.locator("xpath=ancestor::*[self::div][1]").inner_text(timeout=3000)
-                    )
+                    # When no real navigation occurs (confirmed bug: this
+                    # was true for YouTube's channel headings), every
+                    # single community iteration was scanning the ENTIRE
+                    # page for external links — meaning all 5 YouTube
+                    # "channels" ended up with the identical fixed list of
+                    # 10 search-query URLs, since the page itself never
+                    # changed between iterations. Scope both the summary
+                    # text AND the link search to this heading's own
+                    # container in that case, so each community's captured
+                    # data is genuinely distinct rather than a repeat of
+                    # the same page-wide content.
+                    container = heading.locator("xpath=ancestor::*[self::div][1]") if not navigated else None
+                    community_text = get_visible_text(page) if navigated else container.inner_text(timeout=3000)
 
                     # Capture real discussion/external links: on Reddit's
                     # drill-down pages these are actual reddit.com hrefs;
                     # on other platforms they may not exist at all, which
                     # is fine — discussions simply stays empty for those.
                     discussions = []
-                    ext_links = page.locator("a[href*='reddit.com'], a[href*='facebook.com'], a[href*='youtube.com']")
+                    ext_links = (
+                        page.locator("a[href*='reddit.com'], a[href*='facebook.com'], a[href*='youtube.com']")
+                        if navigated
+                        else container.locator("a[href*='reddit.com'], a[href*='facebook.com'], a[href*='youtube.com']")
+                    )
                     ext_count = ext_links.count()
                     for j in range(min(ext_count, 20)):  # cap to avoid runaway crawls on unexpectedly large pages
                         try:
