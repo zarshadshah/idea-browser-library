@@ -179,9 +179,19 @@ def trim_subpage_nav(text: str) -> str:
     """
     if not text:
         return text
-    marker = "Take the quiz"
-    if marker in text:
-        return text.split(marker, 1)[1].strip()
+    # Two real marker variants have been confirmed present depending on
+    # exactly which capture path text comes through: the separate button
+    # text "Take the quiz", and — confirmed directly missing from a real
+    # community summary capture — the descriptive sentence just above it
+    # ("Take a quick quiz to discover..."), which ends in a period rather
+    # than matching the shorter button phrase at all. Try both, using
+    # whichever is actually found, and split on its LAST occurrence since
+    # this same boilerplate block has been observed repeating twice in a
+    # single captured community summary.
+    markers = ["Take the quiz", "waste time on the wrong thing."]
+    for marker in markers:
+        if marker in text:
+            return text.rsplit(marker, 1)[1].strip()
     return text.strip()
 
 
