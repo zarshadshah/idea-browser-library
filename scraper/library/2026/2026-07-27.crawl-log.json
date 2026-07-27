@@ -550,7 +550,7 @@
   },
   {
     "step": "business_fit_card:Right for You",
-    "error": "No modal dialog detected after clicking 'Right for You'"
+    "error": "No modal dialog detected after clicking 'Right for You', and 'Find Out' fallback did not navigate"
   },
   {
     "step": "crawl_community_signals_deep:entered",
