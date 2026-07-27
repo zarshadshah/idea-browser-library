@@ -344,6 +344,63 @@ function groupIntoLabelValuePairs(lines) {
 // Falls back to a single plain paragraph if the text doesn't match either
 // expected pattern at all, so nothing is ever lost even for oddly-shaped
 // input.
+// A third real pattern, distinct from both above: Business Fit modal
+// content (Revenue Potential, Execution Difficulty, Go-To-Market) uses
+// short Title Case section labels ("Overview", "Revenue Examples",
+// "Business Models", "Example Companies") each followed by either plain
+// prose or a run of "• " bulleted items — confirmed directly against a
+// real screenshot showing this exact shape. Neither the emoji-score
+// pattern nor the ALL-CAPS pattern above matches this, so without this
+// parser the text was falling through to one dense, unbroken paragraph
+// with bullet separators rendered inline as plain "•" characters instead
+// of actual list items.
+function parseLabeledBulletSections(text) {
+  if (!text) return { intro: "", sections: [] };
+  // Known real section labels from Business Fit modals — matched exactly
+  // rather than guessed generically (e.g. via "short Title Case line")
+  // since that heuristic would false-positive on ordinary sentences.
+  const knownLabels = [
+    "Overview", "Revenue Examples", "Business Models", "Example Companies",
+    "Execution Risks", "Technical Challenges", "Non-Technical Challenges",
+    "Go-To-Market Tactics", "Target Audiences",
+  ];
+
+  // Real captures mix real newlines AND bullet characters inconsistently
+  // (sometimes a label sits alone on its own line, sometimes it's glued
+  // to the next bullet on the same line) — normalize by first splitting on
+  // real newlines, THEN splitting each resulting line on "•" too, so a
+  // label is never missed just because it wasn't at the very start of a
+  // pre-split chunk.
+  const rawChunks = text
+    .split("\n")
+    .flatMap((line) => line.split(/\s*•\s*/))
+    .map((c) => c.trim())
+    .filter(Boolean);
+
+  const sections = [];
+  let intro = [];
+  let current = null;
+  for (const chunk of rawChunks) {
+    let matched = false;
+    for (const label of knownLabels) {
+      if (chunk === label || chunk.startsWith(label + " ") || chunk.startsWith(label + ":")) {
+        if (current) sections.push(current);
+        current = { title: label, items: [] };
+        const rest = chunk.slice(label.length).replace(/^:?\s*/, "").trim();
+        if (rest) current.items.push(rest);
+        matched = true;
+        break;
+      }
+    }
+    if (matched) continue;
+    if (current) current.items.push(chunk);
+    else intro.push(chunk);
+  }
+  if (current) sections.push(current);
+
+  return { intro: intro.join(" ").trim(), sections };
+}
+
 function StructuredSection({ text }) {
   const clean = safeText(text);
   if (!clean) return null;
@@ -368,6 +425,27 @@ function StructuredSection({ text }) {
               )}
             </div>
             <p className="text-sm leading-relaxed whitespace-pre-line opacity-80">{s.body}</p>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  const labeledBullets = parseLabeledBulletSections(clean);
+  if (labeledBullets.sections.length >= 1) {
+    return (
+      <div className="space-y-3">
+        {labeledBullets.intro && <p className="text-sm leading-relaxed opacity-80">{labeledBullets.intro}</p>}
+        {labeledBullets.sections.map((s, i) => (
+          <div key={i}>
+            <div className="text-xs font-bold mb-1" style={{ fontFamily: "'Fraunces', serif" }}>{s.title}</div>
+            {s.items.length > 1 ? (
+              <ul className="text-xs leading-relaxed opacity-80 space-y-0.5 list-disc pl-4">
+                {s.items.map((item, j) => <li key={j}>{item}</li>)}
+              </ul>
+            ) : (
+              <p className="text-xs leading-relaxed opacity-80">{s.items[0]}</p>
+            )}
           </div>
         ))}
       </div>
