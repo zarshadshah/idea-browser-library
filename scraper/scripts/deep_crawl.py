@@ -799,10 +799,23 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
             # differently across headings), plus the other genuine
             # boilerplate section-label headings confirmed across BOTH
             # ideas we've now inspected directly (not just one).
-            exclude_pattern = r"^(ideabrowser|Community Signals|Take the quiz|Relevant Communities|Relevant Groups|Analysis Overview|Community Types|Community Segments|Key Findings|In-Depth)"
+            #
+            # A SECOND, distinct bug confirmed via a real screenshot: even
+            # after fixing the above, each individual subreddit's own card
+            # contains ITS OWN internal sub-headings ("WHY IT'S RELEVANT",
+            # "OPPORTUNITY") at the same h1-h4 tag levels as the real
+            # community name itself — meaning r/NewParents's single card
+            # was being split into 3 separate "communities" (its name,
+            # then each of its own two internal sub-sections), each one
+            # capturing the ENTIRE page's text as its "summary" since none
+            # of them individually matched a tight per-card container.
+            # These sub-heading labels are now excluded by their own exact
+            # text too, so only genuine top-level community names (e.g.
+            # "r/NewParents", "Penguin & Pals") remain.
+            exclude_pattern = r"^(ideabrowser|Community Signals|Take the quiz|Relevant Communities|Relevant Groups|Analysis Overview|Community Types|Community Segments|Key Findings|In-Depth|Why It'?s Relevant|Opportunity|Relevant Discussions?)"
             if idea_title:
                 exclude_pattern = re.escape(idea_title[:40]) + "|" + exclude_pattern
-            heading_els = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(exclude_pattern))
+            heading_els = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(exclude_pattern, re.IGNORECASE))
             all_heading_count = heading_els.count()
             card_count = min(expected_count, all_heading_count) if expected_count else min(all_heading_count, 15)
             platform_url = page.url
@@ -915,7 +928,32 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                         if container is None:
                             container = heading.locator("xpath=ancestor::*[self::div][1]")
 
-                    community_text = get_visible_text(page) if navigated else container.inner_text(timeout=3000)
+                    if navigated:
+                        # A real screenshot confirmed capturing the RAW
+                        # whole-page text here included the site's own nav
+                        # menu, sidebar links, and repeated boilerplate
+                        # ("Discover", "Research", "Take the quiz", etc.)
+                        # mixed into what should be a focused summary of
+                        # this one specific subreddit's own page. Strip
+                        # lines that are clearly nav/sidebar/boilerplate
+                        # (short, generic single words/phrases that recur
+                        # across every page) rather than keeping the
+                        # entire raw text.
+                        raw_text = get_visible_text(page)
+                        boilerplate_lines = {
+                            "ideabrowser", "hub", "browse", "build", "home", "training",
+                            "my profile", "my stuff", "ideas", "discover", "research",
+                            "generate", "trends", "market insights", "updates", "empire",
+                            "support", "free plan", "toggle sidebar", "browse ideas",
+                            "take the quiz", "start here", "upgrade",
+                        }
+                        kept_lines = [
+                            l for l in raw_text.split("\n")
+                            if l.strip() and l.strip().lower() not in boilerplate_lines
+                        ]
+                        community_text = "\n".join(kept_lines)
+                    else:
+                        community_text = container.inner_text(timeout=3000)
 
                     if i < 2:
                         # DIAGNOSTIC — confirms directly whether the
@@ -1254,6 +1292,78 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
     return history
 
 
+def crawl_business_fit_deep(crawler: Crawler, base_url: str) -> dict:
+    """
+    The main page's "Business Fit" section shows 4 short summary cards
+    (Revenue Potential, Execution Difficulty, Go-To-Market, Right for You)
+    — each already captured as plain one-line text in the main page's own
+    raw_text (confirmed directly: "Revenue Potential\n$100K-$1M ARR
+    potential..."). Clicking any of these cards opens a genuinely deeper
+    modal with real additional structured content not present anywhere
+    else on the page (confirmed via a real screenshot showing "Overview",
+    "Revenue Examples" as a bullet list, "Business Models", and "Example
+    Companies" as named tags — none of which appear in the plain page
+    text at all).
+
+    Returns a dict keyed by card label (e.g. "Revenue Potential") with
+    whatever text content the modal contained, or omits a card entirely
+    if its click/modal capture failed — never raises, since this is
+    supplementary detail and a failure here shouldn't affect anything
+    else already captured.
+    """
+    page = crawler.page
+    log = crawler.log
+    result = {}
+
+    card_labels = ["Revenue Potential", "Execution Difficulty", "Go-To-Market", "Right for You"]
+
+    for card_label in card_labels:
+
+        def crawl_card(card_label=card_label):
+            # Return to a clean main-page state before each card, since a
+            # previous card's modal-close might leave residual scroll
+            # position or focus state that could interfere with finding
+            # the next card reliably.
+            page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+            page.wait_for_timeout(WAIT_CHART)
+
+            card_heading = page.get_by_text(card_label, exact=False).first
+            if not card_heading.is_visible():
+                raise Exception(f"'{card_label}' card not visible on main page")
+            card_heading.scroll_into_view_if_needed(timeout=5000)
+            card_heading.click(timeout=8000)
+            page.wait_for_timeout(WAIT_CHART)
+
+            # The modal is expected to be an overlay dialog — look for a
+            # close button ("X" / role=dialog) as confirmation a modal
+            # genuinely opened, rather than assuming the click did
+            # anything at all.
+            modal = page.locator("[role='dialog'], .modal, [class*='Modal']").first
+            if modal.count() == 0:
+                raise Exception(f"No modal dialog detected after clicking '{card_label}'")
+
+            modal_text = modal.inner_text(timeout=3000)
+
+            # Close the modal before returning, so the next card starts
+            # from a clean state even if the next iteration's own
+            # page.goto() above is skipped for any reason.
+            try:
+                close_btn = modal.locator("button", has_text=re.compile(r"^(×|X|Close)$", re.IGNORECASE)).first
+                if close_btn.count() > 0:
+                    close_btn.click(timeout=3000)
+                else:
+                    page.keyboard.press("Escape")
+            except Exception:
+                pass
+            page.wait_for_timeout(500)
+
+            result[card_label] = modal_text[:3000]
+
+        crawler.safe(crawl_card, f"business_fit_card:{card_label}")
+
+    return result
+
+
 def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
     """
     Follows every 'View Analysis' style link/button on the main page into
@@ -1430,6 +1540,16 @@ def main():
 
         record["subpages"] = crawler.safe(
             lambda: crawl_subpages(crawler, URL), "crawl_subpages", default={}
+        ) or {}
+
+        # Drill into the 4 Business Fit modal cards (Revenue Potential,
+        # Execution Difficulty, Go-To-Market, Right for You) for their
+        # real deeper content (Overview, Revenue Examples, Business
+        # Models, Example Companies) — none of which is present in the
+        # main page's own plain text, confirmed directly via a real
+        # screenshot of the modal.
+        record["business_fit_deep"] = crawler.safe(
+            lambda: crawl_business_fit_deep(crawler, URL), "crawl_business_fit_deep", default={}
         ) or {}
 
         # Drill deeper into Community Signals specifically: real subreddit/
