@@ -980,6 +980,7 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                     # at all for a community that genuinely has no
                     # per-card links of its own.
                     discussions = []
+                    seen_urls = set()
                     ext_links = (
                         page.locator("a[href*='reddit.com'], a[href*='facebook.com'], a[href*='youtube.com']")
                         if navigated
@@ -990,6 +991,16 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                         try:
                             link_el = ext_links.nth(j)
                             href = link_el.get_attribute("href")
+                            if not href or href in seen_urls:
+                                # A real screenshot confirmed the same href
+                                # appearing multiple times within one
+                                # community's own card (e.g. 3 identical
+                                # "r/NewParents" links shown as if they
+                                # were 3 separate discussions) — skip
+                                # exact-duplicate URLs so each discussion
+                                # entry is genuinely distinct.
+                                continue
+                            seen_urls.add(href)
                             # Find the discussion title, which sits in the
                             # nearest preceding heading-like element above
                             # this link in the same card.
@@ -998,8 +1009,7 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                             )
                             card_text = card_container.inner_text(timeout=3000)
                             title_line = card_text.split("\n")[0].strip() if card_text else "Discussion"
-                            if href:
-                                discussions.append({"title": title_line[:200], "url": href})
+                            discussions.append({"title": title_line[:200], "url": href})
                         except Exception as e:
                             log.append({"step": f"community_discussion_link:{platform_key}:{i}:{j}", "error": str(e)})
 
@@ -1326,6 +1336,7 @@ def crawl_business_fit_deep(crawler: Crawler, base_url: str) -> dict:
             # the next card reliably.
             page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
             page.wait_for_timeout(WAIT_CHART)
+            url_before = page.url
 
             card_heading = page.get_by_text(card_label, exact=False).first
             if not card_heading.is_visible():
@@ -1340,7 +1351,23 @@ def crawl_business_fit_deep(crawler: Crawler, base_url: str) -> dict:
             # anything at all.
             modal = page.locator("[role='dialog'], .modal, [class*='Modal']").first
             if modal.count() == 0:
-                raise Exception(f"No modal dialog detected after clicking '{card_label}'")
+                # A real run confirmed "Right for You" specifically does
+                # NOT open a modal like the other 3 cards — it's styled
+                # with its own "Find Out →" link (per earlier screenshots),
+                # suggesting a real page navigation rather than an overlay.
+                # Try clicking that specific link text as a fallback, and
+                # accept either a genuine URL change or new page content
+                # as evidence something real happened, rather than only
+                # accepting the modal pattern.
+                find_out_link = page.get_by_text("Find Out", exact=False).first
+                if find_out_link.count() > 0 and find_out_link.is_visible():
+                    find_out_link.click(timeout=5000)
+                    page.wait_for_timeout(WAIT_CHART)
+                    if page.url != url_before:
+                        result[card_label] = get_visible_text(page)[:3000]
+                        page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+                        return
+                raise Exception(f"No modal dialog detected after clicking '{card_label}', and 'Find Out' fallback did not navigate")
 
             modal_text = modal.inner_text(timeout=3000)
 
