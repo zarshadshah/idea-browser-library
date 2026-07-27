@@ -572,7 +572,7 @@
     "step": "crawl_platform:reddit:count_diagnostic",
     "summary_match_found": true,
     "expected_count": 5,
-    "all_heading_count": 20,
+    "all_heading_count": 17,
     "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nBaby tracking app parents talk to instead of tap\nCommunity Signals\nPro welcome offer \u00b7 20d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archet"
   },
   {
@@ -617,7 +617,7 @@
     "step": "crawl_platform:facebook:count_diagnostic",
     "summary_match_found": true,
     "expected_count": 3,
-    "all_heading_count": 17,
+    "all_heading_count": 14,
     "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nBaby tracking app parents talk to instead of tap\nCommunity Signals\nPro welcome offer \u00b7 20d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archet"
   },
   {
@@ -662,7 +662,7 @@
     "step": "crawl_platform:youtube:count_diagnostic",
     "summary_match_found": true,
     "expected_count": 11,
-    "all_heading_count": 19,
+    "all_heading_count": 17,
     "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nBaby tracking app parents talk to instead of tap\nCommunity Signals\nPro welcome offer \u00b7 20d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archet"
   },
   {
@@ -702,7 +702,7 @@
     "step": "crawl_platform:other:count_diagnostic",
     "summary_match_found": true,
     "expected_count": 4,
-    "all_heading_count": 16,
+    "all_heading_count": 13,
     "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nBaby tracking app parents talk to instead of tap\nCommunity Signals\nPro welcome offer \u00b7 20d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archet"
   },
   {
