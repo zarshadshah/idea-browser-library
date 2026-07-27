@@ -954,6 +954,20 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                               Market Matrix — {mm.quadrant}
                             </div>
                             <MarketMatrixGrid uniqueness={mm.uniqueness} value={mm.value} quadrant={mm.quadrant} />
+                            <div className="mt-3 grid grid-cols-2 gap-2 text-[11px] opacity-70">
+                              <div>
+                                <span className="font-bold">Category King</span> — High uniqueness + high value. Breakthrough products that create new categories (iPhone, Tesla, Airbnb).
+                              </div>
+                              <div>
+                                <span className="font-bold">Tech Novelty</span> — High uniqueness + low value. Interesting tech that doesn't solve a valuable problem yet.
+                              </div>
+                              <div>
+                                <span className="font-bold">Commodity Play</span> — Low uniqueness + high value. Proven demand, intense competition; wins on execution.
+                              </div>
+                              <div>
+                                <span className="font-bold">Low Impact</span> — Low uniqueness + low value. Needs refinement to find a viable position.
+                              </div>
+                            </div>
                           </div>
                         );
                       })()}
