@@ -556,6 +556,19 @@
     "step": "crawl_platform:reddit:starting"
   },
   {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/voice-baby-tracker-that-predicts-the-next-nap-and-feed-fd96dcb3/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/voice-baby-tracker-that-predicts-the-next-nap-and-feed-fd96dcb3/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/voice-baby-tracker-that-predicts-the-next-nap-and-feed-fd96dcb3/community-signals/reddit-analysis"
+  },
+  {
     "step": "crawl_platform:reddit:count_diagnostic",
     "summary_match_found": true,
     "expected_count": 5,
@@ -574,6 +587,19 @@
   },
   {
     "step": "crawl_platform:facebook:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/voice-baby-tracker-that-predicts-the-next-nap-and-feed-fd96dcb3/community-signals"
+  },
+  {
+    "step": "crawl_platform:facebook:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/voice-baby-tracker-that-predicts-the-next-nap-and-feed-fd96dcb3/community-signals"
+  },
+  {
+    "step": "crawl_platform:facebook:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/voice-baby-tracker-that-predicts-the-next-nap-and-feed-fd96dcb3/community-signals/facebook-analysis"
   },
   {
     "step": "crawl_platform:facebook:count_diagnostic",
@@ -596,6 +622,19 @@
     "step": "crawl_platform:youtube:starting"
   },
   {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/voice-baby-tracker-that-predicts-the-next-nap-and-feed-fd96dcb3/community-signals"
+  },
+  {
+    "step": "crawl_platform:youtube:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/voice-baby-tracker-that-predicts-the-next-nap-and-feed-fd96dcb3/community-signals"
+  },
+  {
+    "step": "crawl_platform:youtube:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/voice-baby-tracker-that-predicts-the-next-nap-and-feed-fd96dcb3/community-signals/youtube-analysis"
+  },
+  {
     "step": "crawl_platform:youtube:count_diagnostic",
     "summary_match_found": true,
     "expected_count": 11,
@@ -614,6 +653,14 @@
   },
   {
     "step": "crawl_platform:other:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/voice-baby-tracker-that-predicts-the-next-nap-and-feed-fd96dcb3/community-signals"
+  },
+  {
+    "step": "crawl_platform:other:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/voice-baby-tracker-that-predicts-the-next-nap-and-feed-fd96dcb3/community-signals/other-communities"
   },
   {
     "step": "crawl_platform:other:count_diagnostic",
