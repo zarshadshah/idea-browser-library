@@ -295,6 +295,13 @@ def normalize_day(raw: dict) -> dict:
             ]
             for platform, communities in (raw.get("community_signals_deep") or {}).items()
         },
+        # Real deeper modal content for the 4 Business Fit summary cards
+        # (Revenue Potential, Execution Difficulty, Go-To-Market, Right
+        # for You) — confirmed via a real screenshot to contain genuine
+        # additional structure (Overview, Revenue Examples, Business
+        # Models, Example Companies) not present in the main page's own
+        # plain summary text at all.
+        "businessFitDeep": raw.get("business_fit_deep") or {},
         "valueEquation": trim_subpage_nav(value_equation_page.get("text", ""))[:6000],
         "marketMatrix": trim_subpage_nav(market_matrix_page.get("text", ""))[:6000],
         "acpFramework": trim_subpage_nav(acp_page.get("text", ""))[:6000],
