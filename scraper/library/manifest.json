@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-07-28",
+      "title": "Client credit checker app for service business",
+      "path": "library/2026/2026-07-28.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-07-27",
       "title": "Baby tracking app parents talk to instead of tap",
       "path": "library/2026/2026-07-27.json",
