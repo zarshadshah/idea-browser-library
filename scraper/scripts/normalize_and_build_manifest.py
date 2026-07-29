@@ -318,6 +318,13 @@ def normalize_day(raw: dict) -> dict:
         # Models, Example Companies) not present in the main page's own
         # plain summary text at all.
         "businessFitDeep": raw.get("business_fit_deep") or {},
+        # Real deeper modal + "View detailed analysis" page content for
+        # the 4 score cards (Opportunity, Problem, Feasibility, Why Now)
+        # — confirmed via real screenshots to contain genuine additional
+        # structure (Market Analysis, Competitive Position, Key
+        # Strengths, Key Risks) beyond the plain score already captured
+        # in "scores" above.
+        "scoreCardsDeep": raw.get("score_cards_deep") or {},
         "valueEquation": trim_subpage_nav(value_equation_page.get("text", ""))[:6000],
         "marketMatrix": trim_subpage_nav(market_matrix_page.get("text", ""))[:6000],
         "acpFramework": trim_subpage_nav(acp_page.get("text", ""))[:6000],
