@@ -812,7 +812,20 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
             # These sub-heading labels are now excluded by their own exact
             # text too, so only genuine top-level community names (e.g.
             # "r/NewParents", "Penguin & Pals") remain.
-            exclude_pattern = r"^(ideabrowser|Community Signals|Take the quiz|Relevant Communities|Relevant Groups|Analysis Overview|Community Types|Community Segments|Key Findings|In-Depth|Why It'?s Relevant|Opportunity|Relevant Discussions?)"
+            # "Discover your founder archetype" is the quiz-box heading that
+            # appears at the top of EVERY platform page (confirmed directly:
+            # it was consuming card slot 0 on every single platform in a
+            # real crawl log, e.g. Facebook showing card_count=6 for only 4
+            # real groups). "DESCRIPTION" and "RELEVANCE SIGNALS" are real
+            # per-card sub-headings on Facebook group cards specifically
+            # (confirmed against real scraped data: a card meant to be
+            # "Client Acquisition Sales Systems..." was being split into 3
+            # separate fake "communities" — the real name, then its own
+            # "DESCRIPTION" sub-heading, then its own "RELEVANCE SIGNALS"
+            # sub-heading — the same class of bug already fixed below for
+            # Reddit's "WHY IT'S RELEVANT"/"OPPORTUNITY", just not yet
+            # covering these two Facebook-specific labels).
+            exclude_pattern = r"^(ideabrowser|Community Signals|Take the quiz|Discover your founder archetype|Relevant Communities|Relevant Groups|Analysis Overview|Community Types|Community Segments|Key Findings|In-Depth|Why It'?s Relevant|Opportunity|Relevant Discussions?|DESCRIPTION|RELEVANCE SIGNALS)"
             if idea_title:
                 exclude_pattern = re.escape(idea_title[:40]) + "|" + exclude_pattern
             heading_els = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(exclude_pattern, re.IGNORECASE))
@@ -903,6 +916,18 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                     # or closely matches this community's name, which is
                     # the real signal that we've found its true card
                     # boundary rather than some shared outer wrapper.
+                    # A real screenshot ("Other Communities" page) confirmed
+                    # that breaking on the FIRST depth whose text starts with
+                    # the community name captures only the name + one-line
+                    # description, cutting off the card's own "Pain Points"
+                    # and "Interests" bullet lists and platform tags that
+                    # visibly belong to the same card just below. Those
+                    # sub-sections live in a deeper ancestor than the
+                    # shallowest one that already happens to start with the
+                    # name — so keep walking through ALL matching depths and
+                    # take the LAST (deepest) one that still starts with the
+                    # name and stays under the cap, rather than stopping at
+                    # the first hit.
                     container = None
                     if not navigated:
                         for depth in [1, 2, 3, 4, 5]:
@@ -917,10 +942,12 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                             # meaningfully shorter than the whole page
                             # (a real card, not the whole community list)
                             # while still starting with this community's
-                            # own name.
+                            # own name. Keep the deepest (largest) container
+                            # that satisfies both, since that's the one most
+                            # likely to include the card's full content
+                            # rather than just its heading + first line.
                             if candidate_text.strip().startswith(name[:20]) and len(candidate_text) < 2000:
                                 container = candidate
-                                break
                         # Fall back to the shallowest ancestor if none of
                         # the depths matched the "starts with this name"
                         # check — better to have SOME scoped container
@@ -1304,93 +1331,6 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
 
 def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
     """
-    The main page's 4 score cards (Opportunity, Problem, Feasibility, Why
-    Now) each open a modal on click showing the score, a short
-    description, "About this score" explanatory text, and a "View
-    detailed analysis" button — confirmed directly via real screenshots.
-    That button navigates to a genuinely separate, deeper page (e.g.
-    "Opportunity Score" with "Key Strengths" / "Key Risks" bullet lists,
-    or "Market Analysis" + "Competitive Position" sections for other
-    cards) containing real structured content not present in the modal
-    or main page text at all.
-
-    This follows the same real, working pattern established by
-    crawl_business_fit_deep (click card -> confirm modal -> capture ->
-    close -> next), extended with one more step: click "View detailed
-    analysis" inside the modal, capture that deeper page's text too, then
-    navigate back to a clean base_url state before the next card.
-
-    Returns a dict keyed by card label (e.g. "Opportunity") with whatever
-    combined modal + detailed-analysis text was captured. Any card that
-    fails is simply omitted — never raises, since this is supplementary
-    detail and one failure shouldn't affect the rest.
-    """
-    page = crawler.page
-    log = crawler.log
-    result = {}
-
-    card_labels = ["Opportunity", "Problem", "Feasibility", "Why Now"]
-
-    for card_label in card_labels:
-
-        def crawl_card(card_label=card_label):
-            page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
-            page.wait_for_timeout(WAIT_CHART)
-
-            # These 4 score cards show their label as a short heading
-            # (e.g. "Opportunity") with a big number and label just below
-            # — match the card heading specifically among possibly
-            # several matches, preferring one that's actually visible.
-            candidates = page.get_by_text(card_label, exact=True)
-            count = candidates.count()
-            card_heading = None
-            for i in range(count):
-                c = candidates.nth(i)
-                if c.is_visible():
-                    card_heading = c
-                    break
-            if card_heading is None:
-                raise Exception(f"'{card_label}' score card not visible on main page")
-            card_heading.scroll_into_view_if_needed(timeout=5000)
-            card_heading.click(timeout=8000)
-            page.wait_for_timeout(WAIT_CHART)
-
-            modal = page.locator("[role='dialog'], .modal, [class*='Modal']").first
-            if modal.count() == 0:
-                raise Exception(f"No modal dialog detected after clicking '{card_label}' score card")
-
-            modal_text = modal.inner_text(timeout=3000)
-            combined_text = modal_text
-
-            # Click "View detailed analysis" inside the modal to reach the
-            # genuinely deeper page (Market Analysis, Competitive
-            # Position, Opportunity Score, etc, per real screenshots).
-            try:
-                detail_link = modal.get_by_text("View detailed analysis", exact=False).first
-                if detail_link.count() > 0 and detail_link.is_visible():
-                    detail_link.click(timeout=5000)
-                    page.wait_for_timeout(WAIT_CHART)
-                    detail_text = get_visible_text(page)
-                    combined_text = modal_text + "\n\n--- Detailed Analysis ---\n\n" + detail_text
-            except Exception as e:
-                log.append({"step": f"score_card_detail_link:{card_label}", "error": str(e)})
-
-            result[card_label] = combined_text[:6000]
-
-            # Navigate back to a clean base_url state for the next card,
-            # rather than relying on a close button (the detailed-analysis
-            # click above may have navigated away from the modal entirely,
-            # so there may be no modal left to close).
-            page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
-            page.wait_for_timeout(WAIT_CHART)
-
-        crawler.safe(crawl_card, f"score_card:{card_label}")
-
-    return result
-
-
-def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
-    """
     The main page's 4 top score cards (Opportunity, Problem, Feasibility,
     Why Now) each open a small modal on click showing the score, a short
     description, and a "View detailed analysis" button — confirmed via
@@ -1411,12 +1351,42 @@ def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
     sequence failed at any point — never raises, since this is
     supplementary detail and a failure here shouldn't affect anything
     else already captured.
+
+    NOTE: this used to be defined TWICE in this file (a stale first
+    version calling crawl_business_fit_deep's modal-capture pattern, then
+    this second one which silently shadowed it — Python allows
+    redefinition with no warning, so only this second copy ever actually
+    ran). The dead first copy has been removed.
     """
     page = crawler.page
     log = crawler.log
     result = {}
 
     card_labels = ["Opportunity", "Problem", "Feasibility", "Why Now"]
+
+    # Real captured data confirmed get_visible_text(page) on these detail
+    # sub-pages returns the ENTIRE page's text, including the site's own
+    # nav sidebar ("ideabrowser HUB Browse Build Home Training...") and the
+    # "Discover your founder archetype" quiz box — both prepended before
+    # any real content (confirmed directly: scoreCardsDeep.Opportunity's
+    # saved text started with the full nav dump, not "Opportunity Score").
+    # This is the exact same boilerplate problem already solved for
+    # community cards below — reuse the identical stripped-lines approach
+    # rather than inventing a second one.
+    boilerplate_lines = {
+        "ideabrowser", "hub", "browse", "build", "home", "training",
+        "my profile", "my stuff", "ideas", "discover", "research",
+        "generate", "trends", "market insights", "updates", "empire",
+        "support", "free plan", "toggle sidebar", "browse ideas",
+        "take the quiz", "start here", "upgrade",
+    }
+
+    def strip_boilerplate(raw_text):
+        kept_lines = [
+            l for l in raw_text.split("\n")
+            if l.strip() and l.strip().lower() not in boilerplate_lines
+        ]
+        return "\n".join(kept_lines)
 
     for card_label in card_labels:
 
@@ -1437,7 +1407,14 @@ def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
             detail_link.click(timeout=8000)
             page.wait_for_timeout(WAIT_CHART)
 
-            result[card_label] = get_visible_text(page)[:4000]
+            # A real capture of "Why Now" confirmed it's meaningfully
+            # longer than the other 3 cards (it has 6+ emoji sub-sections
+            # plus a citations list, vs. 2 for Opportunity/Problem/
+            # Feasibility) and was being cut off mid-URL by the previous
+            # 4000-char cap. Raised to 8000 so longer cards aren't
+            # truncated; still bounded so a genuinely broken page can't
+            # balloon unboundedly.
+            result[card_label] = strip_boilerplate(get_visible_text(page))[:8000]
 
             # Return to the main page explicitly rather than relying on
             # back-navigation, since this sub-page's own URL structure is
