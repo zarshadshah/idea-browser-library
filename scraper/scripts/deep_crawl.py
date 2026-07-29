@@ -1302,6 +1302,153 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
     return history
 
 
+def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
+    """
+    The main page's 4 score cards (Opportunity, Problem, Feasibility, Why
+    Now) each open a modal on click showing the score, a short
+    description, "About this score" explanatory text, and a "View
+    detailed analysis" button — confirmed directly via real screenshots.
+    That button navigates to a genuinely separate, deeper page (e.g.
+    "Opportunity Score" with "Key Strengths" / "Key Risks" bullet lists,
+    or "Market Analysis" + "Competitive Position" sections for other
+    cards) containing real structured content not present in the modal
+    or main page text at all.
+
+    This follows the same real, working pattern established by
+    crawl_business_fit_deep (click card -> confirm modal -> capture ->
+    close -> next), extended with one more step: click "View detailed
+    analysis" inside the modal, capture that deeper page's text too, then
+    navigate back to a clean base_url state before the next card.
+
+    Returns a dict keyed by card label (e.g. "Opportunity") with whatever
+    combined modal + detailed-analysis text was captured. Any card that
+    fails is simply omitted — never raises, since this is supplementary
+    detail and one failure shouldn't affect the rest.
+    """
+    page = crawler.page
+    log = crawler.log
+    result = {}
+
+    card_labels = ["Opportunity", "Problem", "Feasibility", "Why Now"]
+
+    for card_label in card_labels:
+
+        def crawl_card(card_label=card_label):
+            page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+            page.wait_for_timeout(WAIT_CHART)
+
+            # These 4 score cards show their label as a short heading
+            # (e.g. "Opportunity") with a big number and label just below
+            # — match the card heading specifically among possibly
+            # several matches, preferring one that's actually visible.
+            candidates = page.get_by_text(card_label, exact=True)
+            count = candidates.count()
+            card_heading = None
+            for i in range(count):
+                c = candidates.nth(i)
+                if c.is_visible():
+                    card_heading = c
+                    break
+            if card_heading is None:
+                raise Exception(f"'{card_label}' score card not visible on main page")
+            card_heading.scroll_into_view_if_needed(timeout=5000)
+            card_heading.click(timeout=8000)
+            page.wait_for_timeout(WAIT_CHART)
+
+            modal = page.locator("[role='dialog'], .modal, [class*='Modal']").first
+            if modal.count() == 0:
+                raise Exception(f"No modal dialog detected after clicking '{card_label}' score card")
+
+            modal_text = modal.inner_text(timeout=3000)
+            combined_text = modal_text
+
+            # Click "View detailed analysis" inside the modal to reach the
+            # genuinely deeper page (Market Analysis, Competitive
+            # Position, Opportunity Score, etc, per real screenshots).
+            try:
+                detail_link = modal.get_by_text("View detailed analysis", exact=False).first
+                if detail_link.count() > 0 and detail_link.is_visible():
+                    detail_link.click(timeout=5000)
+                    page.wait_for_timeout(WAIT_CHART)
+                    detail_text = get_visible_text(page)
+                    combined_text = modal_text + "\n\n--- Detailed Analysis ---\n\n" + detail_text
+            except Exception as e:
+                log.append({"step": f"score_card_detail_link:{card_label}", "error": str(e)})
+
+            result[card_label] = combined_text[:6000]
+
+            # Navigate back to a clean base_url state for the next card,
+            # rather than relying on a close button (the detailed-analysis
+            # click above may have navigated away from the modal entirely,
+            # so there may be no modal left to close).
+            page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+            page.wait_for_timeout(WAIT_CHART)
+
+        crawler.safe(crawl_card, f"score_card:{card_label}")
+
+    return result
+
+
+def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
+    """
+    The main page's 4 top score cards (Opportunity, Problem, Feasibility,
+    Why Now) each open a small modal on click showing the score, a short
+    description, and a "View detailed analysis" button — confirmed via
+    real screenshots. That button navigates to a genuinely deeper page
+    with its own real sub-sections (e.g. Opportunity's page shows
+    "Opportunity Score" overall rating, "Key Strengths", "Key Risks";
+    other cards showed "Market Analysis" and "Competitive Position"
+    sections instead) — content not present anywhere in the main page's
+    plain text at all.
+
+    This follows the same proven click-modal-then-navigate pattern as
+    crawl_business_fit_deep, just with an extra navigation step (click
+    card -> modal opens -> click "View detailed analysis" -> real
+    sub-page loads) rather than the content living directly in the modal.
+
+    Returns a dict keyed by card label with whatever real page text was
+    captured, or omits a card entirely if its click/modal/navigation
+    sequence failed at any point — never raises, since this is
+    supplementary detail and a failure here shouldn't affect anything
+    else already captured.
+    """
+    page = crawler.page
+    log = crawler.log
+    result = {}
+
+    card_labels = ["Opportunity", "Problem", "Feasibility", "Why Now"]
+
+    for card_label in card_labels:
+
+        def crawl_card(card_label=card_label):
+            page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+            page.wait_for_timeout(WAIT_CHART)
+
+            card_heading = page.get_by_text(card_label, exact=True).first
+            if not card_heading.is_visible():
+                raise Exception(f"'{card_label}' card not visible on main page")
+            card_heading.scroll_into_view_if_needed(timeout=5000)
+            card_heading.click(timeout=8000)
+            page.wait_for_timeout(WAIT_CHART)
+
+            detail_link = page.get_by_text("View detailed analysis", exact=False).first
+            if detail_link.count() == 0 or not detail_link.is_visible():
+                raise Exception(f"No 'View detailed analysis' link found after clicking '{card_label}'")
+            detail_link.click(timeout=8000)
+            page.wait_for_timeout(WAIT_CHART)
+
+            result[card_label] = get_visible_text(page)[:4000]
+
+            # Return to the main page explicitly rather than relying on
+            # back-navigation, since this sub-page's own URL structure is
+            # unconfirmed and may not support a simple browser-back.
+            page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+
+        crawler.safe(crawl_card, f"score_card:{card_label}")
+
+    return result
+
+
 def crawl_business_fit_deep(crawler: Crawler, base_url: str) -> dict:
     """
     The main page's "Business Fit" section shows 4 short summary cards
@@ -1583,6 +1730,16 @@ def main():
         # screenshot of the modal.
         record["business_fit_deep"] = crawler.safe(
             lambda: crawl_business_fit_deep(crawler, URL), "crawl_business_fit_deep", default={}
+        ) or {}
+
+        # Drill into the 4 score cards (Opportunity, Problem, Feasibility,
+        # Why Now) for their real deeper modal + "View detailed analysis"
+        # page content (Market Analysis, Competitive Position, Key
+        # Strengths, Key Risks, etc) — confirmed via real screenshots to
+        # contain genuine additional structure well beyond the plain
+        # "9/10 Exceptional" summary already captured elsewhere.
+        record["score_cards_deep"] = crawler.safe(
+            lambda: crawl_score_cards_deep(crawler, URL), "crawl_score_cards_deep", default={}
         ) or {}
 
         # Drill deeper into Community Signals specifically: real subreddit/
