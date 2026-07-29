@@ -193,8 +193,37 @@ function safeText(value) {
 // so the app can render real headings and subheadings instead of one
 // undifferentiated block.
 function parseStructuredSections(text) {
-  if (!text) return [];
-  const lines = text.split("\n").map((l) => l.trim());
+  if (!text) return { intro: "", sections: [], citations: [] };
+
+  // A trailing "Citations & Sources" block (numbered "N - https://..."
+  // link lines) has no emoji marker of its own — confirmed directly in
+  // real Why Now data, where it sits right after the LAST emoji sub-card
+  // ("Why Wait = Why Fail") with nothing to separate them. Without
+  // stripping it first, it silently gets absorbed into that last card's
+  // body as plain run-on text (confirmed directly: a real render showed
+  // the full numbered URL list crammed into the "Why Wait = Why Fail"
+  // card). Cut it out up front and parse it into its own citations list
+  // — including dropping the lone trailing "0" UI artifact line that
+  // consistently terminates this block in real data, same as elsewhere.
+  let citations = [];
+  const citationsIdx = text.search(/\n\s*Citations\s*&\s*Sources\s*\n/i);
+  let workingText = text;
+  if (citationsIdx !== -1) {
+    const before = text.slice(0, citationsIdx);
+    const after = text.slice(citationsIdx).replace(/^\s*Citations\s*&\s*Sources\s*\n?/i, "");
+    workingText = before;
+    citations = after
+      .split("\n")
+      .map((l) => l.trim())
+      .filter((l) => l && l !== "0")
+      .map((l) => {
+        const m = l.match(/^(\d+)\s*-\s*(.+)$/);
+        return m ? { n: m[1], url: m[2].trim() } : null;
+      })
+      .filter(Boolean);
+  }
+
+  const lines = workingText.split("\n").map((l) => l.trim());
   // Matches a line that's ONLY an emoji (optionally with variation
   // selector), used as each subsection's boundary marker in the real data.
   const emojiOnlyLine = /^\p{Extended_Pictographic}\uFE0F?$/u;
@@ -251,9 +280,21 @@ function parseStructuredSections(text) {
     introStart++;
   }
 
+  // The real site renders a "preview strip" right after the intro on some
+  // pages (confirmed directly in Proof & Signals data): the same 4
+  // emoji+title pairs appear TWICE — once as bare icons with no score or
+  // body at all (a kind of visual table-of-contents), then again as the
+  // real sections with their actual score and content. Without filtering,
+  // this produced 4 empty duplicate cards rendered before the 4 real ones
+  // (confirmed directly: title appeared twice per section, first entry
+  // always score:null and body:""). A genuine section always has real
+  // body content, so drop any with neither a score nor body text.
+  const realSections = sections.filter((s) => s.score != null || s.body.length > 0);
+
   return {
     intro: introLines.slice(introStart).join(" ").trim(),
-    sections: sections.map((s) => ({ ...s, body: s.body.join(" ").trim() })),
+    sections: realSections.map((s) => ({ ...s, body: s.body.join(" ").trim() })),
+    citations,
   };
 }
 
@@ -490,25 +531,39 @@ function parseScoreCardDetail(rawText) {
     i += 2;
   }
 
-  // Description: one or more prose lines until we hit either a short
-  // "Label: Value" line or a known group label.
+  // Collect everything up to the first group-label or emoji marker as one
+  // pool, THEN split it into meta (label: value lines) vs description
+  // (everything else, in original order) — real data interleaves these
+  // (description sentence, then 2 meta lines, then ANOTHER description
+  // sentence — confirmed directly: "The opportunity addresses a critical
+  // gap..." sits AFTER "Opportunity Type: Market Gap" / "Window: Just
+  // Right" in real captured text) rather than cleanly grouping all meta
+  // together before any further prose. A strict sequential "description,
+  // then meta, then groups" pass — which is what actually shipped here
+  // previously — silently dropped that trailing sentence AND, worse,
+  // caused the following "Key Strengths"/"Key Risks" groups to never be
+  // reached at all in some cases, since the loop order didn't match the
+  // real interleaving.
   const isLabelValueLine = (l) => /^[A-Z][A-Za-z ]{2,25}:\s*.+/.test(l) && l.length < 90;
-  const description = [];
+  const emojiOnlyLine = /^\p{Extended_Pictographic}\uFE0F?$/u;
+  const pool = [];
   while (
     i < lines.length &&
-    !isLabelValueLine(lines[i]) &&
     !SCORE_DETAIL_GROUP_LABELS.includes(lines[i]) &&
-    !/^\p{Extended_Pictographic}\uFE0F?$/u.test(lines[i])
+    !emojiOnlyLine.test(lines[i])
   ) {
-    description.push(lines[i]);
+    pool.push(lines[i]);
     i++;
   }
-
   const meta = [];
-  while (i < lines.length && isLabelValueLine(lines[i])) {
-    const [label, ...rest] = lines[i].split(":");
-    meta.push({ label: label.trim(), value: rest.join(":").trim() });
-    i++;
+  const description = [];
+  for (const line of pool) {
+    if (isLabelValueLine(line)) {
+      const [label, ...rest] = line.split(":");
+      meta.push({ label: label.trim(), value: rest.join(":").trim() });
+    } else {
+      description.push(line);
+    }
   }
 
   const groups = [];
@@ -530,9 +585,9 @@ function parseScoreCardDetail(rawText) {
   // Remaining lines (from the first emoji marker onward) reuse the
   // already-proven parseStructuredSections logic directly.
   const remainder = lines.slice(i).join("\n");
-  const { sections: subCards } = parseStructuredSections(remainder);
+  const { sections: subCards, citations } = parseStructuredSections(remainder);
 
-  return { score, description: description.join(" ").trim(), meta, groups, subCards };
+  return { score, description: description.join(" ").trim(), meta, groups, subCards, citations };
 }
 
 function ScoreCardDetail({ text }) {
@@ -562,23 +617,53 @@ function ScoreCardDetail({ text }) {
       ))}
       {parsed.subCards.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-          {parsed.subCards.map((s, i) => (
-            <div key={i} className="p-2.5 rounded-lg" style={{ backgroundColor: "rgba(0,0,0,0.03)" }}>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-sm">{s.emoji}</span>
-                <h4 className="font-bold text-xs" style={{ fontFamily: "'Fraunces', serif" }}>{s.title}</h4>
-                {s.score != null && (
-                  <span
-                    className="text-[10px] font-bold px-1.5 py-0.5 rounded ml-auto shrink-0"
-                    style={{ backgroundColor: "rgba(232,163,61,0.15)", color: "#E8A33D", fontFamily: "'JetBrains Mono', monospace" }}
-                  >
-                    {s.score}/10
-                  </span>
-                )}
+          {parsed.subCards.map((s, i) => {
+            // "Why Wait = Why Fail" is a distinct closing/urgency framing,
+            // not another market-factor sub-card like the others — give it
+            // a visually distinct (warm/urgent) accent so it doesn't read
+            // as just one more identical tile in the grid, per direct
+            // feedback that it needed differentiating from the rest.
+            const isClosingCard = /why wait|why fail/i.test(s.title);
+            return (
+              <div
+                key={i}
+                className="p-2.5 rounded-lg"
+                style={{ backgroundColor: isClosingCard ? "rgba(232,163,61,0.08)" : "rgba(0,0,0,0.03)", border: isClosingCard ? "1px solid rgba(232,163,61,0.25)" : "none" }}
+              >
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-sm">{s.emoji}</span>
+                  <h4 className="font-bold text-xs" style={{ fontFamily: "'Fraunces', serif" }}>{s.title}</h4>
+                  {s.score != null && (
+                    <span
+                      className="text-[10px] font-bold px-1.5 py-0.5 rounded ml-auto shrink-0"
+                      style={{ backgroundColor: "rgba(232,163,61,0.15)", color: "#E8A33D", fontFamily: "'JetBrains Mono', monospace" }}
+                    >
+                      {s.score}/10
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs leading-relaxed whitespace-pre-line opacity-80">{s.body}</p>
               </div>
-              <p className="text-xs leading-relaxed whitespace-pre-line opacity-80">{s.body}</p>
-            </div>
-          ))}
+            );
+          })}
+        </div>
+      )}
+      {parsed.citations && parsed.citations.length > 0 && (
+        // Deliberately styled as plainly as possible — small, muted,
+        // monospace numbering — specifically so it reads as reference
+        // material rather than another content card, per direct feedback
+        // that it was blending into "Why Wait = Why Fail" above it.
+        <div className="pt-2 mt-1 border-t border-black/10">
+          <div className="text-[10px] uppercase tracking-wider opacity-40 mb-1.5" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+            Citations & Sources
+          </div>
+          <ul className="space-y-0.5">
+            {parsed.citations.map((c, i) => (
+              <li key={i} className="text-[10px] opacity-50 truncate" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                {c.n}. {c.url}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </div>
@@ -723,6 +808,20 @@ function StructuredSection({ text }) {
             <p className="text-sm leading-relaxed whitespace-pre-line opacity-80">{s.body}</p>
           </div>
         ))}
+        {emojiParsed.citations && emojiParsed.citations.length > 0 && (
+          <div className="pt-2 border-t border-black/10">
+            <div className="text-[10px] uppercase tracking-wider opacity-40 mb-1.5" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              Citations & Sources
+            </div>
+            <ul className="space-y-0.5">
+              {emojiParsed.citations.map((c, i) => (
+                <li key={i} className="text-[10px] opacity-50 truncate" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                  {c.n}. {c.url}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     );
   }
@@ -1293,14 +1392,6 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                         </div>
                       ))}
                     </div>
-                  </details>
-                )}
-                {idea.whyNowDetail && (
-                  <details className="pt-2 border-t border-black/10">
-                    <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                      Why Now (full analysis) ▾
-                    </summary>
-                    <StructuredSection text={idea.whyNowDetail} />
                   </details>
                 )}
                 {idea.proofSignals && (
