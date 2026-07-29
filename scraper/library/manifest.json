@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-07-29",
+      "title": "Platform that finds and closes your first paying customer",
+      "path": "library/2026/2026-07-29.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-07-28",
       "title": "Client credit checker app for service business",
       "path": "library/2026/2026-07-28.json",
