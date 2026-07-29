@@ -201,7 +201,11 @@ function parseStructuredSections(text) {
   // The real scraped data renders a score as TWO separate lines — the bare
   // number, then "/10" on its own line right after — not as one combined
   // "N/10" string (confirmed directly against real Market Gap text).
-  const isDigitLine = (l) => /^\d{1,2}$/.test(l);
+  // Some sub-cards use a decimal score this same way (e.g. "8.5" then
+  // "/10" on the next line, confirmed directly in real Problem Score and
+  // Feasibility "Technical & Resources" captures) — accept an optional
+  // single decimal place rather than whole numbers only.
+  const isDigitLine = (l) => /^\d{1,2}(\.\d)?$/.test(l);
   const isSlashTenLine = (l) => /^\/\s*10$/.test(l);
 
   const sections = [];
@@ -415,8 +419,286 @@ function parseLabeledBulletSections(text) {
   return { intro: intro.join(" ").trim(), sections };
 }
 
+// Strips the site's own nav/sidebar/quiz-box boilerplate from a raw
+// captured page-text field. This is the same line-set already used by the
+// scraper's own strip_boilerplate() for freshly captured data — duplicated
+// here (rather than only fixed server-side) so that ALREADY-SAVED files
+// captured before that scraper fix (confirmed directly: a real saved
+// scoreCardsDeep.Opportunity value began with "ideabrowser\nHUB\nBrowse..."
+// before any real content) still render cleanly without needing a re-crawl.
+const PAGE_BOILERPLATE_LINES = new Set([
+  "ideabrowser", "hub", "browse", "build", "home", "training",
+  "my profile", "my stuff", "ideas", "discover", "research",
+  "generate", "trends", "market insights", "updates", "empire",
+  "support", "free plan", "toggle sidebar", "browse ideas",
+  "take the quiz", "start here", "upgrade", "discover your founder archetype",
+]);
+
+function stripPageBoilerplate(text) {
+  if (!text) return "";
+  return text
+    .split("\n")
+    .filter((l) => l.trim() && !PAGE_BOILERPLATE_LINES.has(l.trim().toLowerCase()))
+    .join("\n");
+}
+
+// Dedicated parser for the exact scoreCardsDeep "Opportunity/Problem/
+// Feasibility/Why Now" detail-page shape confirmed directly against real
+// scraped text: a repeated title line ("Opportunity Score"), "Overall
+// Rating" then a split "9" / "/10" score, a one-line description, then a
+// few short "Label: Value" lines (e.g. "Opportunity Type: Market Gap",
+// "Pain Type: Acute", "Time to MVP: 1-2 weeks"), then one or more
+// un-bulleted blank-line-separated groups under a bare label heading (e.g.
+// "Key Strengths" / "Key Risks" / "Key Pain Points" / "Key Advantages" /
+// "Critical Challenges" / "Market Evidence"), and finally the same
+// emoji-marked sub-card pattern already handled by parseStructuredSections
+// (e.g. "📈 Market Analysis 9 /10 ..."). Distinct from parseStructuredSections
+// because that parser only looks for emoji markers and has no concept of
+// the un-bulleted "Key X" groups that sit BEFORE the first emoji marker —
+// without this, those groups were falling into one dense intro paragraph
+// (confirmed directly against real broken output).
+const SCORE_DETAIL_GROUP_LABELS = [
+  "Key Strengths", "Key Risks", "Key Pain Points", "Market Evidence",
+  "Key Advantages", "Critical Challenges",
+];
+
+function parseScoreCardDetail(rawText) {
+  const text = stripPageBoilerplate(rawText);
+  if (!text) return null;
+
+  // A lone "0" line consistently terminates every real scoreCardsDeep
+  // capture (confirmed directly across Opportunity/Problem/Feasibility) —
+  // a real site UI artifact, not content, so it's dropped rather than
+  // rendered as if it were a meaningful trailing value.
+  const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
+  if (lines.length && lines[lines.length - 1] === "0") lines.pop();
+  const isDigitLine = (l) => /^\d{1,2}(\.\d)?$/.test(l);
+  const isSlashTenLine = (l) => /^\/\s*10$/.test(l);
+
+  // Must contain "Overall Rating" to be confidently this exact shape,
+  // rather than guessing based on weaker signals.
+  const ratingIdx = lines.findIndex((l) => /overall rating/i.test(l));
+  if (ratingIdx === -1) return null;
+
+  let i = ratingIdx + 1;
+  // Skip the title line ("Opportunity Score") if it happens to repeat
+  // right before "Overall Rating" instead of after — real data showed it
+  // consistently appears once, right before this block.
+  let score = null;
+  if (isDigitLine(lines[i]) && isSlashTenLine(lines[i + 1])) {
+    score = Number(lines[i]);
+    i += 2;
+  }
+
+  // Description: one or more prose lines until we hit either a short
+  // "Label: Value" line or a known group label.
+  const isLabelValueLine = (l) => /^[A-Z][A-Za-z ]{2,25}:\s*.+/.test(l) && l.length < 90;
+  const description = [];
+  while (
+    i < lines.length &&
+    !isLabelValueLine(lines[i]) &&
+    !SCORE_DETAIL_GROUP_LABELS.includes(lines[i]) &&
+    !/^\p{Extended_Pictographic}\uFE0F?$/u.test(lines[i])
+  ) {
+    description.push(lines[i]);
+    i++;
+  }
+
+  const meta = [];
+  while (i < lines.length && isLabelValueLine(lines[i])) {
+    const [label, ...rest] = lines[i].split(":");
+    meta.push({ label: label.trim(), value: rest.join(":").trim() });
+    i++;
+  }
+
+  const groups = [];
+  while (i < lines.length && SCORE_DETAIL_GROUP_LABELS.includes(lines[i])) {
+    const title = lines[i];
+    i++;
+    const items = [];
+    while (
+      i < lines.length &&
+      !SCORE_DETAIL_GROUP_LABELS.includes(lines[i]) &&
+      !/^\p{Extended_Pictographic}\uFE0F?$/u.test(lines[i])
+    ) {
+      items.push(lines[i]);
+      i++;
+    }
+    groups.push({ title, items });
+  }
+
+  // Remaining lines (from the first emoji marker onward) reuse the
+  // already-proven parseStructuredSections logic directly.
+  const remainder = lines.slice(i).join("\n");
+  const { sections: subCards } = parseStructuredSections(remainder);
+
+  return { score, description: description.join(" ").trim(), meta, groups, subCards };
+}
+
+function ScoreCardDetail({ text }) {
+  const parsed = parseScoreCardDetail(text);
+  if (!parsed) return <StructuredSection text={text} />;
+
+  return (
+    <div className="space-y-3">
+      {parsed.description && <p className="text-sm leading-relaxed opacity-80">{parsed.description}</p>}
+      {parsed.meta.length > 0 && (
+        <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
+          {parsed.meta.map((m, i) => (
+            <div key={i}>
+              <span className="opacity-50">{m.label}: </span>
+              <span className="font-semibold">{m.value}</span>
+            </div>
+          ))}
+        </div>
+      )}
+      {parsed.groups.map((g, i) => (
+        <div key={i}>
+          <div className="text-xs font-bold mb-1" style={{ fontFamily: "'Fraunces', serif" }}>{g.title}</div>
+          <ul className="text-xs leading-relaxed opacity-80 space-y-0.5 list-disc pl-4">
+            {g.items.map((item, j) => <li key={j}>{item}</li>)}
+          </ul>
+        </div>
+      ))}
+      {parsed.subCards.length > 0 && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+          {parsed.subCards.map((s, i) => (
+            <div key={i} className="p-2.5 rounded-lg" style={{ backgroundColor: "rgba(0,0,0,0.03)" }}>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-sm">{s.emoji}</span>
+                <h4 className="font-bold text-xs" style={{ fontFamily: "'Fraunces', serif" }}>{s.title}</h4>
+                {s.score != null && (
+                  <span
+                    className="text-[10px] font-bold px-1.5 py-0.5 rounded ml-auto shrink-0"
+                    style={{ backgroundColor: "rgba(232,163,61,0.15)", color: "#E8A33D", fontFamily: "'JetBrains Mono', monospace" }}
+                  >
+                    {s.score}/10
+                  </span>
+                )}
+              </div>
+              <p className="text-xs leading-relaxed whitespace-pre-line opacity-80">{s.body}</p>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Dedicated parser for the exact businessFitDeep modal shape confirmed
+// directly against real scraped text: a leading emoji, a title line (e.g.
+// "Revenue Potential"), a short badge/value token (e.g. "$$$" or a score
+// like "3/10"), a one-line tagline, then "Label" headings each followed
+// either by a run of "•"-bulleted items or by plain un-bulleted lines
+// (used specifically for "Example Companies", which lists bare company
+// names with no bullet markers at all — confirmed directly: "Close.com
+// LeadFuze Vendasta" with no separators, which the generic bullet-based
+// parser was squashing into a single run-on item).
+const BUSINESS_FIT_LABELS = [
+  "Overview", "Revenue Examples", "Business Models", "Example Companies",
+  "Execution Risks", "Technical Challenges", "Non-Technical Challenges",
+  "Go-to-Market Tactics", "Target Audiences", "Channels with Signal",
+  "Early Positioning Angles", "Traction Signal",
+];
+
+function parseBusinessFitDetail(rawText) {
+  const text = stripPageBoilerplate(rawText);
+  if (!text) return null;
+
+  const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
+  if (!lines.length) return null;
+
+  const emojiOnlyLine = /^\p{Extended_Pictographic}\uFE0F?$/u;
+  if (!emojiOnlyLine.test(lines[0])) return null;
+
+  const emoji = lines[0];
+  const title = lines[1] || "";
+  // A badge is a short token like "$$$" or "3/10" or "9/10" — distinct
+  // from a full sentence, which the tagline on the next line will be.
+  const isBadge = (l) => /^(\$+|\d{1,2}\s*\/\s*10)$/.test(l);
+  let i = 2;
+  let badge = null;
+  if (isBadge(lines[i])) {
+    badge = lines[i];
+    i++;
+  }
+  const tagline = lines[i] || "";
+  i++;
+
+  const sections = [];
+  let current = null;
+  while (i < lines.length) {
+    const line = lines[i];
+    if (BUSINESS_FIT_LABELS.includes(line)) {
+      if (current) sections.push(current);
+      current = { title: line, items: [] };
+      i++;
+      continue;
+    }
+    if (line === "•") { i++; continue; }
+    if (line === "Close" && i === lines.length - 1) { i++; continue; } // trailing UI artifact ("Close" modal-close button text) confirmed at the very end of every real businessFitDeep capture
+    if (current) current.items.push(line.replace(/^•\s*/, ""));
+    i++;
+  }
+  if (current) sections.push(current);
+
+  if (!sections.length) return null;
+  return { emoji, title, badge, tagline, sections };
+}
+
+function BusinessFitDetail({ text }) {
+  const parsed = parseBusinessFitDetail(text);
+  if (!parsed) return <StructuredSection text={text} />;
+
+  return (
+    <div className="space-y-3">
+      <div className="flex items-center gap-2">
+        <span className="text-base">{parsed.emoji}</span>
+        <h4 className="font-bold text-sm" style={{ fontFamily: "'Fraunces', serif" }}>{parsed.title}</h4>
+        {parsed.badge && (
+          <span
+            className="text-[10px] font-bold px-1.5 py-0.5 rounded ml-auto shrink-0"
+            style={{ backgroundColor: "rgba(232,163,61,0.15)", color: "#E8A33D", fontFamily: "'JetBrains Mono', monospace" }}
+          >
+            {parsed.badge}
+          </span>
+        )}
+      </div>
+      {parsed.tagline && <p className="text-xs leading-relaxed opacity-70 italic">{parsed.tagline}</p>}
+      {parsed.sections.map((s, i) => {
+        // "Example Companies" (and any similarly bare, un-bulleted, short-
+        // item section) reads better as tag pills than a bulleted list —
+        // matches the real site's own rendering shown in the reference
+        // screenshot (company names shown as small rounded tags, not a
+        // vertical list).
+        const isTagStyle = s.title === "Example Companies" && s.items.every((it) => it.split(" ").length <= 3);
+        return (
+          <div key={i}>
+            <div className="text-xs font-bold mb-1" style={{ fontFamily: "'Fraunces', serif" }}>{s.title}</div>
+            {isTagStyle ? (
+              <div className="flex flex-wrap gap-1.5">
+                {s.items.map((item, j) => (
+                  <span key={j} className="text-[11px] px-2 py-0.5 rounded-full" style={{ backgroundColor: "rgba(0,0,0,0.06)" }}>
+                    {item}
+                  </span>
+                ))}
+              </div>
+            ) : s.items.length > 1 ? (
+              <ul className="text-xs leading-relaxed opacity-80 space-y-0.5 list-disc pl-4">
+                {s.items.map((item, j) => <li key={j}>{item}</li>)}
+              </ul>
+            ) : (
+              <p className="text-xs leading-relaxed opacity-80">{s.items[0]}</p>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 function StructuredSection({ text }) {
-  const clean = safeText(text);
+  const clean = stripPageBoilerplate(safeText(text));
   if (!clean) return null;
 
   const emojiParsed = parseStructuredSections(clean);
@@ -919,7 +1201,7 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                       {Object.entries(idea.scoreCardsDeep).map(([label, text]) => (
                         <div key={label}>
                           <div className="text-xs font-bold mb-1" style={{ fontFamily: "'Fraunces', serif" }}>{label}</div>
-                          <StructuredSection text={text} />
+                          <ScoreCardDetail text={text} />
                         </div>
                       ))}
                     </div>
@@ -1007,8 +1289,7 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     <div className="mt-2 space-y-3">
                       {Object.entries(idea.businessFitDeep).map(([label, text]) => (
                         <div key={label}>
-                          <div className="text-xs font-bold mb-1" style={{ fontFamily: "'Fraunces', serif" }}>{label}</div>
-                          <StructuredSection text={text} />
+                          <BusinessFitDetail text={text} />
                         </div>
                       ))}
                     </div>
