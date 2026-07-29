@@ -356,24 +356,38 @@ function groupIntoLabelValuePairs(lines) {
 // of actual list items.
 function parseLabeledBulletSections(text) {
   if (!text) return { intro: "", sections: [] };
-  // Known real section labels from Business Fit modals — matched exactly
-  // rather than guessed generically (e.g. via "short Title Case line")
-  // since that heuristic would false-positive on ordinary sentences.
+  // Known real section labels — matched exactly rather than guessed
+  // generically (e.g. via "short Title Case line") since that heuristic
+  // would false-positive on ordinary sentences. First set from Business
+  // Fit modals; second set confirmed via real screenshots of the score
+  // cards' "View detailed analysis" pages (Market Analysis, Competitive
+  // Position, Opportunity Score sub-pages).
   const knownLabels = [
     "Overview", "Revenue Examples", "Business Models", "Example Companies",
     "Execution Risks", "Technical Challenges", "Non-Technical Challenges",
     "Go-To-Market Tactics", "Target Audiences",
+    "Market Analysis", "Market Timing", "Market Potential",
+    "Competitive Position", "Competitive Advantage", "Execution Feasibility",
+    "Key Strengths", "Key Risks",
   ];
+
+  // Strip our own artificial separator (inserted by the crawler between
+  // a score card's modal text and its "View detailed analysis" page) so
+  // it never gets treated as a bullet item under whatever section
+  // happened to precede it.
+  const cleanedText = text.replace(/---\s*Detailed Analysis\s*---/g, "\n");
 
   // Real captures mix real newlines AND bullet characters inconsistently
   // (sometimes a label sits alone on its own line, sometimes it's glued
   // to the next bullet on the same line) — normalize by first splitting on
-  // real newlines, THEN splitting each resulting line on "•" too, so a
+  // real newlines, THEN splitting each resulting line on any of the real
+  // bullet markers seen across different pages ("•" for Business Fit,
+  // "↗"/"→" for Key Strengths/Key Risks per real screenshots) too, so a
   // label is never missed just because it wasn't at the very start of a
   // pre-split chunk.
-  const rawChunks = text
+  const rawChunks = cleanedText
     .split("\n")
-    .flatMap((line) => line.split(/\s*•\s*/))
+    .flatMap((line) => line.split(/\s*[•↗→]\s*/))
     .map((c) => c.trim())
     .filter(Boolean);
 
@@ -896,6 +910,21 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                   <ScoreBar label="Feasib." score={idea.scores.feasibility.score} icon={Wrench} />
                   <ScoreBar label="Timing" score={idea.scores.whyNow.score} icon={Clock} />
                 </div>
+                {idea.scoreCardsDeep && Object.keys(idea.scoreCardsDeep).length > 0 && (
+                  <details className="pt-2 border-t border-black/10">
+                    <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      Score Details (full analysis) ▾
+                    </summary>
+                    <div className="mt-2 space-y-4">
+                      {Object.entries(idea.scoreCardsDeep).map(([label, text]) => (
+                        <div key={label}>
+                          <div className="text-xs font-bold mb-1" style={{ fontFamily: "'Fraunces', serif" }}>{label}</div>
+                          <StructuredSection text={text} />
+                        </div>
+                      ))}
+                    </div>
+                  </details>
+                )}
               </div>
             )}
 
