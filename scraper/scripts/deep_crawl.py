@@ -1223,26 +1223,34 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                     text = page_text_for_count
                     captured = {}
 
-                    # Content Strategies: a heading, then repeating
-                    # audience-name + tactic-description + "Tactics" +
-                    # bulleted items groups, ending right before
-                    # "Partnership Opportunities" (confirmed via
-                    # surviving_headings_dump ordering).
-                    cs_match = re.search(
-                        r"Content Strategies\n(.*?)\nPartnership Opportunities",
-                        text, re.DOTALL,
-                    )
-                    if cs_match:
-                        captured["contentStrategies"] = cs_match.group(1).strip()[:3000]
+                    # Both "Content Strategies" and "Partnership
+                    # Opportunities" appear TWICE on this page — once as a
+                    # stat label in the "Analysis Overview" table near the
+                    # top (e.g. "Content Strategies\n\n3"), and once again
+                    # as the real section heading further down, after all
+                    # the community segment cards. Confirmed directly: a
+                    # real capture using re.search (which always matches
+                    # the FIRST occurrence) grabbed just "3" for
+                    # contentStrategies, and swept the ENTIRE page between
+                    # the first "Partnership Opportunities" and the real
+                    # "Citations & Sources" into partnershipOpportunities —
+                    # including every community card's full Pain
+                    # Points/Interests/tags content. Use the LAST match of
+                    # each heading instead, since the real content section
+                    # always comes after the stat-label occurrence.
+                    def last_match_start(pattern):
+                        matches = list(re.finditer(pattern, text))
+                        return matches[-1].end() if matches else None
 
-                    # Partnership Opportunities: a short bulleted list,
-                    # ending right before "Citations & Sources".
-                    po_match = re.search(
-                        r"Partnership Opportunities\n(.*?)\nCitations\s*&\s*Sources",
-                        text, re.DOTALL,
-                    )
-                    if po_match:
-                        captured["partnershipOpportunities"] = po_match.group(1).strip()[:1500]
+                    cs_start = last_match_start(r"Content Strategies\n")
+                    po_start = last_match_start(r"Partnership Opportunities\n")
+                    cit_start = last_match_start(r"Citations\s*&\s*Sources\n")
+
+                    if cs_start is not None and po_start is not None and po_start > cs_start:
+                        captured["contentStrategies"] = text[cs_start:po_start].rsplit("Partnership Opportunities", 1)[0].strip()[:3000]
+
+                    if po_start is not None and cit_start is not None and cit_start > po_start:
+                        captured["partnershipOpportunities"] = text[po_start:cit_start].rsplit("Citations", 1)[0].strip()[:1500]
 
                     # Citations & Sources: numbered "N - https://..." link
                     # lines, same shape already handled elsewhere (Why Now,
@@ -1251,16 +1259,27 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                     # inventing a second one, and drop the trailing lone
                     # "0" UI artifact line that consistently terminates
                     # this block in real data, same as those other fields.
-                    cit_match = re.search(r"Citations\s*&\s*Sources\n(.*?)$", text, re.DOTALL)
-                    if cit_match:
+                    # "Citations & Sources" only appears once on this page
+                    # (no matching stat-label occurrence exists for it,
+                    # confirmed directly), so no last-match fix is needed
+                    # here — kept as a plain search from its one real spot.
+                    if cit_start is not None:
                         citations = []
-                        for line in cit_match.group(1).strip().split("\n"):
+                        for line in text[cit_start:].strip().split("\n"):
                             line = line.strip()
                             if not line or line == "0":
                                 continue
                             m = re.match(r"^(\d+)\s*-\s*(.+)$", line)
                             if m:
                                 citations.append({"n": m.group(1), "url": m.group(2).strip()})
+                            elif citations:
+                                # A non-numbered, non-empty line after we've
+                                # already started collecting real citation
+                                # lines means we've run past the end of the
+                                # citations block (e.g. into unrelated
+                                # trailing page text) — stop rather than
+                                # keep scanning indefinitely.
+                                break
                         if citations:
                             captured["citations"] = citations[:20]
 
