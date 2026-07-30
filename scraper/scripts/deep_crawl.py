@@ -894,23 +894,70 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
 
             for i in range(card_count):
 
-                def crawl_community_card(i=i):
+                def crawl_community_card(i=i, expected_name=surviving_heading_texts[i] if i < len(surviving_heading_texts) else None):
                     # Re-fetch locators fresh each iteration since navigating
                     # away and back invalidates previous handles. Matches
                     # the outer function's heading-based approach (see that
                     # comment for why link-based matching was replaced, and
                     # the dynamic-title comment above for why this can't be
                     # a hardcoded exclusion string).
+                    #
+                    # A real crawl proved that re-querying "h1,h2,h3,h4
+                    # filtered by exclude_pattern" a SECOND time here (after
+                    # already doing so once above for surviving_headings_dump)
+                    # can return a DIFFERENT ordered list than the first
+                    # query — confirmed directly: the diagnostic dump for
+                    # this exact page correctly excluded "DESCRIPTION" and
+                    # "RELEVANCE SIGNALS" from its 6-heading list, yet this
+                    # loop's own fresh re-query let both through into the
+                    # final saved data at indices 2 and 3, while the
+                    # diagnostic's index 2 was actually "AI ChatBot" — i.e.
+                    # the two queries, run moments apart against what should
+                    # be the same reloaded page, disagreed on both ORDER and
+                    # MEMBERSHIP. Rather than trust a second independent
+                    # query's index to line up with the first, re-locate
+                    # THIS card by its own exact captured name (from the
+                    # already-verified surviving_heading_texts list),
+                    # falling back to the index only if that name can't be
+                    # found again (e.g. truly dynamic content).
+                    #
+                    # Real YouTube data confirmed genuine duplicate names
+                    # occur (e.g. two separate "Kevin Stratvert" and two
+                    # separate "IBM Technology" headings for different
+                    # channels/videos) — matching by name ALONE and always
+                    # taking the first hit would silently re-visit the same
+                    # element for both duplicates. Use how many times this
+                    # exact name already appeared earlier in the captured
+                    # list to pick the matching occurrence instead of
+                    # always defaulting to the first.
+                    occurrence_index = surviving_heading_texts[:i].count(expected_name) if expected_name else 0
                     page.goto(platform_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
                     page.wait_for_timeout(WAIT_CHART)
-                    headings = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(exclude_pattern))
-                    if i >= headings.count():
-                        raise Exception(f"Card index {i} no longer available")
-                    heading = headings.nth(i)
+                    headings = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(exclude_pattern, re.IGNORECASE))
+                    heading = None
+                    if expected_name:
+                        by_name = page.locator("h1, h2, h3, h4").filter(has_text=re.compile(r"^\s*" + re.escape(expected_name.strip()) + r"\s*$"))
+                        if by_name.count() > occurrence_index and by_name.nth(occurrence_index).is_visible():
+                            heading = by_name.nth(occurrence_index)
+                    if heading is None:
+                        if i >= headings.count():
+                            raise Exception(f"Card index {i} no longer available")
+                        heading = headings.nth(i)
                     if not heading.is_visible():
                         raise Exception(f"Card {i} not visible")
                     heading.scroll_into_view_if_needed(timeout=5000)
                     name = heading.inner_text(timeout=3000).strip()
+
+                    # A real crawl showed a card being re-located by name
+                    # can still land on the wrong element if the exclusion
+                    # pattern's SECOND query let a boilerplate label back in
+                    # despite the name-match succeeding (e.g. if the site
+                    # ever renders two identically-named headings). Guard
+                    # against that directly rather than trusting the name
+                    # match alone: skip this card entirely if its resolved
+                    # name matches the exclude_pattern itself.
+                    if re.match(exclude_pattern, name, re.IGNORECASE):
+                        raise Exception(f"Card {i} resolved to an excluded boilerplate heading ({name!r}); skipping")
 
                     # Reddit's community headings are real navigable links
                     # into a dedicated per-subreddit page with discussion
