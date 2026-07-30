@@ -1299,7 +1299,12 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     <div className="mt-2 space-y-4">
                       {Object.entries(idea.scoreCardsDeep).map(([label, text]) => (
                         <div key={label}>
-                          <div className="text-xs font-bold mb-1" style={{ fontFamily: "'Fraunces', serif" }}>{label}</div>
+                          <div
+                            className="text-sm font-bold mb-2 pb-1 inline-block"
+                            style={{ fontFamily: "'Fraunces', serif", borderBottom: "2px solid rgba(232,163,61,0.5)" }}
+                          >
+                            {label}
+                          </div>
                           <ScoreCardDetail text={text} />
                         </div>
                       ))}
