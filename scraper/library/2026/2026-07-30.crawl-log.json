@@ -661,19 +661,19 @@
   },
   {
     "step": "community_visit_group_popup:facebook:1",
-    "captured_url": ""
+    "captured_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fdialogflowcommunity%2F"
   },
   {
     "step": "community_visit_group_popup:facebook:2",
-    "captured_url": ""
+    "captured_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F158931293905585%2F"
   },
   {
     "step": "community_visit_group_popup:facebook:3",
-    "captured_url": ""
+    "captured_url": "https://www.facebook.com/groups/1624949721743742/posts/1866408987597813/"
   },
   {
     "step": "community_visit_group_popup:facebook:4",
-    "captured_url": ""
+    "captured_url": "https://www.facebook.com/groups/ContactCenterTechnology/posts/2058796614675352/"
   },
   {
     "step": "crawl_platform:facebook:finished",
