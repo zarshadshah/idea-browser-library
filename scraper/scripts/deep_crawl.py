@@ -1131,10 +1131,28 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                                 with page.expect_popup(timeout=6000) as popup_info:
                                     visit_group.first.click(timeout=4000)
                                 popup = popup_info.value
-                                popup.wait_for_load_state("domcontentloaded", timeout=8000)
-                                popup_url = popup.url
+                                # A real crawl confirmed popup.url stays "" /
+                                # about:blank immediately after
+                                # wait_for_load_state("domcontentloaded") —
+                                # a known Playwright behavior (confirmed via
+                                # a documented GitHub issue showing the exact
+                                # same symptom): window.open() opens the tab
+                                # blank first, then the real destination is
+                                # set asynchronously via JS a moment later,
+                                # so "domcontentloaded" resolves against
+                                # that initial blank state, not the eventual
+                                # real one. Poll briefly for a real
+                                # (non-blank, non-empty) URL instead of
+                                # trusting a single read right after the
+                                # popup opens.
+                                popup_url = ""
+                                for _ in range(20):  # up to ~4s total (20 * 200ms)
+                                    popup_url = popup.url
+                                    if popup_url and popup_url != "about:blank":
+                                        break
+                                    popup.wait_for_timeout(200)
                                 popup.close()
-                                if popup_url and popup_url not in seen_urls and "ideabrowser.com" not in popup_url:
+                                if popup_url and popup_url != "about:blank" and popup_url not in seen_urls and "ideabrowser.com" not in popup_url:
                                     discussions.append({"title": name[:200], "url": popup_url})
                                 log.append({
                                     "step": f"community_visit_group_popup:{platform_key}:{i}",
