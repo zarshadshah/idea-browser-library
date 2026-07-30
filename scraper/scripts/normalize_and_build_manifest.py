@@ -310,7 +310,20 @@ def normalize_day(raw: dict) -> dict:
                 if not _is_boilerplate_community_name(community.get("name", ""))
             ]
             for platform, communities in (raw.get("community_signals_deep") or {}).items()
+            # "_otherCommunitiesExtra" is a distinct, non-platform key
+            # (Content Strategies / Partnership Opportunities / Citations
+            # from the "Other Communities" sub-page — see deep_crawl.py's
+            # crawl_community_signals_deep) that deliberately does NOT
+            # hold a list of communities like the 4 real platform keys do.
+            # Skip it here so it isn't sliced like a list (which would
+            # raise, since it's a dict) — it's surfaced separately below
+            # as its own top-level field instead.
+            if platform != "_otherCommunitiesExtra"
         },
+        # Content Strategies / Partnership Opportunities / Citations for
+        # the "Other Communities" page — page-level sections that sit
+        # alongside (not inside) the community segment cards above.
+        "otherCommunitiesExtra": (raw.get("community_signals_deep") or {}).get("_otherCommunitiesExtra") or {},
         # Real deeper modal content for the 4 Business Fit summary cards
         # (Revenue Potential, Execution Difficulty, Go-To-Market, Right
         # for You) — confirmed via a real screenshot to contain genuine
