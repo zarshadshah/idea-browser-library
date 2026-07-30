@@ -1,0 +1,792 @@
+[
+  {
+    "step": "login",
+    "note": "Found 2 element(s) matching 'Sign in with Password' text."
+  },
+  {
+    "step": "login",
+    "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+  },
+  {
+    "step": "login",
+    "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+  },
+  {
+    "step": "login",
+    "success": true
+  },
+  {
+    "step": "keyword_discovery",
+    "note": "Found 7 plausible keyword option(s) after filtering."
+  },
+  {
+    "step": "select_keyword:Conversational ai",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Conversational ai\", exact=True).first\n    - locator resolved to <span class=\"text-xs md:text-sm truncate\">Conversational ai</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 500.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n12,100 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Conversational ai",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n10 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Generative ai chat",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n20 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Interactive ai chat",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n880 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Ai chat bot online",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n880 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Conversational ai chatbot",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n90 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Advanced ai chat",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n0 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Chatgpt ai chat",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_community_signals_deep:entered",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals/reddit-analysis"
+  },
+  {
+    "step": "crawl_platform:reddit:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Reddit Community Analysis",
+      "r/ChatGPT",
+      "r/Chatbots",
+      "r/artificial",
+      "r/AI_Agents"
+    ]
+  },
+  {
+    "step": "crawl_platform:reddit:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 4,
+    "all_heading_count": 5,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nTune-up shop for misfiring business chatbots\nCommunity Signals\nPro welcome offer \u00b7 17d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n"
+  },
+  {
+    "step": "crawl_platform:reddit:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals/reddit-analysis",
+    "card_count": 4,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nTune-up shop for misfiring business chatbots\nCommunity Signals\nPro welcome offer \u00b7 17d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nTune-up shop for misfiring business chatbots\nCommunity Signals\nReddit Analysis\nReddit Community Analysis\n\nAnalyzed 4 relevant communities\n\nKey Findings\nBusiness owners across Reddit's AI-focused communities are actively searching for solutions to AI chatbot misconfigurations, revealing a lucrative market opportunity. The bustling r/ChatGPT community, with over 11.6 million members, is a vibrant hub where users frequently discuss issues with AI configurations, generating posts with hundreds of engagements. On r/Chatbots, hosting 135,000 participants, conversations often center on integration challenges and AI tool comparisons, further highlighting user pain points. Meanwhile, r/artificial, a diverse group of 1.3 million AI enthusiasts, offers insights into model optimization and performance across platforms. These discussions underscore a palpable demand for an AI Bot Tune-Up Platform tailored to address common struggles, includin"
+  },
+  {
+    "step": "crawl_platform:reddit:card_0:container_check",
+    "community_name": "Reddit Community Analysis",
+    "container_text_length": 58,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:reddit:card_1:container_check",
+    "community_name": "r/ChatGPT",
+    "container_text_length": 1777,
+    "container_text_starts_with_name": null
+  },
+  {
+    "step": "crawl_platform:reddit:finished",
+    "communities_found": 4
+  },
+  {
+    "step": "crawl_platform:facebook:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals"
+  },
+  {
+    "step": "crawl_platform:facebook:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals"
+  },
+  {
+    "step": "crawl_platform:facebook:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals/facebook-analysis"
+  },
+  {
+    "step": "crawl_platform:facebook:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Facebook Groups",
+      "Conversational & Generative AI",
+      "AI ChatBot",
+      "What is the best conversation AI for small businesses?",
+      "Featuring Forrester on the State of Conversational AI in 2026",
+      "How do agencies charge for conversation AI and voice AI"
+    ]
+  },
+  {
+    "step": "crawl_platform:facebook:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 5,
+    "all_heading_count": 6,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nTune-up shop for misfiring business chatbots\nCommunity Signals\nPro welcome offer \u00b7 17d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n"
+  },
+  {
+    "step": "crawl_platform:facebook:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals/facebook-analysis",
+    "card_count": 5,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nTune-up shop for misfiring business chatbots\nCommunity Signals\nPro welcome offer \u00b7 17d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nTune-up shop for misfiring business chatbots\nCommunity Signals\nFacebook Analysis\nFacebook Groups\n\n8 groups analyzed\n\nKey Findings\nDiving into Facebook group discussions reveals a fascinating trend: businesses and developers are highly engaged in optimizing AI chatbot performance. In the \"AI ChatBot\" group, with over 5,800 followers, members frequently discuss the challenges of improving chatbot functionalities, perfectly aligning with opportunities to offer AI bot tune-up services. Another vibrant community, \"Conversational & Generative AI,\" bursts with active discussions on AI challenges, validating pain points around configuration issues \u2013 a key topic with members likely numbering in the thousands. Trends surface, such as confusion over AI tool effectiveness in the \"What is the Best Conversation AI for Small Businesses?\" group, where small businesses continuously seek solutions to common breakdowns. These insights pinpoint a st"
+  },
+  {
+    "step": "crawl_platform:facebook:card_0:container_check",
+    "community_name": "Facebook Groups",
+    "container_text_length": 34,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:facebook:card_1:container_check",
+    "community_name": "Conversational & Generative AI",
+    "container_text_length": 639,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:facebook:finished",
+    "communities_found": 5
+  },
+  {
+    "step": "crawl_platform:youtube:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals"
+  },
+  {
+    "step": "crawl_platform:youtube:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals"
+  },
+  {
+    "step": "crawl_platform:youtube:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals/youtube-analysis"
+  },
+  {
+    "step": "crawl_platform:youtube:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "YouTube Content Analysis",
+      "Top Channels",
+      "IBM Technology",
+      "CNBC",
+      "Simplilearn",
+      "Dan Martell",
+      "Kevin Stratvert",
+      "Jason West",
+      "IBM Technology",
+      "Eye on Tech",
+      "Matt Wolfe",
+      "InsideAI",
+      "Kevin Stratvert",
+      "The Diary Of A CEO",
+      "NeuralNine",
+      "AI Master",
+      "Cloud English",
+      "Content Trends",
+      "Common Themes",
+      "Popular Formats"
+    ]
+  },
+  {
+    "step": "crawl_platform:youtube:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 15,
+    "all_heading_count": 20,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nTune-up shop for misfiring business chatbots\nCommunity Signals\nPro welcome offer \u00b7 17d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n"
+  },
+  {
+    "step": "crawl_platform:youtube:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals/youtube-analysis",
+    "card_count": 15,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nTune-up shop for misfiring business chatbots\nCommunity Signals\nPro welcome offer \u00b7 17d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nTune-up shop for misfiring business chatbots\nCommunity Signals\nYouTube Analysis\nYouTube Content Analysis\n\nAnalyzed 15 channels with relevant content\n\nKey Findings\nEngagement with YouTube content on AI is skyrocketing, opening vast market opportunities. Channels like Simplilearn and The Diary Of A CEO are hitting impressive engagement levels, with videos averaging 3.5 million and 4.9 million views respectively. Simplilearn\u2019s concise AI tutorials and The Diary Of A CEO\u2019s explorations into AI ethics are resonating strongly with audiences. Key trends show a fascination with explainer and tutorial formats, especially those focusing on AI chatbot development and ethical concerns. With consistent high views, short explainer videos and in-depth AI technology comparisons fulfill a clear viewer craving for understanding AI's practical applications. However, content gaps exist in advanced AI tuning and bespoke chatbot solutions, signaling l"
+  },
+  {
+    "step": "crawl_platform:youtube:card_0:container_check",
+    "community_name": "YouTube Content Analysis",
+    "container_text_length": 68,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:youtube:card_1:container_check",
+    "community_name": "Top Channels",
+    "container_text_length": 3086,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:youtube:finished",
+    "communities_found": 15
+  },
+  {
+    "step": "crawl_platform:other:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals"
+  },
+  {
+    "step": "crawl_platform:other:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals/other-communities"
+  },
+  {
+    "step": "crawl_platform:other:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Other Communities",
+      "AI Customer Service & Chatbot Operator Communities",
+      "SMB Owner & Operations Communities",
+      "Agency, Integrator, and AI Consultant Communities",
+      "AI Builder / LLM Evaluation & Monitoring Communities",
+      "Content Strategies",
+      "AI Customer Service & Chatbot Operators",
+      "SMB Owners",
+      "Agencies & Integrators",
+      "Partnership Opportunities",
+      "Citations & Sources"
+    ]
+  },
+  {
+    "step": "crawl_platform:other:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 4,
+    "all_heading_count": 11,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nTune-up shop for misfiring business chatbots\nCommunity Signals\nPro welcome offer \u00b7 17d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n"
+  },
+  {
+    "step": "crawl_platform:other:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-bot-mechanic-that-retunes-misfiring-ai-agents-8983c282/community-signals/other-communities",
+    "card_count": 4,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nUpdates\nEmpire\nSupport\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nTune-up shop for misfiring business chatbots\nCommunity Signals\nPro welcome offer \u00b7 17d 9h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nTune-up shop for misfiring business chatbots\nCommunity Signals\nOther Communities\nOther Communities\n\nAnalyzed 4 community segments across 5 types\n\nAnalysis Overview\n\nCommunity Segments\n\n4\n\nCommunity Types\n\n5\n\nPriority Communities\n\n4\n\nContent Strategies\n\n3\n\nPartnership Opportunities\n\n3\n\nCommunity Types\n\nProfessional Associations & Industry Groups\n\nOnline Forums & Discussion Spaces\n\nLocal Meetups & Events\n\nConferences & Trade Shows\n\nSocial Media Communities\n\nCommunity Segments\nAI Customer Service & Chatbot Operator Communities\n\nSMB owners or support leads, agency implementers, tech enthusiasts\n\nPain Points\n\n\u2022 Outdated policy answers\n\u2022 Configuration complexity\n\u2022 Lead loss\n\nInterests\n\n\u2022 Bot tuning\n\u2022 AI monitoring\n\u2022 Stress-testing\nReddit\nFacebook\nYouTube\nDiscord\nSMB Owner & Operations Communities\n\nClinic, salon, and restaurant owners using AI receptionists\n\nPain Points\n\n\u2022 Lead loss\n\u2022 Lack of audit visibility\n\u2022 No clear metrics\n\nInteres"
+  },
+  {
+    "step": "crawl_platform:other:card_0:container_check",
+    "community_name": "Other Communities",
+    "container_text_length": 63,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:other:card_1:container_check",
+    "community_name": "AI Customer Service & Chatbot Operator Communities",
+    "container_text_length": 1103,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:other:finished",
+    "communities_found": 4
+  }
+]
