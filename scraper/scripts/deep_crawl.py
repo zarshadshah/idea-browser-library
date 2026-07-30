@@ -829,13 +829,19 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
             # "DESCRIPTION" sub-heading, then its own "RELEVANCE SIGNALS"
             # sub-heading — the same class of bug already fixed below for
             # Reddit's "WHY IT'S RELEVANT"/"OPPORTUNITY", just not yet
-            # covering these two Facebook-specific labels).
-            exclude_pattern = r"^(ideabrowser|Community Signals|Take the quiz|Discover your founder archetype|Relevant Communities|Relevant Groups|Analysis Overview|Community Types|Community Segments|Key Findings|In-Depth|Why It'?s Relevant|Opportunity|Relevant Discussions?|DESCRIPTION|RELEVANCE SIGNALS)"
+            # covering these two Facebook-specific labels). "Content
+            # Strategies" / "Partnership Opportunities" / "Citations &
+            # Sources" (and their own sub-headings) are the "Other
+            # Communities" page's trailing sections, already captured
+            # separately via the dedicated otherCommunitiesExtra
+            # mechanism below — excluded here too now that card_count can
+            # reach far enough into the page to otherwise re-capture them
+            # a second time as fake extra "communities".
+            exclude_pattern = r"^(ideabrowser|Community Signals|Take the quiz|Discover your founder archetype|Relevant Communities|Relevant Groups|Analysis Overview|Community Types|Community Segments|Key Findings|In-Depth|Why It'?s Relevant|Opportunity|Relevant Discussions?|DESCRIPTION|RELEVANCE SIGNALS|Content Strategies|Partnership Opportunities|Citations\s*&\s*Sources)"
             if idea_title:
                 exclude_pattern = re.escape(idea_title[:40]) + "|" + exclude_pattern
             heading_els = page.locator("h1, h2, h3, h4").filter(has_not_text=re.compile(exclude_pattern, re.IGNORECASE))
             all_heading_count = heading_els.count()
-            card_count = min(expected_count, all_heading_count) if expected_count else min(all_heading_count, 15)
             platform_url = page.url
 
             # DIAGNOSTIC — a prior round's fix added "DESCRIPTION" and
@@ -862,6 +868,48 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                 "step": f"crawl_platform:{platform_key}:surviving_headings_dump",
                 "surviving_heading_texts": surviving_heading_texts,
             })
+
+            # `expected_count` (from the page's own "Analyzed N ..." line)
+            # counts ONLY real content entries — it does NOT include the
+            # page's own leading non-content heading(s) that always
+            # appear first in the filtered heading list, ahead of the real
+            # entries (e.g. "Reddit Community Analysis", "Other
+            # Communities", or on YouTube specifically BOTH "YouTube
+            # Content Analysis" AND "Top Channels" — two, not one).
+            # min(expected_count, all_heading_count) therefore always
+            # undercounted whenever such heading(s) were present —
+            # confirmed directly across ALL FOUR platforms in one real
+            # crawl: Reddit was missing its true last subreddit
+            # (r/AI_Agents), Facebook its 5th group, YouTube its final TWO
+            # channels, and Other its 4th segment ("AI Builder / LLM
+            # Evaluation & Monitoring Communities") — every single one
+            # silently dropped because the loop below ran short, spending
+            # its last available slot(s) on content that was actually
+            # still within bounds but never reached.
+            #
+            # For "other" specifically, cap at expected_count + 1 (its one
+            # known leading "Other Communities" boilerplate heading,
+            # confirmed directly) rather than the full
+            # len(surviving_heading_texts) — that list also includes the
+            # Content Strategies section's own per-audience sub-headings
+            # (e.g. "AI Customer Service & Chatbot Operators"), which
+            # aren't excludable by a fixed string the way the 3 section
+            # headers themselves are (their names are dynamic per idea),
+            # so reaching that far would re-capture them a second time as
+            # fake extra "communities" alongside the real segment cards.
+            # Those sections are already captured properly and separately
+            # via the dedicated otherCommunitiesExtra mechanism below.
+            #
+            # For the other 3 platforms, use the full
+            # len(surviving_heading_texts) — the real, already-verified
+            # list of everything that survived the exclusion filter — as
+            # the correct number of iterations needed to reach every real
+            # entry, since none of them have this same trailing-sections
+            # complication.
+            if platform_key == "other" and expected_count:
+                card_count = min(expected_count + 1, all_heading_count)
+            else:
+                card_count = min(len(surviving_heading_texts), all_heading_count)
 
             # DIAGNOSTIC — a real run showed Reddit and Facebook both
             # getting card_count=0 while YouTube and Other worked
