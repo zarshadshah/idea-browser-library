@@ -1112,6 +1112,37 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                         except Exception as e:
                             log.append({"step": f"community_discussion_link:{platform_key}:{i}:{j}", "error": str(e)})
 
+                    # Facebook's "Visit Group" is NOT a real <a href> tag —
+                    # confirmed directly via DevTools inspection: it's a
+                    # <div class="text-sm text-gray-500 hover:text-blue-600
+                    # ..."> wrapping an SVG icon and the text "Visit Group",
+                    # with no href attribute at all (attributes list showed
+                    # only "class"). This is why the href-based search above
+                    # NEVER found Facebook links no matter how correctly the
+                    # card boundary was scoped — there was never an anchor
+                    # tag to find. Confirmed directly that clicking it opens
+                    # the real destination in a NEW browser tab, so capture
+                    # it the only way that's actually possible: click, catch
+                    # the popup, read its URL, close it immediately.
+                    if platform_key == "facebook" and not discussions:
+                        try:
+                            visit_group = container.get_by_text("Visit Group", exact=True) if not navigated else page.get_by_text("Visit Group", exact=True)
+                            if visit_group.count() > 0 and visit_group.first.is_visible():
+                                with page.expect_popup(timeout=6000) as popup_info:
+                                    visit_group.first.click(timeout=4000)
+                                popup = popup_info.value
+                                popup.wait_for_load_state("domcontentloaded", timeout=8000)
+                                popup_url = popup.url
+                                popup.close()
+                                if popup_url and popup_url not in seen_urls and "ideabrowser.com" not in popup_url:
+                                    discussions.append({"title": name[:200], "url": popup_url})
+                                log.append({
+                                    "step": f"community_visit_group_popup:{platform_key}:{i}",
+                                    "captured_url": popup_url,
+                                })
+                        except Exception as e:
+                            log.append({"step": f"community_visit_group_popup:{platform_key}:{i}", "error": str(e)})
+
                     result[platform_key].append({
                         "name": name[:100],
                         "raw_text": community_text[:2000],
