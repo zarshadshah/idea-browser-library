@@ -1002,6 +1002,7 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                     # the first hit.
                     container = None
                     if not navigated:
+                        best_candidate = None
                         for depth in [1, 2, 3, 4, 5]:
                             candidate = heading.locator(f"xpath=ancestor::*[self::div][{depth}]")
                             if candidate.count() == 0:
@@ -1010,16 +1011,30 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                                 candidate_text = candidate.inner_text(timeout=2000)
                             except Exception:
                                 continue
-                            # A genuine per-card container's text should be
-                            # meaningfully shorter than the whole page
-                            # (a real card, not the whole community list)
-                            # while still starting with this community's
-                            # own name. Keep the deepest (largest) container
-                            # that satisfies both, since that's the one most
-                            # likely to include the card's full content
-                            # rather than just its heading + first line.
-                            if candidate_text.strip().startswith(name[:20]) and len(candidate_text) < 2000:
-                                container = candidate
+                            stripped = candidate_text.strip()
+                            if not (stripped.startswith(name[:20]) and len(candidate_text) < 2000):
+                                continue
+                            # A real capture of the FIRST "Other Communities"
+                            # segment showed this deepest-wins strategy
+                            # over-reaching: since nothing precedes the
+                            # first card, an ancestor wide enough to also
+                            # include the NEXT sibling card still passed
+                            # both checks above (it still started with this
+                            # card's name, and stayed under the 2000-char
+                            # cap) — confirmed directly, the saved text
+                            # continued straight into the next card's own
+                            # title/tagline/Pain Points after this card's
+                            # tags. "Pain Points" is a structural marker
+                            # that appears exactly once per genuine single
+                            # card on this platform's real pages — if a
+                            # candidate contains it twice, this depth has
+                            # already spilled into a second card, so keep
+                            # the previous (shallower) candidate instead of
+                            # this wider one.
+                            if candidate_text.count("Pain Points") > 1:
+                                break
+                            best_candidate = candidate
+                        container = best_candidate
                         # Fall back to the shallowest ancestor if none of
                         # the depths matched the "starts with this name"
                         # check — better to have SOME scoped container
