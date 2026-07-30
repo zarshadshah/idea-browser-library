@@ -782,6 +782,105 @@ function BusinessFitDetail({ text }) {
   );
 }
 
+// Dedicated parser for the "Other Communities" segment card shape,
+// confirmed directly against real captured text: a title (repeated from
+// the card heading), a one-line audience/tagline description, then
+// "Pain Points" and "Interests" each followed by "•"-bulleted items, and
+// finally a trailing list of bare platform names with no bullets or
+// separators at all (e.g. "Reddit Facebook YouTube Discord") — matches
+// the real site's own rendering of small tag pills at the bottom of each
+// card, confirmed directly against the reference screenshot. Distinct
+// from parseBusinessFitDetail/parseScoreCardDetail because this shape has
+// no emoji marker and a fixed two-section (Pain Points, then Interests)
+// structure rather than an arbitrary emoji-delimited list.
+const KNOWN_PLATFORM_TAGS = new Set([
+  "Reddit", "Facebook", "YouTube", "Discord", "LinkedIn", "Slack",
+  "Vendor forums", "Local Meetups", "GitHub", "Conferences", "Twitter",
+  "X", "Instagram", "TikTok", "Telegram", "WhatsApp", "Forums",
+]);
+
+function parseOtherCommunitySegment(rawText, cardName) {
+  const text = stripPageBoilerplate(rawText);
+  if (!text) return null;
+
+  const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
+  if (!lines.length) return null;
+
+  // The raw container occasionally spills into the FOLLOWING card's own
+  // text (confirmed directly: a real capture of the first "Other" segment
+  // included its own full content, then kept going into the next
+  // segment's title, tagline, Pain Points, etc). Cut the text off at the
+  // first sign of a second title+tagline pair reappearing — in practice,
+  // this means stopping at the first platform-tag line, since that's
+  // always the genuine end of one real card's content.
+  let i = 0;
+  // Skip a possible repeated title line matching cardName.
+  if (cardName && lines[0] === cardName) i = 1;
+
+  const tagline = lines[i] || "";
+  i++;
+
+  const sections = [];
+  const sectionLabels = ["Pain Points", "Interests"];
+  while (i < lines.length && sectionLabels.includes(lines[i])) {
+    const title = lines[i];
+    i++;
+    const items = [];
+    while (i < lines.length && !sectionLabels.includes(lines[i]) && lines[i].startsWith("•")) {
+      items.push(lines[i].replace(/^•\s*/, ""));
+      i++;
+    }
+    sections.push({ title, items });
+    // Stop as soon as both known sections are captured — anything after
+    // (platform tags, or a spilled-over next card) is handled below.
+    if (sections.length === sectionLabels.length) break;
+  }
+
+  // Trailing platform tags: bare lines with no bullet, each a short known
+  // platform name — collect only genuinely recognized ones so a spilled-
+  // over next card's title/tagline text (which won't match any known
+  // platform name) naturally stops the collection rather than being
+  // swept in as if it were a tag.
+  const tags = [];
+  while (i < lines.length && KNOWN_PLATFORM_TAGS.has(lines[i])) {
+    tags.push(lines[i]);
+    i++;
+  }
+
+  if (!sections.length) return null;
+  return { tagline, sections, tags };
+}
+
+function OtherCommunitySegment({ text, name }) {
+  const parsed = parseOtherCommunitySegment(text, name);
+  if (!parsed) return <StructuredSection text={text} />;
+
+  return (
+    <div className="space-y-2.5">
+      {parsed.tagline && <p className="text-xs leading-relaxed opacity-70">{parsed.tagline}</p>}
+      <div className="grid grid-cols-2 gap-3">
+        {parsed.sections.map((s, i) => (
+          <div key={i}>
+            <div className="text-[11px] font-bold mb-1 uppercase tracking-wide opacity-60">{s.title}</div>
+            <ul className="text-xs leading-relaxed opacity-80 space-y-0.5 list-disc pl-4">
+              {s.items.map((item, j) => <li key={j}>{item}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+      {parsed.tags.length > 0 && (
+        <div className="flex flex-wrap gap-1.5 pt-0.5">
+          {parsed.tags.map((tag, i) => (
+            <span key={i} className="text-[11px] px-2 py-0.5 rounded-full" style={{ backgroundColor: "rgba(0,0,0,0.06)" }}>
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function StructuredSection({ text }) {
   const clean = stripPageBoilerplate(safeText(text));
   if (!clean) return null;
@@ -1528,8 +1627,12 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                                   <ChevronRight size={14} className="opacity-40 shrink-0" />
                                 </summary>
                                 <div className="px-3 pb-3 space-y-2 border-t border-black/5 pt-2">
-                                  {community.summary && (
-                                    <p className="text-xs opacity-70 leading-relaxed">{community.summary}</p>
+                                  {platform === "other" && community.summary ? (
+                                    <OtherCommunitySegment text={community.summary} name={community.name} />
+                                  ) : (
+                                    community.summary && (
+                                      <p className="text-xs opacity-70 leading-relaxed">{community.summary}</p>
+                                    )
                                   )}
                                   {community.discussions?.length > 0 && (
                                     <div className="space-y-1.5">
