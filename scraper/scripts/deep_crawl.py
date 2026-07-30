@@ -833,6 +833,31 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
             card_count = min(expected_count, all_heading_count) if expected_count else min(all_heading_count, 15)
             platform_url = page.url
 
+            # DIAGNOSTIC — a prior round's fix added "DESCRIPTION" and
+            # "RELEVANCE SIGNALS" to exclude_pattern above specifically to
+            # stop them being mistaken for real community cards on
+            # Facebook, but a real post-fix crawl showed them STILL
+            # appearing in the final saved community list. This dumps the
+            # literal inner_text of every heading that survives the filter
+            # (not just the raw pre-filter count), so we can see directly
+            # whether these two labels are somehow still passing the
+            # regex, or whether the real DOM text differs from what the
+            # exclusion pattern assumes (e.g. hidden duplicate headings,
+            # different casing/whitespace, or the labels living in a tag
+            # the "h1, h2, h3, h4" selector doesn't even cover — meaning a
+            # SEPARATE un-excluded heading is what's actually producing
+            # these entries, not a failure of the exclusion regex itself).
+            try:
+                surviving_heading_texts = [
+                    heading_els.nth(j).inner_text(timeout=2000) for j in range(min(all_heading_count, 20))
+                ]
+            except Exception as e:
+                surviving_heading_texts = [f"<error dumping headings: {e}>"]
+            log.append({
+                "step": f"crawl_platform:{platform_key}:surviving_headings_dump",
+                "surviving_heading_texts": surviving_heading_texts,
+            })
+
             # DIAGNOSTIC — a real run showed Reddit and Facebook both
             # getting card_count=0 while YouTube and Other worked
             # correctly on the SAME crawl, meaning something genuinely
