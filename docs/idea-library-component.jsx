@@ -881,6 +881,96 @@ function OtherCommunitySegment({ text, name }) {
   );
 }
 
+// Parses the raw "Content Strategies" block captured for the "Other
+// Communities" page: a flat repeating sequence of [audience name] ->
+// [one-line tactic description] -> "Tactics" -> bulleted items, with no
+// separator between one audience's block and the next other than the
+// pattern repeating. Confirmed directly against the real captured shape.
+function parseContentStrategies(rawText) {
+  if (!rawText) return [];
+  const lines = rawText.split("\n").map((l) => l.trim()).filter(Boolean);
+  const cards = [];
+  let i = 0;
+  while (i < lines.length) {
+    const name = lines[i];
+    i++;
+    if (i >= lines.length) break;
+    const description = lines[i];
+    i++;
+    if (lines[i] !== "Tactics") {
+      // Shape didn't match what we expected for this entry — stop rather
+      // than risk misparsing the remainder into garbage.
+      break;
+    }
+    i++; // consume "Tactics"
+    const tactics = [];
+    while (i < lines.length && lines[i].startsWith("•")) {
+      tactics.push(lines[i].replace(/^•\s*/, ""));
+      i++;
+    }
+    cards.push({ name, description, tactics });
+  }
+  return cards;
+}
+
+function OtherCommunitiesExtra({ data }) {
+  const contentStrategyCards = data.contentStrategies ? parseContentStrategies(data.contentStrategies) : [];
+  const partnershipItems = data.partnershipOpportunities
+    ? data.partnershipOpportunities.split("\n").map((l) => l.trim()).filter(Boolean)
+    : [];
+  const citations = data.citations || [];
+
+  if (!contentStrategyCards.length && !partnershipItems.length && !citations.length) return null;
+
+  return (
+    <div className="space-y-4 pt-3 mt-1 border-t border-black/10">
+      {contentStrategyCards.length > 0 && (
+        <div>
+          <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1.5" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+            Content Strategies
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            {contentStrategyCards.map((card, i) => (
+              <div key={i} className="p-2.5 rounded-lg" style={{ backgroundColor: "rgba(0,0,0,0.03)" }}>
+                <div className="text-xs font-bold mb-1" style={{ fontFamily: "'Fraunces', serif" }}>{card.name}</div>
+                <p className="text-xs leading-relaxed opacity-70 mb-1.5">{card.description}</p>
+                <div className="text-[10px] uppercase tracking-wide opacity-50 mb-0.5">Tactics</div>
+                <ul className="text-xs leading-relaxed opacity-80 space-y-0.5 list-disc pl-4">
+                  {card.tactics.map((t, j) => <li key={j}>{t}</li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      {partnershipItems.length > 0 && (
+        <div>
+          <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1.5" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+            Partnership Opportunities
+          </div>
+          <ul className="text-xs leading-relaxed opacity-80 space-y-1 list-disc pl-4">
+            {partnershipItems.map((item, i) => <li key={i}>{item}</li>)}
+          </ul>
+        </div>
+      )}
+      {citations.length > 0 && (
+        <div>
+          <div className="text-[10px] uppercase tracking-wider opacity-40 mb-1.5" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+            Citations & Sources
+          </div>
+          <ul className="space-y-0.5">
+            {citations.map((c, i) => (
+              <li key={i} className="text-[10px] opacity-50 truncate" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                {c.n}. {c.url}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function StructuredSection({ text }) {
   const clean = stripPageBoilerplate(safeText(text));
   if (!clean) return null;
@@ -1675,6 +1765,9 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                       <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-80">{idea.communitySignalsDetail}</p>
                     </details>
                   )
+                )}
+                {idea.otherCommunitiesExtra && (
+                  <OtherCommunitiesExtra data={idea.otherCommunitiesExtra} />
                 )}
               </div>
             )}
