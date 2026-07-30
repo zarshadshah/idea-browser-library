@@ -1252,19 +1252,20 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                     if po_start is not None and cit_start is not None and cit_start > po_start:
                         captured["partnershipOpportunities"] = text[po_start:cit_start].rsplit("Citations", 1)[0].strip()[:1500]
 
-                    # Citations & Sources: numbered "N - https://..." link
-                    # lines, same shape already handled elsewhere (Why Now,
-                    # Market Gap, Proof & Signals) — reuse the identical
-                    # parsing approach for consistency rather than
-                    # inventing a second one, and drop the trailing lone
-                    # "0" UI artifact line that consistently terminates
-                    # this block in real data, same as those other fields.
-                    # "Citations & Sources" only appears once on this page
-                    # (no matching stat-label occurrence exists for it,
-                    # confirmed directly), so no last-match fix is needed
-                    # here — kept as a plain search from its one real spot.
+                    # Citations & Sources: confirmed via a real screenshot
+                    # of the live site that each citation row displays as
+                    # "- https://..." with NO visible leading number in the
+                    # actual rendered row text (numbering is likely a CSS
+                    # counter or separate small index element, not part of
+                    # the same text node inner_text() captures) — the
+                    # original regex required a leading digit and could
+                    # therefore never match a single real line, which is
+                    # exactly why citations_count came back 0 on a real
+                    # crawl despite the section itself being present.
+                    # Accept lines with OR without a leading number.
                     if cit_start is not None:
                         citations = []
+                        n = 0
                         for line in text[cit_start:].strip().split("\n"):
                             line = line.strip()
                             if not line or line == "0":
@@ -1272,13 +1273,19 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
                             m = re.match(r"^(\d+)\s*-\s*(.+)$", line)
                             if m:
                                 citations.append({"n": m.group(1), "url": m.group(2).strip()})
-                            elif citations:
-                                # A non-numbered, non-empty line after we've
-                                # already started collecting real citation
-                                # lines means we've run past the end of the
-                                # citations block (e.g. into unrelated
-                                # trailing page text) — stop rather than
-                                # keep scanning indefinitely.
+                                continue
+                            m2 = re.match(r"^-\s*(https?://\S+)$", line)
+                            if m2:
+                                n += 1
+                                citations.append({"n": str(n), "url": m2.group(1).strip()})
+                                continue
+                            if citations:
+                                # A line that's neither a numbered citation
+                                # nor a bare "- url" line, appearing after
+                                # we've already started collecting real
+                                # citations, means we've run past the end
+                                # of this block — stop rather than keep
+                                # scanning indefinitely.
                                 break
                         if citations:
                             captured["citations"] = citations[:20]
