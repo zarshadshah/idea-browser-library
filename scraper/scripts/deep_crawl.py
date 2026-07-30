@@ -668,6 +668,11 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
     page = crawler.page
     log = crawler.log
     result = {"reddit": [], "facebook": [], "youtube": [], "other": []}
+    # Kept fully separate from `result` (see the "IMPORTANT" comment near
+    # where this is populated, in the "other" platform's block below) so
+    # downstream code that iterates result's platform -> [community, ...]
+    # pairs never encounters this non-list value.
+    other_communities_extra = {}
 
     # DIAGNOSTIC — a real run produced zero log entries for this function's
     # inner steps at all (no errors, no successes), which is only possible
@@ -1185,11 +1190,104 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
 
                 crawler.safe(crawl_community_card, f"community_card:{platform_key}:{i}")
 
+            # "Content Strategies", "Partnership Opportunities", and
+            # "Citations & Sources" are PAGE-LEVEL sections on the "Other
+            # Communities" sub-page — siblings of the community segment
+            # cards above, not nested inside any of them (confirmed
+            # directly: surviving_headings_dump showed them appearing as
+            # real headings AFTER the last community segment card, not as
+            # part of its container). The per-card loop above deliberately
+            # stops at expected_count (the "Analyzed N community segments"
+            # figure), so it never reaches these — this is genuinely
+            # separate, additive content, not something the existing loop
+            # was supposed to already capture.
+            #
+            # page_text_for_count already holds the FULL page text (it's
+            # captured once via get_visible_text(page) before any of the
+            # per-card navigation above happens), so these sections can be
+            # extracted directly from it via string parsing — no new
+            # navigation needed, and no risk of the per-card loop's
+            # repeated page.goto() calls having changed what's on the page
+            # by this point.
+            #
+            # IMPORTANT: stored on the OUTER "extra" dict (closed over
+            # from the enclosing function), NOT inside result[platform_key]
+            # or as a new top-level key of `result` itself — result's keys
+            # are iterated elsewhere (normalize_and_build_manifest.py) as
+            # platform -> [community, ...] pairs, and a dict value there
+            # instead of a list would break that iteration (e.g. slicing a
+            # dict like a list raises a TypeError). Keeping this fully
+            # separate avoids that risk entirely.
+            if platform_key == "other":
+                def crawl_other_page_sections():
+                    text = page_text_for_count
+                    captured = {}
+
+                    # Content Strategies: a heading, then repeating
+                    # audience-name + tactic-description + "Tactics" +
+                    # bulleted items groups, ending right before
+                    # "Partnership Opportunities" (confirmed via
+                    # surviving_headings_dump ordering).
+                    cs_match = re.search(
+                        r"Content Strategies\n(.*?)\nPartnership Opportunities",
+                        text, re.DOTALL,
+                    )
+                    if cs_match:
+                        captured["contentStrategies"] = cs_match.group(1).strip()[:3000]
+
+                    # Partnership Opportunities: a short bulleted list,
+                    # ending right before "Citations & Sources".
+                    po_match = re.search(
+                        r"Partnership Opportunities\n(.*?)\nCitations\s*&\s*Sources",
+                        text, re.DOTALL,
+                    )
+                    if po_match:
+                        captured["partnershipOpportunities"] = po_match.group(1).strip()[:1500]
+
+                    # Citations & Sources: numbered "N - https://..." link
+                    # lines, same shape already handled elsewhere (Why Now,
+                    # Market Gap, Proof & Signals) — reuse the identical
+                    # parsing approach for consistency rather than
+                    # inventing a second one, and drop the trailing lone
+                    # "0" UI artifact line that consistently terminates
+                    # this block in real data, same as those other fields.
+                    cit_match = re.search(r"Citations\s*&\s*Sources\n(.*?)$", text, re.DOTALL)
+                    if cit_match:
+                        citations = []
+                        for line in cit_match.group(1).strip().split("\n"):
+                            line = line.strip()
+                            if not line or line == "0":
+                                continue
+                            m = re.match(r"^(\d+)\s*-\s*(.+)$", line)
+                            if m:
+                                citations.append({"n": m.group(1), "url": m.group(2).strip()})
+                        if citations:
+                            captured["citations"] = citations[:20]
+
+                    other_communities_extra.update(captured)
+                    log.append({
+                        "step": "crawl_platform:other:page_sections_captured",
+                        "has_content_strategies": "contentStrategies" in captured,
+                        "has_partnership_opportunities": "partnershipOpportunities" in captured,
+                        "citations_count": len(captured.get("citations", [])),
+                    })
+
+                crawler.safe(crawl_other_page_sections, "crawl_platform:other:page_sections")
+
+
         crawler.safe(crawl_platform, f"community_platform:{platform_key}")
         log.append({
             "step": f"crawl_platform:{platform_key}:finished",
             "communities_found": len(result[platform_key]),
         })
+
+    # Attached under a key distinct from the 4 platform names (reddit,
+    # facebook, youtube, other) specifically so downstream code iterating
+    # result.items() as platform -> [community, ...] pairs (see
+    # normalize_and_build_manifest.py) can simply skip it by name rather
+    # than needing to guess at its shape.
+    if other_communities_extra:
+        result["_otherCommunitiesExtra"] = other_communities_extra
 
     return result
 
