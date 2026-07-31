@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-07-31",
+      "title": "Operations playbook for owners selling the business",
+      "path": "library/2026/2026-07-31.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-07-30",
       "title": "Tune-up shop for misfiring business chatbots",
       "path": "library/2026/2026-07-30.json",
