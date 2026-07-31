@@ -1711,7 +1711,7 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                           </div>
                           <div className="space-y-2">
                             {communities.map((community, i) => (
-                              <details key={i} className="rounded-lg border border-black/10 overflow-hidden" open>
+                              <details key={i} className="rounded-lg border border-black/10 overflow-hidden">
                                 <summary className="cursor-pointer px-3 py-2 font-semibold flex items-center justify-between gap-2">
                                   <span className="truncate">{community.name || "Community"}</span>
                                   <ChevronRight size={14} className="opacity-40 shrink-0" />
