@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-08-02",
+      "title": "Code audit for apps built without a developer",
+      "path": "library/2026/2026-08-02.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-08-01",
       "title": "Flat fee insurance switching from quote to new policy",
       "path": "library/2026/2026-08-01.json",
