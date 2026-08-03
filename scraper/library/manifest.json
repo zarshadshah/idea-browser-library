@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-08-03",
+      "title": "Ticketed race league platform for local run clubs",
+      "path": "library/2026/2026-08-03.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-08-02",
       "title": "Code audit for apps built without a developer",
       "path": "library/2026/2026-08-02.json",
