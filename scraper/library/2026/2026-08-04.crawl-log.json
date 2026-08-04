@@ -1,0 +1,643 @@
+[
+  {
+    "step": "login",
+    "note": "Found 2 element(s) matching 'Sign in with Password' text."
+  },
+  {
+    "step": "login",
+    "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+  },
+  {
+    "step": "login",
+    "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+  },
+  {
+    "step": "login",
+    "success": true
+  },
+  {
+    "step": "keyword_discovery",
+    "note": "Found 5 plausible keyword option(s) after filtering."
+  },
+  {
+    "step": "select_keyword:Ai observability",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Ai observability\", exact=True).first\n    - locator resolved to <span class=\"text-xs md:text-sm truncate\">Ai observability</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 500.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"143.31914893617022\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"310.2978723404255\" y=\"406\" dy=\"16\" te"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Jul 2022\n\n110 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Ai observability",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"143.31914893617022\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"310.2978723404255\" y=\"406\" dy=\"16\" te"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Jul 2022\n\n110 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Artificial intelligence observability",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"143.31914893617022\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"310.2978723404255\" y=\"406\" dy=\"16\" te"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Jul 2022\n\n1,600 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Session replay",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"143.31914893617022\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"310.2978723404255\" y=\"406\" dy=\"16\" te"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Jul 2022\n\n1,600 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Replay session",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"143.31914893617022\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"310.2978723404255\" y=\"406\" dy=\"16\" te"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Jul 2022\n\n2,400 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Databand",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_community_signals_deep:entered",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals/reddit-analysis"
+  },
+  {
+    "step": "crawl_platform:reddit:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Reddit Community Analysis",
+      "r/Observability",
+      "r/AI_Agents",
+      "r/mlops",
+      "r/userexperience"
+    ]
+  },
+  {
+    "step": "crawl_platform:reddit:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 4,
+    "all_heading_count": 5,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nFlight recorder and spend control for AI agents\nCommunity Signals\nPro welcome offer \u00b7 12d 0h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake"
+  },
+  {
+    "step": "crawl_platform:reddit:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals/reddit-analysis",
+    "card_count": 5,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nFlight recorder and spend control for AI agents\nCommunity Signals\nPro welcome offer \u00b7 12d 0h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nFlight recorder and spend control for AI agents\nCommunity Signals\nReddit Analysis\nReddit Community Analysis\n\nAnalyzed 4 relevant communities\n\nKey Findings\nThe buzz among business enthusiasts is undeniable\u2014AI observability is top of mind for many Reddit communities, spotlighting a critical market gap. Within the niche subreddit r/Observability, boasting over 5,200 followers, users dive into AI's role in reducing noise and spotting anomalies, underscoring the demand for robust monitoring tools. On r/AI_Agents, discussions intensify around managing multi-agent systems, with numerous posts dissecting the challenges of debugging and testing in production. Meanwhile, r/mlops captures the vital need to bridge the demo-to-production gap in AI observability, reinforcing the potential for innovative solutions. Lastly, r/userexperience brings ethical transparency into focus, emphasizing users\u2019 concerns about data privacy. Together, these insight"
+  },
+  {
+    "step": "crawl_platform:reddit:card_0:container_check",
+    "community_name": "Reddit Community Analysis",
+    "container_text_length": 58,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:reddit:card_1:container_check",
+    "community_name": "r/Observability",
+    "container_text_length": 1737,
+    "container_text_starts_with_name": null
+  },
+  {
+    "step": "crawl_platform:reddit:finished",
+    "communities_found": 5
+  },
+  {
+    "step": "crawl_platform:facebook:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals"
+  },
+  {
+    "step": "crawl_platform:facebook:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals"
+  },
+  {
+    "step": "crawl_platform:facebook:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals/facebook-analysis"
+  },
+  {
+    "step": "crawl_platform:facebook:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Facebook Groups",
+      "Observo is an AI-powered Observability Pipeline",
+      "Large language models transform observability with AI",
+      "Why AI models fail in real-world applications"
+    ]
+  },
+  {
+    "step": "crawl_platform:facebook:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 3,
+    "all_heading_count": 4,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nFlight recorder and spend control for AI agents\nCommunity Signals\nPro welcome offer \u00b7 12d 0h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake"
+  },
+  {
+    "step": "crawl_platform:facebook:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals/facebook-analysis",
+    "card_count": 4,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nFlight recorder and spend control for AI agents\nCommunity Signals\nPro welcome offer \u00b7 12d 0h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nFlight recorder and spend control for AI agents\nCommunity Signals\nFacebook Analysis\nFacebook Groups\n\n3 groups analyzed\n\nKey Findings\nThe rise in Facebook group discussions surrounding AI observability highlights a burgeoning interest in tackling AI-related challenges. Groups like \"Observo is an AI-powered Observability Pipeline\" and \"Large language models transform observability with AI,\" with an engaged user base, focus on critical aspects like AI monitoring, security, and real-time problem detection. In these discussions, common pain points such as unexpected model failures in real-world applications and the lack of effective monitoring tools emerge. The group \"Why AI models fail in real-world applications\" emphasizes the need for control and adaptation, stressing unexpected expenses and poor decision-making insights. These groups, all sharing robust discussions, present a fertile ground for introducing advanced AI monitoring soluti"
+  },
+  {
+    "step": "crawl_platform:facebook:card_0:container_check",
+    "community_name": "Facebook Groups",
+    "container_text_length": 34,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:facebook:card_1:container_check",
+    "community_name": "Observo is an AI-powered Observability Pipeline",
+    "container_text_length": 1869,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "community_visit_group_popup:facebook:2",
+    "captured_url": "https://www.facebook.com/groups/lifeboatfoundation/posts/10162693881618455/"
+  },
+  {
+    "step": "community_visit_group_popup:facebook:3",
+    "captured_url": "https://www.facebook.com/groups/802532124993016/posts/1099481885298037/"
+  },
+  {
+    "step": "crawl_platform:facebook:finished",
+    "communities_found": 4
+  },
+  {
+    "step": "crawl_platform:youtube:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals"
+  },
+  {
+    "step": "crawl_platform:youtube:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals"
+  },
+  {
+    "step": "crawl_platform:youtube:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals/youtube-analysis"
+  },
+  {
+    "step": "crawl_platform:youtube:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "YouTube Content Analysis",
+      "Top Channels",
+      "IBM Technology",
+      "Dynatrace",
+      "Grafana",
+      "Amplitude",
+      "Mixpanel",
+      "Sentry",
+      "Content Trends",
+      "Common Themes",
+      "Popular Formats"
+    ]
+  },
+  {
+    "step": "crawl_platform:youtube:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 6,
+    "all_heading_count": 11,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nFlight recorder and spend control for AI agents\nCommunity Signals\nPro welcome offer \u00b7 12d 0h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake"
+  },
+  {
+    "step": "crawl_platform:youtube:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals/youtube-analysis",
+    "card_count": 11,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nFlight recorder and spend control for AI agents\nCommunity Signals\nPro welcome offer \u00b7 12d 0h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nFlight recorder and spend control for AI agents\nCommunity Signals\nYouTube Analysis\nYouTube Content Analysis\n\nAnalyzed 6 channels with relevant content\n\nKey Findings\nViewer engagement in YouTube's tech space is thriving, particularly with hands-on demonstrations and technical tutorials capturing top interest. Channels like Sentry and Dynatrace are leading, with Sentry pulling in around 9,000 views and Dynatrace at over 6,000 per video, thanks to their focus on deep, technical demos. Popular themes include AI monitoring challenges and real-world implementations, each drawing substantial attention. Yet, there's a notable content gap: comparisons of AI observability tools are rare but highly sought after. By leveling up with comparative content and privacy-focused discussions, businesses can capitalize on these unmet viewer needs, tapping into a market ripe for detailed, interactive content.\nAnalysis Overview\n\nTotal Channels\n\n6\n\nContent T"
+  },
+  {
+    "step": "crawl_platform:youtube:card_0:container_check",
+    "community_name": "YouTube Content Analysis",
+    "container_text_length": 67,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:youtube:card_1:container_check",
+    "community_name": "Top Channels",
+    "container_text_length": 1351,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:youtube:finished",
+    "communities_found": 11
+  },
+  {
+    "step": "crawl_platform:other:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals"
+  },
+  {
+    "step": "crawl_platform:other:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals/other-communities"
+  },
+  {
+    "step": "crawl_platform:other:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Other Communities",
+      "AI Builders and Agent Developers",
+      "MLOps, SRE, and Observability Practitioners",
+      "Finance, Procurement, and Ops Stakeholders",
+      "Security, Privacy, and Compliance Professionals",
+      "AI Builders",
+      "Observability Teams",
+      "Finance and Ops",
+      "Security and Compliance"
+    ]
+  },
+  {
+    "step": "crawl_platform:other:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 4,
+    "all_heading_count": 9,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nFlight recorder and spend control for AI agents\nCommunity Signals\nPro welcome offer \u00b7 12d 0h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake"
+  },
+  {
+    "step": "crawl_platform:other:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/agent-flight-recorder-035ef414/community-signals/other-communities",
+    "card_count": 5,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nFlight recorder and spend control for AI agents\nCommunity Signals\nPro welcome offer \u00b7 12d 0h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nFlight recorder and spend control for AI agents\nCommunity Signals\nOther Communities\nOther Communities\n\nAnalyzed 4 community segments across 5 types\n\nAnalysis Overview\n\nCommunity Segments\n\n4\n\nCommunity Types\n\n5\n\nPriority Communities\n\n4\n\nContent Strategies\n\n4\n\nPartnership Opportunities\n\n4\n\nCommunity Types\n\nProfessional Associations\n\nOnline Forums\n\nLocal Meetups\n\nConferences\n\nSocial Media Communities\n\nCommunity Segments\nAI Builders and Agent Developers\n\nIndie builders and startups focused on AI agents\n\nPain Points\n\n\u2022 Failure Reconstruction\n\u2022 Cost Overruns\n\nInterests\n\n\u2022 Debugging\n\u2022 Tool Invocation\n\u2022 Cost Management\nReddit: r/AI_Agents\nGitHub\nDiscord\nMLOps, SRE, and Observability Practitioners\n\nDevOps and SREs ensuring production reliability\n\nPain Points\n\n\u2022 Root-Cause Analysis\n\u2022 Governance Evidence\n\nInterests\n\n\u2022 Telemetry\n\u2022 Traceability\nReddit: r/Observability\nSRE Meetups\nFinance, Procurement, and Ops Stakeholders\n\nFinancial controllers ma"
+  },
+  {
+    "step": "crawl_platform:other:card_0:container_check",
+    "community_name": "Other Communities",
+    "container_text_length": 63,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:other:card_1:container_check",
+    "community_name": "AI Builders and Agent Developers",
+    "container_text_length": 232,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:other:page_sections_captured",
+    "has_content_strategies": true,
+    "has_partnership_opportunities": true,
+    "citations_count": 9
+  },
+  {
+    "step": "crawl_platform:other:finished",
+    "communities_found": 5
+  }
+]
