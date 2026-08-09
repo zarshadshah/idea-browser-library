@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-08-09",
+      "title": "Publishing studio for short drama writers",
+      "path": "library/2026/2026-08-09.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-08-08",
       "title": "Voice-first thinking workspace for solo founders",
       "path": "library/2026/2026-08-08.json",
