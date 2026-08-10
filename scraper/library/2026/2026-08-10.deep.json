@@ -1,0 +1,1701 @@
+{
+  "date": "2026-08-10",
+  "scraped_at": "2026-08-10T08:19:57.259058+00:00",
+  "source_url": "https://www.ideabrowser.com/hub/ideas/today",
+  "summary": {
+    "raw_text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nAug 10, 2026\n|\nBrowse all\nIdea Actions\nRoast\nBuild with Google AI Studio\nPhone line defense platform that stops spam floods\n\u23f0\nPerfect Timing\n\ud83d\udc51\nProven Founder Fit\n+11 More\n\nPhone rings less than it did last quarter. Ads are running, reviews still sit at five stars, and the work is going somewhere else. Scammers spoofed the line to place their calls, carriers flagged the number, and customers dialing back get Spam Likely above the name. Changing the number costs a truck wrap, a sign, and years of search ranking.\n\nHardline watches how carriers score the number and alerts the moment AT&T, Verizon, or T-Mobile marks it spam. Directory scans catch fake listings and hijacked numbers on Google Business and Yelp. When a scam flood starts, the originating VOIP carrier gets identified and the operator gets the forms and escalation path. Neustar sells caller reputation to carriers and enterprise call centers on contracts sized for call center floors. Reputation gets repaired at the source, which stops the junk calls at the carrier level.\n\nDetection comes first, and the honest version is a test-call rig. Buy lines on each major carrier through Twilio or SignalWire, dial the customer's number daily, and record the label. Scraper adds directory checks on the twenty that matter, and a text goes out the hour a listing or a label moves. Remediation stays manual at first, since complaint forms differ by carrier and escalation paths change often. Ten operators with bleeding lines are enough to learn on, measured by how fast a flag comes off.\n\nStarter at $99 a month tells an operator the line is burning. Pro at $250 puts it out, with live carrier remediation, fifty-directory scanning, and escalation handled end to end. Trade Facebook groups and r/smallbusiness carry the story, because operators post about the label the week it costs a job. Directory listing services make natural partners, since a wrong number in their index is their problem too. Phone number is the storefront, and the whole business walks in through it.\n\n*Analysis, scores, and revenue estimates are educational and based on assumptions. Results vary by execution and market conditions.\n\nKeyword:\nCaller id and spam protection\n5.4K\nVolume\n+440%\nGrowth\n2023\n2024\n2025\n2026\n0\n2k\n3k\n5k\n6k\nOpportunity\n9\nExceptional\nProblem\n9\nSevere Pain\nFeasibility\n8\nManageable\nWhy Now\n8\nGreat Timing\nBusiness Fit\n\ud83d\udcb0\nRevenue Potential\n$1M-$10M ARR potential addressing micro-SMB market gaps\n$$$\n\ud83d\udee0\ufe0f\nExecution Difficulty\nSolo-friendly build, 1-2 week MVP with agentic tools.\n4/10\n\ud83d\ude80\nGo-To-Market\nStrong traction with clear needs across Reddit, Facebook, and YouTube communities.\n8/10\n\ud83e\udde0\nRight for You?\nIdeal for founders with telecom or SMB SaaS experience\nFind Out\nRESEARCH TOOL\nGet a Report Exactly Like This for Your Idea\n\nHave your own business idea? Our AI Research Agent conducts a comprehensive 40-step analysis to validate and research any idea you give it.\n\nResearch My Idea\nOffer\n1\nLEAD MAGNET\nPhone Security Insights E-Book (Free)\n\nA comprehensive e-book detailing strategies to protect your business phone line from spam and scams.\n\n2\nFRONTEND\nNumber Defense Starter Pack ($99/month)\n\nBasic monitoring service for scam call patterns and spam-label alerts.\n\n3\nCORE\nPhone Shield Pro ($250/month)\n\nAdvanced monitoring, real-time remediation, and reporting tools for comprehensive number defense.\n\nView full value ladder\n\u2192\nWhy Now?\n\nThe opportunity for launching a number defense service for small businesses is now ripe due to surging AI-driven scams, deteriorating consumer trust in phone communications, and a lack of SMB-specific solutions in the market. With AI scams growing at 1,210% and projected fraud losses reaching $40 billion by 2027, small businesses cannot afford to wait any longer [1].\n\nSee why this opportunity matters now\nProof & Signals\n\nThe idea focuses on defending phone numbers for small businesses from spam and fraud, a significant pain point supported by extensive community discussions and increasing AI-enabled scams. It addresses gaps in current solutions which are more focused on call answering rather than number reputation defense.\n\nExplore proof & signals\nThe Market Gap\n\nThe largest opportunity lies in creating a comprehensive phone number defense service for small businesses, unaddressed by current market offerings. This service addresses the pressing need for maintaining phone number reputation amidst a surge in AI-driven scams causing operational disruptions.\n\nUnderstand the market opportunity\nExecution Plan\n\nLaunch a game-changing MVP that defends small business phone numbers with automated monitoring and remediation tools. Integrate swiftly with industry channels like Reddit and LinkedIn for rapid user engagement, then roll out AI-driven features to upscale protection. Ready to transform number reputation in six months?\n\nView detailed execution strategy\nFramework Fit\n\nSee how this idea fits into popular frameworks\n\nThe Value Equation\n9Excellent\nView Analysis\nMarket Matrix\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nView Analysis\nThe A.C.P. Framework\nAudience\n6/10\nCommunity\n8/10\nProduct\n6/10\nView Analysis\nThe Value Ladder\nBait\nFrontend\nCore Offer\nBackend\nContinuity\nView Analysis\nCategorization\n\nType\n\nSaas\n\nMarket\n\nB2B\n\nTarget\n\nSmall Businesses\n\nMain Competitor\n\nNeustar\n\nTrend Analysis\n\nThe rise in AI-driven scams and the growing need for small businesses to protect their phone numbers from fraud and reputation damage indicate increasing market demand.\n\nCommunity Signals\nReddit\n6 subreddits found\nFacebook\n4 groups found\nYouTube\n5 channels \u00b7 5 themes\nOther\n3 segments \u00b7 3 priorities\nView detailed breakdown\nTop Keywords\nFastest Growing\nSocialsecurity Gov Phone Number\nLOW competition\n5.4K\nSocial Security Administration Customer Service Number\nLOW competition\n6.6K\nCaller Id Spam Protection\nLOW competition\n4.4K\nHighest Volume\nSocial Security Administration Customer Service Number\nLOW competition\n6.6K\nSecure Number\nLOW competition\n5.4K\nSocialsecurity Gov Phone Number\nLOW competition\n5.4K\nMost Relevant\nSocial Security Administration Customer Service Number\nLOW competition\n6.6K\nSocialsecurity Gov Phone Number\nLOW competition\n5.4K\nSecure Number\nLOW competition\n5.4K\nView full keyword analysis\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\n\nImportant: Revenue estimates, scores, and market data are illustrative based on research and assumptions. Results vary by execution, timing, and market conditions. Not investment or business advice.\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+    "title": "Phone line defense platform that stops spam floods",
+    "opportunity": {
+      "score": 9,
+      "label": "Exceptional"
+    },
+    "problem": {
+      "score": 9,
+      "label": "Severe Pain"
+    },
+    "feasibility": {
+      "score": 8,
+      "label": "Manageable"
+    },
+    "why_now": {
+      "score": 8,
+      "label": "Great Timing"
+    },
+    "type": "Saas",
+    "market": "B2B",
+    "target": "Small Businesses",
+    "main_competitor": "Neustar",
+    "trend_analysis": "The rise in AI-driven scams and the growing need for small businesses to protect their phone numbers from fraud and reputation damage indicate increasing market demand.",
+    "community_signals_summary": {
+      "reddit": "6 subreddits found",
+      "facebook": "4 groups found",
+      "youtube": "5 channels \u00b7 5 themes",
+      "other": "3 segments \u00b7 3 priorities"
+    }
+  },
+  "keyword_analysis": [
+    {
+      "keyword": "Caller id and spam protection",
+      "stats": {
+        "volume": "5.4K",
+        "growth": "+440%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "4,400 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Socialsecurity gov phone number",
+      "stats": {
+        "volume": "5.4K",
+        "growth": "+125%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "6,600 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Caller id spam protection",
+      "stats": {
+        "volume": "5.4K",
+        "growth": "+440%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "4,400 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Social security administration customer service number",
+      "stats": {
+        "volume": "6.6K",
+        "growth": "+128%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "6,600 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Caller id & spam protection",
+      "stats": {
+        "volume": "5.4K",
+        "growth": "+440%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "4,400 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Secure number",
+      "stats": {
+        "volume": "6.6K",
+        "growth": "+0%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "5,400 searches"
+        }
+      ]
+    }
+  ],
+  "subpages": {
+    "View Analysis #1": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nValue Equation\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nValue Equation Analysis\n\nOverall Rating\n\n9\n/10\n\nAnalyzing the value proposition using Alex Hormozi's Value Equation framework.\n\n\ud83c\udfaf\nDream Outcome\n8/10\n\nBusinesses want to maintain the trust of their phone lines, ensuring they don't miss important communications due to scam calls or unintentionally spam-labeled numbers.\n\n\ud83c\udfb2\nPerceived Likelihood\n8/10\n\nCustomers would believe in this solution as it addresses a very specific and verified pain point evident from community corroboration on platforms like Reddit.\n\n\u23f1\ufe0f\nTime Delay\n6/10\n\nThe service likely offers ongoing protection rather than immediate resolution, meaning initial monitoring results could be visible quickly, but complete solutions would take a few weeks.\n\n\ud83d\udcaa\nEffort & Sacrifice\n8/10\n\nUsers would need to integrate this service with their current telephony systems and pay a monthly fee for continuous monitoring and protection.\n\n\ud83d\udca1\nImprovement Suggestions\n\nImprove the offering by ensuring faster resolution times and more seamless integration into existing telephony systems to increase user uptake and satisfaction.\n\nUnderstanding the Value Equation\n\nAlex Hormozi's Value Equation is a powerful framework for evaluating business ideas and offers. It helps identify what makes an offer compelling and how to improve it.\n\n(Dream Outcome \u00d7 Perceived Likelihood)\n(Time Delay \u00d7 Effort)\nKey Components\nDream Outcome\n\nThe deeply desired end result that transforms the customer's situation.\n\nPerceived Likelihood\n\nCustomer confidence in achieving the outcome, backed by proof and guarantees.\n\nTime Delay\n\nSpeed to results - faster outcomes increase perceived value.\n\nEffort & Sacrifice\n\nResources and energy required from the customer.\n\nYouTube\nWebsite\n$100M Offers Book\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/value-equation"
+    },
+    "View Analysis #2": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nValue Matrix\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nMarket Matrix Analysis\n\nUniqueness\n\n9/10\n\nValue\n\n5/10\n\nThe idea of a phone number defense service has high uniqueness due to its specific approach to treating phone numbers as assets requiring protection through carrier-level remediation and spam-label monitoring. However, the value is currently perceived as low because direct search demand is near zero, and the need is not widely recognized as a separate service by target SMEs. Moreover, the market's willingness to pay is speculative, based on indirect signals like scammer pricing. Thus, the idea doesn't yet align with a clear, immediate wide-scale business opportunity, requiring significant market education.\n\nPosition Analysis\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nTech Novelty\n\nWhile technically unique, the value proposition needs strengthening to achieve market success.\n\nUnderstanding the Quadrants\nCategory King\n\nHigh uniqueness + High value. These are breakthrough products that create new categories and capture significant value. Think iPhone, Tesla, or Airbnb.\n\nTech Novelty\n\nHigh uniqueness + Low value. Interesting technology that doesn't solve a valuable problem. Often \"solutions looking for a problem.\"\n\nCommodity Play\n\nLow uniqueness + High value. Established markets with proven demand but intense competition. Success requires operational excellence.\n\nLow Impact\n\nLow uniqueness + Low value. These ideas may need significant refinement to find a viable market position. Consider pivoting to increase either uniqueness or value proposition.\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/value-matrix"
+    },
+    "View Analysis #3": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nAcp\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nACP Framework Analysis\n\nAnalyzing your idea through the Audience-Community-Product framework to ensure product-market fit and community engagement.\n\nAUDIENCE ANALYSIS\n\nTarget Definition\n\nDemographics\n\nUS micro and home-services operators (1-15 people): trades, junk removal, salons, assembly services.\n\nPsychographics\n\nBusiness owners reliant on phone numbers for operations, valuing reliability and communication.\n\nPlatforms\n\nPreferred communications: traditional phone lines, potentially engage through online forums like Reddit or industry-specific Facebook groups.\n\nNeeds Analysis\n\nUnmet Needs\n\nProtection of their business phone lines from fraud and spam labeling, need for reliable communication channels.\n\nContent Gaps\n\nLack of solutions focusing on number reputation defense rather than just call answering services.\n\nDifferentiation\n\nFocus on number reputation as an asset, not just addressing calls.\n\nContent Strategy\n\nSecret Sauce\n\nEvidence-backed success stories, community-driven data on reduction in scam calls.\n\nKey Topics\n\nNumber reputation as an asset, carrier-level remediation, list-management tactics.\n\nContent Formats\n\nBlog articles, webinars, interactive forums, step-by-step guides.\n\nCOMMUNITY ANALYSIS\n\nPlatform Strategy\n\nPrimary Platform\n\nReddit - particularly r/smallbusiness for initial engagement and feedback.\n\nPlatform Rationale\n\nThese platforms have active discussions on small business challenges and allow targeting specific pain points.\n\nSecondary Platforms\n\nFacebook groups dedicated to small business issues, YouTube for tutorial content.\n\nTrust Building\n\nUGC Strategy\n\nEncourage user-generated content by requesting testimonials and shared experiences on forums.\n\nModeration Approach\n\nFocus on guiding discussions towards solution-based conversations, removing overtly negative or misleading content.\n\nTransparency\n\nOpen-source content on how carrier-level remediation works, shared success metrics.\n\nEngagement Plan\n\nCommunity Rituals\n\nMonthly 'phone trust clinics', quarterly 'how to protect your business number' webinars.\n\nContent Calendar\n\nWeekly blog posts, bi-monthly case study publications, monthly guest articles on partner platforms.\n\nInteraction Methods\n\nActive participation in forums, responding to FAQs, hosting live Q&A sessions.\n\nPRODUCT ANALYSIS\n\nCore Offering\n\nDescription\n\nA SaaS service that focuses on protecting a small business's phone number reputation as an asset.\n\nKey Features\n\nCarrier-level scam remediation, spam-label monitoring, listing integrity checks, compromised-line recovery.\n\nValue Proposition\n\nEnsures trusted communication channels by continuously monitoring, remediating scams, and managing number reputation.\n\nDevelopment Roadmap\n\nMVP\n\nPrototyping the monitoring dashboard and initial automated workflows for carrier-level remediation.\n\nFuture Iterations\n\nExpand integrations with VoIP providers, enhance alert systems based on user feedback.\n\nCommunity Integration\n\nBuild a trusted user community via feedback loops and allowing user collaboration on identifying emerging scams.\n\nEngagement Mechanics\n\nNetwork Effects\n\nIncreased user base improves data on scam patterns and carrier responsiveness, enhancing service.\n\nSticky Features\n\nReal-time alert system for changes in number reputation, automatic engagement with carriers for remediation.\n\nUsage Frequency\n\nContinuous, with regular updates on monitoring and remediation efforts.\n\nEXECUTION PLAN\n\n90-Day Plan\n\nDevelop an MVP, initiate user testing with feedback loops, establish foundational community channels.\n\nResource Needs\n\nDevelopment team for MVP, community manager for forums, compliance experts for regulatory alignment.\n\nSuccess Metrics\n\nUser adoption rates, reduction in marked 'Spam Likely' numbers, positive engagement in community forums.\n\nUnderstanding ACP Framework\n\nThe ACP Framework helps validate and refine business ideas by focusing on three key pillars: Audience, Community, and Product. This holistic approach ensures your idea has strong product-market fit and community engagement potential.\n\nAudience\n\nDeep understanding of target users, their needs, and how to reach them effectively through content and positioning.\n\nCommunity\n\nBuilding and nurturing a engaged user base through strategic platform choices and meaningful interactions.\n\nProduct\n\nThe core offering and its development roadmap. Focus on features that solve real problems and create lasting value for users.\n\nKey Benefits\n\nValidates product-market fit early\n\nEnsures sustainable user acquisition\n\nCreates network effects through community\n\nGuides content and engagement strategy\n\nGreg Isenberg\nStartup Empire\nLate Checkout\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/acp"
+    },
+    "View Analysis #4": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nValue Ladder\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nValue Ladder Strategy\n\nA strategic progression of offers that build trust and maximize customer lifetime value.\n\nLEAD MAGNET\n\nPhone Security Insights E-Book\nFree\n\nA comprehensive e-book detailing strategies to protect your business phone line from spam and scams.\n\nValue Provided\n\nEducates small business owners on the importance of phone line defense and establishes authority.\n\nGoal\n\nGenerate leads and awareness.\n\nFRONTEND OFFER\n\nNumber Defense Starter Pack\n$99/month\n\nBasic monitoring service for scam call patterns and spam-label alerts.\n\nValue Provided\n\nProvides initial protection and real-time alerts to manage phone number integrity.\n\nGoal\n\nConvert interested leads into paying customers.\n\nCORE OFFER\n\nPhone Shield Pro\n$250/month\n\nAdvanced monitoring, real-time remediation, and reporting tools for comprehensive number defense.\n\nValue Provided\n\nExtensive protection with automated workflows to maintain reputation and prevent disruptions.\n\nGoal\n\nEstablish core customer base and recurring revenue.\n\nCONTINUITY PROGRAM\n\nReputation Plus Add-Ons\n$50-$150/month\n\nAdditional features such as enhanced reporting, analytics, and AI-driven threat detection.\n\nValue Provided\n\nEnables deeper insights and proactive measures to protect phone number assets.\n\nGoal\n\nIncrease customer lifetime value.\n\nBACKEND OFFER\n\nEnterprise Phone Defense Suite\n$10,000+/year\n\nCustomized phone protection and remediation services for large franchises or multi-location operators.\n\nValue Provided\n\nOffers bespoke solutions with dedicated support and integration options for complex needs.\n\nGoal\n\nTarget high-ticket clients needing tailored solutions.\n\nUnderstanding Value Ladder\n\nThe Value Ladder is a business framework that helps you structure your offers in ascending levels of value and price. Start with something irresistible and low-barrier, then build trust and value at each step.\n\nWhy It Works\n\nBuilds trust incrementally\n\nMaximizes customer lifetime value\n\nHelps segment your audience\n\nCreates predictable revenue\n\nKey Stages\n\nLead Magnet (Bait)\n\nFree value to build trust and capture leads\n\nFrontend Offer\n\nLow-ticket product to convert leads to buyers\n\nCore Offer\n\nMain product/service delivering full solution\n\nContinuity Program\n\nOngoing value through memberships or add-ons\n\nBackend Offer\n\nPremium, high-ticket solutions for best customers\n\nRussell Brunson\nDotCom Secrets\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/value-ladder"
+    },
+    "View detailed breakdown": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nPhone line defense platform that stops spam floods\nCommunity Signals\nCommunity Signals\n\nAnalysis of community engagement and interest across different platforms\n\nSummary of Community Analysis\n\nAcross Reddit, Facebook, YouTube, and professional communities, the demand for enhanced spam call protection is clear and growing. Users express significant frustration with existing solutions, emphasizing a need for innovative options tailored to various platforms and devices. Key industry trends point towards personalization and robust privacy protections, driving an interest in more sophisticated call-blocking technologies. For businesses, the impact of spam labeling is notable, underlining a crucial area for improvement. Engaging with these communities represents a substantial opportunity for addressing articulated needs and advancing industry offerings.\n\nOn Reddit, tech-savvy communities like r/privacy and r/AndroidHelp display active engagement, highlighting frustrations over ineffective spam call solutions. The r/iphone subreddit, one of the largest with over 3 million members, underscores a broad desire for reliable call-blocking apps. These discussions often cite privacy as a core concern, revealing a ripe market for solutions that combine efficacy with user privacy. Leveraging this engaged audience, Phone Shield can deliver products specifically designed to mitigate these pain points, thereby capturing a willing and vocal user base eager for superior protection.\n\nShow More\nReddit\nTotal Communities Found\n8\nRelevant Communities\n6\nView Analysis\nFacebook\nGroups Found\n4\nRelevant Groups\n4\nView Analysis\nYouTube\nChannels Analyzed\n5\nContent Themes\n5\nTotal Formats\n6\nView Analysis\nOther Communities\nCommunity Segments\n3\nCommunity Types\n4\nPriority Communities\n3\nView Analysis\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals"
+    },
+    "Understand the market opportunity": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nMarket Gap\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nMarket Gap\n\nOverall Rating\n\n8\n/10\n\nThe largest opportunity lies in creating a comprehensive phone number defense service for small businesses, unaddressed by current market offerings. This service addresses the pressing need for maintaining phone number reputation amidst a surge in AI-driven scams causing operational disruptions.\n\n\ud83d\udeab\nUnderserved Customer Segments\n9\n/10\nMicro and home-services operators\nThere is a clear underserved market among US micro and home-services operators who rely on a single phone number for business operations. Current solutions do not effectively protect these vital numbers from spam labeling and scam floods. [1]\n\ud83e\udde9\nFeature Gaps\n8\n/10\nCarrier-level remediation\nExisting solutions do not provide comprehensive carrier-level remediation and spam-label monitoring crucial for maintaining phone number reputation. This gap presents an opportunity to develop a service targeting these features. [1]\n\ud83d\udca1\nDifferentiation Levers\n8\n/10\nFocus on number reputation\nUnlike general call answering services, a dedicated focus on protecting the phone number's reputation and providing recovery solutions is a strong differentiation point, essential for micro-operators. [1]\n\ud83c\udf0d\nGeographic Opportunities\n7\n/10\nFocus on US market\nThe US market has the highest incidence of robocalls and AI scams, making it a critical focus for services that defend small business phone numbers. [2]\n\ud83d\udd17\nIntegration Opportunities\n7\n/10\nPartnerships with VoIP providers\nCollaborating with VoIP providers can enhance the service's integration, providing a seamless experience for businesses that rely heavily on these systems for communication. [3]\nCitations & Sources\n1 - https://www.reddit.com/r/smallbusiness/comments/1uspn97\n2 - https://www.vectra.ai/topics/ai-scams\n3 - https://marketintelo.com/report/phone-number-reputation-market\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/market-gap"
+    },
+    "View detailed execution strategy": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nExecution Plan\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nExecution Plan\n\nType\n\nB2B\n\nTimeline\n\n1-2 weeks\n\nBudget\n\n$0-10K\n\nPART 1: BUSINESS CLASSIFICATION\n\nBusiness Model & Market\n\nBusiness Type\n\nB2B\n\nMarket Position\n\nCurrent solutions are limited to answering services and general reputation management. Enterprise solutions don't cater to micro-SMB needs.\n\nTarget Audience\n\nBuyer Personas\n\nSmall business owners in trades\n\nOperators of home-service businesses\n\nLocal business franchise owners\n\nKey Pain Points\n\nSpoofed scam calls affecting business operations\n\nPhone numbers are labeled as 'Spam Likely' preventing customer outreach\n\nLack of solutions protecting number reputation\n\nPART 2: PHASE 1 ROADMAP (0-6 MONTHS)\n\nCore Strategy\n\nMVP Approach\n\nDevelop a platform focusing on monitoring and remediation tools with automated workflows for quick validation.\n\nInitial Offer\n\nModel\n\nTiered Subscription\n\nPrice\n\n$99/mo for basic monitoring\n\nValue Proposition\n\nProtects vital phone number assets\n\nFulfillment\n\nAutomated via SaaS dashboard\n\nLead Generation Strategy\n\nLead Magnet\n\nType & Format\n\nReport - Whitepaper\n\nExpected Conversion\n\n5-10%\n\nValue Demonstration\n\nInformative insights with actionable steps\n\nAcquisition Channels\n\nReddit\n\nWeekly engagement\n\nActive discussion on pain points\n\nContent Format\n\nEducational posts and AMAs\n\nTarget Metrics\n\n200 signups/month\n\nIndustry Webinars\n\nMonthly\n\nEngagement with industry-specific audiences\n\nContent Format\n\nLive presentations and Q&A\n\nTarget Metrics\n\n100 leads/webinar\n\nLinkedIn Groups\n\nBi-weekly posts\n\nActive user base discussing communication challenges\n\nContent Format\n\nThought leadership articles and case studies\n\nTarget Metrics\n\n150 signups/month\n\nPART 3: PHASE 2 ROADMAP (6-18 MONTHS)\n\nGrowth Strategy\n\nTraction Milestones\n\nAchieve 10,000 SMB customers and reduce spam labeling by 30%\n\nExpansion Plan\n\nStrategic Focus\n\nAI-based anomaly detection and carrier partnerships\n\nDevelopment Timeline\n\n6 months\n\nPricing Evolution\n\nIntroduce AI feature as a premium add-on\n\nGo-to-Market Approach\n\nPilot with existing SMB clients\n\nPART 4: IMPLEMENTATION PLAN\n\nStep-by-Step Execution\n\nDevelop and deploy MVP in 4 weeks\n\nCreate initial content for lead magnet\n\nLaunch initial marketing campaign focusing on early adopters\n\nEstablish support and feedback loop with beta users\n\nSuccess Metrics\n\ncac\n\n$50-70\n\nchurn rate\n\n<15%\n\npilot conversion\n\n20%\n\nloan approval time\n\n-\n\nResource Requirements\n\nBudget Range\n\n$0-10K\n\nTeam Structure\n\nSolo founder with AI tools\n\nTimeline\n\n1-2 weeks\n\nRisk Assessment\n\nLow awareness of category\n\nEducate through content marketing\n\nReliance on carrier data\n\nDiversify data sources and partners\n\nSlow initial growth\n\nFocus on micro-segments and early success stories\n\nNext Action Steps\n\nDevelop MVP with basic monitoring and remediation capabilities\n\nInitiate marketing through Reddit and LinkedIn\n\nOrganize initial webinar with a focus on awareness and education\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/execution-plan"
+    },
+    "Explore proof & signals": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nProof & Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nProof & Signals\n\nOverall Rating\n\n8\n/10\n\nThe idea focuses on defending phone numbers for small businesses from spam and fraud, a significant pain point supported by extensive community discussions and increasing AI-enabled scams. It addresses gaps in current solutions which are more focused on call answering rather than number reputation defense.\n\n\ud83d\udca2\nFrustrations with spam calls\n\ud83d\udd70\ufe0f\nUrgency in AI scam rise\n\u274c\nGaps in SMB solutions\n\ud83d\udde3\ufe0f\nActive community engagement\n\ud83d\udca2\nEmotional Frustration Signals\n8\n/10\nVerified Scam Patterns\nMultiple threads on r/smallbusiness confirm severe pain from unmanageable spam calls, with users expressing frustration about the impact on business operations and profitability. [1]\nOperational Disruption\nSMBs face substantial disruption, losing potential business opportunities due to not answering unknown calls marked as Spam Likely. [1]\n\ud83d\udd70\ufe0f\nTime-Sensitive Needs\n9\n/10\nAI Scam Surge\nAI-driven scam activity is surging, with a projected 1,210% growth, pushing the issue to become a mainstream concern for small businesses reliant on phone communications. [2]\nUrgent Market Timing\nThe rapid rise in AI scams signals an immediate need for solutions that address the issue of spam-labeled numbers and compromised lines. [2]\n\u274c\nSystemic Barriers\n7\n/10\nLack of SMB-Specific Services\nCurrent carrier tools and security services don't adequately serve micro-SMBs, who have their phone numbers as primary business tools. [3]\nDependent on Third-Party Processes\nCarrier-level process complications impede self-service solutions for SMB number reputation management. [3]\n\ud83d\udde3\ufe0f\nCommunity Demand & Engagement\n8\n/10\nReddit Engagement\nActive discussions on platforms like Reddit highlight ongoing frustrations with spam calls, indicating a strong community demand for solutions. [4]\nFacebook Groups\nSmall communities are formed around stopping business-related spam calls, signaling a dedicated user base looking for effective solutions. [4]\nCitations & Sources\n1 - https://www.reddit.com/r/smallbusiness/comments/1uspn97\n2 - https://www.vectra.ai/topics/ai-scams\n3 - https://marketintelo.com/report/phone-number-reputation-market\n4 - https://www.bbb.org/all/scamstudies/AI_Customer_Service_Scam_Study/full-scam-study\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/proof-signals"
+    },
+    "See why this opportunity matters now": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nWhy Now\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nWhy Now\n\nOverall Rating\n\n8\n/10\n\nThe opportunity for launching a number defense service for small businesses is now ripe due to surging AI-driven scams, deteriorating consumer trust in phone communications, and a lack of SMB-specific solutions in the market. With AI scams growing at 1,210% and projected fraud losses reaching $40 billion by 2027, small businesses cannot afford to wait any longer [1].\n\n\ud83d\udcc8\nMarket Timing Factors\n8\n/10\nSurging AI Scams\nAI-driven scams are escalating rapidly, with a projected $40 billion in fraud losses anticipated by 2027. This makes the market ripe for solutions that safeguard small business phone lines . [1]\n\ud83e\udde0\nTechnological Enablers\n8\n/10\nScalable Solutions\nRecent advancements allow for scalable monitoring and remediation workflows, fostering the sustainability of number defense as a service . [2]\n\ud83c\udfdb\ufe0f\nRegulatory & Social Catalysts\n6\n/10\nDistrust of Calls\nRegulatory reports and social norms increasingly call for skepticism of phone interactions, making trusted number infrastructure even more necessary . [3]\n\ud83d\udd12\nRisk Reduction Factors\n6\n/10\nProven Demand\nDespite the undeveloped exact product form, there is clear demand for scam defense and trust restoration mechanisms, mitigating market entry risks . [1]\n\ud83d\ude80\nCompetitive Window\n4\n/10\nOpen Market\nVery few direct SMB-specific solutions exist, presenting an unmatched opportunity to capture market share before large incumbents adjust their offerings . [2]\n\ud83d\udcca\nSupporting Data Points\n5\n/10\nExpanding Market\nThe market for phone reputation is expected to grow from $2.8B in 2025 to $6.9B by 2034, supported by increasing AI fraud and communication needs . [1]\n\u26a0\ufe0f\nTiming Risks\n5\n/10\nPremature Entry\nThe niche might still be in an early concept stage, requiring significant market education and validation to ensure broad adoption . [2]\n\u23f0\nWhy Wait = Why Fail\n8\n/10\nCompounding Deficits\nEvery month of delay intensifies the pool of compromised numbers, increasing recovery costs and diminishing trust . [1]\nCitations & Sources\n1 - https://www.vectra.ai/topics/ai-scams\n2 - https://www.kimbley.com/blog/19/6/2026/how-are-attackers-using-ai-against-small-businesses-in-2026\n3 - https://gryphon.ai/regulatory-report-april-2026/\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/why-now"
+    },
+    "View full keyword analysis": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nKeywords\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nPhone line defense platform that stops spam floods\nKeywords\nKeyword Analysis\n\nAnalysis of search trends and keyword opportunities related to this idea.\n\nKeyword:\nCaller id spam protection\n1 Year\n5.4K\nVolume\n+125%\nGrowth\n$1.72\nCPC\nLOW\nCompetition\n2026\n0\n2k\n3k\n5k\n6k\nKeyword Summary\n\nThe keywords selected indicate a growing trend and undercurrent interest in secure phone communication, scam protection, and related security solutions. This aligns well with the business idea's focus on protecting static phone numbers for micro-operators, directly addressing the pain points and the solutions outlined.\n\nFastest Growing\ncaller id spam protection\n\nVolume: 5,400\n\nGrowth: +440%\n\ncaller id and spam protection\n\nVolume: 5,400\n\nGrowth: +440%\n\ncaller id & spam protection\n\nVolume: 5,400\n\nGrowth: +440%\n\nsocial security administration customer service number\n\nVolume: 6,600\n\nGrowth: +128%\n\nsocialsecurity gov phone number\n\nVolume: 5,400\n\nGrowth: +125%\n\nHighest Volume\nsecure number\n\nVolume: 6,600\n\nGrowth: 0%\n\nsocial security administration customer service number\n\nVolume: 6,600\n\nGrowth: +128%\n\ncaller id spam protection\n\nVolume: 5,400\n\nGrowth: +440%\n\ncaller id and spam protection\n\nVolume: 5,400\n\nGrowth: +440%\n\ncaller id & spam protection\n\nVolume: 5,400\n\nGrowth: +440%\n\nMost Relevant\nsocialsecurity gov phone number\n\nVolume: 5,400\n\nGrowth: +125%\n\ncaller id and spam protection\n\nVolume: 5,400\n\nGrowth: +440%\n\nsocial security administration customer service number\n\nVolume: 6,600\n\nGrowth: +128%\n\ncaller id spam protection\n\nVolume: 5,400\n\nGrowth: +440%\n\nsecure number\n\nVolume: 6,600\n\nGrowth: 0%\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/keywords"
+    },
+    "View full value ladder": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nValue Ladder\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nValue Ladder Strategy\n\nA strategic progression of offers that build trust and maximize customer lifetime value.\n\nLEAD MAGNET\n\nPhone Security Insights E-Book\nFree\n\nA comprehensive e-book detailing strategies to protect your business phone line from spam and scams.\n\nValue Provided\n\nEducates small business owners on the importance of phone line defense and establishes authority.\n\nGoal\n\nGenerate leads and awareness.\n\nFRONTEND OFFER\n\nNumber Defense Starter Pack\n$99/month\n\nBasic monitoring service for scam call patterns and spam-label alerts.\n\nValue Provided\n\nProvides initial protection and real-time alerts to manage phone number integrity.\n\nGoal\n\nConvert interested leads into paying customers.\n\nCORE OFFER\n\nPhone Shield Pro\n$250/month\n\nAdvanced monitoring, real-time remediation, and reporting tools for comprehensive number defense.\n\nValue Provided\n\nExtensive protection with automated workflows to maintain reputation and prevent disruptions.\n\nGoal\n\nEstablish core customer base and recurring revenue.\n\nCONTINUITY PROGRAM\n\nReputation Plus Add-Ons\n$50-$150/month\n\nAdditional features such as enhanced reporting, analytics, and AI-driven threat detection.\n\nValue Provided\n\nEnables deeper insights and proactive measures to protect phone number assets.\n\nGoal\n\nIncrease customer lifetime value.\n\nBACKEND OFFER\n\nEnterprise Phone Defense Suite\n$10,000+/year\n\nCustomized phone protection and remediation services for large franchises or multi-location operators.\n\nValue Provided\n\nOffers bespoke solutions with dedicated support and integration options for complex needs.\n\nGoal\n\nTarget high-ticket clients needing tailored solutions.\n\nUnderstanding Value Ladder\n\nThe Value Ladder is a business framework that helps you structure your offers in ascending levels of value and price. Start with something irresistible and low-barrier, then build trust and value at each step.\n\nWhy It Works\n\nBuilds trust incrementally\n\nMaximizes customer lifetime value\n\nHelps segment your audience\n\nCreates predictable revenue\n\nKey Stages\n\nLead Magnet (Bait)\n\nFree value to build trust and capture leads\n\nFrontend Offer\n\nLow-ticket product to convert leads to buyers\n\nCore Offer\n\nMain product/service delivering full solution\n\nContinuity Program\n\nOngoing value through memberships or add-ons\n\nBackend Offer\n\nPremium, high-ticket solutions for best customers\n\nRussell Brunson\nDotCom Secrets\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/value-ladder"
+    },
+    "Execution Difficulty": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nAug 10, 2026\n|\nBrowse all\nIdea Actions\nRoast\nBuild with Google AI Studio\nPhone line defense platform that stops spam floods\n\u23f0\nPerfect Timing\n\ud83d\udc51\nProven Founder Fit\n+11 More\n\nPhone rings less than it did last quarter. Ads are running, reviews still sit at five stars, and the work is going somewhere else. Scammers spoofed the line to place their calls, carriers flagged the number, and customers dialing back get Spam Likely above the name. Changing the number costs a truck wrap, a sign, and years of search ranking.\n\nHardline watches how carriers score the number and alerts the moment AT&T, Verizon, or T-Mobile marks it spam. Directory scans catch fake listings and hijacked numbers on Google Business and Yelp. When a scam flood starts, the originating VOIP carrier gets identified and the operator gets the forms and escalation path. Neustar sells caller reputation to carriers and enterprise call centers on contracts sized for call center floors. Reputation gets repaired at the source, which stops the junk calls at the carrier level.\n\nDetection comes first, and the honest version is a test-call rig. Buy lines on each major carrier through Twilio or SignalWire, dial the customer's number daily, and record the label. Scraper adds directory checks on the twenty that matter, and a text goes out the hour a listing or a label moves. Remediation stays manual at first, since complaint forms differ by carrier and escalation paths change often. Ten operators with bleeding lines are enough to learn on, measured by how fast a flag comes off.\n\nStarter at $99 a month tells an operator the line is burning. Pro at $250 puts it out, with live carrier remediation, fifty-directory scanning, and escalation handled end to end. Trade Facebook groups and r/smallbusiness carry the story, because operators post about the label the week it costs a job. Directory listing services make natural partners, since a wrong number in their index is their problem too. Phone number is the storefront, and the whole business walks in through it.\n\n*Analysis, scores, and revenue estimates are educational and based on assumptions. Results vary by execution and market conditions.\n\nKeyword:\nCaller id and spam protection\n5.4K\nVolume\n+440%\nGrowth\n2023\n2024\n2025\n2026\n0\n2k\n3k\n5k\n6k\nOpportunity\n9\nExceptional\nProblem\n9\nSevere Pain\nFeasibility\n8\nManageable\nWhy Now\n8\nGreat Timing\nBusiness Fit\n\ud83d\udcb0\nRevenue Potential\n$1M-$10M ARR potential addressing micro-SMB market gaps\n$$$\n\ud83d\udee0\ufe0f\nExecution Difficulty\nSolo-friendly build, 1-2 week MVP with agentic tools.\n4/10\n\ud83d\ude80\nGo-To-Market\nStrong traction with clear needs across Reddit, Facebook, and YouTube communities.\n8/10\n\ud83e\udde0\nRight for You?\nIdeal for founders with telecom or SMB SaaS experience\nFind Out\nRESEARCH TOOL\nGet a Report Exactly Like This for Your Idea\n\nHave your own business idea? Our AI Research Agent conducts a comprehensive 40-step analysis to validate and research any idea you give it.\n\nResearch My Idea\nOffer\n1\nLEAD MAGNET\nPhone Security Insights E-Book (Free)\n\nA comprehensive e-book detailing strategies to protect your business phone line from spam and scams.\n\n2\nFRONTEND\nNumber Defense Starter Pack ($99/month)\n\nBasic monitoring service for scam call patterns and spam-label alerts.\n\n3\nCORE\nPhone Shield Pro ($250/month)\n\nAdvanced monitoring, real-time remediation, and reporting tools for comprehensive number defense.\n\nView full value ladder\n\u2192\nWhy Now?\n\nThe opportunity for launching a number defense service for small businesses is now ripe due to surging AI-driven scams, deteriorating consumer trust in phone communications, and a lack of SMB-specific solutions in the market. With AI scams growing at 1,210% and projected fraud losses reaching $40 billion by 2027, small businesses cannot afford to wait any longer [1].\n\nSee why this opportunity matters now\nProof & Signals\n\nThe idea focuses on defending phone numbers for small businesses from spam and fraud, a significant pain point supported by extensive community discussions and increasing AI-enabled scams. It addresses gaps in current solutions which are more focused on call answering rather than number reputation defense.\n\nExplore proof & signals\nThe Market Gap\n\nThe largest opportunity lies in creating a comprehensive phone number defense service for small businesses, unaddressed by current market offerings. This service addresses the pressing need for maintaining phone number reputation amidst a surge in AI-driven scams causing operational disruptions.\n\nUnderstand the market opportunity\nExecution Plan\n\nLaunch a game-changing MVP that defends small business phone numbers with automated monitoring and remediation tools. Integrate swiftly with industry channels like Reddit and LinkedIn for rapid user engagement, then roll out AI-driven features to upscale protection. Ready to transform number reputation in six months?\n\nView detailed execution strategy\nFramework Fit\n\nSee how this idea fits into popular frameworks\n\nThe Value Equation\n9Excellent\nView Analysis\nMarket Matrix\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nView Analysis\nThe A.C.P. Framework\nAudience\n6/10\nCommunity\n8/10\nProduct\n6/10\nView Analysis\nThe Value Ladder\nBait\nFrontend\nCore Offer\nBackend\nContinuity\nView Analysis\nCategorization\n\nType\n\nSaas\n\nMarket\n\nB2B\n\nTarget\n\nSmall Businesses\n\nMain Competitor\n\nNeustar\n\nTrend Analysis\n\nThe rise in AI-driven scams and the growing need for small businesses to protect their phone numbers from fraud and reputation damage indicate increasing market demand.\n\nCommunity Signals\nReddit\n6 subreddits found\nFacebook\n4 groups found\nYouTube\n5 channels \u00b7 5 themes\nOther\n3 segments \u00b7 3 priorities\nView detailed breakdown\nTop Keywords\nFastest Growing\nSocialsecurity Gov Phone Number\nLOW competition\n5.4K\nSocial Security Administration Customer Service Number\nLOW competition\n6.6K\nCaller Id Spam Protection\nLOW competition\n4.4K\nHighest Volume\nSocial Security Administration Customer Service Number\nLOW competition\n6.6K\nSecure Number\nLOW competition\n5.4K\nSocialsecurity Gov Phone Number\nLOW competition\n5.4K\nMost Relevant\nSocial Security Administration Customer Service Number\nLOW competition\n6.6K\nSocialsecurity Gov Phone Number\nLOW competition\n5.4K\nSecure Number\nLOW competition\n5.4K\nView full keyword analysis\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\n\nImportant: Revenue estimates, scores, and market data are illustrative based on research and assumptions. Results vary by execution, timing, and market conditions. Not investment or business advice.\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0\n\ud83d\udee0\ufe0f\nExecution Difficulty\n4/10\nSolo-friendly build, 1-2 week MVP with agentic tools.\nOverview\n\nModerate complexity due to simple app logic and readily available AI tools.\n\nExecution Risks\n\u2022\nMarket adoption challenges\n\u2022\nPotential API overuse costs\n\u2022\nUser education on platform benefits\nTechnical Challenges\n\u2022\nEnsuring scalable architecture\n\u2022\nIntegration with existing contact systems\n\u2022\nMaintaining data privacy\nNon-Technical Challenges\n\u2022\nUnderstanding diverse industry needs\n\u2022\nBuilding initial user base\n\u2022\nMarketing to non-tech-savvy operators\nClose",
+      "url": "https://www.ideabrowser.com/hub/ideas/today"
+    }
+  },
+  "business_fit_deep": {
+    "Revenue Potential": "\ud83d\udcb0\nRevenue Potential\n$$$\n$1M-$10M ARR potential addressing micro-SMB market gaps\nOverview\n\nTargeted at an underserved SMB niche with recurring revenue model.\n\nRevenue Examples\n\u2022\nSaaS pricing: $250/month\n\u2022\nTiered pricing: $100-$350/month based on features\n\u2022\nAnnual contract: $2,400/year with discount\nBusiness Models\n\u2022\nSaaS subscriptions\n\u2022\nTiered pricing plans\n\u2022\nAnnual contracts\n\u2022\nPartnership revenues with VOIP providers\nExample Companies\nHiya\nFirst Orion\nReputation.com\nClose",
+    "Execution Difficulty": "\ud83d\udee0\ufe0f\nExecution Difficulty\n4/10\nSolo-friendly build, 1-2 week MVP with agentic tools.\nOverview\n\nModerate complexity due to simple app logic and readily available AI tools.\n\nExecution Risks\n\u2022\nMarket adoption challenges\n\u2022\nPotential API overuse costs\n\u2022\nUser education on platform benefits\nTechnical Challenges\n\u2022\nEnsuring scalable architecture\n\u2022\nIntegration with existing contact systems\n\u2022\nMaintaining data privacy\nNon-Technical Challenges\n\u2022\nUnderstanding diverse industry needs\n\u2022\nBuilding initial user base\n\u2022\nMarketing to non-tech-savvy operators\nClose",
+    "Go-To-Market": "\ud83d\ude80\nGo-To-Market\n8/10\nStrong traction with clear needs across Reddit, Facebook, and YouTube communities.\nOverview\n\nClear demand and discussions around phone number security across multiple platforms.\n\nGo-to-Market Tactics\n\u2022\nEngage on Reddit's privacy and business forums to gather feedback and promote solutions.\n\u2022\nCreate educational YouTube content addressing phone number security.\n\u2022\nPartner with VOIP providers to enhance service credibility.\n\u2022\nLaunch Facebook ads targeting SMBs dealing with spam issues.\nTarget Audiences\n\u2022\nUS micro and home-services operators (1-15 employees)\n\u2022\nTrades and junk removal businesses\n\u2022\nSalon and assembly service operators\nChannels with Signal\n\u2022\nReddit (1.6M+ users on r/privacy)\n\u2022\nFacebook Groups (active SMB discussions on spam)\n\u2022\nYouTube (high engagement on spam call content)\nEarly Positioning Angles\n\u2022\n'Protect your business with trusted phone lines.'\n\u2022\n'Keep your number safe from spam and scams.'\n\u2022\n'Defend your phone line, ensure your reputation.'\nTraction Signal\n\nClear traction\n\nClose"
+  },
+  "score_cards_deep": {
+    "Opportunity": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nOpportunity Score\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nOpportunity Score\nOverall Rating\n9\n/10\nA prime opportunity to address a critical gap in SMB phone security amid rising AI scams.\nOpportunity Type: Market Gap\nWindow: Opening Up\nThe opportunity capitalizes on a rapidly growing need for SMB phone security solutions, leveraging technological advancements and a clear market gap.\nKey Strengths\nUnderserved niche with clear demand\nRapid AI scam growth creating urgency\nStrong go-to-market traction across platforms\nLow execution difficulty with agentic tools\nKey Risks\nHigh need for market education\nPotential API cost overruns\nComplexity in user adoption and education\n\ud83d\udcc8\nMarket Analysis\n9\n/10\nMarket Timing\nThe surge in AI-driven scams and lack of SMB-specific solutions create a timely entry point.\nMarket Potential\nGrowing market for phone reputation solutions, projected to expand significantly.\n\ud83c\udfaf\nCompetitive Position\n7\n/10\nCompetitive Advantage\nFew direct competitors in the SMB space with a focus on phone number reputation.\nExecution Feasibility\nModerate complexity with solo-friendly tools, but challenges in user education.\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+    "Problem": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nProblem Score\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nProblem Score\nOverall Rating\n9\n/10\nMicro and small businesses face severe disruptions from spam calls, threatening operations.\nPain Type: Acute\nTrend: Increasing\nSpam calls severely disrupt business operations, with a notable rise in AI scams and inadequate current solutions.\nKey Pain Points\nDisrupted business operations from spam calls\nLoss of potential business due to missed calls\nInadequate spam call solutions for SMBs\nRising AI-driven scam threats\nMarket Evidence\nReddit threads show frustration over spam calls affecting business operations.\nFacebook groups discuss frequent spam labeling issues.\nYouTube channels highlight demand for effective spam call blocking.\nProfessional networks indicate a need for better spam reduction tools.\n\ud83d\udd25\nProblem Score\n8.5\n/10\nPain Frequency\nBusinesses experience spam calls daily, significantly affecting operations.\nPain Intensity\nSpam calls cause severe operational and financial disruptions.\n\ud83d\udcb0\nMarket Response\n7\n/10\nCurrent Solutions\nExisting solutions are inadequate, focusing on call answering rather than number protection.\nWillingness to Pay\nBusinesses show high urgency to protect their phone numbers, indicating strong willingness to invest in solutions.\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+    "Feasibility": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nFeasibility Score\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nFeasibility Score\nOverall Rating\n8\n/10\nHighly feasible for a solo builder using AI tools.\nTime to MVP: 1-2 weeks\nMinimum Team: 1 people (Product Lead)\nSolo builder can manage with AI tools for development and initial marketing.\nKey Advantages\nAI tools simplify development.\nSpecific target market minimizes competition.\nLow development cost with AI orchestration.\nCritical Challenges\nEffective distribution strategy\nManaging API costs\nUser acquisition in niche markets\n\ud83c\udfaf\nMarket & Validation\n7\n/10\nMarket Clarity\nTarget market identified but approach to reach them needs clarity.\nEarly Validation\nEasy to test with a small set of users in target industries.\n\ud83d\udee0\ufe0f\nTechnical & Resources\n9\n/10\nTechnical Feasibility\nApplication development is straightforward with AI tools.\nResource Requirements\nAI and app generation tools minimize resource needs.\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+    "Why Now": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nWhy Now\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nWhy Now\nOverall Rating\n8\n/10\nThe opportunity for launching a number defense service for small businesses is now ripe due to surging AI-driven scams, deteriorating consumer trust in phone communications, and a lack of SMB-specific solutions in the market. With AI scams growing at 1,210% and projected fraud losses reaching $40 billion by 2027, small businesses cannot afford to wait any longer [1].\n\ud83d\udcc8\nMarket Timing Factors\n8\n/10\nSurging AI Scams\nAI-driven scams are escalating rapidly, with a projected $40 billion in fraud losses anticipated by 2027. This makes the market ripe for solutions that safeguard small business phone lines . [1]\n\ud83e\udde0\nTechnological Enablers\n8\n/10\nScalable Solutions\nRecent advancements allow for scalable monitoring and remediation workflows, fostering the sustainability of number defense as a service . [2]\n\ud83c\udfdb\ufe0f\nRegulatory & Social Catalysts\n6\n/10\nDistrust of Calls\nRegulatory reports and social norms increasingly call for skepticism of phone interactions, making trusted number infrastructure even more necessary . [3]\n\ud83d\udd12\nRisk Reduction Factors\n6\n/10\nProven Demand\nDespite the undeveloped exact product form, there is clear demand for scam defense and trust restoration mechanisms, mitigating market entry risks . [1]\n\ud83d\ude80\nCompetitive Window\n4\n/10\nOpen Market\nVery few direct SMB-specific solutions exist, presenting an unmatched opportunity to capture market share before large incumbents adjust their offerings . [2]\n\ud83d\udcca\nSupporting Data Points\n5\n/10\nExpanding Market\nThe market for phone reputation is expected to grow from $2.8B in 2025 to $6.9B by 2034, supported by increasing AI fraud and communication needs . [1]\n\u26a0\ufe0f\nTiming Risks\n5\n/10\nPremature Entry\nThe niche might still be in an early concept stage, requiring significant market education and validation to ensure broad adoption . [2]\n\u23f0\nWhy Wait = Why Fail\n8\n/10\nCompounding Deficits\nEvery month of delay intensifies the pool of compromised numbers, increasing recovery costs and diminishing trust . [1]\nCitations & Sources\n1 - https://www.vectra.ai/topics/ai-scams\n2 - https://www.kimbley.com/blog/19/6/2026/how-are-attackers-using-ai-against-small-businesses-in-2026\n3 - https://gryphon.ai/regulatory-report-april-2026/\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0"
+  },
+  "community_signals_deep": {
+    "reddit": [
+      {
+        "name": "Reddit Community Analysis",
+        "raw_text": "Reddit Community Analysis\n\nAnalyzed 6 relevant communities",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/reddit-analysis"
+      },
+      {
+        "name": "r/privacy",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nPhone line defense platform that stops spam floods\nCommunity Signals\nReddit Analysis\nr/privacy\nr/privacy\n1.6M+ followers\n\u00b7\nExplore community\nWhy It's Relevant\nThis subreddit focuses on privacy and communication security, directly aligning with the business idea's objective of trusted and secure call services. Users are actively looking for ways to protect their phone numbers, which aligns with Phone Shield's services.\nOpportunity\nUse this platform to gain insights into privacy concerns. Engage with community members to gauge interest in solutions that provide better control over personal information exposure. Participate in discussions to share expertise and gather feedback on user concerns.\nRelevant Discussions\n2 discussions found\nGeneral discussions on personal information protection\nActive discussion\nFrequent discussions on protecting personal contact information from scams and spam, emphasizing the importance of privacy.\nView on Reddit\nHow do you take care of your Phone number?\n40 participants\nDiscussion focused on maintaining the security and privacy of phone numbers. Engages 40+ comments.\nView on Reddit\nExplore Business Opportunities in r/privacy\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "General discussions on personal information protection",
+            "url": "https://www.reddit.com/r/privacy/"
+          },
+          {
+            "title": "General discussions on personal information protection",
+            "url": "https://www.reddit.com/r/privacy/comments/uuqub3/how_do_you_take_care_of_your_phone_number/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/reddit-analysis/privacy"
+      },
+      {
+        "name": "r/AndroidHelp",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nPhone line defense platform that stops spam floods\nCommunity Signals\nReddit Analysis\nr/AndroidHelp\nr/AndroidHelp\n245k followers\n\u00b7\nExplore community\nWhy It's Relevant\nThis community is a hub for users seeking help with Android spam call issues, indicating unmet needs in spam protection solutions.\nOpportunity\nIntroduce Phone Shield and start discussions on how your service can offer a more effective alternative to existing call blockers. Engage with users to understand their pain points and refine service offerings.\nRelevant Discussions\n1 discussions found\nI keep getting spam calls even after trying call blocker apps\nActive discussion\nUsers are expressing frustrations with the effectiveness of current spam call blockers, signaling a gap in the market for improved solutions.\nView on Reddit\nExplore Business Opportunities in r/AndroidHelp\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "I keep getting spam calls even after trying call blocker apps",
+            "url": "https://www.reddit.com/r/AndroidHelp/comments/1rgdxb5/i_keep_getting_spam_calls_even_after_trying_call/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/reddit-analysis/AndroidHelp"
+      },
+      {
+        "name": "r/iphone",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nPhone line defense platform that stops spam floods\nCommunity Signals\nReddit Analysis\nr/iphone\nr/iphone\n3M+ followers\n\u00b7\nExplore community\nWhy It's Relevant\nThis subreddit is frequented by iPhone users looking for effective call management apps, indicating a demand for improved spam protection services on iOS.\nOpportunity\nEngage with the community to collect user feedback on existing apps and present Phone Shield as a potential solution.\nRelevant Discussions\n1 discussions found\nBest app to block spam calls?\nActive discussion\nHigh engagement indicates significant concern over spam calls among iPhone users, highlighting demand for better solutions.\nView on Reddit\nExplore Business Opportunities in r/iphone\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Best app to block spam calls?",
+            "url": "https://www.reddit.com/r/iphone/comments/1ftr3bb/best_app_to_block_spam_calls/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/reddit-analysis/iphone"
+      },
+      {
+        "name": "r/androidapps",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nPhone line defense platform that stops spam floods\nCommunity Signals\nReddit Analysis\nr/androidapps\nr/androidapps\nN/A\n\u00b7\nExplore community\nWhy It's Relevant\nThis subreddit engages users looking for Android apps that block spam calls, representing a potential market for Phone Shield's services.\nOpportunity\nEngage with users by answering questions and introducing Phone Shield as a solution to their spam call issues. Collect user feedback to refine service offerings.\nRelevant Discussions\n1 discussions found\nBest Spam Blocker/Non Contact Blocker for Android?\n40 participants\nThis post discusses the best call blocking apps for Android, indicating a demand for effective phone security solutions. Engages 40+ comments.\nView on Reddit\nExplore Business Opportunities in r/androidapps\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Best Spam Blocker/Non Contact Blocker for Android?",
+            "url": "https://www.reddit.com/r/androidapps/comments/1bvxhh7/best_spam_blockernon_contact_blocker_for_android/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/reddit-analysis/androidapps"
+      },
+      {
+        "name": "r/personalfinance",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nPhone line defense platform that stops spam floods\nCommunity Signals\nReddit Analysis\nr/personalfinance\nr/personalfinance\nN/A\n\u00b7\nExplore community\nWhy It's Relevant\nThis subreddit shows interest in financial implications of phone security, suggesting potential customers who view phone number security as critical.\nOpportunity\nEngage with the community by offering Phone Shield as a practical solution to securing phone numbers. Use feedback to understand financial concerns and tailor pricing models.\nRelevant Discussions\n1 discussions found\nSecure your cellphone number!\n530 participants\nDiscussion on protecting cellphone numbers. High engagement with 530+ comments, highlighting a significant concern about number security.\nView on Reddit\nExplore Business Opportunities in r/personalfinance\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Secure your cellphone number!",
+            "url": "https://www.reddit.com/r/personalfinance/comments/ka7krt/secure_your_cellphone_number/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/reddit-analysis/personalfinance"
+      },
+      {
+        "name": "r/AndroidQuestions",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nPhone line defense platform that stops spam floods\nCommunity Signals\nReddit Analysis\nr/AndroidQuestions\nr/AndroidQuestions\nN/A\n\u00b7\nExplore community\nWhy It's Relevant\nHighlights a common pain point of legitimate calls being blocked, which Phone Shield could address with more accurate filtering.\nOpportunity\nIntroduce Phone Shield as a solution to false positives in call blocking. Gather insights into Android users' experiences and improve Phone Shield's accuracy in identifying spam.\nRelevant Discussions\n1 discussions found\nPhone blocks calls it thinks are spam, even if they are valid ...\n40 participants\nUsers discuss issues with call blocking features on Android phones. Engages 40+ comments.\nView on Reddit\nExplore Business Opportunities in r/AndroidQuestions\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Phone blocks calls it thinks are spam, even if they are valid ...",
+            "url": "https://www.reddit.com/r/AndroidQuestions/comments/15oplft/phone_blocks_calls_it_thinks_are_spam_even_if/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/reddit-analysis/AndroidQuestions"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Facebook Groups",
+        "raw_text": "Facebook Groups\n\n4 groups analyzed",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/facebook-analysis"
+      },
+      {
+        "name": "How to avoid spam caller id for business calls?",
+        "raw_text": "How to avoid spam caller id for business calls?\n20+ comments\npublic\nDESCRIPTION\n\nBeen having this problem for a while. Our calls pop up as spam likely when calling leads. We currently use google voice but I have tried my personal number ...\n\nWHY IT'S RELEVANT\n\nThe group discussions highlight frequent problems with call legitimacy for businesses, which aligns with the core service offering of Phone Shield.\n\nRELEVANCE SIGNALS\nFocus on spam calls affecting business calls - mirrors Phone Shield\u2019s target audience of micro and SMB operators\nUsers experiencing 'spam likely' issues when calling leads, paralleling pain points targeted by Phone Shield\nVisit Group",
+        "discussions": [
+          {
+            "title": "How to avoid spam caller id for business calls?",
+            "url": "https://www.facebook.com/groups/1594952854094348/posts/4369626083293664/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/facebook-analysis"
+      },
+      {
+        "name": "How to stop daily spam calls from voice service?",
+        "raw_text": "How to stop daily spam calls from voice service?\n10+ comments\npublic\nDESCRIPTION\n\nAm I the only one who gets spam calls from a \u201cvoice service\u201d for the business about 10-15 times a day? I\u2019ve about had it. I\u2019ve blocked over 25 ...\n\nWHY IT'S RELEVANT\n\nThis group\u2019s discussions offer a direct insight into the frustration and problems faced by potential users of Phone Shield, validating the market demand.\n\nRELEVANCE SIGNALS\nFrequent spam call issues reported by business users\nGroup members looking for immediate solutions to severe spam issues, aligning with Phone Shield\u2019s offerings\nVisit Group",
+        "discussions": [
+          {
+            "title": "How to stop daily spam calls from voice service?",
+            "url": "https://www.facebook.com/groups/1116310971872115/posts/3107203239449535/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/facebook-analysis"
+      },
+      {
+        "name": "Dr. Computer Help",
+        "raw_text": "Dr. Computer Help\n10+ comments\npublic\nDESCRIPTION\n\nNot sure if anyone knows this or actually knows of a legit APP to do it but I have an android phone and I have the settings on to do not disturb and allow ...\n\nWHY IT'S RELEVANT\n\nThis group actively discusses tools and methods for spam call protection, providing insights into user needs and frustrations that Phone Shield can address.\n\nRELEVANCE SIGNALS\nDiscussion about blocking spam calls on Android - aligns with interest in spam protection\nActive community with comments within 7 months\nParticipants seeking effective call blocking solutions\nVisit Group",
+        "discussions": [
+          {
+            "title": "Dr. Computer Help",
+            "url": "https://www.facebook.com/groups/dr.computerhelp/posts/25449555587990607/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/facebook-analysis"
+      },
+      {
+        "name": "How to stop spam calls from toll-free numbers? - Ogden",
+        "raw_text": "How to stop spam calls from toll-free numbers? - Ogden\n20+ comments\npublic\nDESCRIPTION\n\nWhatsup my Ogden people!! Hey guys, so I keep getting spam calls from stupid azz toll-free numbers every day ranging anywhere from 2-10 calls a day. ...\n\nWHY IT'S RELEVANT\n\nEngagement with this group could help identify recurring pain points and demonstrate how Phone Shield differentiates from existing solutions.\n\nRELEVANCE SIGNALS\nActive posts about blocking spam calls from toll-free numbers, which Phone Shield addresses\nGroup members discuss challenges that could be addressed by Phone Shield\u2019s services\nVisit Group",
+        "discussions": [
+          {
+            "title": "How to stop spam calls from toll-free numbers? - Ogden",
+            "url": "https://www.facebook.com/groups/131635646926724/posts/26935374496126142/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/facebook-analysis"
+      }
+    ],
+    "youtube": [
+      {
+        "name": "YouTube Content Analysis",
+        "raw_text": "YouTube Content Analysis\n\nAnalyzed 5 channels with relevant content",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Top Channels",
+        "raw_text": "Top Channels\n\nFound 5 channels creating relevant content\n\nITJungles\n10K avg. views\n\nContent Approach\n\nDevice-specific how-to instructions\n\nAudience Response\n\nConsistent engagement\n\n6 relevant videos\n\nGuideRealm\n50K avg. views\n\nContent Approach\n\nComprehensive guides\n\nAudience Response\n\nHigh engagement\n\n3 relevant videos\n\nPayette Forward\n2M avg. views\n\nContent Approach\n\nDetailed, tip-oriented videos\n\nAudience Response\n\nVery high engagement\n\n1 relevant videos\n\nITJungles\n9,000 avg. views\n\nContent Approach\n\nSimplistic and direct tutorials on enabling/disabling features.\n\nAudience Response\n\nConsistently positive with practical engagement.\n\n5 relevant videos\n\nPayette Forward\n2,386,525 avg. views\n\nContent Approach\n\nEngaging content with practical hacks.\n\nAudience Response\n\nHigh engagement due to comprehensive and useful tips.\n\n1 relevant videos",
+        "discussions": [
+          {
+            "title": "ITJungles",
+            "url": "https://youtube.com/results?search_query=ITJungles"
+          },
+          {
+            "title": "ITJungles",
+            "url": "https://youtube.com/results?search_query=GuideRealm"
+          },
+          {
+            "title": "ITJungles",
+            "url": "https://youtube.com/results?search_query=PayetteForward"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis"
+      },
+      {
+        "name": "ITJungles",
+        "raw_text": "ITJungles\n10K avg. views\n\nContent Approach\n\nDevice-specific how-to instructions\n\nAudience Response\n\nConsistent engagement\n\n6 relevant videos\n\nGuideRealm\n50K avg. views\n\nContent Approach\n\nComprehensive guides\n\nAudience Response\n\nHigh engagement\n\n3 relevant videos\n\nPayette Forward\n2M avg. views\n\nContent Approach\n\nDetailed, tip-oriented videos\n\nAudience Response\n\nVery high engagement\n\n1 relevant videos\n\nITJungles\n9,000 avg. views\n\nContent Approach\n\nSimplistic and direct tutorials on enabling/disabling features.\n\nAudience Response\n\nConsistently positive with practical engagement.\n\n5 relevant videos\n\nPayette Forward\n2,386,525 avg. views\n\nContent Approach\n\nEngaging content with practical hacks.\n\nAudience Response\n\nHigh engagement due to comprehensive and useful tips.\n\n1 relevant videos",
+        "discussions": [
+          {
+            "title": "ITJungles",
+            "url": "https://youtube.com/results?search_query=ITJungles"
+          },
+          {
+            "title": "ITJungles",
+            "url": "https://youtube.com/results?search_query=GuideRealm"
+          },
+          {
+            "title": "ITJungles",
+            "url": "https://youtube.com/results?search_query=PayetteForward"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis"
+      },
+      {
+        "name": "GuideRealm",
+        "raw_text": "GuideRealm\n50K avg. views\n\nContent Approach\n\nComprehensive guides\n\nAudience Response\n\nHigh engagement\n\n3 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Payette Forward",
+        "raw_text": "Payette Forward\n2M avg. views\n\nContent Approach\n\nDetailed, tip-oriented videos\n\nAudience Response\n\nVery high engagement\n\n1 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis"
+      },
+      {
+        "name": "ITJungles",
+        "raw_text": "ITJungles\n10K avg. views\n\nContent Approach\n\nDevice-specific how-to instructions\n\nAudience Response\n\nConsistent engagement\n\n6 relevant videos\n\nGuideRealm\n50K avg. views\n\nContent Approach\n\nComprehensive guides\n\nAudience Response\n\nHigh engagement\n\n3 relevant videos\n\nPayette Forward\n2M avg. views\n\nContent Approach\n\nDetailed, tip-oriented videos\n\nAudience Response\n\nVery high engagement\n\n1 relevant videos\n\nITJungles\n9,000 avg. views\n\nContent Approach\n\nSimplistic and direct tutorials on enabling/disabling features.\n\nAudience Response\n\nConsistently positive with practical engagement.\n\n5 relevant videos\n\nPayette Forward\n2,386,525 avg. views\n\nContent Approach\n\nEngaging content with practical hacks.\n\nAudience Response\n\nHigh engagement due to comprehensive and useful tips.\n\n1 relevant videos",
+        "discussions": [
+          {
+            "title": "ITJungles",
+            "url": "https://youtube.com/results?search_query=ITJungles"
+          },
+          {
+            "title": "ITJungles",
+            "url": "https://youtube.com/results?search_query=GuideRealm"
+          },
+          {
+            "title": "ITJungles",
+            "url": "https://youtube.com/results?search_query=PayetteForward"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Payette Forward",
+        "raw_text": "Payette Forward\n2,386,525 avg. views\n\nContent Approach\n\nEngaging content with practical hacks.\n\nAudience Response\n\nHigh engagement due to comprehensive and useful tips.\n\n1 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Content Trends",
+        "raw_text": "Content Trends\nCommon Themes\n\nAnalysis of content themes and their engagement\n\n5\n\nBlocking spam calls\n\nVery high\n\nDevice-specific settings\n\nHigh\n\nPrivacy and security\n\nModerate\n\nView all themes\n\nPopular Formats\n\nOverview of successful content formats\n\n6\n\nHow-to guides\n\n40%\n\nApp reviews\n\n25%\n\nTip-oriented\n\n35%\n\nView all formats",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Common Themes",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nPhone line defense platform that stops spam floods\nCommunity Signals\nYouTube Analysis\nContent Themes\nContent Themes\nAnalysis of common themes and their engagement levels in YouTube content\nBlocking spam calls\nTechniques and apps to block spam calls\nPopularity: Very high\nEngagement Level: High\nDevice-specific settings\nHow to enable/disable spam protection in various phone models\nPopularity: High\nEngagement Level: Moderate\nPrivacy and security\nTips on securing calls and privacy\nPopularity: Moderate\nEngagement Level: High\nSpam Call Blocking\nVideos focus on blocking unwanted calls using native phone settings or apps.\nPopularity: Very prevalent\nEngagement Level: Moderate to high engagement.\nPhone Security\nExplores maintaining phone number privacy and protecting against scams.\nPopularity: Common\nEngagement Level: Moderate engagement.\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis/themes"
+      },
+      {
+        "name": "Popular Formats",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nPhone line defense platform that stops spam floods\nCommunity Signals\nYouTube Analysis\nPopular Formats\nPopular Formats\nAnalysis of successful content formats and their engagement metrics\nHow-to guides\nFrequency: 40% of content\nAverage Engagement: 100K views\nExample Videos\nSamsung Galaxy How to Block Unwanted, Spam, Scam and Unknown Callers\nHow To Block Spam Calls On Android - Full Guide\nApp reviews\nFrequency: 25% of content\nAverage Engagement: 50K views\nExample Videos\n5 Best Free Spam Call Blocker Apps For Android - Full Guide\nTip-oriented\nFrequency: 35% of content\nAverage Engagement: 200K views\nExample Videos\n6 Hacks To Stop iPhone Spam Calls \u2014 Scammers Hate #4!\nTutorial\nFrequency: 48% of content\nAverage Engagement: 1000-10,000 views\nExample Videos\nHow to Enable Caller ID and Spam Protection in Samsung S26 Ultra, S26 Plus, S26\nHow to Block Spam Calls On Android\nGuide\nFrequency: 32% of content\nAverage Engagement: 10,000-50,000 views\nExample Videos\nBest SPAM CALL Blocker Free for IPHONE\n5 Best Free Spam Call Blocker Apps For Android - Full Guide\nDiscussion\nFrequency: 20% of content\nAverage Engagement: 50,000-1 million views\nExample Videos\na BETTER way to protect your phone number?\nI Solved the Phone Number Privacy Problem!\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "How-to guides",
+            "url": "https://www.youtube.com/results?search_query=Samsung Galaxy How to Block Unwanted, Spam, Scam and Unknown Callers"
+          },
+          {
+            "title": "How-to guides",
+            "url": "https://www.youtube.com/results?search_query=How To Block Spam Calls On Android - Full Guide"
+          },
+          {
+            "title": "App reviews",
+            "url": "https://www.youtube.com/results?search_query=5 Best Free Spam Call Blocker Apps For Android - Full Guide"
+          },
+          {
+            "title": "Tip-oriented",
+            "url": "https://www.youtube.com/results?search_query=6 Hacks To Stop iPhone Spam Calls \u2014 Scammers Hate #4!"
+          },
+          {
+            "title": "Tutorial",
+            "url": "https://www.youtube.com/results?search_query=How to Enable Caller ID and Spam Protection in Samsung S26 Ultra, S26 Plus, S26"
+          },
+          {
+            "title": "Tutorial",
+            "url": "https://www.youtube.com/results?search_query=How to Block Spam Calls On Android"
+          },
+          {
+            "title": "Guide",
+            "url": "https://www.youtube.com/results?search_query=Best SPAM CALL Blocker Free for IPHONE"
+          },
+          {
+            "title": "Discussion",
+            "url": "https://www.youtube.com/results?search_query=a BETTER way to protect your phone number?"
+          },
+          {
+            "title": "Discussion",
+            "url": "https://www.youtube.com/results?search_query=I Solved the Phone Number Privacy Problem!"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis/formats"
+      }
+    ],
+    "other": [
+      {
+        "name": "Other Communities",
+        "raw_text": "Other Communities\n\nAnalyzed 3 community segments across 4 types",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/other-communities"
+      },
+      {
+        "name": "Micro & Home-Services Operator Communities",
+        "raw_text": "Micro & Home-Services Operator Communities\n\nOwner-operators with 1\u201315 employees in trades, junk removal, salons, and home assembly.\n\nPain Points\n\n\u2022 Spoofed scam calls\n\u2022 Compromised numbers\n\u2022 Spam labeling\n\u2022 Lost business opportunities\n\nInterests\n\n\u2022 Phone reputation\n\u2022 Spam blocking\n\u2022 Fraud prevention\n\u2022 Scam mitigation\nReddit\nFacebook\nYouTube",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/other-communities"
+      },
+      {
+        "name": "Privacy, Security & Anti-Spam Tech Communities",
+        "raw_text": "Privacy, Security & Anti-Spam Tech Communities\n\nTech-savvy consumers, IT admins, security enthusiasts, and small-business owners.\n\nPain Points\n\n\u2022 Ineffective spam filters\n\u2022 Privacy concerns\n\u2022 Caller ID spoofing\n\nInterests\n\n\u2022 Privacy\n\u2022 Spam protection\n\u2022 Phone security\n\u2022 Caller ID reputation\nReddit\nYouTube\nBlogs",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/other-communities"
+      },
+      {
+        "name": "VoIP / Telecom Vendor and Expert Communities",
+        "raw_text": "VoIP / Telecom Vendor and Expert Communities\n\nVoIP providers, UCaaS product managers, carrier-support engineers, and consultants.\n\nPain Points\n\n\u2022 Spam Likely labels\n\u2022 Reputation management\n\u2022 Compliance issues\n\nInterests\n\n\u2022 Spam reduction\n\u2022 Compliance\n\u2022 Customer education\nVendor blogs\nWebinars\nLinkedIn",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/other-communities"
+      }
+    ],
+    "_otherCommunitiesExtra": {
+      "contentStrategies": "Micro & home-services communities\n\nEnsure trusted business numbers to maintain customer calls and jobs.\n\nTactics\n\n\u2022 Create fix guides\n\u2022 Participate in Reddit & Facebook\n\u2022 Host webinars\nPrivacy/security communities\n\nEnterprise-level protection for small operators' business numbers.\n\nTactics\n\n\u2022 Educational content\n\u2022 Transparency reports\n\u2022 Feature-focused discussions\nVoIP/telecom vendor communities\n\nImprove SMB customer answer rates without building a full reputation-management layer.\n\nTactics\n\n\u2022 Co-branded content\n\u2022 Guides\n\u2022 Technical discussions",
+      "partnershipOpportunities": "VoIP providers\n\nAnswering services\n\nSMB phone-system vendors",
+      "citations": [
+        {
+          "n": "1",
+          "url": "https://www.ooma.com/small-business-phone-systems/how-to/how-to-prevent-spam-labeling-and-blocking-for-legitimate-business-calls/"
+        },
+        {
+          "n": "2",
+          "url": "https://www.thryv.com/blog/block-spam-calls-business-phone/"
+        },
+        {
+          "n": "3",
+          "url": "https://consumer.ftc.gov/how-block-unwanted-calls"
+        },
+        {
+          "n": "4",
+          "url": "https://www.reddit.com/r/sweatystartup/comments/1gexzq9/does_anyone_have_a_way_to_reduce_spam_calls_to/"
+        }
+      ]
+    }
+  },
+  "crawl_log": [
+    {
+      "step": "login",
+      "note": "Found 2 element(s) matching 'Sign in with Password' text."
+    },
+    {
+      "step": "login",
+      "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+    },
+    {
+      "step": "login",
+      "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+    },
+    {
+      "step": "login",
+      "success": true
+    },
+    {
+      "step": "keyword_discovery",
+      "note": "Found 6 plausible keyword option(s) after filtering."
+    },
+    {
+      "step": "select_keyword:Caller id and spam protection",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Caller id and spam protection\", exact=True).first\n    - locator resolved to <span class=\"text-xs md:text-sm truncate\">Caller id and spam protection</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 500.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 711.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 711.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 711.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n1,000 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Caller id and spam protection",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 470.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n2,400 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Socialsecurity gov phone number",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 470.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n1,000 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Caller id spam protection",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 470.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n2,900 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Social security administration customer service number",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 470.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n1,000 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Caller id & spam protection",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 470.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n6,600 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Secure number",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_community_signals_deep:entered",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals"
+    },
+    {
+      "step": "crawl_platform:reddit:starting"
+    },
+    {
+      "step": "open_community_signals_page:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals"
+    },
+    {
+      "step": "crawl_platform:reddit:view_analysis_links_found",
+      "count": 4,
+      "current_url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals"
+    },
+    {
+      "step": "crawl_platform:reddit:after_click",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/reddit-analysis"
+    },
+    {
+      "step": "crawl_platform:reddit:surviving_headings_dump",
+      "surviving_heading_texts": [
+        "Reddit Community Analysis",
+        "r/privacy",
+        "r/AndroidHelp",
+        "r/iphone",
+        "r/androidapps",
+        "r/personalfinance",
+        "r/AndroidQuestions"
+      ]
+    },
+    {
+      "step": "crawl_platform:reddit:count_diagnostic",
+      "summary_match_found": true,
+      "expected_count": 6,
+      "all_heading_count": 7,
+      "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTa"
+    },
+    {
+      "step": "crawl_platform:reddit:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/reddit-analysis",
+      "card_count": 7,
+      "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nPhone line defense platform that stops spam floods\nCommunity Signals\nReddit Analysis\nReddit Community Analysis\n\nAnalyzed 6 relevant communities\n\nKey Findings\nThe demand signals across Reddit\u2019s tech-savvy communities are unmistakable\u2014there's a growing clamor for effective spam call protection. In the bustling r/privacy subreddit, boasting over 1.6 million followers, users frequently debate how to safeguard personal information, highlighting a pressing need for enhanced phone security. Meanwhile, r/AndroidHelp, with its 245,000 followers, echoes frustrations over subpar call-blocking solutions, as users seek more reliable alternatives. Similarly, r/iphone, attracting a substantial community of over 3 million, is abuzz with discussions on finding the best apps to thwart spam calls. These platforms reveal key pain points, such as ineffective spam filters and privacy concerns, signaling robust opportunities for Phone Shield to innovate i"
+    },
+    {
+      "step": "crawl_platform:reddit:card_0:container_check",
+      "community_name": "Reddit Community Analysis",
+      "container_text_length": 58,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:reddit:card_1:container_check",
+      "community_name": "r/privacy",
+      "container_text_length": 1782,
+      "container_text_starts_with_name": null
+    },
+    {
+      "step": "crawl_platform:reddit:finished",
+      "communities_found": 7
+    },
+    {
+      "step": "crawl_platform:facebook:starting"
+    },
+    {
+      "step": "open_community_signals_page:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals"
+    },
+    {
+      "step": "crawl_platform:facebook:view_analysis_links_found",
+      "count": 4,
+      "current_url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals"
+    },
+    {
+      "step": "crawl_platform:facebook:after_click",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/facebook-analysis"
+    },
+    {
+      "step": "crawl_platform:facebook:surviving_headings_dump",
+      "surviving_heading_texts": [
+        "Facebook Groups",
+        "How to avoid spam caller id for business calls?",
+        "How to stop daily spam calls from voice service?",
+        "Dr. Computer Help",
+        "How to stop spam calls from toll-free numbers? - Ogden"
+      ]
+    },
+    {
+      "step": "crawl_platform:facebook:count_diagnostic",
+      "summary_match_found": true,
+      "expected_count": 4,
+      "all_heading_count": 5,
+      "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTa"
+    },
+    {
+      "step": "crawl_platform:facebook:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/facebook-analysis",
+      "card_count": 5,
+      "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nPhone line defense platform that stops spam floods\nCommunity Signals\nFacebook Analysis\nFacebook Groups\n\n4 groups analyzed\n\nKey Findings\nDiving into Facebook group discussions reveals a persistent issue for businesses: the plague of spam calls. In \"How to Avoid Spam Caller ID for Business Calls?\" with over 20 active contributors, members consistently discuss their calls being marked as \"spam likely,\" a major hurdle for businesses. Meanwhile, \"How to Stop Daily Spam Calls from Voice Service?\" also boasts over 10 participants venting about receiving incessant spam calls, with members desperate for immediate solutions. In \"Dr. Computer Help,\" another group of 10 contributors, the community shares frustrations about ineffective call-blocking on Android devices. Finally, \"How to Stop Spam Calls from Toll-Free Numbers? - Ogden,\" featuring 20 engaged voices, surfaces multiple complaints against toll-free number scams. These discussions are "
+    },
+    {
+      "step": "crawl_platform:facebook:card_0:container_check",
+      "community_name": "Facebook Groups",
+      "container_text_length": 34,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:facebook:card_1:container_check",
+      "community_name": "How to avoid spam caller id for business calls?",
+      "container_text_length": 661,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "community_visit_group_popup:facebook:1",
+      "captured_url": "https://www.facebook.com/groups/1594952854094348/posts/4369626083293664/"
+    },
+    {
+      "step": "community_visit_group_popup:facebook:2",
+      "captured_url": "https://www.facebook.com/groups/1116310971872115/posts/3107203239449535/"
+    },
+    {
+      "step": "community_visit_group_popup:facebook:3",
+      "captured_url": "https://www.facebook.com/groups/dr.computerhelp/posts/25449555587990607/"
+    },
+    {
+      "step": "community_visit_group_popup:facebook:4",
+      "captured_url": "https://www.facebook.com/groups/131635646926724/posts/26935374496126142/"
+    },
+    {
+      "step": "crawl_platform:facebook:finished",
+      "communities_found": 5
+    },
+    {
+      "step": "crawl_platform:youtube:starting"
+    },
+    {
+      "step": "open_community_signals_page:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals"
+    },
+    {
+      "step": "crawl_platform:youtube:view_analysis_links_found",
+      "count": 4,
+      "current_url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals"
+    },
+    {
+      "step": "crawl_platform:youtube:after_click",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis"
+    },
+    {
+      "step": "crawl_platform:youtube:surviving_headings_dump",
+      "surviving_heading_texts": [
+        "YouTube Content Analysis",
+        "Top Channels",
+        "ITJungles",
+        "GuideRealm",
+        "Payette Forward",
+        "ITJungles",
+        "Payette Forward",
+        "Content Trends",
+        "Common Themes",
+        "Popular Formats"
+      ]
+    },
+    {
+      "step": "crawl_platform:youtube:count_diagnostic",
+      "summary_match_found": true,
+      "expected_count": 5,
+      "all_heading_count": 10,
+      "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTa"
+    },
+    {
+      "step": "crawl_platform:youtube:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/youtube-analysis",
+      "card_count": 10,
+      "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nPhone line defense platform that stops spam floods\nCommunity Signals\nYouTube Analysis\nYouTube Content Analysis\n\nAnalyzed 5 channels with relevant content\n\nKey Findings\nThere's a vibrant world of engagement around YouTube videos focused on spam call blocking, with audience interest peaking on practical, how-to content. Channels like Payette Forward, boasting an impressive average of over 2 million views, thrive on delivering engaging, tip-oriented videos that resonate deeply with viewers. Meanwhile, ITJungles, with an average of 10,000 views, captures attention through device-specific tutorials. A notable pattern shows that how-to guides consistently draw views, confirming a strong audience preference for actionable steps. In fact, the theme of \"blocking spam calls\" alone commands high engagement, reflecting a pressing need for clear solutions amidst the complexity of device settings and security concerns. The opportunity is ripe for"
+    },
+    {
+      "step": "crawl_platform:youtube:card_0:container_check",
+      "community_name": "YouTube Content Analysis",
+      "container_text_length": 67,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:youtube:card_1:container_check",
+      "community_name": "Top Channels",
+      "container_text_length": 848,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:youtube:finished",
+      "communities_found": 10
+    },
+    {
+      "step": "crawl_platform:other:starting"
+    },
+    {
+      "step": "open_community_signals_page:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals"
+    },
+    {
+      "step": "crawl_platform:other:after_click",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/other-communities"
+    },
+    {
+      "step": "crawl_platform:other:surviving_headings_dump",
+      "surviving_heading_texts": [
+        "Other Communities",
+        "Micro & Home-Services Operator Communities",
+        "Privacy, Security & Anti-Spam Tech Communities",
+        "VoIP / Telecom Vendor and Expert Communities",
+        "Micro & home-services communities",
+        "Privacy/security communities",
+        "VoIP/telecom vendor communities"
+      ]
+    },
+    {
+      "step": "crawl_platform:other:count_diagnostic",
+      "summary_match_found": true,
+      "expected_count": 3,
+      "all_heading_count": 7,
+      "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTa"
+    },
+    {
+      "step": "crawl_platform:other:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/the-number-defense-service-that-keeps-a-small-business-phone-line-trusted-c6abab66/community-signals/other-communities",
+      "card_count": 4,
+      "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nPhone line defense platform that stops spam floods\nCommunity Signals\nPro welcome offer \u00b7 6d 1h left\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nPhone line defense platform that stops spam floods\nCommunity Signals\nOther Communities\nOther Communities\n\nAnalyzed 3 community segments across 4 types\n\nAnalysis Overview\n\nCommunity Segments\n\n3\n\nCommunity Types\n\n4\n\nPriority Communities\n\n3\n\nContent Strategies\n\n3\n\nPartnership Opportunities\n\n3\n\nCommunity Types\n\nMicro & Home-Services Operator Communities\n\nPrivacy, Security & Anti-Spam Tech Communities\n\nVoIP / Telecom Vendor and Expert Communities\n\nAnswering Service / Receptionist & Lead-Gen Communities\n\nCommunity Segments\nMicro & Home-Services Operator Communities\n\nOwner-operators with 1\u201315 employees in trades, junk removal, salons, and home assembly.\n\nPain Points\n\n\u2022 Spoofed scam calls\n\u2022 Compromised numbers\n\u2022 Spam labeling\n\u2022 Lost business opportunities\n\nInterests\n\n\u2022 Phone reputation\n\u2022 Spam blocking\n\u2022 Fraud prevention\n\u2022 Scam mitigation\nReddit\nFacebook\nYouTube\nPrivacy, Security & Anti-Spam Tech Communities\n\nTech-savvy consumers, IT admins,"
+    },
+    {
+      "step": "crawl_platform:other:card_0:container_check",
+      "community_name": "Other Communities",
+      "container_text_length": 63,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:other:card_1:container_check",
+      "community_name": "Micro & Home-Services Operator Communities",
+      "container_text_length": 342,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:other:page_sections_captured",
+      "has_content_strategies": true,
+      "has_partnership_opportunities": true,
+      "citations_count": 4
+    },
+    {
+      "step": "crawl_platform:other:finished",
+      "communities_found": 4
+    }
+  ]
+}

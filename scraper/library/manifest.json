@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-08-10",
+      "title": "Phone line defense platform that stops spam floods",
+      "path": "library/2026/2026-08-10.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-08-09",
       "title": "Publishing studio for short drama writers",
       "path": "library/2026/2026-08-09.json",
