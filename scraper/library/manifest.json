@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-08-12",
+      "title": "Client handbooks for AI agent deployments",
+      "path": "library/2026/2026-08-12.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-08-11",
       "title": "Book closing service for businesses with no finance team",
       "path": "library/2026/2026-08-11.json",
