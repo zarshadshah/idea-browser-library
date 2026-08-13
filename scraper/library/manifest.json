@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-08-13",
+      "title": "Fish tank moving and maintenance service",
+      "path": "library/2026/2026-08-13.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-08-12",
       "title": "Client handbooks for AI agent deployments",
       "path": "library/2026/2026-08-12.json",
