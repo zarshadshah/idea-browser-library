@@ -1,0 +1,817 @@
+[
+  {
+    "step": "login",
+    "note": "Found 2 element(s) matching 'Sign in with Password' text."
+  },
+  {
+    "step": "login",
+    "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+  },
+  {
+    "step": "login",
+    "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+  },
+  {
+    "step": "login",
+    "success": true
+  },
+  {
+    "step": "keyword_discovery",
+    "note": "Found 7 plausible keyword option(s) after filtering."
+  },
+  {
+    "step": "select_keyword:No collateral business loan",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"No collateral business loan\", exact=True).first\n    - locator resolved to <span class=\"text-xs md:text-sm truncate\">No collateral business loan</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 500.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n1,900 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "No collateral business loan",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n3,600 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Sba business loan",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n110,000 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Sba loan",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n9,900 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Sba 7a loan",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n1,900 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Business loan without collateral",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n3,600 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Chase business loan",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n14,800 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Micro loans",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_community_signals_deep:entered",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals/reddit-analysis"
+  },
+  {
+    "step": "crawl_platform:reddit:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Reddit Community Analysis",
+      "r/smallbusiness",
+      "r/loansforsmallbusiness",
+      "r/Entrepreneur",
+      "r/Businessloans",
+      "r/AusFinance"
+    ]
+  },
+  {
+    "step": "crawl_platform:reddit:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 5,
+    "all_heading_count": 6,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to disco"
+  },
+  {
+    "step": "crawl_platform:reddit:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals/reddit-analysis",
+    "card_count": 6,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nReddit Analysis\nReddit Community Analysis\n\nAnalyzed 5 relevant communities\n\nKey Findings\nIn the vibrant landscapes of Reddit's business communities, small business owners are revealing their struggles with traditional financing, underscoring a ripe opportunity for alternative lending solutions. For example, over in r/smallbusiness, with its robust 1.7 million members, discussions frequently spotlight the difficulties of securing funding without collateral, as shown by posts garnering up to 90 comments. Similarly, the r/loansforsmallbusiness, although smaller with 11,500 followers, thrives on active exchanges about non-collateral loans, such as a post debating various loan options, which attracted 170 comments. Meanwhile, r/Entrepreneur, home to 2 million members, buzzes with interest in innovative funding methods, mirroring the ongoing challenges in business financing globally. The"
+  },
+  {
+    "step": "crawl_platform:reddit:card_0:container_check",
+    "community_name": "Reddit Community Analysis",
+    "container_text_length": 58,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:reddit:card_1:container_check",
+    "community_name": "r/smallbusiness",
+    "container_text_length": 1751,
+    "container_text_starts_with_name": null
+  },
+  {
+    "step": "crawl_platform:reddit:finished",
+    "communities_found": 6
+  },
+  {
+    "step": "crawl_platform:facebook:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals"
+  },
+  {
+    "step": "crawl_platform:facebook:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals"
+  },
+  {
+    "step": "crawl_platform:facebook:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals/facebook-analysis"
+  },
+  {
+    "step": "crawl_platform:facebook:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Facebook Groups",
+      "Blue Collar Millionaire",
+      "Small Business Loan Support Program",
+      "Philippines Entrepreneurship",
+      "Free Legal Advice",
+      "Small Business Owners Club"
+    ]
+  },
+  {
+    "step": "crawl_platform:facebook:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 5,
+    "all_heading_count": 6,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to disco"
+  },
+  {
+    "step": "crawl_platform:facebook:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals/facebook-analysis",
+    "card_count": 6,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nFacebook Analysis\nFacebook Groups\n\n13 groups analyzed\n\nKey Findings\nThe bustling conversations in Facebook groups spotlight the pressing need for alternative financial solutions among small business owners. A prime example is the \"Blue Collar Millionaire\" group, with over 170 vibrant comments discussing the challenge of securing business loans without a personal guarantee. In the \"Small Business Loan Support Program,\" where 80+ participants actively comment, there's a clear appetite for no-collateral, swift loan options. Moreover, \"Philippines Entrepreneurship\" and \"Free Legal Advice,\" both with 20+ and 80+ comments, respectively, highlight the difficulties of accessing capital and managing unsecured credit risks. These discussions underline a market opportunity: developing a platform that seamlessly matches businesses with alternative financing, catering to the significant demand "
+  },
+  {
+    "step": "crawl_platform:facebook:card_0:container_check",
+    "community_name": "Facebook Groups",
+    "container_text_length": 35,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:facebook:card_1:container_check",
+    "community_name": "Blue Collar Millionaire",
+    "container_text_length": 659,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "community_visit_group_popup:facebook:1",
+    "captured_url": "https://www.facebook.com/groups/bluecollarmillionaire/posts/1386633086803829/"
+  },
+  {
+    "step": "community_visit_group_popup:facebook:2",
+    "captured_url": "https://www.facebook.com/groups/1369049737055519/posts/1886200015340486/"
+  },
+  {
+    "step": "community_visit_group_popup:facebook:3",
+    "captured_url": "https://www.facebook.com/groups/philippinesentrepreneurship/posts/3287205914781884/"
+  },
+  {
+    "step": "community_visit_group_popup:facebook:4",
+    "captured_url": "https://www.facebook.com/groups/freelegaladvice/posts/9404863472898440/"
+  },
+  {
+    "step": "community_visit_group_popup:facebook:5",
+    "captured_url": "https://www.facebook.com/groups/residentsofrichmond/posts/3689466351192767/"
+  },
+  {
+    "step": "crawl_platform:facebook:finished",
+    "communities_found": 6
+  },
+  {
+    "step": "crawl_platform:youtube:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals"
+  },
+  {
+    "step": "crawl_platform:youtube:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals"
+  },
+  {
+    "step": "crawl_platform:youtube:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals/youtube-analysis"
+  },
+  {
+    "step": "crawl_platform:youtube:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "YouTube Content Analysis",
+      "Top Channels",
+      "Business Credit Workshop",
+      "Noelle Randall",
+      "National Bank of Arizona",
+      "The Banking Podcast",
+      "Joe Camberato - National Business Capital",
+      "Merchant Maverick",
+      "Stephen Smith",
+      "Business Credit Workshop",
+      "Noelle Randall",
+      "ClearValue Tax",
+      "Stephen Smith",
+      "Joe Camberato",
+      "ClearValue Tax",
+      "The Ramsey Show Highlights",
+      "SBA Ray",
+      "Content Trends",
+      "Common Themes",
+      "Popular Formats"
+    ]
+  },
+  {
+    "step": "crawl_platform:youtube:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 15,
+    "all_heading_count": 20,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to disco"
+  },
+  {
+    "step": "crawl_platform:youtube:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals/youtube-analysis",
+    "card_count": 20,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nYouTube Analysis\nYouTube Content Analysis\n\nAnalyzed 15 channels with relevant content\n\nKey Findings\nEngagement with YouTube content on business loans is buzzing, particularly around practical advice and clear guidance, as evidenced by the impressive viewership of Noelle Randall's videos, averaging 350,000 views and sparking high engagement within her 60,000-strong subscriber base. Meanwhile, the Business Credit Workshop captivates its 100,000 subscribers with 55,000 average views per video, thanks to its actionable tips on business credit. Key trends spotlight 'how-to' guides and explainer videos, attracting views up to 100,000, revealing a preference for simple, jargon-free content. Channels like Joe Camberato and ClearValue Tax thrive with the former pulling in 110,000 views per video due to its detailed lender comparisons, a content category ripe for further exploration. A notab"
+  },
+  {
+    "step": "crawl_platform:youtube:card_0:container_check",
+    "community_name": "YouTube Content Analysis",
+    "container_text_length": 68,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:youtube:card_1:container_check",
+    "community_name": "Top Channels",
+    "container_text_length": 3431,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:youtube:finished",
+    "communities_found": 20
+  },
+  {
+    "step": "crawl_platform:other:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals"
+  },
+  {
+    "step": "crawl_platform:other:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals/other-communities"
+  },
+  {
+    "step": "crawl_platform:other:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Other Communities",
+      "Bank-Rejected, Asset-Light Small Business Owners",
+      "Alternative Lenders and Marketplaces",
+      "Financial Advisors and Educators",
+      "Policy and Consumer Protection Communities",
+      "Bank-Rejected Business Owners",
+      "Alternative Lenders",
+      "Advisors and Educators",
+      "Policy and Legal Communities"
+    ]
+  },
+  {
+    "step": "crawl_platform:other:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 4,
+    "all_heading_count": 9,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to disco"
+  },
+  {
+    "step": "crawl_platform:other:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/a-lender-matchmaker-for-profitable-businesses-that-banks-reject-986dae31/community-signals/other-communities",
+    "card_count": 5,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nLender matchmaker for profitable startups banks turn down\nCommunity Signals\nOther Communities\nOther Communities\n\nAnalyzed 4 community segments across 4 types\n\nAnalysis Overview\n\nCommunity Segments\n\n4\n\nCommunity Types\n\n4\n\nPriority Communities\n\n2\n\nContent Strategies\n\n4\n\nPartnership Opportunities\n\n3\n\nCommunity Types\n\nProfessional Associations\n\nOnline Forums\n\nLocal Meetups\n\nSocial Media Groups\n\nCommunity Segments\nBank-Rejected, Asset-Light Small Business Owners\n\nSmall business owners with strong cash flow but lacking collateral, typically under two years in operation.\n\nPain Points\n\n\u2022 Collateral requirements\n\u2022 Predatory lender fear\n\u2022 Low alternative funding awareness\n\nInterests\n\n\u2022 No-collateral loans\n\u2022 SBA microloans\n\u2022 Business credit\nReddit\nFacebook\nYouTube\nAlternative Lenders and Marketplaces\n\nFinancial institutions offering unsecured and revenue-based loans.\n\nPain Points\n\n\u2022 High lead competition\n\u2022 Channel conflict\n\nInterests\n\n\u2022 Lower acquisition costs\n\u2022 Incr"
+  },
+  {
+    "step": "crawl_platform:other:card_0:container_check",
+    "community_name": "Other Communities",
+    "container_text_length": 63,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:other:card_1:container_check",
+    "community_name": "Bank-Rejected, Asset-Light Small Business Owners",
+    "container_text_length": 350,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:other:page_sections_captured",
+    "has_content_strategies": true,
+    "has_partnership_opportunities": true,
+    "citations_count": 7
+  },
+  {
+    "step": "crawl_platform:other:finished",
+    "communities_found": 5
+  }
+]
