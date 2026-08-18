@@ -1,0 +1,2024 @@
+{
+  "date": "2026-08-18",
+  "scraped_at": "2026-08-18T07:28:28.032341+00:00",
+  "source_url": "https://www.ideabrowser.com/hub/ideas/today",
+  "summary": {
+    "raw_text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nAug 18, 2026\n|\nBrowse all\nIdea Actions\nRoast\nBuild with Google AI Studio\nProfit per cow tracker for robotic dairy farms\n\u23f0\nPerfect Timing\n\u26a1\nUnfair Advantage\n+17 More\n\nRobot dairy farms generate mountains of data. Milking robots log production, feed systems track intake, herd software records health, accounting captures cost. Each system exports its own files and keeps them to itself. Margin leaks hide across the herd, one cow at a time. Money bleeds out and the trail sits buried in four separate exports.\n\nBrevherd pulls each system's export files and cross-references them into one clean morning briefing. Yesterday's margin per cow, what changed overnight, one action before the next milking. Production, feed costs, health flags, and accounting land in a single view. Mid-size farms running 100 to 500 cows on robotic milking are the core market. GEA and the milking-brand dashboards report a farm its own hardware data and leave cross-system margin per cow open. Brevherd runs on data the farm generates today and closes that gap.\n\nBuild a file upload tool that reads exports from the top three robotic milking systems. Parse and normalize each format, then match it against feed costs and milk prices for margin per cow. Start with five pilot farms and walk each through its first upload by hand. Hardest part is that each brand exports a different file shape, so the parser reconciles formats built to stay separate. Iterate the briefing until farmers say it changed how they run the day. Each farm onboarded sharpens the model for the next.\n\nBrevherd charges $99 a month for daily margin briefings and trend tracking. Pro runs $199 and adds cost breakdowns, feed optimization flags, and benchmarking against anonymized peer farms. Setup is a one-time $500 to wire a farm's exports into the pipeline. Dairy co-ops and farmer Facebook groups venting about disconnected dashboards seed the first customers. Case studies showing real margin recovered do the selling, since a farmer trusts another farmer's number. Each farm sharpens the benchmark that a farmer would lose by leaving.\n\n*Analysis, scores, and revenue estimates are educational and based on assumptions. Results vary by execution and market conditions.\n\nKeyword:\nFarming ai\n4.4K\nVolume\n+2488%\nGrowth\n2023\n2024\n2025\n2026\n0\n2k\n4k\n6k\n8k\nOpportunity\n9\nExceptional\nProblem\n8\nHigh Pain\nFeasibility\n6\nChallenging\nWhy Now\n9\nPerfect Timing\nBusiness Fit\n\ud83d\udcb0\nRevenue Potential\n$1M-$10M ARR potential with specialized farm analytics.\n$$$\n\ud83d\udee0\ufe0f\nExecution Difficulty\nComplex integration with physical and regulatory components, 1-2 month MVP timeline.\n8/10\n\ud83d\ude80\nGo-To-Market\nStrong traction with clear signals from engaged farming communities and social platforms.\n8/10\n\ud83e\udde0\nRight for You?\nGreat for agtech founders with IoT and data expertise\nFind Out\nRESEARCH TOOL\nGet a Report Exactly Like This for Your Idea\n\nHave your own business idea? Our AI Research Agent conducts a comprehensive 40-step analysis to validate and research any idea you give it.\n\nResearch My Idea\nOffer\n1\nLEAD MAGNET\nFarm Profit Insight Guide (Free)\n\nA downloadable guide explaining how to optimize dairy farm profits using existing data exports.\n\n2\nFRONTEND\nFarm Profit Tracker Lite ($99/month)\n\nBasic version of the profit tracker providing daily margin insights for smaller operations.\n\n3\nCORE\nFarm Profit Tracker Pro ($199/month)\n\nComprehensive daily insights and analytics tailored for farms managing 100-500 cows.\n\nView full value ladder\n\u2192\nWhy Now?\n\nWith the robotic milking market set to grow to $6 billion by 2032, AI-driven profit analysis makes now the perfect time to capitalize on farm data integration, delivering actionable insights without additional hardware.\n\nSee why this opportunity matters now\nProof & Signals\n\nThe AI profit analyst for robot dairy farms has validated demand signals. The idea addresses crucial pain points, leverages timing factors like labor shortages, and offers a unique solution to existing market gaps. While the competitive landscape includes well-established players, the focus on non-intrusive data insights without new hardware provides a strong differentiation. A pilot success and growing interest in AI in agriculture further reinforce community engagement and adoption potential.\n\nExplore proof & signals\nThe Market Gap\n\nRobot dairy farms lack seamless data integration, creating a significant opportunity for an AI-driven profit analyst to provide actionable insights without additional hardware.\n\nUnderstand the market opportunity\nExecution Plan\n\nLaunch an AI-driven platform delivering daily profit insights for dairy farms, eliminating manual data hassles. Integrate with existing systems to automate analysis, then leverage industry partnerships for rapid growth. Ready to expand into new markets and analytics offerings\u2014how fast can we reshape farm profitability?\n\nView detailed execution strategy\nFramework Fit\n\nSee how this idea fits into popular frameworks\n\nThe Value Equation\n8Excellent\nView Analysis\nMarket Matrix\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nView Analysis\nThe A.C.P. Framework\nAudience\n6/10\nCommunity\n8/10\nProduct\n6/10\nView Analysis\nThe Value Ladder\nBait\nFrontend\nCore Offer\nBackend\nContinuity\nView Analysis\nCategorization\n\nType\n\nSaas\n\nMarket\n\nB2B\n\nTarget\n\nDairy Farms\n\nMain Competitor\n\nGEA Farm Technologies\n\nTrend Analysis\n\nThe market for robotic milking systems and related AI analytics is growing rapidly due to increasing automation demands and labor efficiency needs.\n\nCommunity Signals\nReddit\n6 subreddits found\nFacebook\n6 groups found\nYouTube\n14 channels \u00b7 14 themes\nOther\n3 segments \u00b7 3 priorities\nView detailed breakdown\nTop Keywords\nFastest Growing\nFarming Ai\nLOW competition\n3.6K\nAi Farming\nLOW competition\n4.4K\nAi Farm\nLOW competition\n4.4K\nHighest Volume\nArtificial Intelligence In Agriculture\nLOW competition\n12.1K\nAi For Agriculture\nLOW competition\n12.1K\nAi Farming\nLOW competition\n4.4K\nMost Relevant\nArtificial Intelligence In Agriculture\nLOW competition\n12.1K\nAi For Agriculture\nLOW competition\n12.1K\nAi Farming\nLOW competition\n4.4K\nView full keyword analysis\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\n\nImportant: Revenue estimates, scores, and market data are illustrative based on research and assumptions. Results vary by execution, timing, and market conditions. Not investment or business advice.\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+    "title": "Profit per cow tracker for robotic dairy farms",
+    "opportunity": {
+      "score": 9,
+      "label": "Exceptional"
+    },
+    "problem": {
+      "score": 8,
+      "label": "High Pain"
+    },
+    "feasibility": {
+      "score": 6,
+      "label": "Challenging"
+    },
+    "why_now": {
+      "score": 9,
+      "label": "Perfect Timing"
+    },
+    "type": "Saas",
+    "market": "B2B",
+    "target": "Dairy Farms",
+    "main_competitor": "GEA Farm Technologies",
+    "trend_analysis": "The market for robotic milking systems and related AI analytics is growing rapidly due to increasing automation demands and labor efficiency needs.",
+    "community_signals_summary": {
+      "reddit": "6 subreddits found",
+      "facebook": "6 groups found",
+      "youtube": "14 channels \u00b7 14 themes",
+      "other": "3 segments \u00b7 3 priorities"
+    }
+  },
+  "keyword_analysis": [
+    {
+      "keyword": "Farming ai",
+      "stats": {
+        "volume": "4.4K",
+        "growth": "+2488%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "170 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "210 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "6,600 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Ai farming",
+      "stats": {
+        "volume": "3.6K",
+        "growth": "+510%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "590 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "720 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "880 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "3,600 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Ai for agriculture",
+      "stats": {
+        "volume": "9.9K",
+        "growth": "+83%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "8,100 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "8,100 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "8,100 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "14,800 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "14,800 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "14,800 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "9,900 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Automatic milking systems",
+      "stats": {
+        "volume": "720",
+        "growth": "+22%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "720 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "880 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "720 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "880 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "720 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "720 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "880 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "590 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "720 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "720 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "880 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "880 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "880 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "720 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "880 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "1,900 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Cow milking robot",
+      "stats": {
+        "volume": "480",
+        "growth": "+23%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "480 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "480 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "480 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "390 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "590 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "590 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "590 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "480 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "590 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "390 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "720 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "590 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Lely astronaut",
+      "stats": {
+        "volume": "1.6K",
+        "growth": "+23%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "1,600 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Automatic milker for cows",
+      "stats": {
+        "volume": "480",
+        "growth": "+23%"
+      },
+      "chart_history": [
+        {
+          "label": "Aug 2022",
+          "value": "480 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "480 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "480 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "390 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "590 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "590 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "590 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "480 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "590 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "390 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "720 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "590 searches"
+        }
+      ]
+    }
+  ],
+  "subpages": {
+    "View Analysis #1": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nValue Equation\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nValue Equation Analysis\n\nOverall Rating\n\n8\n/10\n\nAnalyzing the value proposition using Alex Hormozi's Value Equation framework.\n\n\ud83c\udfaf\nDream Outcome\n8/10\n\nFarm owners want real-time, actionable insights into daily profits to optimize operations without adding hardware. They wish to identify profit changes quickly, understand the causes, and take corrective actions efficiently, ultimately leading to increased profitability.\n\n\ud83c\udfb2\nPerceived Likelihood\n6/10\n\nThe solution's viability is supported by a successful pilot in a 260-cow Michigan dairy farm, demonstrating actionable insights from existing data exports without requiring additional hardware. The rising trend in AI application in agriculture further supports the belief in effective implementation.\n\n\u23f1\ufe0f\nTime Delay\n9/10\n\nThe solution offers daily insights within 24 hours of data collection, significantly reducing traditional analysis delays, which can span multiple days or weeks depending on manual integration processes.\n\n\ud83d\udcaa\nEffort & Sacrifice\n5/10\n\nThe primary effort involves initial software setup. Users benefit from automated briefings without manual data integration but may need to pay subscription fees and invest time in understanding the insights provided.\n\n\ud83d\udca1\nImprovement Suggestions\n\nEnhancing perceived likelihood through thorough case studies, testimonials, and partnerships with strategic industry players could improve uptake. Simplifying setup processes and offering more personalized insights might reduce perceived effort and drive higher user engagement.\n\nUnderstanding the Value Equation\n\nAlex Hormozi's Value Equation is a powerful framework for evaluating business ideas and offers. It helps identify what makes an offer compelling and how to improve it.\n\n(Dream Outcome \u00d7 Perceived Likelihood)\n(Time Delay \u00d7 Effort)\nKey Components\nDream Outcome\n\nThe deeply desired end result that transforms the customer's situation.\n\nPerceived Likelihood\n\nCustomer confidence in achieving the outcome, backed by proof and guarantees.\n\nTime Delay\n\nSpeed to results - faster outcomes increase perceived value.\n\nEffort & Sacrifice\n\nResources and energy required from the customer.\n\nYouTube\nWebsite\n$100M Offers Book\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/value-equation"
+    },
+    "View Analysis #2": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nValue Matrix\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nMarket Matrix Analysis\n\nUniqueness\n\n8/10\n\nValue\n\n9/10\n\nThis idea's approach to leveraging existing data with AI for profit analysis in dairy farms is highly unique and technologically advanced, addressing a clear need for integration and optimization without requiring additional hardware. Its potential impact is significant due to the ability to offer actionable insights, leading to improved profitability and operational efficiency. The demonstrated success on a pilot farm, rising industry trends, and the market timing suggest that it has the potential to become a 'Category King'.\n\nPosition Analysis\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nCategory King\n\nThis idea has high uniqueness and high value potential, positioning it for category leadership.\n\nUnderstanding the Quadrants\nCategory King\n\nHigh uniqueness + High value. These are breakthrough products that create new categories and capture significant value. Think iPhone, Tesla, or Airbnb.\n\nTech Novelty\n\nHigh uniqueness + Low value. Interesting technology that doesn't solve a valuable problem. Often \"solutions looking for a problem.\"\n\nCommodity Play\n\nLow uniqueness + High value. Established markets with proven demand but intense competition. Success requires operational excellence.\n\nLow Impact\n\nLow uniqueness + Low value. These ideas may need significant refinement to find a viable market position. Consider pivoting to increase either uniqueness or value proposition.\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/value-matrix"
+    },
+    "View Analysis #3": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nAcp\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nACP Framework Analysis\n\nAnalyzing your idea through the Audience-Community-Product framework to ensure product-market fit and community engagement.\n\nAUDIENCE ANALYSIS\n\nTarget Definition\n\nDemographics\n\nOwner-operators of 100- to 500-cow dairy farms using robotic milking systems.\n\nPsychographics\n\nTech-savvy, seeking efficiency and data-driven decisions, frustrated with manual data management.\n\nPlatforms\n\nLinkedIn, farming forums, dairy producer associations.\n\nNeeds Analysis\n\nUnmet Needs\n\nComprehensive, cross-system daily profit analysis without new hardware.\n\nContent Gaps\n\nEducational content explaining the benefits and implementation of AI in dairy farming.\n\nDifferentiation\n\nFocus on profit insights from existing data, offering daily actionable items.\n\nContent Strategy\n\nSecret Sauce\n\nLeverage real-life case studies, farmer testimonials.\n\nKey Topics\n\nAI in dairy farming, margin analysis, efficiency optimization.\n\nContent Formats\n\nCase studies, explainer videos, webinars.\n\nCOMMUNITY ANALYSIS\n\nPlatform Strategy\n\nPrimary Platform\n\nLinkedIn groups and forums.\n\nPlatform Rationale\n\nThese platforms harbor engaged, knowledge-seeking farmer communities.\n\nSecondary Platforms\n\nReddit, Facebook groups, AI in agriculture forums.\n\nTrust Building\n\nUGC Strategy\n\nEncourage farmers to share their success stories and feedback.\n\nModeration Approach\n\nFocus on constructive feedback and education-led moderation.\n\nTransparency\n\nOpenly discuss file format variability and parsing challenges.\n\nEngagement Plan\n\nCommunity Rituals\n\nMonthly webinars, weekly tips on margin improvement.\n\nContent Calendar\n\nWeekly insights, monthly deep dives into AI applications in farming.\n\nInteraction Methods\n\nLive Q&A sessions, discussion threads, case study highlights.\n\nPRODUCT ANALYSIS\n\nCore Offering\n\nDescription\n\nDaily AI-driven profit analysis for dairy farms using robotic systems.\n\nKey Features\n\nDaily briefing, margin per cow analysis, cause identification.\n\nValue Proposition\n\nActionable insights into daily profit changes, without additional hardware.\n\nDevelopment Roadmap\n\nMVP\n\nFocus on a single robotic ecosystem and export format.\n\nFuture Iterations\n\nExpand to additional formats and systems based on feedback.\n\nCommunity Integration\n\nDevelop features based on community input and needs.\n\nEngagement Mechanics\n\nNetwork Effects\n\nAggregating data across farms for benchmarking and insights.\n\nSticky Features\n\nDaily margin tracking, cross-system data integration.\n\nUsage Frequency\n\nDaily briefings with insights and action suggestions.\n\nEXECUTION PLAN\n\n90-Day Plan\n\nLaunch in a single farm pilot, refine daily briefs based on feedback, establish partnerships with industry advisors.\n\nResource Needs\n\nData scientists, agtech advisors, software developers for parsing and analysis.\n\nSuccess Metrics\n\nIncrease in profit margins for pilot farms, engagement rates in community platforms.\n\nUnderstanding ACP Framework\n\nThe ACP Framework helps validate and refine business ideas by focusing on three key pillars: Audience, Community, and Product. This holistic approach ensures your idea has strong product-market fit and community engagement potential.\n\nAudience\n\nDeep understanding of target users, their needs, and how to reach them effectively through content and positioning.\n\nCommunity\n\nBuilding and nurturing a engaged user base through strategic platform choices and meaningful interactions.\n\nProduct\n\nThe core offering and its development roadmap. Focus on features that solve real problems and create lasting value for users.\n\nKey Benefits\n\nValidates product-market fit early\n\nEnsures sustainable user acquisition\n\nCreates network effects through community\n\nGuides content and engagement strategy\n\nGreg Isenberg\nStartup Empire\nLate Checkout\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/acp"
+    },
+    "View Analysis #4": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nValue Ladder\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nValue Ladder Strategy\n\nA strategic progression of offers that build trust and maximize customer lifetime value.\n\nLEAD MAGNET\n\nFarm Profit Insight Guide\nFree\n\nA downloadable guide explaining how to optimize dairy farm profits using existing data exports.\n\nValue Provided\n\nDemonstrates potential profit increases and introduces the concept of actionable daily insights.\n\nGoal\n\nCollect leads and build an email list.\n\nFRONTEND OFFER\n\nFarm Profit Tracker Lite\n$99/month\n\nBasic version of the profit tracker providing daily margin insights for smaller operations.\n\nValue Provided\n\nEssential daily insights into profit per cow with simplified reports.\n\nGoal\n\nAcquire initial paying users and validate product-market fit.\n\nCORE OFFER\n\nFarm Profit Tracker Pro\n$199/month\n\nComprehensive daily insights and analytics tailored for farms managing 100-500 cows.\n\nValue Provided\n\nIn-depth daily profit analysis, change causes, and recommended actions.\n\nGoal\n\nEstablish recurring revenue with core product offering.\n\nCONTINUITY PROGRAM\n\nAdvanced Analytics Add-On\n$49/month\n\nOptional add-on offering deeper analytics into feed efficiency and herd health predictions.\n\nValue Provided\n\nEnhanced data insights that optimize overall farm operations and profitability.\n\nGoal\n\nIncrease customer lifetime value with ongoing services.\n\nBACKEND OFFER\n\nEnterprise Integration Package\n$10,000/year\n\nCustom integrations and branded dashboards for larger, more complex dairy operations.\n\nValue Provided\n\nTailored solutions providing advanced, seamless integration of multiple data systems.\n\nGoal\n\nAttract high-value clients with premium services.\n\nUnderstanding Value Ladder\n\nThe Value Ladder is a business framework that helps you structure your offers in ascending levels of value and price. Start with something irresistible and low-barrier, then build trust and value at each step.\n\nWhy It Works\n\nBuilds trust incrementally\n\nMaximizes customer lifetime value\n\nHelps segment your audience\n\nCreates predictable revenue\n\nKey Stages\n\nLead Magnet (Bait)\n\nFree value to build trust and capture leads\n\nFrontend Offer\n\nLow-ticket product to convert leads to buyers\n\nCore Offer\n\nMain product/service delivering full solution\n\nContinuity Program\n\nOngoing value through memberships or add-ons\n\nBackend Offer\n\nPremium, high-ticket solutions for best customers\n\nRussell Brunson\nDotCom Secrets\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/value-ladder"
+    },
+    "View detailed breakdown": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nCommunity Signals\n\nAnalysis of community engagement and interest across different platforms\n\nSummary of Community Analysis\n\nInterest in AI-driven solutions for agriculture is rapidly gaining traction across various platforms, highlighting a strong community focus on efficiency and innovation. Users frequently discuss the integration of technology in farming operations, pinpointing the desire for streamlined processes and improved resource management. The consistent demand for smarter farm management tools indicates a significant opportunity to develop products tailored to these needs, such as AI-enhanced farm profitability trackers. Meanwhile, industry trends show a burgeoning interest in sustainable practices and automation, pointing to a receptive market for tech innovations.\n\nOn Reddit, subreddits like r/dairyfarming and r/farming are central to conversations about AI integration in agriculture. With 14,000 members in r/dairyfarming and over 104,000 in r/farming, discussions often focus on robotic milking systems and operational cost savings, generating significant engagement with over 30 comments per post. The tech-savvy members of r/artificial drive exploration into AI applications, reinforcing the potential market for cutting-edge solutions. Addressing these pain points offers a lucrative prospect for companies looking to introduce innovative agriculture technologies.\n\nShow More\nReddit\nTotal Communities Found\n16\nRelevant Communities\n6\nView Analysis\nFacebook\nGroups Found\n11\nRelevant Groups\n6\nView Analysis\nYouTube\nChannels Analyzed\n14\nContent Themes\n14\nTotal Formats\n16\nView Analysis\nOther Communities\nCommunity Segments\n3\nCommunity Types\n5\nPriority Communities\n3\nView Analysis\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals"
+    },
+    "Understand the market opportunity": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nMarket Gap\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nMarket Gap\n\nOverall Rating\n\n9\n/10\n\nRobot dairy farms lack seamless data integration, creating a significant opportunity for an AI-driven profit analyst to provide actionable insights without additional hardware.\n\n\ud83d\udeab\nUnderserved Customer Segments\n8\n/10\nMid-sized Robot Dairies\nTargeting owner-operators of 100-500 cow farms that lack dedicated analysts for integrated profit analysis. Current solutions offer limited cross-system insights, creating an opportunity to serve these tech-savvy yet under-resourced farms. [1]\n\ud83e\udde9\nFeature Gaps\n9\n/10\nCross-System Data Integration\nExisting systems remain siloed, lacking seamless cross-data integration. Current solutions optimize for individual ecosystems, leaving a gap for a service that offers integrated margin analyses and actionable insights across all data sources. [1][2]\n\ud83c\udf0d\nGeographic Opportunities\n7\n/10\nUnderpenetrated Regions\nAreas outside major OEM strongholds, where dealer support is thinner and software integration less mature. These regions offer growth potential for non-OEM vendors. [1]\n\ud83d\udd17\nIntegration Opportunities\n8\n/10\nLeverage Existing Data Exports\nThe service can read files already exported by farm systems, providing daily insights without the need for costly custom integrations or additional hardware. [3]\n\ud83d\udca1\nDifferentiation Levers\n9\n/10\nNon-Invasive Data Insights\nOffers unique daily margin-per-cow analyses and actionable insights without requiring new sensors or hardware, distinguishing it from OEM and other integrated solutions. [3]\nCitations & Sources\n1 - https://www.thebullvine.com/dairy-technology-2026-robotics-sensors-ai-and-real-world-roi/\n2 - https://ers.usda.gov/sites/default/files/_laserfiche/publications/113706/ERR-356-summary.pdf?v=12546\n3 - https://www.persistencemarketresearch.com/market-research/milking-robots-market.asp\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/market-gap"
+    },
+    "View detailed execution strategy": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nExecution Plan\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nExecution Plan\n\nType\n\nB2B\n\nTimeline\n\n2-4 weeks\n\nBudget\n\n$0-10K\n\nPART 1: BUSINESS CLASSIFICATION\n\nBusiness Model & Market\n\nBusiness Type\n\nB2B\n\nMarket Position\n\nFragmented industry with no dominant cross-system analysts. OEMs and herd management platforms focus on ecosystem-specific solutions, but no strong independent interpreters.\n\nTarget Audience\n\nBuyer Personas\n\nOwner-operators of 100-500 cow dairy farms\n\nTech-savvy dairy farmers\n\nKey Pain Points\n\nManual data integration is time-consuming\n\nMissed profit insights due to lack of automated analysis\n\nPART 2: PHASE 1 ROADMAP (0-6 MONTHS)\n\nCore Strategy\n\nMVP Approach\n\nDevelop an AI-driven platform reading existing exports to provide farm owners daily profit insights with actionable suggestions.\n\nInitial Offer\n\nModel\n\nSubscription\n\nPrice\n\n$99-$299/month\n\nValue Proposition\n\nDaily profit analysis without hardware requirements\n\nFulfillment\n\nAutomated briefings sent daily\n\nLead Generation Strategy\n\nLead Magnet\n\nType & Format\n\nDownloadable Guide - PDF\n\nExpected Conversion\n\n10%\n\nValue Demonstration\n\nShows potential profit increase opportunities\n\nAcquisition Channels\n\nIndustry partnerships\n\nQuarterly webinars\n\nDirect engagement with influencers\n\nContent Format\n\nWebinars, whitepapers\n\nTarget Metrics\n\n50 leads/month\n\nContent marketing\n\nRegular blog posts\n\nSEO search demand\n\nContent Format\n\nEducational articles\n\nTarget Metrics\n\nSEO ranking\n\nPART 3: PHASE 2 ROADMAP (6-18 MONTHS)\n\nGrowth Strategy\n\nTraction Milestones\n\nReach 200 paying customers and break even on acquisition costs\n\nExpansion Plan\n\nStrategic Focus\n\nIncorporate additional analytics such as feed efficiency\n\nDevelopment Timeline\n\n4-6 months\n\nPricing Evolution\n\nMaintain tiered plans, introduce premium analytics\n\nGo-to-Market Approach\n\nLeverage existing customer base and testimonials\n\nPART 4: IMPLEMENTATION PLAN\n\nStep-by-Step Execution\n\nConduct market research and refine MVP\n\nSet up industry partnerships and referral programs\n\nDevelop MVP using AI tools, focusing on scalability of data parsing\n\nLaunch lead generation strategies like webinars and content marketing\n\nSuccess Metrics\n\ncac\n\n$100-150\n\nchurn rate\n\n<5%\n\npilot conversion\n\n25%\n\nloan approval time\n\n-\n\nResource Requirements\n\nBudget Range\n\n$0-10K\n\nTeam Structure\n\nSolo founder with AI tools\n\nTimeline\n\n2-4 weeks\n\nRisk Assessment\n\nVaried file formats\n\nDevelop adaptable parsing algorithms\n\nDependence on partnerships\n\nDiversify acquisition channels\n\nOEMs developing competitive features\n\nEstablish strong brand early\n\nNext Action Steps\n\nRefine MVP based on initial user feedback\n\nOrganize a pilot study in a target farm and analyze data\n\nCreate marketing material outlining ROI for potential customers\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/execution-plan"
+    },
+    "Explore proof & signals": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nProof & Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nProof & Signals\n\nOverall Rating\n\n8\n/10\n\nThe AI profit analyst for robot dairy farms has validated demand signals. The idea addresses crucial pain points, leverages timing factors like labor shortages, and offers a unique solution to existing market gaps. While the competitive landscape includes well-established players, the focus on non-intrusive data insights without new hardware provides a strong differentiation. A pilot success and growing interest in AI in agriculture further reinforce community engagement and adoption potential.\n\n\ud83d\udca2\nPain Points\n\ud83d\udd70\ufe0f\nUrgency Drivers\n\u274c\nMarket Gaps\n\ud83d\udde3\ufe0f\nSocial Proof\n\ud83d\udca2\nEmotional Frustration Signals\n8\n/10\nManual Data Integration Frustration\nFarm owners struggle with merging files manually to analyze margins, leading to delays and inefficiencies. [4]\nMissed Profit Insights\nDaily profit fluctuations go unnoticed due to lack of automated analysis, impacting earnings. [4]\n\ud83d\udd70\ufe0f\nTime-Sensitive Needs\n9\n/10\nLabor Shortages\nAutomation adoption is driven by labor scarcity, creating immediate demand for efficiency tools. [3]\nGrowing Precision Dairy Demand\nPrecision technologies linked to higher net returns are gaining traction, urging quicker adoption. [4]\n\u274c\nSystemic Barriers\n7\n/10\nFragmented Data Systems\nFarm systems remain siloed, without seamless cross-data integration, offering a gap for new solutions. [4]\nOEM Platform Limitations\nVendors typically optimize for their environment, not cross-system interpretations, leaving room for independent solutions. [5]\n\ud83d\udde3\ufe0f\nCommunity Demand & Engagement\n8\n/10\nAI in Agriculture Trend\nGoogle Trends show a rise in 'AI in agriculture,' reflecting growing curiosity and early adopter interest. [4]\nSuccessful Pilot Demonstration\nA Michigan farm demonstrated cost savings and productivity via this analytics approach, proving its value. [4]\nCitations & Sources\n1 - https://www.thebullvine.com/dairy-technology-2026-robotics-sensors-ai-and-real-world-roi/\n2 - https://www.persistencemarketresearch.com/market-research/milking-robots-market.asp\n3 - https://ers.usda.gov/sites/default/files/_laserfiche/publications/113706/ERR-356-summary.pdf?v=12546\n4 - https://www.thebullvine.com/management/robotic-milking/the-robot-truth-86-satisfaction-28-profitability-whos-really-winning/\n5 - https://robottoday.com/article/agricultural-robotics-dairy-and-livestock-automation-where-robots-already-lead\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/proof-signals"
+    },
+    "See why this opportunity matters now": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nWhy Now\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nWhy Now\n\nOverall Rating\n\n9\n/10\n\nWith the robotic milking market set to grow to $6 billion by 2032, AI-driven profit analysis makes now the perfect time to capitalize on farm data integration, delivering actionable insights without additional hardware.\n\n\ud83d\udcc8\nMarket Timing Factors\n9\n/10\nGrowth in Milking Robots\nThe milking robots market is projected to grow from $2.8 billion in 2025 to $6 billion by 2032, driven by automation needs and labor efficiency demands. [1][2]\n\ud83e\udde0\nTechnological Enablers\n9\n/10\nAI and Cloud Advancement\nAdvances in AI diagnostics and cloud systems facilitate data integration and enable real-time analytics without requiring new hardware investments. [5][13]\n\ud83c\udfdb\ufe0f\nRegulatory & Social Catalysts\n8\n/10\nPolicy Support for Mechanization\nRegions like North America and Europe are favorable due to policies supporting mechanization amidst labor shortages, enhancing the demand for automated solutions. [2][13]\n\ud83d\udd12\nRisk Reduction Factors\n8\n/10\nProven ROI Logic\nUSDA research shows farms using precision technologies have significantly higher net returns, validating the economic benefit of such analytics. [3][4]\n\ud83d\ude80\nCompetitive Window\n9\n/10\nMarket Gaps in Cross-System Analysis\nMost platform vendors focus on ecosystem optimization, leaving a gap for independent cross-system profit analysis. [18][19]\n\ud83d\udcca\nSupporting Data Points\n9\n/10\n11.4% CAGR in Robotic Milking\nThe milking automation market shows a robust growth rate, creating ample opportunities for supportive analytic services. [13]\n\u26a0\ufe0f\nTiming Risks\n6\n/10\nOEM Bundling Threat\nPotential for OEMs to integrate similar insights into their platforms, though this risk underscores the importance of early entry. [18]\n\u23f0\nWhy Wait = Why Fail\n10\n/10\nFirst-Mover Branding Advantage\nBeing the first to offer a cohesive AI-driven daily profit insight solution can establish category leadership. [5][13]\nCitations & Sources\n1 - https://www.marknteladvisors.com/research-library/milking-robots-market.html\n2 - https://www.persistencemarketresearch.com/market-research/milking-robots-market.asp\n3 - https://ers.usda.gov/sites/default/files/_laserfiche/publications/113706/ERR-356-summary.pdf?v=12546\n4 - https://www.ers.usda.gov/publications/113704\n5 - https://www.nextmsc.com/news/milking-robot-market-expands-as-smart-herd-automation-advances\n6 - https://www.skyquestt.com/report/milking-robots-market\n13 - https://www.marketsandmarkets.com/Market-Reports/milking-automation-market-265039621.html\n18 - https://www.ers.usda.gov/publications/113704\n19 - https://www.grandresearchstore.com/machines/global-milking-robot-for-cows-market\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/why-now"
+    },
+    "View full keyword analysis": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nKeywords\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nProfit per cow tracker for robotic dairy farms\nKeywords\nKeyword Analysis\n\nAnalysis of search trends and keyword opportunities related to this idea.\n\nKeyword:\nAi farming\n1 Year\n3.6K\nVolume\n+0%\nGrowth\n$3.90\nCPC\nLOW\nCompetition\n2026\n0\n2k\n3k\n5k\n6k\nKeyword Summary\n\nThe selected keywords illustrate a robust interest in AI applications within agriculture, particularly in automated milking systems. They validate the business opportunity around integrating AI insights for farm profit tracking, showing clear commercial intent from the potential target audience, which is primarily tech-savvy dairy farm operators.\n\nFastest Growing\nfarming ai\n\nVolume: 4,400\n\nGrowth: +2488%\n\nai farming\n\nVolume: 3,600\n\nGrowth: +510%\n\nai farm\n\nVolume: 3,600\n\nGrowth: +510%\n\nartificial intelligence in agriculture\n\nVolume: 9,900\n\nGrowth: +83%\n\nai for agriculture\n\nVolume: 9,900\n\nGrowth: +83%\n\nHighest Volume\nartificial intelligence in agriculture\n\nVolume: 9,900\n\nGrowth: +83%\n\nai for agriculture\n\nVolume: 9,900\n\nGrowth: +83%\n\nfarming ai\n\nVolume: 4,400\n\nGrowth: +2488%\n\nai farming\n\nVolume: 3,600\n\nGrowth: +510%\n\nai farm\n\nVolume: 3,600\n\nGrowth: +510%\n\nMost Relevant\nfarming ai\n\nVolume: 4,400\n\nGrowth: +2488%\n\nartificial intelligence in agriculture\n\nVolume: 9,900\n\nGrowth: +83%\n\nai for agriculture\n\nVolume: 9,900\n\nGrowth: +83%\n\nai farming\n\nVolume: 3,600\n\nGrowth: +510%\n\nlely astronaut\n\nVolume: 1,600\n\nGrowth: +23%\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n3k",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/keywords"
+    },
+    "View full value ladder": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nValue Ladder\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nValue Ladder Strategy\n\nA strategic progression of offers that build trust and maximize customer lifetime value.\n\nLEAD MAGNET\n\nFarm Profit Insight Guide\nFree\n\nA downloadable guide explaining how to optimize dairy farm profits using existing data exports.\n\nValue Provided\n\nDemonstrates potential profit increases and introduces the concept of actionable daily insights.\n\nGoal\n\nCollect leads and build an email list.\n\nFRONTEND OFFER\n\nFarm Profit Tracker Lite\n$99/month\n\nBasic version of the profit tracker providing daily margin insights for smaller operations.\n\nValue Provided\n\nEssential daily insights into profit per cow with simplified reports.\n\nGoal\n\nAcquire initial paying users and validate product-market fit.\n\nCORE OFFER\n\nFarm Profit Tracker Pro\n$199/month\n\nComprehensive daily insights and analytics tailored for farms managing 100-500 cows.\n\nValue Provided\n\nIn-depth daily profit analysis, change causes, and recommended actions.\n\nGoal\n\nEstablish recurring revenue with core product offering.\n\nCONTINUITY PROGRAM\n\nAdvanced Analytics Add-On\n$49/month\n\nOptional add-on offering deeper analytics into feed efficiency and herd health predictions.\n\nValue Provided\n\nEnhanced data insights that optimize overall farm operations and profitability.\n\nGoal\n\nIncrease customer lifetime value with ongoing services.\n\nBACKEND OFFER\n\nEnterprise Integration Package\n$10,000/year\n\nCustom integrations and branded dashboards for larger, more complex dairy operations.\n\nValue Provided\n\nTailored solutions providing advanced, seamless integration of multiple data systems.\n\nGoal\n\nAttract high-value clients with premium services.\n\nUnderstanding Value Ladder\n\nThe Value Ladder is a business framework that helps you structure your offers in ascending levels of value and price. Start with something irresistible and low-barrier, then build trust and value at each step.\n\nWhy It Works\n\nBuilds trust incrementally\n\nMaximizes customer lifetime value\n\nHelps segment your audience\n\nCreates predictable revenue\n\nKey Stages\n\nLead Magnet (Bait)\n\nFree value to build trust and capture leads\n\nFrontend Offer\n\nLow-ticket product to convert leads to buyers\n\nCore Offer\n\nMain product/service delivering full solution\n\nContinuity Program\n\nOngoing value through memberships or add-ons\n\nBackend Offer\n\nPremium, high-ticket solutions for best customers\n\nRussell Brunson\nDotCom Secrets\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/value-ladder"
+    },
+    "Execution Difficulty": {
+      "text": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nAug 18, 2026\n|\nBrowse all\nIdea Actions\nRoast\nBuild with Google AI Studio\nProfit per cow tracker for robotic dairy farms\n\u23f0\nPerfect Timing\n\u26a1\nUnfair Advantage\n+17 More\n\nRobot dairy farms generate mountains of data. Milking robots log production, feed systems track intake, herd software records health, accounting captures cost. Each system exports its own files and keeps them to itself. Margin leaks hide across the herd, one cow at a time. Money bleeds out and the trail sits buried in four separate exports.\n\nBrevherd pulls each system's export files and cross-references them into one clean morning briefing. Yesterday's margin per cow, what changed overnight, one action before the next milking. Production, feed costs, health flags, and accounting land in a single view. Mid-size farms running 100 to 500 cows on robotic milking are the core market. GEA and the milking-brand dashboards report a farm its own hardware data and leave cross-system margin per cow open. Brevherd runs on data the farm generates today and closes that gap.\n\nBuild a file upload tool that reads exports from the top three robotic milking systems. Parse and normalize each format, then match it against feed costs and milk prices for margin per cow. Start with five pilot farms and walk each through its first upload by hand. Hardest part is that each brand exports a different file shape, so the parser reconciles formats built to stay separate. Iterate the briefing until farmers say it changed how they run the day. Each farm onboarded sharpens the model for the next.\n\nBrevherd charges $99 a month for daily margin briefings and trend tracking. Pro runs $199 and adds cost breakdowns, feed optimization flags, and benchmarking against anonymized peer farms. Setup is a one-time $500 to wire a farm's exports into the pipeline. Dairy co-ops and farmer Facebook groups venting about disconnected dashboards seed the first customers. Case studies showing real margin recovered do the selling, since a farmer trusts another farmer's number. Each farm sharpens the benchmark that a farmer would lose by leaving.\n\n*Analysis, scores, and revenue estimates are educational and based on assumptions. Results vary by execution and market conditions.\n\nKeyword:\nFarming ai\n4.4K\nVolume\n+2488%\nGrowth\n2023\n2024\n2025\n2026\n0\n2k\n4k\n6k\n8k\nOpportunity\n9\nExceptional\nProblem\n8\nHigh Pain\nFeasibility\n6\nChallenging\nWhy Now\n9\nPerfect Timing\nBusiness Fit\n\ud83d\udcb0\nRevenue Potential\n$1M-$10M ARR potential with specialized farm analytics.\n$$$\n\ud83d\udee0\ufe0f\nExecution Difficulty\nComplex integration with physical and regulatory components, 1-2 month MVP timeline.\n8/10\n\ud83d\ude80\nGo-To-Market\nStrong traction with clear signals from engaged farming communities and social platforms.\n8/10\n\ud83e\udde0\nRight for You?\nGreat for agtech founders with IoT and data expertise\nFind Out\nRESEARCH TOOL\nGet a Report Exactly Like This for Your Idea\n\nHave your own business idea? Our AI Research Agent conducts a comprehensive 40-step analysis to validate and research any idea you give it.\n\nResearch My Idea\nOffer\n1\nLEAD MAGNET\nFarm Profit Insight Guide (Free)\n\nA downloadable guide explaining how to optimize dairy farm profits using existing data exports.\n\n2\nFRONTEND\nFarm Profit Tracker Lite ($99/month)\n\nBasic version of the profit tracker providing daily margin insights for smaller operations.\n\n3\nCORE\nFarm Profit Tracker Pro ($199/month)\n\nComprehensive daily insights and analytics tailored for farms managing 100-500 cows.\n\nView full value ladder\n\u2192\nWhy Now?\n\nWith the robotic milking market set to grow to $6 billion by 2032, AI-driven profit analysis makes now the perfect time to capitalize on farm data integration, delivering actionable insights without additional hardware.\n\nSee why this opportunity matters now\nProof & Signals\n\nThe AI profit analyst for robot dairy farms has validated demand signals. The idea addresses crucial pain points, leverages timing factors like labor shortages, and offers a unique solution to existing market gaps. While the competitive landscape includes well-established players, the focus on non-intrusive data insights without new hardware provides a strong differentiation. A pilot success and growing interest in AI in agriculture further reinforce community engagement and adoption potential.\n\nExplore proof & signals\nThe Market Gap\n\nRobot dairy farms lack seamless data integration, creating a significant opportunity for an AI-driven profit analyst to provide actionable insights without additional hardware.\n\nUnderstand the market opportunity\nExecution Plan\n\nLaunch an AI-driven platform delivering daily profit insights for dairy farms, eliminating manual data hassles. Integrate with existing systems to automate analysis, then leverage industry partnerships for rapid growth. Ready to expand into new markets and analytics offerings\u2014how fast can we reshape farm profitability?\n\nView detailed execution strategy\nFramework Fit\n\nSee how this idea fits into popular frameworks\n\nThe Value Equation\n8Excellent\nView Analysis\nMarket Matrix\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nView Analysis\nThe A.C.P. Framework\nAudience\n6/10\nCommunity\n8/10\nProduct\n6/10\nView Analysis\nThe Value Ladder\nBait\nFrontend\nCore Offer\nBackend\nContinuity\nView Analysis\nCategorization\n\nType\n\nSaas\n\nMarket\n\nB2B\n\nTarget\n\nDairy Farms\n\nMain Competitor\n\nGEA Farm Technologies\n\nTrend Analysis\n\nThe market for robotic milking systems and related AI analytics is growing rapidly due to increasing automation demands and labor efficiency needs.\n\nCommunity Signals\nReddit\n6 subreddits found\nFacebook\n6 groups found\nYouTube\n14 channels \u00b7 14 themes\nOther\n3 segments \u00b7 3 priorities\nView detailed breakdown\nTop Keywords\nFastest Growing\nFarming Ai\nLOW competition\n3.6K\nAi Farming\nLOW competition\n4.4K\nAi Farm\nLOW competition\n4.4K\nHighest Volume\nArtificial Intelligence In Agriculture\nLOW competition\n12.1K\nAi For Agriculture\nLOW competition\n12.1K\nAi Farming\nLOW competition\n4.4K\nMost Relevant\nArtificial Intelligence In Agriculture\nLOW competition\n12.1K\nAi For Agriculture\nLOW competition\n12.1K\nAi Farming\nLOW competition\n4.4K\nView full keyword analysis\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\n\nImportant: Revenue estimates, scores, and market data are illustrative based on research and assumptions. Results vary by execution, timing, and market conditions. Not investment or business advice.\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0\n\ud83d\udee0\ufe0f\nExecution Difficulty\n8/10\nComplex integration with physical and regulatory components, 1-2 month MVP timeline.\nOverview\n\nHigh complexity due to robotics integration and regulatory compliance in agriculture.\n\nExecution Risks\n\u2022\nRegulatory compliance in agricultural tech\n\u2022\nHigh initial setup costs for hardware\n\u2022\nDependence on reliable internet connectivity in rural areas\nTechnical Challenges\n\u2022\nIntegration with robotic milking systems\n\u2022\nData synchronization across IoT devices\n\u2022\nRobust real-time data analytics\nNon-Technical Challenges\n\u2022\nNavigating agricultural regulations\n\u2022\nTraining users on new technology\n\u2022\nEnsuring reliable support and maintenance\nClose",
+      "url": "https://www.ideabrowser.com/hub/ideas/today"
+    }
+  },
+  "business_fit_deep": {
+    "Revenue Potential": "\ud83d\udcb0\nRevenue Potential\n$$$\n$1M-$10M ARR potential with specialized farm analytics.\nOverview\n\nTargeted at a growing niche with recurring revenue from mid-sized dairy operations.\n\nRevenue Examples\n\u2022\nSaaS pricing: $99-$299/month\n\u2022\nSetup fee: $500 one-time\n\u2022\nEnterprise integration: $10K-$50K/year\nBusiness Models\n\u2022\nSubscription model for farm analytics\n\u2022\nIntegration setup fees\n\u2022\nTiered pricing based on farm size\n\u2022\nUpselling advanced analytics features\nExample Companies\nFarmLogs\nAgriWebb\nConservis\nGranular\nClose",
+    "Execution Difficulty": "\ud83d\udee0\ufe0f\nExecution Difficulty\n8/10\nComplex integration with physical and regulatory components, 1-2 month MVP timeline.\nOverview\n\nHigh complexity due to robotics integration and regulatory compliance in agriculture.\n\nExecution Risks\n\u2022\nRegulatory compliance in agricultural tech\n\u2022\nHigh initial setup costs for hardware\n\u2022\nDependence on reliable internet connectivity in rural areas\nTechnical Challenges\n\u2022\nIntegration with robotic milking systems\n\u2022\nData synchronization across IoT devices\n\u2022\nRobust real-time data analytics\nNon-Technical Challenges\n\u2022\nNavigating agricultural regulations\n\u2022\nTraining users on new technology\n\u2022\nEnsuring reliable support and maintenance\nClose",
+    "Go-To-Market": "\ud83d\ude80\nGo-To-Market\n8/10\nStrong traction with clear signals from engaged farming communities and social platforms.\nOverview\n\nStrong community engagement on Reddit and Facebook, with rising interest in AI solutions in agriculture.\n\nGo-to-Market Tactics\n\u2022\nLeverage Reddit AMAs to discuss AI benefits in dairy farming\n\u2022\nCreate educational YouTube content on profit tracking without hardware\n\u2022\nEngage Facebook groups with case studies on cost savings\n\u2022\nPartner with dairy co-ops for bundled offers\nTarget Audiences\n\u2022\nMid-sized dairy farm owners using robotic systems\n\u2022\nTech-savvy farmers seeking data-driven insights\n\u2022\nAdvisors and consultants in agricultural efficiency\nChannels with Signal\n\u2022\nReddit (14K in r/dairyfarming)\n\u2022\nFacebook Groups (AI in Agriculture, 2.1K+ members)\n\u2022\nYouTube (Educational videos, 500K+ views on AI farming)\nEarly Positioning Angles\n\u2022\n'Unlock daily profits without new hardware'\n\u2022\n'AI insights for smarter dairy management'\n\u2022\n'Transform data overload into actionable insights'\nTraction Signal\n\nClear traction\n\nClose"
+  },
+  "score_cards_deep": {
+    "Opportunity": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nOpportunity Score\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nOpportunity Score\nOverall Rating\n9\n/10\nAI-driven profit analytics for robot dairy farms fills data integration gaps in a growing market.\nOpportunity Type: Growing Market\nWindow: Just Right\nThe opportunity leverages a strong market trend towards automation and precision farming, offering a unique solution with high potential revenue and community interest.\nKey Strengths\nStrong market growth in robotic milking\nAI advancements enabling seamless integration\nHigh community engagement and interest\nUnique positioning with non-invasive insights\nKey Risks\nRegulatory compliance challenges\nHigh initial setup costs\nDependence on internet connectivity\nPotential OEM competition\n\ud83d\udcc8\nMarket Analysis\n9\n/10\nMarket Timing\nThe robotic milking market is rapidly expanding, with supportive technological and regulatory environments.\nMarket Potential\nHigh potential due to the growing demand for AI solutions in agriculture and evidence of increased ROI.\n\ud83c\udfaf\nCompetitive Position\n7\n/10\nCompetitive Advantage\nUnique cross-system analytics without additional hardware offers a significant differentiation.\nExecution Feasibility\nComplex integration with robotics and compliance requirements pose significant execution challenges.\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+    "Problem": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nProblem Score\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nProblem Score\nOverall Rating\n8\n/10\nSignificant pain with growing demand for efficient data integration.\nPain Type: Acute\nTrend: Increasing\nThe pain score is driven by manual data management frustrations and a pressing need for automated solutions in a tech-savvy, efficiency-focused audience.\nKey Pain Points\nManual Data Integration Frustration\nMissed Profit Insights\nLabor Shortages\nFragmented Data Systems\nMarket Evidence\nHigh engagement on Reddit discussing robotic milking challenges\nFacebook group discussions on AI-driven efficiency\nSuccessful pilot demonstration at a Michigan farm\nGoogle Trends rise in 'AI in agriculture' interest\n\ud83d\udd25\nProblem Score\n8\n/10\nPain Frequency\nFarmers frequently face daily data management challenges, as noted on multiple online platforms.\nPain Intensity\nThe intensity is high due to direct impacts on productivity and profitability.\n\ud83d\udcb0\nMarket Response\n6.5\n/10\nCurrent Solutions\nExisting solutions lack cross-system integration and require significant manual effort.\nWillingness to Pay\nHigh willingness to invest in non-intrusive solutions that promise efficiency and cost savings.\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+    "Feasibility": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nFeasibility Score\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nFeasibility Score\nOverall Rating\n6\n/10\nFeasible with AI tools but requires market tailoring.\nTime to MVP: 1-2 weeks\nMinimum Team: 2 people (Product Manager, Technical Developer)\nBalance of technical development and market entry needed.\nKey Advantages\nAI can handle data automation efficiently\nSmall team can iterate rapidly\nLow cost for tech deployment\nCritical Challenges\nReaching specific farm operators\nPotential high API costs\nIntegrating with existing robotic systems\n\ud83c\udfaf\nMarket & Validation\n7\n/10\nMarket Clarity\nNiche market requires specific outreach strategies.\nEarly Validation\nEasy to pilot with tech-savvy early adopters.\n\ud83d\udee0\ufe0f\nTechnical & Resources\n7\n/10\nTechnical Feasibility\nData tools and automation are easily achievable with AI systems.\nResource Requirements\nModerate resources needed for domain-specific features.\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+    "Why Now": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nWhy Now\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nWhy Now\nOverall Rating\n9\n/10\nWith the robotic milking market set to grow to $6 billion by 2032, AI-driven profit analysis makes now the perfect time to capitalize on farm data integration, delivering actionable insights without additional hardware.\n\ud83d\udcc8\nMarket Timing Factors\n9\n/10\nGrowth in Milking Robots\nThe milking robots market is projected to grow from $2.8 billion in 2025 to $6 billion by 2032, driven by automation needs and labor efficiency demands. [1][2]\n\ud83e\udde0\nTechnological Enablers\n9\n/10\nAI and Cloud Advancement\nAdvances in AI diagnostics and cloud systems facilitate data integration and enable real-time analytics without requiring new hardware investments. [5][13]\n\ud83c\udfdb\ufe0f\nRegulatory & Social Catalysts\n8\n/10\nPolicy Support for Mechanization\nRegions like North America and Europe are favorable due to policies supporting mechanization amidst labor shortages, enhancing the demand for automated solutions. [2][13]\n\ud83d\udd12\nRisk Reduction Factors\n8\n/10\nProven ROI Logic\nUSDA research shows farms using precision technologies have significantly higher net returns, validating the economic benefit of such analytics. [3][4]\n\ud83d\ude80\nCompetitive Window\n9\n/10\nMarket Gaps in Cross-System Analysis\nMost platform vendors focus on ecosystem optimization, leaving a gap for independent cross-system profit analysis. [18][19]\n\ud83d\udcca\nSupporting Data Points\n9\n/10\n11.4% CAGR in Robotic Milking\nThe milking automation market shows a robust growth rate, creating ample opportunities for supportive analytic services. [13]\n\u26a0\ufe0f\nTiming Risks\n6\n/10\nOEM Bundling Threat\nPotential for OEMs to integrate similar insights into their platforms, though this risk underscores the importance of early entry. [18]\n\u23f0\nWhy Wait = Why Fail\n10\n/10\nFirst-Mover Branding Advantage\nBeing the first to offer a cohesive AI-driven daily profit insight solution can establish category leadership. [5][13]\nCitations & Sources\n1 - https://www.marknteladvisors.com/research-library/milking-robots-market.html\n2 - https://www.persistencemarketresearch.com/market-research/milking-robots-market.asp\n3 - https://ers.usda.gov/sites/default/files/_laserfiche/publications/113706/ERR-356-summary.pdf?v=12546\n4 - https://www.ers.usda.gov/publications/113704\n5 - https://www.nextmsc.com/news/milking-robot-market-expands-as-smart-herd-automation-advances\n6 - https://www.skyquestt.com/report/milking-robots-market\n13 - https://www.marketsandmarkets.com/Market-Reports/milking-automation-market-265039621.html\n18 - https://www.ers.usda.gov/publications/113704\n19 - https://www.grandresearchstore.com/machines/global-milking-robot-for-cows-market\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0"
+  },
+  "community_signals_deep": {
+    "reddit": [
+      {
+        "name": "Reddit Community Analysis",
+        "raw_text": "Reddit Community Analysis\n\nAnalyzed 6 relevant communities",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/reddit-analysis"
+      },
+      {
+        "name": "r/dairyfarming",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nReddit Analysis\nr/dairyfarming\nr/dairyfarming\n14,000 members\n\u00b7\nExplore community\nWhy It's Relevant\nThis subreddit focuses on dairy farming, highlighting challenges and technologies related to robotic milking systems. It provides direct access to potential customers interested in optimizing operations through technology.\nOpportunity\nConduct AMAs, share insights on AI-driven management, and engage with discussions to demonstrate value in cost savings and efficiency.\nRelevant Discussions\n3 discussions found\nLely astronaut vs Delaval VMS, which one is better?\n30 participants\n30+ comments discussing the benefits and drawbacks of different milking systems, which reflects the technological interests of farm operators.\nView on Reddit\nBest milking robot in your opinion?\n10 participants\n10+ comments focused on user experiences with various robotic systems, indicating a strong interest in optimizing dairy practices.\nView on Reddit\nWhat are the labor cost reductions for milking robots and ...\n10 participants\n10+ comments exploring cost efficiencies, showing demand for solutions that improve farm profitability.\nView on Reddit\nExplore Business Opportunities in r/dairyfarming\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Lely astronaut vs Delaval VMS, which one is better?",
+            "url": "https://www.reddit.com/r/dairyfarming/comments/1i1ynn8/lely_astronaut_vs_delaval_vms_which_one_is_better/"
+          },
+          {
+            "title": "Lely astronaut vs Delaval VMS, which one is better?",
+            "url": "https://www.reddit.com/r/dairyfarming/comments/1lxwmf0/best_milking_robot_in_your_opinion/"
+          },
+          {
+            "title": "Lely astronaut vs Delaval VMS, which one is better?",
+            "url": "https://www.reddit.com/r/dairyfarming/comments/1l78d9q/what_are_the_labor_cost_reductions_for_milking/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/reddit-analysis/dairyfarming"
+      },
+      {
+        "name": "r/farming",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nReddit Analysis\nr/farming\nr/farming\n104,000 members\n\u00b7\nExplore community\nWhy It's Relevant\nThis subreddit attracts a wide audience interested in farming technologies and innovations. Discussions on mechanization and automation align with the business focus on improving farm efficiency.\nOpportunity\nUse the community to identify broader trends, gather feedback, and share educational content about AI in agriculture and potential benefits of profit tracking.\nRelevant Discussions\n2 discussions found\nRobotic milkers : r/farming\n20 participants\n20+ comments on the adoption of robotic milking, indicating interest in automation technologies among farmers.\nView on Reddit\nHow are cows milked at your farm?\n30 participants\n30+ comments discussing milking techniques and challenges, highlighting opportunities for improving efficiency.\nView on Reddit\nExplore Business Opportunities in r/farming\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Robotic milkers : r/farming",
+            "url": "https://www.reddit.com/r/farming/comments/808een/robotic_milkers/"
+          },
+          {
+            "title": "Robotic milkers : r/farming",
+            "url": "https://www.reddit.com/r/farming/comments/1gyg4g5/how_are_cows_milked_at_your_farm/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/reddit-analysis/farming"
+      },
+      {
+        "name": "r/Agriculture",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nReddit Analysis\nr/Agriculture\nr/Agriculture\n70.1K+ followers\n\u00b7\nExplore community\nWhy It's Relevant\nFocuses on agricultural science and practices, providing insights into integrating AI technologies for improved efficiencies, aligning with the business's innovative approach.\nOpportunity\nEngage with farmers interested in AI solutions by participating in discussions, sharing insights, and soliciting feedback on the Farm Profit Tracker.\nRelevant Discussions\n1 discussions found\nAI and farming : r/ArtificialInteligence\nundefined participants\nDiscusses how AI can optimize farming practices through technology like drones and sensors, attracting comments on AI\u2019s role in improving agricultural efficiency.\nView on Reddit\nExplore Business Opportunities in r/Agriculture\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "AI and farming : r/ArtificialInteligence",
+            "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1gx9o05/ai_and_farming/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/reddit-analysis/Agriculture"
+      },
+      {
+        "name": "r/artificial",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nReddit Analysis\nr/artificial\nr/artificial\n1.3M+ followers\n\u00b7\nExplore community\nWhy It's Relevant\nThe subreddit focuses on AI topics, offering a platform to track trends and discussions on AI in agriculture, validating market interest in AI solutions like the Farm Profit Tracker.\nOpportunity\nPost about AI insights related to agricultural challenges, encourage discussions on specific use cases, and collaborate on feature development with tech enthusiasts.\nRelevant Discussions\n1 discussions found\nAI and farming\nActive discussion\nHighlights AI's role in transforming agricultural practices with insights on improving efficiencies in resource management.\nView on Reddit\nExplore Business Opportunities in r/artificial\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "AI and farming",
+            "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1gx9o05/ai_and_farming/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/reddit-analysis/artificial"
+      },
+      {
+        "name": "r/PLC",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nReddit Analysis\nr/PLC\nr/PLC\n61,000 members\n\u00b7\nExplore community\nWhy It's Relevant\nFocuses on automation and tech integration in dairy management, providing insights into technical advancements and challenges.\nOpportunity\nDiscuss technical integrations and innovations in farm automation, offering insights or resources that bridge PLCs with AI solutions, showcasing product capabilities.\nRelevant Discussions\n1 discussions found\nExperiences working with Dairy Industry Automation : r/PLC\nActive discussion\nUsers share experiences with automation in dairy, detailing both successes and challenges focused on integration and performance monitoring.\nView on Reddit\nExplore Business Opportunities in r/PLC\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Experiences working with Dairy Industry Automation : r/PLC",
+            "url": "https://www.reddit.com/r/PLC/comments/1ksoicf/experiences_working_with_dairy_industry_automation/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/reddit-analysis/PLC"
+      },
+      {
+        "name": "r/todayilearned",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nReddit Analysis\nr/todayilearned\nr/todayilearned\n30.9 million members\n\u00b7\nExplore community\nWhy It's Relevant\nWhile not farming-specific, this subreddit indicates broad interest in innovative technologies like robotic milking, which can be leveraged for raising awareness.\nOpportunity\nCreate informative content about AI and agriculture for educational outreach while leveraging curiosity-driven narratives to direct audiences toward specific resources.\nRelevant Discussions\n1 discussions found\nTIL there are dairy farms with cows trained to use automatic ...\nActive discussion\nHigh engagement post discussing the automation in dairy farming, reflecting widespread curiosity and potential educational angles.\nView on Reddit\nExplore Business Opportunities in r/todayilearned\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "TIL there are dairy farms with cows trained to use automatic ...",
+            "url": "https://www.reddit.com/r/todayilearned/comments/c52k40/til_there_are_dairy_farms_with_cows_trained_to/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/reddit-analysis/todayilearned"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Facebook Groups",
+        "raw_text": "Facebook Groups\n\n11 groups analyzed",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/facebook-analysis"
+      },
+      {
+        "name": "AI in Agriculture: Transforming Farming with Technology",
+        "raw_text": "AI in Agriculture: Transforming Farming with Technology\nunknown\nunknown\nDESCRIPTION\n\nThese AI machines can run 24/7, easing the burden of a global 20% labor shortage in agriculture. They also help reduce water waste by up to 30%.\n\nWHY IT'S RELEVANT\n\nThis group focuses on AI-driven efficiency and sustainability in agriculture, highlighting pain points and solutions relevant to tech-savvy farmers managing data-driven decisions.\n\nRELEVANCE SIGNALS\nAI machines and automation central to group discussion\nAddresses labor and efficiency, aligning with tech-savvy farmers\nPotential mentions of robotic milking as part of automation efforts\nVisit Group",
+        "discussions": [
+          {
+            "title": "AI in Agriculture: Transforming Farming with Technology",
+            "url": "https://www.facebook.com/groups/1253757671501405/posts/2838889196321570/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/facebook-analysis"
+      },
+      {
+        "name": "Robot Dairy Design/Build",
+        "raw_text": "Robot Dairy Design/Build\nunknown\nunknown\nDESCRIPTION\n\nRobotic dairy operations are emerging and the dairy industry is evolving. Whether retro-fitting robotics into existing systems or building from scratch, there\u2019s a focus on efficiency.\n\nWHY IT'S RELEVANT\n\nThis group involves those actively engaged in or considering robotic milking systems, highlighting integration and business opportunities for automated data analytics services.\n\nRELEVANCE SIGNALS\nDiscussion around robotic dairy operations\nCommunity of dairy farmers interested in efficiency\nPotential collaboration with those refitting existing systems\nVisit Group",
+        "discussions": [
+          {
+            "title": "Robot Dairy Design/Build",
+            "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Frobotdairy%2F"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/facebook-analysis"
+      },
+      {
+        "name": "Fullwood Merlin M2 Enthusiasts",
+        "raw_text": "Fullwood Merlin M2 Enthusiasts\n2.1K+ followers\npublic\nDESCRIPTION\n\nThis group is enthusiasts to owners and operators of Fullwood JOZ Merlin M2 milking systems. Fullwood offer: Free access, guided and batch milking systems.\n\nWHY IT'S RELEVANT\n\nThe group represents a community already engaged with robotic milking systems, which aligns with the tech integration our product offers.\n\nRELEVANCE SIGNALS\nFocus on Fullwood Merlin, a specific robotic milking system\nEngagement from farmers using robotic systems\nPotential to discuss and share specialized integrations\nVisit Group",
+        "discussions": [
+          {
+            "title": "Fullwood Merlin M2 Enthusiasts",
+            "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F593535949346927%2F"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/facebook-analysis"
+      },
+      {
+        "name": "Daily Experience with Robot Milkers",
+        "raw_text": "Daily Experience with Robot Milkers\nunknown\npublic\nDESCRIPTION\n\nRobot Milkers\u2026 Trying to learn about them. What\u2019s your daily experience really like with them? Pros/Cons?\n\nWHY IT'S RELEVANT\n\nThe group's emphasis on daily experiences with robotic milkers can provide insights into user challenges, offering opportunities to validate benefits of integrated AI insights.\n\nRELEVANCE SIGNALS\nDiscussion focused on real-world experiences with robot milkers\nCommunity seeking peer advice on robotic milking efficiency\nRelevant information on operational challenges or benefits\nVisit Group",
+        "discussions": [
+          {
+            "title": "Daily Experience with Robot Milkers",
+            "url": "https://www.facebook.com/groups/1712918759137970/posts/2275173422912498/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/facebook-analysis"
+      },
+      {
+        "name": "Lely Robot Users",
+        "raw_text": "Lely Robot Users\n140+ comments\npublic\nDESCRIPTION\n\nDiscussion about new Dairy Farm Setup with Lely Astronaut A5 Milkers and related experiences.\n\nWHY IT'S RELEVANT\n\nThe group provides insights into the operational experiences of farms utilizing Lely systems, directly connecting with our business\u2019s strategy on specialized integrations.\n\nRELEVANCE SIGNALS\nSpecific to Lely, a leading brand in robotic milking\nDetailed sharing of setup experiences and troubleshooting\nHigh comment count indicates strong community engagement\nVisit Group",
+        "discussions": [
+          {
+            "title": "Lely Robot Users",
+            "url": "https://www.facebook.com/groups/1712918759137970/posts/1850826308680547/"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/facebook-analysis"
+      },
+      {
+        "name": "VMS",
+        "raw_text": "VMS\nN/A\nprivate\nDESCRIPTION\n\nDo you own a Delaval VMS or V300? This group is NOT operated by DeLaval. This group has been created by and for VMS owners to support each other.\n\nWHY IT'S RELEVANT\n\nThis group includes members who are likely to be actual users of DeLaval's robotic systems, making it a great community for gathering insights on specific pain points and potential demands.\n\nRELEVANCE SIGNALS\nDedicated to DeLaval VMS owners, which is a specific robotic milking platform\nMembers are likely operators of mid-sized, tech-savvy farms\nFocus on supporting each other aligns with finding and solving pain points\nVisit Group",
+        "discussions": [
+          {
+            "title": "VMS",
+            "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F438838969617079%2F"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/facebook-analysis"
+      }
+    ],
+    "youtube": [
+      {
+        "name": "YouTube Content Analysis",
+        "raw_text": "YouTube Content Analysis\n\nAnalyzed 14 channels with relevant content",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Top Channels",
+        "raw_text": "Top Channels\n\nFound 14 channels creating relevant content\n\nBBC News\n2.5 million avg. views\n13 million subscribers\n\nContent Approach\n\nTraditional news reporting focus.\n\nAudience Response\n\nHigh engagement due to credibility.\n\n15 relevant videos\n\nDW Documentary\n500,000 avg. views\n4 million subscribers\n\nContent Approach\n\nIn-depth documentary format.\n\nAudience Response\n\nSteady viewership.\n\n10 relevant videos\n\nABC Science and ABC Australia\n700,000 avg. views\n1 million subscribers\n\nContent Approach\n\nLong format, educational content.\n\nAudience Response\n\nStrong viewer engagement.\n\n5 relevant videos\n\nAgriculture Central\n7,005/views per video avg. views\nNot mentioned subscribers\n\nContent Approach\n\nEducational videos on AI tools for farming.\n\nAudience Response\n\nModerate engagement on educational content.\n\n2 relevant videos\n\nABC Science and ABC Australia\n683,680/views per video avg. views\nNot mentioned subscribers\n\nContent Approach\n\nDocumentary style focusing on technological advancements in farming.\n\nAudience Response\n\nHigh engagement with well-produced content.\n\n1 relevant videos\n\nBBC News\n1,243,073/views per video avg. views\nNot mentioned subscribers\n\nContent Approach\n\nShort news segments on AI advancements in agriculture.\n\nAudience Response\n\nHigh engagement, especially on new technology introductions.\n\n2 relevant videos\n\nBoumaticRobotics\n1,200,000 views avg. views\n\nContent Approach\n\nFocuses on product demonstrations and robotic technology innovations.\n\nAudience Response\n\nHigh engagement, particularly in tech-focused videos.\n\n4 relevant videos\n\nLely Center Mullingar\n60,000 views avg. views\n\nContent Approach\n\nMix of demonstrations and explainer content, often showcasing product use in real farms.\n\nAudience Response\n\nModerate engagement, with specific interest in operational insights.\n\n3 relevant videos\n\nDairyFarmKindOfLife\n10,000 views avg. views\n\nContent Approach\n\nPersonal experience and story-telling about using robotics in daily farming life.\n\nAudience Response\n\nModerate en",
+        "discussions": [
+          {
+            "title": "BBC News",
+            "url": "https://youtube.com/results?search_query=BBCNews"
+          },
+          {
+            "title": "BBC News",
+            "url": "https://youtube.com/results?search_query=DWDocumentary"
+          },
+          {
+            "title": "BBC News",
+            "url": "https://youtube.com/results?search_query=ABCScienceandABCAustralia"
+          },
+          {
+            "title": "BBC News",
+            "url": "https://youtube.com/results?search_query=AgricultureCentral"
+          },
+          {
+            "title": "BBC News",
+            "url": "https://youtube.com/results?search_query=BoumaticRobotics"
+          },
+          {
+            "title": "BBC News",
+            "url": "https://youtube.com/results?search_query=LelyCenterMullingar"
+          },
+          {
+            "title": "BBC News",
+            "url": "https://youtube.com/results?search_query=DairyFarmKindOfLife"
+          },
+          {
+            "title": "BBC News",
+            "url": "https://youtube.com/results?search_query=Lely"
+          },
+          {
+            "title": "BBC News",
+            "url": "https://youtube.com/results?search_query=GEAFarming"
+          },
+          {
+            "title": "BBC News",
+            "url": "https://youtube.com/results?search_query=BBCEarthScience"
+          },
+          {
+            "title": "BBC News",
+            "url": "https://youtube.com/results?search_query=RichardWheelwright"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "BBC News",
+        "raw_text": "BBC News\n2.5 million avg. views\n13 million subscribers\n\nContent Approach\n\nTraditional news reporting focus.\n\nAudience Response\n\nHigh engagement due to credibility.\n\n15 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "DW Documentary",
+        "raw_text": "DW Documentary\n500,000 avg. views\n4 million subscribers\n\nContent Approach\n\nIn-depth documentary format.\n\nAudience Response\n\nSteady viewership.\n\n10 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "ABC Science and ABC Australia",
+        "raw_text": "ABC Science and ABC Australia\n700,000 avg. views\n1 million subscribers\n\nContent Approach\n\nLong format, educational content.\n\nAudience Response\n\nStrong viewer engagement.\n\n5 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Agriculture Central",
+        "raw_text": "Agriculture Central\n7,005/views per video avg. views\nNot mentioned subscribers\n\nContent Approach\n\nEducational videos on AI tools for farming.\n\nAudience Response\n\nModerate engagement on educational content.\n\n2 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "ABC Science and ABC Australia",
+        "raw_text": "ABC Science and ABC Australia\n683,680/views per video avg. views\nNot mentioned subscribers\n\nContent Approach\n\nDocumentary style focusing on technological advancements in farming.\n\nAudience Response\n\nHigh engagement with well-produced content.\n\n1 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "BBC News",
+        "raw_text": "BBC News\n1,243,073/views per video avg. views\nNot mentioned subscribers\n\nContent Approach\n\nShort news segments on AI advancements in agriculture.\n\nAudience Response\n\nHigh engagement, especially on new technology introductions.\n\n2 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "BoumaticRobotics",
+        "raw_text": "BoumaticRobotics\n1,200,000 views avg. views\n\nContent Approach\n\nFocuses on product demonstrations and robotic technology innovations.\n\nAudience Response\n\nHigh engagement, particularly in tech-focused videos.\n\n4 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Lely Center Mullingar",
+        "raw_text": "Lely Center Mullingar\n60,000 views avg. views\n\nContent Approach\n\nMix of demonstrations and explainer content, often showcasing product use in real farms.\n\nAudience Response\n\nModerate engagement, with specific interest in operational insights.\n\n3 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "DairyFarmKindOfLife",
+        "raw_text": "DairyFarmKindOfLife\n10,000 views avg. views\n\nContent Approach\n\nPersonal experience and story-telling about using robotics in daily farming life.\n\nAudience Response\n\nModerate engagement with a personal touch appeal.\n\n2 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Lely",
+        "raw_text": "Lely\n60,000 avg. views\nNot available subscribers\n\nContent Approach\n\nFocuses on product overviews and customer testimonials.\n\nAudience Response\n\nHighly engaged with product demonstrations.\n\n3 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "GEA Farming",
+        "raw_text": "GEA Farming\n10,000 avg. views\nNot available subscribers\n\nContent Approach\n\nEducational content focusing on product usage.\n\nAudience Response\n\nModerate engagement with a niche audience.\n\n2 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Lely",
+        "raw_text": "Lely\n~500k avg. views\n\nContent Approach\n\nFocuses on demonstrations and features of the Lely Astronaut systems.\n\nAudience Response\n\nStrong engagement with product demonstrations.\n\n6 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "BBC Earth Science",
+        "raw_text": "BBC Earth Science\n~280k avg. views\n\nContent Approach\n\nEducational content on the impact of automation in farming.\n\nAudience Response\n\nPositive engagement for informative content.\n\n1 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Richard Wheelwright",
+        "raw_text": "Richard Wheelwright\n~70k avg. views\n\nContent Approach\n\nPersonal experience and review of robotic milking systems.\n\nAudience Response\n\nWell-received for honest and personal reviews.\n\n1 relevant videos",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Content Trends",
+        "raw_text": "Content Trends\nCommon Themes\n\nAnalysis of content themes and their engagement\n\n14\n\nAI in Crop Management\n\nHigh\n\nAI Robotics\n\nMedium\n\nSustainability & Efficiency\n\nHigh\n\nView all themes\n\nPopular Formats\n\nOverview of successful content formats\n\n16\n\nDocumentaries\n\n25%\n\nNews Reports\n\n35%\n\nTutorial/How-to\n\n15%\n\nView all formats",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+      },
+      {
+        "name": "Common Themes",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nYouTube Analysis\nContent Themes\nContent Themes\nAnalysis of common themes and their engagement levels in YouTube content\nAI in Crop Management\nUse of AI for disease detection and crop management.\nPopularity: High\nEngagement Level: High\nAI Robotics\nRobots used for tasks like harvesting and weeding.\nPopularity: Medium\nEngagement Level: Medium\nSustainability & Efficiency\nAI technologies increasing farming efficiency and sustainability.\nPopularity: High\nEngagement Level: High\nAI and Robotics\nUse of AI and robotics in farming to increase efficiency and yield.\nPopularity: High\nEngagement Level: High, with videos receiving over 100K views.\nEmerging AI Tools\nShowcasing new AI tools for farming applications.\nPopularity: Moderate\nEngagement Level: Moderate, with videos having 10K to 50K views.\nEconomic Impact\nHow AI impacts the economics of farming, production costs, and profits.\nPopularity: Low\nEngagement Level: Variable, depending on video context.\nEfficiency and Productivity\nDiscusses how robotic milking systems improve farm productivity and efficiency.\nPopularity: High\nEngagement Level: High\nUser Experience and Feedback\nVideos focus on real-life user experiences and challenges.\nPopularity: Moderate\nEngagement Level: Moderate\nTechnology Features\nExplores technological aspects and innovations in robotic milking.\nPopularity: High\nEngagement Level: High\nAutomation in Farming\nIntroduction and efficiency of robotic systems in dairy farming.\nPopularity: Widespread\nEngagement Level: High\nCow Comfort and Efficiency\nImportance of cow comfort in increasing dairy production and system efficiency.\nPopularity: Moderate\nEngagement Level: Mo",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis/themes"
+      },
+      {
+        "name": "Popular Formats",
+        "raw_text": "Support & more\nS\nsneakerconsultant98\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nYouTube Analysis\nPopular Formats\nPopular Formats\nAnalysis of successful content formats and their engagement metrics\nDocumentaries\nFrequency: 25% of content\nAverage Engagement: 500,000 views\nExample Videos\nAI-Powered Farming Robots That Work 24/7 | FULL DOCUMENTARY\nArtificial intelligence in agriculture | DW Documentary\nNews Reports\nFrequency: 35% of content\nAverage Engagement: 1 million views\nExample Videos\nArtificial intelligence comes to farming in India | BBC News\nIsrael enlists drones, AI and big data to farm for the future | AFP\nTutorial/How-to\nFrequency: 15% of content\nAverage Engagement: 50,000 views\nExample Videos\nTop 5 Artificial Intelligence (AI) Tools You Can Use Today for Farming\nHow Robots and AI Are Changing Farming\nDocumentary\nFrequency: 18% of content\nAverage Engagement: 320,945 views (e.g., \"AI-Powered Farming Robots That Work 24/7\")\nExample Videos\nAI-Powered Farming Robots That Work 24/7\nArtificial intelligence in agriculture | DW Documentary\nTutorial/Guide\nFrequency: 20% of content\nAverage Engagement: 7,006 views (e.g., \"Top 5 Artificial Intelligence Tools for Farming\")\nExample Videos\nTop 5 Artificial Intelligence Tools You Can Use Today for Farming\nHow to CREATE CUSTOM AI WORKERS In FARMING SIMULATOR\nNews Segment\nFrequency: 15% of content\nAverage Engagement: 243,104 views (e.g., \"Artificial intelligence comes to farming in India\")\nExample Videos\nArtificial intelligence comes to farming in India\nAI meets agriculture with new farm machines to kill weeds and harvest crops\nExplainer\nFrequency: 12% of content\nAverage Engagement: 114,515 views (e.g., \"Surreal Surreal AI Film \u2022 A Very Unusual Town\")\nExamp",
+        "discussions": [
+          {
+            "title": "Documentaries",
+            "url": "https://www.youtube.com/results?search_query=AI-Powered Farming Robots That Work 24/7 | FULL DOCUMENTARY"
+          },
+          {
+            "title": "Documentaries",
+            "url": "https://www.youtube.com/results?search_query=Artificial intelligence in agriculture | DW Documentary"
+          },
+          {
+            "title": "News Reports",
+            "url": "https://www.youtube.com/results?search_query=Artificial intelligence comes to farming in India | BBC News"
+          },
+          {
+            "title": "News Reports",
+            "url": "https://www.youtube.com/results?search_query=Israel enlists drones, AI and big data to farm for the future | AFP"
+          },
+          {
+            "title": "Tutorial/How-to",
+            "url": "https://www.youtube.com/results?search_query=Top 5 Artificial Intelligence (AI) Tools You Can Use Today for Farming"
+          },
+          {
+            "title": "Tutorial/How-to",
+            "url": "https://www.youtube.com/results?search_query=How Robots and AI Are Changing Farming"
+          },
+          {
+            "title": "Documentary",
+            "url": "https://www.youtube.com/results?search_query=AI-Powered Farming Robots That Work 24/7"
+          },
+          {
+            "title": "Tutorial/Guide",
+            "url": "https://www.youtube.com/results?search_query=Top 5 Artificial Intelligence Tools You Can Use Today for Farming"
+          },
+          {
+            "title": "Tutorial/Guide",
+            "url": "https://www.youtube.com/results?search_query=How to CREATE CUSTOM AI WORKERS In FARMING SIMULATOR"
+          },
+          {
+            "title": "News Segment",
+            "url": "https://www.youtube.com/results?search_query=Artificial intelligence comes to farming in India"
+          },
+          {
+            "title": "News Segment",
+            "url": "https://www.youtube.com/results?search_query=AI meets agriculture with new farm machines to kill weeds and harvest crops"
+          },
+          {
+            "title": "Explainer",
+            "url": "https://www.youtube.com/results?search_query=The smart farm revolution: AI meets agriculture"
+          },
+          {
+            "title": "Explainer",
+            "url": "https://www.youtube.com/results?search_query=Israel enlists drones, AI and big data to farm for the future"
+          },
+          {
+            "title": "Product Demonstration",
+            "url": "https://www.youtube.com/results?search_query=MR-S1 Milking Robot (English)"
+          },
+          {
+            "title": "Product Demonstration",
+            "url": "https://www.youtube.com/results?search_query=BouMatic Robotics \u2013 Milking Robots 3D Tour"
+          },
+          {
+            "title": "User Experience Insight",
+            "url": "https://www.youtube.com/results?search_query=Telling the Truth About Milking Robots (3 Years Experience)"
+          },
+          {
+            "title": "User Experience Insight",
+            "url": "https://www.youtube.com/results?search_query=Robot Milking: The Honest Truth After Installing Robots on Our Dairy Farm"
+          },
+          {
+            "title": "Educational/Explainer",
+            "url": "https://www.youtube.com/results?search_query=How does the Lely Astronaut Milking Robot work?"
+          },
+          {
+            "title": "Educational/Explainer",
+            "url": "https://www.youtube.com/results?search_query=Robotic Milking: How the Technology Works"
+          }
+        ],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis/formats"
+      }
+    ],
+    "other": [
+      {
+        "name": "Other Communities",
+        "raw_text": "Other Communities\n\nAnalyzed 3 community segments across 5 types",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/other-communities"
+      },
+      {
+        "name": "Robot dairy farm owners and managers",
+        "raw_text": "Robot dairy farm owners and managers\n\nOwner-operators of 100- to 500-cow dairies using robotic or automated milking systems.\n\nPain Points\n\n\u2022 Data overload\n\u2022 Margin tracking\n\u2022 Integration challenges\n\nInterests\n\n\u2022 Efficiency\n\u2022 Cost savings\n\u2022 Operational automation\nr/dairyfarming\nFacebook robot-milking groups",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/other-communities"
+      },
+      {
+        "name": "Dairy tech adopters and agtech-curious farmers",
+        "raw_text": "Dairy tech adopters and agtech-curious farmers\n\nFarmers interested in digital tools and AI applications.\n\nPain Points\n\n\u2022 Data control\n\u2022 Decision support\n\u2022 Simple AI use cases\n\nInterests\n\n\u2022 AI tools\n\u2022 Data integration\n\u2022 Custom workflows\nLinkedIn\nAI on Your Farm",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/other-communities"
+      },
+      {
+        "name": "Advisors and intermediaries",
+        "raw_text": "Advisors and intermediaries\n\nConsultants, nutritionists, dealers, accountants.\n\nPain Points\n\n\u2022 Interpretation of data\n\u2022 Consistency across clients\n\u2022 Support burden\n\nInterests\n\n\u2022 Client profitability\n\u2022 Operational repeatability\n\u2022 Easy integration\nDealer councils\nLinkedIn",
+        "discussions": [],
+        "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/other-communities"
+      }
+    ],
+    "_otherCommunitiesExtra": {
+      "contentStrategies": "Farm owners\n\nGet a daily profit briefing with actionable steps.\n\nTactics\n\n\u2022 Daily margin briefings\n\u2022 Operational explainers\nAdvisors\n\nTurn scattered data into a client-ready margin narrative.\n\nTactics\n\n\u2022 Client-ready narratives\n\u2022 Advisory reporting templates\nDealers and technicians\n\nHelp customers maximize current systems.\n\nTactics\n\n\u2022 System value enhancement\n\u2022 Customer retention strategies\nAgtech communities\n\nA file-based AI use case with measurable margin impact.\n\nTactics\n\n\u2022 Concrete AI use case sharing\n\u2022 In-depth case studies\nAgtech-curious farmers\n\nPractical AI tools for farm data management.\n\nTactics\n\n\u2022 Showcase AI tools\n\u2022 API connections",
+      "partnershipOpportunities": "Robot dealers and technicians\n\nNutritionists and consultants\n\nMilk co-ops and accountants\n\nLearning communities",
+      "citations": [
+        {
+          "n": "1",
+          "url": "https://agx.community/"
+        },
+        {
+          "n": "2",
+          "url": "https://openfarm.ai/"
+        },
+        {
+          "n": "3",
+          "url": "https://aionyourfarm.com/"
+        },
+        {
+          "n": "4",
+          "url": "https://www.linkedin.com/posts/aglaunch_were-pleased-to-share-an-opportunity-to-activity-7467254960817258498-wNrm"
+        },
+        {
+          "n": "5",
+          "url": "https://www.fcc-fac.ca/en/knowledge/generative-ai-role-farm"
+        }
+      ]
+    }
+  },
+  "crawl_log": [
+    {
+      "step": "login",
+      "note": "Found 2 element(s) matching 'Sign in with Password' text."
+    },
+    {
+      "step": "login",
+      "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+    },
+    {
+      "step": "login",
+      "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+    },
+    {
+      "step": "login",
+      "success": true
+    },
+    {
+      "step": "keyword_discovery",
+      "note": "Found 7 plausible keyword option(s) after filtering."
+    },
+    {
+      "step": "select_keyword:Farming ai",
+      "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Farming ai\", exact=True).first\n    - locator resolved to <span class=\"text-xs md:text-sm truncate\">Farming ai</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 500.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 711.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 711.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 711.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n170 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Farming ai",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 470.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n590 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Ai farming",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 470.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n6,600 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Ai for agriculture",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 470.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n720 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Automatic milking systems",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 470.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n480 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Cow milking robot",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 470.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n1,300 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Lely astronaut",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_chart_history:entered",
+      "selector": ".recharts-wrapper"
+    },
+    {
+      "step": "crawl_chart_history:container_search",
+      "matched_selector": ".recharts-wrapper",
+      "candidates_tried": [
+        ".recharts-wrapper",
+        "svg",
+        "[class*='chart']",
+        "[class*='recharts']"
+      ]
+    },
+    {
+      "step": "crawl_chart_history:chart_found",
+      "box": {
+        "x": 321,
+        "y": 470.40625,
+        "width": 686,
+        "height": 422
+      }
+    },
+    {
+      "step": "crawl_chart_history:screenshot_before",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_after_hover",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:screenshot_fullpage",
+      "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+    },
+    {
+      "step": "crawl_chart_history:chart_html_sample",
+      "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts1-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+    },
+    {
+      "step": "crawl_chart_history:sample_0",
+      "x": 321.0,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_1",
+      "x": 350.82608695652175,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": false,
+      "tooltip_text_raw": "",
+      "has_real_tooltip_content": false
+    },
+    {
+      "step": "crawl_chart_history:sample_2",
+      "x": 380.6521739130435,
+      "y": 681.40625,
+      "tooltip_count": 1,
+      "tooltip_visible": true,
+      "tooltip_text_raw": "Aug 2022\n\n480 searches",
+      "has_real_tooltip_content": true
+    },
+    {
+      "step": "crawl_chart_history:finished",
+      "points_captured": 21
+    },
+    {
+      "step": "keyword_done",
+      "keyword": "Automatic milker for cows",
+      "stats_captured": true
+    },
+    {
+      "step": "crawl_community_signals_deep:entered",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals"
+    },
+    {
+      "step": "crawl_platform:reddit:starting"
+    },
+    {
+      "step": "open_community_signals_page:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals"
+    },
+    {
+      "step": "crawl_platform:reddit:view_analysis_links_found",
+      "count": 4,
+      "current_url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals"
+    },
+    {
+      "step": "crawl_platform:reddit:after_click",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/reddit-analysis"
+    },
+    {
+      "step": "crawl_platform:reddit:surviving_headings_dump",
+      "surviving_heading_texts": [
+        "Reddit Community Analysis",
+        "r/dairyfarming",
+        "r/farming",
+        "r/Agriculture",
+        "r/artificial",
+        "r/PLC",
+        "r/todayilearned"
+      ]
+    },
+    {
+      "step": "crawl_platform:reddit:count_diagnostic",
+      "summary_match_found": true,
+      "expected_count": 6,
+      "all_heading_count": 7,
+      "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what ki"
+    },
+    {
+      "step": "crawl_platform:reddit:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/reddit-analysis",
+      "card_count": 7,
+      "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nReddit Analysis\nReddit Community Analysis\n\nAnalyzed 6 relevant communities\n\nKey Findings\nAmidst the buzz of Reddit's farming communities, the interest in AI-driven solutions for dairy operations is unmistakable. Subreddits like r/dairyfarming, with 14,000 dedicated members, engage deeply in discussions about robotic milking systems and cost-saving technologies. Posts often amass 30+ comments delving into efficiency comparisons, signaling a strong demand for smarter farm management tools. Meanwhile, r/farming, a bustling hub of over 104,000 members, is ripe for insights as members regularly explore automation's benefits. In tech-centric spaces like r/artificial, with a hefty 1.3 million followers, AI's integration in agriculture sparks vibrant exchanges, validating market potential. These communities highlight clear pain points around cost-efficiency and operational optimization. Tapping into this curios"
+    },
+    {
+      "step": "crawl_platform:reddit:card_0:container_check",
+      "community_name": "Reddit Community Analysis",
+      "container_text_length": 58,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:reddit:card_1:container_check",
+      "community_name": "r/dairyfarming",
+      "container_text_length": 1821,
+      "container_text_starts_with_name": null
+    },
+    {
+      "step": "crawl_platform:reddit:finished",
+      "communities_found": 7
+    },
+    {
+      "step": "crawl_platform:facebook:starting"
+    },
+    {
+      "step": "open_community_signals_page:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals"
+    },
+    {
+      "step": "crawl_platform:facebook:view_analysis_links_found",
+      "count": 4,
+      "current_url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals"
+    },
+    {
+      "step": "crawl_platform:facebook:after_click",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/facebook-analysis"
+    },
+    {
+      "step": "crawl_platform:facebook:surviving_headings_dump",
+      "surviving_heading_texts": [
+        "Facebook Groups",
+        "AI in Agriculture: Transforming Farming with Technology",
+        "Robot Dairy Design/Build",
+        "Fullwood Merlin M2 Enthusiasts",
+        "Daily Experience with Robot Milkers",
+        "Lely Robot Users",
+        "VMS"
+      ]
+    },
+    {
+      "step": "crawl_platform:facebook:count_diagnostic",
+      "summary_match_found": true,
+      "expected_count": 6,
+      "all_heading_count": 7,
+      "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what ki"
+    },
+    {
+      "step": "crawl_platform:facebook:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/facebook-analysis",
+      "card_count": 7,
+      "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nFacebook Analysis\nFacebook Groups\n\n11 groups analyzed\n\nKey Findings\nIn analyzing Facebook group activity, a shift towards tech-savvy farming has emerged, driven by discussions around AI and robotics in agriculture. Groups like \"AI in Agriculture: Transforming Farming with Technology\" and \"Robot Dairy Design/Build,\" each bustling with a vibrant array of discussions, are focal points for farmers battling a 20% global labor shortage. These forums emphasize the growing need for AI-driven efficiency and sustainability, where automation can significantly cut water waste and streamline operations. For instance, \"Fullwood Merlin M2 Enthusiasts,\" with over 2,100 members, showcases the potential to leverage existing robotic systems through specialized tech integrations. Similarly, groups like \"Daily Experience with Robot Milkers\" and \"Lely Robot Users,\" bolstered by their dynamic engagement and numerous contribut"
+    },
+    {
+      "step": "crawl_platform:facebook:card_0:container_check",
+      "community_name": "Facebook Groups",
+      "container_text_length": 35,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:facebook:card_1:container_check",
+      "community_name": "AI in Agriculture: Transforming Farming with Technology",
+      "container_text_length": 648,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "community_visit_group_popup:facebook:1",
+      "captured_url": "https://www.facebook.com/groups/1253757671501405/posts/2838889196321570/"
+    },
+    {
+      "step": "community_visit_group_popup:facebook:2",
+      "captured_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Frobotdairy%2F"
+    },
+    {
+      "step": "community_visit_group_popup:facebook:3",
+      "captured_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F593535949346927%2F"
+    },
+    {
+      "step": "community_visit_group_popup:facebook:4",
+      "captured_url": "https://www.facebook.com/groups/1712918759137970/posts/2275173422912498/"
+    },
+    {
+      "step": "community_visit_group_popup:facebook:5",
+      "captured_url": "https://www.facebook.com/groups/1712918759137970/posts/1850826308680547/"
+    },
+    {
+      "step": "community_visit_group_popup:facebook:6",
+      "captured_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F438838969617079%2F"
+    },
+    {
+      "step": "crawl_platform:facebook:finished",
+      "communities_found": 7
+    },
+    {
+      "step": "crawl_platform:youtube:starting"
+    },
+    {
+      "step": "open_community_signals_page:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals"
+    },
+    {
+      "step": "crawl_platform:youtube:view_analysis_links_found",
+      "count": 4,
+      "current_url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals"
+    },
+    {
+      "step": "crawl_platform:youtube:after_click",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis"
+    },
+    {
+      "step": "crawl_platform:youtube:surviving_headings_dump",
+      "surviving_heading_texts": [
+        "YouTube Content Analysis",
+        "Top Channels",
+        "BBC News",
+        "DW Documentary",
+        "ABC Science and ABC Australia",
+        "Agriculture Central",
+        "ABC Science and ABC Australia",
+        "BBC News",
+        "BoumaticRobotics",
+        "Lely Center Mullingar",
+        "DairyFarmKindOfLife",
+        "Lely",
+        "GEA Farming",
+        "Lely",
+        "BBC Earth Science",
+        "Richard Wheelwright",
+        "Content Trends",
+        "Common Themes",
+        "Popular Formats"
+      ]
+    },
+    {
+      "step": "crawl_platform:youtube:count_diagnostic",
+      "summary_match_found": true,
+      "expected_count": 14,
+      "all_heading_count": 19,
+      "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what ki"
+    },
+    {
+      "step": "crawl_platform:youtube:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/youtube-analysis",
+      "card_count": 19,
+      "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nYouTube Analysis\nYouTube Content Analysis\n\nAnalyzed 14 channels with relevant content\n\nKey Findings\nYouTube's rich data landscape reveals a compelling trend: viewers are deeply engaged with videos showcasing AI advancements in agriculture, especially through well-produced documentaries and tech-savvy news reports. Channels like BBC News command attention with 2.5 million average views and a strong subscriber base of 13 million, while BoumaticRobotics captures audiences with 1.2 million views on cutting-edge product demonstrations. Common themes like AI in crop management and robotic milking systems consistently drive high engagement, particularly in informative videos that exceed 100k views. Documentaries and news formats dominate the scene, pulling in upwards of 1 million views, indicating a strong audience preference for detailed, credible content. However, substantial opportunities exist in emerging "
+    },
+    {
+      "step": "crawl_platform:youtube:card_0:container_check",
+      "community_name": "YouTube Content Analysis",
+      "container_text_length": 68,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:youtube:card_1:container_check",
+      "community_name": "Top Channels",
+      "container_text_length": 3068,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:youtube:finished",
+      "communities_found": 19
+    },
+    {
+      "step": "crawl_platform:other:starting"
+    },
+    {
+      "step": "open_community_signals_page:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals"
+    },
+    {
+      "step": "crawl_platform:other:after_click",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/other-communities"
+    },
+    {
+      "step": "crawl_platform:other:surviving_headings_dump",
+      "surviving_heading_texts": [
+        "Other Communities",
+        "Robot dairy farm owners and managers",
+        "Dairy tech adopters and agtech-curious farmers",
+        "Advisors and intermediaries",
+        "Farm owners",
+        "Advisors",
+        "Dealers and technicians",
+        "Agtech communities",
+        "Agtech-curious farmers"
+      ]
+    },
+    {
+      "step": "crawl_platform:other:count_diagnostic",
+      "summary_match_found": true,
+      "expected_count": 3,
+      "all_heading_count": 9,
+      "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what ki"
+    },
+    {
+      "step": "crawl_platform:other:landed",
+      "url": "https://www.ideabrowser.com/hub/ideas/an-ai-profit-analyst-for-robot-dairy-farms-95392a3f/community-signals/other-communities",
+      "card_count": 4,
+      "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nProfit per cow tracker for robotic dairy farms\nCommunity Signals\nOther Communities\nOther Communities\n\nAnalyzed 3 community segments across 5 types\n\nAnalysis Overview\n\nCommunity Segments\n\n3\n\nCommunity Types\n\n5\n\nPriority Communities\n\n3\n\nContent Strategies\n\n5\n\nPartnership Opportunities\n\n4\n\nCommunity Types\n\nProfessional associations and industry groups\n\nOnline forums and discussion spaces\n\nLocal meetups and events\n\nConferences and trade shows\n\nSocial media communities\n\nCommunity Segments\nRobot dairy farm owners and managers\n\nOwner-operators of 100- to 500-cow dairies using robotic or automated milking systems.\n\nPain Points\n\n\u2022 Data overload\n\u2022 Margin tracking\n\u2022 Integration challenges\n\nInterests\n\n\u2022 Efficiency\n\u2022 Cost savings\n\u2022 Operational automation\nr/dairyfarming\nFacebook robot-milking groups\nDairy tech adopters and agtech-curious farmers\n\nFarmers interested in digital tools and AI applications.\n\nPain Points\n\n\u2022 Data control\n\u2022 Decision support\n\u2022 Simple AI use cases\n\nInterest"
+    },
+    {
+      "step": "crawl_platform:other:card_0:container_check",
+      "community_name": "Other Communities",
+      "container_text_length": 63,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:other:card_1:container_check",
+      "community_name": "Robot dairy farm owners and managers",
+      "container_text_length": 307,
+      "container_text_starts_with_name": true
+    },
+    {
+      "step": "crawl_platform:other:page_sections_captured",
+      "has_content_strategies": true,
+      "has_partnership_opportunities": true,
+      "citations_count": 5
+    },
+    {
+      "step": "crawl_platform:other:finished",
+      "communities_found": 4
+    }
+  ]
+}
