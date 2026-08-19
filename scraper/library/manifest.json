@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-08-19",
+      "title": "Checkout testing for stores that sell to AI agents",
+      "path": "library/2026/2026-08-19.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-08-18",
       "title": "Profit per cow tracker for robotic dairy farms",
       "path": "library/2026/2026-08-18.json",
