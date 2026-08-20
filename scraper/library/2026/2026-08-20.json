@@ -1,0 +1,942 @@
+{
+  "id": "2026-08-20",
+  "date": "2026-08-20",
+  "title": "Search-and-rescue dispatch for missing pets",
+  "tagline": "Millions of pets go missing a year, and the search is chaos. Owners post on social media and dial random numbers off Google. Thermal drone pilots, tracking dogs...",
+  "badges": [],
+  "description": "Millions of pets go missing a year, and the search is chaos. Owners post on social media and dial random numbers off Google. Thermal drone pilots, tracking dogs, and ground search teams all exist, each working alone. So the right specialist gets called on day three. By then the scent trail is cold.\n\nClew is a managed recovery service that runs a lost pet like a rescue mission. One call connects the owner to a trained coordinator who logs the last sighting, behavior, and scent items. From there, the coordinator builds a plan and dispatches the right specialist for the terrain: drones, scent dogs, or ground teams. Owners get time-stamped updates, real evidence like photos and coordinates, and one point of contact. Petworks lists providers and leaves the owner to coordinate them alone. Clew runs the search and owns the outcome.\n\nBuild a bench of verified local specialists in one metro: certified tracking-dog handlers, commercial drone pilots, and seasoned ground searchers. Create a simple intake form and a triage playbook that maps case type to recovery method. Launch with manual dispatch over the phone. Hardest part is quality control on the roster, since one unreliable specialist on a desperate owner's case sinks the brand. Run the first ten cases to learn what works, what breaks, and where owners get stuck. Vet clinic and shelter partnerships open the referral pipeline from day one.\n\nBasic search packages start at $149 for a consultation and immediate next steps. Pet Protection memberships run $50 a month for priority dispatch, annual search credits, and discounted specialist rates. Vet clinics fielding lost-pet calls daily become natural referral partners. Pet insurers see fast recovery as a way to cut claim payouts. Case outcome data compounds across animal type, terrain, and time elapsed. Each recovery closed sharpens a triage algorithm that dispatches faster than the last.",
+  "scores": {
+    "opportunity": {
+      "score": 9,
+      "label": "Exceptional"
+    },
+    "problem": {
+      "score": 8,
+      "label": "High Pain"
+    },
+    "feasibility": {
+      "score": 6,
+      "label": "Challenging"
+    },
+    "whyNow": {
+      "score": 8,
+      "label": "Great Timing"
+    }
+  },
+  "keywords": [
+    {
+      "keyword": "Lost tabby cat",
+      "volume": 1000,
+      "growth": 809.0,
+      "cpc": null,
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Aug 2022",
+          "value": "90 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "320 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "390 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "390 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "110 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "140 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "210 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "590 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "590 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "590 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "590 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "590 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "720 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "880 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "1,000 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Homeagain pet recovery",
+      "volume": 8100,
+      "growth": 23.0,
+      "cpc": null,
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Aug 2022",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "8,100 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "14,800 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "6,600 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Suitical recovery suit for cats",
+      "volume": 8100,
+      "growth": 1977.0,
+      "cpc": null,
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Aug 2022",
+          "value": "480 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "590 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "720 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "390 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "720 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "880 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "590 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "590 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "720 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "720 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "590 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "5,400 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "2,900 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Dog recovery suit",
+      "volume": 12100,
+      "growth": 83.0,
+      "cpc": null,
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Aug 2022",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "8,100 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "8,100 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "6,600 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "8,100 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "9,900 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "18,100 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "14,800 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "12,100 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "14,800 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "14,800 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Suitical recovery suit for dogs",
+      "volume": 18100,
+      "growth": 654.0,
+      "cpc": null,
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Aug 2022",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "2,400 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "3,600 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "4,400 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "1,900 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "2,900 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "8,100 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "9,900 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Lost grey cat near me",
+      "volume": 1900,
+      "growth": 2614.0,
+      "cpc": null,
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Aug 2022",
+          "value": "90 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "260 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "480 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "720 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "480 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "50 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "90 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "320 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "880 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "880 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "880 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "1,000 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "1,600 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "1,300 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "1,600 searches"
+        }
+      ]
+    },
+    {
+      "keyword": "Pet recovery",
+      "volume": 880,
+      "growth": 83.0,
+      "cpc": null,
+      "competition": null,
+      "chartHistory": [
+        {
+          "label": "Aug 2022",
+          "value": "480 searches"
+        },
+        {
+          "label": "Oct 2022",
+          "value": "480 searches"
+        },
+        {
+          "label": "Dec 2022",
+          "value": "590 searches"
+        },
+        {
+          "label": "Feb 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Apr 2023",
+          "value": "480 searches"
+        },
+        {
+          "label": "Jul 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Sep 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Nov 2023",
+          "value": "590 searches"
+        },
+        {
+          "label": "Jan 2024",
+          "value": "590 searches"
+        },
+        {
+          "label": "Mar 2024",
+          "value": "720 searches"
+        },
+        {
+          "label": "May 2024",
+          "value": "590 searches"
+        },
+        {
+          "label": "Aug 2024",
+          "value": "720 searches"
+        },
+        {
+          "label": "Oct 2024",
+          "value": "590 searches"
+        },
+        {
+          "label": "Dec 2024",
+          "value": "590 searches"
+        },
+        {
+          "label": "Feb 2025",
+          "value": "880 searches"
+        },
+        {
+          "label": "Apr 2025",
+          "value": "720 searches"
+        },
+        {
+          "label": "Jun 2025",
+          "value": "720 searches"
+        },
+        {
+          "label": "Aug 2025",
+          "value": "720 searches"
+        },
+        {
+          "label": "Nov 2025",
+          "value": "720 searches"
+        },
+        {
+          "label": "Jan 2026",
+          "value": "720 searches"
+        },
+        {
+          "label": "Mar 2026",
+          "value": "720 searches"
+        }
+      ]
+    }
+  ],
+  "marketGap": "Market Gap\n\nOverall Rating\n\n8\n/10\n\nThe largest gap lies in the fragmented, emotionally charged realm of pet recovery services. A coordinated recovery service could alleviate current frustration and inefficiencies, offering a reliable and trustworthy solution for desperate pet owners.\n\n\ud83d\udeab\nUnderserved Customer Segments\n8\n/10\nOwners overwhelmed by fragmented tools\nPet owners currently have to coordinate between shelters, social groups, and other resources independently, creating stress and inefficiency [source]. A single-point, professional service could meet the needs of those overwhelmed by these fragmented processes. [1]\n\ud83c\udf0d\nGeographic Opportunities\n7\n/10\nMid-sized metros underserved\nBeyond regions like Florida with existing operators, mid-sized metros lack comprehensive recovery services, presenting an opportunity to capture an underserved market [source]. [1]\n\ud83d\udca1\nDifferentiation Levers\n8\n/10\nTrustworthy, coordinated service\nBy offering a reliable command center approach with real-time updates and verified specialists, the service could build trust and offer clear advantages over disconnected local efforts and scams [source]. [1]\nCitations & Sources\n1 - https://www.sedgwickcounty.org/animal-control/lost-found-pets/\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+  "executionPlan": "Execution Plan\n\nType\n\nHybrid\n\nTimeline\n\n1-2 months\n\nBudget\n\n$10K-50K\n\nPART 1: BUSINESS CLASSIFICATION\n\nBusiness Model & Market\n\nBusiness Type\n\nHybrid\n\nMarket Position\n\nMarket is fragmented with smaller regional operators; significant opportunity for a coordinated command center model.\n\nTarget Audience\n\nBuyer Personas\n\nPet owners in urban areas\n\nVeterinarians seeking partnerships\n\nKey Pain Points\n\nFragmented pet recovery efforts\n\nDistrust in current services\n\nPART 2: PHASE 1 ROADMAP (0-6 MONTHS)\n\nCore Strategy\n\nMVP Approach\n\nLaunch a centralized command center focusing on quick deployment, real-time updates, and verification of specialists.\n\nInitial Offer\n\nModel\n\nTiered\n\nPrice\n\n$149 for basic, $499 rapid response, $999 comprehensive search\n\nValue Proposition\n\nReliable recovery with verified specialists and advanced technology\n\nFulfillment\n\nManaged service\n\nLead Generation Strategy\n\nLead Magnet\n\nType & Format\n\nConsumer Education Content - Articles and webinars\n\nExpected Conversion\n\n15-20%\n\nValue Demonstration\n\nOffers advice and promotes trust in service\n\nAcquisition Channels\n\nFacebook Lost Pet Groups\n\nRegular engagement\n\nLarge, engaged user base\n\nContent Format\n\nCommunity posts and success stories\n\nTarget Metrics\n\n1,000 new users/month\n\nGoogle Ads\n\nDaily monitoring\n\nCapture urgent search intent\n\nContent Format\n\nKeyword-targeted ads\n\nTarget Metrics\n\n$5 CPA\n\nVeterinary Partnerships\n\nMonthly check-ins\n\nStrong local presence for outreach\n\nContent Format\n\nPartner newsletters, in-clinic flyers\n\nTarget Metrics\n\n500 referrals/month\n\nPART 3: PHASE 2 ROADMAP (6-18 MONTHS)\n\nGrowth Strategy\n\nTraction Milestones\n\nAchieve 5,000 successful recoveries and establish partnerships with 50 veterinary offices\n\nExpansion Plan\n\nStrategic Focus\n\nEnter mid-sized metros and enhance integration with shelter systems\n\nDevelopment Timeline\n\n6-12 months\n\nPricing Evolution\n\nAdjust based on regional competition\n\nGo-to-Market Approach\n\nBuilding local partnerships and enhancing logistics\n\nPART 4: IMPLEMENTATION PLAN\n\nStep-by-Step Execution\n\nDevelop local specialist network\n\nCreate digital command center interface\n\nLaunch targeted marketing campaigns\n\nInitiate pilot recovery cases\n\nSuccess Metrics\n\ncac\n\n$100-150\n\nchurn rate\n\n<15%\n\npilot conversion\n\n25%\n\nloan approval time\n\n-\n\nResource Requirements\n\nBudget Range\n\n$10K-50K\n\nTeam Structure\n\nSolo founder with AI tools\n\nTimeline\n\n1-2 months\n\nRisk Assessment\n\nMarket trust issues\n\nUse transparent pricing and verified evidence\n\nHigh operational costs\n\nOptimize resource allocation and partnerships\n\nCompetitive pushback\n\nDevelop unique value propositions\n\nNext Action Steps\n\nEngage with local pet communities\n\nDevelop partnerships with veterinarians\n\nBuild digital presence with educational content\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+  "executionDifficulty": {
+    "score": null,
+    "note": "Execution Difficulty\n5/10\nModerate build focusing on AI-driven pet tracking, 2-4 week MVP timeline.\nOverview\n\nModerate complexity due to AI integration for tracking and data handling.\n\nExecution Risks\n\u2022\nHigh API costs for map and data services\n\u2022\nDifficulty in accessing real-time location data\n\u2022\nPotential privacy concerns with geolocation\nTechnical Challenges\n\u2022\nIntegrating image recognition with AI models\n\u2022\nHandling geolocation data efficiently\n\u2022\nEnsuring system scalability for multiple users\nNon-Technical Challenges\n\u2022\nBuilding trust with pet owners for data sharing\n\u2022\nMarketing to reach target audience effectively\n\u2022\nAddressing concerns over data privacy\nClose"
+  },
+  "categorization": {
+    "type": "Service",
+    "market": "B2C",
+    "target": "Pet Owners",
+    "competitor": "Petworks"
+  },
+  "communitySignals": {
+    "reddit": "7 subreddits found",
+    "facebook": "5 groups found",
+    "youtube": "15 channels \u00b7 14 themes",
+    "other": "5 segments \u00b7 3 priorities"
+  },
+  "communitySignalsDetail": "Search-and-rescue dispatch for missing pets\nCommunity Signals\nCommunity Signals\n\nAnalysis of community engagement and interest across different platforms\n\nSummary of Community Analysis\n\nAcross various platforms, pet recovery services are gaining significant traction as communities emphasize the emotional and logistical challenges of reuniting lost pets with their owners. This sentiment is reflected in common themes such as the urgent need for comprehensive recovery strategies and innovative technological solutions. User discussions often highlight frustration with fragmented and ineffective efforts, revealing a gap that businesses can exploit by providing streamlined, technology-driven recovery services. Industry trends suggest a growing interest in integrating advanced technologies such as microchips and real-time tracking solutions, creating an opportunity to address these pain points with compassionate, efficient services.\n\nReddit communities show concentrated discussions around lost pets, with **r/Pets** (1.8 million members) and **r/dogs** (1.7 million members) as pivotal hubs. These subreddits reveal high engagement through emotional stories of missing pets, pointing to a clear demand for improved recovery methods. **r/lostpets**, though smaller (1,100 followers), serves as a focused platform for expert AMAs and educational collaborations, potentially increasing business credibility and reach. By leveraging these communities, businesses can engage users by providing expert knowledge and innovative tools, directly addressing the urgent needs expressed across Reddit.\n\nShow More\nReddit\nTotal Communities Found\n26\nRelevant Communities\n7\nView Analysis\nFacebook\nGroups Found\n13\nRelevant Groups\n5\nView Analysis\nYouTube\nChannels Analyzed\n15\nContent Themes\n14\nTotal Formats\n16\nView Analysis\nOther Communities\nCommunity Segments\n5\nCommunity Types\n5\nPriority Communities\n3\nView Analysis\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+  "communitySignalsRich": {
+    "reddit": [
+      {
+        "name": "r/lostpets",
+        "summary": "Search-and-rescue dispatch for missing pets\nCommunity Signals\nReddit Analysis\nr/lostpets\nr/lostpets\n1.1K+ followers\n\u00b7\nExplore community\nWhy It's Relevant\nDirectly focused on lost pets, making it an ideal community to engage with individuals in need of pet recovery services.\nOpportunity\nEngage with users by offering expert advice on pet recovery strategies. Collaborate with moderators for AMAs and educational content on new technologies like drones.\nRelevant Discussions\n1 discussions found\nLost or Missing Pets\nActive discussion\nSubreddit dedicated to sharing information on lost pets and fostering community-driven search efforts.\nView on Reddit\nExplore Business Opportunities in r/lostpets\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Lost or Missing Pets",
+            "url": "https://www.reddit.com/r/lostpets/"
+          }
+        ]
+      },
+      {
+        "name": "r/Pets",
+        "summary": "Search-and-rescue dispatch for missing pets\nCommunity Signals\nReddit Analysis\nr/Pets\nr/Pets\n1.8M members\n\u00b7\nExplore community\nWhy It's Relevant\nLarge community of pet owners discussing pet recovery; provides emotional and practical aspects important for understanding customer needs.\nOpportunity\nMonitor discussions for common issues and gather insights into customer sentiment to refine offerings. Consider Q&A sessions on best practices for finding lost pets.\nRelevant Discussions\n1 discussions found\nMost Unexpected way to find your lost pet \u2026 My success ...\nActive discussion\nSharing unexpected methods for recovering a lost pet. Offers insights into emotional connections with pets.\nView on Reddit\nExplore Business Opportunities in r/Pets\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Most Unexpected way to find your lost pet \u2026 My success ...",
+            "url": "https://www.reddit.com/r/Pets/comments/6hrwfm/most_unexpected_way_to_find_your_lost_pet_my/"
+          }
+        ]
+      },
+      {
+        "name": "r/AnimalRescue",
+        "summary": "Search-and-rescue dispatch for missing pets\nCommunity Signals\nReddit Analysis\nr/AnimalRescue\nr/AnimalRescue\n34.5K members\n\u00b7\nExplore community\nWhy It's Relevant\nAligns with the business's emphasis on coordinated searches and expertise in animal rescue.\nOpportunity\nConnect with enthusiasts to explore partnerships. Use testimonials or case studies to enhance credibility.\nRelevant Discussions\n1 discussions found\nSaving Lives, One paw at a time!\nActive discussion\nFocused on rescue efforts with stories of success and challenges in rescuing animals.\nView on Reddit\nExplore Business Opportunities in r/AnimalRescue\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Saving Lives, One paw at a time!",
+            "url": "https://www.reddit.com/r/AnimalRescue/"
+          }
+        ]
+      },
+      {
+        "name": "r/CatAdvice",
+        "summary": "Search-and-rescue dispatch for missing pets\nCommunity Signals\nReddit Analysis\nr/CatAdvice\nr/CatAdvice\n47.8K members\n\u00b7\nExplore community\nWhy It's Relevant\nFocused audience dealing with lost cats, providing a target segment for cat-specific recovery services and advice.\nOpportunity\nOffer content on cat behavior and recovery strategies. Collaborate with influential members to introduce proposed app demos.\nRelevant Discussions\n1 discussions found\nFound my missing cat after 6 weeks! Here's how we got ...\nActive discussion\nSharing strategies that successfully located a missing cat.\nView on Reddit\nExplore Business Opportunities in r/CatAdvice\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Found my missing cat after 6 weeks! Here's how we got ...",
+            "url": "https://www.reddit.com/r/CatAdvice/comments/1lpv26u/found_my_missing_cat_after_6_weeks_heres_how_we/"
+          }
+        ]
+      },
+      {
+        "name": "r/HelpingLostPets",
+        "summary": "Search-and-rescue dispatch for missing pets\nCommunity Signals\nReddit Analysis\nr/HelpingLostPets\nr/HelpingLostPets\nUnknown\n\u00b7\nExplore community\nWhy It's Relevant\nReflects a community engaged with solving fragmented recovery efforts, validating the business's pain points and solutions.\nOpportunity\nLeverage community knowledge through surveys and polls. Share success stories and how the business optimizes the recovery process.\nRelevant Discussions\n1 discussions found\nHelping Lost Pets\nActive discussion\nCommunity-focused on assisting lost pet recoveries with shared experiences and recovery suggestions.\nView on Reddit\nExplore Business Opportunities in r/HelpingLostPets\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Helping Lost Pets",
+            "url": "https://www.reddit.com/r/HelpingLostPets/"
+          }
+        ]
+      },
+      {
+        "name": "r/dogs",
+        "summary": "Search-and-rescue dispatch for missing pets\nCommunity Signals\nReddit Analysis\nr/dogs\nr/dogs\n1.7M members\n\u00b7\nExplore community\nWhy It's Relevant\nBroad community sharing detailed recovery tactics and emotional impacts, useful for designing empathetic recovery services.\nOpportunity\nOffer support and insights into recovery services. Share success stories and explore partnerships for enhanced search tactics.\nRelevant Discussions\n1 discussions found\nMy dog was lost for 6 days and was found in a crazy set of ...\nActive discussion\nDetailed account of search efforts involving community help for a missing dog.\nView on Reddit\nExplore Business Opportunities in r/dogs\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "My dog was lost for 6 days and was found in a crazy set of ...",
+            "url": "https://www.reddit.com/r/dogs/comments/133dhiy/my_dog_was_lost_for_6_days_and_was_found_in_a/"
+          }
+        ]
+      },
+      {
+        "name": "r/DFWPets",
+        "summary": "Search-and-rescue dispatch for missing pets\nCommunity Signals\nReddit Analysis\nr/DFWPets\nr/DFWPets\n2.8K+ followers\n\u00b7\nExplore community\nWhy It's Relevant\nFocused on a specific area, facilitating targeted promotions and service tests in the DFW metro area.\nOpportunity\nOffer promotions for first-time customers in the area. Gather feedback to refine offerings based on regional needs.\nRelevant Discussions\n1 discussions found\nLive in DFW? Lost a pet?\nActive discussion\nUsers post about both lost and found pets, offering opportunities for geographic targeting.\nView on Reddit\nExplore Business Opportunities in r/DFWPets\nDiscover detailed themes, pain points, and ideas from this community that could inspire new business ventures\nExplore More\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+        "discussions": [
+          {
+            "title": "Live in DFW? Lost a pet?",
+            "url": "https://www.reddit.com/r/DFWPets/"
+          }
+        ]
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Massachusetts Lost Pet Locator \ud83d\udc31",
+        "summary": "Massachusetts Lost Pet Locator \ud83d\udc31\n107.4K+ followers\npublic\nDESCRIPTION\n\nLost and found pets in Massachusetts and the surrounding towns. Report all found pets to your local Animal Control / Police dispatch (It's the law).\n\nWHY IT'S RELEVANT\n\nThis group has a significant number of engaged followers actively seeking lost pets. It offers opportunities for research, engagement, and partnerships, providing insights into the demands of pet owners in distress.\n\nRELEVANCE SIGNALS\nLarge engaged community focused on lost pet issues\nCommunity involvement in local solutions, potential partnership opportunities\nVariety of posts indicating a wide range of pet recovery scenarios\nVisit Group",
+        "discussions": [
+          {
+            "title": "Massachusetts Lost Pet Locator \ud83d\udc31",
+            "url": "https://www.facebook.com/groups/680766712108050/posts/2820206974830669/"
+          }
+        ]
+      },
+      {
+        "name": "Lost & Found Pets Hampton Roads, VA",
+        "summary": "Lost & Found Pets Hampton Roads, VA\n100.6K+ followers\npublic\nDESCRIPTION\n\nLocated at PETA headquarters with 24/7 microchip scanner access.\n\nWHY IT'S RELEVANT\n\nThe extensive membership and active discussions provide a rich platform to understand market demand and engage with a diverse audience.\n\nRELEVANCE SIGNALS\nLarge member base indicating high activity\nDiscusses a wide range of pet recovery aspects including microchip scanning\nInteraction with a broad range of pet issues\nVisit Group",
+        "discussions": [
+          {
+            "title": "Lost & Found Pets Hampton Roads, VA",
+            "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Flostandfoundpetshamptonroads%2F"
+          }
+        ]
+      },
+      {
+        "name": "Lost Cats of King County WA",
+        "summary": "Lost Cats of King County WA\n17.3K+ followers\npublic\nDESCRIPTION\n\nHelping lost cats find their way home in King County, Washington.\n\nWHY IT'S RELEVANT\n\nFocusing on lost cats, this group provides valuable insights into specialized tactics for feline recovery, enhancing service offerings for cats.\n\nRELEVANCE SIGNALS\nFocused on lost cats, a key business service area\nEngages in education through tips and tools\nModerate-sized but active participant base\nVisit Group",
+        "discussions": [
+          {
+            "title": "Lost Cats of King County WA",
+            "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2FLostCatsofKingCounty%2F"
+          }
+        ]
+      },
+      {
+        "name": "Nashville's Lost & Found Pets Page",
+        "summary": "Nashville's Lost & Found Pets Page\n11.6K+ followers\npublic\nDESCRIPTION\n\nOriginally created to reunite pets with their owners during floods.\n\nWHY IT'S RELEVANT\n\nThis community's successful history in reunions highlights established practices and an engaged audience critical for service validation.\n\nRELEVANCE SIGNALS\nHistory of successful pet reunions\nActive community function in lost and found\nEngagement through contact and participation\nVisit Group",
+        "discussions": [
+          {
+            "title": "Nashville's Lost & Found Pets Page",
+            "url": "https://www.facebook.com/groups/680766712108050/posts/2820206974830669/"
+          }
+        ]
+      },
+      {
+        "name": "Lost Dogs of King County WA",
+        "summary": "Lost Dogs of King County WA\n67.2K+ followers\npublic\nDESCRIPTION\n\nThe largest and most successful lost dog page in King County.\n\nWHY IT'S RELEVANT\n\nDirect connection to the target market of pet owners currently experiencing losses, vital for validating demand and engaging the community.\n\nRELEVANCE SIGNALS\nLarge, active community focused on dog recovery\nKey market for pet recovery services\nInvolvement in recovery techniques discussions\nVisit Group",
+        "discussions": [
+          {
+            "title": "Lost Dogs of King County WA",
+            "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F763044283717023%2F"
+          }
+        ]
+      }
+    ],
+    "youtube": [
+      {
+        "name": "HomeAgain PetRescuer",
+        "summary": "HomeAgain PetRescuer\n1500 avg. views\nNot available subscribers\n\nContent Approach\n\nFocuses on microchipping and reunion stories.\n\nAudience Response\n\nPositive engagement, especially on reunion stories.\n\n6 relevant videos",
+        "discussions": []
+      },
+      {
+        "name": "Drone Pet Recovery",
+        "summary": "Drone Pet Recovery\n2491 avg. views\nNot available subscribers\n\nContent Approach\n\nUtilizes drone technology for pet recovery.\n\nAudience Response\n\nHigh engagement due to innovative approach.\n\n1 relevant videos",
+        "discussions": []
+      },
+      {
+        "name": "Kim Lost Cat Finder",
+        "summary": "Kim Lost Cat Finder\n2500 avg. views\nNot available subscribers\n\nContent Approach\n\nProvides tips and stories on finding lost pets.\n\nAudience Response\n\nGood engagement on practical tips and success stories.\n\n5 relevant videos",
+        "discussions": []
+      },
+      {
+        "name": "Drone Pet Recovery",
+        "summary": "Drone Pet Recovery\n~5,500 avg. views\nUnavailable subscribers\n\nContent Approach\n\nFocuses on using drones for real-world pet searches, often showcasing actual recoveries.\n\nAudience Response\n\nStrong engagement with emotional connections.\n\n8 relevant videos",
+        "discussions": []
+      },
+      {
+        "name": "Florida Pet Recovery",
+        "summary": "Florida Pet Recovery\n365 avg. views\nUnavailable subscribers\n\nContent Approach\n\nDetailed stories of individual rescues and technological approaches using drones.\n\nAudience Response\n\nNiche audience with interest in tech-driven pet recovery.\n\n2 relevant videos",
+        "discussions": []
+      },
+      {
+        "name": "We Love Animals",
+        "summary": "We Love Animals\n7,817,447 avg. views\nUnavailable subscribers\n\nContent Approach\n\nFocuses on emotional, engaging pet stories.\n\nAudience Response\n\nVery high engagement, broad appeal.\n\n1 relevant videos",
+        "discussions": []
+      },
+      {
+        "name": "The Dodo",
+        "summary": "The Dodo\n4,000,000 avg. views\n11 million subscribers\n\nContent Approach\n\nHeartwarming stories of lost pets being found and reunited with their owners.\n\nAudience Response\n\nStrong emotional engagement and significant sharing\n\n4 relevant videos",
+        "discussions": []
+      },
+      {
+        "name": "Front Street Animal Shelter - City of Sacramento",
+        "summary": "Front Street Animal Shelter - City of Sacramento\n500,000 avg. views\n150,000 subscribers\n\nContent Approach\n\nPractical guides and step-by-step advice on pet recovery.\n\nAudience Response\n\nViewed as authoritative and educational\n\n1 relevant videos",
+        "discussions": []
+      }
+    ],
+    "other": [
+      {
+        "name": "Pet owners in urgent distress",
+        "summary": "Pet owners in urgent distress\n\nOwners of recently missing dogs or cats, often within hours or days of disappearance.\n\nPain Points\n\n\u2022 Panic\n\u2022 Time pressure\n\u2022 Lack of a clear plan\n\nInterests\n\n\u2022 Reunion stories\n\u2022 Practical checklists\n\u2022 Immediate advice\nReddit pet subreddits\nLocal Facebook groups\nNeighborhood community boards\nYouTube reunion content",
+        "discussions": []
+      },
+      {
+        "name": "Rescue volunteers and neighborhood helpers",
+        "summary": "Rescue volunteers and neighborhood helpers\n\nExperienced volunteers and neighbors who share sightings or help distribute flyers.\n\nPain Points\n\n\u2022 Want organized guidance\n\u2022 Credible updates\n\u2022 Preventing duplication of effort\n\nInterests\n\n\u2022 Organized guidance\n\u2022 Credible updates\nFacebook lost-pet groups\nNeighborhood associations\nShelter volunteer networks",
+        "discussions": []
+      },
+      {
+        "name": "Animal welfare professionals and shelters",
+        "summary": "Animal welfare professionals and shelters\n\nShelter staff, rescue coordinators, microchip registries.\n\nPain Points\n\n\u2022 Improving information quality\n\u2022 Faster case routing\n\nInterests\n\n\u2022 Reducing noise\n\u2022 Improving case routing\nShelter events\nRescue conferences\nFacebook groups",
+        "discussions": []
+      },
+      {
+        "name": "Drone pilots, trackers, and field specialists",
+        "summary": "Drone pilots, trackers, and field specialists\n\nDrone operators, trackers, and search contractors.\n\nPain Points\n\n\u2022 Lead generation\n\u2022 Trust\n\u2022 Credible dispatch needs\n\nInterests\n\n\u2022 Lead generation\n\u2022 Trust\n\u2022 Repeat work\nDrone associations\nLocal pilot groups\nContractor networks",
+        "discussions": []
+      },
+      {
+        "name": "Local business and civic communities",
+        "summary": "Local business and civic communities\n\nChambers of commerce, local business owners.\n\nPain Points\n\n\u2022 Community trust\n\u2022 Public safety\n\nInterests\n\n\u2022 Community trust\n\u2022 Public safety\n\u2022 Visible community value\nChambers\nLocal events",
+        "discussions": []
+      }
+    ]
+  },
+  "otherCommunitiesExtra": {
+    "contentStrategies": "Pet owners\n\nLive updates and evidence-based search execution.\n\nTactics\n\n\u2022 Emergency point of contact\n\u2022 Triage plan\n\u2022 Live updates\nVolunteers\n\nFewer duplicate or misleading efforts.\n\nTactics\n\n\u2022 Structured coordination\n\u2022 Better task assignment\nShelters and rescues\n\nMore closed-loop outcomes.\n\nTactics\n\n\u2022 Faster case routing\n\u2022 Improved information quality\nSpecialists\n\nA differentiated and paid pipeline.\n\nTactics\n\n\u2022 Reliable local dispatch\nLocal businesses\n\nHelps residents and strengthens trust.\n\nTactics\n\n\u2022 Visible public-safety-style service",
+    "partnershipOpportunities": "Shelters and rescues\n\nMicrochip services and veterinarians\n\nDrone operators and scent-dog handlers\n\nProperty managers\n\nPet insurers or pet-care brands",
+    "citations": [
+      {
+        "n": "1",
+        "url": "https://www.godaddy.com/resources/spotlight/how-to-build-community-as-a-business-owner"
+      },
+      {
+        "n": "2",
+        "url": "https://niviachanta.com/articles/7-steps-to-build-a-community-driven-business"
+      },
+      {
+        "n": "3",
+        "url": "https://www.nationwide.com/business/solutions-center/growing/how-to-get-involved-in-your-community"
+      },
+      {
+        "n": "4",
+        "url": "https://www.linkedin.com/pulse/how-can-small-businesses-build-communities-from-scratch-johnson-z7vwf"
+      },
+      {
+        "n": "5",
+        "url": "https://mitsloan.mit.edu/ideas-made-to-matter/how-to-engage-your-business-community-and-economic-development"
+      }
+    ]
+  },
+  "businessFitDeep": {
+    "Revenue Potential": "\ud83d\udcb0\nRevenue Potential\n$$\n$100K-$1M ARR potential with scalable service leveraging trust and urgency.\nOverview\n\nStrong initial demand in fragmented market with potential for scalable trust-based service.\n\nRevenue Examples\n\u2022\nBasic Search Package: $149/case\n\u2022\nRapid Response Package: $499/case\n\u2022\nComprehensive Search: $999/case\n\u2022\nSubscription Service: $50\u2013$100/mo\nBusiness Models\n\u2022\nFixed-fee search packages\n\u2022\nMonthly subscription for recurring assistance\n\u2022\nPartnership discounts with pet insurers\n\u2022\nSuccess-based recovery bonuses\nExample Companies\nFlorida Pet Recovery\nPetworks\nPawBoost\nPetco Love Lost\nClose",
+    "Execution Difficulty": "\ud83d\udee0\ufe0f\nExecution Difficulty\n5/10\nModerate build focusing on AI-driven pet tracking, 2-4 week MVP timeline.\nOverview\n\nModerate complexity due to AI integration for tracking and data handling.\n\nExecution Risks\n\u2022\nHigh API costs for map and data services\n\u2022\nDifficulty in accessing real-time location data\n\u2022\nPotential privacy concerns with geolocation\nTechnical Challenges\n\u2022\nIntegrating image recognition with AI models\n\u2022\nHandling geolocation data efficiently\n\u2022\nEnsuring system scalability for multiple users\nNon-Technical Challenges\n\u2022\nBuilding trust with pet owners for data sharing\n\u2022\nMarketing to reach target audience effectively\n\u2022\nAddressing concerns over data privacy\nClose",
+    "Go-To-Market": "\ud83d\ude80\nGo-To-Market\n9/10\nHigh potential with strong traction across community channels and keyword demand.\nOverview\n\nStrong community engagement and growing search interest in pet recovery services.\n\nGo-to-Market Tactics\n\u2022\nLeverage Facebook groups for targeted engagement and real-time service trials\n\u2022\nCreate educational YouTube content highlighting recovery strategies and emotional reunions\n\u2022\nUtilize Reddit for AMAs and expert advice on new recovery technologies\n\u2022\nOptimize local SEO with high-growth keywords to capture regional searches\nTarget Audiences\n\u2022\nPet owners in urgent distress\n\u2022\nRescue volunteers and neighborhood helpers\n\u2022\nAnimal welfare professionals and shelters\n\u2022\nLocal business and civic communities\nChannels with Signal\n\u2022\nFacebook Groups (107K+ members in Massachusetts group)\n\u2022\nYouTube (high engagement on emotional reunions)\n\u2022\nReddit (1.8M members in r/Pets)\nEarly Positioning Angles\n\u2022\n'Real-time updates for every pet recovery'\n\u2022\n'Trusted local experts, one coordinated search'\n\u2022\n'Your pet's emergency command center'\nTraction Signal\n\nClear traction\n\nClose"
+  },
+  "scoreCardsDeep": {
+    "Opportunity": "Support & more\nS\nsneakerconsultant98\nSearch-and-rescue dispatch for missing pets\nOpportunity Score\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nOpportunity Score\nOverall Rating\n9\n/10\nA tech-enabled pet recovery service caters to urgent needs in a fragmented market.\nOpportunity Type: Blue Ocean\nWindow: Opening Up\nThe opportunity is exceptional due to strong demand, technological readiness, and the absence of a dominant player.\nKey Strengths\nHigh urgency and emotional need\nStrong community engagement\nAdvanced AI technology for efficiency\nScalable, trust-based service models\nKey Risks\nHigh API and data costs\nPotential privacy concerns\nCompetition from free community efforts\n\ud83d\udcc8\nMarket Analysis\n9\n/10\nMarket Timing\nThe market is ripe with unmet demand and technological enablers are readily available.\nMarket Potential\nSignificant willingness to pay and large underserved segments.\n\ud83c\udfaf\nCompetitive Position\n7\n/10\nCompetitive Advantage\nNo dominant player exists, and tech differentiation is strong.\nExecution Feasibility\nModerate complexity due to AI integration but manageable within weeks.\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+    "Problem": "Support & more\nS\nsneakerconsultant98\nSearch-and-rescue dispatch for missing pets\nProblem Score\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nProblem Score\nOverall Rating\n8\n/10\nPet owners are significantly distressed by fragmented recovery services.\nPain Type: Acute\nTrend: Increasing\nThe emotional distress and urgency in reuniting lost pets highlight a strong demand for coordinated solutions.\nKey Pain Points\nEmotional distress from lost pets\nIneffective fragmented recovery efforts\nUrgency in initial recovery period\nScams and lack of trust in existing solutions\nMarket Evidence\nHigh engagement in lost pet communities like r/Pets and Facebook groups\nEmotional stories of missing pets on YouTube garner millions of views\nSignificant discussions around scams and ineffective coordination in forums\n\ud83d\udd25\nProblem Score\n8.5\n/10\nPain Frequency\nPet owners face this issue immediately and intensely when pets go missing, with heightened urgency in the first few days.\nPain Intensity\nThe emotional and logistical challenges are severe, impacting owners deeply.\n\ud83d\udcb0\nMarket Response\n6.5\n/10\nCurrent Solutions\nExisting solutions are fragmented and often ineffective, leading to frustration.\nWillingness to Pay\nPet owners demonstrate a strong readiness to invest in reliable recovery services.\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+    "Feasibility": "Support & more\nS\nsneakerconsultant98\nSearch-and-rescue dispatch for missing pets\nFeasibility Score\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nFeasibility Score\nOverall Rating\n6\n/10\nModerately feasible with AI tools for enhanced searching.\nTime to MVP: 1-2 weeks\nMinimum Team: 1 people (Product Manager)\nProduct vision and AI orchestration can be managed by one person.\nKey Advantages\nAI-driven search and tracking systems are accessible.\nSolo builders can leverage app generators for rapid deployment.\nMinimal ongoing infrastructure for small initial user base.\nCritical Challenges\nMarketing to pet owners effectively.\nBuilding a trustworthy tracking system.\nManaging API costs from search functionalities.\n\ud83c\udfaf\nMarket & Validation\n6\n/10\nMarket Clarity\nNiche market with clear initial target but broader appeal uncertain.\nEarly Validation\nNiche audience allows focused early testing.\n\ud83d\udee0\ufe0f\nTechnical & Resources\n7\n/10\nTechnical Feasibility\nAI tools make complex search functionalities feasible.\nResource Requirements\nModerate costs with primary expenses in marketing and AI API usage.\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+    "Why Now": "Support & more\nS\nsneakerconsultant98\nSearch-and-rescue dispatch for missing pets\nWhy Now\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nDiscover your founder archetype\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\nWhy Now\nOverall Rating\n8\n/10\nThe pet recovery market is ripe for innovation, driven by a robust demand for coordinated, technology-enabled services to address emotional and urgent needs.\n\ud83d\udcc8\nMarket Timing Factors\n8\n/10\nHigh Urgency Need\nThe market demand for missing-pet recovery is evident with standardized recovery workflows indicative of a common problem. [1]\nFragmented Processes\nThe existing guidance involves numerous separate efforts, creating a gap that a coordinated service can fulfill. [1]\nWillingness to Pay\nConsumers are already engaging private services at significant costs, supporting the business viability. [1]\n\ud83e\udde0\nTechnological Enablers\n9\n/10\nAI Photo Matching\nImproved identification speed through AI makes recovery services more compelling. [2]\nThermal Drones\nBecoming practical for searches in open and hard-to-reach areas. [3]\n\ud83c\udfdb\ufe0f\nRegulatory & Social Catalysts\n8\n/10\nPublic Recovery Guidance\nAuthorities are normalizing rapid recovery behaviors, supporting service legitimacy. [2]\nDatabase Integration\nMicrochip and database reporting have become standard, aiding recovery efforts. [2]\n\ud83d\udd12\nRisk Reduction Factors\n8\n/10\nEstablished Business Model\nPrivate specialists and recovery marketplaces show market validation for paid services. [1]\nOperational Playbooks\nWell-documented steps for recovery reduce uncertainty in execution. [4]\n\ud83d\ude80\nCompetitive Window\n8\n/10\nFragmented Market\nNo dominant player yet exists in the end-to-end recovery command-center niche. [5]\n\ud83d\udcca\nSupporting Data Points\n8\n/10\nPricing Benchmarks\nExisting services have anchoring prices, validating the willingness to spend. [1]\nAI Technology\nPublicly marketed AI matching tool by Petco highlights tech viability. [2]\n\u26a0\ufe0f\nTiming Risks\n6\n/10\nReliance on Coordination Payment\nMust prove benefits over free community actions for sustained growth. [1]\n\u23f0\nWhy Wait = Why Fail\n9\n/10\nSpeed as Product\nTimely launch is crucial to capture the most desperate customer phase after pet loss. [2]\nCitations & Sources\n1 - https://www.petworks.com/hire/missing-pet\n2 - https://petcolove.org/newsroom/news-story/free-and-fast-photo-matching-ai-technology-can-help-reunite-pets-with-their/\n3 - https://www.bbc.co.uk/news/articles/cj4pvvwxl1wo\n4 - https://www.petlink.net/complete-lost-pet-guide-pet-goes-missing/\n5 - https://pet911.org/\nSend us feedback\nWHAT KIND OF FEEDBACK?\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0"
+  },
+  "valueEquation": "Value Equation Analysis\n\nOverall Rating\n\n9\n/10\n\nAnalyzing the value proposition using Alex Hormozi's Value Equation framework.\n\n\ud83c\udfaf\nDream Outcome\n9/10\n\nPet owners deeply desire the safe and quick return of their missing pets, ideally with minimal stress and effort. This service promises coordinated, professional search efforts using advanced technology and expert personnel to maximize the chances of reunion.\n\n\ud83c\udfb2\nPerceived Likelihood\n8/10\n\nCustomers believe in this service due to the use of verified specialists, advanced equipment like drones, and the promise of systematic, evidence-backed search processes. The credibility is enhanced by the transparency of operations and updates, as well as existing consumer willingness to spend on recovery services.\n\n\u23f1\ufe0f\nTime Delay\n8/10\n\nThe service offers immediate start with varying timelines based on chosen packages\u2014ranging from an immediate alert setup to a fully managed, three-day search effort.\n\n\ud83d\udcaa\nEffort & Sacrifice\n5/10\n\nCustomers must invest significant financial resources, potentially sacrificing a large part of their budget for emergency spending. Trust and emotional vulnerability also play critical roles.\n\n\ud83d\udca1\nImprovement Suggestions\n\nTo improve the offer, focus on reducing the effort and sacrifice score. Consider options like offering lower-cost entry packages or integrating payment plans to ease financial pressure. Additionally, enhancing assurance through insurance partnerships could increase perceived value without reducing effort or quick response times.\n\nUnderstanding the Value Equation\n\nAlex Hormozi's Value Equation is a powerful framework for evaluating business ideas and offers. It helps identify what makes an offer compelling and how to improve it.\n\n(Dream Outcome \u00d7 Perceived Likelihood)\n(Time Delay \u00d7 Effort)\nKey Components\nDream Outcome\n\nThe deeply desired end result that transforms the customer's situation.\n\nPerceived Likelihood\n\nCustomer confidence in achieving the outcome, backed by proof and guarantees.\n\nTime Delay\n\nSpeed to results - faster outcomes increase perceived value.\n\nEffort & Sacrifice\n\nResources and energy required from the customer.\n\nYouTube\nWebsite\n$100M Offers Book\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+  "marketMatrix": "Market Matrix Analysis\n\nUniqueness\n\n8/10\n\nValue\n\n9/10\n\nThe idea of an emergency search team for missing pets is both highly unique and valuable. It addresses a clear need by providing a professional, coordinated response to a common and emotional problem that is often handled in a fragmented manner. The service leverages advanced technology such as drones, alongside expert networks, to increase the chance of recovering lost pets swiftly. Market research shows significant demand, with 1.7 million pets going missing annually in the US alone. Consumers have shown willingness to pay significant amounts for professional search services. Competitors exist but are typically localized and lack an integrated, command-center approach. The business model has been validated through evidence of existing services charging premium rates and reports of consumer demand. However, the uniqueness lies in the orchestration and use of technology, managing to fill the market void in providing a comprehensive, reliable pet recovery service.\n\nPosition Analysis\nTech Novelty\n\nHigh uniqueness\n\nLow value\n\nCategory King\n\nHigh uniqueness\n\nHigh value\n\nLow Impact\n\nLow uniqueness\n\nLow value\n\nCommodity Play\n\nLow uniqueness\n\nHigh value\n\nCategory King\n\nThis idea has high uniqueness and high value potential, positioning it for category leadership.\n\nUnderstanding the Quadrants\nCategory King\n\nHigh uniqueness + High value. These are breakthrough products that create new categories and capture significant value. Think iPhone, Tesla, or Airbnb.\n\nTech Novelty\n\nHigh uniqueness + Low value. Interesting technology that doesn't solve a valuable problem. Often \"solutions looking for a problem.\"\n\nCommodity Play\n\nLow uniqueness + High value. Established markets with proven demand but intense competition. Success requires operational excellence.\n\nLow Impact\n\nLow uniqueness + Low value. These ideas may need significant refinement to find a viable market position. Consider pivoting to increase either uniqueness or value proposition.\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+  "acpFramework": "ACP Framework Analysis\n\nAnalyzing your idea through the Audience-Community-Product framework to ensure product-market fit and community engagement.\n\nAUDIENCE ANALYSIS\n\nTarget Definition\n\nDemographics\n\nPet owners, especially those in urban and suburban areas, dealing with recent pet disappearances.\n\nPsychographics\n\nHigh emotional investment in pets as family members, potentially willing to financially invest in recovery services.\n\nPlatforms\n\nActive on social media, pet owner forums, and local community groups, leaning towards those with disposable income for emergency services.\n\nNeeds Analysis\n\nUnmet Needs\n\nA central, trusted service for coordinated pet recovery, addressing fragmented and fraudulent options currently available.\n\nContent Gaps\n\nLack of comprehensive educational resources on professional recovery methods, steps, and case studies.\n\nDifferentiation\n\nVerification, proven recovery methods, and comprehensive coordination, versus piecemeal community efforts.\n\nContent Strategy\n\nSecret Sauce\n\nEmotional storytelling combined with factual presentations of successful recoveries to build trust and engagement.\n\nKey Topics\n\nRecovery steps, technology used (e.g., drones), success stories, and fraud prevention tips.\n\nContent Formats\n\nEducational articles, checklists, case studies, and user testimonials.\n\nCOMMUNITY ANALYSIS\n\nPlatform Strategy\n\nPrimary Platform\n\nLocal Facebook groups specific to lost pets and animal rescue forums.\n\nPlatform Rationale\n\nThese platforms host active communities seeking immediate help, allow targeted interaction, and can verify service through shared success stories.\n\nSecondary Platforms\n\nReddit subreddits like r/Pets, YouTube for visual content and case studies.\n\nTrust Building\n\nUGC Strategy\n\nEncourage pet owners to share their recovery stories and experiences working with the service, focusing on transparency.\n\nModeration Approach\n\nStrict vetting of content in community spaces to prevent misinformation and scam attempts.\n\nTransparency\n\nRegular updates on recovery efforts with time-stamped evidence, clear and upfront pricing information.\n\nEngagement Plan\n\nCommunity Rituals\n\nWeekly 'Found Pet' stories to generate hope and showcase service efficacy, interactive Q&A sessions with recovery experts.\n\nContent Calendar\n\nBi-weekly educational posts on recovery methods, profiles of team members, and technology used.\n\nInteraction Methods\n\nAMA sessions on Reddit, expert interviews, direct engagement via comments to build trust and credibility.\n\nPRODUCT ANALYSIS\n\nCore Offering\n\nDescription\n\nA professional, coordinated pet recovery service using advanced technology and verified specialists.\n\nKey Features\n\nThermal drones, scent tracking with specialist dogs, verified field teams, and real-time updates.\n\nValue Proposition\n\nWe increase the chance of recovering lost pets quickly and reliably, providing emotional relief and resolution.\n\nDevelopment Roadmap\n\nMVP\n\nLaunch in a single metro area, focusing on immediate recovery and local network building.\n\nFuture Iterations\n\nExpand to additional metros, refine technology, and add more specialists as demand grows.\n\nCommunity Integration\n\nFoster local partnerships with shelters and social groups, and integrate with microchip registries and vets.\n\nEngagement Mechanics\n\nNetwork Effects\n\nBuilding a community of satisfied customers who become advocates, driving word-of-mouth growth.\n\nSticky Features\n\nComprehensive recovery packages with clear outcome tracking, emotional support resources for pet owners during the search process.\n\nUsage Frequency\n\nInfrequent; targeted at high-stress, immediate-need situations when a pet is missing.\n\nEXECUTION PLAN\n\n90-Day Plan\n\nEstablish local presence, form specialist teams, initiate community engagement, launch marketing campaigns, begin initial cases and learning iterations.\n\nResource Needs\n\nFunding for operational setup, technology acquisition (drones, tracking equipment), partnerships with local experts, marketing budget.\n\nSuccess Metrics\n\nPet recovery rate, customer satisfaction scores, repeat use likelihood, conversion rates from online interest.\n\nUnderstanding ACP Framework\n\nThe ACP Framework helps validate and refine business ideas by focusing on three key pillars: Audience, Community, and Product. This holistic approach ensures your idea has strong product-market fit and community engagement potential.\n\nAudience\n\nDeep understanding of target users, their needs, and how to reach them effectively through content and positioning.\n\nCommunity\n\nBuilding and nurturing a engaged user base through strategic platform choices and meaningful interactions.\n\nProduct\n\nThe core offering and its development roadmap. Focus on features that solve real problems and create lasting value for users.\n\nKey Benefits\n\nValidates product-market fit early\n\nEnsures sustainable user acquisition\n\nCreates network effects through community\n\nGuides content and engagement strategy\n\nGreg Isenberg\nStartup Empire\nLate Checkout\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+  "valueLadderDetail": "Value Ladder Strategy\n\nA strategic progression of offers that build trust and maximize customer lifetime value.\n\nLEAD MAGNET\n\nPet Safety Guide\nFree\n\nFree downloadable guide on best practices for preventing pet loss.\n\nValue Provided\n\nEducates pet owners about avoidance strategies; establishes expertise.\n\nGoal\n\nBuild trust and attract potential customers\n\nFRONTEND OFFER\n\nBasic Search Package\n$149\n\nInitial consultation and advice on immediate next steps.\n\nValue Provided\n\nProvides a professional assessment and action plan at a low cost.\n\nGoal\n\nAcquire new users and start service engagement\n\nCORE OFFER\n\nPet Protection Membership\n$50\u2013$100/month\n\nMembership includes annual basic search and discounts on packages.\n\nValue Provided\n\nOffers peace of mind with continuous support and financial benefits.\n\nGoal\n\nIncrease recurring revenue through subscription offerings\n\nCONTINUITY PROGRAM\n\nRapid Response Package\n$499\n\nFast deployment of a coordinated search team using multiple methods.\n\nValue Provided\n\nComprehensive, quick action increases chances of pet recovery.\n\nGoal\n\nDeliver core service and drive higher revenue transactions\n\nBACKEND OFFER\n\nComprehensive Search\n$999\n\nFull-service, intensive search operation with field teams and technology.\n\nValue Provided\n\nMaximum effort and resources deployed for most thorough search possible.\n\nGoal\n\nMaximize lifetime value through premium services\n\nUnderstanding Value Ladder\n\nThe Value Ladder is a business framework that helps you structure your offers in ascending levels of value and price. Start with something irresistible and low-barrier, then build trust and value at each step.\n\nWhy It Works\n\nBuilds trust incrementally\n\nMaximizes customer lifetime value\n\nHelps segment your audience\n\nCreates predictable revenue\n\nKey Stages\n\nLead Magnet (Bait)\n\nFree value to build trust and capture leads\n\nFrontend Offer\n\nLow-ticket product to convert leads to buyers\n\nCore Offer\n\nMain product/service delivering full solution\n\nContinuity Program\n\nOngoing value through memberships or add-ons\n\nBackend Offer\n\nPremium, high-ticket solutions for best customers\n\nRussell Brunson\nDotCom Secrets\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+  "proofSignals": "Proof & Signals\n\nOverall Rating\n\n8\n/10\n\nThe demand for a professional pet recovery service is validated by emotional frustration with current fragmented processes, high urgency in pet recovery needs, systemic market gaps, and strong community engagement. Numerous keyword searches, substantial willingness to pay, and a fragmented competitive landscape indicate a ripe opportunity for a coordinated, technology-enabled service.\n\n\ud83d\udca2\nEmotional Frustration Signals\n\ud83d\udd70\ufe0f\nTime-Sensitive Needs\n\u274c\nSystemic Barriers\n\ud83d\udde3\ufe0f\nCommunity Demand & Engagement\n\ud83d\udca2\nEmotional Frustration Signals\n9\n/10\nConfusion and Stress\nOwners are overwhelmed by having to coordinate multiple resources like shelters and social media groups. [1]\nScams and False Promises\nTrust issues arise from scams, which a verified service could mitigate. [1]\nLimited Success Without Coordination\nFragmented efforts are often ineffective without a cohesive strategy. [1]\n\ud83d\udd70\ufe0f\nTime-Sensitive Needs\n8\n/10\nUrgency in Recovery\nImmediate action is crucial as pet recovery is time-sensitive, especially during the first hours and days. [4][5]\nHigh-Summer Lost Rates\n40% of pet losses occur in summer, heightening seasonal urgency. [4]\nMunicipal and Nonprofit Guidelines\nStandardized recovery workflows emphasize immediate action. [4]\n\u274c\nSystemic Barriers\n7\n/10\nFragmented Market\nThe market lacks a dominant, coordinated recovery service, indicating an opportunity. [1]\nReliance on Free Services\nMany rely on free options, which underscores the need for a paid, trusted alternative. [1]\nLimited Local Specialists\nThere are few available qualified specialists for local searches, creating a service gap. [1]\n\ud83d\udde3\ufe0f\nCommunity Demand & Engagement\n9\n/10\nHigh Search Volume\nKeywords related to pet recovery show strong search demand, validating interest. [1]\nWillingness to Pay\nExisting services demonstrate consumer readiness to spend hundreds on recovery efforts. [1]\nActive Online Communities\nSocial media forums like Reddit and Facebook exhibit engaged users discussing lost pets, providing social proof. [4][5]\nCitations & Sources\n1 - https://www.sedgwickcounty.org/animal-control/lost-found-pets/\n4 - https://marketintelo.com/report/pet-lost-and-found-platforms-market\n5 - https://www.floridapetrecovery.com/\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+  "whyNowDetail": "Why Now\n\nOverall Rating\n\n8\n/10\n\nThe pet recovery market is ripe for innovation, driven by a robust demand for coordinated, technology-enabled services to address emotional and urgent needs.\n\n\ud83d\udcc8\nMarket Timing Factors\n8\n/10\nHigh Urgency Need\nThe market demand for missing-pet recovery is evident with standardized recovery workflows indicative of a common problem. [1]\nFragmented Processes\nThe existing guidance involves numerous separate efforts, creating a gap that a coordinated service can fulfill. [1]\nWillingness to Pay\nConsumers are already engaging private services at significant costs, supporting the business viability. [1]\n\ud83e\udde0\nTechnological Enablers\n9\n/10\nAI Photo Matching\nImproved identification speed through AI makes recovery services more compelling. [2]\nThermal Drones\nBecoming practical for searches in open and hard-to-reach areas. [3]\n\ud83c\udfdb\ufe0f\nRegulatory & Social Catalysts\n8\n/10\nPublic Recovery Guidance\nAuthorities are normalizing rapid recovery behaviors, supporting service legitimacy. [2]\nDatabase Integration\nMicrochip and database reporting have become standard, aiding recovery efforts. [2]\n\ud83d\udd12\nRisk Reduction Factors\n8\n/10\nEstablished Business Model\nPrivate specialists and recovery marketplaces show market validation for paid services. [1]\nOperational Playbooks\nWell-documented steps for recovery reduce uncertainty in execution. [4]\n\ud83d\ude80\nCompetitive Window\n8\n/10\nFragmented Market\nNo dominant player yet exists in the end-to-end recovery command-center niche. [5]\n\ud83d\udcca\nSupporting Data Points\n8\n/10\nPricing Benchmarks\nExisting services have anchoring prices, validating the willingness to spend. [1]\nAI Technology\nPublicly marketed AI matching tool by Petco highlights tech viability. [2]\n\u26a0\ufe0f\nTiming Risks\n6\n/10\nReliance on Coordination Payment\nMust prove benefits over free community actions for sustained growth. [1]\n\u23f0\nWhy Wait = Why Fail\n9\n/10\nSpeed as Product\nTimely launch is crucial to capture the most desperate customer phase after pet loss. [2]\nCitations & Sources\n1 - https://www.petworks.com/hire/missing-pet\n2 - https://petcolove.org/newsroom/news-story/free-and-fast-photo-matching-ai-technology-can-help-reunite-pets-with-their/\n3 - https://www.bbc.co.uk/news/articles/cj4pvvwxl1wo\n4 - https://www.petlink.net/complete-lost-pet-guide-pet-goes-missing/\n5 - https://pet911.org/\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n0",
+  "keywordAnalysisDetail": "Search-and-rescue dispatch for missing pets\nKeywords\nKeyword Analysis\n\nAnalysis of search trends and keyword opportunities related to this idea.\n\nKeyword:\nDog recovery suit\n1 Year\n12.1K\nVolume\n+0%\nGrowth\n$0.75\nCPC\nHIGH\nCompetition\n2026\n0\n5k\n10k\n15k\n20k\nKeyword Summary\n\nThe analyzed keywords reflect a strong market demand for pet recovery services, focusing on both dogs and cats. The presence of high-growth keywords like 'missing cat' and 'suitical recovery suit for dogs' highlights emerging trends in pet recovery solutions, affirming the commercial viability of the business concept.\n\nFastest Growing\nlost grey cat near me\n\nVolume: 1,900\n\nGrowth: +2614%\n\nsuitical recovery suit for cats\n\nVolume: 8,100\n\nGrowth: +1977%\n\nlost tabby cat\n\nVolume: 1,000\n\nGrowth: +809%\n\nsuitical recovery suit for dogs\n\nVolume: 18,100\n\nGrowth: +654%\n\npet recovery services\n\nVolume: 320\n\nGrowth: +191%\n\nHighest Volume\nsuitical recovery suit for dogs\n\nVolume: 18,100\n\nGrowth: +654%\n\ndog recovery suit\n\nVolume: 12,100\n\nGrowth: +83%\n\nhomeagain pet recovery\n\nVolume: 8,100\n\nGrowth: +23%\n\nsuitical recovery suit for cats\n\nVolume: 8,100\n\nGrowth: +1977%\n\nlost grey cat near me\n\nVolume: 1,900\n\nGrowth: +2614%\n\nMost Relevant\nsuitical recovery suit for dogs\n\nVolume: 18,100\n\nGrowth: +654%\n\nsuitical recovery suit for cats\n\nVolume: 8,100\n\nGrowth: +1977%\n\ndog recovery suit\n\nVolume: 12,100\n\nGrowth: +83%\n\nhomeagain pet recovery\n\nVolume: 8,100\n\nGrowth: +23%\n\npet recovery\n\nVolume: 880\n\nGrowth: +83%\n\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n5k",
+  "status": "not_started",
+  "notes": "",
+  "_source_url": "https://www.ideabrowser.com/hub/ideas/today",
+  "_scraped_at": "2026-08-20T07:31:42.250168+00:00",
+  "_crawl_had_errors": true
+}

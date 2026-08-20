@@ -1,0 +1,821 @@
+[
+  {
+    "step": "login",
+    "note": "Found 2 element(s) matching 'Sign in with Password' text."
+  },
+  {
+    "step": "login",
+    "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+  },
+  {
+    "step": "login",
+    "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+  },
+  {
+    "step": "login",
+    "success": true
+  },
+  {
+    "step": "keyword_discovery",
+    "note": "Found 7 plausible keyword option(s) after filtering."
+  },
+  {
+    "step": "select_keyword:Lost tabby cat",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Lost tabby cat\", exact=True).first\n    - locator resolved to <span class=\"text-xs md:text-sm truncate\">Lost tabby cat</span>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    15 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <html lang=\"en\" class=\"__variable_f367f3 __variable_ca911e light\">\u2026</html> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 500.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts4-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 711.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n90 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Lost tabby cat",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts4-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n6,600 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Homeagain pet recovery",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts4-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n480 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Suitical recovery suit for cats",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts4-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n6,600 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Dog recovery suit",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts4-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n1,900 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Suitical recovery suit for dogs",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts4-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n90 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Lost grey cat near me",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": ".recharts-wrapper",
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history:chart_found",
+    "box": {
+      "x": 321,
+      "y": 470.40625,
+      "width": 686,
+      "height": 422
+    }
+  },
+  {
+    "step": "crawl_chart_history:screenshot_before",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_before_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_after_hover",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_after_hover_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:screenshot_fullpage",
+    "path": "/home/runner/work/idea-browser-library/idea-browser-library/scraper/library/chart_fullpage_debug_screenshot.png"
+  },
+  {
+    "step": "crawl_chart_history:chart_html_sample",
+    "html": "<div class=\"recharts-wrapper\" style=\"position: relative; cursor: default; width: 100%; height: 100%; max-height: 422px; max-width: 686px;\"><svg class=\"recharts-surface\" width=\"686\" height=\"422\" viewBox=\"0 0 686 422\" style=\"width: 100%; height: 100%;\"><title></title><desc></desc><defs><clipPath id=\"recharts4-clip\"><rect x=\"32\" y=\"8\" height=\"384\" width=\"654\"></rect></clipPath></defs><defs><linearGradient id=\"colorVolume\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#51ACF0\" stop-opacity=\"0.4\"></stop><stop offset=\"100%\" stop-color=\"#51ACF0\" stop-opacity=\"0\"></stop></linearGradient><linearGradient id=\"trendGradient\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.8\"></stop><stop offset=\"100%\" stop-color=\"#EEF2FF\" stop-opacity=\"0.2\"></stop></linearGradient></defs><g class=\"recharts-cartesian-grid\"><g class=\"recharts-cartesian-grid-horizontal\"><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"392\" x2=\"686\" y2=\"392\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"296\" x2=\"686\" y2=\"296\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"200\" x2=\"686\" y2=\"200\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"104\" x2=\"686\" y2=\"104\"></line><line stroke=\"#ccc\" fill=\"none\" x=\"32\" y=\"8\" width=\"654\" height=\"384\" x1=\"32\" y1=\"8\" x2=\"686\" y2=\"8\"></line></g></g><g class=\"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis\"><g class=\"recharts-cartesian-axis-ticks\"><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"129.40425531914894\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px; fill: rgb(203, 213, 225);\">2023</text></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"></g><g class=\"recharts-layer recharts-cartesian-axis-tick\"><text x=\"296.3829787234042\" y=\"406\" dy=\"16\" text-anchor=\"middle\" font-size=\"11px\" style=\"font-size: 11px;"
+  },
+  {
+    "step": "crawl_chart_history:sample_0",
+    "x": 321.0,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_1",
+    "x": 350.82608695652175,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": false,
+    "tooltip_text_raw": "",
+    "has_real_tooltip_content": false
+  },
+  {
+    "step": "crawl_chart_history:sample_2",
+    "x": 380.6521739130435,
+    "y": 681.40625,
+    "tooltip_count": 1,
+    "tooltip_visible": true,
+    "tooltip_text_raw": "Aug 2022\n\n480 searches",
+    "has_real_tooltip_content": true
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 21
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "Pet recovery",
+    "stats_captured": true
+  },
+  {
+    "step": "crawl_community_signals_deep:entered",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals"
+  },
+  {
+    "step": "crawl_platform:reddit:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals/reddit-analysis"
+  },
+  {
+    "step": "crawl_platform:reddit:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Reddit Community Analysis",
+      "r/lostpets",
+      "r/Pets",
+      "r/AnimalRescue",
+      "r/CatAdvice",
+      "r/HelpingLostPets",
+      "r/dogs",
+      "r/DFWPets"
+    ]
+  },
+  {
+    "step": "crawl_platform:reddit:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 7,
+    "all_heading_count": 8,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quic"
+  },
+  {
+    "step": "crawl_platform:reddit:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals/reddit-analysis",
+    "card_count": 8,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nReddit Analysis\nReddit Community Analysis\n\nAnalyzed 7 relevant communities\n\nKey Findings\nPet recovery services are buzzing with potential as discussions across Reddit's pet communities reveal pressing needs. With 1.8 million members, the **r/Pets** community highlights the emotional and logistical challenges owners face when pets go missing. These discussions point to a gap in comprehensive recovery strategies, evidenced further in the **r/dogs** subreddit, home to 1.7 million devoted owners sharing intense recovery stories. Meanwhile, **r/lostpets**, albeit smaller at just over 1,100 followers, offers a focused haven for those desperate for effective solutions. Practical opportunities abound\u2014from expert AMAs in **r/lostpets** to educational collaborations in **r/AnimalRescue** with its 34,500 members, all aiming to unite fragmented recovery efforts. Innovative business solutions,"
+  },
+  {
+    "step": "crawl_platform:reddit:card_0:container_check",
+    "community_name": "Reddit Community Analysis",
+    "container_text_length": 58,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:reddit:card_1:container_check",
+    "community_name": "r/lostpets",
+    "container_text_length": 1298,
+    "container_text_starts_with_name": null
+  },
+  {
+    "step": "crawl_platform:reddit:finished",
+    "communities_found": 8
+  },
+  {
+    "step": "crawl_platform:facebook:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals"
+  },
+  {
+    "step": "crawl_platform:facebook:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals"
+  },
+  {
+    "step": "crawl_platform:facebook:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals/facebook-analysis"
+  },
+  {
+    "step": "crawl_platform:facebook:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Facebook Groups",
+      "Massachusetts Lost Pet Locator \ud83d\udc31",
+      "Lost & Found Pets Hampton Roads, VA",
+      "Lost Cats of King County WA",
+      "Nashville's Lost & Found Pets Page",
+      "Lost Dogs of King County WA"
+    ]
+  },
+  {
+    "step": "crawl_platform:facebook:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 5,
+    "all_heading_count": 6,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quic"
+  },
+  {
+    "step": "crawl_platform:facebook:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals/facebook-analysis",
+    "card_count": 6,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nFacebook Analysis\nFacebook Groups\n\n13 groups analyzed\n\nKey Findings\nAmidst the digital chorus of pet owners, the Massachusetts Lost Pet Locator group stands out with over 107,000 active members dedicated to reuniting lost pets with their owners. This vibrant community, similar in size to the 100,000-strong Lost & Found Pets Hampton Roads, and the specialized hubs like Lost Cats of King County with 17,300 members, reveals a critical trend: a rising demand for innovative pet recovery solutions. Key pain points include the need for real-time tracking, microchip scanning, and coordinated community response efforts. Groups like Nashville's Lost & Found Pets, with more than 11,000 stories of reunion, showcase established practices and high engagement levels, further exemplified by the 67,000 members in Lost Dogs of King County. These passionate communities spotlight a unique business op"
+  },
+  {
+    "step": "crawl_platform:facebook:card_0:container_check",
+    "community_name": "Facebook Groups",
+    "container_text_length": 35,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:facebook:card_1:container_check",
+    "community_name": "Massachusetts Lost Pet Locator \ud83d\udc31",
+    "container_text_length": 682,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "community_visit_group_popup:facebook:1",
+    "captured_url": "https://www.facebook.com/groups/680766712108050/posts/2820206974830669/"
+  },
+  {
+    "step": "community_visit_group_popup:facebook:2",
+    "captured_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Flostandfoundpetshamptonroads%2F"
+  },
+  {
+    "step": "community_visit_group_popup:facebook:3",
+    "captured_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2FLostCatsofKingCounty%2F"
+  },
+  {
+    "step": "community_visit_group_popup:facebook:4",
+    "captured_url": "https://www.facebook.com/groups/680766712108050/posts/2820206974830669/"
+  },
+  {
+    "step": "community_visit_group_popup:facebook:5",
+    "captured_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F763044283717023%2F"
+  },
+  {
+    "step": "crawl_platform:facebook:finished",
+    "communities_found": 6
+  },
+  {
+    "step": "crawl_platform:youtube:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals"
+  },
+  {
+    "step": "crawl_platform:youtube:view_analysis_links_found",
+    "count": 4,
+    "current_url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals"
+  },
+  {
+    "step": "crawl_platform:youtube:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals/youtube-analysis"
+  },
+  {
+    "step": "crawl_platform:youtube:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "YouTube Content Analysis",
+      "Top Channels",
+      "HomeAgain PetRescuer",
+      "Drone Pet Recovery",
+      "Kim Lost Cat Finder",
+      "Drone Pet Recovery",
+      "Florida Pet Recovery",
+      "We Love Animals",
+      "The Dodo",
+      "Front Street Animal Shelter - City of Sacramento",
+      "Pet Detective TV",
+      "The Dodo",
+      "House For Paws",
+      "Missing Dog",
+      "Suitical",
+      "We Love Animals",
+      "Front Street Animal Shelter - City of Sacramento",
+      "Content Trends",
+      "Common Themes",
+      "Popular Formats"
+    ]
+  },
+  {
+    "step": "crawl_platform:youtube:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 15,
+    "all_heading_count": 20,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quic"
+  },
+  {
+    "step": "crawl_platform:youtube:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals/youtube-analysis",
+    "card_count": 20,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nYouTube Analysis\nYouTube Content Analysis\n\nAnalyzed 15 channels with relevant content\n\nKey Findings\nIn the world of YouTube, one key insight emerges: emotional storytelling, particularly about pet reunions, captivates viewers, driving millions of views. Channels like \"The Dodo\" and \"We Love Animals\" see success with over 4 million and 11 million views, respectively, by tapping into the emotional connections viewers crave. Meanwhile, \"Drone Pet Recovery,\" with an engagement of about 5,500 views per video, highlights the rising interest in tech-driven pet recovery solutions, showing that innovation attracts eager audiences. Patterns reveal a strong engagement for emotional reunions and drone-assisted rescue stories, where comments and shares thrive. Yet, a content gap exists in real-time rescue technology and community-driven initiatives, representing prime opportunities for new cre"
+  },
+  {
+    "step": "crawl_platform:youtube:card_0:container_check",
+    "community_name": "YouTube Content Analysis",
+    "container_text_length": 68,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:youtube:card_1:container_check",
+    "community_name": "Top Channels",
+    "container_text_length": 3360,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:youtube:finished",
+    "communities_found": 20
+  },
+  {
+    "step": "crawl_platform:other:starting"
+  },
+  {
+    "step": "open_community_signals_page:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals"
+  },
+  {
+    "step": "crawl_platform:other:after_click",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals/other-communities"
+  },
+  {
+    "step": "crawl_platform:other:surviving_headings_dump",
+    "surviving_heading_texts": [
+      "Other Communities",
+      "Pet owners in urgent distress",
+      "Rescue volunteers and neighborhood helpers",
+      "Animal welfare professionals and shelters",
+      "Drone pilots, trackers, and field specialists",
+      "Local business and civic communities",
+      "Pet owners",
+      "Volunteers",
+      "Shelters and rescues",
+      "Specialists",
+      "Local businesses"
+    ]
+  },
+  {
+    "step": "crawl_platform:other:count_diagnostic",
+    "summary_match_found": true,
+    "expected_count": 5,
+    "all_heading_count": 11,
+    "page_text_first_400": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quic"
+  },
+  {
+    "step": "crawl_platform:other:landed",
+    "url": "https://www.ideabrowser.com/hub/ideas/the-emergency-search-team-for-missing-pets-223012c4/community-signals/other-communities",
+    "card_count": 6,
+    "page_text_sample": "ideabrowser\nHUB\nBrowse\nBuild\nHome\nTraining\nMy Profile\nMy Stuff\nIdeas\nDiscover\nResearch\nGenerate\nTrends\nDiscover\nResearch\nMarket Insights\nDiscover\nResearch\nSupport & more\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nBrowse Ideas\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nBuild Gallery\nWorkshop Wed at 11:00 AM EDT\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nSearch-and-rescue dispatch for missing pets\nCommunity Signals\nOther Communities\nOther Communities\n\nAnalyzed 5 community segments across 5 types\n\nAnalysis Overview\n\nCommunity Segments\n\n5\n\nCommunity Types\n\n5\n\nPriority Communities\n\n3\n\nContent Strategies\n\n5\n\nPartnership Opportunities\n\n5\n\nCommunity Types\n\nLocal lost-pet networks\n\nPet-owner subreddits\n\nAnimal-rescue/shelter ecosystems\n\nProfessional and industry groups\n\nOnline forums and discussion spaces\n\nCommunity Segments\nPet owners in urgent distress\n\nOwners of recently missing dogs or cats, often within hours or days of disappearance.\n\nPain Points\n\n\u2022 Panic\n\u2022 Time pressure\n\u2022 Lack of a clear plan\n\nInterests\n\n\u2022 Reunion stories\n\u2022 Practical checklists\n\u2022 Immediate advice\nReddit pet subreddits\nLocal Facebook groups\nNeighborhood community boards\nYouTube reunion content\nRescue volunteers and neighborhood helpers\n\nExperienced volunteers and neighbors who share sightings or help distribute flyers.\n\nPain "
+  },
+  {
+    "step": "crawl_platform:other:card_0:container_check",
+    "community_name": "Other Communities",
+    "container_text_length": 63,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:other:card_1:container_check",
+    "community_name": "Pet owners in urgent distress",
+    "container_text_length": 347,
+    "container_text_starts_with_name": true
+  },
+  {
+    "step": "crawl_platform:other:page_sections_captured",
+    "has_content_strategies": true,
+    "has_partnership_opportunities": true,
+    "citations_count": 5
+  },
+  {
+    "step": "crawl_platform:other:finished",
+    "communities_found": 6
+  }
+]
