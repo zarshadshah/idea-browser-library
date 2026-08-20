@@ -1,36 +1,72 @@
 name: Daily Idea Crawl + Library Update
-
 on:
   schedule:
     - cron: "0 7 * * *"   # 07:00 UTC daily
   workflow_dispatch: {}
-
 permissions:
   contents: write
-
 jobs:
   crawl-and-normalize:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # Raised from 30 to 45 minutes. A real run on 2026-08-19 showed
+    # "Install dependencies" alone taking 30m12s and hitting the OLD
+    # 30-minute job timeout before the crawl step ever got to run at all
+    # (confirmed via the run's own annotation: "The job has exceeded the
+    # maximum execution time of 30m0s", and "Run deep crawl" showing as
+    # skipped, not failed) — this was a slow/flaky install, not a
+    # scraper bug. The crawl itself has taken several minutes in past
+    # successful runs, so 45 minutes leaves real headroom for both an
+    # occasionally slow install AND the full crawl afterward.
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
+      # Caches pip packages AND the downloaded Playwright browser binary
+      # keyed on requirements.txt's contents, so a day with no dependency
+      # changes restores from cache in seconds instead of re-downloading
+      # ~50MB+ of Chromium/Chrome and apt packages every single run. This
+      # directly reduces how often the slow path (a full fresh install)
+      # is even hit at all.
+      - name: Cache pip + Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/ms-playwright
+          key: ${{ runner.os }}-deps-${{ hashFiles('scraper/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-deps-
       - name: Install dependencies
+        # A real run showed this step alone taking over 30 minutes,
+        # which is far longer than a normal install and points to a
+        # one-off network stall (pulling the Chromium/Chrome binary or
+        # apt packages) rather than a permanent problem — retrying is
+        # the correct fix for that specific failure mode. This uses a
+        # small inline retry loop (3 attempts, 30s apart) rather than a
+        # third-party retry action, so there's no new external dependency
+        # to trust; each attempt gets its own 10-minute cap via `timeout`
+        # so a single hung attempt can't silently repeat the same
+        # 30-minute stall three times over.
         run: |
-          pip install -r scraper/requirements.txt
-          playwright install --with-deps chromium chrome
-
+          for attempt in 1 2 3; do
+            echo "Install attempt $attempt of 3..."
+            if timeout 600 bash -c "pip install -r scraper/requirements.txt && playwright install --with-deps chromium chrome"; then
+              echo "Install succeeded on attempt $attempt."
+              exit 0
+            fi
+            echo "Install attempt $attempt failed or timed out after 10m."
+            sleep 30
+          done
+          echo "All 3 install attempts failed."
+          exit 1
       - name: Run deep crawl
         working-directory: scraper
         env:
           IDEABROWSER_EMAIL: ${{ secrets.IDEABROWSER_EMAIL }}
           IDEABROWSER_PASSWORD: ${{ secrets.IDEABROWSER_PASSWORD }}
         run: python scripts/deep_crawl.py
-
       - name: Print today's crawl log (always visible here, even if nothing new to commit)
         working-directory: scraper
         if: always()
@@ -42,7 +78,6 @@ jobs:
           echo ""
           echo "===== deep.json for $TODAY (first 150 lines) ====="
           head -150 "library/$YEAR/$TODAY.deep.json" 2>/dev/null || echo "(no deep.json file found for today)"
-
       - name: Upload debug screenshots (if any step failed and saved one)
         if: always()
         uses: actions/upload-artifact@v4
@@ -51,11 +86,28 @@ jobs:
           path: scraper/library/*_debug_screenshot.png
           if-no-files-found: ignore
           retention-days: 7
-
       - name: Normalize output + rebuild manifest
         working-directory: scraper
         run: python scripts/normalize_and_build_manifest.py
-
+      - name: Verify today's report was actually produced
+        # A real failure mode confirmed directly: the job can end without
+        # today's .deep.json ever having been written (e.g. the install
+        # step exhausting the whole job's time budget before the crawl
+        # ran at all), and this went unnoticed for a full day until
+        # manually checked. This step makes that failure loud and
+        # explicit — it fails the job outright if today's file is
+        # missing, which is what the next step's failure notification
+        # below is watching for.
+        working-directory: scraper
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          YEAR=$(date -u +%Y)
+          FILE="library/$YEAR/$TODAY.deep.json"
+          if [ ! -f "$FILE" ]; then
+            echo "::error::Today's report ($FILE) was not produced. Failing the job so it shows up as failed/red, not silently missing."
+            exit 1
+          fi
+          echo "Confirmed: $FILE exists."
       - name: Commit and push
         run: |
           git config user.name "idea-archive-bot"
@@ -63,3 +115,28 @@ jobs:
           git add scraper/library/
           git diff --cached --quiet || git commit -m "Idea library update: $(date -u +%Y-%m-%d)"
           git push
+      - name: Notify on failure
+        # GitHub Actions already emails the repo owner by default when a
+        # SCHEDULED run fails (this is a built-in account notification
+        # setting, not something this workflow file controls) — but that
+        # default can be silently off if notification settings were ever
+        # changed, and it's easy to miss among other GitHub emails. This
+        # step adds a second, impossible-to-miss channel: it only runs
+        # when a prior step in this job actually failed, and posts
+        # straight to a Slack channel via an incoming webhook URL stored
+        # as a repo secret (SLACK_WEBHOOK_URL) — set this up once at
+        # https://api.slack.com/messaging/webhooks, add the resulting
+        # URL as a repository secret of that exact name, and this step
+        # will start firing automatically. If that secret isn't set,
+        # this step safely does nothing (curl's exit code is ignored)
+        # rather than failing the whole job over a missing notification
+        # channel.
+        if: failure()
+        run: |
+          if [ -n "${{ secrets.SLACK_WEBHOOK_URL }}" ]; then
+            curl -s -X POST -H 'Content-type: application/json' \
+              --data "{\"text\":\"⚠️ Daily Idea Crawl failed for $(date -u +%Y-%m-%d). Check the run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\"}" \
+              "${{ secrets.SLACK_WEBHOOK_URL }}" || true
+          else
+            echo "SLACK_WEBHOOK_URL secret not set — skipping Slack notification. GitHub's default email-on-scheduled-failure still applies if enabled in your notification settings."
+          fi
