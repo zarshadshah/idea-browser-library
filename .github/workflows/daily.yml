@@ -140,3 +140,23 @@ jobs:
           else
             echo "SLACK_WEBHOOK_URL secret not set — skipping Slack notification. GitHub's default email-on-scheduled-failure still applies if enabled in your notification settings."
           fi
+      - name: Notify on failure (ntfy.sh — no account or secret needed)
+        # A genuinely zero-setup backup channel, for anyone who'd rather
+        # not create a Slack webhook or rely solely on GitHub's own
+        # notification settings (which can get silently toggled off, or
+        # land in a filtered inbox folder). ntfy.sh is a free, open
+        # push-notification service: posting to any topic URL under
+        # ntfy.sh/<topic-name> requires no signup, no API key, and no
+        # repo secret at all — the topic name itself is effectively a
+        # shared secret, so a specific, hard-to-guess topic name is used
+        # here rather than something generic. To receive these: install
+        # the free ntfy app (iOS/Android) or open
+        # https://ntfy.sh/idea-browser-library-zarshadshah-alerts in a
+        # browser, and subscribe to that exact topic — takes under a
+        # minute, no account required. Change the topic name below to
+        # something private if this repo is ever made public, since
+        # anyone who knows the topic name can also subscribe to it.
+        if: failure()
+        run: |
+          curl -s -d "⚠️ Daily Idea Crawl failed for $(date -u +%Y-%m-%d). Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            ntfy.sh/idea-browser-library-zarshadshah-alerts || true
