@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-08-22",
+      "title": "Hardcover yearbooks made from group chat messages",
+      "path": "library/2026/2026-08-22.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-08-21",
       "title": "Launch and distribution service for indie Windows tools",
       "path": "library/2026/2026-08-21.json",
