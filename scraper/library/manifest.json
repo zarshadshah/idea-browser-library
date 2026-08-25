@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-08-25",
+      "title": "Launch rescue service for websites built with AI",
+      "path": "library/2026/2026-08-25.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-08-24",
       "title": "Remote command station for small construction fleets",
       "path": "library/2026/2026-08-24.json",
