@@ -70,9 +70,21 @@ def normalize_keywords(keyword_analysis: list) -> list:
     control at all — that assumption came from a different, dedicated
     "Keyword Analysis" sub-page seen in early screenshots. Each keyword now
     has one real stats snapshot, matching what's actually shown inline.)
+
+    A site redesign confirmed live 2026-08-27 dropped the keyword-volume
+    dropdown/chart entirely — a real crawl of the new layout produced a
+    single synthetic entry {"keyword": "unknown", "stats": {}}, since the
+    crawler's fallback path (used when it can't enumerate real options)
+    always emits SOME entry rather than none. That placeholder carries no
+    real data and would render as a fake "unknown" keyword row in the app,
+    so it's filtered out here rather than passed through as if it were
+    real.
     """
     out = []
     for kw in keyword_analysis or []:
+        if kw.get("keyword") == "unknown" and not kw.get("stats"):
+            continue
+
         stats = kw.get("stats", {})
         volume_raw = stats.get("volume", "0")
         growth_raw = stats.get("growth", "0%")
@@ -119,7 +131,7 @@ def extract_pitch(raw_text: str, title: str) -> str:
     if not title or title not in raw_text:
         return raw_text[:4000]
     after_title = raw_text.split(title, 1)[1]
-    for stop_marker in ["*Analysis, scores", "\nKeyword:"]:
+    for stop_marker in ["*Analysis, scores", "\nKeyword:", "\nTHE IDEA\n"]:
         if stop_marker in after_title:
             after_title = after_title.split(stop_marker, 1)[0]
             break
@@ -219,11 +231,66 @@ def trim_execution_difficulty(text: str) -> str:
     return text[last_idx:].strip()
 
 
+# Maps a new-layout section_* key (as written by deep_crawl.py's
+# extract_new_layout_fields) to a clean display label for the app. Keeping
+# this list here (not in deep_crawl.py) means adding/renaming a displayed
+# label never requires touching the crawler at all — only what got
+# captured does.
+NEW_LAYOUT_SECTION_LABELS = {
+    "section_the_idea": "The Idea",
+    "section_at_a_glance": "At a Glance",
+    "section_the_customer": "The Customer",
+    "section_why_now": "Why Now",
+    "section_proof_signals": "Proof & Signals",
+    "section_market_snapshot": "Market Snapshot",
+    "section_whitespace": "Whitespace",
+    "section_who_you_re_up_against": "Who You're Up Against",
+    "section_people_are_asking_for_it": "People Are Asking For It",
+    "section_the_verdict": "The Verdict",
+    "section_founder_fit": "Founder Fit",
+    "section_what_you_d_sell": "What You'd Sell",
+    "section_the_plan": "The Plan",
+    "section_napkin_math": "Napkin Math",
+    "section_the_playbooks": "The Playbooks",
+}
+
+
+def extract_new_layout_sections(summary: dict) -> dict:
+    """
+    Pulls every section_* field deep_crawl.py's extract_new_layout_fields
+    captured (confirmed live 2026-08-27) into an ordered {label: text}
+    dict the app can render directly, same shape as businessFitDeep/
+    scoreCardsDeep already use. Returns {} entirely if this day's summary
+    has no new-layout fields at all (i.e. layout_detected == "old" or the
+    key is simply absent), so the app can tell "nothing to show here" from
+    "this day genuinely has an empty section" — an absent key, not an
+    empty dict value under a present key.
+    """
+    out = {}
+    for key, label in NEW_LAYOUT_SECTION_LABELS.items():
+        val = summary.get(key)
+        if val:
+            out[label] = val
+    return out
+
+
 def normalize_day(raw: dict) -> dict:
     summary = raw.get("summary", {})
     subpages = raw.get("subpages", {})
     title = summary.get("title") or "Untitled idea"
     pitch = extract_pitch(summary.get("raw_text", ""), summary.get("title"))
+
+    # New layout (confirmed live 2026-08-27) has its own real "THE IDEA"
+    # section which is a cleaner, more complete pitch than what
+    # extract_pitch's old-layout-oriented heuristic manages to isolate
+    # from raw_text (that heuristic's stop markers/badge-skipping logic
+    # was written against the OLD layout's structure and was never
+    # updated for the new one) — prefer it directly when present, falling
+    # back to the heuristic extraction only for old-layout days or any
+    # day where, for whatever reason, that specific section wasn't
+    # captured.
+    if summary.get("section_the_idea"):
+        pitch = summary["section_the_idea"]
 
     market_gap_page = find_subpage_by_url_pattern(subpages, "/market-gap")
     execution_plan_page = find_subpage_by_url_pattern(subpages, "/execution-plan")
@@ -345,6 +412,31 @@ def normalize_day(raw: dict) -> dict:
         "proofSignals": trim_subpage_nav(proof_signals_page.get("text", ""))[:6000],
         "whyNowDetail": trim_subpage_nav(why_now_page.get("text", ""))[:6000],
         "keywordAnalysisDetail": trim_subpage_nav(keywords_page.get("text", ""))[:6000],
+        # NEW: site redesign fields confirmed live 2026-08-27. Every
+        # section_* field the crawler managed to isolate (The Idea, The
+        # Customer, Why Now, The Verdict, Founder Fit, The Plan, Napkin
+        # Math, etc), keyed by clean display label — {} on any old-layout
+        # day, or any new-layout day where extraction genuinely found
+        # nothing (distinct from the app's existing raw_text-only fallback
+        # for a day where NEITHER parser matched at all).
+        "newLayoutSections": extract_new_layout_sections(summary),
+        # overall_score/pain_score/timing_score are the new layout's own
+        # distinct scoring shape (one combined score up top, PAIN/TIMING
+        # shown as separate sub-scores later) rather than the old
+        # layout's 4-way Opportunity/Problem/Feasibility/Why Now split —
+        # None on any day that doesn't have them, so the app can tell
+        # "not applicable" from "genuinely zero".
+        "overallScore": summary.get("overall_score"),
+        "painScore": summary.get("pain_score"),
+        "timingScore": summary.get("timing_score"),
+        "layoutDetected": summary.get("layout_detected", "old"),
+        # Always present regardless of which layout/parser matched (or
+        # neither) — the one guaranteed safety net so a day's real content
+        # is never fully lost even if both structured parsers miss
+        # entirely on some future third redesign. Capped generously since
+        # this is meant as a genuine fallback read, not a duplicate of
+        # the structured fields above.
+        "rawText": (summary.get("raw_text") or "")[:20000],
         "status": "not_started",
         "notes": "",
         "_source_url": raw.get("source_url"),
