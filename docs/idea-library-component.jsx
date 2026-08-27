@@ -1357,6 +1357,60 @@ function KeywordRow({ kw }) {
   );
 }
 
+// NEW: renders the site's redesigned layout (confirmed live 2026-08-27) —
+// a flat, ordered set of real named sections (The Idea, The Customer, Why
+// Now, The Verdict, Founder Fit, The Plan, Napkin Math, etc) captured by
+// deep_crawl.py's extract_new_layout_fields and passed through by the
+// normalizer as newLayoutSections. Each section is rendered through the
+// same StructuredSection parser already used everywhere else, since real
+// captured section text for this layout still uses the same underlying
+// emoji/label/bullet shapes (confirmed directly: "THE VERDICT"'s captured
+// text contains real "REASONS TO BUILD" / "REASONS TO NOT BUILD" ALL-CAPS
+// sub-headings that parseAllCapsSections already knows how to handle) —
+// this just adds the outer per-section heading and ordering on top.
+function NewLayoutSections({ sections, overallScore, painScore, timingScore }) {
+  const entries = Object.entries(sections || {});
+  if (!entries.length) return null;
+
+  return (
+    <div className="space-y-5">
+      {(overallScore != null || painScore != null || timingScore != null) && (
+        <div className="flex flex-wrap gap-x-6 gap-y-2">
+          {overallScore != null && (
+            <div>
+              <div className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Overall</div>
+              <div className="text-xl font-black" style={{ fontFamily: "'Fraunces', serif" }}>{overallScore}/10</div>
+            </div>
+          )}
+          {painScore != null && (
+            <div>
+              <div className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Pain</div>
+              <div className="text-xl font-black" style={{ fontFamily: "'Fraunces', serif" }}>{painScore}/10</div>
+            </div>
+          )}
+          {timingScore != null && (
+            <div>
+              <div className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Timing</div>
+              <div className="text-xl font-black" style={{ fontFamily: "'Fraunces', serif" }}>{timingScore}/10</div>
+            </div>
+          )}
+        </div>
+      )}
+      {entries.map(([label, text]) => (
+        <div key={label}>
+          <h4
+            className="text-sm font-bold mb-2 pb-1 inline-block"
+            style={{ fontFamily: "'Fraunces', serif", borderBottom: "2px solid rgba(232,163,61,0.5)" }}
+          >
+            {label}
+          </h4>
+          <StructuredSection text={text} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAskClaude, onSummarize }) {
   const [tab, setTab] = useState("Overview");
   const [chartKeyword, setChartKeyword] = useState(null);
@@ -1365,9 +1419,17 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
 
   useEffect(() => setLocalNotes(idea.notes || ""), [idea.id]);
 
-  const avgScore = Math.round(
-    Object.values(idea.scores).reduce((s, o) => s + o.score, 0) / Object.values(idea.scores).length
-  );
+  // The new site layout (confirmed live 2026-08-27) uses one combined
+  // overall score plus separate Pain/Timing sub-scores instead of the old
+  // 4-way Opportunity/Problem/Feasibility/Why Now split — idea.scores'
+  // values are all {score: null, label: ""} on a new-layout day, since
+  // that old-shape data genuinely doesn't exist to capture. Guard the
+  // average calculation so a day with none of the 4 old scores present
+  // doesn't render "NaN" in the header badge.
+  const validScores = Object.values(idea.scores || {}).filter((o) => o?.score != null);
+  const avgScore = validScores.length
+    ? Math.round(validScores.reduce((s, o) => s + o.score, 0) / validScores.length)
+    : (idea.overallScore != null ? Math.round(idea.overallScore) : null);
 
   return (
     <div
@@ -1393,7 +1455,7 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
             fontFamily: "'JetBrains Mono', monospace",
           }}
         >
-          {avgScore}
+          {avgScore != null ? avgScore : "—"}
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
@@ -1474,12 +1536,19 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     <p key={i}>{para.trim()}</p>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 gap-x-6 gap-y-2 pt-2">
-                  <ScoreBar label="Opp." score={idea.scores.opportunity.score} icon={TrendingUp} />
-                  <ScoreBar label="Problem" score={idea.scores.problem.score} icon={AlertCircle} />
-                  <ScoreBar label="Feasib." score={idea.scores.feasibility.score} icon={Wrench} />
-                  <ScoreBar label="Timing" score={idea.scores.whyNow.score} icon={Clock} />
-                </div>
+                {/* Old-layout 4-way score grid — only rendered when at
+                    least one real score was actually captured, since a
+                    new-layout day has none of these (its own overall/
+                    pain/timing scores are shown inside NewLayoutSections
+                    below instead, alongside their real section text). */}
+                {Object.values(idea.scores || {}).some((o) => o?.score != null) && (
+                  <div className="grid grid-cols-2 gap-x-6 gap-y-2 pt-2">
+                    <ScoreBar label="Opp." score={idea.scores.opportunity.score} icon={TrendingUp} />
+                    <ScoreBar label="Problem" score={idea.scores.problem.score} icon={AlertCircle} />
+                    <ScoreBar label="Feasib." score={idea.scores.feasibility.score} icon={Wrench} />
+                    <ScoreBar label="Timing" score={idea.scores.whyNow.score} icon={Clock} />
+                  </div>
+                )}
                 {idea.scoreCardsDeep && Object.keys(idea.scoreCardsDeep).length > 0 && (
                   <details className="pt-2 border-t border-black/10">
                     <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
@@ -1500,6 +1569,41 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     </div>
                   </details>
                 )}
+                {/* NEW: site redesign (confirmed live 2026-08-27) — The
+                    Idea/The Customer/Why Now/The Verdict/Founder Fit/The
+                    Plan/Napkin Math etc, each a real named section rather
+                    than the old layout's emoji-card summary + separate
+                    deep-dive sub-pages. Shown open by default (not inside
+                    a <details> toggle) since for a new-layout day this IS
+                    the primary content, not supplementary detail — it's
+                    the closest equivalent to what marketGap/executionPlan/
+                    proofSignals/etc show for an old-layout day elsewhere
+                    in this card. */}
+                {idea.newLayoutSections && Object.keys(idea.newLayoutSections).length > 0 && (
+                  <div className="pt-3 border-t border-black/10">
+                    <NewLayoutSections
+                      sections={idea.newLayoutSections}
+                      overallScore={idea.overallScore}
+                      painScore={idea.painScore}
+                      timingScore={idea.timingScore}
+                    />
+                  </div>
+                )}
+                {/* Final safety net: a day where NEITHER the old-layout
+                    parsers NOR newLayoutSections found any real structure
+                    at all (e.g. a genuine third future redesign) still
+                    shows the complete raw captured text here, rather than
+                    the idea silently appearing empty. Only shown when
+                    there's truly nothing else structured to display. */}
+                {(!idea.newLayoutSections || Object.keys(idea.newLayoutSections).length === 0) &&
+                  !idea.marketGap && !idea.executionPlan && idea.rawText && (
+                    <details className="pt-2 border-t border-black/10">
+                      <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                        Full captured page text (unstructured) ▾
+                      </summary>
+                      <p className="mt-2 leading-relaxed whitespace-pre-line text-xs opacity-70">{idea.rawText}</p>
+                    </details>
+                  )}
               </div>
             )}
 
@@ -1540,7 +1644,11 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     .sort((a, b) => b.growth - a.growth)
                     .map((kw) => <KeywordRow key={kw.keyword} kw={kw} />)
                 ) : (
-                  <p className="text-sm opacity-50 italic">No keyword data captured for this idea yet.</p>
+                  <p className="text-sm opacity-50 italic">
+                    {idea.layoutDetected === "new"
+                      ? "This site layout doesn't show keyword-volume data — see the Overview tab for the full research instead."
+                      : "No keyword data captured for this idea yet."}
+                  </p>
                 )}
               </div>
             )}
@@ -1550,30 +1658,34 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                 <div className="text-[10px] uppercase tracking-wider opacity-40" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                   Market Gap, Why Now, Proof & Signals, framework fit
                 </div>
-                <div>
-                  <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                    Market Gap
-                  </div>
-                  <StructuredSection text={idea.marketGap} />
-                </div>
-                <div className="grid grid-cols-2 gap-3 pt-2">
+                {idea.marketGap && (
                   <div>
-                    <div className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Type</div>
-                    <div className="font-semibold">{idea.categorization?.type}</div>
+                    <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      Market Gap
+                    </div>
+                    <StructuredSection text={idea.marketGap} />
                   </div>
-                  <div>
-                    <div className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Market</div>
-                    <div className="font-semibold">{idea.categorization?.market}</div>
+                )}
+                {(idea.categorization?.type || idea.categorization?.market || idea.categorization?.target || idea.categorization?.competitor) && (
+                  <div className="grid grid-cols-2 gap-3 pt-2">
+                    <div>
+                      <div className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Type</div>
+                      <div className="font-semibold">{idea.categorization?.type}</div>
+                    </div>
+                    <div>
+                      <div className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Market</div>
+                      <div className="font-semibold">{idea.categorization?.market}</div>
+                    </div>
+                    <div>
+                      <div className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Target</div>
+                      <div className="font-semibold">{idea.categorization?.target}</div>
+                    </div>
+                    <div>
+                      <div className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Main Competitor</div>
+                      <div className="font-semibold">{idea.categorization?.competitor}</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Target</div>
-                    <div className="font-semibold">{idea.categorization?.target}</div>
-                  </div>
-                  <div>
-                    <div className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Main Competitor</div>
-                    <div className="font-semibold">{idea.categorization?.competitor}</div>
-                  </div>
-                </div>
+                )}
                 {idea.businessFitDeep && Object.keys(idea.businessFitDeep).length > 0 && (
                   <details className="pt-2 border-t border-black/10">
                     <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
@@ -1655,6 +1767,20 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     <StructuredSection text={idea.acpFramework} />
                   </details>
                 )}
+                {/* New-layout equivalent market content — What You'd Sell /
+                    Who You're Up Against / Whitespace already render on
+                    the Overview tab as part of newLayoutSections, but a
+                    reader specifically checking the Market tab for a
+                    new-layout day would otherwise find it completely
+                    empty if none of the old-layout fields above are
+                    present. Point them at the right place rather than
+                    showing nothing. */}
+                {!idea.marketGap && !idea.proofSignals && !idea.valueEquation && !idea.marketMatrix && !idea.acpFramework &&
+                  idea.newLayoutSections && Object.keys(idea.newLayoutSections).length > 0 && (
+                    <p className="text-xs italic opacity-50">
+                      This idea uses the site's newer report format — see the Overview tab for The Customer, Whitespace, and Who You're Up Against.
+                    </p>
+                  )}
               </div>
             )}
 
@@ -1663,19 +1789,23 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                 <div className="text-[10px] uppercase tracking-wider opacity-40" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                   Difficulty, phased plan, value ladder
                 </div>
-                <div className="flex items-center gap-2">
-                  <Wrench size={14} className="opacity-60" />
-                  <span className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                    Difficulty: {idea.executionDifficulty?.score}/10
-                  </span>
-                </div>
-                <p className="opacity-70 italic text-xs">{idea.executionDifficulty?.note}</p>
-                <div className="pt-2">
-                  <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                    Suggested Plan
+                {idea.executionDifficulty?.score != null && (
+                  <div className="flex items-center gap-2">
+                    <Wrench size={14} className="opacity-60" />
+                    <span className="text-[11px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      Difficulty: {idea.executionDifficulty.score}/10
+                    </span>
                   </div>
-                  <StructuredSection text={idea.executionPlan} />
-                </div>
+                )}
+                {idea.executionDifficulty?.note && <p className="opacity-70 italic text-xs">{idea.executionDifficulty.note}</p>}
+                {idea.executionPlan && (
+                  <div className="pt-2">
+                    <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      Suggested Plan
+                    </div>
+                    <StructuredSection text={idea.executionPlan} />
+                  </div>
+                )}
                 {idea.valueLadderDetail && (
                   <details className="pt-2 border-t border-black/10">
                     <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
@@ -1684,6 +1814,16 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                     <StructuredSection text={idea.valueLadderDetail} />
                   </details>
                 )}
+                {/* New-layout equivalent: The Plan / Napkin Math / What
+                    You'd Sell already appear on the Overview tab as part
+                    of newLayoutSections — same reasoning as the Market
+                    tab note above. */}
+                {!idea.executionPlan && !idea.valueLadderDetail &&
+                  idea.newLayoutSections && Object.keys(idea.newLayoutSections).length > 0 && (
+                    <p className="text-xs italic opacity-50">
+                      This idea uses the site's newer report format — see the Overview tab for The Plan, Napkin Math, and What You'd Sell.
+                    </p>
+                  )}
               </div>
             )}
 
@@ -1769,6 +1909,20 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                 {idea.otherCommunitiesExtra && (
                   <OtherCommunitiesExtra data={idea.otherCommunitiesExtra} />
                 )}
+                {/* New-layout equivalent: People Are Asking For It already
+                    appears on the Overview tab as part of
+                    newLayoutSections — this section is genuinely thinner
+                    than the old layout's dedicated Community Signals
+                    breakdown (no per-platform structured data at all in
+                    the new layout, confirmed directly: community_signals_
+                    deep came back {} on the 2026-08-27 crawl), so this is
+                    an honest "less here" note rather than a broken tab. */}
+                {!idea.communitySignals?.reddit && !(idea.communitySignalsRich && Object.values(idea.communitySignalsRich).some((arr) => arr?.length)) &&
+                  idea.newLayoutSections && Object.keys(idea.newLayoutSections).length > 0 && (
+                    <p className="text-xs italic opacity-50">
+                      This idea uses the site's newer report format, which doesn't break out community data by platform — see the Overview tab for "People Are Asking For It" instead.
+                    </p>
+                  )}
               </div>
             )}
           </div>
@@ -1817,13 +1971,17 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
 function CopyPromptModal({ idea, onClose, mode = "build" }) {
   const [copied, setCopied] = useState(false);
 
+  const newLayoutText = idea.newLayoutSections && Object.keys(idea.newLayoutSections).length > 0
+    ? Object.entries(idea.newLayoutSections).map(([label, text]) => `${label}:\n${text}`).join("\n\n")
+    : "";
+
   const buildPrompt = `I want to build "${idea.title}" — ${idea.tagline}
 
 Here's the full research on this idea:
 
 ${idea.description}
 
-Market gap: ${safeText(idea.marketGap)}
+${newLayoutText ? newLayoutText + "\n\n" : ""}Market gap: ${safeText(idea.marketGap)}
 Suggested execution plan: ${safeText(idea.executionPlan)}
 Execution difficulty: ${idea.executionDifficulty?.score}/10 — ${idea.executionDifficulty?.note}
 Target: ${idea.categorization?.target} | Market: ${idea.categorization?.market} | Main competitor: ${idea.categorization?.competitor}
@@ -1842,7 +2000,7 @@ ${idea.tagline}
 Full pitch:
 ${idea.description}
 
-Scores: Opportunity ${idea.scores?.opportunity?.score}/10 (${idea.scores?.opportunity?.label}), Problem ${idea.scores?.problem?.score}/10 (${idea.scores?.problem?.label}), Feasibility ${idea.scores?.feasibility?.score}/10 (${idea.scores?.feasibility?.label}), Why Now ${idea.scores?.whyNow?.score}/10 (${idea.scores?.whyNow?.label})
+${newLayoutText ? "Full research sections:\n" + newLayoutText + "\n\n" : ""}Scores: Opportunity ${idea.scores?.opportunity?.score}/10 (${idea.scores?.opportunity?.label}), Problem ${idea.scores?.problem?.score}/10 (${idea.scores?.problem?.label}), Feasibility ${idea.scores?.feasibility?.score}/10 (${idea.scores?.feasibility?.label}), Why Now ${idea.scores?.whyNow?.score}/10 (${idea.scores?.whyNow?.label})
 
 Categorization: ${idea.categorization?.type} | ${idea.categorization?.market} | Target: ${idea.categorization?.target} | Competitor: ${idea.categorization?.competitor}
 
