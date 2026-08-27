@@ -237,7 +237,12 @@ def trim_execution_difficulty(text: str) -> str:
 # label never requires touching the crawler at all — only what got
 # captured does.
 NEW_LAYOUT_SECTION_LABELS = {
-    "section_the_idea": "The Idea",
+    # "section_the_idea" deliberately excluded here — normalize_day() now
+    # prefers this exact text as the top-level "description" field
+    # (rendered as the pitch at the very top of the Overview tab), so
+    # including it again here duplicated the entire pitch paragraph a
+    # second time under its own "The Idea" heading right below it,
+    # confirmed directly in a real screenshot of the live app.
     "section_at_a_glance": "At a Glance",
     "section_the_customer": "The Customer",
     "section_why_now": "Why Now",
