@@ -17,6 +17,25 @@ single idea) since it must click through dropdowns and sub-pages one at a
 time, waiting for the SPA to re-render each time. Expect this to take
 several minutes per run, not seconds.
 
+SITE REDESIGN — confirmed directly on 2026-08-27: ideabrowser.com's Idea
+of the Day layout changed substantially. The old layout had a "Keyword:"
+dropdown, emoji-led "Business Fit" cards, and a "Categorization" block;
+the new layout uses section headers like "THE IDEA", "AT A GLANCE", "THE
+CUSTOMER", "WHY NOW", "THE VERDICT", "FOUNDER FIT", "THE PLAN", "NAPKIN
+MATH" instead, and appears to have DROPPED the keyword-volume dropdown
+and chart entirely. Sites like this can and do change layout without
+notice, so this file now has two layers of defense against that instead
+of just hardcoded selectors that quietly break:
+  1. extract_new_layout_fields(): parses the new layout's real section
+     headers into structured fields, the same way extract_summary_fields()
+     did for the old layout. Both are tried; whichever actually matches
+     the live page wins.
+  2. Regardless of which (if either) parser matches, the FULL raw page
+     text is always saved verbatim in summary.raw_text — so even a THIRD
+     future redesign that neither parser recognizes still never loses a
+     day's idea outright, it just falls back to being unparsed text
+     instead of structured fields.
+
 IMPORTANT — this script needs live debugging against the real site.
 It was written from screenshots of the page, not by running against the
 live DOM (the authoring environment cannot reach ideabrowser.com), so
@@ -291,13 +310,17 @@ def wait_out_bot_checkpoint(page, log, max_wait_ms=15000):
     disappear before proceeding, instead of immediately trying to interact
     with what might just be the checkpoint page.
 
-    IMPORTANT: a first run showed the checkpoint text disappearing (this
-    function returning True) while the page still wasn't real content —
-    meaning Vercel may serve additional/different block screens after the
-    first interstitial clears. So beyond just checking these markers are
-    gone, we also positively confirm real page content is present (the
-    "Keyword:" label, which should exist on every real idea-of-the-day
-    page) before declaring success.
+    A site redesign on 2026-08-27 was confirmed to have DROPPED the
+    "Keyword:" label this function used as its "is this real content"
+    marker entirely (the new layout has no keyword-volume dropdown at
+    all) — the crawler misread a genuinely successful, unblocked page load
+    as still being stuck behind the checkpoint, and stopped the entire
+    crawl immediately even though login had succeeded and real content was
+    on screen the whole time. A single fixed marker string is fragile
+    against exactly this kind of redesign, so this now accepts ANY of
+    several markers that have been directly confirmed present across both
+    the old and new real layouts, rather than requiring one specific
+    string that a future redesign could just as easily drop again.
     """
     checkpoint_markers = [
         "Security Checkpoint", "Verifying your browser", "verify you are human",
@@ -305,7 +328,13 @@ def wait_out_bot_checkpoint(page, log, max_wait_ms=15000):
         "Checking your browser", "Just a moment", "Please wait while we verify",
         "Access denied", "blocked", "captcha", "Enable JavaScript and cookies",
     ]
-    real_content_marker = "Keyword:"
+    # Each of these has been directly confirmed present on a real,
+    # successfully-loaded page: "Keyword:" on the old layout, "Idea of the
+    # Day" / "Browse all" / "THE IDEA" on both old and new real captures.
+    # Requiring only ONE of these (not all) means the marker set can keep
+    # growing as the site changes without ever needing every single one to
+    # simultaneously match.
+    real_content_markers = ["Keyword:", "Idea of the Day", "Browse all", "THE IDEA"]
 
     waited = 0
     interval = 1000
@@ -316,7 +345,7 @@ def wait_out_bot_checkpoint(page, log, max_wait_ms=15000):
             text = ""
 
         has_checkpoint_text = any(m.lower() in text.lower() for m in checkpoint_markers)
-        has_real_content = real_content_marker.lower() in text.lower()
+        has_real_content = any(m.lower() in text.lower() for m in real_content_markers)
 
         if has_real_content and not has_checkpoint_text:
             return True  # genuinely real content, no checkpoint text present
@@ -342,8 +371,113 @@ def get_visible_text(page):
     return page.inner_text("body")
 
 
+def extract_new_layout_fields(text: str) -> dict:
+    """
+    Parses the NEW layout confirmed live on 2026-08-27, which uses
+    distinct ALL-CAPS section header lines (THE IDEA, AT A GLANCE, THE
+    CUSTOMER, WHY NOW, THE VERDICT, FOUNDER FIT, THE PLAN, NAPKIN MATH,
+    etc) rather than the old layout's "Keyword:" dropdown and emoji cards.
+    These header strings are used as split points directly, since they've
+    been directly confirmed present verbatim in a real capture — far more
+    stable anchors than CSS classes or DOM structure, which is exactly
+    what changed in this redesign.
+
+    Returns {} (not a dict with mostly-null fields) if NONE of the known
+    new-layout headers are found at all, so the caller can tell "this
+    parser doesn't apply to what's on the page right now" apart from
+    "this parser applies but a couple of optional fields were missing" —
+    the first case should fall through to raw-text-only rather than
+    reporting a mostly-empty structured result as if it were complete.
+    """
+    out = {}
+    known_sections = [
+        "THE IDEA", "AT A GLANCE", "THE CUSTOMER", "WHY NOW",
+        "PROOF & SIGNALS", "MARKET SNAPSHOT", "WHITESPACE",
+        "WHO YOU'RE UP AGAINST", "PEOPLE ARE ASKING FOR IT", "THE VERDICT",
+        "FOUNDER FIT", "WHAT YOU'D SELL", "THE PLAN", "NAPKIN MATH",
+        "THE PLAYBOOKS",
+    ]
+    present_sections = [s for s in known_sections if s in text]
+    if not present_sections:
+        return {}
+
+    # Title: on a real capture this is the line right after the LAST
+    # "Browse all" occurrence and before the numeric score that follows it
+    # (e.g. "...Browse all\nLaunch products with street marketing\n7.3\n
+    # /10"), mirroring the same anchor strategy extract_summary_fields
+    # already uses successfully for the old layout.
+    if "Browse all" in text:
+        after_nav = text.rsplit("Browse all", 1)[1]
+        candidate_lines = [l.strip() for l in after_nav.split("\n") if l.strip()]
+        for l in candidate_lines:
+            if len(l) > 8 and not re.match(r"^[\d./]+$", l):
+                out["title"] = l
+                break
+
+    # Overall score: confirmed to appear directly after the title as a
+    # bare "7.3\n/10" pair, distinct from the old layout's separate
+    # Opportunity/Problem/Feasibility/Why Now four-way breakdown — this
+    # new layout appears to have collapsed those into one overall score
+    # shown at the top, with the individual PAIN/TIMING scores appearing
+    # later as their own separate labeled sections instead.
+    m = re.search(r"\n([\d.]+)\s*\n\s*/\s*10\b", text)
+    if m:
+        try:
+            out["overall_score"] = float(m.group(1))
+        except ValueError:
+            pass
+
+    def section_text(start_marker, end_markers):
+        if start_marker not in text:
+            return None
+        seg = text.split(start_marker, 1)[1]
+        end_idx = len(seg)
+        for end_marker in end_markers:
+            idx = seg.find(end_marker)
+            if idx != -1 and idx < end_idx:
+                end_idx = idx
+        # A real capture showed "WHY NOW" actually renders on the page as
+        # "WHY NOW?" — the marker itself matches fine (it's a substring),
+        # but the leftover "?" then leads the captured section text. Strip
+        # a stray leading "?" (and any whitespace around it) rather than
+        # add a second near-duplicate marker string to maintain.
+        return seg[:end_idx].strip().lstrip("?").strip()[:3000]
+
+    section_order = present_sections + ["SOURCES"]  # SOURCES as a safe trailing bound for the last real section
+    for i, section in enumerate(present_sections):
+        remaining_markers = section_order[i + 1:]
+        key = re.sub(r"[^a-z0-9]+", "_", section.lower()).strip("_")
+        val = section_text(section, remaining_markers)
+        if val:
+            out[f"section_{key}"] = val
+
+    # PAIN / TIMING scores: confirmed present as "PAIN\n8\n/10 severity"
+    # and "TIMING\n8\n/10" patterns distinct from the old layout's
+    # Opportunity/Problem/Feasibility/Why Now block.
+    for label, key in [("PAIN", "pain_score"), ("TIMING", "timing_score")]:
+        m = re.search(rf"{label}\s*\n\s*(\d+)\s*\n\s*/\s*10", text)
+        if m:
+            try:
+                out[key] = int(m.group(1))
+            except ValueError:
+                pass
+
+    return out
+
+
 def extract_summary_fields(text: str) -> dict:
-    """Heuristic parse of the main page's plain text into structured fields."""
+    """Heuristic parse of the main page's plain text into structured fields.
+
+    Tries BOTH the old layout's parser (this function's own body, below)
+    and the new layout's parser (extract_new_layout_fields) and merges
+    whichever fields each one actually found — rather than assuming only
+    one layout can ever be live at a time. If a future redesign changes
+    things AGAIN and neither parser recognizes it, "raw_text" (the full,
+    verbatim page text, always saved regardless) is what the app and any
+    future maintenance work falls back to — nothing is ever silently lost
+    to a parser mismatch, only to genuine capture failures (login/
+    checkpoint), which are handled and logged separately.
+    """
     out = {"raw_text": text.strip()}
     lines = [l.strip() for l in text.split("\n") if l.strip()]
 
@@ -432,6 +566,15 @@ def extract_summary_fields(text: str) -> dict:
             community[platform.lower()] = m.group(1).strip()
     out["community_signals_summary"] = community
 
+    # Merge in whatever the new-layout parser independently found. Real
+    # fields from either parser win; out's own fields (set above) are
+    # never overwritten by an empty/None value from the other parser.
+    new_layout_fields = extract_new_layout_fields(text)
+    for k, v in new_layout_fields.items():
+        if v is not None and (k not in out or out[k] is None):
+            out[k] = v
+    out["layout_detected"] = "new" if new_layout_fields else "old"
+
     return out
 
 
@@ -440,6 +583,17 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
     Opens the Keyword Analysis dropdown, enumerates every keyword option,
     and for each keyword cycles through every time range, recording the
     Volume/Growth/CPC/Competition numbers shown.
+
+    A site redesign confirmed on 2026-08-27 appears to have REMOVED the
+    keyword-volume dropdown and chart entirely from the new layout — a
+    real capture of that day's page showed no "Keyword:" label anywhere
+    in the text at all. If this genuinely no longer exists, every step
+    below will fail safely via crawler.safe() and simply return an empty
+    list, which the rest of the pipeline already handles fine (the app
+    just shows no keyword data for that day, same as any other optional
+    field that didn't come back). Left as-is rather than removed outright
+    in case the dropdown returns in a future layout tweak, or exists on
+    a different page/state than what was captured.
     """
     page = crawler.page
     log = crawler.log
@@ -1454,17 +1608,6 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
 
     log.append({"step": "crawl_chart_history:chart_found", "box": box})
 
-    # DIAGNOSTIC — 6 rounds of coordinate/event-based hover techniques have
-    # all failed to produce any tooltip content at all (most recently:
-    # tooltip_count=0, meaning the tooltip element doesn't even exist in
-    # the DOM during sampling, a materially different and more informative
-    # result than earlier rounds' tooltip_count=1/empty-text). Rather than
-    # keep guessing at interaction techniques blindly, save real screenshots
-    # of the actual chart area before and after a hover attempt, uploaded
-    # as workflow artifacts (same mechanism already used for login
-    # debugging) so a human can SEE what's genuinely on screen and
-    # determine the real trigger mechanism directly, instead of further
-    # blind iteration.
     try:
         chart_screenshot_before = str(ROOT / "library" / "chart_before_debug_screenshot.png")
         chart.screenshot(path=chart_screenshot_before)
@@ -1472,20 +1615,9 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
     except Exception as e:
         log.append({"step": "crawl_chart_history:screenshot_before", "error": str(e)})
 
-    # Establish real pointer state before sampling — a bare page.mouse.move()
-    # to an arbitrary first coordinate, with no prior pointer position, does
-    # not reliably trigger hover-based UI transitions in Chromium under
-    # automation (confirmed: a real run got tooltip_count=1 — the element
-    # exists in the DOM at all times — but tooltip_visible=false at every
-    # single sample, meaning the hover/mouseover transition never actually
-    # fired). Moving to a neutral point first, then into the chart, gives
-    # the browser a real "from A to B" pointer trajectory to react to.
     page.mouse.move(box["x"] - 20, box["y"] + box["height"] / 2)
     page.wait_for_timeout(200)
 
-    # Hover into the middle of the chart and screenshot again immediately,
-    # BEFORE the sampling loop below does anything else — this is the
-    # single clearest before/after comparison we can capture.
     mid_x = box["x"] + box["width"] / 2
     mid_y = box["y"] + box["height"] / 2
     page.mouse.move(mid_x - 10, mid_y, steps=3)
@@ -1498,9 +1630,6 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
     except Exception as e:
         log.append({"step": "crawl_chart_history:screenshot_after_hover", "error": str(e)})
 
-    # Also capture a full-page screenshot for broader context (e.g. in
-    # case the real chart/tooltip is rendered somewhere other than inside
-    # what we identified as the chart container).
     try:
         full_page_screenshot = str(ROOT / "library" / "chart_fullpage_debug_screenshot.png")
         page.screenshot(path=full_page_screenshot, full_page=False)
@@ -1508,21 +1637,12 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
     except Exception as e:
         log.append({"step": "crawl_chart_history:screenshot_fullpage", "error": str(e)})
 
-    # Also dump the chart container's raw outer HTML — this shows us
-    # directly, as text, exactly what library/markup is really being used
-    # (Recharts, a canvas-based lib, something custom, etc) rather than
-    # guessing from visual style alone.
     try:
         chart_html = chart.evaluate("el => el.outerHTML") or ""
         log.append({"step": "crawl_chart_history:chart_html_sample", "html": chart_html[:3000]})
     except Exception as e:
         log.append({"step": "crawl_chart_history:chart_html_sample", "error": str(e)})
 
-    # Sample points evenly across the chart's width rather than trying to
-    # locate individual SVG point elements (which vary by chart library and
-    # may not exist as discrete hoverable nodes for line charts) — moving
-    # the mouse itself is what triggers Recharts' nearest-point tooltip
-    # logic, regardless of exact point markup.
     sample_count = 24  # roughly monthly resolution across a 2-year chart
     seen_labels = set()
     for i in range(sample_count):
@@ -1530,11 +1650,6 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
         x = box["x"] + frac * box["width"]
         y = box["y"] + box["height"] * 0.5  # vertical center is safest for line charts
         try:
-            # Move in two steps (a real, if small, trajectory) rather than
-            # teleporting directly to each new point — Recharts (and many
-            # chart libs) listen for mousemove deltas to update the active
-            # index, so an actual short movement is more reliable than a
-            # single jump, matching what a real mouse drag would produce.
             page.mouse.move(x - 5, y, steps=3)
             page.mouse.move(x, y, steps=3)
             page.wait_for_timeout(200)  # let the tooltip re-render
@@ -1543,17 +1658,6 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
             tooltip_visible = tooltip.is_visible() if tooltip_count > 0 else False
 
             if tooltip_count > 0 and not tooltip_visible:
-                # A prior run confirmed the tooltip element exists in the
-                # DOM at every sample but never becomes visible via
-                # simulated OS-level mouse movement alone — a known gap
-                # with React-driven hover state in automated browsers
-                # (confirmed via community reports of the exact same
-                # Recharts/Playwright combination). Force the issue by
-                # dispatching real mouseover/mousemove/mouseenter DOM
-                # events directly at the target coordinates, which
-                # Recharts' internal event listeners respond to even when
-                # the OS-level pointer simulation alone doesn't visibly
-                # register.
                 page.evaluate(
                     """([x, y]) => {
                         const el = document.elementFromPoint(x, y);
@@ -1569,20 +1673,6 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
                 page.wait_for_timeout(200)
                 tooltip_visible = tooltip.is_visible() if tooltip.count() > 0 else False
 
-            # A second real run showed the tooltip element with GENUINELY
-            # EMPTY text content at every sample (has_real_tooltip_content
-            # was false, not just is_visible() being unreliable) — proving
-            # the coordinate-based approaches above aren't reaching
-            # Recharts' actual hover-tracking layer at all. Recharts
-            # typically renders an invisible full-plot-area tracking
-            # rect/surface as the REAL mouse-event target (not the visible
-            # line/dots themselves), so try Playwright's own element-level
-            # .hover() directly on whatever SVG element sits at these
-            # coordinates, with force=True to bypass any pointer-
-            # interception checks — genuinely different from raw
-            # page.mouse.move, since Locator.hover() performs its own
-            # internal actionability + event sequence rather than just
-            # moving the OS cursor.
             tooltip_text_raw = ""
             if tooltip_count > 0:
                 try:
@@ -1592,10 +1682,6 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
 
             if not tooltip_text_raw.strip():
                 try:
-                    # Hover the specific coordinate within the SVG via a
-                    # relative-position hover on the chart container,
-                    # rather than a bare cursor move — this goes through
-                    # Playwright's full actionability + event pipeline.
                     chart.hover(position={"x": x - box["x"], "y": y - box["y"]}, force=True, timeout=2000)
                     page.wait_for_timeout(200)
                     if tooltip.count() > 0:
@@ -1606,10 +1692,6 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
             has_real_tooltip_content = bool(tooltip_text_raw.strip())
 
             if i < 3:
-                # DIAGNOSTIC — a real run found 0 points across all 24
-                # samples with no errors at all, meaning either the
-                # tooltip never appeared or its selector is wrong. Logging
-                # the first few samples' raw findings shows which.
                 log.append({
                     "step": f"crawl_chart_history:sample_{i}",
                     "x": x, "y": y,
@@ -1643,28 +1725,14 @@ def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
     Why Now) each open a small modal on click showing the score, a short
     description, and a "View detailed analysis" button — confirmed via
     real screenshots. That button navigates to a genuinely deeper page
-    with its own real sub-sections (e.g. Opportunity's page shows
-    "Opportunity Score" overall rating, "Key Strengths", "Key Risks";
-    other cards showed "Market Analysis" and "Competitive Position"
-    sections instead) — content not present anywhere in the main page's
-    plain text at all.
+    with its own real sub-sections.
 
-    This follows the same proven click-modal-then-navigate pattern as
-    crawl_business_fit_deep, just with an extra navigation step (click
-    card -> modal opens -> click "View detailed analysis" -> real
-    sub-page loads) rather than the content living directly in the modal.
-
-    Returns a dict keyed by card label with whatever real page text was
-    captured, or omits a card entirely if its click/modal/navigation
-    sequence failed at any point — never raises, since this is
-    supplementary detail and a failure here shouldn't affect anything
-    else already captured.
-
-    NOTE: this used to be defined TWICE in this file (a stale first
-    version calling crawl_business_fit_deep's modal-capture pattern, then
-    this second one which silently shadowed it — Python allows
-    redefinition with no warning, so only this second copy ever actually
-    ran). The dead first copy has been removed.
+    NOTE (2026-08-27 site redesign): the new layout may not have these 4
+    score cards at all in the same form — confirmed via a real capture
+    that the old "Keyword:"/emoji-card layout is gone. This function is
+    wrapped in crawler.safe() at every call site, so if these cards no
+    longer exist it will simply fail safely per-card and return an empty
+    or partial dict, same as any other optional field.
     """
     page = crawler.page
     log = crawler.log
@@ -1672,15 +1740,6 @@ def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
 
     card_labels = ["Opportunity", "Problem", "Feasibility", "Why Now"]
 
-    # Real captured data confirmed get_visible_text(page) on these detail
-    # sub-pages returns the ENTIRE page's text, including the site's own
-    # nav sidebar ("ideabrowser HUB Browse Build Home Training...") and the
-    # "Discover your founder archetype" quiz box — both prepended before
-    # any real content (confirmed directly: scoreCardsDeep.Opportunity's
-    # saved text started with the full nav dump, not "Opportunity Score").
-    # This is the exact same boilerplate problem already solved for
-    # community cards below — reuse the identical stripped-lines approach
-    # rather than inventing a second one.
     boilerplate_lines = {
         "ideabrowser", "hub", "browse", "build", "home", "training",
         "my profile", "my stuff", "ideas", "discover", "research",
@@ -1715,18 +1774,8 @@ def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
             detail_link.click(timeout=8000)
             page.wait_for_timeout(WAIT_CHART)
 
-            # A real capture of "Why Now" confirmed it's meaningfully
-            # longer than the other 3 cards (it has 6+ emoji sub-sections
-            # plus a citations list, vs. 2 for Opportunity/Problem/
-            # Feasibility) and was being cut off mid-URL by the previous
-            # 4000-char cap. Raised to 8000 so longer cards aren't
-            # truncated; still bounded so a genuinely broken page can't
-            # balloon unboundedly.
             result[card_label] = strip_boilerplate(get_visible_text(page))[:8000]
 
-            # Return to the main page explicitly rather than relying on
-            # back-navigation, since this sub-page's own URL structure is
-            # unconfirmed and may not support a simple browser-back.
             page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
 
         crawler.safe(crawl_card, f"score_card:{card_label}")
@@ -1739,39 +1788,21 @@ def crawl_business_fit_deep(crawler: Crawler, base_url: str) -> dict:
     The main page's "Business Fit" section shows 4 short summary cards
     (Revenue Potential, Execution Difficulty, Go-To-Market, Right for You)
     — each already captured as plain one-line text in the main page's own
-    raw_text (confirmed directly: "Revenue Potential\n$100K-$1M ARR
-    potential..."). Clicking any of these cards opens a genuinely deeper
-    modal with real additional structured content not present anywhere
-    else on the page (confirmed via a real screenshot showing "Overview",
-    "Revenue Examples" as a bullet list, "Business Models", and "Example
-    Companies" as named tags — none of which appear in the plain page
-    text at all).
+    raw_text. Clicking any of these cards opens a genuinely deeper modal
+    with real additional structured content.
 
-    Returns a dict keyed by card label (e.g. "Revenue Potential") with
-    whatever text content the modal contained, or omits a card entirely
-    if its click/modal capture failed — never raises, since this is
-    supplementary detail and a failure here shouldn't affect anything
-    else already captured.
+    NOTE (2026-08-27 site redesign): may not exist in the new layout — see
+    the same note on crawl_score_cards_deep above. Fails safely per-card.
     """
     page = crawler.page
     log = crawler.log
     result = {}
 
-    # "Right for You" is deliberately excluded here — two real attempts
-    # (modal detection, then a "Find Out" navigation fallback) both
-    # confirmed no accessible content opens for it on a free-plan account,
-    # most likely because it's gated behind ideabrowser.com's paid tier
-    # (the page consistently shows "Pro welcome offer" banners throughout).
-    # The other 3 cards are all confirmed working with real content.
     card_labels = ["Revenue Potential", "Execution Difficulty", "Go-To-Market"]
 
     for card_label in card_labels:
 
         def crawl_card(card_label=card_label):
-            # Return to a clean main-page state before each card, since a
-            # previous card's modal-close might leave residual scroll
-            # position or focus state that could interfere with finding
-            # the next card reliably.
             page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
             page.wait_for_timeout(WAIT_CHART)
             url_before = page.url
@@ -1783,20 +1814,8 @@ def crawl_business_fit_deep(crawler: Crawler, base_url: str) -> dict:
             card_heading.click(timeout=8000)
             page.wait_for_timeout(WAIT_CHART)
 
-            # The modal is expected to be an overlay dialog — look for a
-            # close button ("X" / role=dialog) as confirmation a modal
-            # genuinely opened, rather than assuming the click did
-            # anything at all.
             modal = page.locator("[role='dialog'], .modal, [class*='Modal']").first
             if modal.count() == 0:
-                # A real run confirmed "Right for You" specifically does
-                # NOT open a modal like the other 3 cards — it's styled
-                # with its own "Find Out →" link (per earlier screenshots),
-                # suggesting a real page navigation rather than an overlay.
-                # Try clicking that specific link text as a fallback, and
-                # accept either a genuine URL change or new page content
-                # as evidence something real happened, rather than only
-                # accepting the modal pattern.
                 find_out_link = page.get_by_text("Find Out", exact=False).first
                 if find_out_link.count() > 0 and find_out_link.is_visible():
                     find_out_link.click(timeout=5000)
@@ -1809,9 +1828,6 @@ def crawl_business_fit_deep(crawler: Crawler, base_url: str) -> dict:
 
             modal_text = modal.inner_text(timeout=3000)
 
-            # Close the modal before returning, so the next card starts
-            # from a clean state even if the next iteration's own
-            # page.goto() above is skipped for any reason.
             try:
                 close_btn = modal.locator("button", has_text=re.compile(r"^(×|X|Close)$", re.IGNORECASE)).first
                 if close_btn.count() > 0:
@@ -1834,17 +1850,6 @@ def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
     Follows every 'View Analysis' style link/button on the main page into
     its sub-page, captures the rendered text, then returns to the main page.
     Also attempts to open the 'Execution Difficulty' modal in place.
-
-    A real run showed two things worth noting for future maintenance:
-    1. Text-based locators here can match hidden duplicate elements (same
-       responsive-layout pattern seen elsewhere on this page), so every
-       match must be checked with is_visible() rather than assumed usable.
-    2. "Market Gap" and "Execution Plan" appear to primarily be inline
-       section headings on the main page (e.g. "The Market Gap" followed
-       directly by descriptive text), with dedicated CTA links worded
-       differently ("Understand the market opportunity", "View detailed
-       execution strategy") rather than the section heading itself. Both
-       label variants are tried below.
     """
     page = crawler.page
     log = crawler.log
@@ -1859,6 +1864,18 @@ def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
         "See why this opportunity matters now",  # Why Now CTA
         "View full keyword analysis",
         "View full value ladder",
+        # New layout (confirmed 2026-08-27) uses different CTA link text
+        # for the same kind of "go deeper" links — added as additional
+        # labels to try, alongside the old ones above, rather than
+        # replacing them, since we don't yet know if the old layout is
+        # gone everywhere or might still appear for some ideas/accounts.
+        "Keep reading",
+        "See the full timing case",
+        "Explore the evidence",
+        "Understand the opening",
+        "See the detailed plan",
+        "Run the model on your numbers",
+        "View the full value ladder",
     ]
 
     for label in link_labels:
@@ -1885,12 +1902,6 @@ def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
 
             crawler.safe(click_and_capture, f"subpage:{label}#{i}")
 
-    # Execution Difficulty modal (has visible X close button in screenshot,
-    # but a generic "button with svg icon" selector matched the WRONG
-    # button on a real run — likely one of several icon-buttons on the
-    # page. Use a more specific modal-scoped close button selector, and
-    # fall back to pressing Escape, which closes most modal/dialog
-    # implementations regardless of the close button's exact markup.
     def open_execution_modal():
         candidates = page.get_by_text("Execution Difficulty", exact=False)
         count = candidates.count()
@@ -1908,9 +1919,6 @@ def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
         text = get_visible_text(page)
         subpages["Execution Difficulty"] = {"text": text.strip(), "url": page.url}
 
-        # Close modal — prefer a close button scoped inside an open dialog,
-        # fall back to Escape key which works for most modal libraries
-        # (including Radix-based dialogs, which this site appears to use).
         try:
             dialog_close = page.locator("[role='dialog'] button").first
             if dialog_close.is_visible():
@@ -1935,12 +1943,6 @@ def main():
     out_md = year_dir / f"{date_str}.deep.md"
     log_path = year_dir / f"{date_str}.crawl-log.json"
 
-    # GitHub Actions sets GITHUB_EVENT_NAME to "schedule" for the automatic
-    # daily run, and "workflow_dispatch" for a manual "Run workflow" click.
-    # We only want the automatic run to skip an already-scraped day (so it
-    # doesn't waste time re-scraping); a manual run is almost always someone
-    # deliberately testing/retrying, so it should always run fresh even if
-    # today's file already exists (e.g. from a previous failed attempt).
     is_manual_run = os.environ.get("GITHUB_EVENT_NAME") != "schedule"
 
     if out_json.exists() and not is_manual_run:
@@ -1979,8 +1981,16 @@ def main():
             page.wait_for_timeout(3000)
             cleared = wait_out_bot_checkpoint(page, log)
             if not cleared:
-                # Save whatever the checkpoint page looked like, for debugging,
-                # and stop early rather than burning the full crawl on a wall.
+                # Save whatever the checkpoint page looked like, for
+                # debugging — but this is now a MUCH rarer path than
+                # before, since wait_out_bot_checkpoint accepts multiple
+                # real-content markers rather than one that a redesign can
+                # silently remove. If this genuinely still fires, save the
+                # raw text as the safety net it's meant to be, since even
+                # a "blocked" page's raw text can hold useful diagnostic
+                # value (as the 2026-08-27 capture proved directly: the
+                # "blocked" page's raw_text actually contained the ENTIRE
+                # real idea content, just misclassified as blocked).
                 record["summary"] = {"raw_text": get_visible_text(page), "blocked_by_checkpoint": True}
                 record["crawl_log"] = log
                 out_json.write_text(json.dumps(record, indent=2), encoding="utf-8")
@@ -1993,6 +2003,11 @@ def main():
 
         main_text = crawler.safe(lambda: get_visible_text(page), "get_main_text", default="")
         record["summary"] = extract_summary_fields(main_text)
+        log.append({
+            "step": "layout_detection",
+            "layout_detected": record["summary"].get("layout_detected", "unknown"),
+            "note": "old = Keyword:/emoji-card layout, new = THE IDEA/AT A GLANCE layout confirmed live 2026-08-27",
+        })
 
         record["keyword_analysis"] = crawler.safe(
             lambda: crawl_keyword_analysis(crawler), "crawl_keyword_analysis", default=[]
@@ -2007,30 +2022,14 @@ def main():
             lambda: crawl_subpages(crawler, URL), "crawl_subpages", default={}
         ) or {}
 
-        # Drill into the 4 Business Fit modal cards (Revenue Potential,
-        # Execution Difficulty, Go-To-Market, Right for You) for their
-        # real deeper content (Overview, Revenue Examples, Business
-        # Models, Example Companies) — none of which is present in the
-        # main page's own plain text, confirmed directly via a real
-        # screenshot of the modal.
         record["business_fit_deep"] = crawler.safe(
             lambda: crawl_business_fit_deep(crawler, URL), "crawl_business_fit_deep", default={}
         ) or {}
 
-        # Drill into the 4 score cards (Opportunity, Problem, Feasibility,
-        # Why Now) for their real deeper modal + "View detailed analysis"
-        # page content (Market Analysis, Competitive Position, Key
-        # Strengths, Key Risks, etc) — confirmed via real screenshots to
-        # contain genuine additional structure well beyond the plain
-        # "9/10 Exceptional" summary already captured elsewhere.
         record["score_cards_deep"] = crawler.safe(
             lambda: crawl_score_cards_deep(crawler, URL), "crawl_score_cards_deep", default={}
         ) or {}
 
-        # Drill deeper into Community Signals specifically: real subreddit/
-        # group names, discussion titles, and actual external href links —
-        # data the top-level subpage crawl above only captures as summary
-        # text, not as structured, linkable detail.
         community_page = record["subpages"].get("View detailed breakdown")
         if community_page and community_page.get("url"):
             record["community_signals_deep"] = crawler.safe(
