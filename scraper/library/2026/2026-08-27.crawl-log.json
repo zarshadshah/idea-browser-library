@@ -1,0 +1,23 @@
+[
+  {
+    "step": "login",
+    "note": "Found 2 element(s) matching 'Sign in with Password' text."
+  },
+  {
+    "step": "login",
+    "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+  },
+  {
+    "step": "login",
+    "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+  },
+  {
+    "step": "login",
+    "success": true
+  },
+  {
+    "step": "bot_checkpoint",
+    "error": "Checkpoint/block still present after 15000ms \u2014 likely blocked as automated.",
+    "final_page_text_sample": "ideabrowser\nBrowse\nBuild\nHome\nIdeas\nTrends\nMarket Insights\nMy Stuff\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nWorkshop today at 12:00 PM EDT\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nAug 27, 2026\n|\nBrowse all\nLaunch products with street marketing\n7.3\n/10\n\nTHE IDEA\n\nPop "
+  }
+]
