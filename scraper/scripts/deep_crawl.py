@@ -432,7 +432,21 @@ def extract_new_layout_fields(text: str) -> dict:
             return None
         seg = text.split(start_marker, 1)[1]
         end_idx = len(seg)
-        for end_marker in end_markers:
+        # A real screenshot confirmed "At a Glance" (and potentially other
+        # sections) absorbing unrelated page furniture that sits physically
+        # between two known section headers on the live page — an AI-agent
+        # plugin promo box, an event/workshop invite banner, and a feedback
+        # widget, none of which are real idea content. These UI elements
+        # don't have a consistent single marker text the way real section
+        # headers do, so multiple known fragments of each are checked as
+        # ADDITIONAL stop points alongside the real end_markers, using
+        # whichever (real header or noise fragment) comes soonest.
+        noise_markers = [
+            "Build with", "Jam on it with your agent", "Workshop today",
+            "Workshop tomorrow", "What'd you think of this idea",
+            "Chef's kiss", "Pretty interesting", "You didn't bring the heat",
+        ]
+        for end_marker in list(end_markers) + noise_markers:
             idx = seg.find(end_marker)
             if idx != -1 and idx < end_idx:
                 end_idx = idx
