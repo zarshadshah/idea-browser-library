@@ -1,0 +1,102 @@
+[
+  {
+    "step": "login",
+    "note": "Found 0 element(s) matching 'Sign in with Password' text."
+  },
+  {
+    "step": "login",
+    "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+  },
+  {
+    "step": "login",
+    "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+  },
+  {
+    "step": "login",
+    "success": true
+  },
+  {
+    "step": "layout_detection",
+    "layout_detected": "new",
+    "note": "old = Keyword:/emoji-card layout, new = THE IDEA/AT A GLANCE layout confirmed live 2026-08-27"
+  },
+  {
+    "step": "open_keyword_dropdown_for_listing",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n"
+  },
+  {
+    "step": "keyword_discovery",
+    "note": "Found 0 plausible keyword option(s) after filtering."
+  },
+  {
+    "step": "read_current_keyword_label",
+    "error": "Locator.inner_text: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\")).first\n"
+  },
+  {
+    "step": "select_keyword:unknown",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Keyword:\", re.IGNORECASE)).first\n"
+  },
+  {
+    "step": "crawl_chart_history:entered",
+    "selector": ".recharts-wrapper"
+  },
+  {
+    "step": "crawl_chart_history:container_search",
+    "matched_selector": null,
+    "candidates_tried": [
+      ".recharts-wrapper",
+      "svg",
+      "[class*='chart']",
+      "[class*='recharts']"
+    ]
+  },
+  {
+    "step": "crawl_chart_history",
+    "error": "no chart container found across all candidate selectors"
+  },
+  {
+    "step": "crawl_chart_history:finished",
+    "points_captured": 0
+  },
+  {
+    "step": "keyword_done",
+    "keyword": "unknown",
+    "stats_captured": false
+  },
+  {
+    "step": "execution_difficulty_modal",
+    "error": "Could not find a visible 'Execution Difficulty' element to click."
+  },
+  {
+    "step": "business_fit_card:Revenue Potential",
+    "error": "'Revenue Potential' card not visible on main page"
+  },
+  {
+    "step": "business_fit_card:Execution Difficulty",
+    "error": "'Execution Difficulty' card not visible on main page"
+  },
+  {
+    "step": "business_fit_card:Go-To-Market",
+    "error": "'Go-To-Market' card not visible on main page"
+  },
+  {
+    "step": "score_card:Opportunity",
+    "error": "'Opportunity' card not visible on main page"
+  },
+  {
+    "step": "score_card:Problem",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Problem\", exact=True).first\n    - locator resolved to <button type=\"button\" class=\"flex items-center gap-1.5 whitespace-nowrap rounded-xl border px-2.5 py-2.5 text-left text-[13px] font-medium transition-colors border-gray-200 text-gray-700 hover:border-gray-300 hover:bg-gray-50\">\u2026</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button type=\"button\" aria-label=\"Send feedback\" class=\"flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold text-gray-700 shadow-lg transition-all hover:scale-[1.02] hover:border-gray-300 hover:shadow-xl active:scale-95\">\u2026</button> from <div class=\"transition-all duration-150 opacity-100 scale-100\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <img loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" alt=\"Concept mockup of this idea built\" sizes=\"(max-width: 1024px) 100vw, 45vw\" class=\"object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]\" src=\"/_next/image?url=https%3A%2F%2Fchqfunawciniepaqtdbd.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fmedia%2Freport-mockups%2Fshopify-b2b-setup-helper-636119a6-dashboard.png%3Fv%3D1787855899119&w=3840&q=75\" srcset=\"/_next/image?url=https%3A%2F%2Fchqfunawciniepaqtdbd.supabase\u2026/> from <div class=\"flex-1 overflow-y-auto min-h-0 pb-20\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button type=\"button\" aria-label=\"Send feedback\" class=\"flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold text-gray-700 shadow-lg transition-all hover:scale-[1.02] hover:border-gray-300 hover:shadow-xl active:scale-95\">\u2026</button> from <div class=\"transition-all duration-150 opacity-100 scale-100\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <path d=\"M9 10h6\"></path> from <div class=\"transition-all duration-150 opacity-100 scale-100\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    3 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button type=\"button\" aria-label=\"Send feedback\" class=\"flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold text-gray-700 shadow-lg transition-all hover:scale-[1.02] hover:border-gray-300 hover:shadow-xl active:scale-95\">\u2026</button> from <div class=\"transition-all duration-150 opacity-100 scale-100\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <img loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" alt=\"Concept mockup of this idea built\" sizes=\"(max-width: 1024px) 100vw, 45vw\" class=\"object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]\" src=\"/_next/image?url=https%3A%2F%2Fchqfunawciniepaqtdbd.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fmedia%2Freport-mockups%2Fshopify-b2b-setup-helper-636119a6-dashboard.png%3Fv%3D1787855899119&w=3840&q=75\" srcset=\"/_next/image?url=https%3A%2F%2Fchqfunawciniepaqtdbd.supabase\u2026/> from <div class=\"flex-1 overflow-y-auto min-h-0 pb-20\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button type=\"button\" aria-label=\"Send feedback\" class=\"flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold text-gray-700 shadow-lg transition-all hover:scale-[1.02] hover:border-gray-300 hover:shadow-xl active:scale-95\">\u2026</button> from <div class=\"transition-all duration-150 opacity-100 scale-100\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <path d=\"M9 10h6\"></path> from <div class=\"transition-all duration-150 opacity-100 scale-100\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button type=\"button\" aria-label=\"Send feedback\" class=\"flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold text-gray-700 shadow-lg transition-all hover:scale-[1.02] hover:border-gray-300 hover:shadow-xl active:scale-95\">\u2026</button> from <div class=\"transition-all duration-150 opacity-100 scale-100\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <img loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" alt=\"Concept mockup of this idea built\" sizes=\"(max-width: 1024px) 100vw, 45vw\" class=\"object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]\" src=\"/_next/image?url=https%3A%2F%2Fchqfunawciniepaqtdbd.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fmedia%2Freport-mockups%2Fshopify-b2b-setup-helper-636119a6-dashboard.png%3Fv%3D1787855899119&w=3840&q=75\" srcset=\"/_next/image?url=https%3A%2F%2Fchqfunawciniepaqtdbd.supabase\u2026/> from <div class=\"flex-1 overflow-y-auto min-h-0 pb-20\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button type=\"button\" aria-label=\"Send feedback\" class=\"flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold text-gray-700 shadow-lg transition-all hover:scale-[1.02] hover:border-gray-300 hover:shadow-xl active:scale-95\">\u2026</button> from <div class=\"transition-all duration-150 opacity-100 scale-100\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n"
+  },
+  {
+    "step": "score_card:Feasibility",
+    "error": "'Feasibility' card not visible on main page"
+  },
+  {
+    "step": "score_card:Why Now",
+    "error": "'Why Now' card not visible on main page"
+  },
+  {
+    "step": "crawl_community_signals_deep",
+    "error": "no community-signals subpage URL found to drill into"
+  }
+]
