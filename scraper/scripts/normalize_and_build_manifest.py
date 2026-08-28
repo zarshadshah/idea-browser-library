@@ -72,13 +72,15 @@ def normalize_keywords(keyword_analysis: list) -> list:
     has one real stats snapshot, matching what's actually shown inline.)
 
     A site redesign confirmed live 2026-08-27 dropped the keyword-volume
-    dropdown/chart entirely — a real crawl of the new layout produced a
-    single synthetic entry {"keyword": "unknown", "stats": {}}, since the
-    crawler's fallback path (used when it can't enumerate real options)
-    always emits SOME entry rather than none. That placeholder carries no
-    real data and would render as a fake "unknown" keyword row in the app,
-    so it's filtered out here rather than passed through as if it were
-    real.
+    dropdown/chart entirely from the page level — deep_crawl.py's
+    crawl_keyword_analysis now skips outright on a new-layout day rather
+    than emitting the old placeholder {"keyword": "unknown", "stats": {}}
+    entry it used to produce via its no-options fallback path (confirmed
+    directly in a real 2026-08-28 crawl's raw output). The "unknown"
+    filter below is kept regardless, since an already-saved file captured
+    before that scraper fix may still contain the old placeholder shape —
+    this keeps old saved days rendering correctly without needing a
+    re-crawl, same reasoning as stripPageBoilerplate on the component side.
     """
     out = []
     for kw in keyword_analysis or []:
@@ -174,6 +176,22 @@ def find_subpage_by_url_pattern(subpages: dict, url_pattern: str) -> dict:
     return {}
 
 
+def find_subpage_by_key(subpages: dict, key: str) -> dict:
+    """
+    Some new-layout subpages (e.g. "Explore the evidence", "Understand
+    the opening") are captured under a stable, unique link-text key with
+    no distinguishing URL slug of their own — their captured url is just
+    the same "/hub/ideas/today" every other new-layout subpage shares
+    (confirmed directly in a real 2026-08-28 crawl: all 6 new-layout
+    subpages captured that exact url), so find_subpage_by_url_pattern's
+    slug-matching approach can't tell them apart. Since these link-text
+    labels ARE unique per subpage on this layout (unlike the old layout's
+    ambiguous repeated "View Analysis" text), a direct key lookup is the
+    correct match strategy here instead.
+    """
+    return subpages.get(key, {})
+
+
 def trim_subpage_nav(text: str) -> str:
     """
     Every sub-page's captured text starts with the same sidebar navigation
@@ -229,6 +247,150 @@ def trim_execution_difficulty(text: str) -> str:
     if last_idx == -1:
         return text.strip()
     return text[last_idx:].strip()
+
+
+def trim_expanded_subpage(text: str, cut_marker: str) -> str:
+    """
+    New-layout expanded subpages (e.g. "Explore the evidence", "Understand
+    the opening", "See the detailed plan") are captured as the ENTIRE
+    main page's text with the real expanded content appended at the very
+    end, same underlying pattern as trim_execution_difficulty above but
+    for a different, newer set of pages — confirmed directly in a real
+    2026-08-28 capture: "Explore the evidence"'s raw text contains the
+    full base page (THE IDEA, THE CUSTOMER, WHY NOW, ...) followed by a
+    second, genuinely expanded "Proof & signals." section with real
+    additional content (a "PEOPLE ARE ASKING FOR IT" block and a "WHAT THE
+    RESEARCH SAYS" categorized breakdown) neither present nor duplicated
+    anywhere earlier in that same text.
+
+    cut_marker is the exact line confirmed to start each subpage's own
+    real expanded section (e.g. "Proof & signals.", "The opening.", "The
+    full idea.", "The full timing case.", "If you started today.", "The
+    full value ladder.") — each subpage uses ITS OWN distinct marker, so
+    this takes the marker as a parameter rather than guessing generically,
+    same reasoning as trim_execution_difficulty's own hardcoded "Execution
+    Difficulty" marker.
+
+    Falls back to trim_subpage_nav's boilerplate-stripping alone if the
+    marker isn't found (e.g. a future capture where the site changed this
+    trailing-title convention again), so a miss here degrades to the old
+    "whole page, nav stripped" behavior rather than losing the section
+    outright.
+    """
+    if not text:
+        return text
+    if cut_marker in text:
+        return text.rsplit(cut_marker, 1)[1].strip()
+    return trim_subpage_nav(text)
+
+
+# Maps each new-layout expanded subpage's link-text key to (a) the exact
+# trailing-title marker confirmed to start its own real expanded content
+# (see trim_expanded_subpage), and (b) a clean display label for the app.
+# Confirmed directly against a real 2026-08-28 capture for every entry
+# below — each marker is the literal line that begins that subpage's
+# distinct expanded section, verified present in the real raw text.
+EXPANDED_SUBPAGE_MAP = {
+    "Keep reading": ("The full idea.", "The Full Idea"),
+    "See the full timing case": ("The full timing case.", "The Full Timing Case"),
+    "Explore the evidence": ("Proof & signals.", "Proof & Signals (Full)"),
+    "Understand the opening": ("The opening.", "The Opening (Full Market Analysis)"),
+    "See the detailed plan": ("If you started today.", "The Detailed Plan"),
+    "View the full value ladder": ("The full value ladder.", "The Full Value Ladder"),
+    # "Run the model on your numbers" deliberately excluded — confirmed
+    # directly in a real capture to land on ideabrowser.com's own /pro
+    # paywall page (source_url ends in "?src=report-gate"), not a real
+    # expanded content section. Surfacing that as if it were more idea
+    # content would be misleading; the app's existing "Build this idea" /
+    # "Go Pro" CTAs already cover pointing the user at the paid tier
+    # without pretending this link leads anywhere else.
+}
+
+
+def extract_links_by_text(links: list) -> dict:
+    """
+    Turns deep_crawl.py's flat links list (each a {"text": ..., "href":
+    ...} dict, captured once per subpage by get_page_text_and_links) into
+    a lookup by the link's own visible text, so the component can wire a
+    real href onto a matching inline citation label (e.g. "SHOPIFY NEWS",
+    "r/shopify OP (rant thread)", "GIGRADAR") wherever that exact text
+    also appears in the section's prose. Case-sensitive exact match on
+    purpose — the visible link text and the inline citation label are
+    confirmed to render identically in the real captures reviewed, so a
+    looser fuzzy match isn't needed and would risk mismatching two
+    similarly-worded but genuinely different sources.
+    """
+    out = {}
+    for link in links or []:
+        text = (link.get("text") or "").strip()
+        href = link.get("href")
+        if text and href and text not in out:
+            out[text] = href
+    return out
+
+
+def extract_new_layout_expanded_sections(subpages: dict) -> dict:
+    """
+    Builds the {label: {"text": ..., "links": {...}}} dict for every
+    expanded subpage confirmed reachable on the new layout (see
+    EXPANDED_SUBPAGE_MAP) — this is the actual fix for the reported gap:
+    all of this content was already being captured successfully by
+    deep_crawl.py's existing crawl_subpages (confirmed directly: the raw
+    .deep.json already contains full text for "Explore the evidence",
+    "Understand the opening", etc), it just was never wired into
+    newLayoutSections or any other field the app actually renders. This
+    function is the wiring; no new crawling was needed for this specific
+    gap.
+
+    Returns {} entirely on an old-layout day or any day where none of the
+    known expanded-subpage keys are present, matching the same "absent
+    key vs. present-but-empty" convention already used by
+    extract_new_layout_sections below.
+    """
+    out = {}
+    for subpage_key, (cut_marker, label) in EXPANDED_SUBPAGE_MAP.items():
+        entry = subpages.get(subpage_key)
+        if not entry:
+            continue
+        expanded_text = trim_expanded_subpage(entry.get("text", ""), cut_marker)
+        if not expanded_text:
+            continue
+        out[label] = {
+            "text": expanded_text[:8000],
+            "links": extract_links_by_text(entry.get("links", [])),
+        }
+    return out
+
+
+def extract_glance_popups(raw: dict) -> dict:
+    """
+    Passes through deep_crawl.py's glance_popups (Setup Tutorial Views /
+    Pain / Timing / Year 1, Done Right — see crawl_glance_popup) largely
+    as-is, applying the same boilerplate/nav stripping every other
+    captured field already gets, plus wiring each popup's own captured
+    links into a by-text lookup the same way extract_new_layout_expanded_
+    sections does above. UNVERIFIED AGAINST REAL DATA — deep_crawl.py's
+    glance-popup crawling is itself new and unverified (see that
+    function's own docstring), so this normalizer step is written against
+    the SHAPE that crawler is designed to produce, not yet against a real
+    captured example of it. Returns {} if raw has no glance_popups key
+    at all (e.g. an old-layout day, or a day scraped before this feature
+    existed), so old saved files keep normalizing exactly as before
+    without needing a re-crawl.
+    """
+    raw_popups = raw.get("glance_popups") or {}
+    out = {}
+    for label, popup in raw_popups.items():
+        if not popup:
+            continue
+        entry = {
+            "text": trim_subpage_nav(popup.get("text", ""))[:4000],
+            "links": extract_links_by_text(popup.get("links", [])),
+        }
+        if popup.get("keywords"):
+            entry["keywords"] = popup["keywords"]
+        out[label] = entry
+    return out
 
 
 # Maps a new-layout section_* key (as written by deep_crawl.py's
@@ -425,6 +587,20 @@ def normalize_day(raw: dict) -> dict:
         # nothing (distinct from the app's existing raw_text-only fallback
         # for a day where NEITHER parser matched at all).
         "newLayoutSections": extract_new_layout_sections(summary),
+        # NEW: the fix for the reported gap — every already-captured
+        # expanded subpage (Explore the evidence, Understand the opening,
+        # See the detailed plan, See the full timing case, Keep reading,
+        # View the full value ladder), each carrying real text PLUS a
+        # by-text link lookup so inline citation labels (SHOPIFY NEWS,
+        # r/shopify OP, GIGRADAR, etc) can render as real anchors instead
+        # of unclickable text. {} on any day without these subpages
+        # (old-layout days, or a new-layout day missing one).
+        "newLayoutExpandedSections": extract_new_layout_expanded_sections(subpages),
+        # NEW: the 4 "AT A GLANCE" stat-teaser popups (Setup Tutorial
+        # Views, Pain, Timing, Year 1 Done Right) — see deep_crawl.py's
+        # crawl_glance_popup. UNVERIFIED AGAINST REAL DATA, same caveat as
+        # that crawler function itself.
+        "glancePopups": extract_glance_popups(raw),
         # overall_score/pain_score/timing_score are the new layout's own
         # distinct scoring shape (one combined score up top, PAIN/TIMING
         # shown as separate sub-scores later) rather than the old
