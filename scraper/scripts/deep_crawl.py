@@ -427,26 +427,64 @@ def extract_new_layout_fields(text: str) -> dict:
         except ValueError:
             pass
 
+    # A real screenshot showed multiple DISTINCT UI widgets (an AI-agent
+    # promo box, a workshop/event invite, AND a separate feedback widget
+    # with its own "Not for me" / "Share a win" / "Problem" quick-reply
+    # buttons) genuinely interleaved THROUGHOUT a section's captured text,
+    # not neatly bunched at the very end the way a single stop-marker
+    # assumes. A stop-marker approach can only ever cut off content after
+    # the FIRST piece of noise it finds — any real content that happens to
+    # sit further down, past that first noise fragment, gets silently lost
+    # too. Filtering line-by-line for known noise patterns, regardless of
+    # where each one sits, is more robust: it removes exactly the noise
+    # and nothing else, wherever it appears.
+    noise_line_patterns = [
+        r"^Build with", r"^Jam on it with your agent",
+        r"^Workshop (today|tomorrow)",
+        r"^What'd you think of this idea", r"^Chef's kiss$",
+        r"^Pretty interesting$", r"^You didn't bring the heat$",
+        r"^Not for me:", r"^Share a win:", r"^Problem:",
+        r"^Send feedback$", r"^Hide this widget", r"^Feature request$",
+        r"^You're invited$", r"^Register", r"^RSVP",
+        r"^Yes, I'?d (want|attend)", r"^No, I'?m",
+        r"^WHAT IF THIS WERE FEEDBACK\??$", r"^Feedback$",
+    ]
+    noise_line_regex = re.compile("|".join(noise_line_patterns))
+
+    def strip_noise_lines(section_text):
+        line_filtered = "\n".join(
+            l for l in section_text.split("\n") if not noise_line_regex.match(l.strip())
+        )
+        # A real screenshot confirmed line-level filtering alone wasn't
+        # enough: two distinct promo-box widgets (an AI-agent plugin box
+        # listing "Claude / Grok / Gemini / Groq / OpenClaw", and a
+        # workshop/event invite box with "YOU'RE INVITED" / "Reserve @
+        # ..." / a date+seat-count line / "Would you attend?") each have
+        # their OWN substantial internal text that doesn't match any
+        # simple per-line noise pattern — they need removing as whole
+        # blocks, from their own real start marker to their own real end
+        # marker, rather than line by line.
+        block_bounds = [
+            ("Copy: '", "OpenClaw"),  # the AI-agent plugin box's own real start/end text
+            ("YOU'RE INVITED", "Would you attend?"),  # the workshop/event invite box
+        ]
+        for start, end in block_bounds:
+            start_idx = line_filtered.find(start)
+            if start_idx == -1:
+                continue
+            end_idx = line_filtered.find(end, start_idx)
+            if end_idx == -1:
+                continue
+            end_idx += len(end)
+            line_filtered = line_filtered[:start_idx] + line_filtered[end_idx:]
+        return line_filtered
+
     def section_text(start_marker, end_markers):
         if start_marker not in text:
             return None
         seg = text.split(start_marker, 1)[1]
         end_idx = len(seg)
-        # A real screenshot confirmed "At a Glance" (and potentially other
-        # sections) absorbing unrelated page furniture that sits physically
-        # between two known section headers on the live page — an AI-agent
-        # plugin promo box, an event/workshop invite banner, and a feedback
-        # widget, none of which are real idea content. These UI elements
-        # don't have a consistent single marker text the way real section
-        # headers do, so multiple known fragments of each are checked as
-        # ADDITIONAL stop points alongside the real end_markers, using
-        # whichever (real header or noise fragment) comes soonest.
-        noise_markers = [
-            "Build with", "Jam on it with your agent", "Workshop today",
-            "Workshop tomorrow", "What'd you think of this idea",
-            "Chef's kiss", "Pretty interesting", "You didn't bring the heat",
-        ]
-        for end_marker in list(end_markers) + noise_markers:
+        for end_marker in end_markers:
             idx = seg.find(end_marker)
             if idx != -1 and idx < end_idx:
                 end_idx = idx
@@ -455,7 +493,8 @@ def extract_new_layout_fields(text: str) -> dict:
         # but the leftover "?" then leads the captured section text. Strip
         # a stray leading "?" (and any whitespace around it) rather than
         # add a second near-duplicate marker string to maintain.
-        return seg[:end_idx].strip().lstrip("?").strip()[:3000]
+        raw = seg[:end_idx].strip().lstrip("?").strip()[:3000]
+        return strip_noise_lines(raw)
 
     section_order = present_sections + ["SOURCES"]  # SOURCES as a safe trailing bound for the last real section
     for i, section in enumerate(present_sections):
