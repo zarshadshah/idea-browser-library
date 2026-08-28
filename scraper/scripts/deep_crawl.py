@@ -36,6 +36,49 @@ of just hardcoded selectors that quietly break:
      day's idea outright, it just falls back to being unparsed text
      instead of structured fields.
 
+NEW-LAYOUT SKIP GUARDS — confirmed directly via a real 2026-08-28 crawl
+log: on a new-layout day, crawl_keyword_analysis(), crawl_score_cards_deep(),
+crawl_business_fit_deep(), and crawl_community_signals_deep() ALL fail
+every single selector they try (the old layout's "Keyword:" label, its 4
+score cards, its Business Fit cards, and its "View detailed breakdown"
+community-signals link genuinely do not exist in the new layout), burning
+real time on retries — one one selector timeout in that log runs to
+several thousand words of Playwright retry log for a single click — for
+zero data. crawler.safe() already stopped this from crashing the run, but
+it was still real wasted time on every new-layout day. Each of these four
+functions now takes a layout_detected flag and returns early when it's
+"new", exactly as if the crawl_log said so (a "skipped: new layout"
+log entry is written either way, so this is visible in the log rather
+than a silent no-op).
+
+HREF CAPTURE — a real 2026-08-28 crawl confirmed every inline citation on
+the new layout (e.g. "r/shopify · r/shopify OP (rant thread)", "SHOPIFY
+NEWS", "YOUTUBE", "GIGRADAR") was being captured as plain text with zero
+href, identical to the old layout's numbered Citations & Sources problem.
+get_page_text_and_links() now captures both the page's visible text AND
+every real <a href> on the page in one pass, so normalize_and_build_
+manifest.py has real URLs to match citation labels against instead of
+inventing links from bare strings (which is impossible) or leaving every
+source as unclickable text (which is what shipped before this).
+
+SETUP TUTORIAL VIEWS POPUP — confirmed directly via real screenshots
+(2026-08-28): the "AT A GLANCE" stat teasers on the new layout (Setup
+Tutorial Views / Pain / Timing / Year One) are each a short label already
+present in the base page's own text — NOT a separate crawl target
+requiring its own click-through, since pain_score/timing_score are
+already extracted correctly by extract_new_layout_fields. Clicking one
+opens an expanded popup with real additional depth (a linked source,
+inline-cited prose, and — confirmed directly by hovering, real user
+testing: selecting a different keyword swaps the Volume/Growth/CPC/chart
+shown) its own scoped keyword dropdown, structurally the same shape as
+crawl_keyword_analysis() but scoped to this popup's own trigger and
+dropdown rather than the main page's (now-removed-on-new-layout) one.
+crawl_glance_popup() opens each of the 4 popups by their exact visible
+label text and captures this expanded content; for "Setup Tutorial
+Views" specifically, it also runs the same per-keyword stat-capture loop
+crawl_keyword_analysis() already uses elsewhere, scoped to this popup's
+own dropdown trigger instead of the page-level one.
+
 IMPORTANT — this script needs live debugging against the real site.
 It was written from screenshots of the page, not by running against the
 live DOM (the authoring environment cannot reach ideabrowser.com), so
@@ -44,7 +87,8 @@ and will likely need small fixes after the first real run. Every
 selector attempt is wrapped in try/except and logged, and raw HTML +
 screenshots are saved at every step so nothing is silently lost — if a
 selector is wrong you'll be able to see exactly what the DOM looked like
-and patch the selector.
+and patch the selector. This applies doubly to crawl_glance_popup(),
+which is entirely new and unverified against a live run.
 
 BOT DETECTION — ideabrowser.com sits behind a Vercel bot-detection
 checkpoint that blocks plain headless browsers outright (confirmed via a
@@ -84,6 +128,12 @@ LIBRARY_DIR = ROOT / "library"
 WAIT_SHORT = 1200   # ms, after simple UI clicks
 WAIT_CHART = 2000   # ms, after triggering a chart/data re-render
 NAV_TIMEOUT = 45000  # ms
+
+# Confirmed live 2026-08-28 via real screenshots: the 4 "AT A GLANCE" stat
+# teasers, each opening its own popup on click. Exact visible label text —
+# used as the click target, so this must match the page's own rendering
+# verbatim (confirmed against real screenshots for all 4).
+GLANCE_POPUP_LABELS = ["Setup Tutorial Views", "Pain", "Timing", "Year 1, Done Right"]
 
 
 class Crawler:
@@ -153,40 +203,41 @@ def login(page, log) -> bool:
         page.goto(LOGIN_URL, wait_until="networkidle", timeout=NAV_TIMEOUT)
         page.wait_for_timeout(3000)
 
-        # Switch from default magic-link view to password mode. A first
-        # attempt found the button in the DOM but Playwright reported it as
-        # never visible (even forced), which usually means either: (a) there
-        # are multiple matching elements and we're grabbing a hidden
-        # duplicate (e.g. a mobile/desktop responsive variant), or (b) the
-        # button is genuinely inside a collapsed/hidden panel. We check how
-        # many matches exist and log that, then try a role-based locator
-        # (often more robust than text matching for real <button> elements),
-        # and save a screenshot either way so a human can see exactly what
-        # the page looked like if this still fails.
+        # Switch from default magic-link view to password mode. A real
+        # 2026-08-28 run confirmed this page no longer ALWAYS shows a
+        # "Sign in with Password" toggle (0 matches found, vs 2 on an
+        # earlier run) — the login form itself has apparently also
+        # changed shape at some point, independent of the Idea-of-the-Day
+        # redesign. This still worked end-to-end that run (email/password
+        # fields were found and filled directly, login succeeded), so
+        # rather than treat 0 matches as an error, only attempt the
+        # toggle click when the text is actually present — the password
+        # fields are searched for either way, further down.
         text_matches = page.get_by_text("Sign in with Password", exact=False)
         match_count = text_matches.count()
         log.append({"step": "login", "note": f"Found {match_count} element(s) matching 'Sign in with Password' text."})
 
         clicked = False
-        try:
-            # Prefer a visible match if there are multiple
-            for i in range(match_count):
-                candidate = text_matches.nth(i)
-                if candidate.is_visible():
-                    candidate.click(timeout=5000)
-                    clicked = True
-                    break
-        except Exception as e:
-            log.append({"step": "login", "note": f"Visible-match click attempt failed: {e}"})
-
-        if not clicked:
+        if match_count > 0:
             try:
-                page.get_by_role("button", name=re.compile("Sign in with Password", re.I)).first.click(timeout=5000)
-                clicked = True
+                # Prefer a visible match if there are multiple
+                for i in range(match_count):
+                    candidate = text_matches.nth(i)
+                    if candidate.is_visible():
+                        candidate.click(timeout=5000)
+                        clicked = True
+                        break
             except Exception as e:
-                log.append({"step": "login", "note": f"Role-based click attempt failed: {e}"})
+                log.append({"step": "login", "note": f"Visible-match click attempt failed: {e}"})
 
-        if not clicked:
+            if not clicked:
+                try:
+                    page.get_by_role("button", name=re.compile("Sign in with Password", re.I)).first.click(timeout=5000)
+                    clicked = True
+                except Exception as e:
+                    log.append({"step": "login", "note": f"Role-based click attempt failed: {e}"})
+
+        if match_count > 0 and not clicked:
             # Save a screenshot for human debugging before giving up on this step
             try:
                 screenshot_path = str(ROOT / "library" / "login_debug_screenshot.png")
@@ -371,6 +422,65 @@ def get_visible_text(page):
     return page.inner_text("body")
 
 
+def get_page_text_and_links(page, max_links=200):
+    """
+    Captures BOTH the page's visible text (as get_visible_text always has)
+    AND every real <a href> on the page in one pass — confirmed necessary
+    directly via a real 2026-08-28 crawl, which showed every inline
+    citation on the new layout (e.g. "r/shopify · r/shopify OP (rant
+    thread)", "SHOPIFY NEWS", "YOUTUBE", "GIGRADAR") captured as plain
+    text with zero href, the same underlying gap the old layout's
+    numbered Citations & Sources list already had. No amount of text
+    parsing can recover a link that was never captured — the href has to
+    be read from the live DOM at crawl time via get_attribute("href"),
+    which plain inner_text() never exposes.
+
+    Returns (text, links) where links is a list of {"text": ..., "href":
+    ...} dicts, one per <a> tag with a non-empty href, in document order,
+    deduplicated by (text, href) pair. Internal ideabrowser.com nav links
+    (sidebar, "Browse all", etc) are excluded via the same boilerplate-nav
+    href patterns already known from real captures, so the list stays
+    focused on genuine outbound citation links a reader would want to
+    click, not the page's own navigation chrome. Capped at max_links as a
+    safety net against a page with an unexpectedly large number of links.
+    """
+    text = page.inner_text("body")
+
+    links = []
+    seen = set()
+    try:
+        anchors = page.locator("a[href]")
+        count = anchors.count()
+        for i in range(min(count, max_links * 2)):  # scan more than max_links since some get filtered
+            try:
+                el = anchors.nth(i)
+                href = el.get_attribute("href")
+                if not href:
+                    continue
+                # Exclude internal nav — same-site relative paths and
+                # ideabrowser.com's own domain, confirmed via real captures
+                # to always be sidebar/nav/breadcrumb chrome, never a real
+                # citation source.
+                if href.startswith("/") or "ideabrowser.com" in href:
+                    continue
+                if not (href.startswith("http://") or href.startswith("https://")):
+                    continue
+                link_text = (el.inner_text(timeout=1000) or "").strip()
+                key = (link_text, href)
+                if key in seen:
+                    continue
+                seen.add(key)
+                links.append({"text": link_text[:200], "href": href})
+                if len(links) >= max_links:
+                    break
+            except Exception:
+                continue
+    except Exception:
+        pass
+
+    return text, links
+
+
 def extract_new_layout_fields(text: str) -> dict:
     """
     Parses the NEW layout confirmed live on 2026-08-27, which uses
@@ -428,16 +538,16 @@ def extract_new_layout_fields(text: str) -> dict:
             pass
 
     # A real screenshot showed multiple DISTINCT UI widgets (an AI-agent
-    # promo box, a workshop/event invite, AND a separate feedback widget
-    # with its own "Not for me" / "Share a win" / "Problem" quick-reply
-    # buttons) genuinely interleaved THROUGHOUT a section's captured text,
-    # not neatly bunched at the very end the way a single stop-marker
-    # assumes. A stop-marker approach can only ever cut off content after
-    # the FIRST piece of noise it finds — any real content that happens to
-    # sit further down, past that first noise fragment, gets silently lost
-    # too. Filtering line-by-line for known noise patterns, regardless of
-    # where each one sits, is more robust: it removes exactly the noise
-    # and nothing else, wherever it appears.
+    # promo box, a workshop/event invite box, AND a separate feedback
+    # widget with its own "Not for me" / "Share a win" / "Problem"
+    # quick-reply buttons) genuinely interleaved THROUGHOUT a section's
+    # captured text, not neatly bunched at the very end the way a single
+    # stop-marker assumes. A stop-marker approach can only ever cut off
+    # content after the FIRST piece of noise it finds — any real content
+    # that happens to sit further down, past that first noise fragment,
+    # gets silently lost too. Filtering line-by-line for known noise
+    # patterns, regardless of where each one sits, is more robust: it
+    # removes exactly the noise and nothing else, wherever it appears.
     noise_line_patterns = [
         r"^Build with", r"^Jam on it with your agent",
         r"^Workshop (today|tomorrow)",
@@ -631,23 +741,30 @@ def extract_summary_fields(text: str) -> dict:
     return out
 
 
-def crawl_keyword_analysis(crawler: Crawler) -> list:
+def crawl_keyword_analysis(crawler: Crawler, layout_detected: str = "old") -> list:
     """
     Opens the Keyword Analysis dropdown, enumerates every keyword option,
     and for each keyword cycles through every time range, recording the
     Volume/Growth/CPC/Competition numbers shown.
 
-    A site redesign confirmed on 2026-08-27 appears to have REMOVED the
-    keyword-volume dropdown and chart entirely from the new layout — a
-    real capture of that day's page showed no "Keyword:" label anywhere
-    in the text at all. If this genuinely no longer exists, every step
-    below will fail safely via crawler.safe() and simply return an empty
-    list, which the rest of the pipeline already handles fine (the app
-    just shows no keyword data for that day, same as any other optional
-    field that didn't come back). Left as-is rather than removed outright
-    in case the dropdown returns in a future layout tweak, or exists on
-    a different page/state than what was captured.
+    NEW-LAYOUT SKIP GUARD — a real 2026-08-28 crawl log confirmed the
+    "Keyword:" trigger this function depends on genuinely does not exist
+    on the new layout (open_keyword_dropdown_for_listing timed out after
+    8s, keyword_discovery found 0 options, and every keyword-selection
+    step downstream failed the same way) — the page-level keyword
+    dropdown this function targets was removed in the redesign, not
+    merely relocated. Every one of those failures was already caught
+    safely by crawler.safe() so the run itself didn't crash, but it still
+    burned real time on guaranteed-to-fail retries for zero data. Skip
+    entirely on a new-layout day rather than repeat that — the new
+    layout's own keyword data instead lives inside the Setup Tutorial
+    Views popup, captured separately by crawl_glance_popup() below, which
+    is genuinely new UI, not this same dropdown moved elsewhere.
     """
+    if layout_detected == "new":
+        crawler.log.append({"step": "crawl_keyword_analysis", "note": "skipped: new layout has no page-level 'Keyword:' dropdown (confirmed via real 2026-08-28 crawl log) — see crawl_glance_popup for this layout's keyword data"})
+        return []
+
     page = crawler.page
     log = crawler.log
     results = []
@@ -835,7 +952,206 @@ def crawl_keyword_analysis(crawler: Crawler) -> list:
     return results
 
 
-def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, idea_title: str = "") -> dict:
+def crawl_glance_popup(crawler: Crawler, base_url: str, label: str) -> dict:
+    """
+    Opens one of the 4 new-layout "AT A GLANCE" stat-teaser popups (Setup
+    Tutorial Views / Pain / Timing / Year 1, Done Right) by its exact
+    visible label text, and captures the expanded content shown — real
+    additional depth beyond what's already in the base page's own text
+    (confirmed directly via real screenshots: e.g. the Setup Tutorial
+    Views popup's "Where the Demand Lives" prose with inline-cited
+    r/shopify and Shopify Community links, and the Pain popup's numbered
+    "In Their Own Words" sourced-quote list, neither of which appear
+    anywhere in section_the_customer's own short teaser text).
+
+    UNVERIFIED AGAINST A LIVE RUN — this entire function is new and has
+    never been run against the real site (the authoring environment
+    cannot reach ideabrowser.com). The trigger-click strategy mirrors
+    crawl_business_fit_deep's already-proven approach (click the visible
+    label text, look for a dialog/modal), since these popups appear
+    structurally similar in the real screenshots reviewed, but the exact
+    selectors WILL likely need adjustment after the first real run, same
+    as every other selector in this file when it was first written.
+
+    Returns a dict shaped like:
+    {
+      "text": "<full popup text, links captured separately below>",
+      "links": [{"text": "...", "href": "..."}, ...],
+      "keywords": [...]  # only present for the "Setup Tutorial Views" popup
+    }
+    or {} if the popup couldn't be opened/found — fails safely so one
+    popup's selector being wrong doesn't lose the other 3 (the caller
+    wraps each call in crawler.safe() individually).
+    """
+    page = crawler.page
+    log = crawler.log
+
+    page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+    page.wait_for_timeout(WAIT_CHART)
+
+    # Prefer a visible match since this page renders duplicate (responsive)
+    # copies of many elements elsewhere — same pattern already proven
+    # necessary for the old layout's dropdown/form fields.
+    candidates = page.get_by_text(label, exact=False)
+    count = candidates.count()
+    trigger = None
+    for i in range(count):
+        c = candidates.nth(i)
+        if c.is_visible():
+            trigger = c
+            break
+    if trigger is None:
+        raise Exception(f"'{label}' glance stat not visible on main page")
+
+    trigger.scroll_into_view_if_needed(timeout=5000)
+    trigger.click(timeout=8000)
+    page.wait_for_timeout(WAIT_CHART)
+
+    # Mirrors crawl_business_fit_deep's already-proven modal-detection
+    # approach: look for a real dialog role first, since that's what a
+    # popup overlay should use; this is the one part of this function with
+    # any prior confirmation behind it, everything else here is a first
+    # attempt.
+    modal = page.locator("[role='dialog'], .modal, [class*='Modal']").first
+    if modal.count() == 0:
+        raise Exception(f"No modal dialog detected after clicking '{label}'")
+
+    popup_text, popup_links = get_page_text_and_links(page)
+    # Scope the captured text to roughly the modal's own content where
+    # possible, since get_page_text_and_links reads the whole page —
+    # matches the same "whole page, then trim in the normalizer" approach
+    # already used elsewhere in this file (e.g. crawl_business_fit_deep's
+    # modal_text), rather than trying to scope the DOM read itself, which
+    # is more fragile against small structural differences between the 4
+    # popups.
+    result = {"text": popup_text.strip(), "links": popup_links}
+
+    # Setup Tutorial Views is the one popup confirmed (via real user
+    # testing: selecting a different keyword swaps the Volume/Growth/CPC/
+    # chart shown) to contain its OWN scoped keyword dropdown, distinct
+    # from the page-level "Keyword:" dropdown crawl_keyword_analysis
+    # targets (which doesn't exist at all on this layout — see that
+    # function's own new-layout skip guard above). Structurally the same
+    # per-keyword stat-capture loop, just scoped to this popup's own
+    # dropdown trigger.
+    if label == "Setup Tutorial Views":
+        result["keywords"] = crawler.safe(
+            lambda: crawl_glance_keyword_dropdown(crawler), "crawl_glance_keyword_dropdown", default=[]
+        ) or []
+
+    # Close the popup before returning, so the next popup's trigger-click
+    # isn't landing on a leftover overlay — same defensive pattern already
+    # proven necessary for the old layout's keyword dropdown.
+    try:
+        close_btn = modal.locator("button", has_text=re.compile(r"^(×|X|Close)$", re.IGNORECASE)).first
+        if close_btn.count() > 0:
+            close_btn.click(timeout=3000)
+        else:
+            page.keyboard.press("Escape")
+    except Exception:
+        page.keyboard.press("Escape")
+    page.wait_for_timeout(500)
+
+    return result
+
+
+def crawl_glance_keyword_dropdown(crawler: Crawler) -> list:
+    """
+    Per-keyword stat capture for the Setup Tutorial Views popup's own
+    scoped keyword dropdown — structurally the same loop as
+    crawl_keyword_analysis, just scoped to this popup's own dropdown
+    trigger rather than the (nonexistent-on-this-layout) page-level one.
+
+    UNVERIFIED AGAINST A LIVE RUN, same caveat as crawl_glance_popup
+    above — the dropdown-open/option-list/read-stats selectors below are
+    a best-effort adaptation of crawl_keyword_analysis's already-proven
+    approach, not independently confirmed against this specific popup's
+    real DOM.
+    """
+    page = crawler.page
+    log = crawler.log
+    results = []
+
+    def open_dropdown():
+        # Confirmed via real screenshots: the trigger inside this popup
+        # shows the currently-selected keyword in quotes (e.g. '"b2b on
+        # shopify"') with a chevron, inside the "WHAT SEARCH SHOWS"
+        # section — distinct from the old layout's "Keyword: <value>"
+        # label text, so matched by role instead (a combobox/select-style
+        # trigger is the most likely real element given the visible
+        # dropdown-with-checkmark UI in the screenshot).
+        candidates = page.get_by_role("combobox")
+        count = candidates.count()
+        for i in range(count):
+            c = candidates.nth(i)
+            if c.is_visible():
+                c.click(timeout=8000)
+                page.wait_for_timeout(WAIT_SHORT)
+                return
+        raise Exception("No visible combobox trigger found for glance popup's keyword dropdown")
+
+    def get_options():
+        options = page.locator("[role='option']").all()
+        if options:
+            return options
+        return page.locator("[role='listbox'] li, [role='listbox'] div").all()
+
+    def read_current_stats():
+        text = get_visible_text(page)
+        stats = {}
+        for metric, pattern in [
+            ("volume", r"([\d,.]+K?)\s*\n\s*Volume"),
+            ("growth", r"([+\-][\d,.]+%)\s*\n\s*Growth"),
+            ("cpc", r"\$([\d.,]+)\s*\n\s*CPC"),
+            ("competition", r"([A-Za-z]+)\s*\n\s*Competition"),
+        ]:
+            m = re.search(pattern, text)
+            if m:
+                stats[metric] = m.group(1)
+        return stats
+
+    crawler.safe(open_dropdown, "open_glance_keyword_dropdown_for_listing")
+    page.wait_for_timeout(WAIT_SHORT)
+
+    raw_options = crawler.safe(get_options, "list_glance_keyword_options", default=[])
+    keyword_names = []
+    for el in raw_options[:30]:
+        try:
+            t = el.inner_text().strip()
+            if t and 3 <= len(t) <= 80 and "\n" not in t:
+                keyword_names.append(t)
+        except Exception:
+            continue
+
+    log.append({"step": "glance_keyword_discovery", "note": f"Found {len(keyword_names)} plausible keyword option(s) after filtering."})
+    page.keyboard.press("Escape")
+    page.wait_for_timeout(WAIT_SHORT)
+
+    seen = set()
+    for kw in keyword_names:
+        kw_clean = kw.strip()
+        if not kw_clean or kw_clean in seen or len(kw_clean) < 3:
+            continue
+        seen.add(kw_clean)
+
+        def select_keyword(k=kw_clean):
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(300)
+            open_dropdown()
+            page.get_by_text(k, exact=True).first.click(timeout=8000)
+            page.wait_for_timeout(WAIT_CHART)
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(300)
+
+        crawler.safe(select_keyword, f"select_glance_keyword:{kw_clean}")
+        stats = crawler.safe(read_current_stats, f"read_glance_stats:{kw_clean}", default={})
+        results.append({"keyword": kw_clean, "stats": stats})
+        log.append({"step": "glance_keyword_done", "keyword": kw_clean, "stats_captured": bool(stats)})
+
+    return results
+
+
+def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, idea_title: str = "", layout_detected: str = "old") -> dict:
     """
     Drills into the Community Signals page to capture the REAL underlying
     data the summary counts are based on: actual platform sections (Reddit,
@@ -845,6 +1161,18 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
     href URLs (e.g. real reddit.com links), captured via get_attribute
     rather than visible text, since link destinations aren't shown as text
     on the page at all.
+
+    NEW-LAYOUT SKIP GUARD — a real 2026-08-28 crawl log confirmed this
+    function's caller never even had a URL to pass in: no "View detailed
+    breakdown" subpage exists on the new layout at all (the log's own
+    community_signals_deep entry reads "no community-signals subpage URL
+    found to drill into"). This guard makes that explicit and immediate
+    rather than relying on the caller's absent-URL check alone, so the
+    reason is visible directly on this function's own log line too. The
+    new layout's community-adjacent content (real Reddit/Shopify Community
+    quotes) already comes through elsewhere — section_people_are_asking_
+    for_it and the "Explore the evidence" subpage's own text — just not
+    broken out per-platform the way this function's old-layout output is.
 
     This is a genuinely deep, multi-level crawl (platform page -> community
     card -> individual discussion page, times 4 platforms), so expect this
@@ -872,6 +1200,10 @@ def crawl_community_signals_deep(crawler: Crawler, community_signals_url: str, i
     Any platform/community that fails to crawl is simply omitted rather
     than blocking the rest.
     """
+    if layout_detected == "new":
+        crawler.log.append({"step": "crawl_community_signals_deep", "note": "skipped: new layout has no 'View detailed breakdown' subpage to drill into (confirmed via real 2026-08-28 crawl log) — community-adjacent content instead lives in section_people_are_asking_for_it and the 'Explore the evidence' subpage"})
+        return {}
+
     page = crawler.page
     log = crawler.log
     result = {"reddit": [], "facebook": [], "youtube": [], "other": []}
@@ -1772,7 +2104,7 @@ def crawl_chart_history(crawler: Crawler, chart_container_selector: str = ".rech
     return history
 
 
-def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
+def crawl_score_cards_deep(crawler: Crawler, base_url: str, layout_detected: str = "old") -> dict:
     """
     The main page's 4 top score cards (Opportunity, Problem, Feasibility,
     Why Now) each open a small modal on click showing the score, a short
@@ -1780,13 +2112,20 @@ def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
     real screenshots. That button navigates to a genuinely deeper page
     with its own real sub-sections.
 
-    NOTE (2026-08-27 site redesign): the new layout may not have these 4
-    score cards at all in the same form — confirmed via a real capture
-    that the old "Keyword:"/emoji-card layout is gone. This function is
-    wrapped in crawler.safe() at every call site, so if these cards no
-    longer exist it will simply fail safely per-card and return an empty
-    or partial dict, same as any other optional field.
+    NEW-LAYOUT SKIP GUARD — a real 2026-08-28 crawl log confirmed all 4 of
+    these cards genuinely do not exist on the new layout ("'Opportunity'
+    card not visible on main page", and the "Problem" attempt in
+    particular burned an enormous multi-thousand-word Playwright retry
+    log clicking on what turned out to be an unrelated feedback button,
+    before finally timing out at 8s) — the new layout's scoring shows up
+    as pain_score/timing_score/overall_score instead (see
+    extract_new_layout_fields), not these 4 cards. Skip immediately on a
+    new-layout day rather than repeat those doomed retries.
     """
+    if layout_detected == "new":
+        crawler.log.append({"step": "crawl_score_cards_deep", "note": "skipped: new layout has no Opportunity/Problem/Feasibility/Why Now score cards (confirmed via real 2026-08-28 crawl log) — see pain_score/timing_score/overall_score instead"})
+        return {}
+
     page = crawler.page
     log = crawler.log
     result = {}
@@ -1836,7 +2175,7 @@ def crawl_score_cards_deep(crawler: Crawler, base_url: str) -> dict:
     return result
 
 
-def crawl_business_fit_deep(crawler: Crawler, base_url: str) -> dict:
+def crawl_business_fit_deep(crawler: Crawler, base_url: str, layout_detected: str = "old") -> dict:
     """
     The main page's "Business Fit" section shows 4 short summary cards
     (Revenue Potential, Execution Difficulty, Go-To-Market, Right for You)
@@ -1844,9 +2183,19 @@ def crawl_business_fit_deep(crawler: Crawler, base_url: str) -> dict:
     raw_text. Clicking any of these cards opens a genuinely deeper modal
     with real additional structured content.
 
-    NOTE (2026-08-27 site redesign): may not exist in the new layout — see
-    the same note on crawl_score_cards_deep above. Fails safely per-card.
+    NEW-LAYOUT SKIP GUARD — a real 2026-08-28 crawl log confirmed all 3 of
+    these cards genuinely do not exist on the new layout ("'Revenue
+    Potential' card not visible", "'Execution Difficulty' card not
+    visible", "'Go-To-Market' card not visible" — the same
+    execution_difficulty_modal attempt earlier in that log also failed
+    outright: "Could not find a visible 'Execution Difficulty' element to
+    click"). Skip immediately on a new-layout day rather than repeat
+    those doomed retries.
     """
+    if layout_detected == "new":
+        crawler.log.append({"step": "crawl_business_fit_deep", "note": "skipped: new layout has no Revenue Potential/Execution Difficulty/Go-To-Market Business Fit cards (confirmed via real 2026-08-28 crawl log)"})
+        return {}
+
     page = crawler.page
     log = crawler.log
     result = {}
@@ -1903,6 +2252,15 @@ def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
     Follows every 'View Analysis' style link/button on the main page into
     its sub-page, captures the rendered text, then returns to the main page.
     Also attempts to open the 'Execution Difficulty' modal in place.
+
+    HREF CAPTURE — each subpage's entry now also carries "links": every
+    real outbound <a href> found on that subpage, alongside its existing
+    "text" and "url" fields (see get_page_text_and_links's own docstring
+    for why this can't be recovered later from text alone). This is what
+    lets the normalizer wire real citation links into e.g. the "Explore
+    the evidence" and "Understand the opening" subpages' rendered
+    content, instead of every inline source (SHOPIFY NEWS, GIGRADAR,
+    r/shopify OP...) staying unclickable plain text.
     """
     page = crawler.page
     log = crawler.log
@@ -1948,8 +2306,8 @@ def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
                 candidate.scroll_into_view_if_needed(timeout=5000)
                 candidate.click(timeout=8000)
                 page.wait_for_timeout(WAIT_CHART)
-                text = get_visible_text(page)
-                subpages[key] = {"text": text.strip(), "url": page.url}
+                text, links = get_page_text_and_links(page)
+                subpages[key] = {"text": text.strip(), "url": page.url, "links": links}
                 page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
                 page.wait_for_timeout(WAIT_CHART)
 
@@ -1969,8 +2327,8 @@ def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
             raise Exception("Could not find a visible 'Execution Difficulty' element to click.")
 
         page.wait_for_timeout(WAIT_CHART)
-        text = get_visible_text(page)
-        subpages["Execution Difficulty"] = {"text": text.strip(), "url": page.url}
+        text, links = get_page_text_and_links(page)
+        subpages["Execution Difficulty"] = {"text": text.strip(), "url": page.url, "links": links}
 
         try:
             dialog_close = page.locator("[role='dialog'] button").first
@@ -2056,14 +2414,15 @@ def main():
 
         main_text = crawler.safe(lambda: get_visible_text(page), "get_main_text", default="")
         record["summary"] = extract_summary_fields(main_text)
+        layout_detected = record["summary"].get("layout_detected", "old")
         log.append({
             "step": "layout_detection",
-            "layout_detected": record["summary"].get("layout_detected", "unknown"),
+            "layout_detected": layout_detected,
             "note": "old = Keyword:/emoji-card layout, new = THE IDEA/AT A GLANCE layout confirmed live 2026-08-27",
         })
 
         record["keyword_analysis"] = crawler.safe(
-            lambda: crawl_keyword_analysis(crawler), "crawl_keyword_analysis", default=[]
+            lambda: crawl_keyword_analysis(crawler, layout_detected), "crawl_keyword_analysis", default=[]
         ) or []
 
         # Return to a clean main-page state before sub-page crawling
@@ -2076,23 +2435,44 @@ def main():
         ) or {}
 
         record["business_fit_deep"] = crawler.safe(
-            lambda: crawl_business_fit_deep(crawler, URL), "crawl_business_fit_deep", default={}
+            lambda: crawl_business_fit_deep(crawler, URL, layout_detected), "crawl_business_fit_deep", default={}
         ) or {}
 
         record["score_cards_deep"] = crawler.safe(
-            lambda: crawl_score_cards_deep(crawler, URL), "crawl_score_cards_deep", default={}
+            lambda: crawl_score_cards_deep(crawler, URL, layout_detected), "crawl_score_cards_deep", default={}
         ) or {}
+
+        # NEW: the 4 "AT A GLANCE" popups (Setup Tutorial Views / Pain /
+        # Timing / Year 1, Done Right), confirmed live only on the new
+        # layout — genuinely new UI, not an equivalent of anything the old
+        # layout had, so this only runs when layout_detected == "new"
+        # rather than needing its own separate skip-guard convention.
+        record["glance_popups"] = {}
+        if layout_detected == "new":
+            for glance_label in GLANCE_POPUP_LABELS:
+                popup_data = crawler.safe(
+                    lambda l=glance_label: crawl_glance_popup(crawler, URL, l),
+                    f"glance_popup:{glance_label}",
+                    default={},
+                )
+                if popup_data:
+                    record["glance_popups"][glance_label] = popup_data
+        else:
+            log.append({"step": "crawl_glance_popups", "note": "skipped: old layout has no 'AT A GLANCE' stat-teaser popups"})
 
         community_page = record["subpages"].get("View detailed breakdown")
         if community_page and community_page.get("url"):
             record["community_signals_deep"] = crawler.safe(
-                lambda: crawl_community_signals_deep(crawler, community_page["url"], record["summary"].get("title", "")),
+                lambda: crawl_community_signals_deep(crawler, community_page["url"], record["summary"].get("title", ""), layout_detected),
                 "crawl_community_signals_deep",
                 default={},
             ) or {}
         else:
             record["community_signals_deep"] = {}
-            log.append({"step": "crawl_community_signals_deep", "error": "no community-signals subpage URL found to drill into"})
+            if layout_detected == "new":
+                log.append({"step": "crawl_community_signals_deep", "note": "skipped: new layout has no 'View detailed breakdown' subpage to drill into (confirmed via real 2026-08-28 crawl log)"})
+            else:
+                log.append({"step": "crawl_community_signals_deep", "error": "no community-signals subpage URL found to drill into"})
 
         browser.close()
 
@@ -2134,6 +2514,7 @@ def main():
     print(f"Deep crawl saved: {out_json}")
     print(f"  Keywords captured: {len(record['keyword_analysis'])}")
     print(f"  Sub-pages captured: {len(record['subpages'])}")
+    print(f"  Glance popups captured: {len(record.get('glance_popups', {}))}")
     print(f"  Errors logged: {len(errors)} (see {log_path})")
 
 
