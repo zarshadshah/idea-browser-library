@@ -1357,6 +1357,229 @@ function KeywordRow({ kw }) {
   );
 }
 
+// Renders a block of prose text where any substring matching a key in
+// `links` gets wrapped in a real, clickable <a>. This is the fix for
+// inline citation labels (e.g. "SHOPIFY NEWS", "r/shopify OP (rant
+// thread)", "GIGRADAR") that the crawler captures alongside a real href
+// but that, without this component, sit in the rendered text as
+// unclickable plain strings next to the claim they support — the label
+// and its real URL were both captured, they just never got wired
+// together into an anchor. `links` comes from the normalizer's
+// extract_links_by_text: a {label: href} lookup built from the
+// crawler's own captured <a href> elements on that page (see
+// get_page_text_and_links in deep_crawl.py) — so every href here is a
+// real URL read from the live DOM, never invented from the label text.
+//
+// Deliberately text-substring based (not markdown/HTML) since the
+// scraped text is always plain text — this finds each occurrence of a
+// known link-label substring and swaps in an anchor, leaving everything
+// else as plain text. A label appearing multiple times in the same block
+// gets linked every time it appears, matching how the real site's own
+// inline citations work (the same source label recurs next to each
+// claim it supports).
+function LinkedText({ text, links }) {
+  if (!text) return null;
+  if (!links || Object.keys(links).length === 0) {
+    return <p className="text-sm leading-relaxed whitespace-pre-line">{text}</p>;
+  }
+
+  // Sort labels longest-first so a shorter label that happens to be a
+  // substring of a longer one never steals a match that should belong
+  // to the longer label. Escape regex special characters in each label
+  // before building the split pattern, since labels are arbitrary
+  // scraped text (e.g. "r/shopify · r/shopify OP (rant thread)" contains
+  // parentheses) — confirmed directly against real captured label text
+  // that this escaping is necessary, not just defensive.
+  const labels = Object.keys(links).sort((a, b) => b.length - a.length);
+  const escaped = labels.map((l) => l.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const pattern = new RegExp(`(${escaped.join("|")})`, "g");
+
+  const parts = text.split(pattern);
+
+  return (
+    <p className="text-sm leading-relaxed whitespace-pre-line">
+      {parts.map((part, i) =>
+        links[part] ? (
+          <a
+            key={i}
+            href={links[part]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-black/20 hover:decoration-black/50"
+            style={{ color: "#12151C" }}
+          >
+            {part}
+            <ExternalLink size={10} className="inline ml-0.5 mb-0.5 opacity-50" />
+          </a>
+        ) : (
+          <React.Fragment key={i}>{part}</React.Fragment>
+        )
+      )}
+    </p>
+  );
+}
+
+// Renders one entry from newLayoutExpandedSections: a heading, then the
+// section's text run through the EXISTING parseAllCapsSections parser
+// (reused directly rather than duplicated) so any ALL-CAPS sub-headings
+// inside it — e.g. "THE HARD NUMBERS", "PEOPLE ARE ASKING FOR IT",
+// confirmed directly present inside real expanded-section text — still
+// get their own visual structure, with LinkedText handling each
+// paragraph so inline citation labels render as real links instead of
+// plain text.
+function ExpandedSection({ label, text, links }) {
+  const parsed = parseAllCapsSections(text);
+
+  // No caps-header structure found — render as linked prose directly,
+  // same fallback shape StructuredSection's own final fallback uses
+  // elsewhere in this file.
+  if (parsed.sections.length < 1) {
+    return (
+      <details className="pt-2 border-t border-black/10">
+        <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+          {label} ▾
+        </summary>
+        <div className="mt-2">
+          <LinkedText text={text} links={links} />
+        </div>
+      </details>
+    );
+  }
+
+  return (
+    <details className="pt-2 border-t border-black/10">
+      <summary className="text-[11px] uppercase tracking-wider opacity-50 cursor-pointer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+        {label} ▾
+      </summary>
+      <div className="mt-3 space-y-3">
+        {parsed.intro.length > 0 && (
+          <LinkedText text={parsed.intro.join(" ")} links={links} />
+        )}
+        {parsed.sections.map((s, i) => (
+          <div key={i}>
+            <h4
+              className="text-xs font-bold uppercase tracking-wider mb-1.5 pb-1 border-b border-black/10"
+              style={{ color: "#E8A33D", fontFamily: "'JetBrains Mono', monospace" }}
+            >
+              {s.title}
+            </h4>
+            <LinkedText text={s.lines.join(" ")} links={links} />
+          </div>
+        ))}
+      </div>
+    </details>
+  );
+}
+
+// Renders the Setup Tutorial Views popup's own scoped keyword list
+// (confirmed via real user testing: selecting a different keyword swaps
+// the Volume/Growth/CPC/Competition shown) as a compact dropdown-select
+// + stat row — distinct from the main Keywords tab's KeywordHistoryChart
+// treatment, since this popup's own captured data (from deep_crawl.py's
+// crawl_glance_keyword_dropdown) is a per-keyword stats snapshot, not
+// month-by-month chart history.
+function GlancePopupKeywords({ keywords }) {
+  const [selected, setSelected] = useState(keywords[0]?.keyword || "");
+  const active = keywords.find((k) => k.keyword === selected) || keywords[0];
+  if (!active) return null;
+
+  return (
+    <div className="pt-3 mt-1 border-t border-black/10">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="text-[10px] uppercase tracking-wider opacity-50" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+          What search shows —
+        </span>
+        <select
+          value={active.keyword}
+          onChange={(e) => setSelected(e.target.value)}
+          className="text-xs font-semibold px-1.5 py-0.5 rounded border border-black/10 bg-white/60"
+          style={{ fontFamily: "'JetBrains Mono', monospace" }}
+        >
+          {keywords.map((k) => (
+            <option key={k.keyword} value={k.keyword}>{k.keyword}</option>
+          ))}
+        </select>
+      </div>
+      <div className="grid grid-cols-4 gap-2 text-center">
+        {[
+          ["volume", "Volume"],
+          ["growth", "Growth"],
+          ["cpc", "CPC"],
+          ["competition", "Competition"],
+        ].map(([key, display]) => (
+          <div key={key} className="p-2 rounded-lg" style={{ backgroundColor: "rgba(0,0,0,0.03)" }}>
+            <div className="text-sm font-bold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              {active.stats?.[key] ?? "—"}
+            </div>
+            <div className="text-[10px] uppercase tracking-wide opacity-50">{display}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// Modal overlay for one of the 4 "AT A GLANCE" stat-teaser popups (Setup
+// Tutorial Views / Pain / Timing / Year 1, Done Right) — see
+// deep_crawl.py's crawl_glance_popup for how this content is captured.
+// UNVERIFIED AGAINST A LIVE RUN as of this writing: the crawler function
+// that produces glancePopups data is itself a first attempt, not yet
+// confirmed against a real crawl — this component renders whatever shape
+// that crawler is designed to produce, so it should be checked against
+// the app once a real crawl with glance-popup data has run.
+function GlancePopupModal({ popupLabel, popup, onClose }) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{ backgroundColor: "rgba(18,21,28,0.7)" }}>
+      <div className="max-w-lg w-full max-h-[80vh] overflow-y-auto rounded-xl p-6" style={{ backgroundColor: "#F7F4EC" }}>
+        <div className="flex items-start justify-between mb-3">
+          <h3 className="text-lg font-bold" style={{ fontFamily: "'Fraunces', serif" }}>
+            {popupLabel}
+          </h3>
+          <button onClick={onClose}><X size={18} /></button>
+        </div>
+        <LinkedText text={popup.text} links={popup.links} />
+        {popupLabel === "Setup Tutorial Views" && popup.keywords?.length > 0 && (
+          <GlancePopupKeywords keywords={popup.keywords} />
+        )}
+      </div>
+    </div>
+  );
+}
+
+// Small click-through buttons for each "AT A GLANCE" stat popup that
+// actually has captured content — only rendered for labels present in
+// glancePopups, so a day where the crawler couldn't reach a given popup
+// simply omits that button rather than showing a dead link.
+function GlancePopupTriggers({ glancePopups }) {
+  const [openLabel, setOpenLabel] = useState(null);
+  const available = Object.keys(glancePopups || {});
+  if (!available.length) return null;
+
+  return (
+    <>
+      <div className="flex flex-wrap gap-2 pt-1">
+        {available.map((label) => (
+          <button
+            key={label}
+            onClick={() => setOpenLabel(label)}
+            className="text-[11px] px-2.5 py-1 rounded-full border transition-colors"
+            style={{ borderColor: "rgba(232,163,61,0.4)", color: "#E8A33D" }}
+          >
+            {label} <ChevronRight size={10} className="inline" />
+          </button>
+        ))}
+      </div>
+      {openLabel && (
+        <GlancePopupModal
+          popupLabel={openLabel}
+          popup={glancePopups[openLabel]}
+          onClose={() => setOpenLabel(null)}
+        />
+      )}
+    </>
+  );
+}
+
 // NEW: renders the site's redesigned layout (confirmed live 2026-08-27) —
 // a flat, ordered set of real named sections (The Idea, The Customer, Why
 // Now, The Verdict, Founder Fit, The Plan, Napkin Math, etc) captured by
@@ -1368,7 +1591,17 @@ function KeywordRow({ kw }) {
 // text contains real "REASONS TO BUILD" / "REASONS TO NOT BUILD" ALL-CAPS
 // sub-headings that parseAllCapsSections already knows how to handle) —
 // this just adds the outer per-section heading and ordering on top.
-function NewLayoutSections({ sections, overallScore, painScore, timingScore }) {
+//
+// expandedSections and glancePopups are two additive new props: the
+// former renders every already-crawled but previously-unrendered expanded
+// subpage (Explore the evidence, Understand the opening, etc — see
+// normalize_and_build_manifest.py's extract_new_layout_expanded_sections)
+// with real clickable citation links; the latter renders click-through
+// buttons into the 4 "AT A GLANCE" stat popups. Both default to undefined
+// on any already-saved file normalized before this feature existed, and
+// both components below handle that (empty object / undefined) shape by
+// rendering nothing, so old saved days keep working exactly as before.
+function NewLayoutSections({ sections, overallScore, painScore, timingScore, expandedSections, glancePopups }) {
   const entries = Object.entries(sections || {});
   if (!entries.length) return null;
 
@@ -1396,6 +1629,10 @@ function NewLayoutSections({ sections, overallScore, painScore, timingScore }) {
           )}
         </div>
       )}
+      {/* Click-through buttons for Setup Tutorial Views / Pain / Timing /
+          Year 1 Done Right — only rendered when the crawler actually
+          captured that popup's expanded content. */}
+      <GlancePopupTriggers glancePopups={glancePopups} />
       {entries.map(([label, text]) => (
         <div key={label}>
           <h4
@@ -1407,6 +1644,20 @@ function NewLayoutSections({ sections, overallScore, painScore, timingScore }) {
           <StructuredSection text={text} />
         </div>
       ))}
+      {/* Already-crawled expanded subpages (Explore the evidence,
+          Understand the opening, See the detailed plan, etc) that were
+          previously captured but never rendered anywhere — each with
+          real clickable citation links via LinkedText. */}
+      {expandedSections && Object.keys(expandedSections).length > 0 && (
+        <div className="space-y-3 pt-2">
+          <div className="text-[10px] uppercase tracking-wider opacity-40" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+            Full research (expanded)
+          </div>
+          {Object.entries(expandedSections).map(([label, entry]) => (
+            <ExpandedSection key={label} label={label} text={entry.text} links={entry.links} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -1586,6 +1837,8 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
                       overallScore={idea.overallScore}
                       painScore={idea.painScore}
                       timingScore={idea.timingScore}
+                      expandedSections={idea.newLayoutExpandedSections}
+                      glancePopups={idea.glancePopups}
                     />
                   </div>
                 )}
@@ -1974,6 +2227,12 @@ function CopyPromptModal({ idea, onClose, mode = "build" }) {
   const newLayoutText = idea.newLayoutSections && Object.keys(idea.newLayoutSections).length > 0
     ? Object.entries(idea.newLayoutSections).map(([label, text]) => `${label}:\n${text}`).join("\n\n")
     : "";
+  // Already-crawled expanded subpages (Explore the evidence, Understand
+  // the opening, etc) — folded in as plain text here since this is a
+  // plain-text prompt, not rendered HTML, so links aren't included.
+  const expandedText = idea.newLayoutExpandedSections && Object.keys(idea.newLayoutExpandedSections).length > 0
+    ? Object.entries(idea.newLayoutExpandedSections).map(([label, entry]) => `${label} (expanded):\n${entry.text}`).join("\n\n")
+    : "";
 
   const buildPrompt = `I want to build "${idea.title}" — ${idea.tagline}
 
@@ -1981,7 +2240,7 @@ Here's the full research on this idea:
 
 ${idea.description}
 
-${newLayoutText ? newLayoutText + "\n\n" : ""}Market gap: ${safeText(idea.marketGap)}
+${newLayoutText ? newLayoutText + "\n\n" : ""}${expandedText ? expandedText + "\n\n" : ""}Market gap: ${safeText(idea.marketGap)}
 Suggested execution plan: ${safeText(idea.executionPlan)}
 Execution difficulty: ${idea.executionDifficulty?.score}/10 — ${idea.executionDifficulty?.note}
 Target: ${idea.categorization?.target} | Market: ${idea.categorization?.market} | Main competitor: ${idea.categorization?.competitor}
@@ -2000,7 +2259,7 @@ ${idea.tagline}
 Full pitch:
 ${idea.description}
 
-${newLayoutText ? "Full research sections:\n" + newLayoutText + "\n\n" : ""}Scores: Opportunity ${idea.scores?.opportunity?.score}/10 (${idea.scores?.opportunity?.label}), Problem ${idea.scores?.problem?.score}/10 (${idea.scores?.problem?.label}), Feasibility ${idea.scores?.feasibility?.score}/10 (${idea.scores?.feasibility?.label}), Why Now ${idea.scores?.whyNow?.score}/10 (${idea.scores?.whyNow?.label})
+${newLayoutText ? "Full research sections:\n" + newLayoutText + "\n\n" : ""}${expandedText ? "Full expanded research:\n" + expandedText + "\n\n" : ""}Scores: Opportunity ${idea.scores?.opportunity?.score}/10 (${idea.scores?.opportunity?.label}), Problem ${idea.scores?.problem?.score}/10 (${idea.scores?.problem?.label}), Feasibility ${idea.scores?.feasibility?.score}/10 (${idea.scores?.feasibility?.label}), Why Now ${idea.scores?.whyNow?.score}/10 (${idea.scores?.whyNow?.label})
 
 Categorization: ${idea.categorization?.type} | ${idea.categorization?.market} | Target: ${idea.categorization?.target} | Competitor: ${idea.categorization?.competitor}
 
