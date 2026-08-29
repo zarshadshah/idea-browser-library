@@ -180,17 +180,26 @@ def login(page, log) -> bool:
     IDEABROWSER_EMAIL / IDEABROWSER_PASSWORD environment variables (set as
     GitHub Actions secrets — never hardcoded, never logged).
 
-    Based on the captured login page text, the flow is:
-      1. Land on the login page (default view offers "Sign in with your
-         email - we'll send a magic link" or a password toggle)
-      2. Click "Sign in with Password" to switch to password mode
-      3. Fill email + password fields
-      4. Submit
+    The login page's own layout has changed at least twice independent
+    of the Idea-of-the-Day redesign — confirmed directly via real
+    DevTools screenshots at two different points: an earlier capture
+    showed a magic-link-first view requiring a "Sign in with Password"
+    toggle click before email/password fields appeared, while a real
+    2026-08-29 screenshot showed both fields, plus the "Sign in with
+    Password" button, visible immediately on page load with no toggle
+    needed at all. Rather than assume either shape, this function
+    checks for the toggle text and only clicks it if actually present
+    (see the match_count check below), then searches for both fields
+    directly regardless — this handles both the toggle-required and
+    fields-already-visible cases without needing to know in advance
+    which one is currently live.
 
     Returns True if login appears to have succeeded (no longer on the
     login page / no login form visible), False otherwise. Selectors here
-    are a best effort based on the page's captured text, not a live DOM
-    inspection, so may need adjustment — every step is logged.
+    are a best effort based on real captured page structure, refined
+    across multiple real runs — but the login page has proven to change
+    shape on its own timeline, so this may still need adjustment after
+    future runs. Every step is logged.
     """
     email = os.environ.get("IDEABROWSER_EMAIL")
     password = os.environ.get("IDEABROWSER_PASSWORD")
@@ -284,13 +293,49 @@ def login(page, log) -> bool:
             log.append({"step": "login", "error": "Could not find a visible email input field"})
             return False
 
-        # Fill password field
-        password_filled = fill_first_visible(
-            ['input[type="password"]', 'input[name="password"]'],
-            password, "password",
-        )
+        # Fill password field. A real 2026-08-29 run confirmed via direct
+        # DevTools inspection that the password input DOES have
+        # type="password" (placeholder="Enter your password",
+        # autocomplete="current-password") — exactly what the selector
+        # list below already searches for — yet the fill still failed
+        # with "Could not find password input field" on that run. Since
+        # the element genuinely exists with the expected attribute, the
+        # most likely cause is the same class of timing/visibility race
+        # already confirmed once before on this site (the leftover-
+        # dropdown-overlay issue in the keyword crawler): is_visible()
+        # can return false for an element that's present but not yet
+        # settled (mid-animation, mid-hydration) at the exact instant
+        # this check runs, especially right after the page's own
+        # 1500ms post-toggle wait — which that same 2026-08-29 run never
+        # even executed, since match_count was 0 and skipped straight to
+        # filling fields with no settle time at all for the page's own
+        # client-side render. Retry the password fill specifically
+        # (cheap — a few hundred ms each, capped attempts) rather than
+        # failing immediately on the first miss, and add the confirmed
+        # real placeholder text as another selector alongside the two
+        # already-correct ones, in case a future capture shows a page
+        # variant that drops the name/type attributes but keeps the
+        # placeholder.
+        password_selectors = [
+            'input[type="password"]', 'input[name="password"]',
+            'input[placeholder*="password" i]',
+        ]
+        password_filled = fill_first_visible(password_selectors, password, "password")
         if not password_filled:
-            log.append({"step": "login", "error": "Could not find password input field"})
+            for attempt in range(4):  # up to ~2s total extra settle time
+                page.wait_for_timeout(500)
+                password_filled = fill_first_visible(password_selectors, password, "password")
+                if password_filled:
+                    log.append({"step": "login", "note": f"Password field filled on retry attempt {attempt + 1}"})
+                    break
+        if not password_filled:
+            try:
+                screenshot_path = str(ROOT / "library" / "login_debug_screenshot.png")
+                page.screenshot(path=screenshot_path, full_page=True)
+                log.append({"step": "login", "note": f"Saved debug screenshot to {screenshot_path}"})
+            except Exception as e:
+                log.append({"step": "login", "note": f"Could not save debug screenshot: {e}"})
+            log.append({"step": "login", "error": "Could not find password input field after retries"})
             return False
 
         # Submit — try a button labeled Sign in / Log in / Continue, or press Enter
