@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-09-01",
+      "title": "Help freelancers get recommended by AI",
+      "path": "library/2026/2026-09-01.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-08-31",
       "title": "AI receptionist for solo contractors",
       "path": "library/2026/2026-08-31.json",
