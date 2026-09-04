@@ -1,0 +1,63 @@
+[
+  {
+    "step": "login",
+    "note": "Found 2 element(s) matching 'Sign in with Password' text."
+  },
+  {
+    "step": "login",
+    "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+  },
+  {
+    "step": "login",
+    "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+  },
+  {
+    "step": "login",
+    "success": true
+  },
+  {
+    "step": "layout_detection",
+    "layout_detected": "new",
+    "note": "old = Keyword:/emoji-card layout, new = THE IDEA/AT A GLANCE layout confirmed live 2026-08-27"
+  },
+  {
+    "step": "crawl_keyword_analysis",
+    "note": "skipped: new layout has no page-level 'Keyword:' dropdown (confirmed via real 2026-08-28 crawl log) \u2014 see crawl_glance_popup for this layout's keyword data"
+  },
+  {
+    "step": "subpage:Keep reading#0",
+    "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Keep reading\").first\n    - locator resolved to <button type=\"button\" class=\"__className_91c5f7 mt-3 inline-flex shrink-0 items-center gap-1 self-start text-xs font-bold text-gray-500 transition-colors hover:text-gray-900\">\u2026</button>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm lg:absolute lg:inset-0\">\u2026</div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm lg:absolute lg:inset-0\">\u2026</div> intercepts pointer events\n  2 \u00d7 retrying click action\n      - waiting 100ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <header class=\"sticky top-0 flex h-14 shrink-0 items-center gap-2 border-b bg-white px-4 z-20\">\u2026</header> intercepts pointer events\n  3 \u00d7 retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm lg:absolute lg:inset-0\">\u2026</div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm lg:absolute lg:inset-0\">\u2026</div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <header class=\"sticky top-0 flex h-14 shrink-0 items-center gap-2 border-b bg-white px-4 z-20\">\u2026</header> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <header class=\"sticky top-0 flex h-14 shrink-0 items-center gap-2 border-b bg-white px-4 z-20\">\u2026</header> intercepts pointer events\n  2 \u00d7 retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm lg:absolute lg:inset-0\">\u2026</div> intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n"
+  },
+  {
+    "step": "execution_difficulty_modal",
+    "error": "Could not find a visible 'Execution Difficulty' element to click."
+  },
+  {
+    "step": "crawl_business_fit_deep",
+    "note": "skipped: new layout has no Revenue Potential/Execution Difficulty/Go-To-Market Business Fit cards (confirmed via real 2026-08-28 crawl log)"
+  },
+  {
+    "step": "crawl_score_cards_deep",
+    "note": "skipped: new layout has no Opportunity/Problem/Feasibility/Why Now score cards (confirmed via real 2026-08-28 crawl log) \u2014 see pain_score/timing_score/overall_score instead"
+  },
+  {
+    "step": "glance_popup:Setup Tutorial Views",
+    "error": "'Setup Tutorial Views' glance stat not visible on main page"
+  },
+  {
+    "step": "glance_popup:Pain",
+    "error": "No modal dialog detected after clicking 'Pain'"
+  },
+  {
+    "step": "glance_popup:Timing",
+    "error": "No modal dialog detected after clicking 'Timing'"
+  },
+  {
+    "step": "glance_popup:Year 1, Done Right",
+    "error": "No modal dialog detected after clicking 'Year 1, Done Right'"
+  },
+  {
+    "step": "crawl_community_signals_deep",
+    "note": "skipped: new layout has no 'View detailed breakdown' subpage to drill into (confirmed via real 2026-08-28 crawl log)"
+  }
+]
