@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-09-07",
+      "title": "Turn instruments into plugins that sell",
+      "path": "library/2026/2026-09-07.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-09-06",
       "title": "Make it Pop! - the AI creative director for agencies",
       "path": "library/2026/2026-09-06.json",
