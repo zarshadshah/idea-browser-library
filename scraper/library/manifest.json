@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-09-12",
+      "title": "AI voice fixer for missed sales calls",
+      "path": "library/2026/2026-09-12.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-09-11",
       "title": "Your Grandma might be the next big brand",
       "path": "library/2026/2026-09-11.json",
