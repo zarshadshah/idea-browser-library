@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-09-14",
+      "title": "The Real SOPs - a company's source of truth.",
+      "path": "library/2026/2026-09-14.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-09-13",
       "title": "Social media screening for job seekers",
       "path": "library/2026/2026-09-13.json",
