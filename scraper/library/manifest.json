@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-09-17",
+      "title": "Daily health decision text message app",
+      "path": "library/2026/2026-09-17.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-09-16",
       "title": "The niche eBay for camera gear (with a shopping agent built in)",
       "path": "library/2026/2026-09-16.json",
