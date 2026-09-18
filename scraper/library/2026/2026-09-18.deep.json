@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-18",
+  "scraped_at": "2026-09-18T11:57:08.444921+00:00",
+  "source_url": "https://www.ideabrowser.com/hub/ideas/today",
+  "summary": {
+    "raw_text": "",
+    "login_failed": true
+  },
+  "keyword_analysis": [],
+  "subpages": {},
+  "crawl_log": [
+    {
+      "step": "login",
+      "note": "Found 0 element(s) matching 'Sign in with Password' text."
+    },
+    {
+      "step": "login",
+      "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+    },
+    {
+      "step": "login",
+      "note": "Saved debug screenshot to /home/runner/work/idea-browser-library/idea-browser-library/scraper/library/login_debug_screenshot.png"
+    },
+    {
+      "step": "login",
+      "error": "Could not find password input field after retries"
+    }
+  ]
+}

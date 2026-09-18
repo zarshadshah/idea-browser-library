@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-09-18",
+      "title": "Untitled idea",
+      "path": "library/2026/2026-09-18.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-09-17",
       "title": "Daily health decision text message app",
       "path": "library/2026/2026-09-17.json",
