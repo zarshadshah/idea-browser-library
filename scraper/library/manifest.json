@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-09-25",
+      "title": "Robots are starving for data",
+      "path": "library/2026/2026-09-25.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-09-24",
       "title": "Rescue files for 18,000 businesses",
       "path": "library/2026/2026-09-24.json",
