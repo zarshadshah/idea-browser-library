@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-09-27",
+      "title": "Tool to connect video views to home sales",
+      "path": "library/2026/2026-09-27.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-09-26",
       "title": "The Diamond Dealer",
       "path": "library/2026/2026-09-26.json",
