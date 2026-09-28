@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-09-28",
+      "title": "A title service for small used car lots",
+      "path": "library/2026/2026-09-28.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-09-27",
       "title": "Tool to connect video views to home sales",
       "path": "library/2026/2026-09-27.json",
