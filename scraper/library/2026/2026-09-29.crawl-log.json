@@ -1,0 +1,19 @@
+[
+  {
+    "step": "login",
+    "note": "Found 2 element(s) matching 'Sign in with Password' text."
+  },
+  {
+    "step": "login",
+    "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+  },
+  {
+    "step": "login",
+    "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+  },
+  {
+    "step": "login",
+    "error": "Could not confirm successful login (no dashboard markers found, or login form still present).",
+    "page_text_sample": "Find Ideas\nBuild Ideas\nPricing\nMore\nAgents\nLogin\nSign Up\nWelcome back!\n\nSign in with your email - we'll send you a magic link, or use your password if you've set one up.\n\nContinue with Google\nOr\nSign in with Password\nSign in with Magic Link\n\nDon't have an account? Sign up\n\nGet ideas for profitable startups, trending keywords, and go-to-market tactics, powered by data.\n\nDiscover\nIdea of the Day\nIdea Database\nTrends\nMarket Insights\nBuild\nAgent Connector\nAgent Skills\nBusiness Coach\nIdea Builder\nIde"
+  }
+]
