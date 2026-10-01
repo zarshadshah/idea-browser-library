@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-10-01",
+      "title": "A service for freelancers who ghosted the IRS",
+      "path": "library/2026/2026-10-01.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-09-30",
       "title": "Help vets avoid DEA fines",
       "path": "library/2026/2026-09-30.json",
