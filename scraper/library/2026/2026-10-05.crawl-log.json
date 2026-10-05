@@ -1,0 +1,14 @@
+[
+  {
+    "step": "login",
+    "note": "Found 0 element(s) matching 'Sign in with Password' text."
+  },
+  {
+    "step": "login",
+    "note": "Saved debug screenshot to /home/runner/work/idea-browser-library/idea-browser-library/scraper/library/login_debug_screenshot.png"
+  },
+  {
+    "step": "login",
+    "error": "Could not find a visible email input field"
+  }
+]

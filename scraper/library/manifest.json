@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-10-05",
+      "title": "Untitled idea",
+      "path": "library/2026/2026-10-05.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-10-04",
       "title": "Run for Good - Marathon Charity Platform",
       "path": "library/2026/2026-10-04.json",
