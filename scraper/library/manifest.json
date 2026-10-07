@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-10-07",
+      "title": "AI approval plugin that gets home renovations past HOAs and city permits",
+      "path": "library/2026/2026-10-07.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-10-06",
       "title": "Personal Agent for Small Food Brands",
       "path": "library/2026/2026-10-06.json",
