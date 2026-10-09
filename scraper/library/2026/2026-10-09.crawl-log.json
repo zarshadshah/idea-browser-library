@@ -1,0 +1,23 @@
+[
+  {
+    "step": "login",
+    "note": "Found 2 element(s) matching 'Sign in with Password' text."
+  },
+  {
+    "step": "login",
+    "note": "Filled email via 'input[type=\"email\"]' (match 2/2)"
+  },
+  {
+    "step": "login",
+    "note": "Filled password via 'input[type=\"password\"]' (match 1/1)"
+  },
+  {
+    "step": "login",
+    "success": true
+  },
+  {
+    "step": "bot_checkpoint",
+    "error": "Checkpoint/block still present after 15000ms \u2014 likely blocked as automated.",
+    "final_page_text_sample": "Home\nBrowse\nMy Stuff\nAbout me\nAccelerator\nProjects\nExample project\nConnect your AI\nAbout Ideabrowser\nGet help\n\u00a9 2026 Ideabrowser\n\u00b7\nLegal\nToggle Sidebar\nIdea of the Day\nBuild Gallery\n1\nGo Pro\nS\n\nIDEA OF THE DAY\u00b7OCT 9, 2026\n\nPrevious\nBrowse all\nEmergency app fix service for iPhone Duo compatibility\n\nIB Index 6.3\n\u00b7\nB2B \u00b7 SaaS\n\u00b7\n$600K-$900K ARR\n\nCONCEPT MOCKUP\n\nDEVELOPER ATTENTION\n\n320K+ views\n\ntop 4 Duo-dev YouTube videos, under 4 weeks post-launch\n\nWHAT IT DEMANDS\n\nDistribution\nTrust\niOS depth\nAge"
+  }
+]
