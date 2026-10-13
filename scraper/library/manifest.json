@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-10-13",
+      "title": "Technical due diligence tool for game publishing deals",
+      "path": "library/2026/2026-10-13.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-10-12",
       "title": "Missing marketplace money recovery for multichannel sellers",
       "path": "library/2026/2026-10-12.json",
