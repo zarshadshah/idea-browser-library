@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-10-15",
+      "title": "Travel accessibility checker that reveals physical demands before you book",
+      "path": "library/2026/2026-10-15.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-10-14",
       "title": "Social Security clawback defense for families and caregivers",
       "path": "library/2026/2026-10-14.json",
