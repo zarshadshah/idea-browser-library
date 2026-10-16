@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-10-16",
+      "title": "Reconciliation tool that catches AI support mistakes for ecommerce brands",
+      "path": "library/2026/2026-10-16.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-10-15",
       "title": "Travel accessibility checker that reveals physical demands before you book",
       "path": "library/2026/2026-10-15.json",
