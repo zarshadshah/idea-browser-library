@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-10-18",
+      "title": "Career simulation platform that lets students try real jobs before committing",
+      "path": "library/2026/2026-10-18.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-10-17",
       "title": "Same-day curated gift service sourced from local shops",
       "path": "library/2026/2026-10-17.json",
