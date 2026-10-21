@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-10-21",
+      "title": "Untitled idea",
+      "path": "library/2026/2026-10-21.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-10-20",
       "title": "Automated death certificate follow-up for funeral directors",
       "path": "library/2026/2026-10-20.json",
