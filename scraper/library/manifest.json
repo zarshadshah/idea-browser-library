@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-10-22",
+      "title": "SaaS tool that shows which pricing and docs pages AI cites vs competitors",
+      "path": "library/2026/2026-10-22.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-10-21",
       "title": "Untitled idea",
       "path": "library/2026/2026-10-21.json",
