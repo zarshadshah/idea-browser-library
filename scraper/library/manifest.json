@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-10-26",
+      "title": "White-label deck-builder widget for trading-card stores",
+      "path": "library/2026/2026-10-26.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-10-25",
       "title": "Platform that turns schoolyard trends into verified inter-school leagues for brand sponsors",
       "path": "library/2026/2026-10-25.json",
