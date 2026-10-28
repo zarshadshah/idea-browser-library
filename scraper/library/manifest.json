@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-10-28",
+      "title": "AI advisor for food trucks",
+      "path": "library/2026/2026-10-28.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-10-27",
       "title": "Automated bid finder and submission tool for local public contracts",
       "path": "library/2026/2026-10-27.json",
