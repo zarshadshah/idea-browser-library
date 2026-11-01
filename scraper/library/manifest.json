@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-01",
+      "title": "Ad verification platform for sponsored AI shopping placements",
+      "path": "library/2026/2026-11-01.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-10-31",
       "title": "Platform that monitors insurance directories and files correction requests for solo therapists",
       "path": "library/2026/2026-10-31.json",
