@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-02",
+      "title": "SaaS platform that turns private work into verifiable proof for NDA-bound developers",
+      "path": "library/2026/2026-11-02.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-01",
       "title": "Ad verification platform for sponsored AI shopping placements",
       "path": "library/2026/2026-11-01.json",
