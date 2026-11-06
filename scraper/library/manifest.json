@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-06",
+      "title": "Language prep app that builds a cram plan for your upcoming event",
+      "path": "library/2026/2026-11-06.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-05",
       "title": "Verification platform that audits local-only claims for clinical AI tools",
       "path": "library/2026/2026-11-05.json",
