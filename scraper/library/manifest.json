@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-07",
+      "title": "Disaster-recovery SaaS for professional creators dependent on social platforms",
+      "path": "library/2026/2026-11-07.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-06",
       "title": "Language prep app that builds a cram plan for your upcoming event",
       "path": "library/2026/2026-11-06.json",
