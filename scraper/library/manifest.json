@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-08",
+      "title": "Software that turns community expertise into maintained buying guides for paid membership groups",
+      "path": "library/2026/2026-11-08.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-07",
       "title": "Disaster-recovery SaaS for professional creators dependent on social platforms",
       "path": "library/2026/2026-11-07.json",
