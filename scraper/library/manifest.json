@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-09",
+      "title": "App that creates digital proof of work for handmade goods",
+      "path": "library/2026/2026-11-09.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-08",
       "title": "Software that turns community expertise into maintained buying guides for paid membership groups",
       "path": "library/2026/2026-11-08.json",
