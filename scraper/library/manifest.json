@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-12",
+      "title": "Software for brands to put their convention pop-ups on one map and see who shows up",
+      "path": "library/2026/2026-11-12.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-10",
       "title": "Platform that provides a way for software customers to co-fund the features they keep requesting",
       "path": "library/2026/2026-11-10.json",
