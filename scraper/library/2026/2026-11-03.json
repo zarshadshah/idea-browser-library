@@ -2,9 +2,9 @@
   "id": "2026-11-03",
   "date": "2026-11-03",
   "title": "SaaS tool that tracks cost-per-completed-task for AI agent workflows",
-  "tagline": "r/AIToolsPerformance tracks cost per successful task\n\nWHAT IT DEMANDS\n\nDistribution\nDomain depth\nSales\nBuild\nCapital\n\nTHE REALITY\n\nFIRST REVENUE\n60-90 days\nCAPI...",
+  "tagline": "An operator posts the receipt: an agent made 200 API calls in four minutes stuck in a retry loop, running the same broken bash command over and over. Another wa...",
   "badges": [],
-  "description": "r/AIToolsPerformance tracks cost per successful task\n\nWHAT IT DEMANDS\n\nDistribution\nDomain depth\nSales\nBuild\nCapital\n\nTHE REALITY\n\nFIRST REVENUE\n60-90 days\nCAPITAL IN\n$10K-$30K\nDIFFICULTY\nModerate\n\nUP AGAINST\n\nLiteLLM\n\nThe MIT-licensed open-source AI gateway (140+ providers, one OpenAI-compatible API); free to self-host; Enter\u2026\n\n+ 7 more mapped\n\nTHE PITCH\n\nAn operator posts the receipt: an agent made 200 API calls in four minutes stuck in a retry loop, running the same broken bash command over and over. Another wakes up to a $19,000 OpenAI bill. A third says an overnight run cost $200 one night and $7 the next for the same output. Jason Lemkin at SaaStr tells teams they treated API calls like free water and got an estimate it might cost $240,000 a year. In July 2026, IDC found 67% of enterprises overran their AI agent budget by more than 10% in the past 12 months, with average monthly agent spend at $117,558. AWS wrote cost-per-task-completion into the Well-Architected Agentic AI Len\u2026\n\nWHO IT'S FOR\n\nSMBs running recurring AI agent workflows in production (support triage, lead enrichment, RPA-style back-office jobs), not frontier labs or AI-native startups.\n\nTHE GAP\n\nSix well-funded tools already own this buyer, and the wedge is one sprint away from any of them\n\nWHY NOW\n\nAWS wrote the spec in June 2026\n\nAT A GLANCE\n\nCommunity size\n6.9K members\nPricing\nFree to $1,499/mo\nYear one\n$120K-$180K\nCeiling\n$3M-$6M ARR\n\nWHAT YOU SELL\n\nTeam$499/mo\n\nBIGGEST RISK\n\nIncumbents close the gap in a sprint. LiteLLM, Portkey, Langfuse, Helicone, Laminar, and Datadog already ship budgets and spend tracking by key, team, or trace\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nAWS wrote the spec in June 2026\n\nThree things happened this year that did not exist in 2025. First, AWS published the Well-Architected Agentic AI Lens on June 10, 2026 and wrote cost-per-task-completion into the spec as the Level 3 target KPI, with hierarchical per-cycle, per-task, per-day budget limits as a required practice. When AWS codifies a metric, every architect and auditor starts asking for it the next week. Second, Uber burned through its entire 2026 AI budget by April, four months into the year, after rolling out Claude Code to 5,000 engineers in December 2025. The CTO's quote traveled: power users ran $500 to $2,000 a month, Uber capped it at $1,500, and Walmart, Amazon, and Cisco shipped similar caps the same quarter. Third, Gartner's 2026 Hype Cycle predicted 40%+ of agentic AI projects would be canceled by 2027, naming escalating costs as the first of three causes. That is the backdrop every CFO signing an AI PO now reads.\n\nThe data under the headlines is harder. IDC's July 2026 survey found 67% of enterprises overran their AI agent budget by more than 10% in the past 12 months, with average monthly agent spend at $117,558. The FinOps Foundation's State of FinOps 2026 (1,192 orgs, $83B in cloud spend) found 98% of FinOps teams now manage AI spend, up from 31% two years ago. A review of 127 enterprise agentic projects clocked 73% over budget, averaging $2.3M in unplanned cost per project. Gartner finds agents burn 5-30x more tokens per task than a chatbot because they loop, retry, and resend full context. Token prices fell 67% in a year and consumption still outran the savings.\n\nSOURCES\nAWS Well-Architected Agentic AI Lens\nFortune / The Information\nGartner\nIDC\nSee the full timing case\n\nMARKET SNAPSHOT\n\nThe receipts.\n\nPAIN\n\n8/10 SEVERITY\n\n\u201cThis has been wrecking my head lately so curious what others are doing. We're building with LLMs and the bills are all over the place. One decent week\u201d\n\nr/SaasDevelopers\n\n\u201cMy autonomous AI agent has earned $0 in 48 days and still owes me $155\u201d\n\nr/AI_Agents\n\n\u201cAPI calls used to be like free water. \"We've been using it like free water,\" says Jason Lemkin. \"We got one estimate it might be as much as $240,000 a year.\" So what do the agents do? Work around it.\u201d\n\nX \u00b7 @saastr\n\nAll 9 receipts, and where these people gather\n\nWHITES",
+  "description": "An operator posts the receipt: an agent made 200 API calls in four minutes stuck in a retry loop, running the same broken bash command over and over. Another wakes up to a $19,000 OpenAI bill. A third says an overnight run cost $200 one night and $7 the next for the same output. Jason Lemkin at SaaStr tells teams they treated API calls like free water and got an estimate it might cost $240,000 a year. In July 2026, IDC found 67% of enterprises overran their AI agent budget by more than 10% in the past 12 months, with average monthly agent spend at $117,558. AWS wrote cost-per-task-completion into the Well-Architected Agentic AI Len\u2026",
   "scores": {
     "opportunity": {
       "score": null,
@@ -69,6 +69,528 @@
   "painScore": null,
   "timingScore": null,
   "layoutDetected": "new",
+  "siteView": {
+    "version": "v3",
+    "dateLabel": "NOV 3, 2026",
+    "title": "SaaS tool that tracks cost-per-completed-task for AI agent workflows",
+    "ibIndex": "6.8",
+    "tags": [
+      "B2B",
+      "SaaS",
+      "$3M-$6M ARR"
+    ],
+    "painSeverity": "8",
+    "hero": [
+      {
+        "label": "COMMUNITY SIZE",
+        "lines": [
+          "6.9K members",
+          "r/AIToolsPerformance tracks cost per successful task"
+        ],
+        "prose": false
+      },
+      {
+        "label": "WHAT IT DEMANDS",
+        "lines": [
+          "Distribution",
+          "Domain depth",
+          "Sales",
+          "Build",
+          "Capital"
+        ],
+        "prose": false
+      },
+      {
+        "label": "THE REALITY",
+        "lines": [
+          "FIRST REVENUE",
+          "60-90 days",
+          "CAPITAL IN",
+          "$10K-$30K",
+          "DIFFICULTY",
+          "Moderate"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "FIRST REVENUE",
+            "value": "60-90 days"
+          },
+          {
+            "label": "CAPITAL IN",
+            "value": "$10K-$30K"
+          },
+          {
+            "label": "DIFFICULTY",
+            "value": "Moderate"
+          }
+        ]
+      },
+      {
+        "label": "UP AGAINST",
+        "lines": [
+          "LiteLLM",
+          "The MIT-licensed open-source AI gateway (140+ providers, one OpenAI-compatible API); free to self-host; Enter\u2026",
+          "+ 7 more mapped"
+        ],
+        "prose": false,
+        "href": null
+      },
+      {
+        "label": "THE PITCH",
+        "lines": [
+          "An operator posts the receipt: an agent made 200 API calls in four minutes stuck in a retry loop, running the same broken bash command over and over. Another wakes up to a $19,000 OpenAI bill. A third says an overnight run cost $200 one night and $7 the next for the same output. Jason Lemkin at SaaStr tells teams they treated API calls like free water and got an estimate it might cost $240,000 a year. In July 2026, IDC found 67% of enterprises overran their AI agent budget by more than 10% in the past 12 months, with average monthly agent spend at $117,558. AWS wrote cost-per-task-completion into the Well-Architected Agentic AI Len\u2026"
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHO IT'S FOR",
+        "lines": [
+          "SMBs running recurring AI agent workflows in production (support triage, lead enrichment, RPA-style back-office jobs), not frontier labs or AI-native startups."
+        ],
+        "prose": true
+      },
+      {
+        "label": "THE GAP",
+        "lines": [
+          "Six well-funded tools already own this buyer, and the wedge is one sprint away from any of them"
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHY NOW",
+        "lines": [
+          "AWS wrote the spec in June 2026"
+        ],
+        "prose": true
+      },
+      {
+        "label": "AT A GLANCE",
+        "lines": [
+          "Community size",
+          "6.9K members",
+          "Pricing",
+          "Free to $1,499/mo",
+          "Year one",
+          "$120K-$180K",
+          "Ceiling",
+          "$3M-$6M ARR"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "Community size",
+            "value": "6.9K members"
+          },
+          {
+            "label": "Pricing",
+            "value": "Free to $1,499/mo"
+          },
+          {
+            "label": "Year one",
+            "value": "$120K-$180K"
+          },
+          {
+            "label": "Ceiling",
+            "value": "$3M-$6M ARR"
+          }
+        ]
+      },
+      {
+        "label": "WHAT YOU SELL",
+        "lines": [
+          "Team$499/mo"
+        ],
+        "prose": false,
+        "name": "Team",
+        "price": "$499/mo"
+      },
+      {
+        "label": "BIGGEST RISK",
+        "lines": [
+          "Incumbents close the gap in a sprint. LiteLLM, Portkey, Langfuse, Helicone, Laminar, and Datadog already ship budgets and spend tracking by key, team, or trace\u2026"
+        ],
+        "prose": true
+      }
+    ],
+    "heroMore": null,
+    "sections": [
+      {
+        "id": "whyNow",
+        "kicker": "Why now",
+        "data": {
+          "headline": "AWS wrote the spec in June 2026",
+          "paragraphs": [
+            "Three things happened this year that did not exist in 2025. First, AWS published the Well-Architected Agentic AI Lens on June 10, 2026 and wrote cost-per-task-completion into the spec as the Level 3 target KPI, with hierarchical per-cycle, per-task, per-day budget limits as a required practice. When AWS codifies a metric, every architect and auditor starts asking for it the next week. Second, Uber burned through its entire 2026 AI budget by April, four months into the year, after rolling out Claude Code to 5,000 engineers in December 2025. The CTO's quote traveled: power users ran $500 to $2,000 a month, Uber capped it at $1,500, and Walmart, Amazon, and Cisco shipped similar caps the same quarter. Third, Gartner's 2026 Hype Cycle predicted 40%+ of agentic AI projects would be canceled by 2027, naming escalating costs as the first of three causes. That is the backdrop every CFO signing an AI PO now reads.",
+            "The data under the headlines is harder. IDC's July 2026 survey found 67% of enterprises overran their AI agent budget by more than 10% in the past 12 months, with average monthly agent spend at $117,558. The FinOps Foundation's State of FinOps 2026 (1,192 orgs, $83B in cloud spend) found 98% of FinOps teams now manage AI spend, up from 31% two years ago. A review of 127 enterprise agentic projects clocked 73% over budget, averaging $2.3M in unplanned cost per project. Gartner finds agents burn 5-30x more tokens per task than a chatbot because they loop, retry, and resend full context. Token prices fell 67% in a year and consumption still outran the savings."
+          ],
+          "sources": [
+            {
+              "label": "AWS Well-Architected Agentic AI Lens",
+              "href": null
+            },
+            {
+              "label": "Fortune / The Information",
+              "href": null
+            },
+            {
+              "label": "Gartner",
+              "href": null
+            },
+            {
+              "label": "IDC",
+              "href": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "marketSnapshot",
+        "kicker": "Market snapshot",
+        "data": {
+          "title": "The receipts.",
+          "painSeverity": "8",
+          "quotes": [
+            {
+              "quote": "\u201cThis has been wrecking my head lately so curious what others are doing. We're building with LLMs and the bills are all over the place. One decent week\u201d",
+              "source": "r/SaasDevelopers",
+              "href": null,
+              "platform": null
+            },
+            {
+              "quote": "\u201cMy autonomous AI agent has earned $0 in 48 days and still owes me $155\u201d",
+              "source": "r/AI_Agents",
+              "href": null,
+              "platform": null
+            },
+            {
+              "quote": "\u201cAPI calls used to be like free water. \"We've been using it like free water,\" says Jason Lemkin. \"We got one estimate it might be as much as $240,000 a year.\" So what do the agents do? Work around it.\u201d",
+              "source": "X \u00b7 @saastr",
+              "href": null,
+              "platform": null
+            }
+          ],
+          "receiptsLabel": "All 9 receipts, and where these people gather"
+        }
+      },
+      {
+        "id": "whitespace",
+        "kicker": "Whitespace",
+        "data": {
+          "gap": "Six well-funded tools already own this buyer, and the wedge is one sprint away from any of them",
+          "wedge": [
+            "Generic API gateways (LiteLLM, Portkey) and LLM observability tools (Langfuse, Helicone, Laminar) measure tokens, latency, and raw spend. This tool measures cost per completed business task and enforces budgets at that unit, which is the number an SMB owner actually cares about."
+          ],
+          "incumbent": {
+            "name": "LiteLLM",
+            "href": null
+          },
+          "other": []
+        }
+      },
+      {
+        "id": "proof",
+        "kicker": "Proof & signals",
+        "data": {
+          "items": [
+            {
+              "text": "FirstPageSage reports SMB (50-499 employees) agentic AI adoption at 13% in 2026, up 86% YoY from 7% in 2025; only 5% of SMBs are fully deployed and 79% are still in experimentation",
+              "source": "FIRSTPAGESAGE AGENTIC AI ADOPTION STATISTICS 2026",
+              "href": null
+            },
+            {
+              "text": "Upwork Q1 2026 survey of 195 SMB leaders (10-99 employees) found uncertainty around ROI is the second-biggest AI adoption barrier at 24%, behind only data security at 27%",
+              "source": "UPWORK RESEARCH INSTITUTE Q1 2026",
+              "href": null
+            },
+            {
+              "text": "The 2026 State of AI Agents Report explicitly recommends ROI calculation focus on business outcomes, not token costs, which matches the cost-per-completed-task wedge",
+              "source": "2026 STATE OF AI AGENTS REPORT",
+              "href": null
+            },
+            {
+              "text": "\"Cost per completed task\" is now defined as a standard KPI across FinOps and vendor playbooks in 2026 (Finout, CloudZero, Keito, Agenticwire); every incumbent observability tool already reports cost per trace, so the wedge of \"cost per completed business task\" is a naming/UX layer, not a new metric incumbents cannot build",
+              "source": "FINOUT",
+              "href": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "competitors",
+        "kicker": "Who you're up against",
+        "data": {
+          "count": 8,
+          "players": [
+            {
+              "name": "Langfuse",
+              "incumbent": false,
+              "description": "Open-source LLM observability acquired by ClickHouse in January 2026; prices Hobby free (50K units), Core $29/mo (100K units), Pro $199/mo, Enterprise $2,499/mo, billed by units = traces + observations + scores",
+              "href": null
+            },
+            {
+              "name": "Helicone",
+              "incumbent": false,
+              "description": "A YC-backed LLM observability platform and AI gateway; pricing is Hobby free (10K requests/mo), Pro $79/mo, Team $799/mo, Enterprise custom; sits as a proxy between app and LLM APIs",
+              "href": null
+            },
+            {
+              "name": "Portkey",
+              "incumbent": false,
+              "description": "An AI gateway and LLM observability platform (acquired by Palo Alto Networks, now PRISMA AIRS); Developer free (10K logs), Production $49/mo (100K logs + $9 per extra 100K), Enterprise custom ($2K-$10K+/mo); already offers virtual-key budgets and per-team rate limits",
+              "href": null
+            },
+            {
+              "name": "LiteLLM",
+              "incumbent": true,
+              "description": "The MIT-licensed open-source AI gateway (140+ providers, one OpenAI-compatible API); free to self-host; Enterprise Basic ~$250/mo adds SSO, Prometheus, JWT, guardrails; Enterprise Premium ~$2,500/mo adds priority support; already ships virtual keys, per-user/team budgets, and spend tracking",
+              "href": null
+            },
+            {
+              "name": "Laminar",
+              "incumbent": false,
+              "description": "Open-source (Apache 2.0, YC S24) agent-native observability priced by data volume; Free 1GB, Starter $30/mo (3GB), Pro $150/mo (10GB), Enterprise custom; purpose-built for AI agents with 20x trace compression and Signals that cluster failures across runs",
+              "href": null
+            },
+            {
+              "name": "Datadog",
+              "incumbent": false,
+              "description": "Agent Observability (formerly LLM Observability) prices Free (40K LLM spans/mo), Pro $160/mo annual (100K spans) + $3.50 per 10K extra; only LLM spans billed (tool, retrieval, agent spans free); this is where mid-market and enterprise teams already paying Datadog will add agent cost tracking",
+              "href": null
+            },
+            {
+              "name": "CloudZero",
+              "incumbent": false,
+              "description": "The AI/cloud FinOps incumbent for mid-market and enterprise; sold through enterprise contracts, median buyer pays ~$78,400/year, raised $56M Series C in May 2025, manages $14B+ in customer spend; AI Hub tracks cost per model/customer/feature but is intelligence not enforcement",
+              "href": null
+            },
+            {
+              "name": "LangSmith",
+              "incumbent": false,
+              "description": "The closed-source observability tool from LangChain; Developer free (5K traces, 1 user), Plus $39 per user/month (10K traces), Enterprise custom; seat-based pricing targets LangChain/LangGraph shops",
+              "href": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "asking",
+        "kicker": "People are asking for it",
+        "data": {
+          "quotes": [
+            {
+              "quote": "\u201cLast month an agent entered a recursive retry loop that burned 200 API calls in 4 minutes. It was attempting to fix a syntax error by re-invoking the same broken bash command over and over.\u201d",
+              "source": "X \u00b7 @deeepakbagada",
+              "href": null,
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cAn agent stuck in a loop doesn't know it's stuck - it feels productive right up until it's burned an hour.\u201d",
+              "source": "X \u00b7 @0xCodio",
+              "href": null,
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cAI agents can rack up huge bills! One user got a $19k charge from running them 24/7 with OpenAI. Be extremely careful about agent runtime and quantity to avoid unexpected costs. You will get soaked badly if you're new to this.\u201d",
+              "source": "X \u00b7 @quantlabs",
+              "href": null,
+              "platform": "REDDIT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "verdict",
+        "kicker": "The verdict",
+        "data": {
+          "title": "Should you build this?",
+          "build": [
+            "The pain is on tape: operators posting 200 API calls in 4 minutes stuck in a retry loop, a $19,000 OpenAI surprise bill, and overnight runs that cost $200 one night and $7 the next for the same output.",
+            "The timing is one-sided: AWS wrote cost-per-task-completion into the Well-Architected Agentic AI Lens on June 10, 2026, Uber burned its full 2026 AI budget by April, and IDC's July 2026 survey found 67% of enterprises overran agent budgets by more than 10%.",
+            "The incumbent prices leave a real slot: Portkey Production is $49/mo, Helicone Pro is $79, Datadog Pro is $160, and CloudZero's median contract is $78,400/year, so a $149 to $1,499 hosted proxy with per-task budgets fits the gap between a logs tool and an enterprise FinOps contract.",
+            "The first-100-customers motion is cheap and known: two subreddits (r/AI_Agents 1 and r/AIToolsPerformance with 6,900 members tracking cost per successful task) plus a free seven-day Agent Spend Audit replaces a paid acquisition budget that would not work anyway."
+          ],
+          "notBuild": [
+            "Six incumbents can match the feature in a sprint: LiteLLM, Portkey, Langfuse, Helicone, Laminar, and Datadog all ship budgets or spend tracking today, and LiteLLM is free to self-host with 140+ providers.",
+            "The exact wedge terms (ai agent cost tracking, cost per agent task, llm budget control) return zero searches per month on Google Ads, which kills paid acquisition and forces a slow manual grind for every customer.",
+            "The locked SMB ICP does not buy yet: FirstPageSage shows SMB agentic adoption at 13% with only 5% fully deployed and 79% still in experimentation; the real buyer is a few thousand AI-native teams and mid-market ops leads, not tens of thousands of small businesses.",
+            "The ceiling decomposes to $3M-$6M ARR before Datadog closes from above and CloudZero closes from below, which is a lifestyle outcome, not the $10M ARR the thesis promises.",
+            "POTENTIAL PIVOT",
+            "Move the ICP from classic SMBs to small AI-native teams and mid-market ops leads with $5K-$50K/mo agent spend. Lead with a free seven-day Agent Spend Audit (one-page PDF) sold in Reddit and X comments, not a self-serve SaaS. Keep the per-task budget enforcement wedge and the price ladder."
+          ]
+        }
+      },
+      {
+        "id": "founderFit",
+        "kicker": "Founder fit",
+        "data": {
+          "title": "Not every good idea is good for you.",
+          "bestFor": [
+            "Solo engineers experienced with LLM gateways, tracing, and usage metering who...",
+            "Teams pairing backend or platform engineers with a founder skilled in B2B Saa...",
+            "Founders without backend integration experience or access to agent-heavy desi...",
+            "Teams focused on dashboards without a plan to prove savings or protect workfl..."
+          ],
+          "persona": [
+            "An LLMOps or platform engineer who has already shipped agents in production (at a Series A to Series C AI-native startup or inside a mid-market ops team) and knows the retry-loop pain by hand. They need the willingness to sit in Reddit and X threads every day for six months, write the one-page audit PDF themselves, and run every demo. The AI leverage matters on the build (two weeks instead of two quarters); it does not help in the comments."
+          ],
+          "demands": [
+            {
+              "label": "Distribution",
+              "score": 10.0
+            },
+            {
+              "label": "Domain depth",
+              "score": 9.0
+            },
+            {
+              "label": "Sales",
+              "score": 8.0
+            },
+            {
+              "label": "Build",
+              "score": 4.0
+            },
+            {
+              "label": "Capital",
+              "score": 3.0
+            }
+          ],
+          "reality": [
+            {
+              "label": "FIRST REVENUE",
+              "value": "60-90 days"
+            },
+            {
+              "label": "CAPITAL IN",
+              "value": "$10K-$30K"
+            },
+            {
+              "label": "DIFFICULTY",
+              "value": "Moderate"
+            }
+          ]
+        }
+      },
+      {
+        "id": "valueLadder",
+        "kicker": "What you'd sell",
+        "data": {
+          "title": "The value ladder.",
+          "intro": [
+            "Lead with a free seven-day Agent Spend Audit. Starter at $149/mo covers 100K completed tasks, per-task budget caps, model fallback, Slack alerts. Team at $499/mo covers 500K tasks, human-approval policies, cost-per-task dashboards per workflow, SSO."
+          ],
+          "steps": [
+            {
+              "step": 1,
+              "tier": "LEAD MAGNET",
+              "name": "Agent Spend Audit",
+              "price": "Free",
+              "description": "Seven-day proxy install, one-page PDF: cost per completed task, retry loop count, top three waste sources, estimated monthly savings."
+            },
+            {
+              "step": 2,
+              "tier": "FRONTEND",
+              "name": "Starter",
+              "price": "$149/mo",
+              "description": "100K completed tasks, per-task budget caps, model fallback, Slack alerts, one workflow. Priced between Portkey Production ($49) and Datadog Pro ($160)."
+            },
+            {
+              "step": 3,
+              "tier": "CORE",
+              "name": "Team",
+              "price": "$499/mo",
+              "description": "500K tasks, human-approval policies, per-workflow cost dashboards, SSO, up to five workflows. Below Helicone Team ($799)."
+            },
+            {
+              "step": 4,
+              "tier": "CONTINUITY",
+              "name": "Scale",
+              "price": "$1,499/mo",
+              "description": ""
+            }
+          ]
+        }
+      },
+      {
+        "id": "plan",
+        "kicker": "The plan",
+        "data": {
+          "title": "If you started today.",
+          "subtitle": "First up.",
+          "paragraphs": [
+            "The exact wedge terms (ai agent cost tracking, cost per agent task, llm budget control) get zero searches per month. The parent category terms (llm observability 590/mo, ai agent observability 320/mo at $60 CPC) already belong to Langfuse, Helicone, Portkey, and Datadog, who outspend any new entrant on paid. Google is not the first channel. The first 100 customers get bought by hand, in the comments of threads where operators are already describing the exact pain in the exact words."
+          ]
+        }
+      },
+      {
+        "id": "napkin",
+        "kicker": "Napkin math",
+        "data": {
+          "title": "Year one, on a napkin.",
+          "intro": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.",
+          "rows": [
+            {
+              "label": "r/AI_Agents + r/AIToolsPerformance members",
+              "value": "~9,200"
+            },
+            {
+              "label": "Weekly comment replies to live cost threads",
+              "value": "40"
+            },
+            {
+              "label": "Audit bookings per week (assumption, 25%)",
+              "value": "10"
+            },
+            {
+              "label": "Audits delivered in year one",
+              "value": "~500"
+            },
+            {
+              "label": "Audit to Starter conversion (assumption)",
+              "value": "16%"
+            },
+            {
+              "label": "Starter customers added year one",
+              "value": "80"
+            },
+            {
+              "label": "Starter MRR at $149/mo",
+              "value": "$11,920"
+            },
+            {
+              "label": "Team upsell rate from Starter (assumption)",
+              "value": "15%"
+            },
+            {
+              "label": "Team customers added year one",
+              "value": "12"
+            },
+            {
+              "label": "Team MRR at $499/mo",
+              "value": "$5,988"
+            },
+            {
+              "label": "Blended MRR exiting year one",
+              "value": "~$18K"
+            },
+            {
+              "label": "Year one ARR (ramped, not exit)",
+              "value": "~$144K"
+            }
+          ],
+          "summary": [
+            "Year one hits $144K ARR if the Reddit + X comment motion books 10 audits a week and converts a quarter of them. Everything after the audit funnel is an assumption until the first 30 customers run."
+          ],
+          "ceiling": "$3M-$6M ARR"
+        }
+      }
+    ],
+    "popups": [],
+    "inlineLinks": [],
+    "linkCount": 0,
+    "sourceUrl": "https://www.ideabrowser.com/hub/ideas/today"
+  },
   "rawText": "Home\nBrowse\nAgents\nMy Stuff\nAbout me\nAccelerator\nProjects\nExample project\nConnect your AI\nTool deals\nAbout Ideabrowser\nHelp & training\n\u00a9 2026 Ideabrowser\n\u00b7\nLegal\nToggle Sidebar\nIdea of the Day\nBuild Gallery\n1\nGo Pro\nS\n\nIDEA OF THE DAY\u00b7NOV 3, 2026\n\nPrevious\nBrowse all\nSaaS tool that tracks cost-per-completed-task for AI agent workflows\n\nIB Index 6.8\n\u00b7\nB2B \u00b7 SaaS\n\u00b7\n$3M-$6M ARR\n\nCONCEPT MOCKUP\n\nCOMMUNITY SIZE\n\n6.9K members\n\nr/AIToolsPerformance tracks cost per successful task\n\nWHAT IT DEMANDS\n\nDistribution\nDomain depth\nSales\nBuild\nCapital\n\nTHE REALITY\n\nFIRST REVENUE\n60-90 days\nCAPITAL IN\n$10K-$30K\nDIFFICULTY\nModerate\n\nUP AGAINST\n\nLiteLLM\n\nThe MIT-licensed open-source AI gateway (140+ providers, one OpenAI-compatible API); free to self-host; Enter\u2026\n\n+ 7 more mapped\n\nTHE PITCH\n\nAn operator posts the receipt: an agent made 200 API calls in four minutes stuck in a retry loop, running the same broken bash command over and over. Another wakes up to a $19,000 OpenAI bill. A third says an overnight run cost $200 one night and $7 the next for the same output. Jason Lemkin at SaaStr tells teams they treated API calls like free water and got an estimate it might cost $240,000 a year. In July 2026, IDC found 67% of enterprises overran their AI agent budget by more than 10% in the past 12 months, with average monthly agent spend at $117,558. AWS wrote cost-per-task-completion into the Well-Architected Agentic AI Len\u2026\n\nWHO IT'S FOR\n\nSMBs running recurring AI agent workflows in production (support triage, lead enrichment, RPA-style back-office jobs), not frontier labs or AI-native startups.\n\nTHE GAP\n\nSix well-funded tools already own this buyer, and the wedge is one sprint away from any of them\n\nWHY NOW\n\nAWS wrote the spec in June 2026\n\nAT A GLANCE\n\nCommunity size\n6.9K members\nPricing\nFree to $1,499/mo\nYear one\n$120K-$180K\nCeiling\n$3M-$6M ARR\n\nWHAT YOU SELL\n\nTeam$499/mo\n\nBIGGEST RISK\n\nIncumbents close the gap in a sprint. LiteLLM, Portkey, Langfuse, Helicone, Laminar, and Datadog already ship budgets and spend tracking by key, team, or trace\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nAWS wrote the spec in June 2026\n\nThree things happened this year that did not exist in 2025. First, AWS published the Well-Architected Agentic AI Lens on June 10, 2026 and wrote cost-per-task-completion into the spec as the Level 3 target KPI, with hierarchical per-cycle, per-task, per-day budget limits as a required practice. When AWS codifies a metric, every architect and auditor starts asking for it the next week. Second, Uber burned through its entire 2026 AI budget by April, four months into the year, after rolling out Claude Code to 5,000 engineers in December 2025. The CTO's quote traveled: power users ran $500 to $2,000 a month, Uber capped it at $1,500, and Walmart, Amazon, and Cisco shipped similar caps the same quarter. Third, Gartner's 2026 Hype Cycle predicted 40%+ of agentic AI projects would be canceled by 2027, naming escalating costs as the first of three causes. That is the backdrop every CFO signing an AI PO now reads.\n\nThe data under the headlines is harder. IDC's July 2026 survey found 67% of enterprises overran their AI agent budget by more than 10% in the past 12 months, with average monthly agent spend at $117,558. The FinOps Foundation's State of FinOps 2026 (1,192 orgs, $83B in cloud spend) found 98% of FinOps teams now manage AI spend, up from 31% two years ago. A review of 127 enterprise agentic projects clocked 73% over budget, averaging $2.3M in unplanned cost per project. Gartner finds agents burn 5-30x more tokens per task than a chatbot because they loop, retry, and resend full context. Token prices fell 67% in a year and consumption still outran the savings.\n\nSOURCES\nAWS Well-Architected Agentic AI Lens\nFortune / The Information\nGartner\nIDC\nSee the full timing case\n\nMARKET SNAPSHOT\n\nThe receipts.\n\nPAIN\n\n8/10 SEVERITY\n\n\u201cThis has been wrecking my head lately so curious what others are doing. We're building with LLMs and the bills are all over the place. One decent week\u201d\n\nr/SaasDevelopers\n\n\u201cMy autonomous AI agent has earned $0 in 48 days and still owes me $155\u201d\n\nr/AI_Agents\n\n\u201cAPI calls used to be like free water. \"We've been using it like free water,\" says Jason Lemkin. \"We got one estimate it might be as much as $240,000 a year.\" So what do the agents do? Work around it.\u201d\n\nX \u00b7 @saastr\n\nAll 9 receipts, and where these people gather\n\nWHITESPACE\n\nMARKET GAP\n\nSix well-funded tools already own this buyer, and the wedge is one sprint away from any of them\n\nUnderstand the opening\n\nTHE WEDGE\n\nGeneric API gateways (LiteLLM, Portkey) and LLM observability tools (Langfuse, Helicone, Laminar) measure tokens, latency, and raw spend. This tool measures cost per completed business task and enforces budgets at that unit, which is the number an SMB owner actually cares about.\n\nThe incumbent to beat: LiteLLM\n\nPROOF & SIGNALS\n\nFirstPageSage reports SMB (50-499 employees) agentic AI adoption at 13% in 2026, up 86% YoY from 7% in 2025; only 5% of SMBs are fully deployed and 79% are still in experimentation\n\nFIRSTPAGESAGE AGENTIC AI ADOPTION STATISTICS 2026\n\nUpwork Q1 2026 survey of 195 SMB leaders (10-99 employees) found uncertainty around ROI is the second-biggest AI adoption barrier at 24%, behind only data security at 27%\n\nUPWORK RESEARCH INSTITUTE Q1 2026\n\nThe 2026 State of AI Agents Report explicitly recommends ROI calculation focus on business outcomes, not token costs, which matches the cost-per-completed-task wedge\n\n2026 STATE OF AI AGENTS REPORT\n\n\"Cost per completed task\" is now defined as a standard KPI across FinOps and vendor playbooks in 2026 (Finout, CloudZero, Keito, Agenticwire); every incumbent observability tool already reports cost per trace, so the wedge of \"cost per completed business task\" is a naming/UX layer, not a new metric incumbents cannot build\n\nFINOUT\nExplore the evidence\n\nWHO YOU'RE UP AGAINST\n\n8 PLAYERS\n\nLangfuse\n\nOpen-source LLM observability acquired by ClickHouse in January 2026; prices Hobby free (50K units), Core $29/mo (100K units), Pro $199/mo, Enterprise $2,499/mo, billed by units = traces + observations + scores\n\nHelicone\n\nA YC-backed LLM observability platform and AI gateway; pricing is Hobby free (10K requests/mo), Pro $79/mo, Team $799/mo, Enterprise custom; sits as a proxy between app and LLM APIs\n\nPortkey\n\nAn AI gateway and LLM observability platform (acquired by Palo Alto Networks, now PRISMA AIRS); Developer free (10K logs), Production $49/mo (100K logs + $9 per extra 100K), Enterprise custom ($2K-$10K+/mo); already offers virtual-key budgets and per-team rate limits\n\nLiteLLM\n\nINCUMBENT\n\nThe MIT-licensed open-source AI gateway (140+ providers, one OpenAI-compatible API); free to self-host; Enterprise Basic ~$250/mo adds SSO, Prometheus, JWT, guardrails; Enterprise Premium ~$2,500/mo adds priority support; already ships virtual keys, per-user/team budgets, and spend tracking\n\nLaminar\n\nOpen-source (Apache 2.0, YC S24) agent-native observability priced by data volume; Free 1GB, Starter $30/mo (3GB), Pro $150/mo (10GB), Enterprise custom; purpose-built for AI agents with 20x trace compression and Signals that cluster failures across runs\n\nDatadog\n\nAgent Observability (formerly LLM Observability) prices Free (40K LLM spans/mo), Pro $160/mo annual (100K spans) + $3.50 per 10K extra; only LLM spans billed (tool, retrieval, agent spans free); this is where mid-market and enterprise teams already paying Datadog will add agent cost tracking\n\nCloudZero\n\nThe AI/cloud FinOps incumbent for mid-market and enterprise; sold through enterprise contracts, median buyer pays ~$78,400/year, raised $56M Series C in May 2025, manages $14B+ in customer spend; AI Hub tracks cost per model/customer/feature but is intelligence not enforcement\n\nLangSmith\n\nThe closed-source observability tool from LangChain; Developer free (5K traces, 1 user), Plus $39 per user/month (10K traces), Enterprise custom; seat-based pricing targets LangChain/LangGraph shops\n\nPEOPLE ARE ASKING FOR IT\n\nREDDIT\n\n\u201cLast month an agent entered a recursive retry loop that burned 200 API calls in 4 minutes. It was attempting to fix a syntax error by re-invoking the same broken bash command over and over.\u201d\n\nX \u00b7 @deeepakbagada\n\n\u201cAn agent stuck in a loop doesn't know it's stuck - it feels productive right up until it's burned an hour.\u201d\n\nX \u00b7 @0xCodio\n\n\u201cAI agents can rack up huge bills! One user got a $19k charge from running them 24/7 with OpenAI. Be extremely careful about agent runtime and quantity to avoid unexpected costs. You will get soaked badly if you're new to this.\u201d\n\nX \u00b7 @quantlabs\n\nTHE VERDICT\n\nShould you build this?\n\nREASONS TO BUILD\n\nThe pain is on tape: operators posting 200 API calls in 4 minutes stuck in a retry loop, a $19,000 OpenAI surprise bill, and overnight runs that cost $200 one night and $7 the next for the same output.\nThe timing is one-sided: AWS wrote cost-per-task-completion into the Well-Architected Agentic AI Lens on June 10, 2026, Uber burned its full 2026 AI budget by April, and IDC's July 2026 survey found 67% of enterprises overran agent budgets by more than 10%.\nThe incumbent prices leave a real slot: Portkey Production is $49/mo, Helicone Pro is $79, Datadog Pro is $160, and CloudZero's median contract is $78,400/year, so a $149 to $1,499 hosted proxy with per-task budgets fits the gap between a logs tool and an enterprise FinOps contract.\nThe first-100-customers motion is cheap and known: two subreddits (r/AI_Agents 1 and r/AIToolsPerformance with 6,900 members tracking cost per successful task) plus a free seven-day Agent Spend Audit replaces a paid acquisition budget that would not work anyway.\n\nREASONS TO NOT BUILD\n\nSix incumbents can match the feature in a sprint: LiteLLM, Portkey, Langfuse, Helicone, Laminar, and Datadog all ship budgets or spend tracking today, and LiteLLM is free to self-host with 140+ providers.\nThe exact wedge terms (ai agent cost tracking, cost per agent task, llm budget control) return zero searches per month on Google Ads, which kills paid acquisition and forces a slow manual grind for every customer.\nThe locked SMB ICP does not buy yet: FirstPageSage shows SMB agentic adoption at 13% with only 5% fully deployed and 79% still in experimentation; the real buyer is a few thousand AI-native teams and mid-market ops leads, not tens of thousands of small businesses.\nThe ceiling decomposes to $3M-$6M ARR before Datadog closes from above and CloudZero closes from below, which is a lifestyle outcome, not the $10M ARR the thesis promises.\nRoast it with your agent\n\nPOTENTIAL PIVOT\n\nMove the ICP from classic SMBs to small AI-native teams and mid-market ops leads with $5K-$50K/mo agent spend. Lead with a free seven-day Agent Spend Audit (one-page PDF) sold in Reddit and X comments, not a self-serve SaaS. Keep the per-task budget enforcement wedge and the price ladder.\n\nRun this angle with your agent\n\nFOUNDER FIT\n\nNot every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo engineers experienced with LLM gateways, tracing, and usage metering who...\nTeams pairing backend or platform engineers with a founder skilled in B2B Saa...\nFounders without backend integration experience or access to agent-heavy desi...\nTeams focused on dashboards without a plan to prove savings or protect workfl...\n\nAn LLMOps or platform engineer who has already shipped agents in production (at a Series A to Series C AI-native startup or inside a mid-market ops team) and knows the retry-loop pain by hand. They need the willingness to sit in Reddit and X threads every day for six months, write the one-page audit PDF themselves, and run every demo. The AI leverage matters on the build (two weeks instead of two quarters); it does not help in the comments.\n\nWHAT IT DEMANDS\n\nDistribution\n10\nDomain depth\n9\nSales\n8\nBuild\n4\nCapital\n3\n\nTHE REALITY\n\nFIRST REVENUE\n\n60-90 days\n\nCAPITAL IN\n\n$10K-$30K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card\n\nWHAT YOU'D SELL\n\nThe value ladder.\n\nLead with a free seven-day Agent Spend Audit. Starter at $149/mo covers 100K completed tasks, per-task budget caps, model fallback, Slack alerts. Team at $499/mo covers 500K tasks, human-approval policies, cost-per-task dashboards per workflow, SSO.\n\n1\n\nLEAD MAGNET\n\nAgent Spend Audit(Free)\n\nSeven-day proxy install, one-page PDF: cost per completed task, retry loop count, top three waste sources, estimated monthly savings.\n\n2\n\nFRONTEND\n\nStarter($149/mo)\n\n100K completed tasks, per-task budget caps, model fallback, Slack alerts, one workflow. Priced between Portkey Production ($49) and Datadog Pro ($160).\n\n3\n\nCORE\n\nTeam($499/mo)\n\n500K tasks, human-approval policies, per-workflow cost dashboards, SSO, up to five workflows. Below Helicone Team ($799).\n\n4\n\nCONTINUITY\n\nScale($1,499/mo)\n\nView the full value ladder\n\nTHE PLAN\n\nIf you started today.\nFirst up.\n\nThe exact wedge terms (ai agent cost tracking, cost per agent task, llm budget control) get zero searches per month. The parent category terms (llm observability 590/mo, ai agent observability 320/mo at $60 CPC) already belong to Langfuse, Helicone, Portkey, and Datadog, who outspend any new entrant on paid. Google is not the first channel. The first 100 customers get bought by hand, in the comments of threads where operators are already describing the exact pain in the exact words.\n\nSee the detailed plan\nYear one, on a napkin.\nNAPKIN MATH\n\nWhat the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nr/AI_Agents + r/AIToolsPerformance members\n~9,200\nWeekly comment replies to live cost threads\n40\nAudit bookings per week (assumption, 25%)\n10\nAudits delivered in year one\n~500\nAudit to Starter conversion (assumption)\n16%\nStarter customers added year one\n80\nStarter MRR at $149/mo\n$11,920\nTeam upsell rate from Starter (assumption)\n15%\nTeam customers added year one\n12\nTeam MRR at $499/mo\n$5,988\nBlended MRR exiting year one\n~$18K\nYear one ARR (ramped, not exit)\n~$144K\n\nYear one hits $144K ARR if the Reddit + X comment motion books 10 audits a week and converts a quarter of them. Everything after the audit funnel is an assumption until the first 30 customers run.\n\nTHE CEILING IF IT COMPOUNDS\n$3M-$6M ARR\nRun the model on your numbers\n\nTHE AGENTS\n\nJam on it with your agent.\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCodex\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cHow would \"SaaS tool that tracks cost-per-completed-task\u2026\" beat LiteLLM?\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\nFinish personalizing your Ideabrowser\nSkip for now\n1 OF 2\nWhat stage best explains where you're at?\n\nPick up to 2.\n\nExploring and getting inspired\nHere to see what's out there\nLeveling up at work\nUsing ideas and AI to get ahead in my job\nReady to build\nI just need the right idea\nI have an idea\nHaven't started building it yet\nBuilding an idea\nEarly days, no revenue yet\nGot my first customers\nMaking money, under $100K a year\nGrowing a business\nOver $100K a year, ready to scale\nAdd a note about your situation\n(optional)\nPress Enter\nContinue",
   "status": "not_started",
   "notes": "",
