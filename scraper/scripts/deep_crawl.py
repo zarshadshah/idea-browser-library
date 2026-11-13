@@ -1506,6 +1506,7 @@ POPUP_DENYLIST = re.compile(
     r"problem|reply|upgrade|go pro|add to project|build this idea|with your agent|show more agents|get your card|"
     r"copy|previous|browse all|next|skip for now|continue|send|hide this widget|claude|codex|cursor|gemini|grok|hermes|"
     r"sign out|toggle sidebar|connect your ai|roast|run the model|keep reading|see the full timing case|"
+    r"^legal$|build gallery|start here|master money model|concept mockup|"
     r"explore the evidence|understand the opening|see the detailed plan|view the full value ladder|receipts)",
     re.I,
 )
@@ -1538,16 +1539,21 @@ def crawl_discovered_popups(crawler: Crawler, base_url: str, base_text: str, bas
         cls = item.get("cls") or ""
         if "cursor-pointer" not in cls and "group" not in cls:
             continue
-        candidates.append(text)
+        candidates.append((text, item.get("tag") or "button"))
     candidates = candidates[:max_popups]
-    log.append({"step": "popup_discovery", "note": f"{len(candidates)} candidate triggers", "candidates": candidates})
+    log.append({"step": "popup_discovery", "note": f"{len(candidates)} candidate triggers", "candidates": [c[0] for c in candidates]})
 
     results = {}
-    for text in candidates:
-        def open_one(text=text):
+    for text, tag in candidates:
+        def open_one(text=text, tag=tag):
             open_idea_page(page, base_url, log)
-            first_line = text.split(" ")[0:6]
-            loc = page.locator("button", has_text=" ".join(first_line))
+            # 2026-11-13 run: card triggers like "THE WEDGE …" / "WHAT IT
+            # DEMANDS …" were found but weren't <button>s, so look them up by
+            # the tag the inventory saw (falling back to any clickable).
+            snippet = " ".join(text.split(" ")[0:4])
+            loc = page.locator(tag, has_text=snippet)
+            if loc.count() == 0:
+                loc = page.locator("button, [role=button], [class*='cursor-pointer']", has_text=snippet)
             target = None
             for i in range(loc.count()):
                 if loc.nth(i).is_visible():

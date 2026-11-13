@@ -995,30 +995,7 @@
         }
       }
     ],
-    "popups": [
-      {
-        "label": "Legal",
-        "title": null,
-        "blocks": [
-          {
-            "type": "p",
-            "text": "Terms"
-          },
-          {
-            "type": "p",
-            "text": "Privacy"
-          },
-          {
-            "type": "p",
-            "text": "Data protection"
-          },
-          {
-            "type": "p",
-            "text": "Disclaimer"
-          }
-        ]
-      }
-    ],
+    "popups": [],
     "inlineLinks": [
       {
         "text": "CrewProof",
