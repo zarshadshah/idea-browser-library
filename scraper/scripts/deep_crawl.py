@@ -2949,6 +2949,16 @@ def main():
                 if (days_back > 0 or explicit_date) and not explicit_url:
                     try:
                         target_url = find_idea_by_neighbours(page, today, log)
+                        # Confirmed 2026-11-13: on the Free plan a past idea
+                        # shows only "PRO REPORT ... This was the free Idea of
+                        # the Day on November 11. The free window has closed.
+                        # Go Pro to unlock". Don't save that teaser as an idea.
+                        body_now = page.inner_text("body", timeout=10000)
+                        if "free window has closed" in body_now.lower() or "go pro to unlock" in body_now.lower():
+                            raise Exception(
+                                f"{date_str}'s idea is locked behind ideabrowser Pro now that its free day has passed "
+                                f"({target_url}). Missed days can only be recovered on a Pro account."
+                            )
                     except Exception:
                         # Print the evidence into the Actions log before failing.
                         print("===== BACKFILL DEBUG LOG =====")
