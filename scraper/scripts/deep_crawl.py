@@ -646,7 +646,7 @@ def page_idea_date(page):
     # ("Since August 1, 2025 ..."): start after the top nav's BROWSE ALL.
     if "BROWSE ALL" in up:
         up = up[up.index("BROWSE ALL"):]
-    m = re.search(r"\b(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[A-Z]*\.?\s+(\d{1,2}),\s+(20\d\d)", text.upper())
+    m = re.search(r"\b(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[A-Z]*\.?\s+(\d{1,2}),\s+(20\d\d)", up[:1500])
     if not m:
         return None
     try:
@@ -655,21 +655,64 @@ def page_idea_date(page):
         return None
 
 
+def _backfill_snapshot(page, n, log):
+    """What the page looked like at backfill step n — header text, URL, the
+    'Previous' control's markup and the internal links — plus a screenshot
+    (uploaded as a workflow artifact). Written so a failed backfill can be
+    fixed from real evidence."""
+    info = {"step": "backfill_snapshot", "n": n, "url": page.url}
+    try:
+        body = page.inner_text("body", timeout=5000)
+        i = body.find("Browse all")
+        info["header_text"] = body[max(0, i):max(0, i) + 400] if i >= 0 else body[:400]
+    except Exception as e:
+        info["header_text_error"] = str(e)
+    try:
+        info["previous_controls"] = page.evaluate(
+            """() => [...document.querySelectorAll('a,button')]
+                .filter(e => /previous|prev|next/i.test((e.innerText || e.getAttribute('aria-label') || '')))
+                .slice(0, 6).map(e => e.outerHTML.slice(0, 300))"""
+        )
+        info["internal_links"] = page.evaluate(
+            """() => [...document.querySelectorAll('a[href^="/"]')]
+                .map(a => (a.innerText || '').trim().replace(/\\s+/g, ' ').slice(0, 60) + ' -> ' + a.getAttribute('href'))
+                .slice(0, 60)"""
+        )
+    except Exception as e:
+        info["dom_error"] = str(e)
+    if n <= 2:
+        try:
+            page.screenshot(path=str(LIBRARY_DIR / f"backfill_step{n}_debug_screenshot.png"))
+        except Exception:
+            pass
+    log.append(info)
+
+
 def go_back_to_date(page, target: date, log, max_steps: int = 14) -> str:
     """Backfill by DATE: clicks 'Previous' until the page shows `target`'s
     idea, reading the date printed on the page each step — so it doesn't
-    matter what time of day (or which timezone) the run happens in."""
+    matter what time of day (or which timezone) the run happens in.
+    Stops early (with a full snapshot in the log) if a click doesn't move
+    the page to an earlier idea, instead of clicking blindly 14 times."""
+    last = None
     for step in range(max_steps + 1):
         shown = page_idea_date(page)
+        _backfill_snapshot(page, step, log)
         log.append({"step": "backfill_previous", "note": f"page shows {shown}, want {target}, url {page.url}"})
         if shown == target:
             return page.url
         if shown is not None and shown < target:
             raise Exception(f"Went past {target} (page shows {shown}) - that day may not exist on the site")
+        if step > 0 and (shown, page.url) == last:
+            raise Exception(f"'Previous' did not move to an earlier idea (still showing {shown} at {page.url})")
+        if shown is None and step >= 2:
+            raise Exception("Could not read the idea's date from the page after 2 clicks")
+        last = (shown, page.url)
         if step == max_steps:
             break
         go_back_days(page, 1, log)
     raise Exception(f"Could not reach {target} within {max_steps} 'Previous' clicks")
+
 
 def get_visible_text(page):
     return page.inner_text("body")
@@ -2756,7 +2799,13 @@ def main():
             if cleared:
                 dismiss_splash(page, log)
                 if (days_back > 0 or explicit_date) and not explicit_url:
-                    target_url = go_back_to_date(page, today, log)
+                    try:
+                        target_url = go_back_to_date(page, today, log)
+                    except Exception:
+                        # Print the evidence into the Actions log before failing.
+                        print("===== BACKFILL DEBUG LOG =====")
+                        print(json.dumps([e for e in log if str(e.get("step", "")).startswith("backfill")], indent=2, default=str)[:20000])
+                        raise
                     record["source_url"] = target_url
                     if target_url.rstrip("/") == URL.rstrip("/"):
                         log.append({"step": "backfill_previous", "error": "URL did not change after 'Previous' - subpage crawling would return to TODAY's idea, so only the main page will be captured."})
