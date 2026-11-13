@@ -235,6 +235,731 @@
   "painScore": 6,
   "timingScore": 5,
   "layoutDetected": "new",
+  "siteView": {
+    "version": "v2",
+    "dateLabel": null,
+    "title": "Your very own international school",
+    "ibIndex": "5.5",
+    "tags": [],
+    "painSeverity": "6",
+    "hero": [
+      {
+        "label": "THE IDEA",
+        "lines": [
+          "A proven English course creator sells $200K a year on Kajabi or Udemy, and roughly two-thirds of global e-learning demand sits outside North America. The tools they can buy today stop at the words. HeyGen dubs the video for $29 to $330 per month. Rask does the same for $60 to $750. Kajabi ships native dubbing in 100+ languages on its $249 and $499 plans. None of them find the Brazilian buyer, run the Portuguese ads, answer the WhatsApp question at 10pm, or handle the tax. So the creator ships an English course to an English audience and leaves the rest of the world on the table.",
+          "This idea sells the finished sale in-country, not the translation step. One stack pairs the creator with a vetted local operator (translator, marketer, support), runs one checkout, splits the money automatically, and charges only when a new international sale happens. The creator approves each market with one click, keeps 70% of revenue that did not exist before, and never hires a Brazilian marketer at 11pm."
+        ],
+        "prose": true
+      },
+      {
+        "label": "THE CUSTOMER",
+        "lines": [
+          "Established Online Course Creators On Kajabi Or Teachable Who Already\u2026",
+          "MARKET",
+          "Marketplace",
+          "REVENUE CEILING",
+          "$2M-$4M ARR",
+          "COMPETITION",
+          "HeyGen"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "MARKET",
+            "value": "Marketplace"
+          },
+          {
+            "label": "REVENUE CEILING",
+            "value": "$2M-$4M ARR"
+          },
+          {
+            "label": "COMPETITION",
+            "value": "HeyGen"
+          }
+        ],
+        "lead": "Established Online Course Creators On Kajabi Or Teachable Who Already\u2026"
+      },
+      {
+        "label": "HEYGEN ARR",
+        "lines": [
+          "$200M+",
+          "AI video translation, doubled in 8 months"
+        ],
+        "prose": false
+      },
+      {
+        "label": "PAIN",
+        "lines": [
+          "6",
+          "/10 severity",
+          "X and 1 more feel it"
+        ],
+        "prose": false
+      },
+      {
+        "label": "TIMING",
+        "lines": [
+          "5",
+          "/10",
+          "why the window is open"
+        ],
+        "prose": false
+      },
+      {
+        "label": "YEAR 1, DONE RIGHT",
+        "lines": [
+          "$60K-$120K",
+          "ceiling $2M-$4M ARR"
+        ],
+        "prose": false
+      },
+      {
+        "label": "AT A GLANCE",
+        "lines": [
+          "HEYGEN ARR",
+          "$200M+",
+          "PRICING",
+          "$1M-$10M",
+          "DIFFICULTY",
+          "High",
+          "UP AGAINST",
+          "HeyGen"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "HEYGEN ARR",
+            "value": "$200M+"
+          },
+          {
+            "label": "PRICING",
+            "value": "$1M-$10M"
+          },
+          {
+            "label": "DIFFICULTY",
+            "value": "High"
+          },
+          {
+            "label": "UP AGAINST",
+            "value": "HeyGen"
+          }
+        ]
+      }
+    ],
+    "heroMore": {
+      "label": "Keep reading",
+      "title": "The full idea.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A founder starts by picking one country and one language, not five. Brazil and Mexico are the sharpest first shots: Latin America e-learning was $30.51B in 2024 and grows at 9.3% a year, with Brazil holding 25%+ of the region. The founder recruits three in-country operators as 1099 contractors before recruiting the first creator, and vets them on a $200 paid trial (one 5-minute dubbed sample plus one landing-page rewrite). Then the founder does outbound to named instructors on Udemy, Kajabi Hero and Teachable, offering a free International Revenue Audit: a one-page memo showing the top three countries by demand from the creator's own YouTube and Kajabi geo data, projected earnings, and a named local operator ready to run each one."
+        },
+        {
+          "type": "p",
+          "text": "The genuinely hard part is not the software. AI agents draft the audits, run the outbound and write the workflow code. The hard part is closing both sides of the trade. On one side, a proven US creator has to trust a stranger with 20% of their international revenue. On the other, a Brazilian growth marketer has to take a share deal instead of a $4,000/mo agency retainer. That is a two-sided sales business dressed as a marketplace, and it needs a founder who has already sold something to course creators (ran a course, worked at Kajabi or Teachable, ran a creator agency) and is comfortable running trust-based deals in two languages."
+        },
+        {
+          "type": "p",
+          "text": "The wedge customer is the Udemy or Kajabi instructor with 5,000 to 100,000 students on one English course who already sees non-English demand in their analytics and has publicly asked for a way to translate. Udemy's own community forum has multi-year threads where instructors with tens of thousands of students beg the platform for translation control they cannot get, and independent creators on X call the current AI dubbing stack 'almost scammy' at $50/mo. These are named, gathered people you can DM this week."
+        },
+        {
+          "type": "p",
+          "text": "The money is a free lead magnet, a $2,500 setup fee for the first market (60 days, one country) at a 30% rev share for 12 months, then a standing 20% platform take on each additional country the creator approves. A vetted operator pool pays $99/mo for private deal flow. Ten pilots plus their first year of international sales land around $80K to $150K in year one. Ceiling depends on operator supply and creator retention, not tech: with 40 active creators averaging three countries each, the honest ceiling is $2M to $4M ARR before an incumbent (HeyGen, Kajabi) is likely to add a 'local partner' tab and force this business to either specialize by vertical or move upmarket to publishers."
+        }
+      ]
+    },
+    "sections": [
+      {
+        "id": "whyNow",
+        "kicker": "Why now",
+        "data": {
+          "headline": "YouTube shipped multi-language audio to millions of creators on Sept 10, 2025",
+          "paragraphs": [
+            "Three things changed in the last twelve months, and all three point at the same customer. First, on September 10, 2025, YouTube rolled out multi-language audio to millions of creators after a two-year pilot with MrBeast, Mark Rober and Jamie Oliver. Pilot creators saw over 25% of their watch time come from viewers in the video's non-primary language, and Jamie Oliver's channel got a 3x view lift. Meta shipped an AI dubbing and lip-sync tool for Reels the month before. The distribution channels where course creators already live now expect a dubbed version, not an English original.",
+            "Second, the price of getting the words right collapsed. Traditional studio dubbing ran $50 to $200 per finished minute. AI dubbing in 2026 runs $1 to $10 per minute at the entry tier, and $0.55 to $2.40 per minute on creator plans. A 10-minute video that cost $500 to $2,000 to dub in a studio now costs $10 to $100. That is a 60 to 90% cut, and it happened in about 18 months."
+          ],
+          "sources": [
+            {
+              "label": "YouTube Blog",
+              "href": "https://blog.youtube/news-and-events/multi-language-audio/"
+            },
+            {
+              "label": "videodubbing.com",
+              "href": "https://videodubbing.com/blog/post/ai-dubbing-pricing-cost-guide-2026/"
+            },
+            {
+              "label": "Kajabi",
+              "href": "https://kajabi.com/updates/transcription-translation-ai-dubbing-enhancements"
+            },
+            {
+              "label": "Research and Markets via GlobeNewswire",
+              "href": "https://www.globenewswire.com/news-release/2025/10/21/3169985/0/en/Latin-America-E-Learning-Market-Research-Report-2025-2035.html"
+            }
+          ]
+        },
+        "more": {
+          "label": "See the full timing case",
+          "title": "The full timing case.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "AI dubbing collapsed to $1-10/min and Kajabi shipped native translation in Sept 2025, which makes the market ready for localization but also lets creators skip a partner entirely."
+            },
+            {
+              "type": "p",
+              "text": "Third, the course platforms stopped watching from the sidelines. Kajabi announced its largest ever product upgrade on September 16, 2025 and shipped native AI transcription, translation and dubbing in 100+ languages across Courses, Websites and Landing Pages by December 29, 2025. Translation is now a native Kajabi workflow, not a plug-in."
+            },
+            {
+              "type": "p",
+              "text": "The non-English demand is where the money is going. Latin America e-learning was $30.51B in 2024 and is projected at $52.1B by 2030, a 9.3% CAGR. Asia-Pacific e-learning is growing at roughly 20.9% a year. North America is about 35% of the global e-learning market, so roughly two-thirds of the world's course spend sits in non-English regions, and it is compounding faster than the English base."
+            },
+            {
+              "type": "h",
+              "text": "THE SIGNALS"
+            },
+            {
+              "type": "p",
+              "text": "Honest counter: every one of these tailwinds also makes pure DIY translation more attractive. Cheaper AI dubbing, native Kajabi dubbing and free YouTube multi-language audio all let a solo creator ship a Spanish or Portuguese version without splitting a dollar with a partner. The timing case is strong for translating a course; it is weaker for licensing a course."
+            },
+            {
+              "type": "p",
+              "text": "The real \"now\" for a partner network is the leftover work that AI does not touch: in-country checkout and tax, local ads and creator relationships, WhatsApp-first support, and the cultural rewrite that turns a translated line into one that sells. That work has not gotten cheaper."
+            },
+            {
+              "type": "p",
+              "text": "What would make \"now\" wrong: if YouTube's free auto-dub plus Kajabi's built-in translation are already \"good enough\" for the top 20% of creators to pocket 100% and skip a partner entirely. If that happens, this business exists only for the long tail that cannot self-serve, and the deal sizes shrink."
+            }
+          ]
+        }
+      },
+      {
+        "id": "marketSnapshot",
+        "kicker": "Market snapshot",
+        "data": {
+          "title": "The receipts.",
+          "painSeverity": "6",
+          "quotes": [
+            {
+              "quote": "\u201cI needed to translate a 13-minute video from English to Italian, because I want to show an interview to my father in our native language (and without him having to follow through the CC). All the services, from Eleven Labs, to HeyGen, to Synthesia are almost\u2026\u201d",
+              "source": "X \u00b7 @alessandro_a0",
+              "href": "https://x.com/alessandro_a0/status/2096336564871672138",
+              "platform": null
+            },
+            {
+              "quote": "\u201cI built ZastTranslate because I was tired of paying $50/month to dub my French YouTube videos into English. Rask AI, ElevenLabs, HeyGen, Murf, Speechify... they all work, but the bill adds up fast when you're an independent creator. So I spent 40+ hours\u2026\u201d",
+              "source": "X \u00b7 @zast57",
+              "href": "https://x.com/zast57/status/2025156432614527454",
+              "platform": null
+            },
+            {
+              "quote": "\u201ctranslation is not localization. a joke that lands in New York dies in Tokyo no matter how perfect the lip sync. congrats, now your ad is equally confusing in 12 languages.\u201d",
+              "source": "X \u00b7 @0xguich",
+              "href": "https://x.com/0xguich/status/2096117357009612900",
+              "platform": null
+            }
+          ],
+          "receiptsLabel": "All 6 receipts, and where these people gather"
+        }
+      },
+      {
+        "id": "whitespace",
+        "kicker": "Whitespace",
+        "data": {
+          "gap": "The map has five camps and none of them close the loop from English course to paid local student",
+          "wedge": [
+            "One stack that bundles translation plus a vetted local partner plus checkout plus royalty math. Rask does words only."
+          ],
+          "incumbent": {
+            "name": "HeyGen",
+            "href": "https://www.heygen.com/pricing"
+          },
+          "other": []
+        },
+        "more": {
+          "label": "Understand the opening",
+          "title": "The opening.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The competitive map for turning an English course into money in a new country has five camps, and every camp stops before the sale."
+            },
+            {
+              "type": "p",
+              "text": "The AI dubbing tools own the mind-share. HeyGen is the giant: 175+ languages, over 100,000 paying business customers, roughly $200M ARR. Rask AI is the runner-up: 130+ languages, voice cloning in 32, sold at $60 to $750 per month by dubbed-minute credits. Both sell the same job: turn English video into translated video. Neither sells the customer, the checkout, the support ticket, or the local marketing that decides if the course actually earns money in-country."
+            },
+            {
+              "type": "p",
+              "text": "The course hosts bolt on a translation feature and stop. Kajabi ships native transcripts, translations and dubbing (Wistia under the hood, 70+ languages) on its Growth ($249/mo) and Pro ($499/mo) plans, metered by AI credits, and the creator still has to duplicate the product per language by hand. Thinkific has no native translation at all; the official answer is duplicate the course and translate the copy yourself, or on the Plus plan run a second Thinkific site for each language. Weglot is the popular add-on that translates the storefront and funnel pages into 110+ languages, but it does not touch video and does not localize checkout or split payouts."
+            },
+            {
+              "type": "p",
+              "text": "The enterprise localization agencies handle the full stack but sell to L&D departments. SimulTrans, Stepes, Pangea, IKHYA and DTP Labs quote a 60-minute course per language at low four figures to five figures: per-word translation at $0.10 to $0.30, voice-over at multiple dollars per finished minute, plus engineering. The buyer is a corporate learning team on a project budget, not a solo creator on a rev share."
+            },
+            {
+              "type": "p",
+              "text": "Udemy is the closest thing to the pitched model and it is a warning, not a template. Udemy hosts 9,200+ native-language courses and does auto-translate captions, but it keeps 63% of marketplace sales and picks which courses get translated with no way for the instructor to request it. The two loudest complaints in the instructor forum (Phillip Burton at 79,000 students, the tech instructor asking for a subtitle tool) are exactly the pain a partner marketplace would solve, if the take rate stayed well under 63% and the creator picked the markets."
+            },
+            {
+              "type": "p",
+              "text": "The PLR (Private Label Rights) market is the DIY status quo for reselling someone else's course: courses sold on Janets and Gumroad starting at $10 to $200 with rebrand rights and no royalties back to the original author. This is the anti-model: one-time sale, no quality control, no creator upside. It exists because there is real demand to resell courses in new markets, and it is served badly."
+            },
+            {
+              "type": "p",
+              "text": "The honest gap: no named player packages the four pieces (translation + dubbing + in-country marketing + one-checkout royalty split) into a single deal a creator can approve with a click. That gap is real. What is unproven is whether creators will pay a partner 20% to fill it, or whether YouTube's free multi-language audio and Kajabi's built-in dubbing make them try DIY first."
+            },
+            {
+              "type": "p",
+              "text": "Your way in: One stack that bundles translation plus a vetted local partner plus checkout plus royalty math. Rask does words only."
+            },
+            {
+              "type": "h",
+              "text": "WHO\u2019S ALREADY IN THE MARKET"
+            }
+          ]
+        }
+      },
+      {
+        "id": "proof",
+        "kicker": "Proof & signals",
+        "data": {
+          "items": [
+            {
+              "text": "HeyGen, the leading AI video translation and avatar tool, hit an estimated $200M ARR by mid-2026, doubling from ~$95M in September 2025 and roughly $35M at end of 2024, on ~$74M raised.",
+              "source": "UPSTARTS MEDIA",
+              "href": "https://www.upstartsmedia.com/p/exclusive-heygen-200m-arr-without-burn"
+            },
+            {
+              "text": "HeyGen reports over 100,000 paying business customers and 31 million registered users across 239 countries by October 2025, up from 40,000 paying customers in mid-2024, showing real spend on video translation and multilingual creator content.",
+              "source": "CHATFOREST",
+              "href": "https://chatforest.com/reviews/heygen-ai-avatar-video-platform/"
+            },
+            {
+              "text": "Global e-learning market was valued at USD 369.7 billion in 2025 with a projected 7.65% CAGR to 2034; North America holds 35 percent of it, meaning roughly two-thirds of demand sits in non-English regions.",
+              "source": "IMARC GROUP",
+              "href": "https://www.imarcgroup.com/e-learning-market"
+            },
+            {
+              "text": "No named player runs a course-licensing marketplace where a proven English creator hands a course to a vetted in-country partner (translator + marketer + support) and splits royalties through one checkout. The category the brief targets does not yet have an incumbent; it sits between AI dubbing tools (Rask, HeyGen), course host add-ons (Kajabi native, Weglot), enterprise localization agencies (SimulTrans, Stepes), the Udemy revenue-share model, and PLR marketplaces.",
+              "source": "MARKET SCAN (THIS RUN)",
+              "href": null
+            }
+          ]
+        },
+        "more": {
+          "label": "Explore the evidence",
+          "title": "Proof & signals.",
+          "blocks": [
+            {
+              "type": "h",
+              "text": "THE HARD NUMBERS"
+            },
+            {
+              "type": "h",
+              "text": "WHAT THE RESEARCH SAYS"
+            },
+            {
+              "type": "p",
+              "text": "Emotional Frustration Signals"
+            },
+            {
+              "type": "p",
+              "text": "Time-Sensitive Needs"
+            },
+            {
+              "type": "p",
+              "text": "Systemic Barriers"
+            },
+            {
+              "type": "p",
+              "text": "Community Demand & Engagement"
+            },
+            {
+              "type": "p",
+              "text": "The demand for a Course Translation & Resale Platform is validated by a strong need for multilingual e-learning experiences and barriers faced by course creators in accessing global markets. Emotional frustrations arise from complexities in international licensing, while community platforms show active engagement and discussions around potential solutions. Despite market gaps and systemic barriers, technological advancements and strategic timing indicate a ripe opportunity for entry."
+            }
+          ]
+        }
+      },
+      {
+        "id": "competitors",
+        "kicker": "Who you're up against",
+        "data": {
+          "count": 8,
+          "players": [
+            {
+              "name": "Rask AI",
+              "incumbent": false,
+              "description": "The leading direct-to-creator AI dubbing tool: 130+ languages for translation, 32 for voice cloning, sold as a monthly minute-metered subscription.",
+              "href": "https://aitrendtool.com/tools/rask-ai"
+            },
+            {
+              "name": "HeyGen",
+              "incumbent": true,
+              "description": "The category leader in AI video translation with 175+ languages, over 100,000 paying business customers and ~$200M ARR.",
+              "href": "https://www.heygen.com/pricing"
+            },
+            {
+              "name": "Kajabi",
+              "incumbent": false,
+              "description": "Added native AI Transcripts, Translations and Dubbing (powered by Wistia, 70+ languages) directly inside the course editor, but AI transcription and translation are Pro-plan only ($499/mo) and dubbing is metered by AI credits that reset monthly.",
+              "href": "https://kajabi.com/updates/transcription-translation-ai-dubbing-enhancements"
+            },
+            {
+              "name": "Thinkific",
+              "incumbent": false,
+              "description": "Has no native translation or dubbing.",
+              "href": "https://support.thinkific.com/hc/en-us/articles/360030358914-Support-Multiple-Languages"
+            },
+            {
+              "name": "Weglot",
+              "incumbent": false,
+              "description": "The popular external plug-in creators bolt onto Kajabi (and other course sites) to auto-translate marketing pages, funnels and product flows into 110+ languages using DeepL/Google/Microsoft under the hood.",
+              "href": "https://www.weglot.com/integrations/kajabi-translation-app"
+            },
+            {
+              "name": "Udemy",
+              "incumbent": false,
+              "description": "The status-quo way a course reaches non-English learners: it hosts 9,200+ native-language courses (French, Spanish, German, Portuguese, Japanese, Arabic, Turkish, Mandarin, Indonesian), takes ~63% of non-referral sales (instructors keep 37%), and quietly runs auto-caption translation the instructor cannot request or control.",
+              "href": "https://support.udemy.com/hc/en-us/articles/229605008-Instructor-revenue-share"
+            },
+            {
+              "name": "SimulTrans",
+              "incumbent": false,
+              "description": "Traditional eLearning localization agencies (Stepes, SimulTrans, Pangea, IKHYA, DTP Labs) sell full course localization as a project: per-word translation, per-minute voice-over, engineering to repackage SCORM/xAPI, quiz localization, LMS testing.",
+              "href": "https://www.simultrans.com/elearning-translation"
+            },
+            {
+              "name": "Janets PLR Marketplace",
+              "incumbent": false,
+              "description": "The PLR (Private Label Rights) course market is the DIY status quo for anything resembling \"resell someone else's course.\" Sellers on Janets, Gumroad and similar list rebrandable courses starting at $17-\u00a329 flat, buyer keeps 100% and slaps on their own logo.",
+              "href": "https://www.janets.org.uk/where-to-buy-plr-courses-you-can-legally-resell/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "asking",
+        "kicker": "People are asking for it",
+        "data": {
+          "quotes": [
+            {
+              "quote": "\u201ceach of my courses have enough enrollments from various parts of the world--100s or 1000s in some cases. Are you able to help me active the auto-translation function? I think it would really drive additional sales as my courses in Economics are pretty\u2026\u201d",
+              "source": "Udemy Instructor Community \u00b7 BradCartwright (Udemy instructor)",
+              "href": "https://community.udemy.com/en/discussion/138827/automatic-subtile-translations",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cUdemy can do it, but it is very hit-and-miss. One of my courses has 25 auto-translated subtitles (with 79,119 students), but another with 4,710 students only has English. Unfortunately, there doesn't seem to be a way to ask Udemy to do this.\u201d",
+              "source": "Udemy Instructor Community \u00b7 PhillipBurton (Udemy instructor, 79K+ students)",
+              "href": "https://community.udemy.com/en/discussion/138827/automatic-subtile-translations",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cPlease suggest any good tool to translate Subtitles or captions from the English language to other languages like Spanish, German, Italian, etc.\u201d",
+              "source": "Udemy Instructor Community \u00b7 Ramesh Fadatare (Udemy instructor, Java Guides)",
+              "href": "https://community.udemy.com/t5/Audio-and-video-solutions/Tool-to-Translate-Subtitles-from-One-Language-to-Another/m-p/108587",
+              "platform": "REDDIT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "verdict",
+        "kicker": "The verdict",
+        "data": {
+          "title": "Should you build this?",
+          "build": [
+            "Udemy instructors with thousands of students publicly ask on the official forum for translation control they cannot get, so the buyer is real, named, and gathering in one place you can DM.",
+            "The unit economics work at small scale: 10 pilots at $2,500 setup plus a 20% platform take on $18K/pilot in year-one international sales lands around $80K-$150K in year one with just one operator plus AI agents doing the drafts.",
+            "The wedge (finished sale in-country, not just translated words) is a real remainder AI does not touch: local ads, WhatsApp support, checkout, tax, and the cultural rewrite that turns a translated line into one that sells.",
+            "HeyGen at $200M ARR and Rask at 1,600 monthly branded searches prove creators already pay for the translation step, so the market is warm even if this specific offer has to be sold, not searched for."
+          ],
+          "notBuild": [
+            "Zero people per month search for 'translate online course', 'course translation service', or 'course reseller program' on Google Ads, so every customer is a cold-outbound close with no pull demand to lean on.",
+            "Every 2025-2026 tailwind (YouTube free multi-language audio, Kajabi native dubbing on Growth $249/mo, Meta AI dub for Reels) gives proven creators a reason to keep 100% and skip a partner entirely, which is the exact opposite of what a royalty-split marketplace needs.",
+            "This is a two-sided sales business dressed as a marketplace: you have to close a US creator on Monday and a Brazilian growth marketer on Friday, and marketplace liquidity needs 5-10 vetted operators per country before it works.",
+            "HeyGen (100,000 paying customers, ~$200M ARR) or Kajabi can add a 'local partner' tab to their existing distribution in six months and eat the wedge before the founder has 50 paying creators.",
+            "POTENTIAL PIVOT",
+            "Drop the two-sided marketplace and royalty-split story. Start as a done-for-you international launch service for one country at a time, priced as a flat setup fee plus a rev share only on international sales the creator was not making. Recruit in-country operators as 1099 contractors first, not marketplace partners. Prove the finished-sale unit works with 10 creators in Brazil or Mexico before adding a second country or a partner-side product. The marketplace can come later, after supply and demand are both real."
+          ]
+        }
+      },
+      {
+        "id": "founderFit",
+        "kicker": "Founder fit",
+        "data": {
+          "title": "Not every good idea is good for you.",
+          "bestFor": [
+            "Solo edtech entrepreneurs with global insights",
+            "Teams skilled in AI and multilingual platforms",
+            "Founders new to international markets",
+            "Non-technical founders with no AI experience"
+          ],
+          "persona": [
+            "The founder who wins this is not a translator and not a coder. It is an operator who has already sold something to online course creators (previously ran a course, worked at Kajabi/Teachable/Podia, ran a creator agency, or built a large creator email list), and who is comfortable doing hard two-sided sales: closing a $2,500 pilot with a US creator on Monday, then closing a Brazilian marketer on Friday to run that pilot. AI agents can draft the audits, run the outbound, and write the workflow code. What agents cannot do is convince a proven creator to trust a stranger with 20% of their international revenue, and convince a Brazilian growth marketer to take a share deal instead of an agency retainer. This is a sales and trust business dressed in a marketplace, and it needs a founder who has real credibility on both sides."
+          ],
+          "demands": [
+            {
+              "label": "Sales",
+              "score": 10.0
+            },
+            {
+              "label": "Creator network",
+              "score": 9.0
+            },
+            {
+              "label": "Partner ops",
+              "score": 9.0
+            },
+            {
+              "label": "Payments/legal",
+              "score": 7.0
+            },
+            {
+              "label": "Product",
+              "score": 4.0
+            }
+          ],
+          "reality": [
+            {
+              "label": "FIRST REVENUE",
+              "value": "60-90 days"
+            },
+            {
+              "label": "CAPITAL IN",
+              "value": "$10K-$30K"
+            },
+            {
+              "label": "DIFFICULTY",
+              "value": "High"
+            }
+          ]
+        }
+      },
+      {
+        "id": "valueLadder",
+        "kicker": "What you'd sell",
+        "data": {
+          "title": "The value ladder.",
+          "intro": [
+            "How the offers stack: a cheap or free way in at the bottom earns trust, and each step up charges more because it delivers more."
+          ],
+          "steps": [
+            {
+              "step": 1,
+              "tier": "LEAD MAGNET",
+              "name": "International Revenue Audit",
+              "price": "Free",
+              "description": "One-page memo: top 3 countries by demand from the creator's own YouTube and Kajabi geo data, projected earnings, named local partner ready to run each."
+            },
+            {
+              "step": 2,
+              "tier": "FRONTEND",
+              "name": "Pilot Market (60 days, one country)",
+              "price": "$2,500 + 30% rev share, 12 mo",
+              "description": "Done-with-you launch in one language: translation, dubbing, local checkout, one local partner running ads and support. Creator keeps 70% of money they would not otherwise earn."
+            },
+            {
+              "step": 3,
+              "tier": "CORE",
+              "name": "Country Pack (per market)",
+              "price": "20% platform take on gross",
+              "description": "Each additional country runs on a standing 20% rev share plus a partner cut out of the creator's share. One checkout, one tax stack, one royalty split. Creator approves markets with one click."
+            },
+            {
+              "step": 4,
+              "tier": "CONTINUITY",
+              "name": "Partner Guild",
+              "price": "$99/mo per local partner",
+              "description": ""
+            }
+          ]
+        },
+        "more": {
+          "label": "View the full value ladder",
+          "title": "The full value ladder.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Vetted translators, dubbers, marketers pay for private deal flow of English courses, workflow training, and priority match on new listings."
+            }
+          ]
+        }
+      },
+      {
+        "id": "plan",
+        "kicker": "The plan",
+        "data": {
+          "title": "If you started today.",
+          "subtitle": "First up.",
+          "paragraphs": [
+            "Zero people per month search for \"translate online course\", \"course translation service\", \"sell online course internationally\", or \"course reseller program\" in Google Ads. There is no demand pool to pay for. The first 100 customers do not come from paid search or SEO. They come from named outreach to instructors who have already said, in public, that they want more languages."
+          ]
+        },
+        "more": {
+          "label": "See the detailed plan",
+          "title": null,
+          "blocks": [
+            {
+              "type": "p",
+              "text": "\"Launch a marketplace transforming online courses into multilingual successes, with localization led by local partners. Integrate with Kajabi and Teachable for quick wins, then expand to new markets with strategic webinars. Ready to redefine educational reach globally?\""
+            },
+            {
+              "type": "h",
+              "text": "THE FIRST MOVES"
+            },
+            {
+              "type": "p",
+              "text": "Design and build basic marketplace platform"
+            },
+            {
+              "type": "p",
+              "text": "Reach out to potential local partners for pilot"
+            },
+            {
+              "type": "p",
+              "text": "Launch informational webinars for interested course creators"
+            },
+            {
+              "type": "h",
+              "text": "THE MVP"
+            },
+            {
+              "type": "p",
+              "text": "Build a streamlined marketplace focusing on translation and distribution, leveraging existing course platforms."
+            },
+            {
+              "type": "h",
+              "text": "WHERE THE FIRST USERS COME FROM"
+            },
+            {
+              "type": "p",
+              "text": "Online course forums \u00b7 Large existing user base of tech-savvy creators"
+            },
+            {
+              "type": "p",
+              "text": "LinkedIn Ads \u00b7 High visibility with creators"
+            },
+            {
+              "type": "h",
+              "text": "TIMELINE"
+            },
+            {
+              "type": "p",
+              "text": "1-2 weeks"
+            },
+            {
+              "type": "h",
+              "text": "BUDGET"
+            },
+            {
+              "type": "p",
+              "text": "$0-10K"
+            },
+            {
+              "type": "h",
+              "text": "THE MILESTONE"
+            },
+            {
+              "type": "p",
+              "text": "Achieve 1,000 active courses on the platform with successful localization and resale."
+            }
+          ]
+        }
+      },
+      {
+        "id": "napkin",
+        "kicker": "Napkin math",
+        "data": {
+          "title": "Year one, on a napkin.",
+          "intro": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.",
+          "rows": [
+            {
+              "label": "Named instructors sourced (Udemy + Kajabi Hero + Teachable)",
+              "value": "500"
+            },
+            {
+              "label": "Free audits accepted (assumption: 10%)",
+              "value": "50"
+            },
+            {
+              "label": "Pilot close rate on accepted audits (assumption: 20%)",
+              "value": "10 pilots"
+            },
+            {
+              "label": "Pilot setup fee (frontend price)",
+              "value": "$2,500"
+            },
+            {
+              "label": "Setup revenue in first 90 days",
+              "value": "$25,000"
+            },
+            {
+              "label": "Avg gross international sales per pilot, yr 1 (assumption)",
+              "value": "$18,000"
+            },
+            {
+              "label": "Platform 20% share of pilot gross (of 30% total, half to partner)",
+              "value": "$3,600/pilot"
+            },
+            {
+              "label": "Rev-share income from 10 pilots over 12 months",
+              "value": "$36,000"
+            },
+            {
+              "label": "Expansion: 3 pilots add a 2nd country at 20% (assumption)",
+              "value": "+$10,800"
+            },
+            {
+              "label": "Partner Guild: 20 partners x $99 x avg 6 mo (assumption)",
+              "value": "$11,880"
+            }
+          ],
+          "summary": [
+            "Year one lands around $80K-$150K if the 10% audit-accept and 20% pilot-close assumptions hold. Both are unverified; the only hard anchors are the agency and AI-dubbing price floors and the incumbent SaaS prices. Miss either assumption by half and revenue drops to $30K-$50K."
+          ],
+          "ceiling": "$2M-$4M ARR"
+        }
+      }
+    ],
+    "popups": [],
+    "inlineLinks": [
+      {
+        "text": "YouTube Blog",
+        "href": "https://blog.youtube/news-and-events/multi-language-audio/"
+      },
+      {
+        "text": "videodubbing.com",
+        "href": "https://videodubbing.com/blog/post/ai-dubbing-pricing-cost-guide-2026/"
+      },
+      {
+        "text": "Kajabi",
+        "href": "https://kajabi.com/updates/transcription-translation-ai-dubbing-enhancements"
+      },
+      {
+        "text": "Research and Markets via GlobeNewswire",
+        "href": "https://www.globenewswire.com/news-release/2025/10/21/3169985/0/en/Latin-America-E-Learning-Market-Research-Report-2025-2035.html"
+      },
+      {
+        "text": "UPSTARTS MEDIA",
+        "href": "https://www.upstartsmedia.com/p/exclusive-heygen-200m-arr-without-burn"
+      },
+      {
+        "text": "CHATFOREST",
+        "href": "https://chatforest.com/reviews/heygen-ai-avatar-video-platform/"
+      },
+      {
+        "text": "IMARC GROUP",
+        "href": "https://www.imarcgroup.com/e-learning-market"
+      },
+      {
+        "text": "HeyGen",
+        "href": "https://www.heygen.com/pricing"
+      }
+    ],
+    "linkCount": 23,
+    "sourceUrl": "https://www.ideabrowser.com/hub/ideas/today"
+  },
   "rawText": "ideabrowser\nBrowse\nBuild\nHome\nIdeas\nTrends\nMarket Insights\nMy Stuff\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nSep 8, 2026\n|\nBrowse all\nYour very own international school\n5.5\n/10\n\nTHE IDEA\n\nA proven English course creator sells $200K a year on Kajabi or Udemy, and roughly two-thirds of global e-learning demand sits outside North America. The tools they can buy today stop at the words. HeyGen dubs the video for $29 to $330 per month. Rask does the same for $60 to $750. Kajabi ships native dubbing in 100+ languages on its $249 and $499 plans. None of them find the Brazilian buyer, run the Portuguese ads, answer the WhatsApp question at 10pm, or handle the tax. So the creator ships an English course to an English audience and leaves the rest of the world on the table.\n\nThis idea sells the finished sale in-country, not the translation step. One stack pairs the creator with a vetted local operator (translator, marketer, support), runs one checkout, splits the money automatically, and charges only when a new international sale happens. The creator approves each market with one click, keeps 70% of revenue that did not exist before, and never hires a Brazilian marketer at 11pm.\n\nKeep reading\n\nTHE CUSTOMER\n\nEstablished Online Course Creators On Kajabi Or Teachable Who Already\u2026\n\nMARKET\n\nMarketplace\n\nREVENUE CEILING\n\n$2M-$4M ARR\n\nCOMPETITION\n\nHeyGen\n\nBuild this with your agent\nCONCEPT MOCKUP\nBuild this idea\n\nHEYGEN ARR\n\n$200M+\n\nAI video translation, doubled in 8 months\n\nPAIN\n\n6\n/10 severity\n\nX and 1 more feel it\n\nTIMING\n\n5\n/10\n\nwhy the window is open\n\nYEAR 1, DONE RIGHT\n\n$60K-$120K\n\nceiling $2M-$4M ARR\n\nWHY NOW\n\nYouTube shipped multi-language audio to millions of creators on Sept 10, 2025\n\nThree things changed in the last twelve months, and all three point at the same customer. First, on September 10, 2025, YouTube rolled out multi-language audio to millions of creators after a two-year pilot with MrBeast, Mark Rober and Jamie Oliver. Pilot creators saw over 25% of their watch time come from viewers in the video's non-primary language, and Jamie Oliver's channel got a 3x view lift. Meta shipped an AI dubbing and lip-sync tool for Reels the month before. The distribution channels where course creators already live now expect a dubbed version, not an English original.\n\nSecond, the price of getting the words right collapsed. Traditional studio dubbing ran $50 to $200 per finished minute. AI dubbing in 2026 runs $1 to $10 per minute at the entry tier, and $0.55 to $2.40 per minute on creator plans. A 10-minute video that cost $500 to $2,000 to dub in a studio now costs $10 to $100. That is a 60 to 90% cut, and it happened in about 18 months.\n\nSOURCES\nYouTube Blog\nvideodubbing.com\nKajabi\nResearch and Markets via GlobeNewswire\nSee the full timing case\n\nMARKET SNAPSHOT\n\nThe receipts.\n\nPAIN\n\n6/10 SEVERITY\n\n\u201cI needed to translate a 13-minute video from English to Italian, because I want to show an interview to my father in our native language (and without him having to follow through the CC). All the services, from Eleven Labs, to HeyGen, to Synthesia are almost\u2026\u201d\n\nX \u00b7 @alessandro_a0\n\n\u201cI built ZastTranslate because I was tired of paying $50/month to dub my French YouTube videos into English. Rask AI, ElevenLabs, HeyGen, Murf, Speechify... they all work, but the bill adds up fast when you're an independent creator. So I spent 40+ hours\u2026\u201d\n\nX \u00b7 @zast57\n\n\u201ctranslation is not localization. a joke that lands in New York dies in Tokyo no matter how perfect the lip sync. congrats, now your ad is equally confusing in 12 languages.\u201d\n\nX \u00b7 @0xguich\n\nAll 6 receipts, and where these people gather\n\nWHITESPACE\n\nMARKET GAP\n\nThe map has five camps and none of them close the loop from English course to paid local student\n\nUnderstand the opening\n\nTHE WEDGE\n\nOne stack that bundles translation plus a vetted local partner plus checkout plus royalty math. Rask does words only.\n\nThe incumbent to beat: HeyGen\n\nPROOF & SIGNALS\n\nHeyGen, the leading AI video translation and avatar tool, hit an estimated $200M ARR by mid-2026, doubling from ~$95M in September 2025 and roughly $35M at end of 2024, on ~$74M raised.\n\nUPSTARTS MEDIA\n\nHeyGen reports over 100,000 paying business customers and 31 million registered users across 239 countries by October 2025, up from 40,000 paying customers in mid-2024, showing real spend on video translation and multilingual creator content.\n\nCHATFOREST\n\nGlobal e-learning market was valued at USD 369.7 billion in 2025 with a projected 7.65% CAGR to 2034; North America holds 35 percent of it, meaning roughly two-thirds of demand sits in non-English regions.\n\nIMARC GROUP\n\nNo named player runs a course-licensing marketplace where a proven English creator hands a course to a vetted in-country partner (translator + marketer + support) and splits royalties through one checkout. The category the brief targets does not yet have an incumbent; it sits between AI dubbing tools (Rask, HeyGen), course host add-ons (Kajabi native, Weglot), enterprise localization agencies (SimulTrans, Stepes), the Udemy revenue-share model, and PLR marketplaces.\n\nMARKET SCAN (THIS RUN)\n\nExplore the evidence\n\nWHO YOU'RE UP AGAINST\n\n8 PLAYERS\n\nRask AI\n\nThe leading direct-to-creator AI dubbing tool: 130+ languages for translation, 32 for voice cloning, sold as a monthly minute-metered subscription.\n\nHeyGen\n\nINCUMBENT\n\nThe category leader in AI video translation with 175+ languages, over 100,000 paying business customers and ~$200M ARR.\n\nKajabi\n\nAdded native AI Transcripts, Translations and Dubbing (powered by Wistia, 70+ languages) directly inside the course editor, but AI transcription and translation are Pro-plan only ($499/mo) and dubbing is metered by AI credits that reset monthly.\n\nThinkific\n\nHas no native translation or dubbing.\n\nWeglot\n\nThe popular external plug-in creators bolt onto Kajabi (and other course sites) to auto-translate marketing pages, funnels and product flows into 110+ languages using DeepL/Google/Microsoft under the hood.\n\nUdemy\n\nThe status-quo way a course reaches non-English learners: it hosts 9,200+ native-language courses (French, Spanish, German, Portuguese, Japanese, Arabic, Turkish, Mandarin, Indonesian), takes ~63% of non-referral sales (instructors keep 37%), and quietly runs auto-caption translation the instructor cannot request or control.\n\nSimulTrans\n\nTraditional eLearning localization agencies (Stepes, SimulTrans, Pangea, IKHYA, DTP Labs) sell full course localization as a project: per-word translation, per-minute voice-over, engineering to repackage SCORM/xAPI, quiz localization, LMS testing.\n\nJanets PLR Marketplace\n\nThe PLR (Private Label Rights) course market is the DIY status quo for anything resembling \"resell someone else's course.\" Sellers on Janets, Gumroad and similar list rebrandable courses starting at $17-\u00a329 flat, buyer keeps 100% and slaps on their own logo.\n\nPEOPLE ARE ASKING FOR IT\n\nREDDIT\n\n\u201ceach of my courses have enough enrollments from various parts of the world--100s or 1000s in some cases. Are you able to help me active the auto-translation function? I think it would really drive additional sales as my courses in Economics are pretty\u2026\u201d\n\nUdemy Instructor Community \u00b7 BradCartwright (Udemy instructor)\n\n\u201cUdemy can do it, but it is very hit-and-miss. One of my courses has 25 auto-translated subtitles (with 79,119 students), but another with 4,710 students only has English. Unfortunately, there doesn't seem to be a way to ask Udemy to do this.\u201d\n\nUdemy Instructor Community \u00b7 PhillipBurton (Udemy instructor, 79K+ students)\n\n\u201cPlease suggest any good tool to translate Subtitles or captions from the English language to other languages like Spanish, German, Italian, etc.\u201d\n\nUdemy Instructor Community \u00b7 Ramesh Fadatare (Udemy instructor, Java Guides)\n\nTHE VERDICT\n\nShould you build this?\n\nREASONS TO BUILD\n\nUdemy instructors with thousands of students publicly ask on the official forum for translation control they cannot get, so the buyer is real, named, and gathering in one place you can DM.\nThe unit economics work at small scale: 10 pilots at $2,500 setup plus a 20% platform take on $18K/pilot in year-one international sales lands around $80K-$150K in year one with just one operator plus AI agents doing the drafts.\nThe wedge (finished sale in-country, not just translated words) is a real remainder AI does not touch: local ads, WhatsApp support, checkout, tax, and the cultural rewrite that turns a translated line into one that sells.\nHeyGen at $200M ARR and Rask at 1,600 monthly branded searches prove creators already pay for the translation step, so the market is warm even if this specific offer has to be sold, not searched for.\n\nREASONS TO NOT BUILD\n\nZero people per month search for 'translate online course', 'course translation service', or 'course reseller program' on Google Ads, so every customer is a cold-outbound close with no pull demand to lean on.\nEvery 2025-2026 tailwind (YouTube free multi-language audio, Kajabi native dubbing on Growth $249/mo, Meta AI dub for Reels) gives proven creators a reason to keep 100% and skip a partner entirely, which is the exact opposite of what a royalty-split marketplace needs.\nThis is a two-sided sales business dressed as a marketplace: you have to close a US creator on Monday and a Brazilian growth marketer on Friday, and marketplace liquidity needs 5-10 vetted operators per country before it works.\nHeyGen (100,000 paying customers, ~$200M ARR) or Kajabi can add a 'local partner' tab to their existing distribution in six months and eat the wedge before the founder has 50 paying creators.\nRoast it with your agent\n\nPOTENTIAL PIVOT\n\nDrop the two-sided marketplace and royalty-split story. Start as a done-for-you international launch service for one country at a time, priced as a flat setup fee plus a rev share only on international sales the creator was not making. Recruit in-country operators as 1099 contractors first, not marketplace partners. Prove the finished-sale unit works with 10 creators in Brazil or Mexico before adding a second country or a partner-side product. The marketplace can come later, after supply and demand are both real.\n\nRun this angle with your agent\n\nFOUNDER FIT\n\nNot every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo edtech entrepreneurs with global insights\nTeams skilled in AI and multilingual platforms\nFounders new to international markets\nNon-technical founders with no AI experience\n\nThe founder who wins this is not a translator and not a coder. It is an operator who has already sold something to online course creators (previously ran a course, worked at Kajabi/Teachable/Podia, ran a creator agency, or built a large creator email list), and who is comfortable doing hard two-sided sales: closing a $2,500 pilot with a US creator on Monday, then closing a Brazilian marketer on Friday to run that pilot. AI agents can draft the audits, run the outbound, and write the workflow code. What agents cannot do is convince a proven creator to trust a stranger with 20% of their international revenue, and convince a Brazilian growth marketer to take a share deal instead of an agency retainer. This is a sales and trust business dressed in a marketplace, and it needs a founder who has real credibility on both sides.\n\nWHAT IT DEMANDS\n\nSales\n10\nCreator network\n9\nPartner ops\n9\nPayments/legal\n7\nProduct\n4\n\nTHE REALITY\n\nFIRST REVENUE\n\n60-90 days\n\nCAPITAL IN\n\n$10K-$30K\n\nDIFFICULTY\n\nHigh\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card\n\nWHAT YOU'D SELL\n\nThe value ladder.\n\nHow the offers stack: a cheap or free way in at the bottom earns trust, and each step up charges more because it delivers more.\n\n1\n\nLEAD MAGNET\n\nInternational Revenue Audit(Free)\n\nOne-page memo: top 3 countries by demand from the creator's own YouTube and Kajabi geo data, projected earnings, named local partner ready to run each.\n\n2\n\nFRONTEND\n\nPilot Market (60 days, one country)($2,500 + 30% rev share, 12 mo)\n\nDone-with-you launch in one language: translation, dubbing, local checkout, one local partner running ads and support. Creator keeps 70% of money they would not otherwise earn.\n\n3\n\nCORE\n\nCountry Pack (per market)(20% platform take on gross)\n\nEach additional country runs on a standing 20% rev share plus a partner cut out of the creator's share. One checkout, one tax stack, one royalty split. Creator approves markets with one click.\n\n4\n\nCONTINUITY\n\nPartner Guild($99/mo per local partner)\n\nView the full value ladder\n\nTHE PLAN\n\nIf you started today.\nFirst up.\n\nZero people per month search for \"translate online course\", \"course translation service\", \"sell online course internationally\", or \"course reseller program\" in Google Ads. There is no demand pool to pay for. The first 100 customers do not come from paid search or SEO. They come from named outreach to instructors who have already said, in public, that they want more languages.\n\nSee the detailed plan\nYear one, on a napkin.\nNAPKIN MATH\n\nWhat the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nNamed instructors sourced (Udemy + Kajabi Hero + Teachable)\n500\nFree audits accepted (assumption: 10%)\n50\nPilot close rate on accepted audits (assumption: 20%)\n10 pilots\nPilot setup fee (frontend price)\n$2,500\nSetup revenue in first 90 days\n$25,000\nAvg gross international sales per pilot, yr 1 (assumption)\n$18,000\nPlatform 20% share of pilot gross (of 30% total, half to partner)\n$3,600/pilot\nRev-share income from 10 pilots over 12 months\n$36,000\nExpansion: 3 pilots add a 2nd country at 20% (assumption)\n+$10,800\nPartner Guild: 20 partners x $99 x avg 6 mo (assumption)\n$11,880\n\nYear one lands around $80K-$150K if the 10% audit-accept and 20% pilot-close assumptions hold. Both are unverified; the only hard anchors are the agency and AI-dubbing price floors and the incumbent SaaS prices. Miss either assumption by half and revenue drops to $30K-$50K.\n\nTHE CEILING IF IT COMPOUNDS\n$2M-$4M ARR\nRun the model on your numbers\n\nTHE PLAYBOOKS\n\nJam on it with your agent.\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more playbooks\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAT A GLANCE\n5.5\nHEYGEN ARR\n$200M+\nPRICING\n$1M-$10M\nDIFFICULTY\nHigh\nUP AGAINST\nHeyGen\nSave\nShare\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCodex\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cHow would \"Global sales & translation network for online\u2026\" beat HeyGen?\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\n\nYOU\u2019RE INVITED\n\nBecome AI native in 2 days\n\nYour agents set up, the playbook to build \u2014 walk out ready to build any idea you want.\n\nSeptember 26 \u00b7 Live & virtual \u00b7 50 seats\n\nWould you come?\n\nYes, I\u2019d come\nNot for me\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
   "status": "not_started",
   "notes": "",

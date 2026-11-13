@@ -2,7 +2,20 @@ name: Daily Idea Crawl + Library Update
 on:
   schedule:
     - cron: "0 7 * * *"   # 07:00 UTC daily
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      days_back:
+        description: "Backfill: crawl the idea from N days ago (0 = today). Uses the site's 'Previous' button, e.g. 1 = yesterday."
+        required: false
+        default: "0"
+      idea_url:
+        description: "Backfill: exact idea page URL to crawl instead of today's (optional)"
+        required: false
+        default: ""
+      idea_date:
+        description: "Backfill: the date of a missed idea, e.g. 2026-11-11. The crawler clicks 'Previous' until the page shows that date."
+        required: false
+        default: ""
 permissions:
   contents: write
 jobs:
@@ -39,40 +52,66 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-deps-
       - name: Install dependencies
-        # A real run showed this step alone taking over 30 minutes,
-        # which is far longer than a normal install and points to a
-        # one-off network stall (pulling the Chromium/Chrome binary or
-        # apt packages) rather than a permanent problem — retrying is
-        # the correct fix for that specific failure mode. This uses a
-        # small inline retry loop (3 attempts, 30s apart) rather than a
-        # third-party retry action, so there's no new external dependency
-        # to trust; each attempt gets its own 10-minute cap via `timeout`
-        # so a single hung attempt can't silently repeat the same
-        # 30-minute stall three times over.
+        # 2026-11-11 failure (run 43041684514): Ubuntu's apt mirrors
+        # (azure.archive.ubuntu.com / archive.ubuntu.com /
+        # security.ubuntu.com) were unreachable from the runner ("Temporary
+        # failure resolving ..."). `playwright install --with-deps` treats
+        # the apt step as fatal, so all 3 attempts burned 10 minutes each
+        # and the crawl never ran — even though the runner image ALREADY had
+        # every library Chromium needs (the log showed each one as "already
+        # the newest version"); apt was only trying to add optional fonts.
+        #
+        # So the install is now split by what actually matters:
+        #   1. pip packages             -> required (retried)
+        #   2. Playwright's Chromium    -> required (retried; downloads from
+        #                                  Playwright's CDN, not apt)
+        #   3. apt system deps + Chrome -> best effort, time-boxed. If apt is
+        #                                  down, the crawler still runs on the
+        #                                  bundled Chromium (deep_crawl.py
+        #                                  already falls back to it).
         run: |
+          set +e
+          ok=0
           for attempt in 1 2 3; do
-            echo "Install attempt $attempt of 3..."
-            if timeout 600 bash -c "pip install -r scraper/requirements.txt && playwright install --with-deps chromium chrome"; then
-              echo "Install succeeded on attempt $attempt."
-              exit 0
+            echo "Install attempt $attempt of 3 (pip + Chromium)..."
+            if timeout 420 bash -c "pip install -r scraper/requirements.txt && playwright install chromium"; then
+              ok=1; echo "Required install succeeded on attempt $attempt."; break
             fi
-            echo "Install attempt $attempt failed or timed out after 10m."
-            sleep 30
+            echo "Attempt $attempt failed or timed out."; sleep 20
           done
-          echo "All 3 install attempts failed."
-          exit 1
+          if [ "$ok" != "1" ]; then echo "::error::pip/Chromium install failed 3 times."; exit 1; fi
+
+          echo "Best-effort: system libraries for Chromium (apt)..."
+          timeout 240 playwright install-deps chromium \
+            || echo "::warning::apt deps step failed/timed out (mirror outage?) - continuing; runner image already ships Chromium's libraries."
+
+          if command -v google-chrome >/dev/null 2>&1; then
+            echo "Google Chrome already on the runner: $(google-chrome --version)"
+          else
+            timeout 240 playwright install chrome \
+              || echo "::warning::Chrome install failed - crawler will fall back to bundled Chromium."
+          fi
+          exit 0
       - name: Run deep crawl
         working-directory: scraper
         env:
           IDEABROWSER_EMAIL: ${{ secrets.IDEABROWSER_EMAIL }}
           IDEABROWSER_PASSWORD: ${{ secrets.IDEABROWSER_PASSWORD }}
+          IDEA_DAYS_BACK: ${{ github.event.inputs.days_back || '0' }}
+          IDEA_URL: ${{ github.event.inputs.idea_url || '' }}
+          IDEA_DATE: ${{ github.event.inputs.idea_date || '' }}
         run: python scripts/deep_crawl.py
       - name: Print today's crawl log (always visible here, even if nothing new to commit)
         working-directory: scraper
         if: always()
+        env:
+          IDEA_DAYS_BACK: ${{ github.event.inputs.days_back || '0' }}
+          IDEA_DATE: ${{ github.event.inputs.idea_date || '' }}
         run: |
-          TODAY=$(date -u +%Y-%m-%d)
-          YEAR=$(date -u +%Y)
+          # Backfill runs file their output under the backfilled date.
+          if [ -n "$IDEA_DATE" ]; then TODAY="$IDEA_DATE";
+          else TODAY=$(date -u -d "-${IDEA_DAYS_BACK:-0} days" +%Y-%m-%d); fi
+          YEAR=${TODAY:0:4}
           echo "===== Crawl log for $TODAY ====="
           cat "library/$YEAR/$TODAY.crawl-log.json" 2>/dev/null || echo "(no crawl-log file found for today)"
           echo ""
@@ -99,9 +138,14 @@ jobs:
         # missing, which is what the next step's failure notification
         # below is watching for.
         working-directory: scraper
+        env:
+          IDEA_DAYS_BACK: ${{ github.event.inputs.days_back || '0' }}
+          IDEA_DATE: ${{ github.event.inputs.idea_date || '' }}
         run: |
-          TODAY=$(date -u +%Y-%m-%d)
-          YEAR=$(date -u +%Y)
+          # Backfill runs file their output under the backfilled date.
+          if [ -n "$IDEA_DATE" ]; then TODAY="$IDEA_DATE";
+          else TODAY=$(date -u -d "-${IDEA_DAYS_BACK:-0} days" +%Y-%m-%d); fi
+          YEAR=${TODAY:0:4}
           FILE="library/$YEAR/$TODAY.deep.json"
           if [ ! -f "$FILE" ]; then
             echo "::error::Today's report ($FILE) was not produced. Failing the job so it shows up as failed/red, not silently missing."
@@ -114,6 +158,7 @@ jobs:
           git config user.email "actions@github.com"
           git add scraper/library/
           git diff --cached --quiet || git commit -m "Idea library update: $(date -u +%Y-%m-%d)"
+          git pull --rebase origin main || true
           git push
       - name: Notify on failure
         # GitHub Actions already emails the repo owner by default when a

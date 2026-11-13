@@ -15,6 +15,9 @@ Run this AFTER deep_crawl.py in the same daily job.
 """
 
 import json
+import sys
+sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
+from site_view import build_site_view
 import re
 from pathlib import Path
 
@@ -444,7 +447,8 @@ def extract_new_layout_sections(summary: dict) -> dict:
 def normalize_day(raw: dict) -> dict:
     summary = raw.get("summary", {})
     subpages = raw.get("subpages", {})
-    title = summary.get("title") or "Untitled idea"
+    site_view = build_site_view(raw)
+    title = summary.get("title") or (site_view or {}).get("title") or "Untitled idea"
     pitch = extract_pitch(summary.get("raw_text", ""), summary.get("title"))
 
     # New layout (confirmed live 2026-08-27) has its own real "THE IDEA"
@@ -458,6 +462,10 @@ def normalize_day(raw: dict) -> dict:
     # captured.
     if summary.get("section_the_idea"):
         pitch = summary["section_the_idea"]
+    elif site_view:
+        pitch_card = next((c for c in site_view["hero"] if c["label"] in ("THE PITCH", "THE IDEA")), None)
+        if pitch_card:
+            pitch = "\n\n".join(pitch_card["lines"])
 
     market_gap_page = find_subpage_by_url_pattern(subpages, "/market-gap")
     execution_plan_page = find_subpage_by_url_pattern(subpages, "/execution-plan")
@@ -610,7 +618,13 @@ def normalize_day(raw: dict) -> dict:
         "overallScore": summary.get("overall_score"),
         "painScore": summary.get("pain_score"),
         "timingScore": summary.get("timing_score"),
-        "layoutDetected": summary.get("layout_detected", "old"),
+        "layoutDetected": "new" if site_view else summary.get("layout_detected", "old"),
+        # The site-replica reading view: every section of the real idea page
+        # in the site's own order, links attached to the exact quote /
+        # source / competitor they belong to, "go deeper" content folded in,
+        # paid/agent/promo parts removed. None for pre-2026-08-27 layouts.
+        # Built by site_view.py.
+        "siteView": site_view,
         # Always present regardless of which layout/parser matched (or
         # neither) — the one guaranteed safety net so a day's real content
         # is never fully lost even if both structured parsers miss

@@ -235,6 +235,757 @@
   "painScore": 8,
   "timingScore": 8,
   "layoutDetected": "new",
+  "siteView": {
+    "version": "v2",
+    "dateLabel": null,
+    "title": "Totaled Car Payout Saver (catch lowball payouts)",
+    "ibIndex": "7.3",
+    "tags": [],
+    "painSeverity": "8",
+    "hero": [
+      {
+        "label": "THE IDEA",
+        "lines": [
+          "Your car just got totaled. The insurer sends a CCC ONE valuation report with a number that will not buy the same car back. One driver got $9,200 for a vehicle that costs $13,500 to replace at the same year and mileage: a $4,300 hole through no fault of his own. This is not a rare complaint. Total-loss frequency hit a record 23.1% of all auto claims in 2025, roughly 3.5 million cars a year, and a federal jury already ruled State Farm's software systematically underpaid 37,000 plaintiffs. Progressive paid $91 million and State Farm paid $15.6 million in 2025 and 2026 for the exact line-items inside those reports.",
+          "The product reads the insurer's PDF, pulls live listings from Autotrader, Cars.com, and CarGurus for the same year, trim, and mileage in the driver's zip, and returns a one-page verdict on the dollar gap in minutes. $49 for the full report with comps and a rebuttal template. If the gap is big enough to justify a fight, the tool hands the case to a licensed partner appraiser who signs a USPAP report and files it under the Appraisal Clause for $299. The founder keeps a $100 referral. Software does the intake work an appraiser currently does by hand, which is why the partner can undercut the $399 solo shops."
+        ],
+        "prose": true
+      },
+      {
+        "label": "THE CUSTOMER",
+        "lines": [
+          "Car Owners Whose Vehicle Was Just Declared A Total Loss And Suspect\u2026",
+          "MARKET",
+          "SaaS",
+          "REVENUE CEILING",
+          "$1.4M-$1.8M ARR",
+          "COMPETITION",
+          "TotalLossDispute.Com"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "MARKET",
+            "value": "SaaS"
+          },
+          {
+            "label": "REVENUE CEILING",
+            "value": "$1.4M-$1.8M ARR"
+          },
+          {
+            "label": "COMPETITION",
+            "value": "TotalLossDispute.Com"
+          }
+        ],
+        "lead": "Car Owners Whose Vehicle Was Just Declared A Total Loss And Suspect\u2026"
+      },
+      {
+        "label": "TOTAL-LOSS CLAIMS",
+        "lines": [
+          "1 in 4 crashes",
+          "23.1% of auto claims in 2025, record high, CCC data"
+        ],
+        "prose": false
+      },
+      {
+        "label": "PAIN",
+        "lines": [
+          "8",
+          "/10 severity",
+          "X and 5 more feel it"
+        ],
+        "prose": false
+      },
+      {
+        "label": "TIMING",
+        "lines": [
+          "8",
+          "/10",
+          "why the window is open"
+        ],
+        "prose": false
+      },
+      {
+        "label": "YEAR 1, DONE RIGHT",
+        "lines": [
+          "$40K-$90K",
+          "ceiling $1.4M-$1.8M ARR"
+        ],
+        "prose": false
+      },
+      {
+        "label": "AT A GLANCE",
+        "lines": [
+          "TOTAL-LOSS CLAIMS",
+          "1 in 4 crashes",
+          "PRICING",
+          "$50\u2013$200/yr",
+          "DIFFICULTY",
+          "Moderate",
+          "UP AGAINST",
+          "TotalLossDispute.com"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "TOTAL-LOSS CLAIMS",
+            "value": "1 in 4 crashes"
+          },
+          {
+            "label": "PRICING",
+            "value": "$50\u2013$200/yr"
+          },
+          {
+            "label": "DIFFICULTY",
+            "value": "Moderate"
+          },
+          {
+            "label": "UP AGAINST",
+            "value": "TotalLossDispute.com"
+          }
+        ]
+      }
+    ],
+    "heroMore": {
+      "label": "Keep reading",
+      "title": "The full idea.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "How a founder starts: open a personal Reddit account and answer three lowball threads a week on r/Insurance and r/personalfinance with real help and a free-scan link. Then drive to 20 independent body shops in one metro and offer a $29/month bulk plan free for six months in exchange for counter cards at the front desk. There are 20-30 comment threads a week where the customer is asking, out loud, for exactly this. Solution-demand keywords like \"total loss dispute\" and \"CCC ONE valuation dispute\" have near-zero search volume, so paid Google does not work; the founder wins by camping the places where the pain shows up in the reader's own words."
+        },
+        {
+          "type": "p",
+          "text": "The genuinely hard part is not the software. A coding agent ships the PDF parser and the comps pipeline in four to six weeks. The hard part is holding two networks together at once. On one side, the founder must recruit and keep two or three licensed appraisers per region as the escalation partner, because the Appraisal Clause requires each side to name a licensed appraiser and an insurer will discount an unsigned software output. On the other side, the founder must show up in the comments week after week for six to twelve months before organic starts to compound. A founder with claims-industry access (ex-adjuster, ex-body shop manager, ex-total-loss specialist, or a public adjuster) has a huge unfair advantage here because both networks already exist."
+        },
+        {
+          "type": "p",
+          "text": "The wedge customer is the driver whose CCC offer is $500 to $2,000 short: too small to justify a $275 to $399 appraiser fee that would eat most of the recovery, but big enough that they will pay $49 to know if they should fight at all. Every current operator (TotalLossDispute at $275, DVCHECK at $399, TotalLoss.com at $399, SnapClaim, Total Loss Champions, ASCAA-listed independents) sells the same $275 to $399 hammer to every driver. Nobody serves the pre-flight tier. That is the only lane a software-first product can defend, and it is real."
+        },
+        {
+          "type": "p",
+          "text": "The money has two legs. Direct: $49 per Gap Check Report, plus a $29/month plan for body shops and public adjusters running five or more total losses per month. Referral: $100 per case routed to a partner appraiser on the $299 signed report. On the 90-day validation math, roughly $3,200 booked on founder time only, no paid ads. On the annual ceiling with a paid data feed and a working appraiser partner network, $500K to $1.5M in year one is realistic and $2M to $4M annual is the honest ceiling before the incumbents copy the pre-flight tier. Two live threats to watch: scraping bans on the listing sites (fix: license MarketCheck or vAuto for $500 to $2,000 a month) and insurers quietly retiring the Typical Negotiation Adjustment in response to the class actions, which would shrink the average gap this tool proves."
+        }
+      ]
+    },
+    "sections": [
+      {
+        "id": "whyNow",
+        "kicker": "Why now",
+        "data": {
+          "headline": "Progressive paid $91M and State Farm paid $15.6M in 2025-2026 for undervaluing totaled cars",
+          "paragraphs": [
+            "The timing is legal, not technical. In 2025 and 2026 federal courts stopped treating \"the software says so\" as a defense. Progressive paid $48 million to 93,000 New York drivers in the Volino case, then another $43 million to Georgia drivers in Brown, both over Mitchell's Projected Sold Adjustment. A federal jury sided with State Farm policyholders in Arkansas in June 2025 over CCC ONE's Typical Negotiation Adjustment, and the $15.6 million settlement got final approval in March 2026. In October 2025 the Sixth Circuit upheld class certification in Clippinger v. State Farm, breaking with five other circuits and opening the door for new state-by-state cases. A fresh federal case against State Farm in Alabama landed in December 2025. Court filings pegged the average Progressive underpayment at 6.5% per claim. The insurer playbook (\"trust the algorithm\") is no longer a safe answer to a policyholder or a judge.",
+            "The demand side is right there. CCC's own Q2 2025 Crash Course reports total-loss frequency at 22.6% of all auto claims, up from prior years, and more than 70% of those totaled cars are seven years or older, exactly the vehicles with wide price spreads and weak comps. Roughly 4 million total-loss claims flow through U.S. insurers each year. Every settlement headline (\"State Farm to pay $335 per driver\") teaches the next claimant that the first offer is negotiable. Add YouTube negotiation videos with 100K+ views, active Reddit threads, and a growing bench of appraisers publicly citing Chadwick and Volino in dispute letters. The customer now arrives at your product already suspicious, already Googling, and already told by a court that they are probably right."
+          ],
+          "sources": [
+            {
+              "label": "Insurance Journal",
+              "href": "https://www.insurancejournal.com/news/east/2024/07/05/782418.htm"
+            },
+            {
+              "label": "TotalLossToolkit",
+              "href": "https://www.totallosstoolkit.com/knowledge-base/insurers-on-trial-total-loss-valuation-lawsuits-2025-2026"
+            },
+            {
+              "label": "BakerHostetler",
+              "href": "https://www.bakerlaw.com/insights/notable-third-quarter-2025-updates-in-insurance-class-actions-q3-2025/"
+            },
+            {
+              "label": "MyFairClaim",
+              "href": "https://myfairclaim.com/ccc-one-total-loss-valuations-state-farm-lawsuits/"
+            }
+          ]
+        },
+        "more": {
+          "label": "See the full timing case",
+          "title": "The full timing case.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "2025-2026 court rulings, active new filings (Goode, Brewer, Clippinger), and settlement press are training drivers to distrust the first offer right now."
+            },
+            {
+              "type": "h",
+              "text": "THE SIGNALS"
+            },
+            {
+              "type": "p",
+              "text": "Legal proof point: Progressive paid $91M combined across New York and Georgia, State Farm paid $15.6M in Arkansas, all tied to specific line-items inside CCC and Mitchell reports."
+            },
+            {
+              "type": "p",
+              "text": "Court momentum: Sixth Circuit class certification in Clippinger (Oct 2025), new Alabama case Goode filed Dec 2025, Tennessee and North Carolina cases advancing."
+            },
+            {
+              "type": "p",
+              "text": "Volume: CCC reports 22.6% total-loss frequency in Q2 2025 and 70%+ of totaled cars are 7+ years old, the exact segment where comps get messy."
+            },
+            {
+              "type": "p",
+              "text": "Consumer awareness: settlement press coverage and YouTube tutorials (100K+ views) are actively training drivers to distrust the first offer."
+            },
+            {
+              "type": "p",
+              "text": "Counter case (what could make now wrong): the same litigation wave gives insurers a reason to quietly retire TNA and PSA adjustments, or settle faster, which shrinks the average gap a self-serve tool can prove. Also, courts in the Third, Fourth, Fifth, Seventh and Ninth Circuits have gone the other way on certification, so the legal tailwind is uneven by geography."
+            }
+          ]
+        }
+      },
+      {
+        "id": "marketSnapshot",
+        "kicker": "Market snapshot",
+        "data": {
+          "title": "The receipts.",
+          "painSeverity": "8",
+          "quotes": [
+            {
+              "quote": "\u201cMy brother's car got totaled last month. Someone ran a red light. Insurance payout came in at $9,200 based on the car's depreciated value. Problem is a comparable replacement, same year, same mileage, similar condition, is running $13,500 right now with used\u2026\u201d",
+              "source": "X \u00b7 @jeremyct",
+              "href": "https://x.com/jeremyct/status/2099438122589167651",
+              "platform": null
+            },
+            {
+              "quote": "\u201cState Farm requested market research from me, the victim of their insured driver's negligence, then used it for \"informational purposes\" while basing my settlement on a week-old valuation that ignored all current market data. They wasted my time and did\u2026\u201d",
+              "source": "N.U.T.S. Stack \u00b7 The N.U.T.S. Stack",
+              "href": "https://nutsstack.substack.com/p/jake-from-state-farm-is-full-of-crap",
+              "platform": null
+            },
+            {
+              "quote": "\u201cMy car was deemed a total loss. State Farm offered an extremely low payout amount. I called Steve, and from beginning to end, the process was seamless. Steve was able to negotiate a payout of $3,400 ABOVE State Farm's initial offer!\u201d",
+              "source": "Trustindex review of Sun Auto Appraisers \u00b7 Lavern Johnson",
+              "href": "https://www.trustindex.io/reviewer/a482283459ba44",
+              "platform": null
+            }
+          ],
+          "receiptsLabel": "All 7 receipts, and where these people gather"
+        }
+      },
+      {
+        "id": "whitespace",
+        "kicker": "Whitespace",
+        "data": {
+          "gap": "Every player sells a licensed human. Nobody sells the sub-$100 pre-flight the driver actually wants first",
+          "wedge": [
+            "Instant automated market comparison in minutes for a fraction of the cost, versus manual appraisers who take days and charge hundreds."
+          ],
+          "incumbent": {
+            "name": "TotalLossDispute.com",
+            "href": "https://www.totallossdispute.com/virginia-total-loss-appraiser/"
+          },
+          "other": []
+        },
+        "more": {
+          "label": "Understand the opening",
+          "title": "The opening.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The market is not empty and it is not asleep. When a driver Googles \"total loss appraiser\" today, at least eight national services show up, all pitching a licensed human appraiser and a signed USPAP-compliant report. TotalLossDispute.com (a St. Lucie Appraisal brand) charges $275 for the appraisal and another $275 to represent the driver in appraisal clause negotiations. Appraisal Engine starts at $275 for a desk appraisal, then charges more for a field inspection or full negotiation takeover. DVCHECK and TotalLoss.com both list $399 flat. Total Loss Champions runs the contingency angle: pay when you settle, licensed public adjuster does the work. SecondAppraisal comes closest to a software-first model at $199 for the research, but still bundles two hours of appointed-appraiser time at $149 an hour."
+            },
+            {
+              "type": "p",
+              "text": "Above these consumer-facing shops sits CCC Intelligent Solutions, the B2B software the insurers themselves buy. CCC is not a competitor for the founder's dollar. It is the enemy every downstream shop sells against. Its CCC ONE Market Valuation Report is what shows up in the driver's inbox, and the whole aftermarket exists to pick it apart. Trade body ASCAA anchors the pitch with the industry-standard claim: automated valuation tools understate fair market value by 15 to 30 percent. That framing already sells."
+            },
+            {
+              "type": "p",
+              "text": "The pricing pattern is the tell. Every operator lands between $199 and $399, every operator offers a free intake review, and almost every operator leans on the appraisal-clause path in the auto policy: each side names a licensed appraiser, an umpire decides if they disagree, and about 10 percent of cases go to the umpire. That structure exists because the insurer will not treat an unsigned PDF from a consumer tool the way it treats a signed report from a named appraiser. Even veteran appraisers say the quiet part out loud: AI can help with intake, document extraction, and rebuttal drafting, but the valuation opinion still needs a licensed human on the report. A pure software SaaS that spits out a comp analysis with no signed appraiser attached will hit that wall."
+            },
+            {
+              "type": "p",
+              "text": "The gap is not \"nobody does this.\" The gap is the pre-flight and the small-dollar case. Nobody sells a fast, honest $29 to $79 report that tells the driver: your CCC offer is $1,800 below market, here are the specific comps and adjustments that are wrong, here is the demand letter, and here is when it is worth hiring an appraiser. That is the wedge every incumbent gives away for free as a \"claim review\" because it costs them nothing and qualifies leads for their $275 report. A software tool that does that step well, at scale, could either (a) sell it as a paid product to the tens of thousands of drivers whose gap is $500 to $2,000 (below the level where a $275 appraiser makes sense), or (b) become the funnel that feeds the licensed appraisers, taking a referral fee on the cases that need to escalate."
+            },
+            {
+              "type": "p",
+              "text": "If the founder tries to compete head-on with the $275 appraiser at $99 SaaS, the incumbents close the gap in a quarter by adding a self-serve tier to their existing intake flow. The real defensible move is picking a lane: the sub-$100 DIY tool for the small-gap case, or the intake and evidence layer that referral-fees the appraiser network. Either way, the licensed appraiser is a partner, not a target."
+            },
+            {
+              "type": "p",
+              "text": "Direct competitors and pricing: TotalLossDispute.com $275, Appraisal Engine from $275, DVCHECK $399, TotalLoss.com $399, SnapClaim online estimate + certified report, SecondAppraisal $199 research + $149/hr, Total Loss Champions contingency, Auto Appraisal Group and DVAC nationwide desk appraisals."
+            },
+            {
+              "type": "p",
+              "text": "The B2B incumbent: CCC Intelligent Solutions supplies the CCC ONE Market Valuation Report to most large insurers. It is not the founder's competitor for revenue. It is the villain every consumer-side shop names in its marketing."
+            },
+            {
+              "type": "p",
+              "text": "The trade body: ASCAA lists licensed appraisers state by state and anchors the industry claim that CCC, Mitchell, and JD Power understate fair market value by 15 to 30 percent."
+            },
+            {
+              "type": "p",
+              "text": "What everyone gives away free: the intake claim review. Every operator uses it to qualify leads. That is exactly the moment a software tool can insert itself and either sell a paid pre-flight or route the escalation cases for a fee."
+            },
+            {
+              "type": "p",
+              "text": "The real gap: no operator today serves the driver whose CCC offer is $500 to $2,000 short, where paying $275 to $399 for a licensed appraiser eats most of the recovery. That is a real, un-served segment, and it is the only lane a pure-software wedge can defend."
+            },
+            {
+              "type": "p",
+              "text": "Your way in: Instant automated market comparison in minutes for a fraction of the cost, versus manual appraisers who take days and charge hundreds."
+            },
+            {
+              "type": "h",
+              "text": "WHO\u2019S ALREADY IN THE MARKET"
+            }
+          ]
+        }
+      },
+      {
+        "id": "proof",
+        "kicker": "Proof & signals",
+        "data": {
+          "items": [
+            {
+              "text": "Total loss frequency hit a record 23.1% of all auto insurance claims in 2025, meaning nearly 1 in 4 crashed vehicles is now totaled rather than repaired, per CCC's 2026 Crash Course report.",
+              "source": "CCC INTELLIGENT SOLUTIONS",
+              "href": "https://ir.cccis.com/news-releases/news-release-details/ccc-crash-course-2026-report-finds-higher-severity-and-record"
+            },
+            {
+              "text": "Over 72% of total loss valuations are on vehicles 7+ years old, and the average age of U.S. light vehicles hit 12.8 years in 2025, meaning most totaled cars are older and harder to value accurately from thin listing data.",
+              "source": "CCC INTELLIGENT SOLUTIONS VIA DEALERSHIP GUY NEWS",
+              "href": "https://news.dealershipguy.com/p/total-vehicle-loss-rates-rise-again-as-insurers-confront-pricier-parts-report-2025-12-24"
+            },
+            {
+              "text": "YouTube \"total loss\" negotiation content has real viewership: \"Totaled Vehicle? Total Loss Car? Negotiating Insurance Payout\" has 116K views, \"How to get a bigger settlement check for your totaled vehicle\" has 100K views, and injury attorneys keep producing new tutorials, showing sustained consumer research demand.",
+              "source": "YOUTUBE",
+              "href": "https://www.youtube.com/watch?v=ZaRu9kTTwoM"
+            },
+            {
+              "text": "CCC processes hundreds of millions of claims transactions annually, and at 23.1% total-loss frequency the U.S. sees roughly 3 to 4 million total-loss auto claims per year, giving the pool of potential lowball-payout victims real scale.",
+              "source": "CCC INTELLIGENT SOLUTIONS",
+              "href": "https://ir.cccis.com/news-releases/news-release-details/ccc-crash-course-2026-report-finds-higher-severity-and-record"
+            }
+          ]
+        },
+        "more": {
+          "label": "Explore the evidence",
+          "title": "Proof & signals.",
+          "blocks": [
+            {
+              "type": "h",
+              "text": "THE HARD NUMBERS"
+            },
+            {
+              "type": "h",
+              "text": "WHAT THE RESEARCH SAYS"
+            },
+            {
+              "type": "p",
+              "text": "Emotional Frustration Signals"
+            },
+            {
+              "type": "p",
+              "text": "Time-Sensitive Needs"
+            },
+            {
+              "type": "p",
+              "text": "Systemic Barriers"
+            },
+            {
+              "type": "p",
+              "text": "Community Demand & Engagement"
+            },
+            {
+              "type": "p",
+              "text": "The Total Loss Payout Checker addresses significant market needs by automating comparisons between insurer valuations and real market data. This innovation alleviates consumer frustrations over insurance undervaluation, leverages regulatory momentum, and targets a timely market opportunity. Despite barriers in trust and data access, there is strong community engagement and a clear demand for transparent, rapid solutions."
+            }
+          ]
+        }
+      },
+      {
+        "id": "competitors",
+        "kicker": "Who you're up against",
+        "data": {
+          "count": 10,
+          "players": [
+            {
+              "name": "TotalLossDispute.com",
+              "incumbent": true,
+              "description": "(service of St. Lucie Appraisal Company) sells a total-loss valuation appraisal for $275 flat for most cars, plus an additional $275 to represent the client in Appraisal Clause negotiations; umpire fees split half if needed.",
+              "href": "https://www.totallossdispute.com/virginia-total-loss-appraiser/"
+            },
+            {
+              "name": "Appraisal Engine",
+              "incumbent": false,
+              "description": "(totallossappraisals.com) sells desk appraisals starting at $275, plus escalation tiers: field appraisal (crashlens inspection), full negotiation takeover, and appraisal clause representation.",
+              "href": "https://totallossappraisals.com/solutions-pricing/"
+            },
+            {
+              "name": "DVCHECK",
+              "incumbent": false,
+              "description": "Charges $399 flat for a total-loss valuation report backed by market-comparable vehicles and demand documents.",
+              "href": "https://www.dvcheck.com/total-loss"
+            },
+            {
+              "name": "TotalLoss.com",
+              "incumbent": false,
+              "description": "Sells a licensed appraiser service at $399 flat fee, works the Appraisal Clause directly with the carrier, and publishes an average recovery of $3,495 in lost value per client with example wins including $29,358 raised to $36,233.",
+              "href": "https://totalloss.com/"
+            },
+            {
+              "name": "Total Loss Champions",
+              "incumbent": false,
+              "description": "A licensed public adjuster (Aaron Castillo, licensed in CO, TX, WY) that takes total-loss and diminished-value disputes on a \"we only get paid when you do\" contingency model, with a flat fee based on claim complexity, not settlement amount.",
+              "href": "https://totallosschampions.com/services"
+            },
+            {
+              "name": "CCC Intelligent Solutions",
+              "incumbent": false,
+              "description": "The incumbent B2B software supplier: its CCC ONE valuation platform is what most large insurers use to generate the total-loss valuation reports being disputed.",
+              "href": "https://ir.cccis.com/news-releases/news-release-details/ccc-crash-course-2026-report-finds-higher-severity-and-record"
+            },
+            {
+              "name": "ASCAA",
+              "incumbent": false,
+              "description": "(American Society of Certified Auto Appraisers) is a trade body directory for consumer-hire licensed appraisers who prepare USPAP-compliant total-loss reports.",
+              "href": "https://www.certifiedautoappraisers.com/help/total-loss-dispute"
+            },
+            {
+              "name": "SecondAppraisal",
+              "incumbent": false,
+              "description": "The closest current competitor to a software-first model: it reviews the CCC ONE report line by line, offers a free consultation, then charges $199 for the appraisal research plus $149/hour for appointed-appraiser work (up to 2 hours).",
+              "href": "https://secondappraisal.com/guides/ccc-one-valuation-report-explained"
+            }
+          ]
+        }
+      },
+      {
+        "id": "asking",
+        "kicker": "People are asking for it",
+        "data": {
+          "quotes": [
+            {
+              "quote": "\u201cGot me fair value when the Insurance company low-balled me. He was knowledgeable, thorough, and more than fair. This is a State Farm total loss claim in Florida. We were able to get a $3,728 raise on the lowball offer from CCC.\u201d",
+              "source": "Trustindex review of Sun Auto Appraisers \u00b7 Michael T.",
+              "href": "https://www.trustindex.io/reviewer/21c0271515ba98/de",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cSo they're offering you bluebook and you say they're lowballing you? What the hell? The low end of the bluebook. I would call that lowballing.\u201d",
+              "source": "AnandTech Forums \u00b7 AnandTech forum thread",
+              "href": "https://forums.anandtech.com/threads/totaled.278786/latest",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cBest thing you can do is search your local area for vehicles for sale TODAY that are close in year and mileage because I suspect you may need to negotiate with whichever insurer is the at-fault insurer to reach an agreed payout value. You do not have to\u2026\u201d",
+              "source": "TractorByNet forum \u00b7 TractorByNet forum thread",
+              "href": "https://www.tractorbynet.com/forums/goto/post?id=6695233",
+              "platform": "REDDIT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "verdict",
+        "kicker": "The verdict",
+        "data": {
+          "title": "Should you build this?",
+          "build": [
+            "The pain is legally proven, not speculative: Progressive paid $91M and State Farm $15.6M in 2025-2026 for the exact CCC and Mitchell line-items this tool would expose, so drivers have public reason to believe their offer is low.",
+            "The market has a real hole: eight national services all sell a $275-$399 licensed appraisal, none serves the driver whose gap is $500-$2,000 where that fee eats most of the recovery, and that is exactly where a $49 software pre-flight lands.",
+            "Distribution is boring but doable without paid ads: 20-30 comment threads a week on r/Insurance and r/personalfinance, plus 20 local body shops handing out counter cards, plausibly get to first 100 paying customers on founder time.",
+            "The money model has two legs (a $49 direct sale and a $100 referral fee on the $299 partner escalation), so the founder is not betting the business on one price point or on the software alone moving an insurer's offer."
+          ],
+          "notBuild": [
+            "Solution-demand keywords are near zero: nobody Googles \"total loss dispute\" or \"CCC ONE valuation dispute\", so every customer is won by camping subreddits or partnering with body shops, which is a slow cold-start most founders quit.",
+            "The Appraisal Clause requires a licensed appraiser signature to bind the insurer, so the founder is not selling software, they are running an appraiser referral network with a software front door, and that means recruiting and holding a partner network in every state.",
+            "Autotrader, Cars.com, and CarGurus all have anti-bot defenses and TOS bans on scraping, so the comps pipeline probably has to move to a paid data feed like MarketCheck at $500-$2,000/mo, which cuts into the $49 unit economics.",
+            "Insurers are already responding to litigation: if Progressive and State Farm quietly retire the Typical Negotiation Adjustment and Projected Sold Adjustment inside CCC and Mitchell reports, the average gap this tool proves shrinks and the whole wedge narrows inside 18-24 months."
+          ]
+        }
+      },
+      {
+        "id": "founderFit",
+        "kicker": "Founder fit",
+        "data": {
+          "title": "Not every good idea is good for you.",
+          "bestFor": [
+            "Teams with API integration expertise",
+            "Founders experienced in regulatory environments",
+            "Non-technical founders",
+            "Those unfamiliar with insurance regulations"
+          ],
+          "persona": [
+            "A founder with claims-industry access (ex-adjuster, ex-body shop manager, ex-total-loss specialist, or a public adjuster) who can walk into 20 independent body shops in one metro and get a room, and who can recruit two or three licensed appraisers as the escalation partner network. The software is the easy part; a coding agent ships the PDF parser and the comps scraper in 4-6 weeks. What is scarce is the trust layer with the licensed appraiser network (they own the legal outcome) and the discipline to sit in r/Insurance for six months answering strangers for free. A generic SaaS founder with no claims background will get outshipped by the founder who already has an appraiser on speed dial."
+          ],
+          "demands": [
+            {
+              "label": "Distribution",
+              "score": 9.0
+            },
+            {
+              "label": "Domain access",
+              "score": 8.0
+            },
+            {
+              "label": "Sales",
+              "score": 6.0
+            },
+            {
+              "label": "Content",
+              "score": 7.0
+            },
+            {
+              "label": "Technical",
+              "score": 4.0
+            }
+          ],
+          "reality": [
+            {
+              "label": "FIRST REVENUE",
+              "value": "45-75 days"
+            },
+            {
+              "label": "CAPITAL IN",
+              "value": "$3K-$15K"
+            },
+            {
+              "label": "DIFFICULTY",
+              "value": "Moderate"
+            }
+          ]
+        }
+      },
+      {
+        "id": "valueLadder",
+        "kicker": "What you'd sell",
+        "data": {
+          "title": "The value ladder.",
+          "intro": [
+            "Lead magnet: free 60-second CCC ONE report scan. Frontend: $49 Gap Check Report. Core: $299 Signed Appraisal (partner-fulfilled)."
+          ],
+          "steps": [
+            {
+              "step": 1,
+              "tier": "LEAD MAGNET",
+              "name": "Free CCC Report Scan",
+              "price": "$0",
+              "description": "Upload the insurer PDF, get a one-page verdict on whether the offer looks low. Captures email and vehicle details."
+            },
+            {
+              "step": 2,
+              "tier": "FRONTEND",
+              "name": "Gap Check Report",
+              "price": "$49",
+              "description": "Full software parse of the insurer report plus live Autotrader, Cars.com, CarGurus comps, dollar-gap number, and a DIY negotiation template pack. Credited toward escalation."
+            },
+            {
+              "step": 3,
+              "tier": "CORE",
+              "name": "Signed Appraisal (partner)",
+              "price": "$299",
+              "description": "Licensed appraiser signs a USPAP report using the pre-flight data and files under the Appraisal Clause. Founder keeps $100 referral, partner keeps $199."
+            },
+            {
+              "step": 4,
+              "tier": "CONTINUITY",
+              "name": "Shop and Adjuster Plan",
+              "price": "$29/mo",
+              "description": ""
+            }
+          ]
+        },
+        "more": {
+          "label": "View the full value ladder",
+          "title": "The full value ladder.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Unlimited pre-flights, white-label PDFs, bulk upload for body shops and public adjusters running 5+ total losses per month."
+            }
+          ]
+        }
+      },
+      {
+        "id": "plan",
+        "kicker": "The plan",
+        "data": {
+          "title": "If you started today.",
+          "subtitle": "First up.",
+          "paragraphs": [
+            "Direct solution-demand keywords are near zero. \"Total loss dispute\", \"dispute total loss value\", \"total loss market value calculator\", and \"CCC ONE valuation dispute\" all return trivial monthly volume on Google Ads. The category is real, the pain is real, but the driver does not search the solution phrase because they do not know it exists. They search their symptom (\"insurance totaled my car not enough\", \"how much will insurance pay for my totaled car\" at 880/mo), or they post in a forum. That means paid search is a trap for the first 12 months. The first 100 customers come from being present at the moment of shock."
+          ]
+        },
+        "more": {
+          "label": "See the detailed plan",
+          "title": null,
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Launch with an MVP that swiftly compares insurer valuations using AI for car owners disputing total-loss payouts. Integrate Autotrader and Cars.com to highlight discrepancies, then engage car valuation forums on Reddit and Facebook for traction. Next, secure partnerships with auto shops. Ready to redefine the claims process?"
+            },
+            {
+              "type": "h",
+              "text": "THE FIRST MOVES"
+            },
+            {
+              "type": "p",
+              "text": "Launch basic MVP in 2 weeks"
+            },
+            {
+              "type": "p",
+              "text": "Run a small marketing campaign through Reddit"
+            },
+            {
+              "type": "p",
+              "text": "Establish a feedback loop to iterate the product"
+            },
+            {
+              "type": "h",
+              "text": "THE MVP"
+            },
+            {
+              "type": "p",
+              "text": "Develop a functional prototype using AI tools to handle data input and market comparisons."
+            },
+            {
+              "type": "h",
+              "text": "WHERE THE FIRST USERS COME FROM"
+            },
+            {
+              "type": "p",
+              "text": "Reddit \u00b7 High engagement in car valuation communities"
+            },
+            {
+              "type": "p",
+              "text": "Facebook Groups \u00b7 Targeted audience"
+            },
+            {
+              "type": "p",
+              "text": "YouTube \u00b7 Educational content"
+            },
+            {
+              "type": "h",
+              "text": "TIMELINE"
+            },
+            {
+              "type": "p",
+              "text": "1-2 weeks"
+            },
+            {
+              "type": "h",
+              "text": "BUDGET"
+            },
+            {
+              "type": "p",
+              "text": "$0-10K"
+            },
+            {
+              "type": "h",
+              "text": "THE MILESTONE"
+            },
+            {
+              "type": "p",
+              "text": "Achieve 10,000 users within 12 months"
+            }
+          ]
+        }
+      },
+      {
+        "id": "napkin",
+        "kicker": "Napkin math",
+        "data": {
+          "title": "Year one, on a napkin.",
+          "intro": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.",
+          "rows": [
+            {
+              "label": "Reddit lowball threads per week (r/Insurance, r/PF)",
+              "value": "5 threads"
+            },
+            {
+              "label": "Founder replies with free-scan link per week",
+              "value": "5 replies"
+            },
+            {
+              "label": "Weeks in test window",
+              "value": "12 weeks"
+            },
+            {
+              "label": "Total reply impressions (assumption, 400/thread)",
+              "value": "24,000"
+            },
+            {
+              "label": "Click-through to landing page (assumption, 4%)",
+              "value": "960 clicks"
+            },
+            {
+              "label": "Free scan completions (assumption, 25% of clicks)",
+              "value": "240 scans"
+            },
+            {
+              "label": "$49 Gap Check purchases (assumption, 15% of scans)",
+              "value": "36 buyers"
+            },
+            {
+              "label": "Gap Check revenue",
+              "value": "$1,764"
+            },
+            {
+              "label": "Escalations to $299 signed report (assumption, 25%)",
+              "value": "9 cases"
+            },
+            {
+              "label": "Founder referral fee ($100 x 9)",
+              "value": "$900"
+            },
+            {
+              "label": "Body shop $29/mo plans signed (assumption, 6 shops)",
+              "value": "$174/mo"
+            },
+            {
+              "label": "3-month body shop revenue",
+              "value": "$522"
+            },
+            {
+              "label": "Total 90-day revenue",
+              "value": "$3,186"
+            }
+          ],
+          "summary": [
+            "Roughly $3,200 booked in the first 90 days on founder time only, no paid ads. Most rows are assumptions; the two anchors are real: 20-30 comment threads exist weekly on r/Insurance and the market price band is $275-$399 for signed reports. This is a validation scenario, not a forecast. If click-through or purchase rates halve, the number is $800."
+          ],
+          "ceiling": "$1.4M-$1.8M ARR"
+        }
+      }
+    ],
+    "popups": [],
+    "inlineLinks": [
+      {
+        "text": "Insurance Journal",
+        "href": "https://www.insurancejournal.com/news/east/2024/07/05/782418.htm"
+      },
+      {
+        "text": "TotalLossToolkit",
+        "href": "https://www.totallosstoolkit.com/knowledge-base/insurers-on-trial-total-loss-valuation-lawsuits-2025-2026"
+      },
+      {
+        "text": "BakerHostetler",
+        "href": "https://www.bakerlaw.com/insights/notable-third-quarter-2025-updates-in-insurance-class-actions-q3-2025/"
+      },
+      {
+        "text": "MyFairClaim",
+        "href": "https://myfairclaim.com/ccc-one-total-loss-valuations-state-farm-lawsuits/"
+      },
+      {
+        "text": "CCC INTELLIGENT SOLUTIONS",
+        "href": "https://ir.cccis.com/news-releases/news-release-details/ccc-crash-course-2026-report-finds-higher-severity-and-record"
+      },
+      {
+        "text": "CCC INTELLIGENT SOLUTIONS VIA DEALERSHIP GUY NEWS",
+        "href": "https://news.dealershipguy.com/p/total-vehicle-loss-rates-rise-again-as-insurers-confront-pricier-parts-report-2025-12-24"
+      },
+      {
+        "text": "YOUTUBE",
+        "href": "https://www.youtube.com/watch?v=ZaRu9kTTwoM"
+      },
+      {
+        "text": "TotalLossDispute.com",
+        "href": "https://www.totallossdispute.com/virginia-total-loss-appraiser/"
+      }
+    ],
+    "linkCount": 24,
+    "sourceUrl": "https://www.ideabrowser.com/hub/ideas/today"
+  },
   "rawText": "ideabrowser\nBrowse\nBuild\nHome\nIdeas\nTrends\nMarket Insights\nMy Stuff\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nSep 22, 2026\n|\nBrowse all\nTotaled Car Payout Saver (catch lowball payouts)\n7.3\n/10\n\nTHE IDEA\n\nYour car just got totaled. The insurer sends a CCC ONE valuation report with a number that will not buy the same car back. One driver got $9,200 for a vehicle that costs $13,500 to replace at the same year and mileage: a $4,300 hole through no fault of his own. This is not a rare complaint. Total-loss frequency hit a record 23.1% of all auto claims in 2025, roughly 3.5 million cars a year, and a federal jury already ruled State Farm's software systematically underpaid 37,000 plaintiffs. Progressive paid $91 million and State Farm paid $15.6 million in 2025 and 2026 for the exact line-items inside those reports.\n\nThe product reads the insurer's PDF, pulls live listings from Autotrader, Cars.com, and CarGurus for the same year, trim, and mileage in the driver's zip, and returns a one-page verdict on the dollar gap in minutes. $49 for the full report with comps and a rebuttal template. If the gap is big enough to justify a fight, the tool hands the case to a licensed partner appraiser who signs a USPAP report and files it under the Appraisal Clause for $299. The founder keeps a $100 referral. Software does the intake work an appraiser currently does by hand, which is why the partner can undercut the $399 solo shops.\n\nKeep reading\n\nTHE CUSTOMER\n\nCar Owners Whose Vehicle Was Just Declared A Total Loss And Suspect\u2026\n\nMARKET\n\nSaaS\n\nREVENUE CEILING\n\n$1.4M-$1.8M ARR\n\nCOMPETITION\n\nTotalLossDispute.Com\n\nBuild this with your agent\nCONCEPT MOCKUP\nBuild this idea\n\nTOTAL-LOSS CLAIMS\n\n1 in 4 crashes\n\n23.1% of auto claims in 2025, record high, CCC data\n\nPAIN\n\n8\n/10 severity\n\nX and 5 more feel it\n\nTIMING\n\n8\n/10\n\nwhy the window is open\n\nYEAR 1, DONE RIGHT\n\n$40K-$90K\n\nceiling $1.4M-$1.8M ARR\n\nWHY NOW\n\nProgressive paid $91M and State Farm paid $15.6M in 2025-2026 for undervaluing totaled cars\n\nThe timing is legal, not technical. In 2025 and 2026 federal courts stopped treating \"the software says so\" as a defense. Progressive paid $48 million to 93,000 New York drivers in the Volino case, then another $43 million to Georgia drivers in Brown, both over Mitchell's Projected Sold Adjustment. A federal jury sided with State Farm policyholders in Arkansas in June 2025 over CCC ONE's Typical Negotiation Adjustment, and the $15.6 million settlement got final approval in March 2026. In October 2025 the Sixth Circuit upheld class certification in Clippinger v. State Farm, breaking with five other circuits and opening the door for new state-by-state cases. A fresh federal case against State Farm in Alabama landed in December 2025. Court filings pegged the average Progressive underpayment at 6.5% per claim. The insurer playbook (\"trust the algorithm\") is no longer a safe answer to a policyholder or a judge.\n\nThe demand side is right there. CCC's own Q2 2025 Crash Course reports total-loss frequency at 22.6% of all auto claims, up from prior years, and more than 70% of those totaled cars are seven years or older, exactly the vehicles with wide price spreads and weak comps. Roughly 4 million total-loss claims flow through U.S. insurers each year. Every settlement headline (\"State Farm to pay $335 per driver\") teaches the next claimant that the first offer is negotiable. Add YouTube negotiation videos with 100K+ views, active Reddit threads, and a growing bench of appraisers publicly citing Chadwick and Volino in dispute letters. The customer now arrives at your product already suspicious, already Googling, and already told by a court that they are probably right.\n\nSOURCES\nInsurance Journal\nTotalLossToolkit\nBakerHostetler\nMyFairClaim\nSee the full timing case\n\nMARKET SNAPSHOT\n\nThe receipts.\n\nPAIN\n\n8/10 SEVERITY\n\n\u201cMy brother's car got totaled last month. Someone ran a red light. Insurance payout came in at $9,200 based on the car's depreciated value. Problem is a comparable replacement, same year, same mileage, similar condition, is running $13,500 right now with used\u2026\u201d\n\nX \u00b7 @jeremyct\n\n\u201cState Farm requested market research from me, the victim of their insured driver's negligence, then used it for \"informational purposes\" while basing my settlement on a week-old valuation that ignored all current market data. They wasted my time and did\u2026\u201d\n\nN.U.T.S. Stack \u00b7 The N.U.T.S. Stack\n\n\u201cMy car was deemed a total loss. State Farm offered an extremely low payout amount. I called Steve, and from beginning to end, the process was seamless. Steve was able to negotiate a payout of $3,400 ABOVE State Farm's initial offer!\u201d\n\nTrustindex review of Sun Auto Appraisers \u00b7 Lavern Johnson\n\nAll 7 receipts, and where these people gather\n\nWHITESPACE\n\nMARKET GAP\n\nEvery player sells a licensed human. Nobody sells the sub-$100 pre-flight the driver actually wants first\n\nUnderstand the opening\n\nTHE WEDGE\n\nInstant automated market comparison in minutes for a fraction of the cost, versus manual appraisers who take days and charge hundreds.\n\nThe incumbent to beat: TotalLossDispute.com\n\nPROOF & SIGNALS\n\nTotal loss frequency hit a record 23.1% of all auto insurance claims in 2025, meaning nearly 1 in 4 crashed vehicles is now totaled rather than repaired, per CCC's 2026 Crash Course report.\n\nCCC INTELLIGENT SOLUTIONS\n\nOver 72% of total loss valuations are on vehicles 7+ years old, and the average age of U.S. light vehicles hit 12.8 years in 2025, meaning most totaled cars are older and harder to value accurately from thin listing data.\n\nCCC INTELLIGENT SOLUTIONS VIA DEALERSHIP GUY NEWS\n\nYouTube \"total loss\" negotiation content has real viewership: \"Totaled Vehicle? Total Loss Car? Negotiating Insurance Payout\" has 116K views, \"How to get a bigger settlement check for your totaled vehicle\" has 100K views, and injury attorneys keep producing new tutorials, showing sustained consumer research demand.\n\nYOUTUBE\n\nCCC processes hundreds of millions of claims transactions annually, and at 23.1% total-loss frequency the U.S. sees roughly 3 to 4 million total-loss auto claims per year, giving the pool of potential lowball-payout victims real scale.\n\nCCC INTELLIGENT SOLUTIONS\nExplore the evidence\n\nWHO YOU'RE UP AGAINST\n\n10 PLAYERS\n\nTotalLossDispute.com\n\nINCUMBENT\n\n(service of St. Lucie Appraisal Company) sells a total-loss valuation appraisal for $275 flat for most cars, plus an additional $275 to represent the client in Appraisal Clause negotiations; umpire fees split half if needed.\n\nAppraisal Engine\n\n(totallossappraisals.com) sells desk appraisals starting at $275, plus escalation tiers: field appraisal (crashlens inspection), full negotiation takeover, and appraisal clause representation.\n\nDVCHECK\n\nCharges $399 flat for a total-loss valuation report backed by market-comparable vehicles and demand documents.\n\nTotalLoss.com\n\nSells a licensed appraiser service at $399 flat fee, works the Appraisal Clause directly with the carrier, and publishes an average recovery of $3,495 in lost value per client with example wins including $29,358 raised to $36,233.\n\nTotal Loss Champions\n\nA licensed public adjuster (Aaron Castillo, licensed in CO, TX, WY) that takes total-loss and diminished-value disputes on a \"we only get paid when you do\" contingency model, with a flat fee based on claim complexity, not settlement amount.\n\nCCC Intelligent Solutions\n\nThe incumbent B2B software supplier: its CCC ONE valuation platform is what most large insurers use to generate the total-loss valuation reports being disputed.\n\nASCAA\n\n(American Society of Certified Auto Appraisers) is a trade body directory for consumer-hire licensed appraisers who prepare USPAP-compliant total-loss reports.\n\nSecondAppraisal\n\nThe closest current competitor to a software-first model: it reviews the CCC ONE report line by line, offers a free consultation, then charges $199 for the appraisal research plus $149/hour for appointed-appraiser work (up to 2 hours).\n\nPEOPLE ARE ASKING FOR IT\n\nREDDIT\n\n\u201cGot me fair value when the Insurance company low-balled me. He was knowledgeable, thorough, and more than fair. This is a State Farm total loss claim in Florida. We were able to get a $3,728 raise on the lowball offer from CCC.\u201d\n\nTrustindex review of Sun Auto Appraisers \u00b7 Michael T.\n\n\u201cSo they're offering you bluebook and you say they're lowballing you? What the hell? The low end of the bluebook. I would call that lowballing.\u201d\n\nAnandTech Forums \u00b7 AnandTech forum thread\n\n\u201cBest thing you can do is search your local area for vehicles for sale TODAY that are close in year and mileage because I suspect you may need to negotiate with whichever insurer is the at-fault insurer to reach an agreed payout value. You do not have to\u2026\u201d\n\nTractorByNet forum \u00b7 TractorByNet forum thread\n\nTHE VERDICT\n\nShould you build this?\n\nREASONS TO BUILD\n\nThe pain is legally proven, not speculative: Progressive paid $91M and State Farm $15.6M in 2025-2026 for the exact CCC and Mitchell line-items this tool would expose, so drivers have public reason to believe their offer is low.\nThe market has a real hole: eight national services all sell a $275-$399 licensed appraisal, none serves the driver whose gap is $500-$2,000 where that fee eats most of the recovery, and that is exactly where a $49 software pre-flight lands.\nDistribution is boring but doable without paid ads: 20-30 comment threads a week on r/Insurance and r/personalfinance, plus 20 local body shops handing out counter cards, plausibly get to first 100 paying customers on founder time.\nThe money model has two legs (a $49 direct sale and a $100 referral fee on the $299 partner escalation), so the founder is not betting the business on one price point or on the software alone moving an insurer's offer.\n\nREASONS TO NOT BUILD\n\nSolution-demand keywords are near zero: nobody Googles \"total loss dispute\" or \"CCC ONE valuation dispute\", so every customer is won by camping subreddits or partnering with body shops, which is a slow cold-start most founders quit.\nThe Appraisal Clause requires a licensed appraiser signature to bind the insurer, so the founder is not selling software, they are running an appraiser referral network with a software front door, and that means recruiting and holding a partner network in every state.\nAutotrader, Cars.com, and CarGurus all have anti-bot defenses and TOS bans on scraping, so the comps pipeline probably has to move to a paid data feed like MarketCheck at $500-$2,000/mo, which cuts into the $49 unit economics.\nInsurers are already responding to litigation: if Progressive and State Farm quietly retire the Typical Negotiation Adjustment and Projected Sold Adjustment inside CCC and Mitchell reports, the average gap this tool proves shrinks and the whole wedge narrows inside 18-24 months.\nRoast it with your agent\n\nFOUNDER FIT\n\nNot every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nTeams with API integration expertise\nFounders experienced in regulatory environments\nNon-technical founders\nThose unfamiliar with insurance regulations\n\nA founder with claims-industry access (ex-adjuster, ex-body shop manager, ex-total-loss specialist, or a public adjuster) who can walk into 20 independent body shops in one metro and get a room, and who can recruit two or three licensed appraisers as the escalation partner network. The software is the easy part; a coding agent ships the PDF parser and the comps scraper in 4-6 weeks. What is scarce is the trust layer with the licensed appraiser network (they own the legal outcome) and the discipline to sit in r/Insurance for six months answering strangers for free. A generic SaaS founder with no claims background will get outshipped by the founder who already has an appraiser on speed dial.\n\nWHAT IT DEMANDS\n\nDistribution\n9\nDomain access\n8\nSales\n6\nContent\n7\nTechnical\n4\n\nTHE REALITY\n\nFIRST REVENUE\n\n45-75 days\n\nCAPITAL IN\n\n$3K-$15K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card\n\nWHAT YOU'D SELL\n\nThe value ladder.\n\nLead magnet: free 60-second CCC ONE report scan. Frontend: $49 Gap Check Report. Core: $299 Signed Appraisal (partner-fulfilled).\n\n1\n\nLEAD MAGNET\n\nFree CCC Report Scan($0)\n\nUpload the insurer PDF, get a one-page verdict on whether the offer looks low. Captures email and vehicle details.\n\n2\n\nFRONTEND\n\nGap Check Report($49)\n\nFull software parse of the insurer report plus live Autotrader, Cars.com, CarGurus comps, dollar-gap number, and a DIY negotiation template pack. Credited toward escalation.\n\n3\n\nCORE\n\nSigned Appraisal (partner)($299)\n\nLicensed appraiser signs a USPAP report using the pre-flight data and files under the Appraisal Clause. Founder keeps $100 referral, partner keeps $199.\n\n4\n\nCONTINUITY\n\nShop and Adjuster Plan($29/mo)\n\nView the full value ladder\n\nTHE PLAN\n\nIf you started today.\nFirst up.\n\nDirect solution-demand keywords are near zero. \"Total loss dispute\", \"dispute total loss value\", \"total loss market value calculator\", and \"CCC ONE valuation dispute\" all return trivial monthly volume on Google Ads. The category is real, the pain is real, but the driver does not search the solution phrase because they do not know it exists. They search their symptom (\"insurance totaled my car not enough\", \"how much will insurance pay for my totaled car\" at 880/mo), or they post in a forum. That means paid search is a trap for the first 12 months. The first 100 customers come from being present at the moment of shock.\n\nSee the detailed plan\nYear one, on a napkin.\nNAPKIN MATH\n\nWhat the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nReddit lowball threads per week (r/Insurance, r/PF)\n5 threads\nFounder replies with free-scan link per week\n5 replies\nWeeks in test window\n12 weeks\nTotal reply impressions (assumption, 400/thread)\n24,000\nClick-through to landing page (assumption, 4%)\n960 clicks\nFree scan completions (assumption, 25% of clicks)\n240 scans\n$49 Gap Check purchases (assumption, 15% of scans)\n36 buyers\nGap Check revenue\n$1,764\nEscalations to $299 signed report (assumption, 25%)\n9 cases\nFounder referral fee ($100 x 9)\n$900\nBody shop $29/mo plans signed (assumption, 6 shops)\n$174/mo\n3-month body shop revenue\n$522\nTotal 90-day revenue\n$3,186\n\nRoughly $3,200 booked in the first 90 days on founder time only, no paid ads. Most rows are assumptions; the two anchors are real: 20-30 comment threads exist weekly on r/Insurance and the market price band is $275-$399 for signed reports. This is a validation scenario, not a forecast. If click-through or purchase rates halve, the number is $800.\n\nTHE CEILING IF IT COMPOUNDS\n$1.4M-$1.8M ARR\nRun the model on your numbers\n\nTHE PLAYBOOKS\n\nJam on it with your agent.\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more playbooks\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAT A GLANCE\n7.3\nTOTAL-LOSS CLAIMS\n1 in 4 crashes\nPRICING\n$50\u2013$200/yr\nDIFFICULTY\nModerate\nUP AGAINST\nTotalLossDispute.com\nSave\nShare\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCodex\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cHow would \"Market comparison tool for totaled car insura\u2026\" beat TotalLossDispute.com?\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\n\nYOU\u2019RE INVITED\n\nBecome AI native in 2 days\n\nYour agents set up, the playbook to build \u2014 walk out ready to build any idea you want.\n\nSeptember 26 \u00b7 Live & virtual \u00b7 50 seats\n\nWould you come?\n\nYes, I\u2019d come\nNot for me\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
   "status": "not_started",
   "notes": "",

@@ -2,9 +2,9 @@
   "id": "2026-11-05",
   "date": "2026-11-05",
   "title": "Verification platform that audits local-only claims for clinical AI tools",
-  "tagline": "r/therapists, +29.7%/yr, active HIPAA-scribe debate\n\nWHAT IT DEMANDS\n\nTrust\nDomain depth\nContent\nSales\nCapital\n\nTHE REALITY\n\nFIRST REVENUE\n60-90 days\nCAPITAL IN...",
+  "tagline": "A therapist in r/TalkTherapy posted that her therapist asked permission to let an AI record their session. It felt, she said, like he was asking to bring a thir...",
   "badges": [],
-  "description": "r/therapists, +29.7%/yr, active HIPAA-scribe debate\n\nWHAT IT DEMANDS\n\nTrust\nDomain depth\nContent\nSales\nCapital\n\nTHE REALITY\n\nFIRST REVENUE\n60-90 days\nCAPITAL IN\n$5K-$25K\nDIFFICULTY\nModerate\n\nUP AGAINST\n\nTherapyScribes.review\n\nA live independent review site covering 14 AI therapy scribes, 6 hands-on tested, publishing editorial scores\u2026\n\n+ 9 more mapped\n\nTHE PITCH\n\nA therapist in r/TalkTherapy posted that her therapist asked permission to let an AI record their session. It felt, she said, like he was asking to bring a third person into the room. The thread drew 190+ comments. In r/FamilyMedicine a physician admitted he had tried to find Suno's data retention answer and could not. Another posted that recordings are never really deleted. Three California class actions have landed on AI scribes in 7 months. 81% of US physicians now use AI, 56% of psychologists used it in the past year, and new on-device scribes are shipping to r/LocalLLaMA with no third-party verification at all.\n\nWHO IT'S FOR\n\nTwo sides: vendors of local-processing clinical AI tools who need outside credibility, and solo therapists, psychologists and small clinic owners choosing a documentation tool without security staff to vet it.\n\nTHE GAP\n\nThe AI scribe review market is crowded, but nobody runs the tool to see what it actually does\n\nWHY NOW\n\nThree class actions in 7 months turned AI scribe privacy from vibe to legal exposure\n\nAT A GLANCE\n\nTherapist community\n229K members\nPricing\nFree\nYear one\n$40K-$80K\nCeiling\n$2M-$4M ARR\n\nWHAT YOU SELL\n\nSandbox Verification Audit$3,500 one-time + $1,50\u2026\n\nBIGGEST RISK\n\nA big cloud vendor (Abridge, Suki, Nuance DAX) ships an on-device mode and absorbs the local-only category. The vendor pool collapses from 15 to 5, the audit b\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nThree class actions in 7 months turned AI scribe privacy from vibe to legal exposure\n\nThe old threat was a vague privacy worry. The new threat is a court filing. In November 2025, Jose Saucedo sued Sharp HealthCare in San Diego Superior Court over use of Abridge without consent. On April 8, 2026, three California patients sued Sutter Health and MemorialCare in federal court (Washington v. Sutter Health, 4:26-cv-03012-KAW) over the same tool. More California health systems joined the list by mid-2026. The claims are not HIPAA. HIPAA has no private right of action. The claims are wiretapping (CIPA, the Federal Wiretap Act) and California's mini-HIPAA (CMIA), which do let patients sue, and which 11 US states now parallel with all-party consent laws. A business associate agreement does not stop a wiretap case. That changes what a clinician needs to know before picking a tool, and it is why vendors who can prove audio never leaves the device suddenly have a story worth selling.\n\nThe buyer side moved at the same time. The AMA 2026 survey found 81% of US physicians now use AI professionally, up from 38% in 2023. The APA Practitioner Pulse found 56% of psychologists used AI in the past year. Kaiser Permanente mental health workers in Northern California are now bargaining to limit AI scribe use because they fear both privacy risk and higher caseloads. On the patient side, a survey of 12,153 Canadian adults found 62% reluctant to have an AI scribe used in their care, and an NPR-cited US survey found only 8% of patients would trust an AI in a therapy context. California's AI transparency rules took effect January 2026. Texas SB 1188 requires practitioners to disclose AI use to patients. The APA has issued formal AI scribe guidance. And on the technology side, local models crossed the usability line: Liquid AI's LFM3 (October 27, 2026) runs on an iPhone 17 Pro, Nvidia Parakeet powers free Mac dictation apps clinicians use 50 times a day, and new on-device scribes (PrivateScribe.ai, TranscribePad, OrbDoc) are shipping right now with no outside credibility. The audit buyer and the audit market both appeared in the same 12 months.\n\nSOURCES\nalstonprivacy.com\nProof Ne",
+  "description": "A therapist in r/TalkTherapy posted that her therapist asked permission to let an AI record their session. It felt, she said, like he was asking to bring a third person into the room. The thread drew 190+ comments. In r/FamilyMedicine a physician admitted he had tried to find Suno's data retention answer and could not. Another posted that recordings are never really deleted. Three California class actions have landed on AI scribes in 7 months. 81% of US physicians now use AI, 56% of psychologists used it in the past year, and new on-device scribes are shipping to r/LocalLLaMA with no third-party verification at all.",
   "scores": {
     "opportunity": {
       "score": null,
@@ -69,6 +69,534 @@
   "painScore": null,
   "timingScore": null,
   "layoutDetected": "new",
+  "siteView": {
+    "version": "v3",
+    "dateLabel": "NOV 5, 2026",
+    "title": "Verification platform that audits local-only claims for clinical AI tools",
+    "ibIndex": "7.3",
+    "tags": [
+      "B2C",
+      "Service",
+      "$2M-$4M ARR"
+    ],
+    "painSeverity": "8",
+    "hero": [
+      {
+        "label": "THERAPIST COMMUNITY",
+        "lines": [
+          "229K members",
+          "r/therapists, +29.7%/yr, active HIPAA-scribe debate"
+        ],
+        "prose": false
+      },
+      {
+        "label": "WHAT IT DEMANDS",
+        "lines": [
+          "Trust",
+          "Domain depth",
+          "Content",
+          "Sales",
+          "Capital"
+        ],
+        "prose": false
+      },
+      {
+        "label": "THE REALITY",
+        "lines": [
+          "FIRST REVENUE",
+          "60-90 days",
+          "CAPITAL IN",
+          "$5K-$25K",
+          "DIFFICULTY",
+          "Moderate"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "FIRST REVENUE",
+            "value": "60-90 days"
+          },
+          {
+            "label": "CAPITAL IN",
+            "value": "$5K-$25K"
+          },
+          {
+            "label": "DIFFICULTY",
+            "value": "Moderate"
+          }
+        ]
+      },
+      {
+        "label": "UP AGAINST",
+        "lines": [
+          "TherapyScribes.review",
+          "A live independent review site covering 14 AI therapy scribes, 6 hands-on tested, publishing editorial scores\u2026",
+          "+ 9 more mapped"
+        ],
+        "prose": false,
+        "href": null
+      },
+      {
+        "label": "THE PITCH",
+        "lines": [
+          "A therapist in r/TalkTherapy posted that her therapist asked permission to let an AI record their session. It felt, she said, like he was asking to bring a third person into the room. The thread drew 190+ comments. In r/FamilyMedicine a physician admitted he had tried to find Suno's data retention answer and could not. Another posted that recordings are never really deleted. Three California class actions have landed on AI scribes in 7 months. 81% of US physicians now use AI, 56% of psychologists used it in the past year, and new on-device scribes are shipping to r/LocalLLaMA with no third-party verification at all."
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHO IT'S FOR",
+        "lines": [
+          "Two sides: vendors of local-processing clinical AI tools who need outside credibility, and solo therapists, psychologists and small clinic owners choosing a documentation tool without security staff to vet it."
+        ],
+        "prose": true
+      },
+      {
+        "label": "THE GAP",
+        "lines": [
+          "The AI scribe review market is crowded, but nobody runs the tool to see what it actually does"
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHY NOW",
+        "lines": [
+          "Three class actions in 7 months turned AI scribe privacy from vibe to legal exposure"
+        ],
+        "prose": true
+      },
+      {
+        "label": "AT A GLANCE",
+        "lines": [
+          "Therapist community",
+          "229K members",
+          "Pricing",
+          "Free",
+          "Year one",
+          "$40K-$80K",
+          "Ceiling",
+          "$2M-$4M ARR"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "Therapist community",
+            "value": "229K members"
+          },
+          {
+            "label": "Pricing",
+            "value": "Free"
+          },
+          {
+            "label": "Year one",
+            "value": "$40K-$80K"
+          },
+          {
+            "label": "Ceiling",
+            "value": "$2M-$4M ARR"
+          }
+        ]
+      },
+      {
+        "label": "WHAT YOU SELL",
+        "lines": [
+          "Sandbox Verification Audit$3,500 one-time + $1,50\u2026"
+        ],
+        "prose": false,
+        "name": "Sandbox Verification Audit",
+        "price": "$3,500 one-time + $1,50\u2026"
+      },
+      {
+        "label": "BIGGEST RISK",
+        "lines": [
+          "A big cloud vendor (Abridge, Suki, Nuance DAX) ships an on-device mode and absorbs the local-only category. The vendor pool collapses from 15 to 5, the audit b\u2026"
+        ],
+        "prose": true
+      }
+    ],
+    "heroMore": null,
+    "sections": [
+      {
+        "id": "whyNow",
+        "kicker": "Why now",
+        "data": {
+          "headline": "Three class actions in 7 months turned AI scribe privacy from vibe to legal exposure",
+          "paragraphs": [
+            "The old threat was a vague privacy worry. The new threat is a court filing. In November 2025, Jose Saucedo sued Sharp HealthCare in San Diego Superior Court over use of Abridge without consent. On April 8, 2026, three California patients sued Sutter Health and MemorialCare in federal court (Washington v. Sutter Health, 4:26-cv-03012-KAW) over the same tool. More California health systems joined the list by mid-2026. The claims are not HIPAA. HIPAA has no private right of action. The claims are wiretapping (CIPA, the Federal Wiretap Act) and California's mini-HIPAA (CMIA), which do let patients sue, and which 11 US states now parallel with all-party consent laws. A business associate agreement does not stop a wiretap case. That changes what a clinician needs to know before picking a tool, and it is why vendors who can prove audio never leaves the device suddenly have a story worth selling.",
+            "The buyer side moved at the same time. The AMA 2026 survey found 81% of US physicians now use AI professionally, up from 38% in 2023. The APA Practitioner Pulse found 56% of psychologists used AI in the past year. Kaiser Permanente mental health workers in Northern California are now bargaining to limit AI scribe use because they fear both privacy risk and higher caseloads. On the patient side, a survey of 12,153 Canadian adults found 62% reluctant to have an AI scribe used in their care, and an NPR-cited US survey found only 8% of patients would trust an AI in a therapy context. California's AI transparency rules took effect January 2026. Texas SB 1188 requires practitioners to disclose AI use to patients. The APA has issued formal AI scribe guidance. And on the technology side, local models crossed the usability line: Liquid AI's LFM3 (October 27, 2026) runs on an iPhone 17 Pro, Nvidia Parakeet powers free Mac dictation apps clinicians use 50 times a day, and new on-device scribes (PrivateScribe.ai, TranscribePad, OrbDoc) are shipping right now with no outside credibility. The audit buyer and the audit market both appeared in the same 12 months."
+          ],
+          "sources": [
+            {
+              "label": "alstonprivacy.com",
+              "href": null
+            },
+            {
+              "label": "Proof News",
+              "href": null
+            },
+            {
+              "label": "aaceendocrine.ai",
+              "href": null
+            },
+            {
+              "label": "offcall.com",
+              "href": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "marketSnapshot",
+        "kicker": "Market snapshot",
+        "data": {
+          "title": "The receipts.",
+          "painSeverity": "8",
+          "quotes": [
+            {
+              "quote": "\u201cBut their actual privacy policy says they can create de-identified data derived from information processed through the service. HIPAA de-...\u201d",
+              "source": "r/therapists \u00b7 r/therapists OP (post has 270+ comments)",
+              "href": null,
+              "platform": null
+            },
+            {
+              "quote": "\u201cMy therapist just asked me for permission to have AI record our sessions... I feel really weird about it, it's like he's asking to bring a third person into the room with us... Would you ever consider something like that?\u201d",
+              "source": "r/TalkTherapy \u00b7 r/TalkTherapy client",
+              "href": null,
+              "platform": null
+            },
+            {
+              "quote": "\u201cThat's really, really not how consent works. My office has been having patients sign consent forms for this. I routinely get asked after they've signed it \"what's this about, anyway?\" \"My client did not understand that everything he said would be recorded and\u2026\u201d",
+              "source": "r/FamilyMedicine \u00b7 Hypno-phile (physician)",
+              "href": null,
+              "platform": null
+            }
+          ],
+          "receiptsLabel": "All 7 receipts, and where these people gather"
+        }
+      },
+      {
+        "id": "whitespace",
+        "kicker": "Whitespace",
+        "data": {
+          "gap": "The AI scribe review market is crowded, but nobody runs the tool to see what it actually does",
+          "wedge": [
+            "Run each tool in a sandbox, capture real network traffic during note-taking including airplane-mode, publish a plain-English report plus a badge. Launch with 15-20 audited tools and a clinician newsletter."
+          ],
+          "incumbent": {
+            "name": "TherapyScribes.review",
+            "href": null
+          },
+          "other": []
+        }
+      },
+      {
+        "id": "proof",
+        "kicker": "Proof & signals",
+        "data": {
+          "items": [
+            {
+              "text": "The AMA 2026 Physician Survey on Augmented Intelligence found 81% of US physicians use AI professionally, up from 38% in 2023; mean AI use cases per physician rose to 2.3 from 1.1, with ambient scribes the top category.",
+              "source": "AMA 2026 PHYSICIAN SURVEY ON AUGMENTED INTELLIGENCE (VIA NOTIRO)",
+              "href": null
+            },
+            {
+              "text": "APA's 2025 Practitioner Pulse Survey (n=1,742) found 56% of psychologists have used AI tools in their practice in the past year and 29% use AI at least monthly; 38% worry AI could make some of their job duties obsolete; APA now publishes framing on uptake and caution.",
+              "source": "AMERICAN PSYCHOLOGICAL ASSOCIATION, MONITOR ON PSYCHOLOGY",
+              "href": null
+            },
+            {
+              "text": "AI scribe adoption splits sharply by practice size: large health systems 55-65%, mid-size groups 35-45%, small practices (2-10) 15-25%, solo practitioners 10-15%; psychiatry/mental health specialty adoption around 35%. The small/solo tail is where therapists live and where no security team vets vendors.",
+              "source": "TRANSCRIBE HEALTH AI SCRIBE ADOPTION REPORT",
+              "href": null
+            },
+            {
+              "text": "The FTC has already taken action against vendors displaying unsubstantiated HIPAA badges: in a December 2020 complaint against SkyMed International, the FTC alleged that displaying a \"HIPAA Compliance\" seal on its website \"deceived consumers\" under Section 5 of the FTC Act, because the badge had no attribution, no proof, and implied official certification that did not exist. Direct regulatory precedent for a legitimate third-party audit badge in the AI scribe category.",
+              "source": "PRIVAICY INSIGHTS (FTC ACTION CITATION)",
+              "href": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "competitors",
+        "kicker": "Who you're up against",
+        "data": {
+          "count": 10,
+          "players": [
+            {
+              "name": "r/LocalLLaMA, r/iosapps, r/GPUK",
+              "incumbent": false,
+              "description": "Builders are shipping local/on-device AI scribes right now and posting them to Reddit: PrivateScribe.ai (fully local, MIT-licensed, r/LocalLLaMA, 40+ comments), TranscribePad (iOS on-device for clinicians), plus multiple \"Built a fully local AI scribe for clinicians\" posts in r/LocalLLaMA and r/GPUK (20+ comments each).",
+              "href": null
+            },
+            {
+              "name": "Twofold Health YouTube channel",
+              "incumbent": false,
+              "description": "Twofold Health runs an entire YouTube channel targeting the exact review terms a directory would own: \"Best AI Scribe for Therapists in 2026\" (1.7K views), \"Best Reviewed HIPAA Compliant AI Note Taker for Mental Health Professionals\" (1.2K), \"Best AI Medical Scribe in 2026: Review\" (3.6K), \"Best Upheal Alternative for Therapists\" (114), \"Best AI for Psychiatry\" (1.3K), all 3-7 months old.",
+              "href": null
+            },
+            {
+              "name": "TherapyScribes.review",
+              "incumbent": true,
+              "description": "A live independent review site covering 14 AI therapy scribes, 6 hands-on tested, publishing editorial scores out of 10 and dated source-cited pricing/compliance claims; top-ranked are Twofold Health (9.3), Upheal (8.7), Mentalyc (8.4).",
+              "href": null
+            },
+            {
+              "name": "CompareScribes",
+              "incumbent": false,
+              "description": "Tracks 40 AI medical scribes with 9 hands-on tested across 14 country guides; the general-medical analog to TherapyScribes.",
+              "href": null
+            },
+            {
+              "name": "Common Sense Privacy",
+              "incumbent": false,
+              "description": "The closest analog business: a public-benefit for-profit spinout of Common Sense Media that evaluates products on a 160-200 point privacy rubric and awards a Common Sense Privacy Seal.",
+              "href": null
+            },
+            {
+              "name": "Exodus Privacy",
+              "incumbent": false,
+              "description": "The French non-profit model for the proposed idea: scans Android app packages for embedded trackers and permissions, publishes free public reports (public database holds nearly 700,000 reports across 279,000+ Android apps, launched 2017).",
+              "href": null
+            },
+            {
+              "name": "Mentalyc",
+              "incumbent": false,
+              "description": "'s own blog publishes a Top 10 ranked list of AI scribes for therapists (\"Top 10 Best AI Scribe for Therapists in 2026\") that scores competitors on Privacy and Security/Compliance columns, with Mentalyc at #1.",
+              "href": null
+            },
+            {
+              "name": "TrustArc",
+              "incumbent": false,
+              "description": "(formerly TRUSTe) is the cautionary tale for a privacy-seal business: a Harvard study by Benjamin Edelman found sites with TRUSTe certification were 50% MORE likely to violate privacy policies than uncertified sites, and the company was repeatedly criticized for not revoking seals promptly when holders broke the rules.",
+              "href": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "asking",
+        "kicker": "People are asking for it",
+        "data": {
+          "quotes": [
+            {
+              "quote": "\u201cThey are never really deleted. Nothing is ever gone from the internet.\u201d",
+              "source": "r/FamilyMedicine \u00b7 MBHYSAR",
+              "href": null,
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cI've tried to find an answer for Suno about this anywhere but I can't.\u201d",
+              "source": "r/FamilyMedicine \u00b7 RoarOfTheWorlds",
+              "href": null,
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cThis is the ideal time, right now, to embed privacy protective measures into the AI from the outset.\u201d",
+              "source": "CBC News \u00b7 Ann Cavoukian, privacy expert, via CBC",
+              "href": null,
+              "platform": "REDDIT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "verdict",
+        "kicker": "The verdict",
+        "data": {
+          "title": "Should you build this?",
+          "build": [
+            "The pain is on tape: a client telling her therapist an AI scribe feels like a third person in the room drew 190+ comments, and a physician openly said he cannot find Suno's retention answer anywhere, so the market is begging for a third party that just runs the tool and shows what happens.",
+            "Timing is as sharp as it gets: three California class actions in 7 months, California AI transparency rules effective January 2026, and on-device models (Liquid LFM3, Parakeet) crossed the usability line last month, so vendors need outside credibility and clinicians need a trust layer right now.",
+            "The wedge is defensible by labor, not by code: TherapyScribes.review and Mentalyc score vendor CLAIMS, nobody runs packet capture in a sandbox with airplane-mode diff, and that work takes a week per tool so a lazy copycat cannot catch up by Friday.",
+            "Distribution is a solved problem for the right founder: r/therapists has 229K members growing 30% a year and the exact HIPAA/privacy threads already go viral there, so a clinical privacy nerd who posts teardowns instead of pitches gets the first 500 subscribers for free."
+          ],
+          "notBuild": [
+            "The vendor pool is small: ~15 local-only scribes identified today, so year-one audit revenue tops out near $35K-$50K and the whole business depends on vendors actually paying for a badge that does not legally exist yet.",
+            "The badge business has a bad history: TRUSTe-certified sites were more than twice as likely to violate privacy per Harvard's Edelman study, and the FTC fined SkyMed for displaying a HIPAA compliance badge, so one bad audit becomes a lawsuit and a news story at the same time.",
+            "A big cloud scribe (Abridge, Suki, Nuance DAX) shipping its own on-device mode absorbs the local-only category and shrinks the audit market to five vendors overnight, and Abridge is already named in all three California class actions so they have every reason to move.",
+            "Search volume for the local-only query language is zero (five seed terms came back blank), so clinicians are not Googling the exact pitch; the funnel has to be built on Reddit teardowns and newsletter growth, which is slow founder-led work for a year before compounding."
+          ]
+        }
+      },
+      {
+        "id": "founderFit",
+        "kicker": "Founder fit",
+        "data": {
+          "title": "Not every good idea is good for you.",
+          "bestFor": [
+            "Solo security researchers with network-analysis skills and healthcare privacy...",
+            "Technical and clinical privacy teams able to build repeatable tests and expla...",
+            "Business-only founders without access to independent security reviewers",
+            "Founders seeking a simple directory business without legal and trust safeguards"
+          ],
+          "persona": [
+            "A security engineer or healthcare privacy consultant who already knows packet capture (Wireshark, mitmproxy, proxyman) and can write a report a therapist understands. Bonus if they are a licensed clinician themselves or married to one. The ideal founder has an existing r/therapists or healthcare-security following and can post teardowns that read like public service, not sales. Not for a general SaaS founder who wants to buy ads and watch MRR tick up: this is a trust business where the founder's name becomes part of the badge."
+          ],
+          "demands": [
+            {
+              "label": "Trust",
+              "score": 9.0
+            },
+            {
+              "label": "Domain depth",
+              "score": 9.0
+            },
+            {
+              "label": "Content",
+              "score": 8.0
+            },
+            {
+              "label": "Sales",
+              "score": 6.0
+            },
+            {
+              "label": "Capital",
+              "score": 3.0
+            }
+          ],
+          "reality": [
+            {
+              "label": "FIRST REVENUE",
+              "value": "60-90 days"
+            },
+            {
+              "label": "CAPITAL IN",
+              "value": "$5K-$25K"
+            },
+            {
+              "label": "DIFFICULTY",
+              "value": "Moderate"
+            }
+          ]
+        }
+      },
+      {
+        "id": "valueLadder",
+        "kicker": "What you'd sell",
+        "data": {
+          "title": "The value ladder.",
+          "intro": [
+            "The audit itself: install the vendor's app in a clean sandbox, run a scripted 20-minute mock session, capture every outbound packet, repeat in airplane mode, diff the two. The badge is dated and versioned. Free side pulls the audience: public directory of 15-20 tested tools, filterable by what actually stays on device."
+          ],
+          "steps": [
+            {
+              "step": 1,
+              "tier": "LEAD MAGNET",
+              "name": "The 10-Question Scribe Vet",
+              "price": "Free",
+              "description": "One-page PDF of the exact questions to ask a scribe vendor before signing, with red-flag answers highlighted. Email-gated. Drives newsletter growth."
+            },
+            {
+              "step": 2,
+              "tier": "FRONTEND",
+              "name": "Directory + Weekly Newsletter",
+              "price": "Free",
+              "description": "Public directory of 15-20 audited tools with dated badges and plain-English reports. Weekly email to therapists. Zero friction, builds the audience vendors want access to."
+            },
+            {
+              "step": 3,
+              "tier": "CORE",
+              "name": "Sandbox Verification Audit",
+              "price": "$3,500 one-time + $1,500/yr re-test",
+              "description": "Vendor pays for a scripted sandbox test with network capture and airplane-mode behavior. Gets a dated, versioned badge and a public report. Re-test is required to keep the badge live."
+            },
+            {
+              "step": 4,
+              "tier": "CONTINUITY",
+              "name": "Clinician Pro + Sponsor Slots",
+              "price": "$19/mo clinician / $2K-$5K per newsletter sponsor",
+              "description": ""
+            }
+          ]
+        }
+      },
+      {
+        "id": "plan",
+        "kicker": "The plan",
+        "data": {
+          "title": "If you started today.",
+          "subtitle": "First up.",
+          "paragraphs": [
+            "Nobody searches for \"local AI scribe\" yet. Google Ads shows zero recorded volume for that query family. The first 100 clinicians do not come from SEO. They come from one subreddit (r/therapists, 229,000 members, up 29.7% this year) and the viral thread already running there with 270+ comments asking exactly this question. Show up in those comments with real packet captures, not opinions."
+          ]
+        }
+      },
+      {
+        "id": "napkin",
+        "kicker": "Napkin math",
+        "data": {
+          "title": "Year one, on a napkin.",
+          "intro": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.",
+          "rows": [
+            {
+              "label": "Local-only scribe vendors identified today",
+              "value": "~15"
+            },
+            {
+              "label": "Free pilot audits in first 90 days",
+              "value": "5"
+            },
+            {
+              "label": "Paid audits closed months 4-12 (assumption)",
+              "value": "10"
+            },
+            {
+              "label": "Audit price (anchored to HIPAA audit $2K-$10K)",
+              "value": "$3,500"
+            },
+            {
+              "label": "Year-one audit revenue",
+              "value": "$35,000"
+            },
+            {
+              "label": "Re-tests in year one",
+              "value": "3"
+            },
+            {
+              "label": "Re-test price",
+              "value": "$1,500"
+            },
+            {
+              "label": "Re-test revenue",
+              "value": "$4,500"
+            },
+            {
+              "label": "Newsletter subs by month 12 (assumption)",
+              "value": "2,500"
+            },
+            {
+              "label": "Sponsor slots sold months 10-12 (assumption)",
+              "value": "6"
+            },
+            {
+              "label": "Sponsor slot price",
+              "value": "$2,000"
+            },
+            {
+              "label": "Sponsor revenue year one",
+              "value": "$12,000"
+            },
+            {
+              "label": "Clinician pro subs by month 12 (assumption)",
+              "value": "120 at $19/mo"
+            },
+            {
+              "label": "Pro revenue (partial year)",
+              "value": "~$8,000"
+            }
+          ],
+          "summary": [
+            "Year one lands near $60K. Three of five premises (close rate, sub count, sponsor conversion) are assumptions until the first vendor pays and the first 500 subscribers show up. Audit revenue alone traces to real price anchors and a known vendor pool."
+          ],
+          "ceiling": "$2M-$4M ARR"
+        }
+      }
+    ],
+    "popups": [],
+    "inlineLinks": [],
+    "linkCount": 0,
+    "sourceUrl": "https://www.ideabrowser.com/hub/ideas/today"
+  },
   "rawText": "Home\nBrowse\nAgents\nMy Stuff\nAbout me\nAccelerator\nProjects\nExample project\nConnect your AI\nTool deals\nAbout Ideabrowser\nHelp & training\n\u00a9 2026 Ideabrowser\n\u00b7\nLegal\nToggle Sidebar\nIdea of the Day\nBuild Gallery\n1\nGo Pro\nS\n\nIDEA OF THE DAY\u00b7NOV 5, 2026\n\nPrevious\nBrowse all\nVerification platform that audits local-only claims for clinical AI tools\n\nIB Index 7.3\n\u00b7\nB2C \u00b7 Service\n\u00b7\n$2M-$4M ARR\n\nCONCEPT MOCKUP\n\nTHERAPIST COMMUNITY\n\n229K members\n\nr/therapists, +29.7%/yr, active HIPAA-scribe debate\n\nWHAT IT DEMANDS\n\nTrust\nDomain depth\nContent\nSales\nCapital\n\nTHE REALITY\n\nFIRST REVENUE\n60-90 days\nCAPITAL IN\n$5K-$25K\nDIFFICULTY\nModerate\n\nUP AGAINST\n\nTherapyScribes.review\n\nA live independent review site covering 14 AI therapy scribes, 6 hands-on tested, publishing editorial scores\u2026\n\n+ 9 more mapped\n\nTHE PITCH\n\nA therapist in r/TalkTherapy posted that her therapist asked permission to let an AI record their session. It felt, she said, like he was asking to bring a third person into the room. The thread drew 190+ comments. In r/FamilyMedicine a physician admitted he had tried to find Suno's data retention answer and could not. Another posted that recordings are never really deleted. Three California class actions have landed on AI scribes in 7 months. 81% of US physicians now use AI, 56% of psychologists used it in the past year, and new on-device scribes are shipping to r/LocalLLaMA with no third-party verification at all.\n\nWHO IT'S FOR\n\nTwo sides: vendors of local-processing clinical AI tools who need outside credibility, and solo therapists, psychologists and small clinic owners choosing a documentation tool without security staff to vet it.\n\nTHE GAP\n\nThe AI scribe review market is crowded, but nobody runs the tool to see what it actually does\n\nWHY NOW\n\nThree class actions in 7 months turned AI scribe privacy from vibe to legal exposure\n\nAT A GLANCE\n\nTherapist community\n229K members\nPricing\nFree\nYear one\n$40K-$80K\nCeiling\n$2M-$4M ARR\n\nWHAT YOU SELL\n\nSandbox Verification Audit$3,500 one-time + $1,50\u2026\n\nBIGGEST RISK\n\nA big cloud vendor (Abridge, Suki, Nuance DAX) ships an on-device mode and absorbs the local-only category. The vendor pool collapses from 15 to 5, the audit b\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nThree class actions in 7 months turned AI scribe privacy from vibe to legal exposure\n\nThe old threat was a vague privacy worry. The new threat is a court filing. In November 2025, Jose Saucedo sued Sharp HealthCare in San Diego Superior Court over use of Abridge without consent. On April 8, 2026, three California patients sued Sutter Health and MemorialCare in federal court (Washington v. Sutter Health, 4:26-cv-03012-KAW) over the same tool. More California health systems joined the list by mid-2026. The claims are not HIPAA. HIPAA has no private right of action. The claims are wiretapping (CIPA, the Federal Wiretap Act) and California's mini-HIPAA (CMIA), which do let patients sue, and which 11 US states now parallel with all-party consent laws. A business associate agreement does not stop a wiretap case. That changes what a clinician needs to know before picking a tool, and it is why vendors who can prove audio never leaves the device suddenly have a story worth selling.\n\nThe buyer side moved at the same time. The AMA 2026 survey found 81% of US physicians now use AI professionally, up from 38% in 2023. The APA Practitioner Pulse found 56% of psychologists used AI in the past year. Kaiser Permanente mental health workers in Northern California are now bargaining to limit AI scribe use because they fear both privacy risk and higher caseloads. On the patient side, a survey of 12,153 Canadian adults found 62% reluctant to have an AI scribe used in their care, and an NPR-cited US survey found only 8% of patients would trust an AI in a therapy context. California's AI transparency rules took effect January 2026. Texas SB 1188 requires practitioners to disclose AI use to patients. The APA has issued formal AI scribe guidance. And on the technology side, local models crossed the usability line: Liquid AI's LFM3 (October 27, 2026) runs on an iPhone 17 Pro, Nvidia Parakeet powers free Mac dictation apps clinicians use 50 times a day, and new on-device scribes (PrivateScribe.ai, TranscribePad, OrbDoc) are shipping right now with no outside credibility. The audit buyer and the audit market both appeared in the same 12 months.\n\nSOURCES\nalstonprivacy.com\nProof News\naaceendocrine.ai\noffcall.com\nSee the full timing case\n\nMARKET SNAPSHOT\n\nThe receipts.\n\nPAIN\n\n8/10 SEVERITY\n\n\u201cBut their actual privacy policy says they can create de-identified data derived from information processed through the service. HIPAA de-...\u201d\n\nr/therapists \u00b7 r/therapists OP (post has 270+ comments)\n\n\u201cMy therapist just asked me for permission to have AI record our sessions... I feel really weird about it, it's like he's asking to bring a third person into the room with us... Would you ever consider something like that?\u201d\n\nr/TalkTherapy \u00b7 r/TalkTherapy client\n\n\u201cThat's really, really not how consent works. My office has been having patients sign consent forms for this. I routinely get asked after they've signed it \"what's this about, anyway?\" \"My client did not understand that everything he said would be recorded and\u2026\u201d\n\nr/FamilyMedicine \u00b7 Hypno-phile (physician)\n\nAll 7 receipts, and where these people gather\n\nWHITESPACE\n\nMARKET GAP\n\nThe AI scribe review market is crowded, but nobody runs the tool to see what it actually does\n\nUnderstand the opening\n\nTHE WEDGE\n\nRun each tool in a sandbox, capture real network traffic during note-taking including airplane-mode, publish a plain-English report plus a badge. Launch with 15-20 audited tools and a clinician newsletter.\n\nThe incumbent to beat: TherapyScribes.review\n\nPROOF & SIGNALS\n\nThe AMA 2026 Physician Survey on Augmented Intelligence found 81% of US physicians use AI professionally, up from 38% in 2023; mean AI use cases per physician rose to 2.3 from 1.1, with ambient scribes the top category.\n\nAMA 2026 PHYSICIAN SURVEY ON AUGMENTED INTELLIGENCE (VIA NOTIRO)\n\nAPA's 2025 Practitioner Pulse Survey (n=1,742) found 56% of psychologists have used AI tools in their practice in the past year and 29% use AI at least monthly; 38% worry AI could make some of their job duties obsolete; APA now publishes framing on uptake and caution.\n\nAMERICAN PSYCHOLOGICAL ASSOCIATION, MONITOR ON PSYCHOLOGY\n\nAI scribe adoption splits sharply by practice size: large health systems 55-65%, mid-size groups 35-45%, small practices (2-10) 15-25%, solo practitioners 10-15%; psychiatry/mental health specialty adoption around 35%. The small/solo tail is where therapists live and where no security team vets vendors.\n\nTRANSCRIBE HEALTH AI SCRIBE ADOPTION REPORT\n\nThe FTC has already taken action against vendors displaying unsubstantiated HIPAA badges: in a December 2020 complaint against SkyMed International, the FTC alleged that displaying a \"HIPAA Compliance\" seal on its website \"deceived consumers\" under Section 5 of the FTC Act, because the badge had no attribution, no proof, and implied official certification that did not exist. Direct regulatory precedent for a legitimate third-party audit badge in the AI scribe category.\n\nPRIVAICY INSIGHTS (FTC ACTION CITATION)\nExplore the evidence\n\nWHO YOU'RE UP AGAINST\n\n10 PLAYERS\n\nr/LocalLLaMA, r/iosapps, r/GPUK\n\nBuilders are shipping local/on-device AI scribes right now and posting them to Reddit: PrivateScribe.ai (fully local, MIT-licensed, r/LocalLLaMA, 40+ comments), TranscribePad (iOS on-device for clinicians), plus multiple \"Built a fully local AI scribe for clinicians\" posts in r/LocalLLaMA and r/GPUK (20+ comments each).\n\nTwofold Health YouTube channel\n\nTwofold Health runs an entire YouTube channel targeting the exact review terms a directory would own: \"Best AI Scribe for Therapists in 2026\" (1.7K views), \"Best Reviewed HIPAA Compliant AI Note Taker for Mental Health Professionals\" (1.2K), \"Best AI Medical Scribe in 2026: Review\" (3.6K), \"Best Upheal Alternative for Therapists\" (114), \"Best AI for Psychiatry\" (1.3K), all 3-7 months old.\n\nTherapyScribes.review\n\nINCUMBENT\n\nA live independent review site covering 14 AI therapy scribes, 6 hands-on tested, publishing editorial scores out of 10 and dated source-cited pricing/compliance claims; top-ranked are Twofold Health (9.3), Upheal (8.7), Mentalyc (8.4).\n\nCompareScribes\n\nTracks 40 AI medical scribes with 9 hands-on tested across 14 country guides; the general-medical analog to TherapyScribes.\n\nCommon Sense Privacy\n\nThe closest analog business: a public-benefit for-profit spinout of Common Sense Media that evaluates products on a 160-200 point privacy rubric and awards a Common Sense Privacy Seal.\n\nExodus Privacy\n\nThe French non-profit model for the proposed idea: scans Android app packages for embedded trackers and permissions, publishes free public reports (public database holds nearly 700,000 reports across 279,000+ Android apps, launched 2017).\n\nMentalyc\n\n's own blog publishes a Top 10 ranked list of AI scribes for therapists (\"Top 10 Best AI Scribe for Therapists in 2026\") that scores competitors on Privacy and Security/Compliance columns, with Mentalyc at #1.\n\nTrustArc\n\n(formerly TRUSTe) is the cautionary tale for a privacy-seal business: a Harvard study by Benjamin Edelman found sites with TRUSTe certification were 50% MORE likely to violate privacy policies than uncertified sites, and the company was repeatedly criticized for not revoking seals promptly when holders broke the rules.\n\nPEOPLE ARE ASKING FOR IT\n\nREDDIT\n\n\u201cThey are never really deleted. Nothing is ever gone from the internet.\u201d\n\nr/FamilyMedicine \u00b7 MBHYSAR\n\n\u201cI've tried to find an answer for Suno about this anywhere but I can't.\u201d\n\nr/FamilyMedicine \u00b7 RoarOfTheWorlds\n\n\u201cThis is the ideal time, right now, to embed privacy protective measures into the AI from the outset.\u201d\n\nCBC News \u00b7 Ann Cavoukian, privacy expert, via CBC\n\nTHE VERDICT\n\nShould you build this?\n\nREASONS TO BUILD\n\nThe pain is on tape: a client telling her therapist an AI scribe feels like a third person in the room drew 190+ comments, and a physician openly said he cannot find Suno's retention answer anywhere, so the market is begging for a third party that just runs the tool and shows what happens.\nTiming is as sharp as it gets: three California class actions in 7 months, California AI transparency rules effective January 2026, and on-device models (Liquid LFM3, Parakeet) crossed the usability line last month, so vendors need outside credibility and clinicians need a trust layer right now.\nThe wedge is defensible by labor, not by code: TherapyScribes.review and Mentalyc score vendor CLAIMS, nobody runs packet capture in a sandbox with airplane-mode diff, and that work takes a week per tool so a lazy copycat cannot catch up by Friday.\nDistribution is a solved problem for the right founder: r/therapists has 229K members growing 30% a year and the exact HIPAA/privacy threads already go viral there, so a clinical privacy nerd who posts teardowns instead of pitches gets the first 500 subscribers for free.\n\nREASONS TO NOT BUILD\n\nThe vendor pool is small: ~15 local-only scribes identified today, so year-one audit revenue tops out near $35K-$50K and the whole business depends on vendors actually paying for a badge that does not legally exist yet.\nThe badge business has a bad history: TRUSTe-certified sites were more than twice as likely to violate privacy per Harvard's Edelman study, and the FTC fined SkyMed for displaying a HIPAA compliance badge, so one bad audit becomes a lawsuit and a news story at the same time.\nA big cloud scribe (Abridge, Suki, Nuance DAX) shipping its own on-device mode absorbs the local-only category and shrinks the audit market to five vendors overnight, and Abridge is already named in all three California class actions so they have every reason to move.\nSearch volume for the local-only query language is zero (five seed terms came back blank), so clinicians are not Googling the exact pitch; the funnel has to be built on Reddit teardowns and newsletter growth, which is slow founder-led work for a year before compounding.\nRoast it with your agent\n\nFOUNDER FIT\n\nNot every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo security researchers with network-analysis skills and healthcare privacy...\nTechnical and clinical privacy teams able to build repeatable tests and expla...\nBusiness-only founders without access to independent security reviewers\nFounders seeking a simple directory business without legal and trust safeguards\n\nA security engineer or healthcare privacy consultant who already knows packet capture (Wireshark, mitmproxy, proxyman) and can write a report a therapist understands. Bonus if they are a licensed clinician themselves or married to one. The ideal founder has an existing r/therapists or healthcare-security following and can post teardowns that read like public service, not sales. Not for a general SaaS founder who wants to buy ads and watch MRR tick up: this is a trust business where the founder's name becomes part of the badge.\n\nWHAT IT DEMANDS\n\nTrust\n9\nDomain depth\n9\nContent\n8\nSales\n6\nCapital\n3\n\nTHE REALITY\n\nFIRST REVENUE\n\n60-90 days\n\nCAPITAL IN\n\n$5K-$25K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card\n\nWHAT YOU'D SELL\n\nThe value ladder.\n\nThe audit itself: install the vendor's app in a clean sandbox, run a scripted 20-minute mock session, capture every outbound packet, repeat in airplane mode, diff the two. The badge is dated and versioned. Free side pulls the audience: public directory of 15-20 tested tools, filterable by what actually stays on device.\n\n1\n\nLEAD MAGNET\n\nThe 10-Question Scribe Vet(Free)\n\nOne-page PDF of the exact questions to ask a scribe vendor before signing, with red-flag answers highlighted. Email-gated. Drives newsletter growth.\n\n2\n\nFRONTEND\n\nDirectory + Weekly Newsletter(Free)\n\nPublic directory of 15-20 audited tools with dated badges and plain-English reports. Weekly email to therapists. Zero friction, builds the audience vendors want access to.\n\n3\n\nCORE\n\nSandbox Verification Audit($3,500 one-time + $1,500/yr re-test)\n\nVendor pays for a scripted sandbox test with network capture and airplane-mode behavior. Gets a dated, versioned badge and a public report. Re-test is required to keep the badge live.\n\n4\n\nCONTINUITY\n\nClinician Pro + Sponsor Slots($19/mo clinician / $2K-$5K per newsletter sponsor)\n\nView the full value ladder\n\nTHE PLAN\n\nIf you started today.\nFirst up.\n\nNobody searches for \"local AI scribe\" yet. Google Ads shows zero recorded volume for that query family. The first 100 clinicians do not come from SEO. They come from one subreddit (r/therapists, 229,000 members, up 29.7% this year) and the viral thread already running there with 270+ comments asking exactly this question. Show up in those comments with real packet captures, not opinions.\n\nSee the detailed plan\nYear one, on a napkin.\nNAPKIN MATH\n\nWhat the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nLocal-only scribe vendors identified today\n~15\nFree pilot audits in first 90 days\n5\nPaid audits closed months 4-12 (assumption)\n10\nAudit price (anchored to HIPAA audit $2K-$10K)\n$3,500\nYear-one audit revenue\n$35,000\nRe-tests in year one\n3\nRe-test price\n$1,500\nRe-test revenue\n$4,500\nNewsletter subs by month 12 (assumption)\n2,500\nSponsor slots sold months 10-12 (assumption)\n6\nSponsor slot price\n$2,000\nSponsor revenue year one\n$12,000\nClinician pro subs by month 12 (assumption)\n120 at $19/mo\nPro revenue (partial year)\n~$8,000\n\nYear one lands near $60K. Three of five premises (close rate, sub count, sponsor conversion) are assumptions until the first vendor pays and the first 500 subscribers show up. Audit revenue alone traces to real price anchors and a known vendor pool.\n\nTHE CEILING IF IT COMPOUNDS\n$2M-$4M ARR\nRun the model on your numbers\n\nTHE AGENTS\n\nJam on it with your agent.\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCodex\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cHow would \"Verification platform that audits local-only\u2026\" beat TherapyScribes.review?\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\nFinish personalizing your Ideabrowser\nSkip for now\n1 OF 2\nWhat stage best explains where you're at?\n\nPick up to 2.\n\nExploring and getting inspired\nHere to see what's out there\nLeveling up at work\nUsing ideas and AI to get ahead in my job\nReady to build\nI just need the right idea\nI have an idea\nHaven't started building it yet\nBuilding an idea\nEarly days, no revenue yet\nGot my first customers\nMaking money, under $100K a year\nGrowing a business\nOver $100K a year, ready to scale\nAdd a note about your situation\n(optional)\nPress Enter\nContinue",
   "status": "not_started",
   "notes": "",

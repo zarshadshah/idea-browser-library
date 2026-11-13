@@ -241,6 +241,794 @@
   "painScore": 8,
   "timingScore": 8,
   "layoutDetected": "new",
+  "siteView": {
+    "version": "v2",
+    "dateLabel": null,
+    "title": "The Diamond Dealer",
+    "ibIndex": "7.0",
+    "tags": [],
+    "painSeverity": "8",
+    "hero": [
+      {
+        "label": "THE IDEA",
+        "lines": [
+          "He is on his laptop at 11pm with a $5,400 lab-grown 2ct E VVS2 ring in his cart. He does not know if that is a fair price or a rip-off. So he does what 529,600 people in r/EngagementRings do: he pastes the specs and asks strangers. The sub's own rules say the mods cannot advise on price. Meanwhile lab-grown wholesale fell 96% since 2018, retail markup held at 80%, and the average US ring buyer now spends $4,600 on a 1.9 carat stone with no way to check the math.",
+          "This service is a $49 buyer-paid verdict on one online listing, delivered as a one-page PDF within 24 hours by a GIA gemologist who does not sell rings. Three words on top: BUY, NEGOTIATE, or WALK. Below that: a certificate check, three comparable listings, visible concerns from the photos, and three questions to ask the seller. $99 for a three-ring comparison. Free URL fair-price tool at the top of the funnel to feed it."
+        ],
+        "prose": true
+      },
+      {
+        "label": "THE CUSTOMER",
+        "lines": [
+          "First-Time Engagement-Ring Buyers Shopping Online (Blue Nile",
+          "MARKET",
+          "B2C \u00b7 Saas",
+          "REVENUE CEILING",
+          "$1.2M-$1.5M ARR",
+          "COMPETITION",
+          "StoneAlgo"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "MARKET",
+            "value": "B2C \u00b7 Saas"
+          },
+          {
+            "label": "REVENUE CEILING",
+            "value": "$1.2M-$1.5M ARR"
+          },
+          {
+            "label": "COMPETITION",
+            "value": "StoneAlgo"
+          }
+        ],
+        "lead": "First-Time Engagement-Ring Buyers Shopping Online (Blue Nile"
+      },
+      {
+        "label": "CATEGORY DEMAND",
+        "lines": [
+          "165K",
+          "/mo",
+          "+22%"
+        ],
+        "prose": false
+      },
+      {
+        "label": "PAIN",
+        "lines": [
+          "8",
+          "/10 severity",
+          "r/EngagementRings and 5 more feel it"
+        ],
+        "prose": false
+      },
+      {
+        "label": "TIMING",
+        "lines": [
+          "8",
+          "/10",
+          "why the window is open"
+        ],
+        "prose": false
+      },
+      {
+        "label": "YEAR 1, DONE RIGHT",
+        "lines": [
+          "$40K-$90K",
+          "ceiling $1.2M-$1.5M ARR"
+        ],
+        "prose": false
+      },
+      {
+        "label": "AT A GLANCE",
+        "lines": [
+          "CATEGORY DEMAND",
+          "165K/mo",
+          "PRICING",
+          "$49",
+          "DIFFICULTY",
+          "Moderate",
+          "UP AGAINST",
+          "StoneAlgo"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "CATEGORY DEMAND",
+            "value": "165K/mo"
+          },
+          {
+            "label": "PRICING",
+            "value": "$49"
+          },
+          {
+            "label": "DIFFICULTY",
+            "value": "Moderate"
+          },
+          {
+            "label": "UP AGAINST",
+            "value": "StoneAlgo"
+          }
+        ]
+      }
+    ],
+    "heroMore": {
+      "label": "Keep reading",
+      "title": "The full idea.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The way in is not SEO. Nobody types 'engagement ring second opinion' into Google; that phrase returns zero measurable volume. The way in is the comments section of the exact threads where the panic lives. r/EngagementRings, r/labdiamond, r/Diamonds, and PriceScope (20 years old, dozens of active 'Am I being ripped off?' threads). Five useful, gemologist-signed comments a day for 60 days. Every comment links to the free URL fair-price tool. The free tool feeds email. Email feeds the $49 verdict. Then the paid push times to February, when Google search for 'diamond appraisal' triples on the proposal spike."
+        },
+        {
+          "type": "p",
+          "text": "The wedge customer is the first-time male buyer, $2K-$10K budget, shopping Blue Nile, James Allen, Brilliant Earth, or an Instagram jeweler he found through a friend. He has already asked strangers on Reddit; he already tried a free calculator; he trusts nobody at the store. The competitor everyone thinks of is The Diamond Pro, which has served 40,114 shoppers with a free consultation, funded by James Allen and Blue Nile affiliate commissions. That is the seam: every free option is paid for by the retailer. Every paid option (Little Bird at $75-$600, Edward Blomgren's URL review, Etsy solo gemologist IKEandLI at $62-$88 with 8,200 sales) is bespoke and slow. A productized $49 flat, 24-hour, one-page PDF is the sharp middle."
+        },
+        {
+          "type": "p",
+          "text": "The money math works but has a ceiling. Ninety days of pure Reddit plus the free tool gets to about $3,500 and 60 paid customers, a validation number, not a business. The honest year-one range is $60K-$120K in verdict revenue if the founder catches one February. The ceiling case, at 2% reach of the roughly 700K online first-time panicked buyers per year, is about $686K in verdict revenue plus a small Ring Radar continuity add and, later, jeweler B2B or affiliate on BUY verdicts, landing near $2M-$4M in annual revenue at maturity. Below that, the two things that will kill it are a defamation letter from a retailer over a sloppy WALK verdict, and Q3 seasonality with no repeat purchase. The founder needs a real GIA gemologist named on every page and a lawyer-written methodology before scale, not after."
+        }
+      ]
+    },
+    "sections": [
+      {
+        "id": "whyNow",
+        "kicker": "Why now",
+        "data": {
+          "headline": "Lab-grown wholesale fell 96%, retail markup stayed at 80%: buyers cannot see the gap",
+          "paragraphs": [
+            "The engagement ring changed price and material in the same 24 months, and the buyer is the last to find out. Lab-grown center stones were 61% of all US engagement rings in 2025, up 239% since 2020. Wholesale prices for a 1-carat lab-grown diamond crashed from around $4,200 in 2018 to as low as $168 by 2025, a 96% cut. Retail did not follow. Analyst Paul Zimnisky's May 2026 data shows US retailers still capture more than 80% markup above wholesale, with gross margins on 1-3 carat rounds hitting 74% in Q2 2025. That is the gap. A first-time buyer walks into a $5,400 online listing and has no way to know the stone inside cost the retailer a few hundred dollars.",
+            "The incumbents just confirmed the pain in cash. In May 2026 Signet, the $6.8B parent of Blue Nile, James Allen, Kay and Zales, bought The Clear Cut specifically to add personalized gemological expertise to Blue Nile because online ring shopping is 'intimidating'. 39% of Blue Nile's bridal transactions in 2025 were $10,000 or higher. The biggest online seller just paid to add a human gemologist because the free tools are not enough. That is the timing signal a founder wants: category leader spends real money on the exact service this idea sells, only staffed by the seller instead of the buyer."
+          ],
+          "sources": [
+            {
+              "label": "The Knot Real Weddings Study 2026",
+              "href": "https://www.jckonline.com/editorial-article/lab-diamonds-engagement-market/"
+            },
+            {
+              "label": "Financial Content / CaratX",
+              "href": "https://markets.financialcontent.com/wral/article/marketminute-2025-10-23-lab-grown-diamond-bubble-bursts-prices-plummet-reshaping-global-diamond-market-and-sparking-natural-stone-revival"
+            },
+            {
+              "label": "rapaport.com",
+              "href": "https://rapaport.com/news/lab-grown-taking-over-engagement-ring-spending-the-knot/"
+            },
+            {
+              "label": "caratx.com",
+              "href": "https://caratx.com/blog/lab-grown-diamonds-2025-fast-growth-bigger-stones"
+            }
+          ]
+        },
+        "more": {
+          "label": "See the full timing case",
+          "title": "The full timing case.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Lab-grown is 61% of US engagement rings in 2025 (up from 3% in 2018), wholesale fell 96%, retail markup held at 80%, and Signet just bought The Clear Cut in May 2026 to fix exactly this buyer confusion."
+            },
+            {
+              "type": "h",
+              "text": "THE SIGNALS"
+            },
+            {
+              "type": "p",
+              "text": "Lab-grown share of US engagement rings: 3% in 2018, 45% in 2024, 61% in 2025 (The Knot, 2026 Real Weddings Study of 10,000+ US couples)."
+            },
+            {
+              "type": "p",
+              "text": "Wholesale price of a 1-carat lab-grown: ~$4,200 in 2018, as low as $168 in 2025 (96% drop, per Edahn Golan's Lab Diamond Wholesale Price List)."
+            },
+            {
+              "type": "p",
+              "text": "Retail markup on lab-grown: still 80%+ above wholesale in 2026, gross margins on 1-3 carat rounds at 74% in Q2 2025 (Paul Zimnisky analysis, JCK)."
+            },
+            {
+              "type": "p",
+              "text": "Average US engagement ring price fell from $5,200 (2024) to $4,600 (2025) while carat size rose to 1.9ct: buyers are trading up on size and confusion at the same time."
+            },
+            {
+              "type": "p",
+              "text": "Consumer awareness of lab-grown: 84%. Willingness to buy lab-grown for an engagement ring: 74% (Plumb Club 2025 survey, 2,000+ consumers). The 10-point gap is the confidence hole this service fills."
+            },
+            {
+              "type": "p",
+              "text": "May 2026: Signet acquires The Clear Cut for Blue Nile, explicitly to add gemological expertise because online ring buying is 'intimidating'. Category leader validates the pain."
+            },
+            {
+              "type": "p",
+              "text": "The volatility is peaking, not starting. Q4 2025 wholesale drops slowed to 4.7% quarter-on-quarter, the smallest since the category began, and smaller HPHT stones rose 10-20%. The window of maximum buyer confusion is now, not five years from now."
+            },
+            {
+              "type": "p",
+              "text": "Counter to 'now': search terms like 'engagement ring second opinion' and 'lab grown diamond price check' still show zero measurable Google volume. The panic lives inside Reddit threads and 'diamond price calculator' searches (8,100/mo), not in a ready-made solution query. A founder must create the category name."
+            }
+          ]
+        }
+      },
+      {
+        "id": "marketSnapshot",
+        "kicker": "Market snapshot",
+        "data": {
+          "title": "The receipts.",
+          "painSeverity": "8",
+          "quotes": [
+            {
+              "quote": "\u201cmarquise diamond\u201d",
+              "source": "165K/mo",
+              "href": null,
+              "platform": null
+            },
+            {
+              "quote": "\u201clab grown diamond rings\u201d",
+              "source": "\u25b2 49%",
+              "href": null,
+              "platform": null
+            },
+            {
+              "quote": "\u201ccustom engagement rings\u201d",
+              "source": "\u25bc 75%",
+              "href": null,
+              "platform": null
+            },
+            {
+              "quote": "\u201clab grown diamonds\u201d",
+              "source": "\u25bc 18%",
+              "href": null,
+              "platform": null
+            },
+            {
+              "quote": "\u201cPretty much the title. Diamond is a lab grown 2 carat, E vvs2 i didnt ask the jeweler for the dimensions. Price at $5400\u201d",
+              "source": "r/EngagementRings \u00b7 r/EngagementRings user",
+              "href": "https://www.reddit.com/r/EngagementRings/comments/1o6l9sv/planning_on_proposing_soon_am_i_overpaying/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cPretty much the title. Diamond is a lab grown 2 carat, E vvs2 i didnt ask the jeweler for the dimensions. Price at $5400\u201d",
+              "source": "r/EngagementRings \u00b7 u/OP",
+              "href": "https://www.reddit.com/r/EngagementRings/comments/1o6l9sv/planning_on_proposing_soon_am_i_overpaying/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cHe said he paid just over $8,000 for it. I'm now seeing videos on tiktok from a jeweler selling 4-5 carat lab grown diamond rings for $5K.\u201d",
+              "source": "r/labdiamond \u00b7 u/OP",
+              "href": "https://www.reddit.com/r/labdiamond/comments/1hdrqkf/did_my_fiance_get_ripped_off/",
+              "platform": null
+            }
+          ],
+          "receiptsLabel": "All 9 receipts, and where these people gather"
+        }
+      },
+      {
+        "id": "whitespace",
+        "kicker": "Whitespace",
+        "data": {
+          "gap": "Free advice is everywhere, a paid 24-hour verdict is not",
+          "wedge": [
+            "Independent of the seller. Existing free consultations come from jewelers who want the sale; this reviewer is paid by the buyer and has no upsell."
+          ],
+          "incumbent": {
+            "name": "StoneAlgo",
+            "href": "https://www.stonealgo.com/diamond-details/subscribe/"
+          },
+          "other": []
+        },
+        "more": {
+          "label": "Understand the opening",
+          "title": "The opening.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The free tier owns the buyer's first search. The Diamond Pro runs a free consultation staffed by GIA-trained specialists and pays the bills through affiliate links to James Allen and Blue Nile. James Allen itself puts a non-commissioned gemologist on a live video call with any shopper, for free, and shows the diamond in 40x zoom. YourDiamondGuys, staffed by ex-Tiffany and ex-Cartier diamond suppliers, gives the same pitch: free, no commission. PriceScope is a 20-year-old forum where nervous buyers post the certificate and get a crowd verdict from industry regulars within hours, also free. This is the wall a $49 pre-purchase verdict has to punch through: the buyer already has four free options he trusts more than a new brand."
+            },
+            {
+              "type": "p",
+              "text": "The paid tier is smaller, older, and mostly not built for a first-time online buyer. Little Bird (San Francisco, since 2013) sells $75 to $600 flat-fee consulting for couples who want a hand-held ring hunt. Edward Blomgren, a GIA gemologist in Asheville, will review a URL and grill the seller for the buyer, priced case by case. On Etsy, a solo GIA gemologist named IKEandLI has done 8,200 sales at $62 to $88 per consultation. These are lifestyle practices, not products: they sell hours, not verdicts, and none of them show up on Google for 'am I overpaying for this ring.'"
+            },
+            {
+              "type": "p",
+              "text": "StoneAlgo is the real incumbent for a $49 productized verdict. It runs a diamond marketplace with a Pro subscription at $29 a month or $39 for one month, gives three free 'diamond checks' up front, and returns a Zillow-style fair-price estimate plus a cut score for any GIA or IGI diamond in seconds. It ranks for 2,400 US searches a month on the brand name alone and it already answers the exact question this idea sells. It is also the softest incumbent to attack: its verdict is an algorithm, not a person; it does not read photos; it does not tell you to walk away; and the marketplace revenue creates the same trust problem The Diamond Pro has."
+            },
+            {
+              "type": "p",
+              "text": "The specific gap: a human GIA gemologist verdict on the exact ring the buyer is about to buy, delivered as a fixed-price product ($49, one ring, 24 hours), reachable in one click from a Google search or a Reddit comment, with a clear 'buy, negotiate, or walk' recommendation the buyer can screenshot and send to the seller. Little Bird and Blomgren give the human, but the packaging is $75 to $600 and the intake feels like hiring a lawyer. StoneAlgo gives the fast productized answer, but the answer is a number, not a person, and does not cover photos, seller behavior, or fake-lab-report risk. Nobody owns the middle."
+            },
+            {
+              "type": "p",
+              "text": "The Diamond Pro (diamonds.pro): free consultation, funded by James Allen and Blue Nile affiliate commissions. 40,114 shoppers helped. Not seller-independent."
+            },
+            {
+              "type": "p",
+              "text": "James Allen: free live video call with a non-commissioned gemologist. On their own site. Ranks for every buyer term."
+            },
+            {
+              "type": "p",
+              "text": "StoneAlgo: $29 a month or $39 one-month pass for unlimited GIA/IGI 'diamond checks' plus a fair-price estimate. Free tier gives three checks. Zillow-style algorithm, not a person."
+            },
+            {
+              "type": "p",
+              "text": "Little Bird (SF, since 2013): $75 to $600 flat-fee packages, GIA gemologists, paid only by the buyer. Yelp-driven, not SEO-driven."
+            },
+            {
+              "type": "p",
+              "text": "Edward Blomgren (Asheville): sends the URL, he reviews the listing, photos, and grills the seller. Custom fee schedule, not productized."
+            },
+            {
+              "type": "p",
+              "text": "Etsy solo GIA gemologist IKEandLI: $62 to $88 per one-off consult, 8,200 shop sales, 4.8 stars over 10 years. Proof the $49 to $99 price band already sells."
+            },
+            {
+              "type": "p",
+              "text": "Gem Pro Appraisal (NYC): from $150. Insurance-driven post-purchase market, not pre-purchase."
+            },
+            {
+              "type": "p",
+              "text": "PriceScope: free 20-year-old forum. The real 'do nothing and ask strangers' status quo, with dozens of live 'Am I being ripped off?' threads."
+            },
+            {
+              "type": "p",
+              "text": "Your way in: Independent of the seller. Existing free consultations come from jewelers who want the sale; this reviewer is paid by the buyer and has no upsell."
+            },
+            {
+              "type": "h",
+              "text": "WHO\u2019S ALREADY IN THE MARKET"
+            }
+          ]
+        }
+      },
+      {
+        "id": "proof",
+        "kicker": "Proof & signals",
+        "data": {
+          "items": [
+            {
+              "text": "YouTube \"how to buy an engagement ring\" / diamond education videos pull massive views: 1.75M (\"How to tell a fake or real diamond\"), 1.09M (natural vs lab diamonds), 670K (lab-grown buying guide), 143K (Top 10 don'ts / save $2000). Content demand is proven.",
+              "source": "YOUTUBE",
+              "href": "https://www.youtube.com/watch?v=nukfHKe8Lxs"
+            },
+            {
+              "text": "Little Bird claims a hired ring consultant can save clients 20-40% off the ring price, framing the paid consult as ROI-positive on a $2K-$10K purchase.",
+              "source": "LITTLE BIRD",
+              "href": "http://www.littlebirdtoldyou.com/blog/how-a-ring-consultant-can-save-you-money-on-an-engagement-ring-from-chase-bank"
+            },
+            {
+              "text": "Lab-grown center stones accounted for 61% of all US engagement ring purchases in 2025, up 239% since 2020, according to The Knot's Real Weddings Study 2026 (survey of 10,000+ US couples married in 2025).",
+              "source": "THE KNOT REAL WEDDINGS STUDY 2026 (VIA JCK)",
+              "href": "https://www.jckonline.com/editorial-article/lab-diamonds-engagement-market/"
+            },
+            {
+              "text": "Wholesale prices for a 1-carat lab-grown diamond fell from approximately $4,200 in 2018 to as low as $168 by 2025, a 96% collapse driven by 300%+ growth in global production capacity between 2020-2023.",
+              "source": "FINANCIAL CONTENT / CARATX (INDUSTRY REPORTING)",
+              "href": "https://markets.financialcontent.com/wral/article/marketminute-2025-10-23-lab-grown-diamond-bubble-bursts-prices-plummet-reshaping-global-diamond-market-and-sparking-natural-stone-revival"
+            }
+          ]
+        },
+        "more": {
+          "label": "Explore the evidence",
+          "title": "Proof & signals.",
+          "blocks": [
+            {
+              "type": "h",
+              "text": "THE HARD NUMBERS"
+            },
+            {
+              "type": "h",
+              "text": "WHAT THE RESEARCH SAYS"
+            },
+            {
+              "type": "p",
+              "text": "Emotional Frustration Signals"
+            },
+            {
+              "type": "p",
+              "text": "Time-Sensitive Needs"
+            },
+            {
+              "type": "p",
+              "text": "Systemic Barriers"
+            },
+            {
+              "type": "p",
+              "text": "Community Demand & Engagement"
+            },
+            {
+              "type": "p",
+              "text": "The market reveals strong frustration with price complexity and emotional decision-making in engagement ring purchases. This drives demand for fast, independent assessments, particularly given the growth of lab-grown diamond popularity. Community engagement is high but reveals potential challenges in conversion to paid services given free alternatives. Systemic barriers exist due to reliance on visual appraisals and potential liability issues."
+            }
+          ]
+        }
+      },
+      {
+        "id": "competitors",
+        "kicker": "Who you're up against",
+        "data": {
+          "count": 8,
+          "players": [
+            {
+              "name": "StoneAlgo",
+              "incumbent": true,
+              "description": "Runs a diamond marketplace with a Pro subscription ($39 one-month pass, $29/mo, or $240/year) for unlimited diamond \"checks\" (fair-price estimate + cut score for any GIA/IGI diamond); free tier gives 3 unlimited checks.",
+              "href": "https://www.stonealgo.com/diamond-details/subscribe/"
+            },
+            {
+              "name": "The Diamond Pro",
+              "incumbent": false,
+              "description": "(diamonds.pro) offers FREE engagement ring consultation.",
+              "href": "https://www.diamonds.pro/engagement-ring-consultation/"
+            },
+            {
+              "name": "Little Bird",
+              "incumbent": false,
+              "description": "(San Francisco, founded 2013) offers paid engagement ring consulting: flat-fee packages $75-$600 covering education, ring finding, and design help.",
+              "href": "http://www.littlebirdtoldyou.com/blog/how-a-ring-consultant-can-save-you-money-on-an-engagement-ring-from-chase-bank"
+            },
+            {
+              "name": "James Allen",
+              "incumbent": false,
+              "description": "(Signet-owned, largest online diamond retailer) offers FREE Real-Time Diamond Inspection: schedule a video call with a non-commissioned certified gemologist to review any diamond in 360-degree HD with 40x SuperZoom, on their site.",
+              "href": "https://blog.jamesallen.com/diamond-inspection-a-free-expert-consultation/"
+            },
+            {
+              "name": "Edward Blomgren",
+              "incumbent": false,
+              "description": "(Asheville NC), GIA Graduate Gemologist + MasterValuer certified, sells 2nd opinion / pre-purchase gem review service where the buyer sends the URL of the online listing and he reviews the details, photographs, and grills the seller for the buyer.",
+              "href": "https://www.edwardblomgren.com/"
+            },
+            {
+              "name": "IKEandLI on Etsy",
+              "incumbent": false,
+              "description": "Etsy solo GIA gemologists sell one-off diamond consultation gigs.",
+              "href": "https://www.etsy.com/listing/675897402/diamond-service-diamond-cosultation"
+            },
+            {
+              "name": "YourDiamondGuys",
+              "incumbent": false,
+              "description": "(Rob and Josh, ex-Tiffany/Cartier/Harry Winston diamond suppliers) offers FREE diamond buying consultation with an explicit \"No commissions, no sales pressure\" pitch, marketed as working exclusively for the buyer.",
+              "href": "https://yourdiamondguys.com/"
+            },
+            {
+              "name": "PriceScope",
+              "incumbent": false,
+              "description": "A 20-year-old free forum with dozens of active \"Am I being ripped off?\" threads.",
+              "href": "https://www.pricescope.com/community/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "asking",
+        "kicker": "People are asking for it",
+        "data": {
+          "quotes": [
+            {
+              "quote": "\u201cMy boyfriend and I are in the process of creating my engagement ring. We went to a local family jeweler because we were under the impression you get [a better deal]\u201d",
+              "source": "r/Diamonds \u00b7 u/OP",
+              "href": "https://www.reddit.com/r/Diamonds/comments/1p174kq/am_i_being_overcharged/",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cCan people here tell which which internet retail web site i can go to without fear of being \"ripped\" off, which can give me a \"quality\" diamond from the price i am willing to pay... And if I do buy, I assume it's a must that I should get an independent\u2026\u201d",
+              "source": "PriceScope \u00b7 Horatio",
+              "href": "https://www.pricescope.com/community/threads/desperate-need-of-help-in-buying-engagement-diamond-ring-any-advice-helpful.68313/",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cMy dilemma is that I know next to nothing about diamonds. I've looked through blue nile but my little sister referred me onto this site to get real advice from experts... I have a budget of $10,000 and don't want to get ripped off. I have an acquaintance that\u2026\u201d",
+              "source": "PriceScope \u00b7 A Typical Guy (thread OP)",
+              "href": "https://www.pricescope.com/community/threads/a-typical-guy-who-needs-advice-on-the-ring.178106/",
+              "platform": "REDDIT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "verdict",
+        "kicker": "The verdict",
+        "data": {
+          "title": "Should you build this?",
+          "build": [
+            "The pain is written down publicly every day: r/EngagementRings has 529.6K followers, its own rules ban price advice, and PriceScope has a 20-year archive of 'am I being ripped off?' threads, so the founder does not have to invent demand, only show up in the comments.",
+            "The price band is already proven: Etsy solo gemologist IKEandLI sold 8,200 diamond consults at $62-$88 over ten years, so a $49 productized verdict sits under the market floor with room to raise later.",
+            "The timing is loud: lab-grown wholesale fell 96% since 2018 while retail markup stayed at 80%, so a first-time buyer literally cannot tell if a $5,400 listing should cost under $2,000, and Signet paid to acquire The Clear Cut in May 2026 to solve the same problem for Blue Nile.",
+            "The competitive seam is real: every free consultation (The Diamond Pro, James Allen, YourDiamondGuys) is seller-funded via affiliates or owned by the retailer, so 'we do not sell rings, we work for you' is a defensible one-liner nobody at scale can copy."
+          ],
+          "notBuild": [
+            "The buyer does not have a name for this service yet: 'engagement ring second opinion' and 'am I overpaying for this ring' return zero measurable Google volume, so SEO is a 12-24 month category-creation slog, not a launch channel.",
+            "The demand is brutally seasonal and one-and-done: Google Trends for 'diamond appraisal' triples in February then collapses, and a buyer buys one ring in a lifetime, so Q3 is a desert unless you bolt on jeweler B2B or insurance.",
+            "Writing WALK verdicts on a $5,400 retailer listing in a PDF invites a defamation letter; every report needs a documented methodology and lawyer-written disclaimers before scale, which is real overhead a solo builder underestimates.",
+            "You are buying attention against The Diamond Pro's 40,114 shoppers served and James Allen's free non-commissioned video-call gemologist, both with bigger content budgets and years of SEO, so the first year is grinding out Reddit comments five a day for 60 days straight."
+          ]
+        }
+      },
+      {
+        "id": "founderFit",
+        "kicker": "Founder fit",
+        "data": {
+          "title": "Not every good idea is good for you.",
+          "bestFor": [
+            "E-commerce experts with AI skills",
+            "Teams with jewelry industry connections",
+            "Non-technical founders with no AI background",
+            "Founders without jewelry market insights"
+          ],
+          "persona": [
+            "A GIA Graduate Gemologist (or a founder who partners with one on day one) who is comfortable writing plain-English answers in public and does not want to sell rings. Edward Blomgren and IKEandLI already prove the profile works at small scale; the founder version adds product thinking (the free tool, the productized $49 SKU) and daily community presence. A non-credentialed founder can start by paying a GIA gemologist per verdict (Etsy rates are $62 to $88, so margin is thin until volume covers a part-time hire), but the credibility line on every page must name a real gemologist. Anonymous will not sell."
+          ],
+          "demands": [
+            {
+              "label": "Domain trust",
+              "score": 9.0
+            },
+            {
+              "label": "Community presence",
+              "score": 9.0
+            },
+            {
+              "label": "Content SEO",
+              "score": 7.0
+            },
+            {
+              "label": "Product taste",
+              "score": 6.0
+            },
+            {
+              "label": "Sales grit",
+              "score": 4.0
+            }
+          ],
+          "reality": [
+            {
+              "label": "FIRST REVENUE",
+              "value": "30-60 days"
+            },
+            {
+              "label": "CAPITAL IN",
+              "value": "$5K-$15K"
+            },
+            {
+              "label": "DIFFICULTY",
+              "value": "Moderate"
+            }
+          ]
+        }
+      },
+      {
+        "id": "valueLadder",
+        "kicker": "What you'd sell",
+        "data": {
+          "title": "The value ladder.",
+          "intro": [
+            "How the offers stack: a cheap or free way in at the bottom earns trust, and each step up charges more because it delivers more."
+          ],
+          "steps": [
+            {
+              "step": 1,
+              "tier": "LEAD MAGNET",
+              "name": "Free Fair-Price Check",
+              "price": "Free",
+              "description": "Paste one online ring URL, get a green/yellow/red price band and median comparable price in 60 seconds. Email required."
+            },
+            {
+              "step": 2,
+              "tier": "FRONTEND",
+              "name": "24-Hour Verdict",
+              "price": "$49",
+              "description": "One ring, one PDF: BUY / NEGOTIATE / WALK, certificate check, three comparables, visible concerns, three seller questions. Under 24 hours."
+            },
+            {
+              "step": 3,
+              "tier": "CORE",
+              "name": "Three-Ring Showdown",
+              "price": "$99",
+              "description": "Same verdict across three listings side by side, with the recommended pick and the walk-away, ranked."
+            },
+            {
+              "step": 4,
+              "tier": "CONTINUITY",
+              "name": "Ring Radar",
+              "price": "$19/mo",
+              "description": ""
+            }
+          ]
+        },
+        "more": {
+          "label": "View the full value ladder",
+          "title": "The full value ladder.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Weekly price alerts on saved listings, monthly refreshed comparables, one free re-verdict on any new ring. Cancel anytime."
+            }
+          ]
+        }
+      },
+      {
+        "id": "plan",
+        "kicker": "The plan",
+        "data": {
+          "title": "If you started today.",
+          "subtitle": "First up.",
+          "paragraphs": [
+            "Nobody types 'engagement ring second opinion' or 'am I overpaying for this ring' into Google. Those queries return zero measurable search volume. The panic exists, but the buyer does not have a name for the service yet. That means the first 100 customers do not come from SEO. They come from the exact threads where the panic is written down."
+          ]
+        },
+        "more": {
+          "label": "See the detailed plan",
+          "title": null,
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Launch an MVP offering independent, 24-hour verdicts on engagement ring pricing with AI-assisted photo evaluations and human oversight. Integrate seamlessly with Reddit and Facebook for targeted acquisition, then expand to watches and vintage jewelry. Ready to redefine high-value purchases with trust and clarity?"
+            },
+            {
+              "type": "h",
+              "text": "THE FIRST MOVES"
+            },
+            {
+              "type": "p",
+              "text": "Develop platform wireframes and feature list"
+            },
+            {
+              "type": "p",
+              "text": "Initiate partnerships with gemology certification bodies"
+            },
+            {
+              "type": "p",
+              "text": "Create and distribute lead magnet content"
+            },
+            {
+              "type": "h",
+              "text": "THE MVP"
+            },
+            {
+              "type": "p",
+              "text": "Develop a platform enabling quick upload of product details and certificates with a streamlined 24-hour verdict system using AI-assisted photo evaluation and human oversight."
+            },
+            {
+              "type": "h",
+              "text": "WHERE THE FIRST USERS COME FROM"
+            },
+            {
+              "type": "p",
+              "text": "Reddit \u00b7 Active engagement in high-value purchase decisions"
+            },
+            {
+              "type": "p",
+              "text": "Facebook Groups \u00b7 Trust in personal recommendations"
+            },
+            {
+              "type": "p",
+              "text": "YouTube \u00b7 Visual appeal of gemstone content"
+            },
+            {
+              "type": "h",
+              "text": "TIMELINE"
+            },
+            {
+              "type": "p",
+              "text": "2-4 weeks"
+            },
+            {
+              "type": "h",
+              "text": "BUDGET"
+            },
+            {
+              "type": "p",
+              "text": "$0-10K"
+            },
+            {
+              "type": "h",
+              "text": "THE MILESTONE"
+            },
+            {
+              "type": "p",
+              "text": "Achieve 1,000 service transactions in the first 6 months"
+            }
+          ]
+        }
+      },
+      {
+        "id": "napkin",
+        "kicker": "Napkin math",
+        "data": {
+          "title": "Year one, on a napkin.",
+          "intro": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.",
+          "rows": [
+            {
+              "label": "Helpful Reddit/PriceScope comments per day",
+              "value": "5"
+            },
+            {
+              "label": "Days of consistent posting (first 90 days)",
+              "value": "90"
+            },
+            {
+              "label": "Total comments posted",
+              "value": "450"
+            },
+            {
+              "label": "Avg thread views per comment (assumption)",
+              "value": "800"
+            },
+            {
+              "label": "Total exposure impressions",
+              "value": "360,000"
+            },
+            {
+              "label": "Free tool signups at 0.5% (assumption)",
+              "value": "1,800"
+            },
+            {
+              "label": "Paid conversion rate to $49 verdict (assumption)",
+              "value": "3%"
+            },
+            {
+              "label": "Paid verdicts booked",
+              "value": "54"
+            },
+            {
+              "label": "Revenue at $49 flat",
+              "value": "$2,646"
+            },
+            {
+              "label": "Add: 3-ring $99 upsells at 15% of buyers (assumption)",
+              "value": "$802"
+            },
+            {
+              "label": "90-day revenue, organic only",
+              "value": "~$3,450"
+            }
+          ],
+          "summary": [
+            "90 days of pure Reddit + free tool gets to roughly $3,500 and about 60 paid customers. Most rows are conservative assumptions; the fixed anchors are the community sizes (529.6K in r/EngagementRings) and the $49 price. This is a validation number, not a business yet. The business turns on repeating the motion for 12 months and catching the Feb Valentine's spike (Trends 100 vs 30 baseline)."
+          ],
+          "ceiling": "$1.2M-$1.5M ARR"
+        }
+      }
+    ],
+    "popups": [],
+    "inlineLinks": [
+      {
+        "text": "The Knot Real Weddings Study 2026",
+        "href": "https://www.jckonline.com/editorial-article/lab-diamonds-engagement-market/"
+      },
+      {
+        "text": "Financial Content / CaratX",
+        "href": "https://markets.financialcontent.com/wral/article/marketminute-2025-10-23-lab-grown-diamond-bubble-bursts-prices-plummet-reshaping-global-diamond-market-and-sparking-natural-stone-revival"
+      },
+      {
+        "text": "rapaport.com",
+        "href": "https://rapaport.com/news/lab-grown-taking-over-engagement-ring-spending-the-knot/"
+      },
+      {
+        "text": "caratx.com",
+        "href": "https://caratx.com/blog/lab-grown-diamonds-2025-fast-growth-bigger-stones"
+      },
+      {
+        "text": "YOUTUBE",
+        "href": "https://www.youtube.com/watch?v=nukfHKe8Lxs"
+      },
+      {
+        "text": "LITTLE BIRD",
+        "href": "http://www.littlebirdtoldyou.com/blog/how-a-ring-consultant-can-save-you-money-on-an-engagement-ring-from-chase-bank"
+      },
+      {
+        "text": "THE KNOT REAL WEDDINGS STUDY 2026 (VIA JCK)",
+        "href": "https://www.jckonline.com/editorial-article/lab-diamonds-engagement-market/"
+      },
+      {
+        "text": "FINANCIAL CONTENT / CARATX (INDUSTRY REPORTING)",
+        "href": "https://markets.financialcontent.com/wral/article/marketminute-2025-10-23-lab-grown-diamond-bubble-bursts-prices-plummet-reshaping-global-diamond-market-and-sparking-natural-stone-revival"
+      },
+      {
+        "text": "StoneAlgo",
+        "href": "https://www.stonealgo.com/diamond-details/subscribe/"
+      }
+    ],
+    "linkCount": 24,
+    "sourceUrl": "https://www.ideabrowser.com/hub/ideas/today"
+  },
   "rawText": "ideabrowser\nBrowse\nBuild\nHome\nIdeas\nTrends\nMarket Insights\nMy Stuff\nS\nsneakerconsultant98\nFree plan\nToggle Sidebar\nIdea of the Day\nBuild Gallery\nWorkshop Wed at 12:00 PM EDT\nUpgrade\n\nSTART HERE\n\nDiscover your founder archetype\n\nTake a quick quiz to discover what kind of builder you are, which ideas fit you, and what to avoid before you waste time on the wrong thing.\n\nTake the quiz\nIdea of the Day\nPrevious\n|\nSep 26, 2026\n|\nBrowse all\nThe Diamond Dealer\n7.0\n/10\n\nTHE IDEA\n\nHe is on his laptop at 11pm with a $5,400 lab-grown 2ct E VVS2 ring in his cart. He does not know if that is a fair price or a rip-off. So he does what 529,600 people in r/EngagementRings do: he pastes the specs and asks strangers. The sub's own rules say the mods cannot advise on price. Meanwhile lab-grown wholesale fell 96% since 2018, retail markup held at 80%, and the average US ring buyer now spends $4,600 on a 1.9 carat stone with no way to check the math.\n\nThis service is a $49 buyer-paid verdict on one online listing, delivered as a one-page PDF within 24 hours by a GIA gemologist who does not sell rings. Three words on top: BUY, NEGOTIATE, or WALK. Below that: a certificate check, three comparable listings, visible concerns from the photos, and three questions to ask the seller. $99 for a three-ring comparison. Free URL fair-price tool at the top of the funnel to feed it.\n\nKeep reading\n\nTHE CUSTOMER\n\nFirst-Time Engagement-Ring Buyers Shopping Online (Blue Nile\n\nMARKET\n\nB2C \u00b7 Saas\n\nREVENUE CEILING\n\n$1.2M-$1.5M ARR\n\nCOMPETITION\n\nStoneAlgo\n\nBuild this with your agent\nCONCEPT MOCKUP\nBuild this idea\n\nCATEGORY DEMAND\n\n165K\n/mo\n+22%\n\nPAIN\n\n8\n/10 severity\n\nr/EngagementRings and 5 more feel it\n\nTIMING\n\n8\n/10\n\nwhy the window is open\n\nYEAR 1, DONE RIGHT\n\n$40K-$90K\n\nceiling $1.2M-$1.5M ARR\n\nWHY NOW\n\nLab-grown wholesale fell 96%, retail markup stayed at 80%: buyers cannot see the gap\n\nThe engagement ring changed price and material in the same 24 months, and the buyer is the last to find out. Lab-grown center stones were 61% of all US engagement rings in 2025, up 239% since 2020. Wholesale prices for a 1-carat lab-grown diamond crashed from around $4,200 in 2018 to as low as $168 by 2025, a 96% cut. Retail did not follow. Analyst Paul Zimnisky's May 2026 data shows US retailers still capture more than 80% markup above wholesale, with gross margins on 1-3 carat rounds hitting 74% in Q2 2025. That is the gap. A first-time buyer walks into a $5,400 online listing and has no way to know the stone inside cost the retailer a few hundred dollars.\n\nThe incumbents just confirmed the pain in cash. In May 2026 Signet, the $6.8B parent of Blue Nile, James Allen, Kay and Zales, bought The Clear Cut specifically to add personalized gemological expertise to Blue Nile because online ring shopping is 'intimidating'. 39% of Blue Nile's bridal transactions in 2025 were $10,000 or higher. The biggest online seller just paid to add a human gemologist because the free tools are not enough. That is the timing signal a founder wants: category leader spends real money on the exact service this idea sells, only staffed by the seller instead of the buyer.\n\nSOURCES\nThe Knot Real Weddings Study 2026\nFinancial Content / CaratX\nrapaport.com\ncaratx.com\nSee the full timing case\n\nMARKET SNAPSHOT\n\nThe receipts.\n\nDEMAND\n\nSEARCH\n\n\u201cmarquise diamond\u201d\n\n165K/mo\n+22% YoY\n\nSEARCH VOLUME\n\nUS \u00b7 PER MO\n\n\u201clab grown diamond rings\u201d\n\n\u25b2 49%\n135K/mo\n\n\u201ccustom engagement rings\u201d\n\n\u25bc 75%\n40.5K/mo\n\n\u201clab grown diamonds\u201d\n\n\u25bc 18%\n246K/mo\n\nPAIN\n\n8/10 SEVERITY\n\n\u201cPretty much the title. Diamond is a lab grown 2 carat, E vvs2 i didnt ask the jeweler for the dimensions. Price at $5400\u201d\n\nr/EngagementRings \u00b7 r/EngagementRings user\n\n\u201cPretty much the title. Diamond is a lab grown 2 carat, E vvs2 i didnt ask the jeweler for the dimensions. Price at $5400\u201d\n\nr/EngagementRings \u00b7 u/OP\n\n\u201cHe said he paid just over $8,000 for it. I'm now seeing videos on tiktok from a jeweler selling 4-5 carat lab grown diamond rings for $5K.\u201d\n\nr/labdiamond \u00b7 u/OP\n\nAll 9 receipts, and where these people gather\n\nWHITESPACE\n\nMARKET GAP\n\nFree advice is everywhere, a paid 24-hour verdict is not\n\nUnderstand the opening\n\nTHE WEDGE\n\nIndependent of the seller. Existing free consultations come from jewelers who want the sale; this reviewer is paid by the buyer and has no upsell.\n\nThe incumbent to beat: StoneAlgo\n\nPROOF & SIGNALS\n\nYouTube \"how to buy an engagement ring\" / diamond education videos pull massive views: 1.75M (\"How to tell a fake or real diamond\"), 1.09M (natural vs lab diamonds), 670K (lab-grown buying guide), 143K (Top 10 don'ts / save $2000). Content demand is proven.\n\nYOUTUBE\n\nLittle Bird claims a hired ring consultant can save clients 20-40% off the ring price, framing the paid consult as ROI-positive on a $2K-$10K purchase.\n\nLITTLE BIRD\n\nLab-grown center stones accounted for 61% of all US engagement ring purchases in 2025, up 239% since 2020, according to The Knot's Real Weddings Study 2026 (survey of 10,000+ US couples married in 2025).\n\nTHE KNOT REAL WEDDINGS STUDY 2026 (VIA JCK)\n\nWholesale prices for a 1-carat lab-grown diamond fell from approximately $4,200 in 2018 to as low as $168 by 2025, a 96% collapse driven by 300%+ growth in global production capacity between 2020-2023.\n\nFINANCIAL CONTENT / CARATX (INDUSTRY REPORTING)\nExplore the evidence\n\nWHO YOU'RE UP AGAINST\n\n8 PLAYERS\n\nStoneAlgo\n\nINCUMBENT\n\nRuns a diamond marketplace with a Pro subscription ($39 one-month pass, $29/mo, or $240/year) for unlimited diamond \"checks\" (fair-price estimate + cut score for any GIA/IGI diamond); free tier gives 3 unlimited checks.\n\nThe Diamond Pro\n\n(diamonds.pro) offers FREE engagement ring consultation.\n\nLittle Bird\n\n(San Francisco, founded 2013) offers paid engagement ring consulting: flat-fee packages $75-$600 covering education, ring finding, and design help.\n\nJames Allen\n\n(Signet-owned, largest online diamond retailer) offers FREE Real-Time Diamond Inspection: schedule a video call with a non-commissioned certified gemologist to review any diamond in 360-degree HD with 40x SuperZoom, on their site.\n\nEdward Blomgren\n\n(Asheville NC), GIA Graduate Gemologist + MasterValuer certified, sells 2nd opinion / pre-purchase gem review service where the buyer sends the URL of the online listing and he reviews the details, photographs, and grills the seller for the buyer.\n\nIKEandLI on Etsy\n\nEtsy solo GIA gemologists sell one-off diamond consultation gigs.\n\nYourDiamondGuys\n\n(Rob and Josh, ex-Tiffany/Cartier/Harry Winston diamond suppliers) offers FREE diamond buying consultation with an explicit \"No commissions, no sales pressure\" pitch, marketed as working exclusively for the buyer.\n\nPriceScope\n\nA 20-year-old free forum with dozens of active \"Am I being ripped off?\" threads.\n\nPEOPLE ARE ASKING FOR IT\n\nREDDIT\n\n\u201cMy boyfriend and I are in the process of creating my engagement ring. We went to a local family jeweler because we were under the impression you get [a better deal]\u201d\n\nr/Diamonds \u00b7 u/OP\n\n\u201cCan people here tell which which internet retail web site i can go to without fear of being \"ripped\" off, which can give me a \"quality\" diamond from the price i am willing to pay... And if I do buy, I assume it's a must that I should get an independent\u2026\u201d\n\nPriceScope \u00b7 Horatio\n\n\u201cMy dilemma is that I know next to nothing about diamonds. I've looked through blue nile but my little sister referred me onto this site to get real advice from experts... I have a budget of $10,000 and don't want to get ripped off. I have an acquaintance that\u2026\u201d\n\nPriceScope \u00b7 A Typical Guy (thread OP)\n\nTHE VERDICT\n\nShould you build this?\n\nREASONS TO BUILD\n\nThe pain is written down publicly every day: r/EngagementRings has 529.6K followers, its own rules ban price advice, and PriceScope has a 20-year archive of 'am I being ripped off?' threads, so the founder does not have to invent demand, only show up in the comments.\nThe price band is already proven: Etsy solo gemologist IKEandLI sold 8,200 diamond consults at $62-$88 over ten years, so a $49 productized verdict sits under the market floor with room to raise later.\nThe timing is loud: lab-grown wholesale fell 96% since 2018 while retail markup stayed at 80%, so a first-time buyer literally cannot tell if a $5,400 listing should cost under $2,000, and Signet paid to acquire The Clear Cut in May 2026 to solve the same problem for Blue Nile.\nThe competitive seam is real: every free consultation (The Diamond Pro, James Allen, YourDiamondGuys) is seller-funded via affiliates or owned by the retailer, so 'we do not sell rings, we work for you' is a defensible one-liner nobody at scale can copy.\n\nREASONS TO NOT BUILD\n\nThe buyer does not have a name for this service yet: 'engagement ring second opinion' and 'am I overpaying for this ring' return zero measurable Google volume, so SEO is a 12-24 month category-creation slog, not a launch channel.\nThe demand is brutally seasonal and one-and-done: Google Trends for 'diamond appraisal' triples in February then collapses, and a buyer buys one ring in a lifetime, so Q3 is a desert unless you bolt on jeweler B2B or insurance.\nWriting WALK verdicts on a $5,400 retailer listing in a PDF invites a defamation letter; every report needs a documented methodology and lawyer-written disclaimers before scale, which is real overhead a solo builder underestimates.\nYou are buying attention against The Diamond Pro's 40,114 shoppers served and James Allen's free non-commissioned video-call gemologist, both with bigger content budgets and years of SEO, so the first year is grinding out Reddit comments five a day for 60 days straight.\nRoast it with your agent\n\nFOUNDER FIT\n\nNot every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nE-commerce experts with AI skills\nTeams with jewelry industry connections\nNon-technical founders with no AI background\nFounders without jewelry market insights\n\nA GIA Graduate Gemologist (or a founder who partners with one on day one) who is comfortable writing plain-English answers in public and does not want to sell rings. Edward Blomgren and IKEandLI already prove the profile works at small scale; the founder version adds product thinking (the free tool, the productized $49 SKU) and daily community presence. A non-credentialed founder can start by paying a GIA gemologist per verdict (Etsy rates are $62 to $88, so margin is thin until volume covers a part-time hire), but the credibility line on every page must name a real gemologist. Anonymous will not sell.\n\nWHAT IT DEMANDS\n\nDomain trust\n9\nCommunity presence\n9\nContent SEO\n7\nProduct taste\n6\nSales grit\n4\n\nTHE REALITY\n\nFIRST REVENUE\n\n30-60 days\n\nCAPITAL IN\n\n$5K-$15K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card\n\nWHAT YOU'D SELL\n\nThe value ladder.\n\nHow the offers stack: a cheap or free way in at the bottom earns trust, and each step up charges more because it delivers more.\n\n1\n\nLEAD MAGNET\n\nFree Fair-Price Check(Free)\n\nPaste one online ring URL, get a green/yellow/red price band and median comparable price in 60 seconds. Email required.\n\n2\n\nFRONTEND\n\n24-Hour Verdict($49)\n\nOne ring, one PDF: BUY / NEGOTIATE / WALK, certificate check, three comparables, visible concerns, three seller questions. Under 24 hours.\n\n3\n\nCORE\n\nThree-Ring Showdown($99)\n\nSame verdict across three listings side by side, with the recommended pick and the walk-away, ranked.\n\n4\n\nCONTINUITY\n\nRing Radar($19/mo)\n\nView the full value ladder\n\nTHE PLAN\n\nIf you started today.\nFirst up.\n\nNobody types 'engagement ring second opinion' or 'am I overpaying for this ring' into Google. Those queries return zero measurable search volume. The panic exists, but the buyer does not have a name for the service yet. That means the first 100 customers do not come from SEO. They come from the exact threads where the panic is written down.\n\nSee the detailed plan\nYear one, on a napkin.\nNAPKIN MATH\n\nWhat the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nHelpful Reddit/PriceScope comments per day\n5\nDays of consistent posting (first 90 days)\n90\nTotal comments posted\n450\nAvg thread views per comment (assumption)\n800\nTotal exposure impressions\n360,000\nFree tool signups at 0.5% (assumption)\n1,800\nPaid conversion rate to $49 verdict (assumption)\n3%\nPaid verdicts booked\n54\nRevenue at $49 flat\n$2,646\nAdd: 3-ring $99 upsells at 15% of buyers (assumption)\n$802\n90-day revenue, organic only\n~$3,450\n\n90 days of pure Reddit + free tool gets to roughly $3,500 and about 60 paid customers. Most rows are conservative assumptions; the fixed anchors are the community sizes (529.6K in r/EngagementRings) and the $49 price. This is a validation number, not a business yet. The business turns on repeating the motion for 12 months and catching the Feb Valentine's spike (Trends 100 vs 30 baseline).\n\nTHE CEILING IF IT COMPOUNDS\n$1.2M-$1.5M ARR\nRun the model on your numbers\n\nTHE PLAYBOOKS\n\nJam on it with your agent.\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more playbooks\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAT A GLANCE\n7.0\nCATEGORY DEMAND\n165K/mo\nPRICING\n$49\nDIFFICULTY\nModerate\nUP AGAINST\nStoneAlgo\nSave\nShare\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCodex\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cHow would \"Independent appraisal service for online ring\u2026\" beat StoneAlgo?\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\n\nYOU\u2019RE INVITED\n\nBecome AI native in 2 days\n\nYour agents set up, the playbook to build \u2014 walk out ready to build any idea you want.\n\nLive & virtual \u00b7 Dates coming soon\n\nWould you come?\n\nYes, I\u2019d come\nNot for me\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback\n2026",
   "status": "not_started",
   "notes": "",

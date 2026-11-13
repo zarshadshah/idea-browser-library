@@ -114,7 +114,7 @@ import os
 import re
 import time
 import traceback
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
@@ -445,6 +445,13 @@ def wait_out_bot_checkpoint(page, log, max_wait_ms=15000):
 
         if has_real_content and not has_checkpoint_text:
             return True  # genuinely real content, no checkpoint text present
+        # Confirmed false positive (2026-10-09, 2026-10-29): the idea's OWN
+        # text contained a generic checkpoint word ("Our IT department
+        # blocked ChatGPT...") and the whole real page was thrown away as
+        # "blocked". A checkpoint interstitial is a short page; a page with
+        # real-content markers and thousands of characters is the idea.
+        if has_real_content and len(text) > 4000:
+            return True
         page.wait_for_timeout(interval)
         waited += interval
 
@@ -462,6 +469,207 @@ def wait_out_bot_checkpoint(page, log, max_wait_ms=15000):
     })
     return False
 
+
+
+# ---------------------------------------------------------------------------
+# Personalization splash ("Finish personalizing your Ideabrowser")
+# ---------------------------------------------------------------------------
+# Confirmed from real crawl logs: from 2026-10-07 onward EVERY click on the
+# idea page (all 6 "go deeper" links, every glance popup) timed out because a
+# full-screen onboarding dialog sat on top of the page:
+#   <div role="dialog" data-stage-splash="true" ...>  "1 OF 2 — What stage
+#   best explains where you're at?"  with a "Skip for now" button,
+# plus a Radix overlay <div data-state="open" aria-hidden="true" class="fixed
+# inset-0 z-50 ...">. Playwright's call log said literally "... subtree
+# intercepts pointer events". Nothing was captured beyond the main page text
+# for 35 straight days because of this.
+SPLASH_SELECTOR = "[data-stage-splash]"
+
+
+def dismiss_splash(page, log=None) -> bool:
+    """Closes the personalization splash if it is showing. Returns True if
+    the page is clear afterwards. Tries, in order: 'Skip for now' (may need
+    pressing once per step, the dialog says '1 OF 2'), Escape, and finally
+    removing the dialog + overlay from the DOM and restoring body pointer
+    events (Radix sets body{pointer-events:none} while a modal is open)."""
+    splash = page.locator(SPLASH_SELECTOR)
+    try:
+        if splash.count() == 0 or not splash.first.is_visible():
+            return True
+    except Exception:
+        return True
+
+    method = None
+    for _ in range(3):
+        try:
+            skip = page.get_by_text(re.compile(r"^\s*Skip for now\s*$", re.I))
+            clicked = False
+            for i in range(skip.count()):
+                if skip.nth(i).is_visible():
+                    skip.nth(i).click(timeout=3000, no_wait_after=True)
+                    clicked = True
+                    method = "skip_button"
+                    break
+            if not clicked:
+                page.keyboard.press("Escape")
+                method = "escape"
+        except Exception:
+            try:
+                page.keyboard.press("Escape")
+                method = "escape"
+            except Exception:
+                pass
+        page.wait_for_timeout(700)
+        try:
+            if splash.count() == 0 or not splash.first.is_visible():
+                break
+        except Exception:
+            break
+
+    try:
+        still_there = splash.count() > 0 and splash.first.is_visible()
+    except Exception:
+        still_there = False
+    if still_there:
+        page.evaluate(
+            """() => {
+                document.querySelectorAll('[data-stage-splash]').forEach(d => {
+                    const prev = d.previousElementSibling;
+                    if (prev && prev.getAttribute('data-state') === 'open' && prev.getAttribute('aria-hidden') === 'true') prev.remove();
+                    d.remove();
+                });
+                document.querySelectorAll('div[data-state="open"][aria-hidden="true"].fixed').forEach(o => o.remove());
+                document.body.style.pointerEvents = '';
+                document.body.removeAttribute('data-scroll-locked');
+            }"""
+        )
+        method = "dom_removed"
+        page.wait_for_timeout(300)
+
+    if log is not None:
+        log.append({"step": "dismiss_splash", "note": f"Personalization splash dismissed via {method}"})
+    return True
+
+
+def install_splash_handler(page, log):
+    """Registers dismiss_splash as a Playwright locator handler, so it runs
+    automatically before ANY action whenever the splash is visible — covers
+    every goto()+click() in this file (subpages, popups, retries) without
+    having to remember to call it at each site."""
+    try:
+        page.add_locator_handler(
+            page.locator(SPLASH_SELECTOR).first,
+            lambda _loc=None: dismiss_splash(page, log),
+            no_wait_after=True,
+        )
+        log.append({"step": "splash_handler", "note": "installed"})
+    except Exception as e:
+        # Older Playwright without add_locator_handler: fall back to the
+        # explicit dismiss_splash() calls made after each navigation.
+        log.append({"step": "splash_handler", "error": f"could not install locator handler: {e}"})
+
+
+def open_idea_page(page, url, log=None):
+    """goto + settle + clear the splash. Used for every return to the idea
+    page so each click starts from a clean, unobstructed page."""
+    page.goto(url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+    page.wait_for_timeout(WAIT_CHART)
+    dismiss_splash(page, log)
+
+
+def inventory_clickables(page, limit=150) -> list:
+    """Every visible button / button-like card on the idea page with its
+    text and a short class hint. Written to the crawl log each run so the
+    next selector change can be made from real data instead of guesses."""
+    try:
+        return page.evaluate(
+            """(limit) => {
+                const out = [];
+                const els = document.querySelectorAll('main button, main [role=button], main a[href^="/"], button');
+                const seen = new Set();
+                for (const el of els) {
+                    if (out.length >= limit) break;
+                    const r = el.getBoundingClientRect();
+                    if (r.width === 0 || r.height === 0) continue;
+                    const text = (el.innerText || '').trim().replace(/\\s+/g, ' ').slice(0, 80);
+                    if (!text || seen.has(text)) continue;
+                    seen.add(text);
+                    out.push({tag: el.tagName.toLowerCase(), text,
+                              href: el.getAttribute('href') || undefined,
+                              cls: (el.className && el.className.baseVal === undefined ? el.className : '').slice(0, 90)});
+                }
+                return out;
+            }""",
+            limit,
+        )
+    except Exception as e:
+        return [{"error": str(e)}]
+
+
+def go_back_days(page, days: int, log) -> str:
+    """Backfill support: clicks the idea page's 'Previous' control `days`
+    times and returns the URL it lands on (the dated idea's own URL)."""
+    for n in range(days):
+        dismiss_splash(page, log)
+        prev = page.get_by_text(re.compile(r"^\s*Previous\s*$"))
+        target = None
+        for i in range(prev.count()):
+            if prev.nth(i).is_visible():
+                target = prev.nth(i)
+                break
+        if target is None:
+            raise Exception(f"'Previous' control not found on step {n + 1}")
+        before = page.url
+        target.click(timeout=8000)
+        try:
+            page.wait_for_url(lambda u: u != before, timeout=15000)
+        except Exception:
+            pass
+        page.wait_for_load_state("networkidle", timeout=NAV_TIMEOUT)
+        page.wait_for_timeout(WAIT_CHART)
+        log.append({"step": "backfill_previous", "note": f"step {n + 1}/{days}: {before} -> {page.url}"})
+    return page.url
+
+
+MONTHS = {m: i + 1 for i, m in enumerate(["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"])}
+
+
+def page_idea_date(page):
+    """Reads the date the idea page itself shows: 'IDEA OF THE DAY·NOV 10,
+    2026' (layout from 2026-10-07) or 'Oct 6, 2026' (older). None if absent."""
+    try:
+        text = page.inner_text("body", timeout=5000)
+    except Exception:
+        return None
+    up = text.upper()
+    # Look at the idea header, not dates inside the idea's own text
+    # ("Since August 1, 2025 ..."): start after the top nav's BROWSE ALL.
+    if "BROWSE ALL" in up:
+        up = up[up.index("BROWSE ALL"):]
+    m = re.search(r"\b(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[A-Z]*\.?\s+(\d{1,2}),\s+(20\d\d)", text.upper())
+    if not m:
+        return None
+    try:
+        return date(int(m.group(3)), MONTHS[m.group(1)], int(m.group(2)))
+    except Exception:
+        return None
+
+
+def go_back_to_date(page, target: date, log, max_steps: int = 14) -> str:
+    """Backfill by DATE: clicks 'Previous' until the page shows `target`'s
+    idea, reading the date printed on the page each step — so it doesn't
+    matter what time of day (or which timezone) the run happens in."""
+    for step in range(max_steps + 1):
+        shown = page_idea_date(page)
+        log.append({"step": "backfill_previous", "note": f"page shows {shown}, want {target}, url {page.url}"})
+        if shown == target:
+            return page.url
+        if shown is not None and shown < target:
+            raise Exception(f"Went past {target} (page shows {shown}) - that day may not exist on the site")
+        if step == max_steps:
+            break
+        go_back_days(page, 1, log)
+    raise Exception(f"Could not reach {target} within {max_steps} 'Previous' clicks")
 
 def get_visible_text(page):
     return page.inner_text("body")
@@ -1031,8 +1239,7 @@ def crawl_glance_popup(crawler: Crawler, base_url: str, label: str) -> dict:
     page = crawler.page
     log = crawler.log
 
-    page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
-    page.wait_for_timeout(WAIT_CHART)
+    open_idea_page(page, base_url, log)
 
     # Prefer a visible match since this page renders duplicate (responsive)
     # copies of many elements elsewhere — same pattern already proven
@@ -1099,6 +1306,88 @@ def crawl_glance_popup(crawler: Crawler, base_url: str, label: str) -> dict:
 
     return result
 
+
+
+# Click targets that must never be pressed by the crawler: they submit
+# feedback, start paid/agent flows, add to projects, or navigate away.
+POPUP_DENYLIST = re.compile(
+    r"(feedback|chef'?s kiss|pretty interesting|bring the heat|share a win|something i love|feature request|"
+    r"problem|reply|upgrade|go pro|add to project|build this idea|with your agent|show more agents|get your card|"
+    r"copy|previous|browse all|next|skip for now|continue|send|hide this widget|claude|codex|cursor|gemini|grok|hermes|"
+    r"sign out|toggle sidebar|connect your ai|roast|run the model|keep reading|see the full timing case|"
+    r"explore the evidence|understand the opening|see the detailed plan|view the full value ladder|receipts)",
+    re.I,
+)
+
+
+def crawl_discovered_popups(crawler: Crawler, base_url: str, base_text: str, base_links: list, max_popups: int = 14) -> dict:
+    """Layout-agnostic replacement for the fixed GLANCE_POPUP_LABELS list
+    (whose first label changes per idea and whose labels changed again in the
+    2026-10-07 redesign). Finds every visible card-style button on the idea
+    page (the real popup triggers are <button class="group relative ...
+    cursor-pointer ...">), clicks each one from a fresh page load, and keeps
+    whatever NEW text and links appear that were not on the base page.
+    A trigger that navigates instead (URL change) is kept too, flagged
+    "navigated"."""
+    page = crawler.page
+    log = crawler.log
+    base_lines = {l.strip() for l in base_text.split("\n") if l.strip()}
+    base_hrefs = {l.get("href") for l in (base_links or [])}
+
+    inventory = inventory_clickables(page)
+    candidates = []
+    for item in inventory:
+        if not isinstance(item, dict) or item.get("error"):
+            continue
+        if item.get("tag") != "button" and "cursor-pointer" not in (item.get("cls") or ""):
+            continue
+        text = item.get("text") or ""
+        if len(text) < 3 or POPUP_DENYLIST.search(text):
+            continue
+        cls = item.get("cls") or ""
+        if "cursor-pointer" not in cls and "group" not in cls:
+            continue
+        candidates.append(text)
+    candidates = candidates[:max_popups]
+    log.append({"step": "popup_discovery", "note": f"{len(candidates)} candidate triggers", "candidates": candidates})
+
+    results = {}
+    for text in candidates:
+        def open_one(text=text):
+            open_idea_page(page, base_url, log)
+            first_line = text.split(" ")[0:6]
+            loc = page.locator("button", has_text=" ".join(first_line))
+            target = None
+            for i in range(loc.count()):
+                if loc.nth(i).is_visible():
+                    target = loc.nth(i)
+                    break
+            if target is None:
+                raise Exception("trigger no longer visible")
+            target.scroll_into_view_if_needed(timeout=5000)
+            before_url = page.url
+            target.click(timeout=8000)
+            page.wait_for_timeout(WAIT_CHART)
+            dismiss_splash(page, log)
+            after_text, after_links = get_page_text_and_links(page)
+            new_lines = [l.strip() for l in after_text.split("\n") if l.strip() and l.strip() not in base_lines]
+            new_links = [l for l in after_links if l.get("href") not in base_hrefs]
+            navigated = page.url.split("#")[0] != before_url.split("#")[0]
+            if len(new_lines) < 3 and not navigated:
+                return None
+            entry = {"text": "\n".join(new_lines), "links": new_links or after_links, "url": page.url}
+            if navigated:
+                entry["navigated"] = True
+            try:
+                page.keyboard.press("Escape")
+            except Exception:
+                pass
+            return entry
+
+        res = crawler.safe(open_one, f"popup:{text[:40]}", default=None)
+        if res:
+            results[text[:80]] = res
+    return results
 
 def crawl_glance_keyword_dropdown(crawler: Crawler) -> list:
     """
@@ -2195,8 +2484,7 @@ def crawl_score_cards_deep(crawler: Crawler, base_url: str, layout_detected: str
     for card_label in card_labels:
 
         def crawl_card(card_label=card_label):
-            page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
-            page.wait_for_timeout(WAIT_CHART)
+            open_idea_page(page, base_url, log)
 
             card_heading = page.get_by_text(card_label, exact=True).first
             if not card_heading.is_visible():
@@ -2250,8 +2538,7 @@ def crawl_business_fit_deep(crawler: Crawler, base_url: str, layout_detected: st
     for card_label in card_labels:
 
         def crawl_card(card_label=card_label):
-            page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
-            page.wait_for_timeout(WAIT_CHART)
+            open_idea_page(page, base_url, log)
             url_before = page.url
 
             card_heading = page.get_by_text(card_label, exact=False).first
@@ -2332,10 +2619,19 @@ def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
         "See the detailed plan",
         "Run the model on your numbers",
         "View the full value ladder",
+        # Layout v3 (from 2026-10-07): the MARKET SNAPSHOT "receipts" card
+        # ends with e.g. "All 13 receipts, and where these people gather" —
+        # the number changes per idea, so it is matched by pattern. Stored
+        # under the stable key "All receipts".
+        ("All receipts", re.compile(r"^\s*All \d+ receipts")),
     ]
 
-    for label in link_labels:
-        locs = crawler.safe(lambda l=label: page.get_by_text(l, exact=False), f"find_links:{label}", default=None)
+    for label_entry in link_labels:
+        if isinstance(label_entry, tuple):
+            label, matcher = label_entry
+        else:
+            label, matcher = label_entry, label_entry
+        locs = crawler.safe(lambda m=matcher: page.get_by_text(m, exact=False) if isinstance(m, str) else page.get_by_text(m), f"find_links:{label}", default=None)
         if locs is None:
             continue
         count = crawler.safe(lambda l=locs: l.count(), f"count_links:{label}", default=0)
@@ -2351,10 +2647,10 @@ def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
                 candidate.scroll_into_view_if_needed(timeout=5000)
                 candidate.click(timeout=8000)
                 page.wait_for_timeout(WAIT_CHART)
+                dismiss_splash(page, log)  # a navigation can bring the splash back
                 text, links = get_page_text_and_links(page)
                 subpages[key] = {"text": text.strip(), "url": page.url, "links": links}
-                page.goto(base_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
-                page.wait_for_timeout(WAIT_CHART)
+                open_idea_page(page, base_url, log)
 
             crawler.safe(click_and_capture, f"subpage:{label}#{i}")
 
@@ -2390,7 +2686,18 @@ def crawl_subpages(crawler: Crawler, base_url: str) -> dict:
 
 
 def main():
-    today = date.today()
+    # Backfill support (workflow_dispatch inputs): IDEA_URL crawls one exact
+    # idea page; IDEA_DAYS_BACK=N walks the site's "Previous" button N times
+    # from today's idea. Either way the output is filed under IDEA_DATE (or
+    # today minus N days).
+    days_back = int(os.environ.get("IDEA_DAYS_BACK") or 0)
+    explicit_url = (os.environ.get("IDEA_URL") or "").strip()
+    explicit_date = (os.environ.get("IDEA_DATE") or "").strip()
+    if explicit_date:
+        today = date.fromisoformat(explicit_date)
+    else:
+        today = date.today() - timedelta(days=days_back)
+    target_url = explicit_url or URL
     date_str = today.isoformat()
     year_dir = LIBRARY_DIR / str(today.year)
     year_dir.mkdir(parents=True, exist_ok=True)
@@ -2411,7 +2718,7 @@ def main():
     record = {
         "date": date_str,
         "scraped_at": datetime.now(timezone.utc).isoformat(),
-        "source_url": URL,
+        "source_url": target_url,
         "summary": {},
         "keyword_analysis": [],
         "subpages": {},
@@ -2421,8 +2728,18 @@ def main():
         browser, context = build_browser(p)
         page = context.new_page()
         crawler = Crawler(page, log)
+        install_splash_handler(page, log)
 
-        logged_in = login(page, log)
+        # Login flaked on 4 days (2026-09-18, 09-29, 10-05, 10-21: form not
+        # rendered yet / login not confirmed) and each lost the whole day.
+        # Retry the full login up to 3 times before giving up.
+        logged_in = False
+        for login_attempt in range(1, 4):
+            logged_in = login(page, log)
+            if logged_in:
+                break
+            log.append({"step": "login", "note": f"Login attempt {login_attempt} failed; retrying in 10s"})
+            page.wait_for_timeout(10000)
         if not logged_in:
             print("Login failed — saving diagnostic info and stopping early.")
             record["summary"] = {"raw_text": "", "login_failed": True}
@@ -2433,9 +2750,16 @@ def main():
             return
 
         try:
-            page.goto(URL, wait_until="networkidle", timeout=NAV_TIMEOUT)
+            page.goto(target_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
             page.wait_for_timeout(3000)
             cleared = wait_out_bot_checkpoint(page, log)
+            if cleared:
+                dismiss_splash(page, log)
+                if (days_back > 0 or explicit_date) and not explicit_url:
+                    target_url = go_back_to_date(page, today, log)
+                    record["source_url"] = target_url
+                    if target_url.rstrip("/") == URL.rstrip("/"):
+                        log.append({"step": "backfill_previous", "error": "URL did not change after 'Previous' - subpage crawling would return to TODAY's idea, so only the main page will be captured."})
             if not cleared:
                 # Save whatever the checkpoint page looked like, for
                 # debugging — but this is now a MUCH rarer path than
@@ -2457,9 +2781,22 @@ def main():
         except PWTimeout:
             log.append({"step": "initial_load", "error": "timeout"})
 
-        main_text = crawler.safe(lambda: get_visible_text(page), "get_main_text", default="")
+        dismiss_splash(page, log)
+        main_text, main_links = crawler.safe(lambda: get_page_text_and_links(page, max_links=300), "get_main_text", default=("", []))
+        # Every outbound link on the idea page itself (sources, receipts,
+        # competitor sites, Reddit threads). Before this, links were ONLY
+        # captured inside "go deeper" subpages — so when those broke on
+        # 2026-10-07, every day since lost all of its links.
+        record["main_links"] = main_links
+        # Full-page screenshot + clickable inventory, committed with the
+        # day's data, so the next site change can be diagnosed from real
+        # evidence rather than guesses.
+        crawler.safe(lambda: page.screenshot(path=str(LIBRARY_DIR / "page_debug_screenshot.png"), full_page=True), "page_screenshot")
+        log.append({"step": "clickables_inventory", "items": inventory_clickables(page)})
         record["summary"] = extract_summary_fields(main_text)
         layout_detected = record["summary"].get("layout_detected", "old")
+
+        backfill_without_url = (days_back > 0 or bool(explicit_date)) and not explicit_url and target_url.rstrip("/") == URL.rstrip("/")
         log.append({
             "step": "layout_detection",
             "layout_detected": layout_detected,
@@ -2471,20 +2808,24 @@ def main():
         ) or []
 
         # Return to a clean main-page state before sub-page crawling
-        crawler.safe(lambda: page.goto(URL, wait_until="networkidle", timeout=NAV_TIMEOUT), "reload_before_subpages")
+        crawler.safe(lambda: page.goto(target_url, wait_until="networkidle", timeout=NAV_TIMEOUT), "reload_before_subpages")
         page.wait_for_timeout(2000)
         wait_out_bot_checkpoint(page, log, max_wait_ms=8000)
+        dismiss_splash(page, log)
 
-        record["subpages"] = crawler.safe(
-            lambda: crawl_subpages(crawler, URL), "crawl_subpages", default={}
-        ) or {}
+        if backfill_without_url:
+            record["subpages"] = {}
+        else:
+            record["subpages"] = crawler.safe(
+                lambda: crawl_subpages(crawler, target_url), "crawl_subpages", default={}
+            ) or {}
 
         record["business_fit_deep"] = crawler.safe(
-            lambda: crawl_business_fit_deep(crawler, URL, layout_detected), "crawl_business_fit_deep", default={}
+            lambda: crawl_business_fit_deep(crawler, target_url, layout_detected), "crawl_business_fit_deep", default={}
         ) or {}
 
         record["score_cards_deep"] = crawler.safe(
-            lambda: crawl_score_cards_deep(crawler, URL, layout_detected), "crawl_score_cards_deep", default={}
+            lambda: crawl_score_cards_deep(crawler, target_url, layout_detected), "crawl_score_cards_deep", default={}
         ) or {}
 
         # NEW: the 4 "AT A GLANCE" popups (Setup Tutorial Views / Pain /
@@ -2493,17 +2834,15 @@ def main():
         # layout had, so this only runs when layout_detected == "new"
         # rather than needing its own separate skip-guard convention.
         record["glance_popups"] = {}
-        if layout_detected == "new":
-            for glance_label in GLANCE_POPUP_LABELS:
-                popup_data = crawler.safe(
-                    lambda l=glance_label: crawl_glance_popup(crawler, URL, l),
-                    f"glance_popup:{glance_label}",
-                    default={},
-                )
-                if popup_data:
-                    record["glance_popups"][glance_label] = popup_data
+        if layout_detected == "new" and not backfill_without_url:
+            crawler.safe(lambda: open_idea_page(page, target_url, log), "reload_before_popups")
+            record["glance_popups"] = crawler.safe(
+                lambda: crawl_discovered_popups(crawler, target_url, main_text, main_links),
+                "crawl_discovered_popups",
+                default={},
+            ) or {}
         else:
-            log.append({"step": "crawl_glance_popups", "note": "skipped: old layout has no 'AT A GLANCE' stat-teaser popups"})
+            log.append({"step": "crawl_glance_popups", "note": "skipped (old layout, or backfill without a dated URL)"})
 
         community_page = record["subpages"].get("View detailed breakdown")
         if community_page and community_page.get("url"):
@@ -2528,7 +2867,7 @@ def main():
 
     # Markdown summary for human reading
     md = [f"# {record['summary'].get('title', 'Idea of the Day')} — {date_str} (DEEP)", ""]
-    md += [f"*Scraped: {record['scraped_at']}*  ", f"*Source: {URL}*", ""]
+    md += [f"*Scraped: {record['scraped_at']}*  ", f"*Source: {record['source_url']}*", ""]
     md += [f"**{len(record['keyword_analysis'])} keywords captured, "
            f"{len(record['subpages'])} sub-pages captured, "
            f"{len(log)} log entries (see .crawl-log.json for any errors)**", ""]
