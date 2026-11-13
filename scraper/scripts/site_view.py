@@ -612,6 +612,8 @@ def build_site_view(raw: dict):
     for key, pp in (raw.get("glance_popups") or {}).items():
         if not isinstance(pp, dict) or not pp.get("text"):
             continue
+        if re.match(r"^(legal|build gallery|start here|master money model)\b", key.strip(), re.I):
+            continue  # site chrome / paid playbooks, not idea content
         t, blocks = _novel_blocks(pp["text"], base_set)
         if blocks:
             popups.append({"label": key, "title": t, "blocks": blocks})
