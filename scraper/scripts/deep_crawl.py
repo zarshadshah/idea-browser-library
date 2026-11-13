@@ -790,27 +790,76 @@ def find_idea_by_neighbours(page, target: date, log, max_pages: int = 6) -> str:
         raise Exception(f"Expected exactly 1 idea between the neighbouring days, found {len(between)}: {between}")
     title = between[0]
 
-    before_url = page.url
-    loc = page.get_by_text(title, exact=True)
-    target_el = None
-    for j in range(loc.count()):
-        if loc.nth(j).is_visible():
-            target_el = loc.nth(j)
-            break
-    if target_el is None:
-        # may be on an earlier list page; reload page 1..n and retry
-        raise Exception(f"Found the missing idea's title ({title!r}) but couldn't click it")
-    target_el.click(timeout=8000)
-    try:
-        page.wait_for_url(lambda u: u != before_url, timeout=15000)
-    except Exception:
-        pass
+    # How does a Browse card open its idea? Look before clicking: the
+    # card's ancestors (an <a href> is the easy case) and every idea-ish
+    # link on the page. All of it goes to the log as evidence.
+    probe_js = """(title) => {
+        const norm = s => (s || '').replace(/\\s+/g, ' ').trim();
+        const el = [...document.querySelectorAll('body *')].find(e => e.children.length === 0 && norm(e.innerText) === norm(title))
+                || [...document.querySelectorAll('body *')].find(e => norm(e.innerText) === norm(title));
+        const chain = [];
+        let href = null;
+        for (let n = el, i = 0; n && i < 10; n = n.parentElement, i++) {
+            const h = n.getAttribute && n.getAttribute('href');
+            if (h && !href) href = h;
+            chain.push({tag: n.tagName, href: h, role: n.getAttribute && n.getAttribute('role'),
+                        cls: (typeof n.className === 'string' ? n.className : '').slice(0, 80)});
+        }
+        const links = [...document.querySelectorAll('a[href]')]
+            .map(a => a.getAttribute('href'))
+            .filter(h => /idea/i.test(h) && !/browse|pricing|today/.test(h)).slice(0, 40);
+        return {found: !!el, href, chain, links};
+    }"""
+    probe = page.evaluate(probe_js, title)
+    log.append({"step": "backfill_browse", "card_probe": probe})
+
+    def _abs(h):
+        return h if h.startswith("http") else "https://www.ideabrowser.com" + h
+
+    if probe.get("href"):
+        page.goto(_abs(probe["href"]), wait_until="networkidle", timeout=NAV_TIMEOUT)
+    else:
+        before_url = page.url
+        loc = page.get_by_text(title, exact=True)
+        target_el = None
+        for j in range(loc.count()):
+            if loc.nth(j).is_visible():
+                target_el = loc.nth(j)
+                break
+        if target_el is None:
+            raise Exception(f"Found the missing idea's title ({title!r}) but couldn't see it to click")
+        new_tab_url = None
+        try:
+            with page.context.expect_page(timeout=6000) as new_page_info:
+                target_el.click(timeout=8000)
+            new_page = new_page_info.value
+            new_page.wait_for_load_state("domcontentloaded", timeout=NAV_TIMEOUT)
+            new_tab_url = new_page.url
+            new_page.close()
+        except Exception:
+            pass
+        if new_tab_url:
+            log.append({"step": "backfill_browse", "note": f"card opened a new tab: {new_tab_url}"})
+            page.goto(new_tab_url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+        else:
+            try:
+                page.wait_for_url(lambda u: u != before_url, timeout=10000)
+            except Exception:
+                pass
+            if page.url == before_url:
+                # Maybe a preview panel opened with a link to the full idea.
+                after = page.evaluate(probe_js, title)
+                log.append({"step": "backfill_browse", "after_click_probe": after,
+                            "after_click_text": page.inner_text("body", timeout=5000)[:3000]})
+                fresh = [h for h in after.get("links", []) if h not in probe.get("links", [])]
+                if fresh:
+                    page.goto(_abs(fresh[0]), wait_until="networkidle", timeout=NAV_TIMEOUT)
     page.wait_for_load_state("networkidle", timeout=NAV_TIMEOUT)
     page.wait_for_timeout(WAIT_CHART)
     dismiss_splash(page, log)
     log.append({"step": "backfill_browse", "note": f"opened {title!r} at {page.url}"})
-    if page.url == before_url:
-        raise Exception("Clicking the idea in the Browse list didn't open its page")
+    if "/browse" in page.url:
+        raise Exception("Couldn't open the missing idea from the Browse list (see card_probe / after_click_probe in the log)")
     return page.url
 
 def get_visible_text(page):
