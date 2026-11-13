@@ -714,6 +714,105 @@ def go_back_to_date(page, target: date, log, max_steps: int = 14) -> str:
     raise Exception(f"Could not reach {target} within {max_steps} 'Previous' clicks")
 
 
+
+BROWSE_URL = "https://www.ideabrowser.com/hub/browse/ideas"
+
+
+def _library_title(d: date):
+    """Title of an idea already in the library for date d (None if absent)."""
+    for name in (f"{d.isoformat()}.json", f"{d.isoformat()}.deep.json"):
+        f = LIBRARY_DIR / str(d.year) / name
+        if f.exists():
+            try:
+                data = json.loads(f.read_text())
+                t = data.get("title") or (data.get("summary") or {}).get("title")
+                if t and t != "Untitled idea":
+                    return t
+            except Exception:
+                pass
+    return None
+
+
+def _title_key(t: str) -> str:
+    return re.sub(r"\s+", " ", (t or "").replace("…", "").replace("...", "")).strip().lower()[:45]
+
+
+def find_idea_by_neighbours(page, target: date, log, max_pages: int = 6) -> str:
+    """Backfill for a missed day, using the site's Browse list.
+
+    Real evidence (run 43350289870): the idea page no longer prints its date,
+    and its 'Previous' link goes to the Browse list (/hub/browse/ideas,
+    "Sort by Newest", numbered items) — not to yesterday's idea. So: find the
+    ideas we DO have for the day after and the day before the missing date
+    in that newest-first list, and take the single item between them. If
+    there isn't exactly one item between them, refuse rather than guess.
+    Returns the URL of the idea page it opens."""
+    after_t = None
+    for k in range(1, 4):  # nearest later day we have
+        after_t = _library_title(target + timedelta(days=k))
+        if after_t:
+            break
+    before_t = None
+    for k in range(1, 4):  # nearest earlier day we have
+        before_t = _library_title(target - timedelta(days=k))
+        if before_t:
+            break
+    log.append({"step": "backfill_browse", "note": f"neighbours: after={after_t!r} before={before_t!r}"})
+    if not after_t or not before_t:
+        raise Exception("Need the ideas for the days either side of the missing date in the library")
+
+    lines = []
+    for n in range(1, max_pages + 1):
+        url = BROWSE_URL + (f"?page={n}" if n > 1 else "")
+        page.goto(url, wait_until="networkidle", timeout=NAV_TIMEOUT)
+        page.wait_for_timeout(2500)
+        dismiss_splash(page, log)
+        body = page.inner_text("body", timeout=10000)
+        if n == 1:
+            log.append({"step": "backfill_browse", "page1_text": body[:4000]})
+        lines += [l.strip() for l in body.split("\n") if l.strip()]
+        keys = [_title_key(l) for l in lines]
+        if _title_key(before_t) in keys:
+            break
+
+    keys = [_title_key(l) for l in lines]
+    try:
+        i_after = keys.index(_title_key(after_t))
+        i_before = keys.index(_title_key(before_t), i_after + 1)
+    except ValueError:
+        raise Exception("Couldn't find both neighbouring ideas in the Browse list (see backfill_browse page1_text in the log)")
+
+    # Items are numbered: "<n>\n<Title>\n…". Titles between the neighbours
+    # are the lines that directly follow a bare item number.
+    between = [lines[j + 1] for j in range(i_after + 1, i_before - 1) if re.fullmatch(r"\d{1,4}", lines[j])]
+    log.append({"step": "backfill_browse", "note": f"items between neighbours: {between}"})
+    if len(between) != 1:
+        raise Exception(f"Expected exactly 1 idea between the neighbouring days, found {len(between)}: {between}")
+    title = between[0]
+
+    before_url = page.url
+    loc = page.get_by_text(title, exact=True)
+    target_el = None
+    for j in range(loc.count()):
+        if loc.nth(j).is_visible():
+            target_el = loc.nth(j)
+            break
+    if target_el is None:
+        # may be on an earlier list page; reload page 1..n and retry
+        raise Exception(f"Found the missing idea's title ({title!r}) but couldn't click it")
+    target_el.click(timeout=8000)
+    try:
+        page.wait_for_url(lambda u: u != before_url, timeout=15000)
+    except Exception:
+        pass
+    page.wait_for_load_state("networkidle", timeout=NAV_TIMEOUT)
+    page.wait_for_timeout(WAIT_CHART)
+    dismiss_splash(page, log)
+    log.append({"step": "backfill_browse", "note": f"opened {title!r} at {page.url}"})
+    if page.url == before_url:
+        raise Exception("Clicking the idea in the Browse list didn't open its page")
+    return page.url
+
 def get_visible_text(page):
     return page.inner_text("body")
 
@@ -2800,11 +2899,11 @@ def main():
                 dismiss_splash(page, log)
                 if (days_back > 0 or explicit_date) and not explicit_url:
                     try:
-                        target_url = go_back_to_date(page, today, log)
+                        target_url = find_idea_by_neighbours(page, today, log)
                     except Exception:
                         # Print the evidence into the Actions log before failing.
                         print("===== BACKFILL DEBUG LOG =====")
-                        print(json.dumps([e for e in log if str(e.get("step", "")).startswith("backfill")], indent=2, default=str)[:20000])
+                        print(json.dumps([e for e in log if str(e.get("step", "")).startswith(("backfill", "splash", "dismiss"))], indent=2, default=str)[:20000])
                         raise
                     record["source_url"] = target_url
                     if target_url.rstrip("/") == URL.rstrip("/"):
