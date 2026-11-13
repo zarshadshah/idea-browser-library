@@ -1662,6 +1662,617 @@ function NewLayoutSections({ sections, overallScore, painScore, timingScore, exp
   );
 }
 
+// ---------------------------------------------------------------------------
+// SITE VIEW — reads like the real ideabrowser.com idea page.
+// Rendered from idea.siteView (built by scraper/scripts/site_view.py): the
+// page's own sections in the page's own order, real links attached to the
+// quote / source / competitor they belong to, "go deeper" content folded in
+// under the section it expands, and paid / agent / promo parts left out.
+// ---------------------------------------------------------------------------
+
+const SV = {
+  ink: "#1A1A1A",
+  dark: "#12151C",
+  amber: "#E8A33D",
+  amberSoft: "rgba(232,163,61,0.14)",
+  sage: "#6B8F71",
+  sageSoft: "rgba(107,143,113,0.13)",
+  red: "#B5543C",
+  redSoft: "rgba(181,84,60,0.10)",
+  line: "rgba(0,0,0,0.09)",
+  card: "rgba(255,255,255,0.55)",
+  mono: "'JetBrains Mono', monospace",
+  serif: "'Fraunces', serif",
+};
+
+function svLinkMap(sv) {
+  const map = {};
+  (sv.inlineLinks || []).forEach((l) => {
+    if (l.text && l.text.length >= 4 && !map[l.text]) map[l.text] = l.href;
+  });
+  return map;
+}
+
+// Turns any known source label inside running text into a real link.
+function svLinkify(text, linkMap) {
+  if (!text) return null;
+  const labels = Object.keys(linkMap || {}).sort((a, b) => b.length - a.length);
+  if (!labels.length) return text;
+  const pattern = new RegExp(`(${labels.map((l) => l.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`, "g");
+  return text.split(pattern).map((part, i) =>
+    linkMap[part] ? (
+      <SVLink key={i} href={linkMap[part]}>{part}</SVLink>
+    ) : (
+      <React.Fragment key={i}>{part}</React.Fragment>
+    )
+  );
+}
+
+function SVLink({ href, children, className = "", style }) {
+  if (!href) return <span className={className} style={style}>{children}</span>;
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={(e) => e.stopPropagation()}
+      className={`underline decoration-1 underline-offset-2 hover:opacity-80 ${className}`}
+      style={{ color: "#8A5A12", textDecorationColor: "rgba(138,90,18,0.35)", ...style }}
+    >
+      {children}
+      <ExternalLink size={10} className="inline ml-0.5 mb-0.5 opacity-60" />
+    </a>
+  );
+}
+
+function SVKicker({ children, color = SV.amber }) {
+  return (
+    <div className="text-[10px] font-extrabold uppercase tracking-[0.2em]" style={{ fontFamily: SV.mono, color }}>
+      {children}
+    </div>
+  );
+}
+
+function SVTitle({ children, size = "text-xl" }) {
+  if (!children) return null;
+  return (
+    <h3 className={`${size} font-black leading-snug mt-1`} style={{ fontFamily: SV.serif, color: SV.ink }}>
+      {children}
+    </h3>
+  );
+}
+
+function SVParas({ paras, linkMap, className = "" }) {
+  return (
+    <div className={`space-y-3 text-[15px] leading-relaxed ${className}`} style={{ color: "#2A2A2A" }}>
+      {(paras || []).filter(Boolean).map((p, i) => (
+        <p key={i}>{svLinkify(p, linkMap)}</p>
+      ))}
+    </div>
+  );
+}
+
+// Collapsible "go deeper" content (the page's "See the full timing case",
+// "Explore the evidence", etc) and the pop-ups.
+function SVMore({ more, linkMap, label }) {
+  if (!more || !more.blocks || !more.blocks.length) return null;
+  return (
+    <details className="mt-4 rounded-lg border" style={{ borderColor: SV.line, backgroundColor: "rgba(255,255,255,0.4)" }}>
+      <summary className="cursor-pointer select-none px-3 py-2.5 text-xs font-bold flex items-center gap-1.5" style={{ fontFamily: SV.mono, color: "#8A5A12" }}>
+        <ChevronRight size={14} className="sv-chev" />
+        {label || more.label}
+      </summary>
+      <div className="px-4 pb-4 pt-1 space-y-2.5">
+        {more.title && <div className="text-base font-bold" style={{ fontFamily: SV.serif }}>{more.title}</div>}
+        {more.blocks.map((b, i) =>
+          b.type === "h" ? (
+            <div key={i} className="pt-2"><SVKicker color="#8A5A12">{b.text}</SVKicker></div>
+          ) : (
+            <p key={i} className="text-sm leading-relaxed" style={{ color: "#2A2A2A" }}>{svLinkify(b.text, linkMap)}</p>
+          )
+        )}
+      </div>
+    </details>
+  );
+}
+
+function SVQuote({ q }) {
+  return (
+    <figure className="rounded-lg p-3.5 border-l-4" style={{ backgroundColor: SV.card, borderColor: SV.amber }}>
+      <blockquote className="text-sm leading-relaxed italic" style={{ color: "#2A2A2A" }}>{q.quote}</blockquote>
+      {(q.source || q.href) && (
+        <figcaption className="mt-2 text-xs flex items-center gap-2 flex-wrap" style={{ fontFamily: SV.mono }}>
+          <span className="opacity-60">— {q.source || "source"}</span>
+          {q.href && (
+            <SVLink href={q.href} className="font-bold no-underline">
+              {/reddit\.com/.test(q.href) ? "Open thread" : "Open source"}
+            </SVLink>
+          )}
+        </figcaption>
+      )}
+    </figure>
+  );
+}
+
+function SVPairs({ pairs }) {
+  if (!pairs || !pairs.length) return null;
+  return (
+    <dl className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-1.5 text-sm">
+      {pairs.map((p, i) => (
+        <React.Fragment key={i}>
+          <dt className="text-[10px] uppercase tracking-wider opacity-50 pt-0.5" style={{ fontFamily: SV.mono }}>{p.label}</dt>
+          <dd className="font-semibold">{p.value}</dd>
+        </React.Fragment>
+      ))}
+    </dl>
+  );
+}
+
+// --- the page's hero / summary card -----------------------------------------
+
+function SVHeroCard({ card, linkMap }) {
+  const label = card.label;
+  const lines = card.lines || [];
+  const box = "rounded-xl p-4 border";
+  const boxStyle = { borderColor: SV.line, backgroundColor: SV.card };
+
+  if (card.prose) {
+    const big = label === "THE PITCH" || label === "THE IDEA";
+    const isRisk = label === "BIGGEST RISK";
+    return (
+      <div className={`${box} sm:col-span-2`} style={{ ...boxStyle, ...(isRisk ? { backgroundColor: SV.redSoft, borderColor: "rgba(181,84,60,0.25)" } : {}) }}>
+        <SVKicker color={isRisk ? SV.red : SV.amber}>{label}</SVKicker>
+        {label === "THE GAP" || label === "WHY NOW" ? (
+          <p className="mt-1.5 text-base font-bold leading-snug" style={{ fontFamily: SV.serif }}>{lines.join(" ")}</p>
+        ) : (
+          <SVParas paras={lines} linkMap={linkMap} className={`mt-1.5 ${big ? "text-[15.5px]" : ""}`} />
+        )}
+      </div>
+    );
+  }
+  if (label === "WHAT IT DEMANDS") {
+    return (
+      <div className={box} style={boxStyle}>
+        <SVKicker>{label}</SVKicker>
+        <div className="mt-2 flex flex-wrap gap-1.5">
+          {lines.map((l, i) => (
+            <span key={i} className="text-xs px-2 py-1 rounded-full" style={{ backgroundColor: SV.sageSoft, color: "#3E5A44" }}>{l}</span>
+          ))}
+        </div>
+      </div>
+    );
+  }
+  if (card.pairs && card.pairs.length && label !== "THE CUSTOMER") {
+    return (
+      <div className={box} style={boxStyle}>
+        <SVKicker>{label}</SVKicker>
+        <div className="mt-2"><SVPairs pairs={card.pairs} /></div>
+      </div>
+    );
+  }
+  if (label === "THE CUSTOMER") {
+    return (
+      <div className={`${box} sm:col-span-2`} style={boxStyle}>
+        <SVKicker>{label}</SVKicker>
+        <p className="mt-1.5 font-bold" style={{ fontFamily: SV.serif }}>{card.lead}</p>
+        <div className="mt-2"><SVPairs pairs={card.pairs} /></div>
+      </div>
+    );
+  }
+  if (label === "WHAT YOU SELL") {
+    return (
+      <div className={box} style={boxStyle}>
+        <SVKicker>{label}</SVKicker>
+        <p className="mt-1.5 font-bold" style={{ fontFamily: SV.serif }}>{card.name || lines[0]}</p>
+        {card.price && <p className="text-sm font-bold mt-0.5" style={{ fontFamily: SV.mono, color: SV.sage }}>{card.price}</p>}
+      </div>
+    );
+  }
+  if (label === "UP AGAINST") {
+    const more = lines.find((l) => /^\+\s*\d+/.test(l));
+    const rest = lines.slice(1).filter((l) => l !== more);
+    return (
+      <div className={box} style={boxStyle}>
+        <SVKicker>{label}</SVKicker>
+        <p className="mt-1.5 font-bold" style={{ fontFamily: SV.serif }}>
+          {card.href ? <SVLink href={card.href}>{lines[0]}</SVLink> : lines[0]}
+        </p>
+        {rest.map((l, i) => <p key={i} className="text-sm mt-1 opacity-80">{l}</p>)}
+        {more && <p className="text-xs mt-1.5 opacity-50" style={{ fontFamily: SV.mono }}>{more} — see "Who you're up against"</p>}
+      </div>
+    );
+  }
+  // Generic stat card: big first value, smaller detail lines. v2's
+  // "8" + "/10 severity" become "8/10 severity".
+  let value = lines[0] || "";
+  let rest = lines.slice(1);
+  if (rest[0] && rest[0].startsWith("/")) {
+    value = value + rest[0];
+    rest = rest.slice(1);
+  }
+  return (
+    <div className={box} style={boxStyle}>
+      <SVKicker>{label}</SVKicker>
+      <p className="mt-1.5 text-2xl font-black" style={{ fontFamily: SV.serif }}>{value}</p>
+      {rest.map((l, i) => <p key={i} className="text-xs mt-1 opacity-70">{l}</p>)}
+    </div>
+  );
+}
+
+// Story first (pitch → who → gap → why now), then the stat cards in the
+// page's own order, risk last — easier to read top-to-bottom on a phone
+// than the site's two-column card grid.
+const SV_HERO_FIRST = ["THE IDEA", "THE PITCH", "THE CUSTOMER", "WHO IT'S FOR", "THE GAP", "WHY NOW"];
+function svOrderHero(cards) {
+  const list = cards || [];
+  const first = SV_HERO_FIRST.map((l) => list.find((c) => c.label === l)).filter(Boolean);
+  const risk = list.filter((c) => c.label === "BIGGEST RISK");
+  // (The hero's one-line WHY NOW stays: on the site it is the teaser for
+  // the full Why Now section right below, and reads as the headline.)
+  const rest = list.filter((c) => !first.includes(c) && !risk.includes(c));
+  return [...first, ...rest, ...risk];
+}
+
+function SVHero({ sv, linkMap }) {
+  return (
+    <div>
+      <div className="flex items-center gap-2 flex-wrap text-[11px]" style={{ fontFamily: SV.mono }}>
+        <span className="font-bold uppercase tracking-wider opacity-60">Idea of the day{sv.dateLabel ? ` · ${sv.dateLabel}` : ""}</span>
+        {sv.ibIndex && (
+          <span className="px-2 py-0.5 rounded-full font-bold" style={{ backgroundColor: SV.dark, color: SV.amber }}>
+            IB Index {sv.ibIndex}
+          </span>
+        )}
+        {(sv.tags || []).map((t, i) => (
+          <span key={i} className="px-2 py-0.5 rounded-full border" style={{ borderColor: SV.line }}>{t}</span>
+        ))}
+      </div>
+      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {svOrderHero(sv.hero).map((c, i) => <SVHeroCard key={i} card={c} linkMap={linkMap} />)}
+      </div>
+      <SVMore more={sv.heroMore} linkMap={linkMap} label="Keep reading — the full idea" />
+    </div>
+  );
+}
+
+// --- main sections ----------------------------------------------------------
+
+function SVSectionBody({ s, linkMap }) {
+  const d = s.data || {};
+  switch (s.id) {
+    case "whyNow":
+      return (
+        <>
+          <SVTitle>{d.headline}</SVTitle>
+          <SVParas paras={d.paragraphs} linkMap={linkMap} className="mt-3" />
+          {d.sources?.length > 0 && (
+            <div className="mt-4">
+              <SVKicker color="rgba(0,0,0,0.45)">Sources</SVKicker>
+              <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                {d.sources.map((src, i) => <SVLink key={i} href={src.href}>{src.label}</SVLink>)}
+              </div>
+            </div>
+          )}
+        </>
+      );
+    case "marketSnapshot":
+      return (
+        <>
+          <div className="flex items-end justify-between gap-3 flex-wrap">
+            <SVTitle>{d.title || "The receipts."}</SVTitle>
+            {d.painSeverity && (
+              <span className="text-xs font-extrabold px-2.5 py-1 rounded-full" style={{ backgroundColor: SV.redSoft, color: SV.red, fontFamily: SV.mono }}>
+                PAIN {d.painSeverity}/10 SEVERITY
+              </span>
+            )}
+          </div>
+          <div className="mt-3 space-y-2.5">{(d.quotes || []).map((q, i) => <SVQuote key={i} q={q} />)}</div>
+          {d.receiptsLabel && !s.more && <p className="mt-2 text-xs opacity-50" style={{ fontFamily: SV.mono }}>{d.receiptsLabel} (on the site)</p>}
+        </>
+      );
+    case "whitespace":
+      return (
+        <>
+          {d.gap && (
+            <div className="mt-1 rounded-xl p-4" style={{ backgroundColor: SV.dark }}>
+              <SVKicker>Market gap</SVKicker>
+              <p className="mt-1.5 text-lg font-bold leading-snug" style={{ fontFamily: SV.serif, color: "#F7F4EC" }}>{d.gap}</p>
+            </div>
+          )}
+          {d.wedge?.length > 0 && (
+            <div className="mt-4">
+              <SVKicker color={SV.sage}>The wedge</SVKicker>
+              <SVParas paras={d.wedge} linkMap={linkMap} className="mt-1.5" />
+            </div>
+          )}
+          {d.incumbent && (
+            <p className="mt-3 text-sm">
+              <span className="opacity-60">The incumbent to beat: </span>
+              <b>{d.incumbent.href ? <SVLink href={d.incumbent.href}>{d.incumbent.name}</SVLink> : d.incumbent.name}</b>
+            </p>
+          )}
+          {d.other?.length > 0 && <SVParas paras={d.other} linkMap={linkMap} className="mt-3" />}
+        </>
+      );
+    case "proof":
+      return (
+        <div className="mt-1 space-y-3">
+          {(d.items || []).map((it, i) => (
+            <div key={i} className="rounded-lg p-3.5 border" style={{ borderColor: SV.line, backgroundColor: SV.card }}>
+              <p className="text-sm leading-relaxed">{svLinkify(it.text, linkMap)}</p>
+              {it.source && (
+                <div className="mt-2 text-[11px] font-bold uppercase tracking-wider" style={{ fontFamily: SV.mono }}>
+                  {it.href ? <SVLink href={it.href}>{it.source}</SVLink> : <span className="opacity-50">{it.source}</span>}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      );
+    case "competitors":
+      return (
+        <>
+          {d.count && (
+            <p className="text-xs opacity-60 mb-3" style={{ fontFamily: SV.mono }}>
+              {d.count} PLAYERS{d.players && d.count > d.players.length ? ` · ${d.players.length} shown on the page` : ""}
+            </p>
+          )}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            {(d.players || []).map((p, i) => (
+              <div key={i} className="rounded-lg p-3.5 border" style={{ borderColor: p.incumbent ? "rgba(232,163,61,0.6)" : SV.line, backgroundColor: SV.card }}>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="font-bold" style={{ fontFamily: SV.serif }}>{p.href ? <SVLink href={p.href}>{p.name}</SVLink> : p.name}</span>
+                  {p.incumbent && (
+                    <span className="text-[9px] font-extrabold tracking-widest px-1.5 py-0.5 rounded" style={{ backgroundColor: SV.amber, color: SV.dark, fontFamily: SV.mono }}>INCUMBENT</span>
+                  )}
+                </div>
+                {p.description && <p className="text-sm mt-1.5 leading-relaxed opacity-80">{p.description}</p>}
+              </div>
+            ))}
+          </div>
+        </>
+      );
+    case "asking": {
+      const groups = [];
+      (d.quotes || []).forEach((q) => {
+        const key = q.platform || "";
+        const g = groups.find((x) => x.key === key);
+        if (g) g.items.push(q); else groups.push({ key, items: [q] });
+      });
+      return (
+        <div className="space-y-4">
+          {groups.map((g, i) => (
+            <div key={i}>
+              {g.key && <SVKicker color="rgba(0,0,0,0.45)">{g.key}</SVKicker>}
+              <div className="mt-2 space-y-2.5">{g.items.map((q, j) => <SVQuote key={j} q={q} />)}</div>
+            </div>
+          ))}
+        </div>
+      );
+    }
+    case "verdict":
+      return (
+        <>
+          <SVTitle>{d.title}</SVTitle>
+          <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="rounded-xl p-4" style={{ backgroundColor: SV.sageSoft }}>
+              <SVKicker color={SV.sage}>Reasons to build</SVKicker>
+              <ul className="mt-2 space-y-2.5 text-sm leading-relaxed">
+                {(d.build || []).map((r, i) => (
+                  <li key={i} className="flex gap-2"><CheckCircle2 size={15} className="shrink-0 mt-0.5" style={{ color: SV.sage }} /><span>{r}</span></li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-xl p-4" style={{ backgroundColor: SV.redSoft }}>
+              <SVKicker color={SV.red}>Reasons to not build</SVKicker>
+              <ul className="mt-2 space-y-2.5 text-sm leading-relaxed">
+                {(d.notBuild || []).map((r, i) => (
+                  <li key={i} className="flex gap-2"><X size={15} className="shrink-0 mt-0.5" style={{ color: SV.red }} /><span>{r}</span></li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </>
+      );
+    case "founderFit":
+      return (
+        <>
+          <SVTitle>{d.title}</SVTitle>
+          {d.bestFor?.length > 0 && (
+            <div className="mt-3">
+              <SVKicker color="rgba(0,0,0,0.45)">Who it's best for</SVKicker>
+              <ul className="mt-1.5 space-y-1 text-sm list-disc pl-5">
+                {d.bestFor.map((b, i) => <li key={i}>{b}</li>)}
+              </ul>
+            </div>
+          )}
+          <SVParas paras={d.persona} linkMap={linkMap} className="mt-3" />
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {d.demands?.length > 0 && (
+              <div>
+                <SVKicker color="rgba(0,0,0,0.45)">What it demands</SVKicker>
+                <div className="mt-2 space-y-1.5">
+                  {d.demands.map((x, i) => (
+                    <div key={i} className="flex items-center gap-2 text-sm">
+                      <span className="w-28 shrink-0 truncate">{x.label}</span>
+                      <div className="flex-1 h-2 rounded-full bg-black/10 overflow-hidden">
+                        <div className="h-full rounded-full" style={{ width: `${Math.min(100, x.score * 10)}%`, backgroundColor: SV.amber }} />
+                      </div>
+                      <span className="w-5 text-right font-bold text-xs" style={{ fontFamily: SV.mono }}>{x.score}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {d.reality?.length > 0 && (
+              <div>
+                <SVKicker color="rgba(0,0,0,0.45)">The reality</SVKicker>
+                <div className="mt-2"><SVPairs pairs={d.reality} /></div>
+              </div>
+            )}
+          </div>
+        </>
+      );
+    case "valueLadder":
+      return (
+        <>
+          <SVTitle>{d.title}</SVTitle>
+          <SVParas paras={d.intro} linkMap={linkMap} className="mt-2 text-sm" />
+          <ol className="mt-4 space-y-2.5">
+            {(d.steps || []).map((st, i) => (
+              <li key={i} className="flex gap-3">
+                <div className="shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-black text-sm" style={{ backgroundColor: SV.dark, color: SV.amber, fontFamily: SV.mono }}>{st.step}</div>
+                <div className="flex-1 rounded-lg p-3 border" style={{ borderColor: SV.line, backgroundColor: SV.card }}>
+                  <div className="text-[10px] font-extrabold tracking-widest opacity-50" style={{ fontFamily: SV.mono }}>{st.tier}</div>
+                  <div className="flex items-baseline justify-between gap-2 flex-wrap">
+                    <span className="font-bold" style={{ fontFamily: SV.serif }}>{st.name}</span>
+                    {st.price && <span className="text-sm font-bold" style={{ fontFamily: SV.mono, color: SV.sage }}>{st.price}</span>}
+                  </div>
+                  {st.description && <p className="text-sm mt-1 opacity-80 leading-relaxed">{st.description}</p>}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </>
+      );
+    case "plan":
+      return (
+        <>
+          <SVTitle>{d.title}</SVTitle>
+          {d.subtitle && <p className="text-sm font-bold mt-1 opacity-60">{d.subtitle}</p>}
+          <SVParas paras={d.paragraphs} linkMap={linkMap} className="mt-3" />
+        </>
+      );
+    case "napkin":
+      return (
+        <>
+          <SVTitle>{d.title}</SVTitle>
+          {d.intro && <p className="text-sm mt-1 opacity-70">{d.intro}</p>}
+          <div className="mt-3 rounded-lg border overflow-hidden" style={{ borderColor: SV.line }}>
+            {(d.rows || []).map((r, i) => (
+              <div key={i} className="flex justify-between gap-3 px-3 py-2 text-sm" style={{ backgroundColor: i % 2 ? "transparent" : SV.card }}>
+                <span className="opacity-80">{r.label}</span>
+                <span className="font-bold whitespace-nowrap" style={{ fontFamily: SV.mono }}>{r.value}</span>
+              </div>
+            ))}
+          </div>
+          <SVParas paras={d.summary} linkMap={linkMap} className="mt-3 text-sm" />
+          {d.ceiling && (
+            <div className="mt-4 rounded-xl p-4 flex items-center justify-between gap-3 flex-wrap" style={{ backgroundColor: SV.dark }}>
+              <SVKicker>The ceiling if it compounds</SVKicker>
+              <span className="text-xl font-black" style={{ fontFamily: SV.serif, color: "#F7F4EC" }}>{d.ceiling}</span>
+            </div>
+          )}
+        </>
+      );
+    default:
+      return null;
+  }
+}
+
+const SV_MORE_LABELS = {
+  whyNow: "See the full timing case",
+  marketSnapshot: "All the receipts, and where these people gather",
+  whitespace: "Understand the opening",
+  proof: "Explore the evidence",
+  plan: "See the detailed plan",
+  valueLadder: "View the full value ladder",
+};
+
+function SiteView({ idea }) {
+  const sv = idea.siteView;
+  const linkMap = svLinkMap(sv);
+  const anchor = (id) => `sv-${idea.id}-${id}`;
+  const jump = (id) => {
+    const el = document.getElementById(anchor(id));
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  const isTodayUrl = /\/hub\/ideas\/today\/?$/.test(sv.sourceUrl || "");
+
+  return (
+    <div>
+      <style>{`details[open] > summary .sv-chev { transform: rotate(90deg); } .sv-chev { transition: transform .15s; } summary::-webkit-details-marker { display: none; }`}</style>
+
+      {/* Jump-to nav, like scrolling the real page */}
+      <div className="sticky top-0 z-10 -mx-5 px-5 py-2 mb-4 flex gap-1.5 overflow-x-auto border-b" style={{ backgroundColor: "#F7F4EC", borderColor: SV.line, scrollbarWidth: "none" }}>
+        {[{ id: "top", kicker: "Overview" }, ...sv.sections].map((s) => (
+          <button
+            key={s.id}
+            onClick={() => jump(s.id)}
+            className="shrink-0 whitespace-nowrap text-[11px] font-semibold px-2.5 py-1 rounded-full border hover:bg-black/5"
+            style={{ borderColor: SV.line, fontFamily: SV.mono }}
+          >
+            {s.kicker}
+          </button>
+        ))}
+      </div>
+
+      <section id={anchor("top")} style={{ scrollMarginTop: 56 }}>
+        <SVHero sv={sv} linkMap={linkMap} />
+      </section>
+
+      {sv.sections.map((s) => (
+        <section key={s.id} id={anchor(s.id)} className="mt-8 pt-6 border-t" style={{ borderColor: SV.line, scrollMarginTop: 56 }}>
+          <SVKicker>{s.kicker}</SVKicker>
+          <div className="mt-1.5">
+            <SVSectionBody s={s} linkMap={linkMap} />
+          </div>
+          <SVMore more={s.more} linkMap={linkMap} label={SV_MORE_LABELS[s.id]} />
+        </section>
+      ))}
+
+      {sv.popups?.length > 0 && (
+        <section className="mt-8 pt-6 border-t" style={{ borderColor: SV.line }}>
+          <SVKicker>Pop-up details</SVKicker>
+          <p className="text-xs opacity-60 mt-1">What opens when you click the cards on the site.</p>
+          {sv.popups.map((p, i) => <SVMore key={i} more={p} linkMap={linkMap} label={p.title || p.label} />)}
+        </section>
+      )}
+
+      <div className="mt-8 pt-4 border-t text-xs opacity-60 space-y-1" style={{ borderColor: SV.line }}>
+        {sv.linkCount === 0 && (
+          <p>Source links weren't captured for this day (the crawler was being blocked by a site pop-up between 7 Oct and 10 Nov). Text is complete; links will appear for days crawled after the fix.</p>
+        )}
+        {sv.sourceUrl && !isTodayUrl && (
+          <p><SVLink href={sv.sourceUrl}>Open this idea on ideabrowser.com</SVLink></p>
+        )}
+        <p>Paid, agent-only and promo parts of the page are left out.</p>
+      </div>
+    </div>
+  );
+}
+
+// Plain-text version of the site view for the Summarize / Build prompts.
+function siteViewToText(sv) {
+  if (!sv) return "";
+  const out = [];
+  (sv.hero || []).forEach((c) => {
+    const body = c.pairs && c.pairs.length ? c.pairs.map((p) => `${p.label}: ${p.value}`).join("; ") : (c.lines || []).join(" ");
+    out.push(`${c.label}: ${body}`);
+  });
+  (sv.sections || []).forEach((s) => {
+    const d = s.data || {};
+    let body = "";
+    switch (s.id) {
+      case "whyNow": body = [d.headline, ...(d.paragraphs || [])].join("\n"); break;
+      case "marketSnapshot": body = (d.quotes || []).map((q) => `${q.quote} — ${q.source || ""}`).join("\n"); break;
+      case "whitespace": body = [d.gap, ...(d.wedge || []), d.incumbent ? `Incumbent: ${d.incumbent.name}` : ""].join("\n"); break;
+      case "proof": body = (d.items || []).map((it) => `${it.text} (${it.source || ""})`).join("\n"); break;
+      case "competitors": body = (d.players || []).map((p) => `${p.name}${p.incumbent ? " [incumbent]" : ""}: ${p.description}`).join("\n"); break;
+      case "asking": body = (d.quotes || []).map((q) => `${q.quote} — ${q.source || ""}`).join("\n"); break;
+      case "verdict": body = `Build:\n- ${(d.build || []).join("\n- ")}\nDon't build:\n- ${(d.notBuild || []).join("\n- ")}`; break;
+      case "founderFit": body = [...(d.bestFor || []), ...(d.persona || []), (d.demands || []).map((x) => `${x.label} ${x.score}/10`).join(", ")].join("\n"); break;
+      case "valueLadder": body = (d.steps || []).map((st) => `${st.step}. ${st.tier} — ${st.name} (${st.price || ""}): ${st.description}`).join("\n"); break;
+      case "plan": body = (d.paragraphs || []).join("\n"); break;
+      case "napkin": body = (d.rows || []).map((r) => `${r.label}: ${r.value}`).join("\n") + `\n${(d.summary || []).join(" ")}\nCeiling: ${d.ceiling || ""}`; break;
+      default: break;
+    }
+    out.push(`${s.kicker.toUpperCase()}:\n${body}`);
+    if (s.more && s.more.blocks) out.push(s.more.blocks.map((b) => b.text).join("\n"));
+  });
+  return out.join("\n\n");
+}
+
 function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAskClaude, onSummarize }) {
   const [tab, setTab] = useState("Overview");
   const [chartKeyword, setChartKeyword] = useState(null);
@@ -1680,11 +2291,11 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
   const validScores = Object.values(idea.scores || {}).filter((o) => o?.score != null);
   const avgScore = validScores.length
     ? Math.round(validScores.reduce((s, o) => s + o.score, 0) / validScores.length)
-    : (idea.overallScore != null ? Math.round(idea.overallScore) : null);
+    : (idea.siteView?.ibIndex ? idea.siteView.ibIndex : (idea.overallScore != null ? Math.round(idea.overallScore) : null));
 
   return (
     <div
-      className="relative rounded-xl border overflow-hidden transition-shadow"
+      className="relative rounded-xl border overflow-clip transition-shadow"
       style={{
         backgroundColor: "#F7F4EC",
         borderColor: "rgba(0,0,0,0.08)",
@@ -1757,6 +2368,10 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
             ))}
           </div>
 
+          {idea.siteView ? (
+            <SiteView idea={idea} />
+          ) : (
+          <>
           {/* Tabs */}
           <div className="flex gap-1 mb-4 border-b border-black/10 overflow-x-auto" style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
             {TABS.map((t) => (
@@ -2180,6 +2795,9 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
             )}
           </div>
 
+          </>
+          )}
+
           {/* Notes */}
           <div className="mt-4 pt-4 border-t border-black/10">
             <div className="text-[11px] uppercase tracking-wider opacity-50 mb-1" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
@@ -2224,13 +2842,17 @@ function IdeaCard({ idea, isOpen, onToggle, onStatusChange, onNotesChange, onAsk
 function CopyPromptModal({ idea, onClose, mode = "build" }) {
   const [copied, setCopied] = useState(false);
 
-  const newLayoutText = idea.newLayoutSections && Object.keys(idea.newLayoutSections).length > 0
+  // Site-view days: use the cleanly structured text of every section
+  // (the old per-section fields are redundant and noisier for these days).
+  const newLayoutText = idea.siteView
+    ? siteViewToText(idea.siteView)
+    : idea.newLayoutSections && Object.keys(idea.newLayoutSections).length > 0
     ? Object.entries(idea.newLayoutSections).map(([label, text]) => `${label}:\n${text}`).join("\n\n")
     : "";
   // Already-crawled expanded subpages (Explore the evidence, Understand
   // the opening, etc) — folded in as plain text here since this is a
   // plain-text prompt, not rendered HTML, so links aren't included.
-  const expandedText = idea.newLayoutExpandedSections && Object.keys(idea.newLayoutExpandedSections).length > 0
+  const expandedText = !idea.siteView && idea.newLayoutExpandedSections && Object.keys(idea.newLayoutExpandedSections).length > 0
     ? Object.entries(idea.newLayoutExpandedSections).map(([label, entry]) => `${label} (expanded):\n${entry.text}`).join("\n\n")
     : "";
 
