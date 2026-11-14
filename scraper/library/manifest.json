@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-14",
+      "title": "Tax-tracking app that turns scattered betting statements into clean, exportable logs for prediction-market traders and sports bettors",
+      "path": "library/2026/2026-11-14.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-13",
       "title": "Automated reporting service for commercial cleaning companies",
       "path": "library/2026/2026-11-13.json",
