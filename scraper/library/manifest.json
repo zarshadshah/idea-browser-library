@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-15",
+      "title": "Flat-fee lawyer directory with verified prices and billing reviews",
+      "path": "library/2026/2026-11-15.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-14",
       "title": "Tax-tracking app that turns scattered betting statements into clean, exportable logs for prediction-market traders and sports bettors",
       "path": "library/2026/2026-11-14.json",
