@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-16",
+      "title": "SaaS platform that verifies creatine content in gummy batches for supplement brands",
+      "path": "library/2026/2026-11-16.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-15",
       "title": "Flat-fee lawyer directory with verified prices and billing reviews",
       "path": "library/2026/2026-11-15.json",
