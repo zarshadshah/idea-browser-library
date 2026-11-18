@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-18",
+      "title": "Accountant marketplace built on standardized AI testing",
+      "path": "library/2026/2026-11-18.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-17",
       "title": "SaaS audit tool that shows solo practitioners which subscriptions AI can replace",
       "path": "library/2026/2026-11-17.json",
