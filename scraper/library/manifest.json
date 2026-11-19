@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-19",
+      "title": "SaaS platform that cleans up podcast archives and prepares old episodes for new ads",
+      "path": "library/2026/2026-11-19.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-18",
       "title": "Accountant marketplace built on standardized AI testing",
       "path": "library/2026/2026-11-18.json",

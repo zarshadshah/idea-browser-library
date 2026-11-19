@@ -1,0 +1,1212 @@
+{
+  "id": "2026-11-19",
+  "date": "2026-11-19",
+  "title": "SaaS platform that cleans up podcast archives and prepares old episodes for new ads",
+  "tagline": "Dynamic ad insertion now carries 93.6% of US podcast ad revenue, per the IAB and PwC March 2026 study. US podcast ad spend hit $2.9 billion in 2025 and is track...",
+  "badges": [],
+  "description": "Dynamic ad insertion now carries 93.6% of US podcast ad revenue, per the IAB and PwC March 2026 study. US podcast ad spend hit $2.9 billion in 2025 and is tracking to $3.0 billion in 2026. An independent show with 200 old episodes and a live-read sponsor from 2023 still running in the archive is blocking a sellable DAI slot every time a new listener binges the back catalog. Castos, Libsyn and Audioboom all name the symptom: dead promo codes, expired offers, and burned sponsor trust. Audioboom shipped AdRip in 2021 for its own 250-show network. Every independent show below that line is on its own.",
+  "scores": {
+    "opportunity": {
+      "score": null,
+      "label": ""
+    },
+    "problem": {
+      "score": null,
+      "label": ""
+    },
+    "feasibility": {
+      "score": null,
+      "label": ""
+    },
+    "whyNow": {
+      "score": null,
+      "label": ""
+    }
+  },
+  "keywords": [],
+  "marketGap": "",
+  "executionPlan": "",
+  "executionDifficulty": {
+    "score": null,
+    "note": ""
+  },
+  "categorization": {
+    "type": null,
+    "market": null,
+    "target": null,
+    "competitor": null
+  },
+  "communitySignals": {},
+  "communitySignalsDetail": "",
+  "communitySignalsRich": {},
+  "otherCommunitiesExtra": {},
+  "businessFitDeep": {},
+  "scoreCardsDeep": {},
+  "valueEquation": "",
+  "marketMatrix": "",
+  "acpFramework": "",
+  "valueLadderDetail": "",
+  "proofSignals": "",
+  "whyNowDetail": "",
+  "keywordAnalysisDetail": "",
+  "newLayoutSections": {
+    "At a Glance": "Active podcasts\n~476K\nPricing\n$0 to $1,500 flat\nYear one\n$80K-$140K\nCeiling\n$600K-$1M ARR\n\nWHAT YOU SELL\n\nMonthly Archive Retainer$600/month\n\nBIGGEST RISK\n\nOwners of neglected archives are the exact owners who never do anything about them. The reason the archive is dirty is the owner is not actively monetizing, wh\u2026\n\nInterested?\nAdd to project\nBuild this idea",
+    "Why Now": "DAI now runs 93.6% of US podcast ad revenue\n\nAT A GLANCE\n\nActive podcasts\n~476K\nPricing\n$0 to $1,500 flat\nYear one\n$80K-$140K\nCeiling\n$600K-$1M ARR\n\nWHAT YOU SELL\n\nMonthly Archive Retainer$600/month\n\nBIGGEST RISK\n\nOwners of neglected archives are the exact owners who never do anything about them. The reason the archive is dirty is the owner is not actively monetizing, wh\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nDAI now runs 93.6% of US podcast ad revenue\n\nTwo things changed in the last 18 months, and together they make 2026 the year to sell this service. First, the money moved. The IAB and PwC Podcast Advertising Revenue Study, released March 2026, shows dynamic ad insertion now delivers 93.6% of US podcast ad revenue. Baked-in ads have shrunk to under 10%. A live-read ad from 2023 that still runs on an old episode is not just awkward: it blocks a sellable slot in the format that now carries almost all the money. US podcast ad spend hit $2.9 billion in 2025 and is tracking to $3.0 billion in 2026, up 17.6% year over year, and the IAB raised its 2026 outlook again mid-year.\n\nSecond, the demand side opened up. Spotify launched the Spotify Ad Exchange in April 2025 and expanded automated podcast buying to 14 markets on July 11, 2025. The Trade Desk and Google DV360 can now buy podcast DAI slots programmatically. Spotify reported a 64% jump in advertisers using the exchange in the first three months. Acast, Megaphone, iHeart, and 85-plus other programmatic podcast networks are live in 2026. An empty DAI slot in a mid-tail archive can get filled by a programmatic bid in a way that was not true in 2022. On the labor side, Whisper plus LLM ad detection went commodity in 2025-2026: open-source tools (MinusPod, AGPAR, several GitHub repos) scan a 60-minute episode in under 30 minutes at a cost of about a dollar in API spend, and they output timestamped ad segments. The work that would have taken a human editor a month on a 200-episode archive is now a one-day batch job for a solo operator with an AI stack.",
+    "Proof & Signals": "The IAB March 2026 Podcast Advertising Revenue Study reports dynamic ad insertion now accounts for 93.6% of all podcast advertising revenue, up from roughly 48% in 2019; the industry has fully moved to DAI as the default delivery model.\n\nIAB PODCAST ADVERTISING REVENUE STUDY\n\nUS podcast ad revenue reached $2.9 billion in 2025 and is projected at $3.0 billion for 2026, up 17.6% year over year per IAB and PwC figures; the top 10 podcast networks command roughly 60% of industry ad revenue (Edison Research), leaving a long tail of independent shows.\n\nIAB / PWC VIA CREATOR NEWSDESK\n\nMagellan AI's Q1 2025 benchmark found over 80 percent of top-tier podcasts now support dynamic ad insertion, meaning the tooling to swap ads in back catalogs is already standard at the top of the market.\n\nMAGELLAN AI VIA DMEXCO\n\nOn Fiverr alone, 3,594 podcast editing services are available, with \"I will professionally edit, produce your audio podcast\" gigs starting at $20. The freelance supply of basic podcast editors is effectively infinite relative to demand, which pins per-episode floor pricing at the bottom of the market.\n\nFIVERR\nExplore the evidence",
+    "Market Snapshot": "The receipts.\n\nPAIN\n\n6/10 SEVERITY\n\n\u201cConsider remastering your back catalogue. The money part is in the dynamic ad insertion monetization. We have hundreds of episodes available...\u201d\n\nr/podcasting \u00b7 r/podcasting user\n\n\u201cThis leaves you re-editing old episodes to take out dead ads. Most podcast hosts can dynamic insert host read ads which has the same effect as a live read without outdating your back catalog.\u201d\n\nr/podcasting \u00b7 r/podcasting user\n\n\u201cAnd yet I earn roughly $250/month from dynamic ad insertion. It's not nothing, and it more than covers my overhead, but it's not career...\u201d\n\nr/podcasting \u00b7 r/podcasting user\n\nAll 10 receipts, and where these people gather",
+    "Whitespace": "MARKET GAP\n\nThe tools exist on every host. Nobody sells the labor to use them\n\nUnderstand the opening\n\nTHE WEDGE\n\nTraffic-prioritized, one-platform-at-a-time, done-for-you execution with owner approval and delivery QA. Competes against DIY (owners never get to it), generic podcast editors (no ad-ops focus), and platform features (self-serve, no labor).\n\nThe incumbent to beat: Captivate\n\nPROOF & SIGNALS\n\nThe IAB March 2026 Podcast Advertising Revenue Study reports dynamic ad insertion now accounts for 93.6% of all podcast advertising revenue, up from roughly 48% in 2019; the industry has fully moved to DAI as the default delivery model.\n\nIAB PODCAST ADVERTISING REVENUE STUDY\n\nUS podcast ad revenue reached $2.9 billion in 2025 and is projected at $3.0 billion for 2026, up 17.6% year over year per IAB and PwC figures; the top 10 podcast networks command roughly 60% of industry ad revenue (Edison Research), leaving a long tail of independent shows.\n\nIAB / PWC VIA CREATOR NEWSDESK\n\nMagellan AI's Q1 2025 benchmark found over 80 percent of top-tier podcasts now support dynamic ad insertion, meaning the tooling to swap ads in back catalogs is already standard at the top of the market.\n\nMAGELLAN AI VIA DMEXCO\n\nOn Fiverr alone, 3,594 podcast editing services are available, with \"I will professionally edit, produce your audio podcast\" gigs starting at $20. The freelance supply of basic podcast editors is effectively infinite relative to demand, which pins per-episode floor pricing at the bottom of the market.\n\nFIVERR\nExplore the evidence",
+    "Who You're Up Against": "10 PLAYERS\n\nAudioboom AdRip\n\nAudioboom shipped AdRip in July 2021, a tool that automatically rips live ad-reads out of old podcast episodes and replaces them with new ads.\n\nMegaphone\n\nSpotify's Megaphone ships Segment Editing inside the Ad Locator: publishers can mark a baked-in ad on an old episode and either remove the audio or replace it with a dynamic ad slot, without re-uploading the file.\n\nCaptivate\n\nINCUMBENT\n\n.fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-in segments in old episodes and swaps in new dynamic content, across the whole catalog.\n\nBuzzsprout\n\n's Dynamic Content tool inserts, swaps, or removes pre-roll, up to three mid-rolls, and post-roll audio across the entire back catalog without re-uploading the original file.\n\nAudioboom\n\n's AdRip (launched July 2021) automatically rips host-read baked-in ads out of old episodes and replaces them with dynamic ad breaks sold by Audioboom's own sales team.\n\nPodbean\n\n's PodAds is a dynamic ad insertion service built for podcast networks: it inserts and removes ads across new and old episodes on a schedule, including the back catalog, without re-editing audio.\n\nCastos\n\nAds automatically stitches pre-roll and post-roll ads into every episode (including the entire back catalog) and pays the host per listen; Castos Campaigns inserts the host's own promos across the catalog on a schedule.\n\nWe Edit Podcasts\n\nA published-price done-for-you podcast editing service with tiers from $440/month (2 episodes) up to $1,800/month (4 episodes, premium).",
+    "People Are Asking For It": "REDDIT\n\n\u201cIf older episodes still rely on baked-in ads, you're likely leaving a significant portion of your show's earning potential on the table.\u201d\n\nLibsyn blog \u00b7 Libsyn\n\n\u201cImagine someone downloads an old episode, hears an old ad, and then navigates to the sponsor's website only to learn that the sponsor's offer isn't available any longer. Annoying, right?\u201d\n\nCastos blog \u00b7 Castos\n\n\u201cTake the episode offline. Open the original project file. Remove the old audio. Record and mix in the new ad. Publish the updated file.\u201d\n\nLibsyn blog \u00b7 Libsyn",
+    "The Verdict": "Should you build this?\n\nREASONS TO BUILD\n\nDAI now runs 93.6% of US podcast ad revenue (IAB and PwC, March 2026), so every baked-in slot in a 200-episode archive is blocking inventory in the format that carries almost all the money.\nThe host tools that make the swap possible (Captivate AMIE Ad Painter, Spotify Megaphone Segment Editing, Buzzsprout Dynamic Content) are already shipped and cost the owner $15-$17 a month, so you sell labor on top of what they already pay.\nPodnews publishes a live list of dozens of show migrations every 60 days, and every migration guide warns owners stale ads bake into the new feed forever, so you have a timed, qualified lead source without paying for ads.\nAudioboom shipped AdRip in 2021 but only for its own 250-show closed network; every independent show on Captivate, Buzzsprout, Megaphone or Acast is on its own, and no agency (We Edit Podcasts, Content Monsta, Podigy) sells archive cleanup as a line item.\n\nREASONS TO NOT BUILD\n\nZero Google Ads volume on every solution keyword and a $17.62 CPC on the adjacent category term means no search channel: every customer is a one-at-a-time outreach grind for 12-18 months.\nNeglected archives belong to owners who are not actively monetizing, which is also why they will not write a $400 check; the shows big enough to pay already have an editor or a network doing this in-house.\nCaptivate AMIE already paints baked-in ads in bulk and a one-click 'scan my archive' button from any major host (Spotify, Buzzsprout, Captivate) ends the pilot SKU in a quarter.\nHonest ceiling is $600K-$1M ARR for a solo operator with 100 retainers plus migration and reseller revenue; this is a lifestyle business, not a venture outcome, so the founder has to want that shape of company.\nRoast it with your agent",
+    "Founder Fit": "Not every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo founders with podcast production or ad-operations experience and SaaS-bu...\nTeams pairing an audio systems engineer with an agency sales or podcast opera...\nFounders without podcast or advertising contacts who rely only on broad outbound\nTeams lacking audio QA or integration skills and unwilling to support migrations\n\nA solo operator who has sold or managed podcast ads for a network, an agency, or their own show. Someone who knows what a stale read sounds like, understands DAI slot configuration on at least three hosts, and is willing to do 30 personal outreach messages a week for 90 days straight. A podcast producer looking to escape new-episode editing is the natural fit. This is not a founder-first-time play; the credibility to walk into a conversation with an owner and explain the ad-ops decisions is the whole moat. AI handles the scan in a weekend. The hard part is sales grit and a network that respects your ad-ops read.\n\nWHAT IT DEMANDS\n\nDistribution\n10\nDomain depth\n9\nSales\n8\nBuild craft\n3\nCapital\n2\n\nTHE REALITY\n\nFIRST REVENUE\n\n30-60 days\n\nCAPITAL IN\n\n$2K-$10K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card",
+    "What You'd Sell": "The value ladder.\n\nFree archive scan as lead magnet: Whisper + LLM pipeline reads the public RSS, outputs a one-page leak report. Pilot: $400 flat for 10 episodes, ranked by current downloads, owner approves each swap, executed in the owner's native host tool. Retainer: $600/month for 20 episodes plus quarterly full-catalog audit.\n\n1\n\nLEAD MAGNET\n\nFree Archive Leak Report($0)\n\nAutomated scan of the owner's public RSS. One-page report: baked-in ad count, dead promo codes still running, sellable DAI slots in the back catalog.\n\n2\n\nFRONTEND\n\n10-Episode Pilot Sweep($400 flat)\n\nRank top 10 episodes by 90-day downloads, find baked-in ads, get owner sign-off, execute swap in the host, QA the published feed.\n\n3\n\nCORE\n\nMonthly Archive Retainer($600/month)\n\n20 episodes swept per month plus a quarterly full-catalog audit. Covers a 200-episode archive in roughly 10 months.\n\n4\n\nCONTINUITY\n\nMigration Cleanup($1,500 flat)\n\nView the full value ladder",
+    "The Plan": "If you started today.\nFirst up.\n\nNobody searches for this. Google Ads shows zero monthly volume on the solution terms (remove baked in podcast ads, podcast back catalog monetization, podcast archive editing service). The adjacent category keyword, podcast editing service, only draws 320 searches a month at a $17.62 CPC, which is too thin and too expensive to buy your way in. SEO and paid search are not the channel. The first 100 customers come one at a time from two live surfaces: Podnews host-migration alerts and r/podcasting threads.\n\nSee the detailed plan\nYear one, on a napkin.",
+    "Napkin Math": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nPodnews migration alerts scraped per week\n30\nPersonal outreach with free leak report\n30/wk\nReply rate (assumption)\n15%\nReplies per week\n~4-5\nPilot close rate on replies (assumption)\n25%\nPilots booked per week\n1\nPilot price (anchored to We Edit $440)\n$400\nPilots in first 90 days\n~12\nPilot revenue, first 90 days\n$4,800\nPilot-to-retainer attach (assumption)\n60%\nRetainers live by month 6\n~15\nRetainer MRR by month 6\n$9,000\nRun-rate ARR at month 6\n~$108K\n\nOne pilot a week after 90 days of outreach gets you to ~$48K ARR on pilots alone. The real number is 60% retainer attach at $600/mo, which is the business.\n\nTHE CEILING IF IT COMPOUNDS\n$600K-$1M ARR\nRun the model on your numbers\n\nTHE AGENTS\n\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCursor\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cTiming scored 8/10 for \"SaaS platform that cleans up podcast archives\u2026\" \u2014 argue the other side.\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nProblem\nI'd like a reply"
+  },
+  "newLayoutExpandedSections": {
+    "The Full Timing Case": {
+      "text": "8\n/10\nTIMING\n\nDAI at 93.6% of ad revenue (IAB March 2026), Spotify Ad Exchange opening programmatic in April and July 2025, and commodity Whisper+LLM ad detection all land in the last 12 months.\n\nTwo things changed in the last 18 months, and together they make 2026 the year to sell this service. First, the money moved. The IAB and PwC Podcast Advertising Revenue Study, released March 2026, shows dynamic ad insertion now delivers 93.6% of US podcast ad revenue. Baked-in ads have shrunk to under 10%. A live-read ad from 2023 that still runs on an old episode is not just awkward: it blocks a sellable slot in the format that now carries almost all the money. US podcast ad spend hit $2.9 billion in 2025 and is tracking to $3.0 billion in 2026, up 17.6% year over year, and the IAB raised its 2026 outlook again mid-year.\n\nSecond, the demand side opened up. Spotify launched the Spotify Ad Exchange in April 2025 and expanded automated podcast buying to 14 markets on July 11, 2025. The Trade Desk and Google DV360 can now buy podcast DAI slots programmatically. Spotify reported a 64% jump in advertisers using the exchange in the first three months. Acast, Megaphone, iHeart, and 85-plus other programmatic podcast networks are live in 2026. An empty DAI slot in a mid-tail archive can get filled by a programmatic bid in a way that was not true in 2022. On the labor side, Whisper plus LLM ad detection went commodity in 2025-2026: open-source tools (MinusPod, AGPAR, several GitHub repos) scan a 60-minute episode in under 30 minutes at a cost of about a dollar in API spend, and they output timestamped ad segments. The work that would have taken a human editor a month on a 200-episode archive is now a one-day batch job for a solo operator with an AI stack.\n\nTHE SIGNALS\n\n93.6% of US podcast ad revenue now flows through dynamic ad insertion (IAB/PwC, March 2026). Baked-in is under 10%.\nSpotify Ad Exchange launched April 2025 and expanded programmatic podcast buying to 14 markets July 2025, with a 64% jump in advertisers in the first three months.\nUS podcast ad spend: $2.9B in 2025, tracking to $3.0B in 2026 (+17.6% YoY). IAB raised its 2026 forecast mid-year.\nWhisper + LLM ad detection is now commodity: open-source tools scan a 60-minute episode in 30 minutes for roughly $1 in API spend.\nHost migrations are a live trigger: Podnews lists dozens of show migrations in any given 60-day window, each one risking baked-in stale ads unless cleaned first.\nThe counter: the same labor collapse means a motivated owner can DIY. The wedge has to be done-for-you execution and ad-ops judgment, not the scan itself.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Captivate": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "IAB/PwC Podcast Advertising Revenue Study": "https://libsyn.com/blog/podcast-statistics-2026-listeners-downloads-ad-spend-and-industry-growth/",
+        "Spotify Advertising": "https://ads.spotify.com/en-CA/news-and-insights/podcast-ads-automated-buying-launch/",
+        "Interactive Advertising Bureau": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "XDA Developers / GitHub": "https://www.xda-developers.com/i-built-a-podcast-server-that-strips-ads-before-play/",
+        "\u201cConsider remastering your back catalogue. The money part is in the dynamic ad insertion monetization. We have hundreds of episodes available...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/tjbz0j/ready_to_go_fulltime_podcasting_advice/",
+        "\u201cThis leaves you re-editing old episodes to take out dead ads. Most podcast hosts can dynamic insert host read ads which has the same effect as a live read without outdating your back catalog.\u201d\n\nr/pod": "https://www.reddit.com/r/podcasting/comments/1khfpku/understanding_ads/",
+        "\u201cAnd yet I earn roughly $250/month from dynamic ad insertion. It's not nothing, and it more than covers my overhead, but it's not career...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/1mar8bl/the_1000_listeners_myth_a_reality_check/",
+        "IAB PODCAST ADVERTISING REVENUE STUDY": "https://www.amraandelma.com/apple-podcasts-ad-statistics/",
+        "IAB / PWC VIA CREATOR NEWSDESK": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "MAGELLAN AI VIA DMEXCO": "https://dmexco.com/stories/dmexco-column-stop-baking-start-shaking-why-you-should-start-advertising-with-dynamic-ad-insertion-in-podcasts/",
+        "FIVERR": "https://block.fiverr.com/gigs/podcast-editor",
+        "Audioboom AdRip\n\nAudioboom shipped AdRip in July 2021, a tool that automatically rips live ad-reads out of old podcast episodes and replaces them with new ads.": "https://podnews.net/update/adrip-ripping-old",
+        "Megaphone\n\nSpotify's Megaphone ships Segment Editing inside the Ad Locator: publishers can mark a baked-in ad on an old episode and either remove the audio or replace it with a dynamic ad slot, withou": "https://support.megaphone.fm/en/articles/8649219-segment-editing",
+        "Captivate\n\nINCUMBENT\n\n.fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-in segments in old episodes and swaps in new dynamic content, across": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "Buzzsprout\n\n's Dynamic Content tool inserts, swaps, or removes pre-roll, up to three mid-rolls, and post-roll audio across the entire back catalog without re-uploading the original file.": "https://podcasthostlab.com/buzzsprout-review/",
+        "Audioboom\n\n's AdRip (launched July 2021) automatically rips host-read baked-in ads out of old episodes and replaces them with dynamic ad breaks sold by Audioboom's own sales team.": "https://audioboom.medium.com/audioboom-launches-adrip-new-ad-tech-tool-for-creators-9a74020560d",
+        "Podbean\n\n's PodAds is a dynamic ad insertion service built for podcast networks: it inserts and removes ads across new and old episodes on a schedule, including the back catalog, without re-editing au": "https://blog.podbean.com/dynamically-insert-ads-with-podbean-podads/",
+        "Castos\n\nAds automatically stitches pre-roll and post-roll ads into every episode (including the entire back catalog) and pays the host per listen; Castos Campaigns inserts the host's own promos across": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "We Edit Podcasts\n\nA published-price done-for-you podcast editing service with tiers from $440/month (2 episodes) up to $1,800/month (4 episodes, premium).": "https://www.webtonic.io/blog/best-podcast-production-agencies",
+        "\u201cIf older episodes still rely on baked-in ads, you're likely leaving a significant portion of your show's earning potential on the table.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/",
+        "\u201cImagine someone downloads an old episode, hears an old ad, and then navigates to the sponsor's website only to learn that the sponsor's offer isn't available any longer. Annoying, right?\u201d\n\nCastos blo": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "\u201cTake the episode offline. Open the original project file. Remove the old audio. Record and mix in the new ad. Publish the updated file.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/"
+      }
+    },
+    "Proof & Signals (Full)": {
+      "text": "THE HARD NUMBERS\n\nThe IAB March 2026 Podcast Advertising Revenue Study reports dynamic ad insertion now accounts for 93.6% of all podcast advertising revenue, up from roughly 48% in 2019; the industry has fully moved to DAI as the default delivery model.\n\nIAB PODCAST ADVERTISING REVENUE STUDY\n\nUS podcast ad revenue reached $2.9 billion in 2025 and is projected at $3.0 billion for 2026, up 17.6% year over year per IAB and PwC figures; the top 10 podcast networks command roughly 60% of industry ad revenue (Edison Research), leaving a long tail of independent shows.\n\nIAB / PWC VIA CREATOR NEWSDESK\n\nMagellan AI's Q1 2025 benchmark found over 80 percent of top-tier podcasts now support dynamic ad insertion, meaning the tooling to swap ads in back catalogs is already standard at the top of the market.\n\nMAGELLAN AI VIA DMEXCO\n\nOn Fiverr alone, 3,594 podcast editing services are available, with \"I will professionally edit, produce your audio podcast\" gigs starting at $20. The freelance supply of basic podcast editors is effectively infinite relative to demand, which pins per-episode floor pricing at the bottom of the market.\n\nFIVERR\n\nPEOPLE ARE ASKING FOR IT\n\n\u201cIf older episodes still rely on baked-in ads, you're likely leaving a significant portion of your show's earning potential on the table.\u201d\n\nLibsyn blog \u00b7 Libsyn\n\n\u201cImagine someone downloads an old episode, hears an old ad, and then navigates to the sponsor's website only to learn that the sponsor's offer isn't available any longer. Annoying, right?\u201d\n\nCastos blog \u00b7 Castos\n\n\u201cTake the episode offline. Open the original project file. Remove the old audio. Record and mix in the new ad. Publish the updated file.\u201d\n\nLibsyn blog \u00b7 Libsyn\n\nWHAT THE RESEARCH SAYS\n\nArchive work is operationally messy, but customer pain is not yet quantified\nHost migrations create a concrete, deadline-driven risk\nNative host tools already handle much of the core editing\nPodcast ad operations are real; demand for this specific product remains unproven\n\nThe evidence supports a real operational problem and an established podcast-advertising ecosystem, but not yet willingness to pay for archive-cleanup software. The strongest concrete trigger is migration risk: Acast guidance warns that active dynamic ads can be imported permanently. Native tools from Megaphone, Captivate, and Buzzsprout demonstrate that segment replacement and dynamic-content updates are already feasible\u2014and create a significant substitute. Job listings indicate companies employ people for audio and podcast ad operations, while broader market data shows a large advertising category; neither proves demand for this offer. Validate with paid, narrowly qualified pilots and measure labor saved, publishing errors avoided, repeat use, and incremental sold inventory.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Captivate": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "IAB/PwC Podcast Advertising Revenue Study": "https://libsyn.com/blog/podcast-statistics-2026-listeners-downloads-ad-spend-and-industry-growth/",
+        "Spotify Advertising": "https://ads.spotify.com/en-CA/news-and-insights/podcast-ads-automated-buying-launch/",
+        "Interactive Advertising Bureau": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "XDA Developers / GitHub": "https://www.xda-developers.com/i-built-a-podcast-server-that-strips-ads-before-play/",
+        "\u201cConsider remastering your back catalogue. The money part is in the dynamic ad insertion monetization. We have hundreds of episodes available...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/tjbz0j/ready_to_go_fulltime_podcasting_advice/",
+        "\u201cThis leaves you re-editing old episodes to take out dead ads. Most podcast hosts can dynamic insert host read ads which has the same effect as a live read without outdating your back catalog.\u201d\n\nr/pod": "https://www.reddit.com/r/podcasting/comments/1khfpku/understanding_ads/",
+        "\u201cAnd yet I earn roughly $250/month from dynamic ad insertion. It's not nothing, and it more than covers my overhead, but it's not career...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/1mar8bl/the_1000_listeners_myth_a_reality_check/",
+        "IAB PODCAST ADVERTISING REVENUE STUDY": "https://www.amraandelma.com/apple-podcasts-ad-statistics/",
+        "IAB / PWC VIA CREATOR NEWSDESK": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "MAGELLAN AI VIA DMEXCO": "https://dmexco.com/stories/dmexco-column-stop-baking-start-shaking-why-you-should-start-advertising-with-dynamic-ad-insertion-in-podcasts/",
+        "FIVERR": "https://block.fiverr.com/gigs/podcast-editor",
+        "Audioboom AdRip\n\nAudioboom shipped AdRip in July 2021, a tool that automatically rips live ad-reads out of old podcast episodes and replaces them with new ads.": "https://podnews.net/update/adrip-ripping-old",
+        "Megaphone\n\nSpotify's Megaphone ships Segment Editing inside the Ad Locator: publishers can mark a baked-in ad on an old episode and either remove the audio or replace it with a dynamic ad slot, withou": "https://support.megaphone.fm/en/articles/8649219-segment-editing",
+        "Captivate\n\nINCUMBENT\n\n.fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-in segments in old episodes and swaps in new dynamic content, across": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "Buzzsprout\n\n's Dynamic Content tool inserts, swaps, or removes pre-roll, up to three mid-rolls, and post-roll audio across the entire back catalog without re-uploading the original file.": "https://podcasthostlab.com/buzzsprout-review/",
+        "Audioboom\n\n's AdRip (launched July 2021) automatically rips host-read baked-in ads out of old episodes and replaces them with dynamic ad breaks sold by Audioboom's own sales team.": "https://audioboom.medium.com/audioboom-launches-adrip-new-ad-tech-tool-for-creators-9a74020560d",
+        "Podbean\n\n's PodAds is a dynamic ad insertion service built for podcast networks: it inserts and removes ads across new and old episodes on a schedule, including the back catalog, without re-editing au": "https://blog.podbean.com/dynamically-insert-ads-with-podbean-podads/",
+        "Castos\n\nAds automatically stitches pre-roll and post-roll ads into every episode (including the entire back catalog) and pays the host per listen; Castos Campaigns inserts the host's own promos across": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "We Edit Podcasts\n\nA published-price done-for-you podcast editing service with tiers from $440/month (2 episodes) up to $1,800/month (4 episodes, premium).": "https://www.webtonic.io/blog/best-podcast-production-agencies",
+        "\u201cIf older episodes still rely on baked-in ads, you're likely leaving a significant portion of your show's earning potential on the table.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/",
+        "\u201cImagine someone downloads an old episode, hears an old ad, and then navigates to the sponsor's website only to learn that the sponsor's offer isn't available any longer. Annoying, right?\u201d\n\nCastos blo": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "\u201cTake the episode offline. Open the original project file. Remove the old audio. Record and mix in the new ad. Publish the updated file.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/"
+      }
+    },
+    "The Opening (Full Market Analysis)": {
+      "text": "The market splits into three lanes, and the gap is right in the middle. Lane one is the hosting platforms themselves: Captivate AMIE Ad Painter, Spotify Megaphone Segment Editing, Buzzsprout Dynamic Content, Podbean PodAds, Castos Ads, Podigee Dynamic Ad Server. Every major host now ships a self-serve tool that marks a baked-in ad on an old episode and swaps in a dynamic slot. On Captivate this starts at $17 per month. On Buzzsprout, $15. The feature is not the product; it is table stakes.\n\nLane two is podcast production agencies and freelancers. We Edit Podcasts charges $440 per month for two new episodes and $1,800 for four premium. Content Monsta starts at $1,800 per month. Full-service B2B agencies run $1,500 to $10,000 per month. On Upwork and Fiverr, 3,594 podcast editor gigs start at $20, with a typical Upwork editor at $75 to $150 per episode for a one-hour show. All of them edit new episodes, not archives. None of them specialize in back-catalog ad ops or DAI slot configuration.\n\nLane three is the closed-network play: Audioboom AdRip, launched July 2021. It rips baked-in host-read ads out of old episodes and sells the new inventory through Audioboom's own ad network. But it is only available to the roughly 250 shows in Audioboom's premium creator network. If you are an independent show on Captivate or Buzzsprout, AdRip is not for you.\n\nThe gap is clear. A 200-episode indie show has the platform tool, has the freelance editors, has the demand. What nobody sells is the middle service: a person who opens the host's analytics, ranks old episodes by last-90-day downloads, listens for baked-in sponsor reads, gets owner sign-off, operates the host's native tool (AMIE Ad Painter, Megaphone Segment Editing, Buzzsprout Dynamic Content), and verifies the published result. The hosts will not do this labor. The agencies will not touch archives. The freelancers do not know ad ops.\n\nThe pricing gap is as clear. A $300 to $500 pilot for ten episodes fits between a $150 Upwork freelancer (who does one new episode) and a $440 to $1,800 per month production retainer (which is overkill for a one-time archive sweep). It is a one-time job priced like a one-time job.\n\nThe risk the founder is really up against: Captivate. AMIE Ad Painter is specifically built for the serious indie podcaster target and included free on the $17 plan. If Captivate ships a one-click \"scan my archive and suggest ad locations\" feature with transcription, this service becomes a thin layer on top of a free tool. Megaphone and Buzzsprout could do the same inside a quarter if they decide the retention story is worth it. The wedge is the labor and the ad-ops judgment, not the technology.\n\nCaptivate AMIE Ad Painter: $17/mo, free with hosting. Paints over baked-in ads in bulk across catalog.\n\nSpotify Megaphone Segment Editing: enterprise pricing, included for all publishers. Remove or replace with DAI slots, no re-upload.\n\nBuzzsprout Dynamic Content: $15/mo (yearly). Insert, swap, remove pre-roll, three mid-rolls, post-roll across the whole back catalog.\n\nAudioboom AdRip: revenue share with Audioboom, premium network only (about 250 shows). The one true direct competitor on service, but closed network.\n\nPodbean PodAds, Castos Ads, Podigee Dynamic Ad Server: same self-serve pattern, same message: monetize your back catalog without re-editing.\n\nWe Edit Podcasts: $440-$1,800/mo, published rate card. Edits new episodes. No archive-cleanup product line.\n\nContent Monsta, Podigy, full-service agencies: $1,500 to $10,000+ per month. Strategy and new-episode production, not archive sweeps.\n\nUpwork and Fiverr: 3,594 podcast editor gigs on Fiverr alone, $20 to $200 per episode. Infinite supply of audio editors with zero ad-ops specialty.\n\nYour way in: Traffic-prioritized, one-platform-at-a-time, done-for-you execution with owner approval and delivery QA. Competes against DIY (owners never get to it), generic podcast editors (no ad-ops focus), and platform features (self-serve, no labor).\n\nThe incumbent to beat: Captivate\n\nWHO\u2019S ALREADY IN THE MARKET\n\nAudioboom AdRip\n\nAudioboom shipped AdRip in July 2021, a tool that automatically rips live ad-reads out of old podcast episodes and replaces them with new ads.\n\nMegaphone\n\nSpotify's Megaphone ships Segment Editing inside the Ad Locator: publishers can mark a baked-in ad on an old episode and either remove the audio or replace it with a dynamic ad slot, without re-uploading the file.\n\nCaptivate\n\nINCUMBENT\n\n.fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-in segments in old episodes and swaps in new dynamic content, across the whole catalog.\n\nBuzzsprout\n\n's Dynamic Content tool inserts, swaps, or removes pre-roll, up to three mid-rolls, and post-roll audio across the entire back catalog without re-uploading the original file.\n\nAudioboom\n\n's AdRip (launched July 2021) automatically rips host-read baked-in ads out of old episodes and replaces them with dynamic ad breaks sold by Audioboom's own sales team.\n\nPodbean\n\n's PodAds is a dynamic ad insertion service built for podcast networks: it inserts and removes ads across new and old episodes on a schedule, including the back catalog, without re-editing audio.\n\nCastos\n\nAds automatically stitches pre-roll and post-roll ads into every episode (including the entire back catalog) and pays the host per listen; Castos Campaigns inserts the host's own promos across the catalog on a schedule.\n\nWe Edit Podcasts\n\nA published-price done-for-you podcast editing service with tiers from $440/month (2 episodes) up to $1,800/month (4 episodes, premium).\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Captivate": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "IAB/PwC Podcast Advertising Revenue Study": "https://libsyn.com/blog/podcast-statistics-2026-listeners-downloads-ad-spend-and-industry-growth/",
+        "Spotify Advertising": "https://ads.spotify.com/en-CA/news-and-insights/podcast-ads-automated-buying-launch/",
+        "Interactive Advertising Bureau": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "XDA Developers / GitHub": "https://www.xda-developers.com/i-built-a-podcast-server-that-strips-ads-before-play/",
+        "\u201cConsider remastering your back catalogue. The money part is in the dynamic ad insertion monetization. We have hundreds of episodes available...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/tjbz0j/ready_to_go_fulltime_podcasting_advice/",
+        "\u201cThis leaves you re-editing old episodes to take out dead ads. Most podcast hosts can dynamic insert host read ads which has the same effect as a live read without outdating your back catalog.\u201d\n\nr/pod": "https://www.reddit.com/r/podcasting/comments/1khfpku/understanding_ads/",
+        "\u201cAnd yet I earn roughly $250/month from dynamic ad insertion. It's not nothing, and it more than covers my overhead, but it's not career...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/1mar8bl/the_1000_listeners_myth_a_reality_check/",
+        "IAB PODCAST ADVERTISING REVENUE STUDY": "https://www.amraandelma.com/apple-podcasts-ad-statistics/",
+        "IAB / PWC VIA CREATOR NEWSDESK": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "MAGELLAN AI VIA DMEXCO": "https://dmexco.com/stories/dmexco-column-stop-baking-start-shaking-why-you-should-start-advertising-with-dynamic-ad-insertion-in-podcasts/",
+        "FIVERR": "https://block.fiverr.com/gigs/podcast-editor",
+        "Audioboom AdRip\n\nAudioboom shipped AdRip in July 2021, a tool that automatically rips live ad-reads out of old podcast episodes and replaces them with new ads.": "https://podnews.net/update/adrip-ripping-old",
+        "Megaphone\n\nSpotify's Megaphone ships Segment Editing inside the Ad Locator: publishers can mark a baked-in ad on an old episode and either remove the audio or replace it with a dynamic ad slot, withou": "https://support.megaphone.fm/en/articles/8649219-segment-editing",
+        "Captivate\n\nINCUMBENT\n\n.fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-in segments in old episodes and swaps in new dynamic content, across": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "Buzzsprout\n\n's Dynamic Content tool inserts, swaps, or removes pre-roll, up to three mid-rolls, and post-roll audio across the entire back catalog without re-uploading the original file.": "https://podcasthostlab.com/buzzsprout-review/",
+        "Audioboom\n\n's AdRip (launched July 2021) automatically rips host-read baked-in ads out of old episodes and replaces them with dynamic ad breaks sold by Audioboom's own sales team.": "https://audioboom.medium.com/audioboom-launches-adrip-new-ad-tech-tool-for-creators-9a74020560d",
+        "Podbean\n\n's PodAds is a dynamic ad insertion service built for podcast networks: it inserts and removes ads across new and old episodes on a schedule, including the back catalog, without re-editing au": "https://blog.podbean.com/dynamically-insert-ads-with-podbean-podads/",
+        "Castos\n\nAds automatically stitches pre-roll and post-roll ads into every episode (including the entire back catalog) and pays the host per listen; Castos Campaigns inserts the host's own promos across": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "We Edit Podcasts\n\nA published-price done-for-you podcast editing service with tiers from $440/month (2 episodes) up to $1,800/month (4 episodes, premium).": "https://www.webtonic.io/blog/best-podcast-production-agencies",
+        "\u201cIf older episodes still rely on baked-in ads, you're likely leaving a significant portion of your show's earning potential on the table.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/",
+        "\u201cImagine someone downloads an old episode, hears an old ad, and then navigates to the sponsor's website only to learn that the sponsor's offer isn't available any longer. Annoying, right?\u201d\n\nCastos blo": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "\u201cTake the episode offline. Open the original project file. Remove the old audio. Record and mix in the new ad. Publish the updated file.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/"
+      }
+    },
+    "The Detailed Plan": {
+      "text": "Launch a web SaaS that ranks archive episodes by recent traffic and guides owners through approved, reversible edits\u2014with published-result verification across one hosting platform. Connect episode-download data and host publishing workflows to deliver fast, traceable wins; then validate repeat paid use before expanding to agency-wide, multi-show operations. Ready to scale?\n\nTHE FIRST MOVES\n\n1\nWithin 7 days, schedule 10 interviews with agencies or multi-show publishers and ask for evidence of older-episode downloads, current editing workflow, and advertiser access.\n2\nWithin 7 days, build a one-page SaaS prototype and eligibility-report intake form; test the guided ten-episode workflow and subscription framing with five prospects.\n3\nWithin 7 days, contact three podcast migration consultants or production agencies to validate migration urgency and recruit paid design partners.\n\nTHE MVP\n\nBuild a web SaaS MVP for one hosting platform, centered on a guided ten-episode workflow: rank episodes, flag candidate segments, collect explicit owner approval, preserve originals, track changes, and verify the published artifact. Keep ambiguous audio decisions human-reviewed and measure labor, errors, repeat use, and realized incremental yield before adding integrations or autonomous editing.\n\nWHERE THE FIRST USERS COME FROM\n\nFounder-led agency outreach \u00b7 Agencies may have recurring archive work across multiple client shows, making them stronger prospects for repeat SaaS usage.\n\nMigration consultants and hosting communities \u00b7 Migration is a time-bound trigger, and documented host migration guidance identifies possible dynamic-ad import issues.\n\nEducational SEO and targeted professional content \u00b7 Searchers researching podcast monetization may include qualified publishers, but broad search interest is not proof of demand for archive software.\n\nTIMELINE\n\n1-2 weeks\n\nBUDGET\n\n$0-10K\n\nTHE MILESTONE\n\nBy month 18, secure 30 paying accounts, including at least 10 agencies, with 60% of eligible accounts completing a second workflow and documented labor savings or incremental sold inventory.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Captivate": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "IAB/PwC Podcast Advertising Revenue Study": "https://libsyn.com/blog/podcast-statistics-2026-listeners-downloads-ad-spend-and-industry-growth/",
+        "Spotify Advertising": "https://ads.spotify.com/en-CA/news-and-insights/podcast-ads-automated-buying-launch/",
+        "Interactive Advertising Bureau": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "XDA Developers / GitHub": "https://www.xda-developers.com/i-built-a-podcast-server-that-strips-ads-before-play/",
+        "\u201cConsider remastering your back catalogue. The money part is in the dynamic ad insertion monetization. We have hundreds of episodes available...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/tjbz0j/ready_to_go_fulltime_podcasting_advice/",
+        "\u201cThis leaves you re-editing old episodes to take out dead ads. Most podcast hosts can dynamic insert host read ads which has the same effect as a live read without outdating your back catalog.\u201d\n\nr/pod": "https://www.reddit.com/r/podcasting/comments/1khfpku/understanding_ads/",
+        "\u201cAnd yet I earn roughly $250/month from dynamic ad insertion. It's not nothing, and it more than covers my overhead, but it's not career...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/1mar8bl/the_1000_listeners_myth_a_reality_check/",
+        "IAB PODCAST ADVERTISING REVENUE STUDY": "https://www.amraandelma.com/apple-podcasts-ad-statistics/",
+        "IAB / PWC VIA CREATOR NEWSDESK": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "MAGELLAN AI VIA DMEXCO": "https://dmexco.com/stories/dmexco-column-stop-baking-start-shaking-why-you-should-start-advertising-with-dynamic-ad-insertion-in-podcasts/",
+        "FIVERR": "https://block.fiverr.com/gigs/podcast-editor",
+        "Audioboom AdRip\n\nAudioboom shipped AdRip in July 2021, a tool that automatically rips live ad-reads out of old podcast episodes and replaces them with new ads.": "https://podnews.net/update/adrip-ripping-old",
+        "Megaphone\n\nSpotify's Megaphone ships Segment Editing inside the Ad Locator: publishers can mark a baked-in ad on an old episode and either remove the audio or replace it with a dynamic ad slot, withou": "https://support.megaphone.fm/en/articles/8649219-segment-editing",
+        "Captivate\n\nINCUMBENT\n\n.fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-in segments in old episodes and swaps in new dynamic content, across": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "Buzzsprout\n\n's Dynamic Content tool inserts, swaps, or removes pre-roll, up to three mid-rolls, and post-roll audio across the entire back catalog without re-uploading the original file.": "https://podcasthostlab.com/buzzsprout-review/",
+        "Audioboom\n\n's AdRip (launched July 2021) automatically rips host-read baked-in ads out of old episodes and replaces them with dynamic ad breaks sold by Audioboom's own sales team.": "https://audioboom.medium.com/audioboom-launches-adrip-new-ad-tech-tool-for-creators-9a74020560d",
+        "Podbean\n\n's PodAds is a dynamic ad insertion service built for podcast networks: it inserts and removes ads across new and old episodes on a schedule, including the back catalog, without re-editing au": "https://blog.podbean.com/dynamically-insert-ads-with-podbean-podads/",
+        "Castos\n\nAds automatically stitches pre-roll and post-roll ads into every episode (including the entire back catalog) and pays the host per listen; Castos Campaigns inserts the host's own promos across": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "We Edit Podcasts\n\nA published-price done-for-you podcast editing service with tiers from $440/month (2 episodes) up to $1,800/month (4 episodes, premium).": "https://www.webtonic.io/blog/best-podcast-production-agencies",
+        "\u201cIf older episodes still rely on baked-in ads, you're likely leaving a significant portion of your show's earning potential on the table.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/",
+        "\u201cImagine someone downloads an old episode, hears an old ad, and then navigates to the sponsor's website only to learn that the sponsor's offer isn't available any longer. Annoying, right?\u201d\n\nCastos blo": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "\u201cTake the episode offline. Open the original project file. Remove the old audio. Record and mix in the new ad. Publish the updated file.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/"
+      }
+    },
+    "The Full Value Ladder": {
+      "text": "1\n\nLEAD MAGNET\n\nFree Archive Leak Report($0)\n\nAutomated scan of the owner's public RSS. One-page report: baked-in ad count, dead promo codes still running, sellable DAI slots in the back catalog.\n\n2\n\nFRONTEND\n\n10-Episode Pilot Sweep($400 flat)\n\nRank top 10 episodes by 90-day downloads, find baked-in ads, get owner sign-off, execute swap in the host, QA the published feed.\n\n3\n\nCORE\n\nMonthly Archive Retainer($600/month)\n\n20 episodes swept per month plus a quarterly full-catalog audit. Covers a 200-episode archive in roughly 10 months.\n\n4\n\nCONTINUITY\n\nMigration Cleanup($1,500 flat)\n\nOne-time pre-migration scrub triggered by a Podnews host-change alert. Removes stale DAI and baked-in ads before the feed imports.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Captivate": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "IAB/PwC Podcast Advertising Revenue Study": "https://libsyn.com/blog/podcast-statistics-2026-listeners-downloads-ad-spend-and-industry-growth/",
+        "Spotify Advertising": "https://ads.spotify.com/en-CA/news-and-insights/podcast-ads-automated-buying-launch/",
+        "Interactive Advertising Bureau": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "XDA Developers / GitHub": "https://www.xda-developers.com/i-built-a-podcast-server-that-strips-ads-before-play/",
+        "\u201cConsider remastering your back catalogue. The money part is in the dynamic ad insertion monetization. We have hundreds of episodes available...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/tjbz0j/ready_to_go_fulltime_podcasting_advice/",
+        "\u201cThis leaves you re-editing old episodes to take out dead ads. Most podcast hosts can dynamic insert host read ads which has the same effect as a live read without outdating your back catalog.\u201d\n\nr/pod": "https://www.reddit.com/r/podcasting/comments/1khfpku/understanding_ads/",
+        "\u201cAnd yet I earn roughly $250/month from dynamic ad insertion. It's not nothing, and it more than covers my overhead, but it's not career...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/1mar8bl/the_1000_listeners_myth_a_reality_check/",
+        "IAB PODCAST ADVERTISING REVENUE STUDY": "https://www.amraandelma.com/apple-podcasts-ad-statistics/",
+        "IAB / PWC VIA CREATOR NEWSDESK": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "MAGELLAN AI VIA DMEXCO": "https://dmexco.com/stories/dmexco-column-stop-baking-start-shaking-why-you-should-start-advertising-with-dynamic-ad-insertion-in-podcasts/",
+        "FIVERR": "https://block.fiverr.com/gigs/podcast-editor",
+        "Audioboom AdRip\n\nAudioboom shipped AdRip in July 2021, a tool that automatically rips live ad-reads out of old podcast episodes and replaces them with new ads.": "https://podnews.net/update/adrip-ripping-old",
+        "Megaphone\n\nSpotify's Megaphone ships Segment Editing inside the Ad Locator: publishers can mark a baked-in ad on an old episode and either remove the audio or replace it with a dynamic ad slot, withou": "https://support.megaphone.fm/en/articles/8649219-segment-editing",
+        "Captivate\n\nINCUMBENT\n\n.fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-in segments in old episodes and swaps in new dynamic content, across": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "Buzzsprout\n\n's Dynamic Content tool inserts, swaps, or removes pre-roll, up to three mid-rolls, and post-roll audio across the entire back catalog without re-uploading the original file.": "https://podcasthostlab.com/buzzsprout-review/",
+        "Audioboom\n\n's AdRip (launched July 2021) automatically rips host-read baked-in ads out of old episodes and replaces them with dynamic ad breaks sold by Audioboom's own sales team.": "https://audioboom.medium.com/audioboom-launches-adrip-new-ad-tech-tool-for-creators-9a74020560d",
+        "Podbean\n\n's PodAds is a dynamic ad insertion service built for podcast networks: it inserts and removes ads across new and old episodes on a schedule, including the back catalog, without re-editing au": "https://blog.podbean.com/dynamically-insert-ads-with-podbean-podads/",
+        "Castos\n\nAds automatically stitches pre-roll and post-roll ads into every episode (including the entire back catalog) and pays the host per listen; Castos Campaigns inserts the host's own promos across": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "We Edit Podcasts\n\nA published-price done-for-you podcast editing service with tiers from $440/month (2 episodes) up to $1,800/month (4 episodes, premium).": "https://www.webtonic.io/blog/best-podcast-production-agencies",
+        "\u201cIf older episodes still rely on baked-in ads, you're likely leaving a significant portion of your show's earning potential on the table.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/",
+        "\u201cImagine someone downloads an old episode, hears an old ad, and then navigates to the sponsor's website only to learn that the sponsor's offer isn't available any longer. Annoying, right?\u201d\n\nCastos blo": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "\u201cTake the episode offline. Open the original project file. Remove the old audio. Record and mix in the new ad. Publish the updated file.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/"
+      }
+    }
+  },
+  "glancePopups": {
+    "THE CEILING IF IT COMPOUNDS $600K-$1M ARR": {
+      "text": "Where the ceiling comes from.\nWHAT $600K ARR TAKES\nAddressable: 90-day-active shows (Amplifi)\n476,000\nWith meaningful archive (100+ eps, est)\n~50,000\nServiceable share a solo op can reach in Y2\n0.5%\nTarget customer base\n250 shows\nRetainer customers at $600/mo\n100\nRetainer ARR\n$720K\nMigration SKU: 100/yr at $1,500\n$150K\nAgency reseller: 3 partners x $3K/mo\n$108K\nTotal ceiling ARR (one operator)\n~$978K\nRealistic ceiling for a one-operator service: $600K-$1M ARR. Retainer attach is the swing variable. Agency reseller unlocks the second half but needs a trusted operator brand first.\nTHE CEILING\nTHE NEXT STEP\nIf you're serious about building a cash-flowing business.",
+      "links": {
+        "Captivate": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "IAB/PwC Podcast Advertising Revenue Study": "https://libsyn.com/blog/podcast-statistics-2026-listeners-downloads-ad-spend-and-industry-growth/",
+        "Spotify Advertising": "https://ads.spotify.com/en-CA/news-and-insights/podcast-ads-automated-buying-launch/",
+        "Interactive Advertising Bureau": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "XDA Developers / GitHub": "https://www.xda-developers.com/i-built-a-podcast-server-that-strips-ads-before-play/",
+        "\u201cConsider remastering your back catalogue. The money part is in the dynamic ad insertion monetization. We have hundreds of episodes available...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/tjbz0j/ready_to_go_fulltime_podcasting_advice/",
+        "\u201cThis leaves you re-editing old episodes to take out dead ads. Most podcast hosts can dynamic insert host read ads which has the same effect as a live read without outdating your back catalog.\u201d\n\nr/pod": "https://www.reddit.com/r/podcasting/comments/1khfpku/understanding_ads/",
+        "\u201cAnd yet I earn roughly $250/month from dynamic ad insertion. It's not nothing, and it more than covers my overhead, but it's not career...\u201d\n\nr/podcasting \u00b7 r/podcasting user": "https://www.reddit.com/r/podcasting/comments/1mar8bl/the_1000_listeners_myth_a_reality_check/",
+        "IAB PODCAST ADVERTISING REVENUE STUDY": "https://www.amraandelma.com/apple-podcasts-ad-statistics/",
+        "IAB / PWC VIA CREATOR NEWSDESK": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/",
+        "MAGELLAN AI VIA DMEXCO": "https://dmexco.com/stories/dmexco-column-stop-baking-start-shaking-why-you-should-start-advertising-with-dynamic-ad-insertion-in-podcasts/",
+        "FIVERR": "https://block.fiverr.com/gigs/podcast-editor",
+        "Audioboom AdRip\n\nAudioboom shipped AdRip in July 2021, a tool that automatically rips live ad-reads out of old podcast episodes and replaces them with new ads.": "https://podnews.net/update/adrip-ripping-old",
+        "Megaphone\n\nSpotify's Megaphone ships Segment Editing inside the Ad Locator: publishers can mark a baked-in ad on an old episode and either remove the audio or replace it with a dynamic ad slot, withou": "https://support.megaphone.fm/en/articles/8649219-segment-editing",
+        "Captivate\n\nINCUMBENT\n\n.fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-in segments in old episodes and swaps in new dynamic content, across": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/",
+        "Buzzsprout\n\n's Dynamic Content tool inserts, swaps, or removes pre-roll, up to three mid-rolls, and post-roll audio across the entire back catalog without re-uploading the original file.": "https://podcasthostlab.com/buzzsprout-review/",
+        "Audioboom\n\n's AdRip (launched July 2021) automatically rips host-read baked-in ads out of old episodes and replaces them with dynamic ad breaks sold by Audioboom's own sales team.": "https://audioboom.medium.com/audioboom-launches-adrip-new-ad-tech-tool-for-creators-9a74020560d",
+        "Podbean\n\n's PodAds is a dynamic ad insertion service built for podcast networks: it inserts and removes ads across new and old episodes on a schedule, including the back catalog, without re-editing au": "https://blog.podbean.com/dynamically-insert-ads-with-podbean-podads/",
+        "Castos\n\nAds automatically stitches pre-roll and post-roll ads into every episode (including the entire back catalog) and pays the host per listen; Castos Campaigns inserts the host's own promos across": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "We Edit Podcasts\n\nA published-price done-for-you podcast editing service with tiers from $440/month (2 episodes) up to $1,800/month (4 episodes, premium).": "https://www.webtonic.io/blog/best-podcast-production-agencies",
+        "\u201cIf older episodes still rely on baked-in ads, you're likely leaving a significant portion of your show's earning potential on the table.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/",
+        "\u201cImagine someone downloads an old episode, hears an old ad, and then navigates to the sponsor's website only to learn that the sponsor's offer isn't available any longer. Annoying, right?\u201d\n\nCastos blo": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+        "\u201cTake the episode offline. Open the original project file. Remove the old audio. Record and mix in the new ad. Publish the updated file.\u201d\n\nLibsyn blog \u00b7 Libsyn": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/"
+      }
+    }
+  },
+  "overallScore": null,
+  "painScore": null,
+  "timingScore": null,
+  "layoutDetected": "new",
+  "siteView": {
+    "version": "v3",
+    "dateLabel": "NOV 19, 2026",
+    "title": "SaaS platform that cleans up podcast archives and prepares old episodes for new ads",
+    "ibIndex": "6.5",
+    "tags": [
+      "B2B",
+      "SaaS",
+      "$600K-$1M ARR"
+    ],
+    "painSeverity": "6",
+    "hero": [
+      {
+        "label": "ACTIVE PODCASTS",
+        "lines": [
+          "~476K",
+          "90-day active shows, Podcast Index 2026"
+        ],
+        "prose": false
+      },
+      {
+        "label": "WHAT IT DEMANDS",
+        "lines": [
+          "Distribution",
+          "Domain depth",
+          "Sales",
+          "Build craft",
+          "Capital"
+        ],
+        "prose": false
+      },
+      {
+        "label": "THE REALITY",
+        "lines": [
+          "FIRST REVENUE",
+          "30-60 days",
+          "CAPITAL IN",
+          "$2K-$10K",
+          "DIFFICULTY",
+          "Moderate"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "FIRST REVENUE",
+            "value": "30-60 days"
+          },
+          {
+            "label": "CAPITAL IN",
+            "value": "$2K-$10K"
+          },
+          {
+            "label": "DIFFICULTY",
+            "value": "Moderate"
+          }
+        ]
+      },
+      {
+        "label": "UP AGAINST",
+        "lines": [
+          "Captivate",
+          ".fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-\u2026",
+          "+ 9 more mapped"
+        ],
+        "prose": false,
+        "href": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/"
+      },
+      {
+        "label": "THE PITCH",
+        "lines": [
+          "Dynamic ad insertion now carries 93.6% of US podcast ad revenue, per the IAB and PwC March 2026 study. US podcast ad spend hit $2.9 billion in 2025 and is tracking to $3.0 billion in 2026. An independent show with 200 old episodes and a live-read sponsor from 2023 still running in the archive is blocking a sellable DAI slot every time a new listener binges the back catalog. Castos, Libsyn and Audioboom all name the symptom: dead promo codes, expired offers, and burned sponsor trust. Audioboom shipped AdRip in 2021 for its own 250-show network. Every independent show below that line is on its own."
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHO IT'S FOR",
+        "lines": [
+          "Independent evergreen podcasts with large archives, real current downloads on older episodes, removable baked-in sponsorships, and existing advertiser access; podcast production agencies as a possible reseller channel."
+        ],
+        "prose": true
+      },
+      {
+        "label": "THE GAP",
+        "lines": [
+          "The tools exist on every host. Nobody sells the labor to use them"
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHY NOW",
+        "lines": [
+          "DAI now runs 93.6% of US podcast ad revenue"
+        ],
+        "prose": true
+      },
+      {
+        "label": "AT A GLANCE",
+        "lines": [
+          "Active podcasts",
+          "~476K",
+          "Pricing",
+          "$0 to $1,500 flat",
+          "Year one",
+          "$80K-$140K",
+          "Ceiling",
+          "$600K-$1M ARR"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "Active podcasts",
+            "value": "~476K"
+          },
+          {
+            "label": "Pricing",
+            "value": "$0 to $1,500 flat"
+          },
+          {
+            "label": "Year one",
+            "value": "$80K-$140K"
+          },
+          {
+            "label": "Ceiling",
+            "value": "$600K-$1M ARR"
+          }
+        ]
+      },
+      {
+        "label": "WHAT YOU SELL",
+        "lines": [
+          "Monthly Archive Retainer$600/month"
+        ],
+        "prose": false,
+        "name": "Monthly Archive Retainer",
+        "price": "$600/month"
+      },
+      {
+        "label": "BIGGEST RISK",
+        "lines": [
+          "Owners of neglected archives are the exact owners who never do anything about them. The reason the archive is dirty is the owner is not actively monetizing, wh\u2026"
+        ],
+        "prose": true
+      }
+    ],
+    "heroMore": null,
+    "sections": [
+      {
+        "id": "whyNow",
+        "kicker": "Why now",
+        "data": {
+          "headline": "DAI now runs 93.6% of US podcast ad revenue",
+          "paragraphs": [
+            "Two things changed in the last 18 months, and together they make 2026 the year to sell this service. First, the money moved. The IAB and PwC Podcast Advertising Revenue Study, released March 2026, shows dynamic ad insertion now delivers 93.6% of US podcast ad revenue. Baked-in ads have shrunk to under 10%. A live-read ad from 2023 that still runs on an old episode is not just awkward: it blocks a sellable slot in the format that now carries almost all the money. US podcast ad spend hit $2.9 billion in 2025 and is tracking to $3.0 billion in 2026, up 17.6% year over year, and the IAB raised its 2026 outlook again mid-year.",
+            "Second, the demand side opened up. Spotify launched the Spotify Ad Exchange in April 2025 and expanded automated podcast buying to 14 markets on July 11, 2025. The Trade Desk and Google DV360 can now buy podcast DAI slots programmatically. Spotify reported a 64% jump in advertisers using the exchange in the first three months. Acast, Megaphone, iHeart, and 85-plus other programmatic podcast networks are live in 2026. An empty DAI slot in a mid-tail archive can get filled by a programmatic bid in a way that was not true in 2022. On the labor side, Whisper plus LLM ad detection went commodity in 2025-2026: open-source tools (MinusPod, AGPAR, several GitHub repos) scan a 60-minute episode in under 30 minutes at a cost of about a dollar in API spend, and they output timestamped ad segments. The work that would have taken a human editor a month on a 200-episode archive is now a one-day batch job for a solo operator with an AI stack."
+          ],
+          "sources": [
+            {
+              "label": "IAB/PwC Podcast Advertising Revenue Study",
+              "href": "https://libsyn.com/blog/podcast-statistics-2026-listeners-downloads-ad-spend-and-industry-growth/"
+            },
+            {
+              "label": "Spotify Advertising",
+              "href": "https://ads.spotify.com/en-CA/news-and-insights/podcast-ads-automated-buying-launch/"
+            },
+            {
+              "label": "Interactive Advertising Bureau",
+              "href": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/"
+            },
+            {
+              "label": "XDA Developers / GitHub",
+              "href": "https://www.xda-developers.com/i-built-a-podcast-server-that-strips-ads-before-play/"
+            }
+          ]
+        },
+        "more": {
+          "label": "See the full timing case",
+          "title": "The full timing case.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "/10"
+            },
+            {
+              "type": "h",
+              "text": "TIMING"
+            },
+            {
+              "type": "p",
+              "text": "DAI at 93.6% of ad revenue (IAB March 2026), Spotify Ad Exchange opening programmatic in April and July 2025, and commodity Whisper+LLM ad detection all land in the last 12 months."
+            },
+            {
+              "type": "h",
+              "text": "THE SIGNALS"
+            },
+            {
+              "type": "p",
+              "text": "93.6% of US podcast ad revenue now flows through dynamic ad insertion (IAB/PwC, March 2026). Baked-in is under 10%."
+            },
+            {
+              "type": "p",
+              "text": "Spotify Ad Exchange launched April 2025 and expanded programmatic podcast buying to 14 markets July 2025, with a 64% jump in advertisers in the first three months."
+            },
+            {
+              "type": "p",
+              "text": "US podcast ad spend: $2.9B in 2025, tracking to $3.0B in 2026 (+17.6% YoY). IAB raised its 2026 forecast mid-year."
+            },
+            {
+              "type": "p",
+              "text": "Whisper + LLM ad detection is now commodity: open-source tools scan a 60-minute episode in 30 minutes for roughly $1 in API spend."
+            },
+            {
+              "type": "p",
+              "text": "Host migrations are a live trigger: Podnews lists dozens of show migrations in any given 60-day window, each one risking baked-in stale ads unless cleaned first."
+            },
+            {
+              "type": "p",
+              "text": "The counter: the same labor collapse means a motivated owner can DIY. The wedge has to be done-for-you execution and ad-ops judgment, not the scan itself."
+            }
+          ]
+        }
+      },
+      {
+        "id": "marketSnapshot",
+        "kicker": "Market snapshot",
+        "data": {
+          "title": "The receipts.",
+          "painSeverity": "6",
+          "quotes": [
+            {
+              "quote": "\u201cConsider remastering your back catalogue. The money part is in the dynamic ad insertion monetization. We have hundreds of episodes available...\u201d",
+              "source": "r/podcasting \u00b7 r/podcasting user",
+              "href": "https://www.reddit.com/r/podcasting/comments/tjbz0j/ready_to_go_fulltime_podcasting_advice/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cThis leaves you re-editing old episodes to take out dead ads. Most podcast hosts can dynamic insert host read ads which has the same effect as a live read without outdating your back catalog.\u201d",
+              "source": "r/podcasting \u00b7 r/podcasting user",
+              "href": "https://www.reddit.com/r/podcasting/comments/1khfpku/understanding_ads/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cAnd yet I earn roughly $250/month from dynamic ad insertion. It's not nothing, and it more than covers my overhead, but it's not career...\u201d",
+              "source": "r/podcasting \u00b7 r/podcasting user",
+              "href": "https://www.reddit.com/r/podcasting/comments/1mar8bl/the_1000_listeners_myth_a_reality_check/",
+              "platform": null
+            }
+          ],
+          "receiptsLabel": "All 10 receipts, and where these people gather"
+        },
+        "more": {
+          "label": "All receipts",
+          "title": "Where the pain lives.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "\u201cThis means ads will be available in your episodes forever unless you manually upload a new audio file. If you have ads, and you also turn monetization on with Acast, your listeners will hear more ads than usual.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "Acast Help Center \u00b7 Acast"
+            },
+            {
+              "type": "p",
+              "text": "\u201cI need to add a piece of audio to a podcast episode I already published. This used to be really easy and now it seems the only way for me to edit would be to delete and re-upload with the added audio?\u201d"
+            },
+            {
+              "type": "p",
+              "text": "Spotify for Podcasters Community \u00b7 podcaster thread, Spotify community"
+            },
+            {
+              "type": "p",
+              "text": "\u201cFor a podcaster like me, who has no other form of income than that income which is in direct alignment with my podcast (I don't have a \"day job\"), ads are the only thing that allow me to do this work full-time.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "Tanner Campbell, Practical Stoicism \u00b7 Tanner Campbell"
+            },
+            {
+              "type": "p",
+              "text": "\u201cLike going back through old episodes and hearing ads you could SWEAR weren't there. I may be wrong but I don't think there was an Intel ad in the Bob's episode when I first listened to it.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "r/distractible \u00b7 r/distractible listener"
+            },
+            {
+              "type": "h",
+              "text": "WHERE THEY GATHER"
+            },
+            {
+              "type": "p",
+              "text": "Podcast Index counts roughly 4.69 million indexed podcasts worldwide as of March 2026, but only 450,000 to 500,000 show recent episode activity; Amplifi Media's 2026 audit put the 90-day active count near 476K and the 30-day count near 325K.Visit"
+            },
+            {
+              "type": "p",
+              "text": "r/podcasting shows active, recurring owner-side chatter about back-catalog monetization, host migrations with stale ads, and DAI setup across threads from 2020 through 2026, including a 5-day-old migration thread; the pain is discussed by hosts, not just by listeners.Visit"
+            },
+            {
+              "type": "p",
+              "text": "Podcast Index counts roughly 4.69 million indexed podcasts worldwide as of March 2026; only about 476,000 posted in the last 90 days per Amplifi Media, and about 325,000 in the last 30 days: the real pool of active shows with a back catalog to clean.Visit"
+            },
+            {
+              "type": "p",
+              "text": "r/podcasting shows active, recurring owner-side chatter about back-catalog monetization, host migrations with stale ads, and DAI setup across threads from 2020 through 2026, including a 5-day-old migration thread; the pain is discussed by hosts, not just by listeners.Visit"
+            },
+            {
+              "type": "p",
+              "text": "Spotify for Podcasters/Creators has an active help forum where podcasters complain about the \"delete and re-upload\" overhead to fix published episode audio. This is a direct surface for sourcing paying customers at the exact moment of the pain.Visit"
+            },
+            {
+              "type": "p",
+              "text": "Every major host migration guide (Transistor, Podigee, RedCircle, Acast, PodServe, Substack, Podcasters United) now ships a prominent \"remove dynamic ads before import, or they bake into your show forever\" warning. Migration is an active, repeatable trigger moment for the pilot.Visit"
+            },
+            {
+              "type": "p",
+              "text": "Podnews publishes a live, continuously updated list of podcast host migrations: in the 60 days to mid-November 2026, the public page lists dozens of shows moving between Acast, Spotify for Creators, Megaphone, Libsyn, ART19, RedCircle, and others, with examples updated 0 days ago. Host migration is a real, recurring trigger event that the brief identified: every migration risks baking in old dynamic ads unless the owner fixes them first.Visit"
+            }
+          ]
+        }
+      },
+      {
+        "id": "whitespace",
+        "kicker": "Whitespace",
+        "data": {
+          "gap": "The tools exist on every host. Nobody sells the labor to use them",
+          "wedge": [
+            "Traffic-prioritized, one-platform-at-a-time, done-for-you execution with owner approval and delivery QA. Competes against DIY (owners never get to it), generic podcast editors (no ad-ops focus), and platform features (self-serve, no labor)."
+          ],
+          "incumbent": {
+            "name": "Captivate",
+            "href": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/"
+          },
+          "other": []
+        },
+        "more": {
+          "label": "Understand the opening",
+          "title": "The opening.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The market splits into three lanes, and the gap is right in the middle. Lane one is the hosting platforms themselves: Captivate AMIE Ad Painter, Spotify Megaphone Segment Editing, Buzzsprout Dynamic Content, Podbean PodAds, Castos Ads, Podigee Dynamic Ad Server. Every major host now ships a self-serve tool that marks a baked-in ad on an old episode and swaps in a dynamic slot. On Captivate this starts at $17 per month. On Buzzsprout, $15. The feature is not the product; it is table stakes."
+            },
+            {
+              "type": "p",
+              "text": "Lane two is podcast production agencies and freelancers. We Edit Podcasts charges $440 per month for two new episodes and $1,800 for four premium. Content Monsta starts at $1,800 per month. Full-service B2B agencies run $1,500 to $10,000 per month. On Upwork and Fiverr, 3,594 podcast editor gigs start at $20, with a typical Upwork editor at $75 to $150 per episode for a one-hour show. All of them edit new episodes, not archives. None of them specialize in back-catalog ad ops or DAI slot configuration."
+            },
+            {
+              "type": "p",
+              "text": "Lane three is the closed-network play: Audioboom AdRip, launched July 2021. It rips baked-in host-read ads out of old episodes and sells the new inventory through Audioboom's own ad network. But it is only available to the roughly 250 shows in Audioboom's premium creator network. If you are an independent show on Captivate or Buzzsprout, AdRip is not for you."
+            },
+            {
+              "type": "p",
+              "text": "The gap is clear. A 200-episode indie show has the platform tool, has the freelance editors, has the demand. What nobody sells is the middle service: a person who opens the host's analytics, ranks old episodes by last-90-day downloads, listens for baked-in sponsor reads, gets owner sign-off, operates the host's native tool (AMIE Ad Painter, Megaphone Segment Editing, Buzzsprout Dynamic Content), and verifies the published result. The hosts will not do this labor. The agencies will not touch archives. The freelancers do not know ad ops."
+            },
+            {
+              "type": "p",
+              "text": "The pricing gap is as clear. A $300 to $500 pilot for ten episodes fits between a $150 Upwork freelancer (who does one new episode) and a $440 to $1,800 per month production retainer (which is overkill for a one-time archive sweep). It is a one-time job priced like a one-time job."
+            },
+            {
+              "type": "p",
+              "text": "The risk the founder is really up against: Captivate. AMIE Ad Painter is specifically built for the serious indie podcaster target and included free on the $17 plan. If Captivate ships a one-click \"scan my archive and suggest ad locations\" feature with transcription, this service becomes a thin layer on top of a free tool. Megaphone and Buzzsprout could do the same inside a quarter if they decide the retention story is worth it. The wedge is the labor and the ad-ops judgment, not the technology."
+            },
+            {
+              "type": "p",
+              "text": "Captivate AMIE Ad Painter: $17/mo, free with hosting. Paints over baked-in ads in bulk across catalog."
+            },
+            {
+              "type": "p",
+              "text": "Spotify Megaphone Segment Editing: enterprise pricing, included for all publishers. Remove or replace with DAI slots, no re-upload."
+            },
+            {
+              "type": "p",
+              "text": "Buzzsprout Dynamic Content: $15/mo (yearly). Insert, swap, remove pre-roll, three mid-rolls, post-roll across the whole back catalog."
+            },
+            {
+              "type": "p",
+              "text": "Audioboom AdRip: revenue share with Audioboom, premium network only (about 250 shows). The one true direct competitor on service, but closed network."
+            },
+            {
+              "type": "p",
+              "text": "Podbean PodAds, Castos Ads, Podigee Dynamic Ad Server: same self-serve pattern, same message: monetize your back catalog without re-editing."
+            },
+            {
+              "type": "p",
+              "text": "We Edit Podcasts: $440-$1,800/mo, published rate card. Edits new episodes. No archive-cleanup product line."
+            },
+            {
+              "type": "p",
+              "text": "Content Monsta, Podigy, full-service agencies: $1,500 to $10,000+ per month. Strategy and new-episode production, not archive sweeps."
+            },
+            {
+              "type": "p",
+              "text": "Upwork and Fiverr: 3,594 podcast editor gigs on Fiverr alone, $20 to $200 per episode. Infinite supply of audio editors with zero ad-ops specialty."
+            },
+            {
+              "type": "p",
+              "text": "Your way in: Traffic-prioritized, one-platform-at-a-time, done-for-you execution with owner approval and delivery QA. Competes against DIY (owners never get to it), generic podcast editors (no ad-ops focus), and platform features (self-serve, no labor)."
+            },
+            {
+              "type": "h",
+              "text": "WHO\u2019S ALREADY IN THE MARKET"
+            }
+          ]
+        }
+      },
+      {
+        "id": "proof",
+        "kicker": "Proof & signals",
+        "data": {
+          "items": [
+            {
+              "text": "The IAB March 2026 Podcast Advertising Revenue Study reports dynamic ad insertion now accounts for 93.6% of all podcast advertising revenue, up from roughly 48% in 2019; the industry has fully moved to DAI as the default delivery model.",
+              "source": "IAB PODCAST ADVERTISING REVENUE STUDY",
+              "href": "https://www.amraandelma.com/apple-podcasts-ad-statistics/"
+            },
+            {
+              "text": "US podcast ad revenue reached $2.9 billion in 2025 and is projected at $3.0 billion for 2026, up 17.6% year over year per IAB and PwC figures; the top 10 podcast networks command roughly 60% of industry ad revenue (Edison Research), leaving a long tail of independent shows.",
+              "source": "IAB / PWC VIA CREATOR NEWSDESK",
+              "href": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/"
+            },
+            {
+              "text": "Magellan AI's Q1 2025 benchmark found over 80 percent of top-tier podcasts now support dynamic ad insertion, meaning the tooling to swap ads in back catalogs is already standard at the top of the market.",
+              "source": "MAGELLAN AI VIA DMEXCO",
+              "href": "https://dmexco.com/stories/dmexco-column-stop-baking-start-shaking-why-you-should-start-advertising-with-dynamic-ad-insertion-in-podcasts/"
+            },
+            {
+              "text": "On Fiverr alone, 3,594 podcast editing services are available, with \"I will professionally edit, produce your audio podcast\" gigs starting at $20. The freelance supply of basic podcast editors is effectively infinite relative to demand, which pins per-episode floor pricing at the bottom of the market.",
+              "source": "FIVERR",
+              "href": "https://block.fiverr.com/gigs/podcast-editor"
+            }
+          ]
+        },
+        "more": {
+          "label": "Explore the evidence",
+          "title": "Proof & signals.",
+          "blocks": [
+            {
+              "type": "h",
+              "text": "THE HARD NUMBERS"
+            },
+            {
+              "type": "h",
+              "text": "WHAT THE RESEARCH SAYS"
+            },
+            {
+              "type": "p",
+              "text": "Archive work is operationally messy, but customer pain is not yet quantified"
+            },
+            {
+              "type": "p",
+              "text": "Host migrations create a concrete, deadline-driven risk"
+            },
+            {
+              "type": "p",
+              "text": "Native host tools already handle much of the core editing"
+            },
+            {
+              "type": "p",
+              "text": "Podcast ad operations are real; demand for this specific product remains unproven"
+            },
+            {
+              "type": "p",
+              "text": "The evidence supports a real operational problem and an established podcast-advertising ecosystem, but not yet willingness to pay for archive-cleanup software. The strongest concrete trigger is migration risk: Acast guidance warns that active dynamic ads can be imported permanently. Native tools from Megaphone, Captivate, and Buzzsprout demonstrate that segment replacement and dynamic-content updates are already feasible\u2014and create a significant substitute. Job listings indicate companies employ people for audio and podcast ad operations, while broader market data shows a large advertising category; neither proves demand for this offer. Validate with paid, narrowly qualified pilots and measure labor saved, publishing errors avoided, repeat use, and incremental sold inventory."
+            }
+          ]
+        }
+      },
+      {
+        "id": "competitors",
+        "kicker": "Who you're up against",
+        "data": {
+          "count": 10,
+          "players": [
+            {
+              "name": "Audioboom AdRip",
+              "incumbent": false,
+              "description": "Audioboom shipped AdRip in July 2021, a tool that automatically rips live ad-reads out of old podcast episodes and replaces them with new ads.",
+              "href": "https://podnews.net/update/adrip-ripping-old"
+            },
+            {
+              "name": "Megaphone",
+              "incumbent": false,
+              "description": "Spotify's Megaphone ships Segment Editing inside the Ad Locator: publishers can mark a baked-in ad on an old episode and either remove the audio or replace it with a dynamic ad slot, without re-uploading the file.",
+              "href": "https://support.megaphone.fm/en/articles/8649219-segment-editing"
+            },
+            {
+              "name": "Captivate",
+              "incumbent": true,
+              "description": ".fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-in segments in old episodes and swaps in new dynamic content, across the whole catalog.",
+              "href": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/"
+            },
+            {
+              "name": "Buzzsprout",
+              "incumbent": false,
+              "description": "'s Dynamic Content tool inserts, swaps, or removes pre-roll, up to three mid-rolls, and post-roll audio across the entire back catalog without re-uploading the original file.",
+              "href": "https://podcasthostlab.com/buzzsprout-review/"
+            },
+            {
+              "name": "Audioboom",
+              "incumbent": false,
+              "description": "'s AdRip (launched July 2021) automatically rips host-read baked-in ads out of old episodes and replaces them with dynamic ad breaks sold by Audioboom's own sales team.",
+              "href": "https://audioboom.medium.com/audioboom-launches-adrip-new-ad-tech-tool-for-creators-9a74020560d"
+            },
+            {
+              "name": "Podbean",
+              "incumbent": false,
+              "description": "'s PodAds is a dynamic ad insertion service built for podcast networks: it inserts and removes ads across new and old episodes on a schedule, including the back catalog, without re-editing audio.",
+              "href": "https://blog.podbean.com/dynamically-insert-ads-with-podbean-podads/"
+            },
+            {
+              "name": "Castos",
+              "incumbent": false,
+              "description": "Ads automatically stitches pre-roll and post-roll ads into every episode (including the entire back catalog) and pays the host per listen; Castos Campaigns inserts the host's own promos across the catalog on a schedule.",
+              "href": "https://castos.com/dynamic-ad-insertion-for-podcasts/"
+            },
+            {
+              "name": "We Edit Podcasts",
+              "incumbent": false,
+              "description": "A published-price done-for-you podcast editing service with tiers from $440/month (2 episodes) up to $1,800/month (4 episodes, premium).",
+              "href": "https://www.webtonic.io/blog/best-podcast-production-agencies"
+            }
+          ]
+        }
+      },
+      {
+        "id": "asking",
+        "kicker": "People are asking for it",
+        "data": {
+          "quotes": [
+            {
+              "quote": "\u201cIf older episodes still rely on baked-in ads, you're likely leaving a significant portion of your show's earning potential on the table.\u201d",
+              "source": "Libsyn blog \u00b7 Libsyn",
+              "href": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cImagine someone downloads an old episode, hears an old ad, and then navigates to the sponsor's website only to learn that the sponsor's offer isn't available any longer. Annoying, right?\u201d",
+              "source": "Castos blog \u00b7 Castos",
+              "href": "https://castos.com/dynamic-ad-insertion-for-podcasts/",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cTake the episode offline. Open the original project file. Remove the old audio. Record and mix in the new ad. Publish the updated file.\u201d",
+              "source": "Libsyn blog \u00b7 Libsyn",
+              "href": "https://libsyn.com/blog/podcast-dynamic-ad-insertion-how-to-monetize-your-back-catalog/",
+              "platform": "REDDIT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "verdict",
+        "kicker": "The verdict",
+        "data": {
+          "title": "Should you build this?",
+          "build": [
+            "DAI now runs 93.6% of US podcast ad revenue (IAB and PwC, March 2026), so every baked-in slot in a 200-episode archive is blocking inventory in the format that carries almost all the money.",
+            "The host tools that make the swap possible (Captivate AMIE Ad Painter, Spotify Megaphone Segment Editing, Buzzsprout Dynamic Content) are already shipped and cost the owner $15-$17 a month, so you sell labor on top of what they already pay.",
+            "Podnews publishes a live list of dozens of show migrations every 60 days, and every migration guide warns owners stale ads bake into the new feed forever, so you have a timed, qualified lead source without paying for ads.",
+            "Audioboom shipped AdRip in 2021 but only for its own 250-show closed network; every independent show on Captivate, Buzzsprout, Megaphone or Acast is on its own, and no agency (We Edit Podcasts, Content Monsta, Podigy) sells archive cleanup as a line item."
+          ],
+          "notBuild": [
+            "Zero Google Ads volume on every solution keyword and a $17.62 CPC on the adjacent category term means no search channel: every customer is a one-at-a-time outreach grind for 12-18 months.",
+            "Neglected archives belong to owners who are not actively monetizing, which is also why they will not write a $400 check; the shows big enough to pay already have an editor or a network doing this in-house.",
+            "Captivate AMIE already paints baked-in ads in bulk and a one-click 'scan my archive' button from any major host (Spotify, Buzzsprout, Captivate) ends the pilot SKU in a quarter.",
+            "Honest ceiling is $600K-$1M ARR for a solo operator with 100 retainers plus migration and reseller revenue; this is a lifestyle business, not a venture outcome, so the founder has to want that shape of company."
+          ]
+        }
+      },
+      {
+        "id": "founderFit",
+        "kicker": "Founder fit",
+        "data": {
+          "title": "Not every good idea is good for you.",
+          "bestFor": [
+            "Solo founders with podcast production or ad-operations experience and SaaS-bu...",
+            "Teams pairing an audio systems engineer with an agency sales or podcast opera...",
+            "Founders without podcast or advertising contacts who rely only on broad outbound",
+            "Teams lacking audio QA or integration skills and unwilling to support migrations"
+          ],
+          "persona": [
+            "A solo operator who has sold or managed podcast ads for a network, an agency, or their own show. Someone who knows what a stale read sounds like, understands DAI slot configuration on at least three hosts, and is willing to do 30 personal outreach messages a week for 90 days straight. A podcast producer looking to escape new-episode editing is the natural fit. This is not a founder-first-time play; the credibility to walk into a conversation with an owner and explain the ad-ops decisions is the whole moat. AI handles the scan in a weekend. The hard part is sales grit and a network that respects your ad-ops read."
+          ],
+          "demands": [
+            {
+              "label": "Distribution",
+              "score": 10.0
+            },
+            {
+              "label": "Domain depth",
+              "score": 9.0
+            },
+            {
+              "label": "Sales",
+              "score": 8.0
+            },
+            {
+              "label": "Build craft",
+              "score": 3.0
+            },
+            {
+              "label": "Capital",
+              "score": 2.0
+            }
+          ],
+          "reality": [
+            {
+              "label": "FIRST REVENUE",
+              "value": "30-60 days"
+            },
+            {
+              "label": "CAPITAL IN",
+              "value": "$2K-$10K"
+            },
+            {
+              "label": "DIFFICULTY",
+              "value": "Moderate"
+            }
+          ]
+        }
+      },
+      {
+        "id": "valueLadder",
+        "kicker": "What you'd sell",
+        "data": {
+          "title": "The value ladder.",
+          "intro": [
+            "Free archive scan as lead magnet: Whisper + LLM pipeline reads the public RSS, outputs a one-page leak report. Pilot: $400 flat for 10 episodes, ranked by current downloads, owner approves each swap, executed in the owner's native host tool. Retainer: $600/month for 20 episodes plus quarterly full-catalog audit."
+          ],
+          "steps": [
+            {
+              "step": 1,
+              "tier": "LEAD MAGNET",
+              "name": "Free Archive Leak Report",
+              "price": "$0",
+              "description": "Automated scan of the owner's public RSS. One-page report: baked-in ad count, dead promo codes still running, sellable DAI slots in the back catalog."
+            },
+            {
+              "step": 2,
+              "tier": "FRONTEND",
+              "name": "10-Episode Pilot Sweep",
+              "price": "$400 flat",
+              "description": "Rank top 10 episodes by 90-day downloads, find baked-in ads, get owner sign-off, execute swap in the host, QA the published feed."
+            },
+            {
+              "step": 3,
+              "tier": "CORE",
+              "name": "Monthly Archive Retainer",
+              "price": "$600/month",
+              "description": "20 episodes swept per month plus a quarterly full-catalog audit. Covers a 200-episode archive in roughly 10 months."
+            },
+            {
+              "step": 4,
+              "tier": "CONTINUITY",
+              "name": "Migration Cleanup",
+              "price": "$1,500 flat",
+              "description": ""
+            }
+          ]
+        },
+        "more": {
+          "label": "View the full value ladder",
+          "title": "The full value ladder.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "One-time pre-migration scrub triggered by a Podnews host-change alert. Removes stale DAI and baked-in ads before the feed imports."
+            }
+          ]
+        }
+      },
+      {
+        "id": "plan",
+        "kicker": "The plan",
+        "data": {
+          "title": "If you started today.",
+          "subtitle": "First up.",
+          "paragraphs": [
+            "Nobody searches for this. Google Ads shows zero monthly volume on the solution terms (remove baked in podcast ads, podcast back catalog monetization, podcast archive editing service). The adjacent category keyword, podcast editing service, only draws 320 searches a month at a $17.62 CPC, which is too thin and too expensive to buy your way in. SEO and paid search are not the channel. The first 100 customers come one at a time from two live surfaces: Podnews host-migration alerts and r/podcasting threads."
+          ]
+        },
+        "more": {
+          "label": "See the detailed plan",
+          "title": null,
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Launch a web SaaS that ranks archive episodes by recent traffic and guides owners through approved, reversible edits\u2014with published-result verification across one hosting platform. Connect episode-download data and host publishing workflows to deliver fast, traceable wins; then validate repeat paid use before expanding to agency-wide, multi-show operations. Ready to scale?"
+            },
+            {
+              "type": "h",
+              "text": "THE FIRST MOVES"
+            },
+            {
+              "type": "p",
+              "text": "Within 7 days, schedule 10 interviews with agencies or multi-show publishers and ask for evidence of older-episode downloads, current editing workflow, and advertiser access."
+            },
+            {
+              "type": "p",
+              "text": "Within 7 days, build a one-page SaaS prototype and eligibility-report intake form; test the guided ten-episode workflow and subscription framing with five prospects."
+            },
+            {
+              "type": "p",
+              "text": "Within 7 days, contact three podcast migration consultants or production agencies to validate migration urgency and recruit paid design partners."
+            },
+            {
+              "type": "h",
+              "text": "THE MVP"
+            },
+            {
+              "type": "p",
+              "text": "Build a web SaaS MVP for one hosting platform, centered on a guided ten-episode workflow: rank episodes, flag candidate segments, collect explicit owner approval, preserve originals, track changes, and verify the published artifact. Keep ambiguous audio decisions human-reviewed and measure labor, errors, repeat use, and realized incremental yield before adding integrations or autonomous editing."
+            },
+            {
+              "type": "h",
+              "text": "WHERE THE FIRST USERS COME FROM"
+            },
+            {
+              "type": "p",
+              "text": "Founder-led agency outreach \u00b7 Agencies may have recurring archive work across multiple client shows, making them stronger prospects for repeat SaaS usage."
+            },
+            {
+              "type": "p",
+              "text": "Migration consultants and hosting communities \u00b7 Migration is a time-bound trigger, and documented host migration guidance identifies possible dynamic-ad import issues."
+            },
+            {
+              "type": "p",
+              "text": "Educational SEO and targeted professional content \u00b7 Searchers researching podcast monetization may include qualified publishers, but broad search interest is not proof of demand for archive software."
+            },
+            {
+              "type": "h",
+              "text": "TIMELINE"
+            },
+            {
+              "type": "p",
+              "text": "1-2 weeks"
+            },
+            {
+              "type": "h",
+              "text": "BUDGET"
+            },
+            {
+              "type": "p",
+              "text": "$0-10K"
+            },
+            {
+              "type": "h",
+              "text": "THE MILESTONE"
+            },
+            {
+              "type": "p",
+              "text": "By month 18, secure 30 paying accounts, including at least 10 agencies, with 60% of eligible accounts completing a second workflow and documented labor savings or incremental sold inventory."
+            }
+          ]
+        }
+      },
+      {
+        "id": "napkin",
+        "kicker": "Napkin math",
+        "data": {
+          "title": "Year one, on a napkin.",
+          "intro": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.",
+          "rows": [
+            {
+              "label": "Podnews migration alerts scraped per week",
+              "value": "30"
+            },
+            {
+              "label": "Personal outreach with free leak report",
+              "value": "30/wk"
+            },
+            {
+              "label": "Reply rate (assumption)",
+              "value": "15%"
+            },
+            {
+              "label": "Replies per week",
+              "value": "~4-5"
+            },
+            {
+              "label": "Pilot close rate on replies (assumption)",
+              "value": "25%"
+            },
+            {
+              "label": "Pilots booked per week",
+              "value": "1"
+            },
+            {
+              "label": "Pilot price (anchored to We Edit $440)",
+              "value": "$400"
+            },
+            {
+              "label": "Pilots in first 90 days",
+              "value": "~12"
+            },
+            {
+              "label": "Pilot revenue, first 90 days",
+              "value": "$4,800"
+            },
+            {
+              "label": "Pilot-to-retainer attach (assumption)",
+              "value": "60%"
+            },
+            {
+              "label": "Retainers live by month 6",
+              "value": "~15"
+            },
+            {
+              "label": "Retainer MRR by month 6",
+              "value": "$9,000"
+            },
+            {
+              "label": "Run-rate ARR at month 6",
+              "value": "~$108K"
+            }
+          ],
+          "summary": [
+            "One pilot a week after 90 days of outreach gets you to ~$48K ARR on pilots alone. The real number is 60% retainer attach at $600/mo, which is the business."
+          ],
+          "ceiling": "$600K-$1M ARR"
+        }
+      }
+    ],
+    "popups": [
+      {
+        "label": "THE CEILING IF IT COMPOUNDS $600K-$1M ARR",
+        "title": "Where the ceiling comes from.",
+        "blocks": [
+          {
+            "type": "h",
+            "text": "WHAT $600K ARR TAKES"
+          },
+          {
+            "type": "p",
+            "text": "Addressable: 90-day-active shows (Amplifi)"
+          },
+          {
+            "type": "p",
+            "text": "476,000"
+          },
+          {
+            "type": "p",
+            "text": "With meaningful archive (100+ eps, est)"
+          },
+          {
+            "type": "p",
+            "text": "~50,000"
+          },
+          {
+            "type": "p",
+            "text": "Serviceable share a solo op can reach in Y2"
+          },
+          {
+            "type": "p",
+            "text": "0.5%"
+          },
+          {
+            "type": "p",
+            "text": "Target customer base"
+          },
+          {
+            "type": "p",
+            "text": "250 shows"
+          },
+          {
+            "type": "p",
+            "text": "Retainer customers at $600/mo"
+          },
+          {
+            "type": "p",
+            "text": "100"
+          },
+          {
+            "type": "p",
+            "text": "Retainer ARR"
+          },
+          {
+            "type": "p",
+            "text": "$720K"
+          },
+          {
+            "type": "p",
+            "text": "Migration SKU: 100/yr at $1,500"
+          },
+          {
+            "type": "p",
+            "text": "$150K"
+          },
+          {
+            "type": "p",
+            "text": "Agency reseller: 3 partners x $3K/mo"
+          },
+          {
+            "type": "p",
+            "text": "$108K"
+          },
+          {
+            "type": "p",
+            "text": "Total ceiling ARR (one operator)"
+          },
+          {
+            "type": "p",
+            "text": "~$978K"
+          },
+          {
+            "type": "p",
+            "text": "Realistic ceiling for a one-operator service: $600K-$1M ARR. Retainer attach is the swing variable. Agency reseller unlocks the second half but needs a trusted operator brand first."
+          },
+          {
+            "type": "h",
+            "text": "THE CEILING"
+          }
+        ]
+      }
+    ],
+    "inlineLinks": [
+      {
+        "text": "Captivate",
+        "href": "https://help.captivate.fm/en/article/amie-dynamic-ad-insertion-faqs-optzy9/"
+      },
+      {
+        "text": "IAB/PwC Podcast Advertising Revenue Study",
+        "href": "https://libsyn.com/blog/podcast-statistics-2026-listeners-downloads-ad-spend-and-industry-growth/"
+      },
+      {
+        "text": "Spotify Advertising",
+        "href": "https://ads.spotify.com/en-CA/news-and-insights/podcast-ads-automated-buying-launch/"
+      },
+      {
+        "text": "Interactive Advertising Bureau",
+        "href": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/"
+      },
+      {
+        "text": "XDA Developers / GitHub",
+        "href": "https://www.xda-developers.com/i-built-a-podcast-server-that-strips-ads-before-play/"
+      },
+      {
+        "text": "IAB PODCAST ADVERTISING REVENUE STUDY",
+        "href": "https://www.amraandelma.com/apple-podcasts-ad-statistics/"
+      },
+      {
+        "text": "IAB / PWC VIA CREATOR NEWSDESK",
+        "href": "https://www.creatornewsdesk.com/monetization/creator-economy/podcast-ad-market-nears-3b-in-the-us-as-iab-raises-2026-outlook/"
+      },
+      {
+        "text": "MAGELLAN AI VIA DMEXCO",
+        "href": "https://dmexco.com/stories/dmexco-column-stop-baking-start-shaking-why-you-should-start-advertising-with-dynamic-ad-insertion-in-podcasts/"
+      },
+      {
+        "text": "FIVERR",
+        "href": "https://block.fiverr.com/gigs/podcast-editor"
+      },
+      {
+        "text": "The Startup Ideas Podcast",
+        "href": "https://www.youtube.com/@GregIsenberg"
+      },
+      {
+        "text": "Visit",
+        "href": "https://termsandconditionstemplate.com/how-many-podcasts-are-there"
+      }
+    ],
+    "linkCount": 40,
+    "sourceUrl": "https://www.ideabrowser.com/hub/ideas/today"
+  },
+  "rawText": "Home\nBrowse\nAgents\nMy Stuff\nAbout me\nAccelerator\nProjects\nExample project\nConnect your AI\nTool deals\nAbout Ideabrowser\nHelp & training\n\u00a9 2026 Ideabrowser\n\u00b7\nLegal\nToggle Sidebar\nIdea of the Day\nBuild Gallery\n1\nGo Pro\nS\n\nIDEA OF THE DAY\u00b7NOV 19, 2026\n\nPrevious\nBrowse all\nSaaS platform that cleans up podcast archives and prepares old episodes for new ads\n\nIB Index 6.5\n\u00b7\nB2B \u00b7 SaaS\n\u00b7\n$600K-$1M ARR\n\nCONCEPT MOCKUP\n\nACTIVE PODCASTS\n\n~476K\n\n90-day active shows, Podcast Index 2026\n\nWHAT IT DEMANDS\n\nDistribution\nDomain depth\nSales\nBuild craft\nCapital\n\nTHE REALITY\n\nFIRST REVENUE\n30-60 days\nCAPITAL IN\n$2K-$10K\nDIFFICULTY\nModerate\n\nUP AGAINST\n\nCaptivate\n\n.fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-\u2026\n\n+ 9 more mapped\n\nTHE PITCH\n\nDynamic ad insertion now carries 93.6% of US podcast ad revenue, per the IAB and PwC March 2026 study. US podcast ad spend hit $2.9 billion in 2025 and is tracking to $3.0 billion in 2026. An independent show with 200 old episodes and a live-read sponsor from 2023 still running in the archive is blocking a sellable DAI slot every time a new listener binges the back catalog. Castos, Libsyn and Audioboom all name the symptom: dead promo codes, expired offers, and burned sponsor trust. Audioboom shipped AdRip in 2021 for its own 250-show network. Every independent show below that line is on its own.\n\nWHO IT'S FOR\n\nIndependent evergreen podcasts with large archives, real current downloads on older episodes, removable baked-in sponsorships, and existing advertiser access; podcast production agencies as a possible reseller channel.\n\nTHE GAP\n\nThe tools exist on every host. Nobody sells the labor to use them\n\nWHY NOW\n\nDAI now runs 93.6% of US podcast ad revenue\n\nAT A GLANCE\n\nActive podcasts\n~476K\nPricing\n$0 to $1,500 flat\nYear one\n$80K-$140K\nCeiling\n$600K-$1M ARR\n\nWHAT YOU SELL\n\nMonthly Archive Retainer$600/month\n\nBIGGEST RISK\n\nOwners of neglected archives are the exact owners who never do anything about them. The reason the archive is dirty is the owner is not actively monetizing, wh\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nDAI now runs 93.6% of US podcast ad revenue\n\nTwo things changed in the last 18 months, and together they make 2026 the year to sell this service. First, the money moved. The IAB and PwC Podcast Advertising Revenue Study, released March 2026, shows dynamic ad insertion now delivers 93.6% of US podcast ad revenue. Baked-in ads have shrunk to under 10%. A live-read ad from 2023 that still runs on an old episode is not just awkward: it blocks a sellable slot in the format that now carries almost all the money. US podcast ad spend hit $2.9 billion in 2025 and is tracking to $3.0 billion in 2026, up 17.6% year over year, and the IAB raised its 2026 outlook again mid-year.\n\nSecond, the demand side opened up. Spotify launched the Spotify Ad Exchange in April 2025 and expanded automated podcast buying to 14 markets on July 11, 2025. The Trade Desk and Google DV360 can now buy podcast DAI slots programmatically. Spotify reported a 64% jump in advertisers using the exchange in the first three months. Acast, Megaphone, iHeart, and 85-plus other programmatic podcast networks are live in 2026. An empty DAI slot in a mid-tail archive can get filled by a programmatic bid in a way that was not true in 2022. On the labor side, Whisper plus LLM ad detection went commodity in 2025-2026: open-source tools (MinusPod, AGPAR, several GitHub repos) scan a 60-minute episode in under 30 minutes at a cost of about a dollar in API spend, and they output timestamped ad segments. The work that would have taken a human editor a month on a 200-episode archive is now a one-day batch job for a solo operator with an AI stack.\n\nSOURCES\nIAB/PwC Podcast Advertising Revenue Study\nSpotify Advertising\nInteractive Advertising Bureau\nXDA Developers / GitHub\nSee the full timing case\n\nMARKET SNAPSHOT\n\nThe receipts.\n\nPAIN\n\n6/10 SEVERITY\n\n\u201cConsider remastering your back catalogue. The money part is in the dynamic ad insertion monetization. We have hundreds of episodes available...\u201d\n\nr/podcasting \u00b7 r/podcasting user\n\n\u201cThis leaves you re-editing old episodes to take out dead ads. Most podcast hosts can dynamic insert host read ads which has the same effect as a live read without outdating your back catalog.\u201d\n\nr/podcasting \u00b7 r/podcasting user\n\n\u201cAnd yet I earn roughly $250/month from dynamic ad insertion. It's not nothing, and it more than covers my overhead, but it's not career...\u201d\n\nr/podcasting \u00b7 r/podcasting user\n\nAll 10 receipts, and where these people gather\n\nWHITESPACE\n\nMARKET GAP\n\nThe tools exist on every host. Nobody sells the labor to use them\n\nUnderstand the opening\n\nTHE WEDGE\n\nTraffic-prioritized, one-platform-at-a-time, done-for-you execution with owner approval and delivery QA. Competes against DIY (owners never get to it), generic podcast editors (no ad-ops focus), and platform features (self-serve, no labor).\n\nThe incumbent to beat: Captivate\n\nPROOF & SIGNALS\n\nThe IAB March 2026 Podcast Advertising Revenue Study reports dynamic ad insertion now accounts for 93.6% of all podcast advertising revenue, up from roughly 48% in 2019; the industry has fully moved to DAI as the default delivery model.\n\nIAB PODCAST ADVERTISING REVENUE STUDY\n\nUS podcast ad revenue reached $2.9 billion in 2025 and is projected at $3.0 billion for 2026, up 17.6% year over year per IAB and PwC figures; the top 10 podcast networks command roughly 60% of industry ad revenue (Edison Research), leaving a long tail of independent shows.\n\nIAB / PWC VIA CREATOR NEWSDESK\n\nMagellan AI's Q1 2025 benchmark found over 80 percent of top-tier podcasts now support dynamic ad insertion, meaning the tooling to swap ads in back catalogs is already standard at the top of the market.\n\nMAGELLAN AI VIA DMEXCO\n\nOn Fiverr alone, 3,594 podcast editing services are available, with \"I will professionally edit, produce your audio podcast\" gigs starting at $20. The freelance supply of basic podcast editors is effectively infinite relative to demand, which pins per-episode floor pricing at the bottom of the market.\n\nFIVERR\nExplore the evidence\n\nWHO YOU'RE UP AGAINST\n\n10 PLAYERS\n\nAudioboom AdRip\n\nAudioboom shipped AdRip in July 2021, a tool that automatically rips live ad-reads out of old podcast episodes and replaces them with new ads.\n\nMegaphone\n\nSpotify's Megaphone ships Segment Editing inside the Ad Locator: publishers can mark a baked-in ad on an old episode and either remove the audio or replace it with a dynamic ad slot, without re-uploading the file.\n\nCaptivate\n\nINCUMBENT\n\n.fm's AMIE (Audio Monetization and Insertion Engine) includes Ad Painter: a bulk tool that paints over baked-in segments in old episodes and swaps in new dynamic content, across the whole catalog.\n\nBuzzsprout\n\n's Dynamic Content tool inserts, swaps, or removes pre-roll, up to three mid-rolls, and post-roll audio across the entire back catalog without re-uploading the original file.\n\nAudioboom\n\n's AdRip (launched July 2021) automatically rips host-read baked-in ads out of old episodes and replaces them with dynamic ad breaks sold by Audioboom's own sales team.\n\nPodbean\n\n's PodAds is a dynamic ad insertion service built for podcast networks: it inserts and removes ads across new and old episodes on a schedule, including the back catalog, without re-editing audio.\n\nCastos\n\nAds automatically stitches pre-roll and post-roll ads into every episode (including the entire back catalog) and pays the host per listen; Castos Campaigns inserts the host's own promos across the catalog on a schedule.\n\nWe Edit Podcasts\n\nA published-price done-for-you podcast editing service with tiers from $440/month (2 episodes) up to $1,800/month (4 episodes, premium).\n\nPEOPLE ARE ASKING FOR IT\n\nREDDIT\n\n\u201cIf older episodes still rely on baked-in ads, you're likely leaving a significant portion of your show's earning potential on the table.\u201d\n\nLibsyn blog \u00b7 Libsyn\n\n\u201cImagine someone downloads an old episode, hears an old ad, and then navigates to the sponsor's website only to learn that the sponsor's offer isn't available any longer. Annoying, right?\u201d\n\nCastos blog \u00b7 Castos\n\n\u201cTake the episode offline. Open the original project file. Remove the old audio. Record and mix in the new ad. Publish the updated file.\u201d\n\nLibsyn blog \u00b7 Libsyn\n\nTHE VERDICT\n\nShould you build this?\n\nREASONS TO BUILD\n\nDAI now runs 93.6% of US podcast ad revenue (IAB and PwC, March 2026), so every baked-in slot in a 200-episode archive is blocking inventory in the format that carries almost all the money.\nThe host tools that make the swap possible (Captivate AMIE Ad Painter, Spotify Megaphone Segment Editing, Buzzsprout Dynamic Content) are already shipped and cost the owner $15-$17 a month, so you sell labor on top of what they already pay.\nPodnews publishes a live list of dozens of show migrations every 60 days, and every migration guide warns owners stale ads bake into the new feed forever, so you have a timed, qualified lead source without paying for ads.\nAudioboom shipped AdRip in 2021 but only for its own 250-show closed network; every independent show on Captivate, Buzzsprout, Megaphone or Acast is on its own, and no agency (We Edit Podcasts, Content Monsta, Podigy) sells archive cleanup as a line item.\n\nREASONS TO NOT BUILD\n\nZero Google Ads volume on every solution keyword and a $17.62 CPC on the adjacent category term means no search channel: every customer is a one-at-a-time outreach grind for 12-18 months.\nNeglected archives belong to owners who are not actively monetizing, which is also why they will not write a $400 check; the shows big enough to pay already have an editor or a network doing this in-house.\nCaptivate AMIE already paints baked-in ads in bulk and a one-click 'scan my archive' button from any major host (Spotify, Buzzsprout, Captivate) ends the pilot SKU in a quarter.\nHonest ceiling is $600K-$1M ARR for a solo operator with 100 retainers plus migration and reseller revenue; this is a lifestyle business, not a venture outcome, so the founder has to want that shape of company.\nRoast it with your agent\n\nFOUNDER FIT\n\nNot every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo founders with podcast production or ad-operations experience and SaaS-bu...\nTeams pairing an audio systems engineer with an agency sales or podcast opera...\nFounders without podcast or advertising contacts who rely only on broad outbound\nTeams lacking audio QA or integration skills and unwilling to support migrations\n\nA solo operator who has sold or managed podcast ads for a network, an agency, or their own show. Someone who knows what a stale read sounds like, understands DAI slot configuration on at least three hosts, and is willing to do 30 personal outreach messages a week for 90 days straight. A podcast producer looking to escape new-episode editing is the natural fit. This is not a founder-first-time play; the credibility to walk into a conversation with an owner and explain the ad-ops decisions is the whole moat. AI handles the scan in a weekend. The hard part is sales grit and a network that respects your ad-ops read.\n\nWHAT IT DEMANDS\n\nDistribution\n10\nDomain depth\n9\nSales\n8\nBuild craft\n3\nCapital\n2\n\nTHE REALITY\n\nFIRST REVENUE\n\n30-60 days\n\nCAPITAL IN\n\n$2K-$10K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card\n\nWHAT YOU'D SELL\n\nThe value ladder.\n\nFree archive scan as lead magnet: Whisper + LLM pipeline reads the public RSS, outputs a one-page leak report. Pilot: $400 flat for 10 episodes, ranked by current downloads, owner approves each swap, executed in the owner's native host tool. Retainer: $600/month for 20 episodes plus quarterly full-catalog audit.\n\n1\n\nLEAD MAGNET\n\nFree Archive Leak Report($0)\n\nAutomated scan of the owner's public RSS. One-page report: baked-in ad count, dead promo codes still running, sellable DAI slots in the back catalog.\n\n2\n\nFRONTEND\n\n10-Episode Pilot Sweep($400 flat)\n\nRank top 10 episodes by 90-day downloads, find baked-in ads, get owner sign-off, execute swap in the host, QA the published feed.\n\n3\n\nCORE\n\nMonthly Archive Retainer($600/month)\n\n20 episodes swept per month plus a quarterly full-catalog audit. Covers a 200-episode archive in roughly 10 months.\n\n4\n\nCONTINUITY\n\nMigration Cleanup($1,500 flat)\n\nView the full value ladder\n\nTHE PLAN\n\nIf you started today.\nFirst up.\n\nNobody searches for this. Google Ads shows zero monthly volume on the solution terms (remove baked in podcast ads, podcast back catalog monetization, podcast archive editing service). The adjacent category keyword, podcast editing service, only draws 320 searches a month at a $17.62 CPC, which is too thin and too expensive to buy your way in. SEO and paid search are not the channel. The first 100 customers come one at a time from two live surfaces: Podnews host-migration alerts and r/podcasting threads.\n\nSee the detailed plan\nYear one, on a napkin.\nNAPKIN MATH\n\nWhat the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nPodnews migration alerts scraped per week\n30\nPersonal outreach with free leak report\n30/wk\nReply rate (assumption)\n15%\nReplies per week\n~4-5\nPilot close rate on replies (assumption)\n25%\nPilots booked per week\n1\nPilot price (anchored to We Edit $440)\n$400\nPilots in first 90 days\n~12\nPilot revenue, first 90 days\n$4,800\nPilot-to-retainer attach (assumption)\n60%\nRetainers live by month 6\n~15\nRetainer MRR by month 6\n$9,000\nRun-rate ARR at month 6\n~$108K\n\nOne pilot a week after 90 days of outreach gets you to ~$48K ARR on pilots alone. The real number is 60% retainer attach at $600/mo, which is the business.\n\nTHE CEILING IF IT COMPOUNDS\n$600K-$1M ARR\nRun the model on your numbers\n\nTHE AGENTS\n\nJam on it with your agent.\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCursor\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cTiming scored 8/10 for \"SaaS platform that cleans up podcast archives\u2026\" \u2014 argue the other side.\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+  "status": "not_started",
+  "notes": "",
+  "_source_url": "https://www.ideabrowser.com/hub/ideas/today",
+  "_scraped_at": "2026-11-19T16:08:24.923085+00:00",
+  "_crawl_had_errors": true
+}
