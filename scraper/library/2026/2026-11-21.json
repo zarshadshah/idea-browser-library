@@ -1,0 +1,1141 @@
+{
+  "id": "2026-11-21",
+  "date": "2026-11-21",
+  "title": "SaaS platform that tracks civic issues across council meetings for residents' associations",
+  "tagline": "A Memphis resident posted that it takes the city 5.5 years to approve and install one speed hump. A Stockton resident testified that 2018 general-plan pledges h...",
+  "badges": [],
+  "description": "A Memphis resident posted that it takes the city 5.5 years to approve and install one speed hump. A Stockton resident testified that 2018 general-plan pledges have never been kept. A sitting Lake Forest councilman wrote that the council itself has no way of tracking what is coming up, what was postponed, or what was rescheduled. Meanwhile 213 U.S. counties have no local news outlet, 136 newspapers closed in 2025, and one Lafayette hobbyist is sitting through six city meetings a week to keep 1,000 Substack readers caught up. Residents live inside civic fights that take years, and nobody is keeping the scoreboard.",
+  "scores": {
+    "opportunity": {
+      "score": null,
+      "label": ""
+    },
+    "problem": {
+      "score": null,
+      "label": ""
+    },
+    "feasibility": {
+      "score": null,
+      "label": ""
+    },
+    "whyNow": {
+      "score": null,
+      "label": ""
+    }
+  },
+  "keywords": [],
+  "marketGap": "",
+  "executionPlan": "",
+  "executionDifficulty": {
+    "score": null,
+    "note": ""
+  },
+  "categorization": {
+    "type": null,
+    "market": null,
+    "target": null,
+    "competitor": null
+  },
+  "communitySignals": {},
+  "communitySignalsDetail": "",
+  "communitySignalsRich": {},
+  "otherCommunitiesExtra": {},
+  "businessFitDeep": {},
+  "scoreCardsDeep": {},
+  "valueEquation": "",
+  "marketMatrix": "",
+  "acpFramework": "",
+  "valueLadderDetail": "",
+  "proofSignals": "",
+  "whyNowDetail": "",
+  "keywordAnalysisDetail": "",
+  "newLayoutSections": {
+    "At a Glance": "Solo builders shipping\n6+ cities\nPricing\nFree to $500-$1,500/mo\nYear one\n$30K-$60K\nCeiling\n$1.5M-$2.5M ARR\n\nWHAT YOU SELL\n\nOperator tier$49/mo per city\n\nBIGGEST RISK\n\nReader tier does not convert at hyperlocal rates. The 15-25% benchmark comes from Sebastopol-style tiny-town newsletters with one trusted human voice. A SaaS-s\u2026\n\nInterested?\nAdd to project\nBuild this idea",
+    "Why Now": "Record news deserts and $0.36-per-hour transcription just made solo civic monitoring possible\n\nAT A GLANCE\n\nSolo builders shipping\n6+ cities\nPricing\nFree to $500-$1,500/mo\nYear one\n$30K-$60K\nCeiling\n$1.5M-$2.5M ARR\n\nWHAT YOU SELL\n\nOperator tier$49/mo per city\n\nBIGGEST RISK\n\nReader tier does not convert at hyperlocal rates. The 15-25% benchmark comes from Sebastopol-style tiny-town newsletters with one trusted human voice. A SaaS-s\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nRecord news deserts and $0.36-per-hour transcription just made solo civic monitoring possible\n\nTwo curves crossed in 2025. One went up, one went down, and the gap is where this business lives.\n\nThe up curve: local news collapse hit a record. The 2025 Medill State of Local News Report counted 213 U.S. counties with no local news outlet (up from 206 in 2024) and 1,524 counties with only one, usually a weekly newspaper. 136 newspapers closed in 2025, more than two per week. Roughly 50 million Americans now have limited or no access to local reporting. A February 2026 Medill survey found 51% of news-desert residents rely on non-journalistic sources, 42% check social media news groups daily, and 30% get local information from influencers. Trust in local news media in deserts is 46%, against 59% in news-rich counties. The reporter who used to sit through the zoning hearing is gone. The residents still need to know what happened.",
+    "Proof & Signals": "The U.S. has roughly 373,000 community associations (HOAs, condos, co-ops) home to 78.1 million residents as of 2025, per the Foundation for Community Association Research. This is the maximum universe of mandatory-dues associations with any annual budget.\n\nFOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)\n\nOnly 543 U.S. neighborhood and block associations file Form 990 tax returns (the volunteer-led civic bodies this product targets, as distinct from HOAs with mandatory dues). The addressable pool of formal, budgeted residents' associations is thin.\n\nPHILANTHROPY.ORG IRS 990 DIRECTORY\n\nCitizen Portal AI reported cataloging more than 2 million meetings and being on pace to transcribe 625,000 hours of government proceedings in 2026, covering city councils, county commissions, and school boards. Their editorial model combines AI with named local human editors who take responsibility for coverage.\n\nTECHBUZZ NEWS\n\nThe whole govtech-to-cities channel sells the opposite product: Granicus, Zencity, and Polimorphic have collectively raised well over $100M and already own the pipes (agenda posting, sentiment, chatbots) between cities and residents. None sells issue-continuity tracking to residents' associations. This is where a new entrant has room, but also where a well-funded incumbent could add a \"resident view\" feature if the wedge proves out.\n\nGRANICUS, ZENCITY, POLIMORPHIC\nExplore the evidence",
+    "Market Snapshot": "The receipts.\n\nPAIN\n\n7/10 SEVERITY\n\n\u201cThe city is pretty good at uploading city council meeting VODs and records but searching through the archives doesn't really exist, most of what...\u201d\n\nr/Sacramento\n\n\u201cThe goal is to make it easier for folks to stay informed, whether you're a professional who needs to track decisions or just a neighbor who cares\u201d\n\nr/boulder\n\n\u201cI attended all the meetings and I know many of you are waiting to hear what happened at the ones you missed. I was awake at 4 this morning while my brain was trying to figure out how to write about it. I am somewhere around 6 city meetings this week alone.\u201d\n\nReports From a Political Hobbyist in Lafayette, Colorado (Substack) \u00b7 Karen Norback\n\nAll 8 receipts, and where these people gather",
+    "Whitespace": "MARKET GAP\n\nEveryone sells search. Nobody sells the story of what happened to your issue over three years\n\nUnderstand the opening\n\nTHE WEDGE\n\nContinuity and status tracking across years, not just search and alerts. Competitors like OpenPublica (free search/alerts) and Council Data Project (open-source transcripts) leave the resident to assemble the story; this product delivers the story already assembled and kept current.\n\nThe incumbent to beat: Citizen Portal AI\n\nPROOF & SIGNALS\n\nThe U.S. has roughly 373,000 community associations (HOAs, condos, co-ops) home to 78.1 million residents as of 2025, per the Foundation for Community Association Research. This is the maximum universe of mandatory-dues associations with any annual budget.\n\nFOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)\n\nOnly 543 U.S. neighborhood and block associations file Form 990 tax returns (the volunteer-led civic bodies this product targets, as distinct from HOAs with mandatory dues). The addressable pool of formal, budgeted residents' associations is thin.\n\nPHILANTHROPY.ORG IRS 990 DIRECTORY\n\nCitizen Portal AI reported cataloging more than 2 million meetings and being on pace to transcribe 625,000 hours of government proceedings in 2026, covering city councils, county commissions, and school boards. Their editorial model combines AI with named local human editors who take responsibility for coverage.\n\nTECHBUZZ NEWS\n\nThe whole govtech-to-cities channel sells the opposite product: Granicus, Zencity, and Polimorphic have collectively raised well over $100M and already own the pipes (agenda posting, sentiment, chatbots) between cities and residents. None sells issue-continuity tracking to residents' associations. This is where a new entrant has room, but also where a well-funded incumbent could add a \"resident view\" feature if the wedge proves out.\n\nGRANICUS, ZENCITY, POLIMORPHIC\nExplore the evidence",
+    "Who You're Up Against": "11 PLAYERS\n\nCitizen Portal AI\n\nINCUMBENT\n\nSells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro is $15/mo for unlimited articles, AI breakdowns, and topic alerts; Founding Member Lifetime is a one-time $299 (listed at 70% off $999).\n\nOpenPublica\n\nFiles AI transcripts, summaries, and topic indexes for city council meetings across the U.S. for free, no account required, publishing on both openpublica.com and the Internet Archive.\n\nOpenCity Record\n\nOffers tracking of 1 city free with alerts and MCP access; paid plans unlock multiple cities, states, or national follow.\n\ncitymeetings.nyc\n\n(built solo by Vikram Oberoi) turns NYC Council meetings into short AI-summarized, human-oversight segments same-day.\n\nCouncil Data Project\n\n(CDP) is an open-source stack for ingesting, transcribing, indexing, and publishing municipal council data, deployed for Seattle City Council, King County Council, and others.\n\nGranicus\n\nThe dominant incumbent selling agenda and meeting management software to cities (not residents).\n\nZencity\n\nSells a civic engagement and sentiment platform to governments, not residents.\n\nPolimorphic\n\nSells AI chatbots, voice assistants, and CRM to local governments (not residents).",
+    "People Are Asking For It": "REDDIT\n\n\u201cElizabeth then brought up pledges made in 2018 from a Stockton City Council general plan that she said \"haven't been fulfilled\" to restrict tobacco-selling in already high-concentrated areas where tobacco is sold.\u201d\n\nCBS News Sacramento \u00b7 CBS News Sacramento (reporting Stockton resident Elizabeth)\n\n\u201cI recently learned that it currently takes the city 5.5 years to approve and install one speed hump.\u201d\n\nr/memphis \u00b7 r/memphis poster\n\n\u201cCity residents have been begging for traffic calming in public meetings for years so people stop getting killed by cars on our streets.\u201d\n\nr/StLouis \u00b7 r/StLouis commenter",
+    "The Verdict": "Should you build this?\n\nREASONS TO BUILD\n\nThe pain is unusually well documented: a sitting Lake Forest councilman says the council itself cannot track what is coming up, and residents are posting 5.5-year speed-hump timelines in Memphis and unfulfilled 2018 pledges in Stockton. People already live the problem.\nThe timing math is loud: 213 U.S. counties have zero local news, 136 newspapers closed in 2025, and transcription dropped to $0.04-$0.36 per hour. One operator with AI agents can now do what a two-person newsroom used to do.\nThe wedge exists in plain sight: Citizen Portal AI ($15/mo, 2M meetings cataloged), OpenPublica (free), and citymeetings.nyc all sell search and alerts; nobody sells the dated, sourced story of what happened to one issue across three years, which is the thing a resident actually wants.\nHyperlocal Substack conversion sits at 15-25% in tiny-town newsletters versus 3% for national news, so the $8 Reader tier riding one city's audience has a credible shot at $2K-$3K MRR in year one on one city.\n\nREASONS TO NOT BUILD\n\nSolution-side search is dead zero. Council meeting monitoring, municipal issue tracker, and council promise tracking all returned 0 searches/mo on Google Ads, so every paid subscriber costs comment-writing hours and growth stalls if the founder hates Reddit.\nThe named resident buyer barely exists at scale. Only 543 U.S. neighborhood and block associations file a Form 990, and the drift note confirms none of the loud first-person pain comes from an association board saying they will pay.\nThe incumbents can ship this as a feature. Citizen Portal AI has 2M meetings and the audience, OpenPublica is free and nationwide, and Granicus, Zencity, and Polimorphic have raised over $100M selling to the city side. The timeline-per-issue feature is one sprint away for them.\nThe honest ceiling is a content company, not a SaaS. $1.5M-$2.5M ARR at 40-60 cities means hiring and managing 20 freelance civic hobbyists; one operator plus agents breaks past roughly 20 cities before editorial quality cracks.\nRoast it with your agent\n\nPOTENTIAL PIVOT\n\nChange the primary buyer from volunteer residents' association boards to the civic hobbyist writer and the small local newsroom. Lead with a $49/mo Operator tier for that writer (five maintained timelines per city, embeddable) and an $8/mo Reader tier direct to residents. Keep the $500-$1,500/mo Agency tier for advocacy groups, developers, and zoning committees (the real \"residents' association\" buyers who actually transact). Validate in one city before any second city.\n\nRun this angle with your agent",
+    "Founder Fit": "Not every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo researchers with local-government knowledge who can verify records and r...\nTechnical and civic-engagement cofounders pairing data workflows with communi...\nFounders without research or civic-domain experience may need support interpr...\nTeams relying on automation alone may struggle with disputed claims, privacy,...\n\nA civic-obsessed writer in one specific city who already comments on local politics online, knows the players by name, and will spend 10 hours a week building the first six timelines by hand. Bonus points if they have been to a city council meeting this year. Technical skill is not the bottleneck: coding agents ship the pipeline in a weekend. What is scarce is the willingness to sit in a Nextdoor thread for a year while the first 300 readers find you. The founder who thinks they will automate this and skip the comment work will lose to the Lafayette hobbyist with 1,000 subscribers who does it by hand.\n\nWHAT IT DEMANDS\n\nDistribution\n9\nWriting\n8\nCivic taste\n9\nBuild\n4\nCapital\n2\n\nTHE REALITY\n\nFIRST REVENUE\n\n90-120 days\n\nCAPITAL IN\n\n$2K-$10K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card",
+    "What You'd Sell": "The value ladder.\n\nOperator tier ($49/mo): one city, five live issue timelines, dated source links to every meeting, email digest when any timeline changes. Reader tier ($8/mo or $80/yr): direct-to-resident version of the same timelines, delivered as a weekly email. Agency tier (starts at $500/mo): a zoning committee, advocacy group, or developer gets custom issue tracking with Slack/email updates and a weekly analyst note.\n\n1\n\nLEAD MAGNET\n\nThe Open Timeline(Free)\n\nOne public timeline of a live local fight in one target city, updated weekly. Shared on r/[city] and in local Substack comments. Proves the tool works and seeds email signups.\n\n2\n\nFRONTEND\n\nReader subscription($8/mo or $80/yr)\n\nDirect-to-resident. Weekly email with all five issue timelines for one city plus alerts when anything moves. Sits under the Citizen Portal AI $15/mo anchor.\n\n3\n\nCORE\n\nOperator tier($49/mo per city)\n\nFor the civic hobbyist, newsroom, or Substack writer. Five maintained timelines, embeddable widgets, raw source links. They pay to save the 6-meetings-a-week research grind.\n\n4\n\nCONTINUITY\n\nAgency tier($500-$1,500/mo)\n\nView the full value ladder",
+    "The Plan": "If you started today.\nFirst up.\n\nNobody searches for this yet. Google Ads shows zero monthly searches for council meeting monitoring, municipal issue tracker, and council promise tracking. The first 100 customers do not come from SEO or paid ads. They come from showing up where the work already happens, one city at a time.\n\nSee the detailed plan\nYear one, on a napkin.",
+    "Napkin Math": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nFree timelines shipped in city 1 (6 live issues)\n6\nEmail signups in year 1 (assumption)\n2,000\nReader tier conversion (hyperlocal 15%)\n300 paid\nReader revenue: 300 x $8/mo\n$2,400/mo\nOperator buyers: hobbyist + newsroom\n2 x $49/mo\nAgency buyers (assumption): 1 advocacy group\n1 x $500/mo\nYear 1 MRR, city 1\n~$3,000/mo\nYear 1 ARR, city 1\n~$36K\n\nOne city, one year, done honestly: about $35K-$45K ARR. Most of it is Reader tier revenue riding the hyperlocal Substack conversion math. Operator and Agency tiers are gravy that pays the content costs.\n\nTHE CEILING IF IT COMPOUNDS\n$1.5M-$2.5M ARR\nRun the model on your numbers\n\nTHE AGENTS\n\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCursor\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cTiming scored 8/10 for \"SaaS platform that tracks civic issues across\u2026\" \u2014 argue the other side.\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nProblem\nI'd like a reply"
+  },
+  "newLayoutExpandedSections": {
+    "The Full Timing Case": {
+      "text": "8\n/10\nTIMING\n\n213 news-desert counties (record high), 136 newspapers closed in 2025, and a documented 2024-2026 wave of AI civic tools launching. The wave is here and the solo-operator economics finally work.\n\nTwo curves crossed in 2025. One went up, one went down, and the gap is where this business lives.\n\nThe up curve: local news collapse hit a record. The 2025 Medill State of Local News Report counted 213 U.S. counties with no local news outlet (up from 206 in 2024) and 1,524 counties with only one, usually a weekly newspaper. 136 newspapers closed in 2025, more than two per week. Roughly 50 million Americans now have limited or no access to local reporting. A February 2026 Medill survey found 51% of news-desert residents rely on non-journalistic sources, 42% check social media news groups daily, and 30% get local information from influencers. Trust in local news media in deserts is 46%, against 59% in news-rich counties. The reporter who used to sit through the zoning hearing is gone. The residents still need to know what happened.\n\nThe down curve: transcription cost fell off a cliff. The OpenAI Whisper API is $0.36 per audio hour. GPT-4o Mini is $0.18. Groq runs Whisper V3 Turbo at $0.04 per hour. Self-hosted Whisper is $0 beyond compute. A three-hour city council meeting now costs between 12 cents and $1.10 to transcribe. In 2022 the same job cost $45 to $180 with a human service like Rev. The unit economics that used to require a newsroom now fit on a hobbyist credit card.\n\nThe proof is already in the wild. In the last 24 months a wave of solo and small-team AI civic trackers shipped: citymeetings.nyc (Vikram Oberoi, one engineer, 10,000+ monthly visitors, cited by NYC Council members), Civic Sunlight (two friends in Maine), Hamlet (deployed in Saratoga and Palo Alto), SeeGov (Illinois Times, launched July 2025), CivicSummary (West Hollywood, launched 2026), and hobbyist sites in Sacramento, Boulder, Tempe, Portland, Asheville, and Monterey Park. Columbia Journalism Review called it a growing list. None of them tracks issues across years; they all stop at summarizing one meeting. That is the opening.\n\nThe honest counter: cheap transcription cuts both ways. The same cost collapse that lets a solo operator ship means Granicus, Zencity, and the next five funded govtech vendors can bolt on \"AI issue timelines\" as a free feature for cities. Citizen Portal AI already catalogs 2 million meetings at $15/mo. If the moat is just transcription plus summarization, the window closes fast. The moat has to be the thing none of them do yet: manually verified, dated continuity across years on the specific issue a resident is fighting. That is editorial work, not an ML pipeline, and it is defensible for exactly as long as it takes someone to match the taste, not the tech.\n\nTHE SIGNALS\n\n213 U.S. counties have no local news outlet in 2025, up from 206 in 2024. 1,524 have only one. 50 million Americans affected.\n136 newspapers closed in 2025, more than two per week. 2024 closed 130.\nWhisper API: $0.36/hr. Groq: $0.04/hr. Self-hosted: $0. A 3-hour council meeting transcribes for 12 cents to $1.10.\n2024-2026 launches: citymeetings.nyc, Civic Sunlight (Maine), Hamlet (Saratoga/Palo Alto), SeeGov (Illinois), CivicSummary (West Hollywood), plus hobbyist sites in 6+ named cities.\nThe counter: the same cost curve lets incumbents (Granicus, Citizen Portal, Zencity) bolt this on. Only editorial continuity across years is defensible.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Citizen Portal AI": "https://citizenportal.ai/memberships",
+        "newspapers.org": "https://www.newspapers.org/stories/news-deserts-hit-new-high-and-50-million-have-limited-access-to-local-news-study-finds,4166285",
+        "Medill Local News Initiative": "https://localnewsinitiative.northwestern.edu/posts/2026/02/10/news-deserts-social-media-local-news-medill-survey/index.html",
+        "OpenAI API pricing": "https://diyai.io/ai-tools/speech-to-text/openai-whisper-api-pricing-2026/",
+        "Columbia Journalism Review": "https://www.cjr.org/analysis/ai-local-news-civic-sunlight-maine.php",
+        "\u201cThe city is pretty good at uploading city council meeting VODs and records but searching through the archives doesn't really exist, most of what...\u201d\n\nr/Sacramento": "https://www.reddit.com/r/Sacramento/comments/1jj4mk3/i_made_a_site_for_keeping_up_with_sacramento_city/",
+        "\u201cThe goal is to make it easier for folks to stay informed, whether you're a professional who needs to track decisions or just a neighbor who cares\u201d\n\nr/boulder": "https://www.reddit.com/r/boulder/comments/1ozm9n8/summary_of_last_weeks_boulder_city_council_meeting/",
+        "\u201cI attended all the meetings and I know many of you are waiting to hear what happened at the ones you missed. I was awake at 4 this morning while my brain was trying to figure out how to write about i": "https://apoliticalhobbyistinlafayetteco.substack.com/p/you-are-so-bringing-it",
+        "FOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)": "https://hoareviewer.com/hoa-statistics",
+        "PHILANTHROPY.ORG IRS 990 DIRECTORY": "https://philanthropy.org/990/nonprofits/neighborhood-and-block-associations/all",
+        "TECHBUZZ NEWS": "https://www.techbuzznews.com/citizen-portal-ai-local-government-news/",
+        "GRANICUS, ZENCITY, POLIMORPHIC": "https://getcoai.com/news/polimorphic-raises-18-6m-to-bring-ai-chatbots-to-local-governments/",
+        "Citizen Portal AI\n\nINCUMBENT\n\nSells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro is $15/mo for unlimited articles, AI breakdowns, and topic ale": "https://citizenportal.ai/memberships",
+        "OpenPublica\n\nFiles AI transcripts, summaries, and topic indexes for city council meetings across the U.S. for free, no account required, publishing on both openpublica.com and the Internet Archive.": "https://www.openpublica.com/",
+        "OpenCity Record\n\nOffers tracking of 1 city free with alerts and MCP access; paid plans unlock multiple cities, states, or national follow.": "https://thehackstack.com/s/opencityrecord/",
+        "citymeetings.nyc\n\n(built solo by Vikram Oberoi) turns NYC Council meetings into short AI-summarized, human-oversight segments same-day.": "https://citymeetings.nyc",
+        "Council Data Project\n\n(CDP) is an open-source stack for ingesting, transcribing, indexing, and publishing municipal council data, deployed for Seattle City Council, King County Council, and others.": "https://councildataproject.org",
+        "Granicus\n\nThe dominant incumbent selling agenda and meeting management software to cities (not residents).": "https://granicus.com",
+        "Zencity\n\nSells a civic engagement and sentiment platform to governments, not residents.": "https://zencity.io",
+        "Polimorphic\n\nSells AI chatbots, voice assistants, and CRM to local governments (not residents).": "https://www.polimorphic.com/ai-chatbot-search",
+        "\u201cElizabeth then brought up pledges made in 2018 from a Stockton City Council general plan that she said \"haven't been fulfilled\" to restrict tobacco-selling in already high-concentrated areas where to": "https://www.cbsnews.com/amp/sacramento/news/stockton-residents-calling-for-action-amidst-city-council-chaos",
+        "\u201cI recently learned that it currently takes the city 5.5 years to approve and install one speed hump.\u201d\n\nr/memphis \u00b7 r/memphis poster": "https://www.reddit.com/r/memphis/comments/1sz4dwo/traffic_calming_survey/",
+        "\u201cCity residents have been begging for traffic calming in public meetings for years so people stop getting killed by cars on our streets.\u201d\n\nr/StLouis \u00b7 r/StLouis commenter": "https://www.reddit.com/r/StLouis/comments/1s9lndl/city_removing_traffic_calming/"
+      }
+    },
+    "Proof & Signals (Full)": {
+      "text": "THE HARD NUMBERS\n\nThe U.S. has roughly 373,000 community associations (HOAs, condos, co-ops) home to 78.1 million residents as of 2025, per the Foundation for Community Association Research. This is the maximum universe of mandatory-dues associations with any annual budget.\n\nFOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)\n\nOnly 543 U.S. neighborhood and block associations file Form 990 tax returns (the volunteer-led civic bodies this product targets, as distinct from HOAs with mandatory dues). The addressable pool of formal, budgeted residents' associations is thin.\n\nPHILANTHROPY.ORG IRS 990 DIRECTORY\n\nCitizen Portal AI reported cataloging more than 2 million meetings and being on pace to transcribe 625,000 hours of government proceedings in 2026, covering city councils, county commissions, and school boards. Their editorial model combines AI with named local human editors who take responsibility for coverage.\n\nTECHBUZZ NEWS\n\nThe whole govtech-to-cities channel sells the opposite product: Granicus, Zencity, and Polimorphic have collectively raised well over $100M and already own the pipes (agenda posting, sentiment, chatbots) between cities and residents. None sells issue-continuity tracking to residents' associations. This is where a new entrant has room, but also where a well-funded incumbent could add a \"resident view\" feature if the wedge proves out.\n\nGRANICUS, ZENCITY, POLIMORPHIC\n\nPEOPLE ARE ASKING FOR IT\n\n\u201cElizabeth then brought up pledges made in 2018 from a Stockton City Council general plan that she said \"haven't been fulfilled\" to restrict tobacco-selling in already high-concentrated areas where tobacco is sold.\u201d\n\nCBS News Sacramento \u00b7 CBS News Sacramento (reporting Stockton resident Elizabeth)\n\n\u201cI recently learned that it currently takes the city 5.5 years to approve and install one speed hump.\u201d\n\nr/memphis \u00b7 r/memphis poster\n\n\u201cCity residents have been begging for traffic calming in public meetings for years so people stop getting killed by cars on our streets.\u201d\n\nr/StLouis \u00b7 r/StLouis commenter\n\nWHAT THE RESEARCH SAYS\n\nAn explicit request for printable histories of meeting minutes\nAdjacent civic tools and funded products show real activity\u2014but not proven demand for this exact offer\nThe core commercial question remains whether anyone will pay repeatedly\n\nThere is credible problem-level evidence for a service that turns scattered council records into maintained, source-linked issue histories. The clearest direct signal is a public request for a printable history made from meeting minutes. Broader context points to unmet local-information needs, active civic-data projects, and growing automation of meeting information. However, the analysis explicitly reports no verified paid demand for this exact service. Treat these as reasons to run a narrow paid pilot\u2014not as proof of a scalable subscription market.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Citizen Portal AI": "https://citizenportal.ai/memberships",
+        "newspapers.org": "https://www.newspapers.org/stories/news-deserts-hit-new-high-and-50-million-have-limited-access-to-local-news-study-finds,4166285",
+        "Medill Local News Initiative": "https://localnewsinitiative.northwestern.edu/posts/2026/02/10/news-deserts-social-media-local-news-medill-survey/index.html",
+        "OpenAI API pricing": "https://diyai.io/ai-tools/speech-to-text/openai-whisper-api-pricing-2026/",
+        "Columbia Journalism Review": "https://www.cjr.org/analysis/ai-local-news-civic-sunlight-maine.php",
+        "\u201cThe city is pretty good at uploading city council meeting VODs and records but searching through the archives doesn't really exist, most of what...\u201d\n\nr/Sacramento": "https://www.reddit.com/r/Sacramento/comments/1jj4mk3/i_made_a_site_for_keeping_up_with_sacramento_city/",
+        "\u201cThe goal is to make it easier for folks to stay informed, whether you're a professional who needs to track decisions or just a neighbor who cares\u201d\n\nr/boulder": "https://www.reddit.com/r/boulder/comments/1ozm9n8/summary_of_last_weeks_boulder_city_council_meeting/",
+        "\u201cI attended all the meetings and I know many of you are waiting to hear what happened at the ones you missed. I was awake at 4 this morning while my brain was trying to figure out how to write about i": "https://apoliticalhobbyistinlafayetteco.substack.com/p/you-are-so-bringing-it",
+        "FOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)": "https://hoareviewer.com/hoa-statistics",
+        "PHILANTHROPY.ORG IRS 990 DIRECTORY": "https://philanthropy.org/990/nonprofits/neighborhood-and-block-associations/all",
+        "TECHBUZZ NEWS": "https://www.techbuzznews.com/citizen-portal-ai-local-government-news/",
+        "GRANICUS, ZENCITY, POLIMORPHIC": "https://getcoai.com/news/polimorphic-raises-18-6m-to-bring-ai-chatbots-to-local-governments/",
+        "Citizen Portal AI\n\nINCUMBENT\n\nSells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro is $15/mo for unlimited articles, AI breakdowns, and topic ale": "https://citizenportal.ai/memberships",
+        "OpenPublica\n\nFiles AI transcripts, summaries, and topic indexes for city council meetings across the U.S. for free, no account required, publishing on both openpublica.com and the Internet Archive.": "https://www.openpublica.com/",
+        "OpenCity Record\n\nOffers tracking of 1 city free with alerts and MCP access; paid plans unlock multiple cities, states, or national follow.": "https://thehackstack.com/s/opencityrecord/",
+        "citymeetings.nyc\n\n(built solo by Vikram Oberoi) turns NYC Council meetings into short AI-summarized, human-oversight segments same-day.": "https://citymeetings.nyc",
+        "Council Data Project\n\n(CDP) is an open-source stack for ingesting, transcribing, indexing, and publishing municipal council data, deployed for Seattle City Council, King County Council, and others.": "https://councildataproject.org",
+        "Granicus\n\nThe dominant incumbent selling agenda and meeting management software to cities (not residents).": "https://granicus.com",
+        "Zencity\n\nSells a civic engagement and sentiment platform to governments, not residents.": "https://zencity.io",
+        "Polimorphic\n\nSells AI chatbots, voice assistants, and CRM to local governments (not residents).": "https://www.polimorphic.com/ai-chatbot-search",
+        "\u201cElizabeth then brought up pledges made in 2018 from a Stockton City Council general plan that she said \"haven't been fulfilled\" to restrict tobacco-selling in already high-concentrated areas where to": "https://www.cbsnews.com/amp/sacramento/news/stockton-residents-calling-for-action-amidst-city-council-chaos",
+        "\u201cI recently learned that it currently takes the city 5.5 years to approve and install one speed hump.\u201d\n\nr/memphis \u00b7 r/memphis poster": "https://www.reddit.com/r/memphis/comments/1sz4dwo/traffic_calming_survey/",
+        "\u201cCity residents have been begging for traffic calming in public meetings for years so people stop getting killed by cars on our streets.\u201d\n\nr/StLouis \u00b7 r/StLouis commenter": "https://www.reddit.com/r/StLouis/comments/1s9lndl/city_removing_traffic_calming/"
+      }
+    },
+    "The Opening (Full Market Analysis)": {
+      "text": "The market splits into three camps, and none of them deliver what a residents' association actually needs.\n\nCamp one: resident-facing search and alerts. Citizen Portal AI charges residents $15/mo or a $299 one-time Founding Member deal, has cataloged more than 2 million meetings, and is on pace to transcribe 625,000 hours of government proceedings in 2026 across city councils, county commissions, and school boards. OpenPublica does the same job for free, no account required, with transcripts and summaries for Warwick, Folsom, Colorado Springs, Honolulu, Columbus, and Fort Worth already published. OpenCity Record gives you one city free and charges for multi-city. These products answer \"what was said this week.\" They do not answer \"what happened to the traffic-calming request we filed in 2022.\"\n\nCamp two: hobbyist single-city sites. citymeetings.nyc (built solo by Vikram Oberoi) serves NYC same-day summaries, free, with 10,000+ monthly visitors and endorsements from an NYC Council member and the New York Times. Council Data Project is an open-source backend that any city can deploy, free apart from hosting, and already runs for Seattle and King County. New hobbyist sites shipped in the last 14 months for Tempe, Sacramento, Boulder, Monterey Park, Portland, and Asheville. Breadth is not the problem. Continuity across years, for one issue, is.\n\nCamp three: govtech sold TO cities, not residents. Granicus owns the meeting-posting layer and charges cities from about $4,000/yr (Oradell NJ) to $62,490/yr (Ocala FL Legistar), with roughly 10% annual price increases flagged by one council in public. Zencity has 400+ government customers and $90M raised, priced $10K-$20K/yr for small cities up to $1M/yr for the largest. Polimorphic raised $18.6M Series A and charges cities $5,600-$33,600/yr for AI chatbots. All of them sell to the city clerk. None of them sell to the neighborhood watching the city.\n\nThe gap: a maintained timeline for one specific issue (this zoning case, this park plan, this traffic-calming petition) that shows what was requested, when it was heard, what was recommended, whether it was funded, and whether it was built, kept current across years and shareable in one link. Camp one shows you what happened this week. Camp two shows you one city. Camp three sells to the other side of the table. A sitting Lake Forest councilman wrote publicly that even the council itself cannot keep track of what is coming up, what has been postponed, or what has been rescheduled. If the council can't see it, the neighborhood association cannot buy it from anyone today.\n\nWho the founder is really up against: Citizen Portal AI. It is the only priced resident-facing product in this market, it is already running a real editorial model with human local editors on top of AI, and its $299 lifetime deal anchors what a resident will pay for anything that looks like \"follow my city.\" A continuity-tracking product has to be visibly different from \"better search,\" or Citizen Portal adds an issue-timeline view in one quarter and absorbs the wedge.\n\nResident-facing paid anchor: $15/mo or $299 lifetime (Citizen Portal AI). This is what residents have shown they will pay for \"see my city.\"\n\nResident-facing free anchors: OpenPublica (nationwide, free), citymeetings.nyc (NYC, free), Council Data Project (open-source, self-host), plus hobbyist sites in 6+ named cities in the last 14 months.\n\nCity-side govtech anchor: $4K-$1M+/yr (Granicus, Zencity, Polimorphic). None sells to residents' associations; all sell to clerks and city managers.\n\nDead in this market: Neighborland sold resident engagement to cities at $1,000-$2,000/mo, got acquired by Nextdoor, and was shut down by 2023. Resident-side SaaS has a graveyard here.\n\nThe gap nobody fills: a dated, sourced timeline per issue, maintained across years, delivered as one shareable link. No competitor sells this; the closest adjacent product (Citizen Portal) is one feature away.\n\nYour way in: Continuity and status tracking across years, not just search and alerts. Competitors like OpenPublica (free search/alerts) and Council Data Project (open-source transcripts) leave the resident to assemble the story; this product delivers the story already assembled and kept current.\n\nThe incumbent to beat: Citizen Portal AI\n\nWHO\u2019S ALREADY IN THE MARKET\n\nCitizen Portal AI\n\nINCUMBENT\n\nSells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro is $15/mo for unlimited articles, AI breakdowns, and topic alerts; Founding Member Lifetime is a one-time $299 (listed at 70% off $999).\n\nOpenPublica\n\nFiles AI transcripts, summaries, and topic indexes for city council meetings across the U.S. for free, no account required, publishing on both openpublica.com and the Internet Archive.\n\nOpenCity Record\n\nOffers tracking of 1 city free with alerts and MCP access; paid plans unlock multiple cities, states, or national follow.\n\ncitymeetings.nyc\n\n(built solo by Vikram Oberoi) turns NYC Council meetings into short AI-summarized, human-oversight segments same-day.\n\nCouncil Data Project\n\n(CDP) is an open-source stack for ingesting, transcribing, indexing, and publishing municipal council data, deployed for Seattle City Council, King County Council, and others.\n\nGranicus\n\nThe dominant incumbent selling agenda and meeting management software to cities (not residents).\n\nZencity\n\nSells a civic engagement and sentiment platform to governments, not residents.\n\nPolimorphic\n\nSells AI chatbots, voice assistants, and CRM to local governments (not residents).\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Citizen Portal AI": "https://citizenportal.ai/memberships",
+        "newspapers.org": "https://www.newspapers.org/stories/news-deserts-hit-new-high-and-50-million-have-limited-access-to-local-news-study-finds,4166285",
+        "Medill Local News Initiative": "https://localnewsinitiative.northwestern.edu/posts/2026/02/10/news-deserts-social-media-local-news-medill-survey/index.html",
+        "OpenAI API pricing": "https://diyai.io/ai-tools/speech-to-text/openai-whisper-api-pricing-2026/",
+        "Columbia Journalism Review": "https://www.cjr.org/analysis/ai-local-news-civic-sunlight-maine.php",
+        "\u201cThe city is pretty good at uploading city council meeting VODs and records but searching through the archives doesn't really exist, most of what...\u201d\n\nr/Sacramento": "https://www.reddit.com/r/Sacramento/comments/1jj4mk3/i_made_a_site_for_keeping_up_with_sacramento_city/",
+        "\u201cThe goal is to make it easier for folks to stay informed, whether you're a professional who needs to track decisions or just a neighbor who cares\u201d\n\nr/boulder": "https://www.reddit.com/r/boulder/comments/1ozm9n8/summary_of_last_weeks_boulder_city_council_meeting/",
+        "\u201cI attended all the meetings and I know many of you are waiting to hear what happened at the ones you missed. I was awake at 4 this morning while my brain was trying to figure out how to write about i": "https://apoliticalhobbyistinlafayetteco.substack.com/p/you-are-so-bringing-it",
+        "FOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)": "https://hoareviewer.com/hoa-statistics",
+        "PHILANTHROPY.ORG IRS 990 DIRECTORY": "https://philanthropy.org/990/nonprofits/neighborhood-and-block-associations/all",
+        "TECHBUZZ NEWS": "https://www.techbuzznews.com/citizen-portal-ai-local-government-news/",
+        "GRANICUS, ZENCITY, POLIMORPHIC": "https://getcoai.com/news/polimorphic-raises-18-6m-to-bring-ai-chatbots-to-local-governments/",
+        "Citizen Portal AI\n\nINCUMBENT\n\nSells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro is $15/mo for unlimited articles, AI breakdowns, and topic ale": "https://citizenportal.ai/memberships",
+        "OpenPublica\n\nFiles AI transcripts, summaries, and topic indexes for city council meetings across the U.S. for free, no account required, publishing on both openpublica.com and the Internet Archive.": "https://www.openpublica.com/",
+        "OpenCity Record\n\nOffers tracking of 1 city free with alerts and MCP access; paid plans unlock multiple cities, states, or national follow.": "https://thehackstack.com/s/opencityrecord/",
+        "citymeetings.nyc\n\n(built solo by Vikram Oberoi) turns NYC Council meetings into short AI-summarized, human-oversight segments same-day.": "https://citymeetings.nyc",
+        "Council Data Project\n\n(CDP) is an open-source stack for ingesting, transcribing, indexing, and publishing municipal council data, deployed for Seattle City Council, King County Council, and others.": "https://councildataproject.org",
+        "Granicus\n\nThe dominant incumbent selling agenda and meeting management software to cities (not residents).": "https://granicus.com",
+        "Zencity\n\nSells a civic engagement and sentiment platform to governments, not residents.": "https://zencity.io",
+        "Polimorphic\n\nSells AI chatbots, voice assistants, and CRM to local governments (not residents).": "https://www.polimorphic.com/ai-chatbot-search",
+        "\u201cElizabeth then brought up pledges made in 2018 from a Stockton City Council general plan that she said \"haven't been fulfilled\" to restrict tobacco-selling in already high-concentrated areas where to": "https://www.cbsnews.com/amp/sacramento/news/stockton-residents-calling-for-action-amidst-city-council-chaos",
+        "\u201cI recently learned that it currently takes the city 5.5 years to approve and install one speed hump.\u201d\n\nr/memphis \u00b7 r/memphis poster": "https://www.reddit.com/r/memphis/comments/1sz4dwo/traffic_calming_survey/",
+        "\u201cCity residents have been begging for traffic calming in public meetings for years so people stop getting killed by cars on our streets.\u201d\n\nr/StLouis \u00b7 r/StLouis commenter": "https://www.reddit.com/r/StLouis/comments/1s9lndl/city_removing_traffic_calming/"
+      }
+    },
+    "The Detailed Plan": {
+      "text": "Launch a lightweight civic-tracking SaaS with five human-verified issue timelines, dated source links, clear decision-status labels, and email updates. Add AI-assisted record discovery with human approval, then test a paid pilot with residents\u2019 associations and measure renewal, research time, and verification costs. Next, scale subscriptions and coverage only when the economics hold\u2014ready to prove repeatable demand?\n\nTHE FIRST MOVES\n\n1\nWithin 7 days, choose one municipality and conduct at least eight buyer interviews with residents\u2019 association coordinators.\n2\nWithin 7 days, audit source availability and compare free tools for five candidate issues; document gaps, terminology changes, and likely review effort.\n3\nWithin 7 days, create one source-linked sample timeline and send a clearly priced paid-pilot proposal to qualified organizations.\n\nTHE MVP\n\nBuild a lightweight SaaS workspace for one municipality and five manually verified issue timelines, with dated source links, status labels, uncertainty and missing-record flags, correction history, and email updates. Use AI-assisted discovery and drafting only where it reduces measured effort; require human approval for material status changes.\n\nWHERE THE FIRST USERS COME FROM\n\nResidents\u2019 association outreach \u00b7 Directly reaches the initial buyer and supports discovery of budget authority and active issues.\n\nLocal newsroom outreach \u00b7 Newsrooms may value time saved and citation-ready histories, but must be validated separately from associations.\n\nLocal civic groups and public sample pages \u00b7 Issue-focused local communities can help recruit users and surface relevant records, though engagement is not proof of payment.\n\nTIMELINE\n\n1-2 weeks\n\nBUDGET\n\n$0-10K\n\nTHE MILESTONE\n\nSecure three paying organizations in one defined segment, demonstrate repeat use and at least one renewal, and show that verified-update delivery costs support a sustainable subscription margin.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Citizen Portal AI": "https://citizenportal.ai/memberships",
+        "newspapers.org": "https://www.newspapers.org/stories/news-deserts-hit-new-high-and-50-million-have-limited-access-to-local-news-study-finds,4166285",
+        "Medill Local News Initiative": "https://localnewsinitiative.northwestern.edu/posts/2026/02/10/news-deserts-social-media-local-news-medill-survey/index.html",
+        "OpenAI API pricing": "https://diyai.io/ai-tools/speech-to-text/openai-whisper-api-pricing-2026/",
+        "Columbia Journalism Review": "https://www.cjr.org/analysis/ai-local-news-civic-sunlight-maine.php",
+        "\u201cThe city is pretty good at uploading city council meeting VODs and records but searching through the archives doesn't really exist, most of what...\u201d\n\nr/Sacramento": "https://www.reddit.com/r/Sacramento/comments/1jj4mk3/i_made_a_site_for_keeping_up_with_sacramento_city/",
+        "\u201cThe goal is to make it easier for folks to stay informed, whether you're a professional who needs to track decisions or just a neighbor who cares\u201d\n\nr/boulder": "https://www.reddit.com/r/boulder/comments/1ozm9n8/summary_of_last_weeks_boulder_city_council_meeting/",
+        "\u201cI attended all the meetings and I know many of you are waiting to hear what happened at the ones you missed. I was awake at 4 this morning while my brain was trying to figure out how to write about i": "https://apoliticalhobbyistinlafayetteco.substack.com/p/you-are-so-bringing-it",
+        "FOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)": "https://hoareviewer.com/hoa-statistics",
+        "PHILANTHROPY.ORG IRS 990 DIRECTORY": "https://philanthropy.org/990/nonprofits/neighborhood-and-block-associations/all",
+        "TECHBUZZ NEWS": "https://www.techbuzznews.com/citizen-portal-ai-local-government-news/",
+        "GRANICUS, ZENCITY, POLIMORPHIC": "https://getcoai.com/news/polimorphic-raises-18-6m-to-bring-ai-chatbots-to-local-governments/",
+        "Citizen Portal AI\n\nINCUMBENT\n\nSells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro is $15/mo for unlimited articles, AI breakdowns, and topic ale": "https://citizenportal.ai/memberships",
+        "OpenPublica\n\nFiles AI transcripts, summaries, and topic indexes for city council meetings across the U.S. for free, no account required, publishing on both openpublica.com and the Internet Archive.": "https://www.openpublica.com/",
+        "OpenCity Record\n\nOffers tracking of 1 city free with alerts and MCP access; paid plans unlock multiple cities, states, or national follow.": "https://thehackstack.com/s/opencityrecord/",
+        "citymeetings.nyc\n\n(built solo by Vikram Oberoi) turns NYC Council meetings into short AI-summarized, human-oversight segments same-day.": "https://citymeetings.nyc",
+        "Council Data Project\n\n(CDP) is an open-source stack for ingesting, transcribing, indexing, and publishing municipal council data, deployed for Seattle City Council, King County Council, and others.": "https://councildataproject.org",
+        "Granicus\n\nThe dominant incumbent selling agenda and meeting management software to cities (not residents).": "https://granicus.com",
+        "Zencity\n\nSells a civic engagement and sentiment platform to governments, not residents.": "https://zencity.io",
+        "Polimorphic\n\nSells AI chatbots, voice assistants, and CRM to local governments (not residents).": "https://www.polimorphic.com/ai-chatbot-search",
+        "\u201cElizabeth then brought up pledges made in 2018 from a Stockton City Council general plan that she said \"haven't been fulfilled\" to restrict tobacco-selling in already high-concentrated areas where to": "https://www.cbsnews.com/amp/sacramento/news/stockton-residents-calling-for-action-amidst-city-council-chaos",
+        "\u201cI recently learned that it currently takes the city 5.5 years to approve and install one speed hump.\u201d\n\nr/memphis \u00b7 r/memphis poster": "https://www.reddit.com/r/memphis/comments/1sz4dwo/traffic_calming_survey/",
+        "\u201cCity residents have been begging for traffic calming in public meetings for years so people stop getting killed by cars on our streets.\u201d\n\nr/StLouis \u00b7 r/StLouis commenter": "https://www.reddit.com/r/StLouis/comments/1s9lndl/city_removing_traffic_calming/"
+      }
+    },
+    "The Full Value Ladder": {
+      "text": "1\n\nLEAD MAGNET\n\nThe Open Timeline(Free)\n\nOne public timeline of a live local fight in one target city, updated weekly. Shared on r/[city] and in local Substack comments. Proves the tool works and seeds email signups.\n\n2\n\nFRONTEND\n\nReader subscription($8/mo or $80/yr)\n\nDirect-to-resident. Weekly email with all five issue timelines for one city plus alerts when anything moves. Sits under the Citizen Portal AI $15/mo anchor.\n\n3\n\nCORE\n\nOperator tier($49/mo per city)\n\nFor the civic hobbyist, newsroom, or Substack writer. Five maintained timelines, embeddable widgets, raw source links. They pay to save the 6-meetings-a-week research grind.\n\n4\n\nCONTINUITY\n\nAgency tier($500-$1,500/mo)\n\nFor advocacy groups, developers, or zoning committees tracking one consequential fight. Custom issues, Slack updates, and a weekly analyst note from the operator.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Citizen Portal AI": "https://citizenportal.ai/memberships",
+        "newspapers.org": "https://www.newspapers.org/stories/news-deserts-hit-new-high-and-50-million-have-limited-access-to-local-news-study-finds,4166285",
+        "Medill Local News Initiative": "https://localnewsinitiative.northwestern.edu/posts/2026/02/10/news-deserts-social-media-local-news-medill-survey/index.html",
+        "OpenAI API pricing": "https://diyai.io/ai-tools/speech-to-text/openai-whisper-api-pricing-2026/",
+        "Columbia Journalism Review": "https://www.cjr.org/analysis/ai-local-news-civic-sunlight-maine.php",
+        "\u201cThe city is pretty good at uploading city council meeting VODs and records but searching through the archives doesn't really exist, most of what...\u201d\n\nr/Sacramento": "https://www.reddit.com/r/Sacramento/comments/1jj4mk3/i_made_a_site_for_keeping_up_with_sacramento_city/",
+        "\u201cThe goal is to make it easier for folks to stay informed, whether you're a professional who needs to track decisions or just a neighbor who cares\u201d\n\nr/boulder": "https://www.reddit.com/r/boulder/comments/1ozm9n8/summary_of_last_weeks_boulder_city_council_meeting/",
+        "\u201cI attended all the meetings and I know many of you are waiting to hear what happened at the ones you missed. I was awake at 4 this morning while my brain was trying to figure out how to write about i": "https://apoliticalhobbyistinlafayetteco.substack.com/p/you-are-so-bringing-it",
+        "FOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)": "https://hoareviewer.com/hoa-statistics",
+        "PHILANTHROPY.ORG IRS 990 DIRECTORY": "https://philanthropy.org/990/nonprofits/neighborhood-and-block-associations/all",
+        "TECHBUZZ NEWS": "https://www.techbuzznews.com/citizen-portal-ai-local-government-news/",
+        "GRANICUS, ZENCITY, POLIMORPHIC": "https://getcoai.com/news/polimorphic-raises-18-6m-to-bring-ai-chatbots-to-local-governments/",
+        "Citizen Portal AI\n\nINCUMBENT\n\nSells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro is $15/mo for unlimited articles, AI breakdowns, and topic ale": "https://citizenportal.ai/memberships",
+        "OpenPublica\n\nFiles AI transcripts, summaries, and topic indexes for city council meetings across the U.S. for free, no account required, publishing on both openpublica.com and the Internet Archive.": "https://www.openpublica.com/",
+        "OpenCity Record\n\nOffers tracking of 1 city free with alerts and MCP access; paid plans unlock multiple cities, states, or national follow.": "https://thehackstack.com/s/opencityrecord/",
+        "citymeetings.nyc\n\n(built solo by Vikram Oberoi) turns NYC Council meetings into short AI-summarized, human-oversight segments same-day.": "https://citymeetings.nyc",
+        "Council Data Project\n\n(CDP) is an open-source stack for ingesting, transcribing, indexing, and publishing municipal council data, deployed for Seattle City Council, King County Council, and others.": "https://councildataproject.org",
+        "Granicus\n\nThe dominant incumbent selling agenda and meeting management software to cities (not residents).": "https://granicus.com",
+        "Zencity\n\nSells a civic engagement and sentiment platform to governments, not residents.": "https://zencity.io",
+        "Polimorphic\n\nSells AI chatbots, voice assistants, and CRM to local governments (not residents).": "https://www.polimorphic.com/ai-chatbot-search",
+        "\u201cElizabeth then brought up pledges made in 2018 from a Stockton City Council general plan that she said \"haven't been fulfilled\" to restrict tobacco-selling in already high-concentrated areas where to": "https://www.cbsnews.com/amp/sacramento/news/stockton-residents-calling-for-action-amidst-city-council-chaos",
+        "\u201cI recently learned that it currently takes the city 5.5 years to approve and install one speed hump.\u201d\n\nr/memphis \u00b7 r/memphis poster": "https://www.reddit.com/r/memphis/comments/1sz4dwo/traffic_calming_survey/",
+        "\u201cCity residents have been begging for traffic calming in public meetings for years so people stop getting killed by cars on our streets.\u201d\n\nr/StLouis \u00b7 r/StLouis commenter": "https://www.reddit.com/r/StLouis/comments/1s9lndl/city_removing_traffic_calming/"
+      }
+    }
+  },
+  "glancePopups": {
+    "THE CEILING IF IT COMPOUNDS $1.5M-$2.5M ARR": {
+      "text": "Where the ceiling comes from.\nWHAT $1.5M ARR TAKES\nTarget cities covered (ambition)\n50\nAvg Reader subs per city\n400\nReader revenue ($8/mo)\n$1.92M/yr\nOperator tier: 50 cities x 2 buyers x $49\n$58.8K/yr\nAgency tier: 50 cities x 2 buyers x $500\n$600K/yr\nGross ceiling\n$2.58M/yr\nMinus 10% Substack fee + 30% editor splits\n~$1.6M net\nThe ceiling is 40-60 cities covered, not 400. One operator plus AI agents can realistically maintain the timeline work for maybe 20 cities before quality breaks. Beyond that, you hire city editors (the hobbyists you converted) and split revenue. The path to $1M+ ARR exists, but it is a content company staffed with freelancers, not a self-serve SaaS.\nTHE CEILING\nTHE NEXT STEP\nIf you're serious about building a cash-flowing business.",
+      "links": {
+        "Citizen Portal AI": "https://citizenportal.ai/memberships",
+        "newspapers.org": "https://www.newspapers.org/stories/news-deserts-hit-new-high-and-50-million-have-limited-access-to-local-news-study-finds,4166285",
+        "Medill Local News Initiative": "https://localnewsinitiative.northwestern.edu/posts/2026/02/10/news-deserts-social-media-local-news-medill-survey/index.html",
+        "OpenAI API pricing": "https://diyai.io/ai-tools/speech-to-text/openai-whisper-api-pricing-2026/",
+        "Columbia Journalism Review": "https://www.cjr.org/analysis/ai-local-news-civic-sunlight-maine.php",
+        "\u201cThe city is pretty good at uploading city council meeting VODs and records but searching through the archives doesn't really exist, most of what...\u201d\n\nr/Sacramento": "https://www.reddit.com/r/Sacramento/comments/1jj4mk3/i_made_a_site_for_keeping_up_with_sacramento_city/",
+        "\u201cThe goal is to make it easier for folks to stay informed, whether you're a professional who needs to track decisions or just a neighbor who cares\u201d\n\nr/boulder": "https://www.reddit.com/r/boulder/comments/1ozm9n8/summary_of_last_weeks_boulder_city_council_meeting/",
+        "\u201cI attended all the meetings and I know many of you are waiting to hear what happened at the ones you missed. I was awake at 4 this morning while my brain was trying to figure out how to write about i": "https://apoliticalhobbyistinlafayetteco.substack.com/p/you-are-so-bringing-it",
+        "FOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)": "https://hoareviewer.com/hoa-statistics",
+        "PHILANTHROPY.ORG IRS 990 DIRECTORY": "https://philanthropy.org/990/nonprofits/neighborhood-and-block-associations/all",
+        "TECHBUZZ NEWS": "https://www.techbuzznews.com/citizen-portal-ai-local-government-news/",
+        "GRANICUS, ZENCITY, POLIMORPHIC": "https://getcoai.com/news/polimorphic-raises-18-6m-to-bring-ai-chatbots-to-local-governments/",
+        "Citizen Portal AI\n\nINCUMBENT\n\nSells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro is $15/mo for unlimited articles, AI breakdowns, and topic ale": "https://citizenportal.ai/memberships",
+        "OpenPublica\n\nFiles AI transcripts, summaries, and topic indexes for city council meetings across the U.S. for free, no account required, publishing on both openpublica.com and the Internet Archive.": "https://www.openpublica.com/",
+        "OpenCity Record\n\nOffers tracking of 1 city free with alerts and MCP access; paid plans unlock multiple cities, states, or national follow.": "https://thehackstack.com/s/opencityrecord/",
+        "citymeetings.nyc\n\n(built solo by Vikram Oberoi) turns NYC Council meetings into short AI-summarized, human-oversight segments same-day.": "https://citymeetings.nyc",
+        "Council Data Project\n\n(CDP) is an open-source stack for ingesting, transcribing, indexing, and publishing municipal council data, deployed for Seattle City Council, King County Council, and others.": "https://councildataproject.org",
+        "Granicus\n\nThe dominant incumbent selling agenda and meeting management software to cities (not residents).": "https://granicus.com",
+        "Zencity\n\nSells a civic engagement and sentiment platform to governments, not residents.": "https://zencity.io",
+        "Polimorphic\n\nSells AI chatbots, voice assistants, and CRM to local governments (not residents).": "https://www.polimorphic.com/ai-chatbot-search",
+        "\u201cElizabeth then brought up pledges made in 2018 from a Stockton City Council general plan that she said \"haven't been fulfilled\" to restrict tobacco-selling in already high-concentrated areas where to": "https://www.cbsnews.com/amp/sacramento/news/stockton-residents-calling-for-action-amidst-city-council-chaos",
+        "\u201cI recently learned that it currently takes the city 5.5 years to approve and install one speed hump.\u201d\n\nr/memphis \u00b7 r/memphis poster": "https://www.reddit.com/r/memphis/comments/1sz4dwo/traffic_calming_survey/",
+        "\u201cCity residents have been begging for traffic calming in public meetings for years so people stop getting killed by cars on our streets.\u201d\n\nr/StLouis \u00b7 r/StLouis commenter": "https://www.reddit.com/r/StLouis/comments/1s9lndl/city_removing_traffic_calming/"
+      }
+    }
+  },
+  "overallScore": null,
+  "painScore": null,
+  "timingScore": null,
+  "layoutDetected": "new",
+  "siteView": {
+    "version": "v3",
+    "dateLabel": "NOV 21, 2026",
+    "title": "SaaS platform that tracks civic issues across council meetings for residents' associations",
+    "ibIndex": "6.5",
+    "tags": [
+      "Service",
+      "$1.5M-$2.5M ARR"
+    ],
+    "painSeverity": "7",
+    "hero": [
+      {
+        "label": "SOLO BUILDERS SHIPPING",
+        "lines": [
+          "6+ cities",
+          "self-built council trackers posted to Reddit in 14 months"
+        ],
+        "prose": false
+      },
+      {
+        "label": "WHAT IT DEMANDS",
+        "lines": [
+          "Distribution",
+          "Writing",
+          "Civic taste",
+          "Build",
+          "Capital"
+        ],
+        "prose": false
+      },
+      {
+        "label": "THE REALITY",
+        "lines": [
+          "FIRST REVENUE",
+          "90-120 days",
+          "CAPITAL IN",
+          "$2K-$10K",
+          "DIFFICULTY",
+          "Moderate"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "FIRST REVENUE",
+            "value": "90-120 days"
+          },
+          {
+            "label": "CAPITAL IN",
+            "value": "$2K-$10K"
+          },
+          {
+            "label": "DIFFICULTY",
+            "value": "Moderate"
+          }
+        ]
+      },
+      {
+        "label": "UP AGAINST",
+        "lines": [
+          "Citizen Portal AI",
+          "Sells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro i\u2026",
+          "+ 10 more mapped"
+        ],
+        "prose": false,
+        "href": "https://citizenportal.ai/memberships"
+      },
+      {
+        "label": "THE PITCH",
+        "lines": [
+          "A Memphis resident posted that it takes the city 5.5 years to approve and install one speed hump. A Stockton resident testified that 2018 general-plan pledges have never been kept. A sitting Lake Forest councilman wrote that the council itself has no way of tracking what is coming up, what was postponed, or what was rescheduled. Meanwhile 213 U.S. counties have no local news outlet, 136 newspapers closed in 2025, and one Lafayette hobbyist is sitting through six city meetings a week to keep 1,000 Substack readers caught up. Residents live inside civic fights that take years, and nobody is keeping the scoreboard."
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHO IT'S FOR",
+        "lines": [
+          "Residents' associations following consequential live local issues (zoning fights, park plans, traffic calming, development approvals). Secondary tests: local newsrooms and advocacy groups."
+        ],
+        "prose": true
+      },
+      {
+        "label": "THE GAP",
+        "lines": [
+          "Everyone sells search. Nobody sells the story of what happened to your issue over three years"
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHY NOW",
+        "lines": [
+          "Record news deserts and $0.36-per-hour transcription just made solo civic monitoring possible"
+        ],
+        "prose": true
+      },
+      {
+        "label": "AT A GLANCE",
+        "lines": [
+          "Solo builders shipping",
+          "6+ cities",
+          "Pricing",
+          "Free to $500-$1,500/mo",
+          "Year one",
+          "$30K-$60K",
+          "Ceiling",
+          "$1.5M-$2.5M ARR"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "Solo builders shipping",
+            "value": "6+ cities"
+          },
+          {
+            "label": "Pricing",
+            "value": "Free to $500-$1,500/mo"
+          },
+          {
+            "label": "Year one",
+            "value": "$30K-$60K"
+          },
+          {
+            "label": "Ceiling",
+            "value": "$1.5M-$2.5M ARR"
+          }
+        ]
+      },
+      {
+        "label": "WHAT YOU SELL",
+        "lines": [
+          "Operator tier$49/mo per city"
+        ],
+        "prose": false,
+        "name": "Operator tier",
+        "price": "$49/mo per city"
+      },
+      {
+        "label": "BIGGEST RISK",
+        "lines": [
+          "Reader tier does not convert at hyperlocal rates. The 15-25% benchmark comes from Sebastopol-style tiny-town newsletters with one trusted human voice. A SaaS-s\u2026"
+        ],
+        "prose": true
+      }
+    ],
+    "heroMore": null,
+    "sections": [
+      {
+        "id": "whyNow",
+        "kicker": "Why now",
+        "data": {
+          "headline": "Record news deserts and $0.36-per-hour transcription just made solo civic monitoring possible",
+          "paragraphs": [
+            "Two curves crossed in 2025. One went up, one went down, and the gap is where this business lives.",
+            "The up curve: local news collapse hit a record. The 2025 Medill State of Local News Report counted 213 U.S. counties with no local news outlet (up from 206 in 2024) and 1,524 counties with only one, usually a weekly newspaper. 136 newspapers closed in 2025, more than two per week. Roughly 50 million Americans now have limited or no access to local reporting. A February 2026 Medill survey found 51% of news-desert residents rely on non-journalistic sources, 42% check social media news groups daily, and 30% get local information from influencers. Trust in local news media in deserts is 46%, against 59% in news-rich counties. The reporter who used to sit through the zoning hearing is gone. The residents still need to know what happened."
+          ],
+          "sources": [
+            {
+              "label": "newspapers.org",
+              "href": "https://www.newspapers.org/stories/news-deserts-hit-new-high-and-50-million-have-limited-access-to-local-news-study-finds,4166285"
+            },
+            {
+              "label": "Medill Local News Initiative",
+              "href": "https://localnewsinitiative.northwestern.edu/posts/2026/02/10/news-deserts-social-media-local-news-medill-survey/index.html"
+            },
+            {
+              "label": "OpenAI API pricing",
+              "href": "https://diyai.io/ai-tools/speech-to-text/openai-whisper-api-pricing-2026/"
+            },
+            {
+              "label": "Columbia Journalism Review",
+              "href": "https://www.cjr.org/analysis/ai-local-news-civic-sunlight-maine.php"
+            }
+          ]
+        },
+        "more": {
+          "label": "See the full timing case",
+          "title": "The full timing case.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "/10"
+            },
+            {
+              "type": "h",
+              "text": "TIMING"
+            },
+            {
+              "type": "p",
+              "text": "213 news-desert counties (record high), 136 newspapers closed in 2025, and a documented 2024-2026 wave of AI civic tools launching. The wave is here and the solo-operator economics finally work."
+            },
+            {
+              "type": "p",
+              "text": "The down curve: transcription cost fell off a cliff. The OpenAI Whisper API is $0.36 per audio hour. GPT-4o Mini is $0.18. Groq runs Whisper V3 Turbo at $0.04 per hour. Self-hosted Whisper is $0 beyond compute. A three-hour city council meeting now costs between 12 cents and $1.10 to transcribe. In 2022 the same job cost $45 to $180 with a human service like Rev. The unit economics that used to require a newsroom now fit on a hobbyist credit card."
+            },
+            {
+              "type": "p",
+              "text": "The proof is already in the wild. In the last 24 months a wave of solo and small-team AI civic trackers shipped: citymeetings.nyc (Vikram Oberoi, one engineer, 10,000+ monthly visitors, cited by NYC Council members), Civic Sunlight (two friends in Maine), Hamlet (deployed in Saratoga and Palo Alto), SeeGov (Illinois Times, launched July 2025), CivicSummary (West Hollywood, launched 2026), and hobbyist sites in Sacramento, Boulder, Tempe, Portland, Asheville, and Monterey Park. Columbia Journalism Review called it a growing list. None of them tracks issues across years; they all stop at summarizing one meeting. That is the opening."
+            },
+            {
+              "type": "p",
+              "text": "The honest counter: cheap transcription cuts both ways. The same cost collapse that lets a solo operator ship means Granicus, Zencity, and the next five funded govtech vendors can bolt on \"AI issue timelines\" as a free feature for cities. Citizen Portal AI already catalogs 2 million meetings at $15/mo. If the moat is just transcription plus summarization, the window closes fast. The moat has to be the thing none of them do yet: manually verified, dated continuity across years on the specific issue a resident is fighting. That is editorial work, not an ML pipeline, and it is defensible for exactly as long as it takes someone to match the taste, not the tech."
+            },
+            {
+              "type": "h",
+              "text": "THE SIGNALS"
+            },
+            {
+              "type": "p",
+              "text": "213 U.S. counties have no local news outlet in 2025, up from 206 in 2024. 1,524 have only one. 50 million Americans affected."
+            },
+            {
+              "type": "p",
+              "text": "136 newspapers closed in 2025, more than two per week. 2024 closed 130."
+            },
+            {
+              "type": "p",
+              "text": "Whisper API: $0.36/hr. Groq: $0.04/hr. Self-hosted: $0. A 3-hour council meeting transcribes for 12 cents to $1.10."
+            },
+            {
+              "type": "p",
+              "text": "2024-2026 launches: citymeetings.nyc, Civic Sunlight (Maine), Hamlet (Saratoga/Palo Alto), SeeGov (Illinois), CivicSummary (West Hollywood), plus hobbyist sites in 6+ named cities."
+            },
+            {
+              "type": "p",
+              "text": "The counter: the same cost curve lets incumbents (Granicus, Citizen Portal, Zencity) bolt this on. Only editorial continuity across years is defensible."
+            }
+          ]
+        }
+      },
+      {
+        "id": "marketSnapshot",
+        "kicker": "Market snapshot",
+        "data": {
+          "title": "The receipts.",
+          "painSeverity": "7",
+          "quotes": [
+            {
+              "quote": "\u201cThe city is pretty good at uploading city council meeting VODs and records but searching through the archives doesn't really exist, most of what...\u201d",
+              "source": "r/Sacramento",
+              "href": "https://www.reddit.com/r/Sacramento/comments/1jj4mk3/i_made_a_site_for_keeping_up_with_sacramento_city/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cThe goal is to make it easier for folks to stay informed, whether you're a professional who needs to track decisions or just a neighbor who cares\u201d",
+              "source": "r/boulder",
+              "href": "https://www.reddit.com/r/boulder/comments/1ozm9n8/summary_of_last_weeks_boulder_city_council_meeting/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cI attended all the meetings and I know many of you are waiting to hear what happened at the ones you missed. I was awake at 4 this morning while my brain was trying to figure out how to write about it. I am somewhere around 6 city meetings this week alone.\u201d",
+              "source": "Reports From a Political Hobbyist in Lafayette, Colorado (Substack) \u00b7 Karen Norback",
+              "href": "https://apoliticalhobbyistinlafayetteco.substack.com/p/you-are-so-bringing-it",
+              "platform": null
+            }
+          ],
+          "receiptsLabel": "All 8 receipts, and where these people gather"
+        },
+        "more": {
+          "label": "All receipts",
+          "title": "Where the pain lives.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "\u201cAs difficult as it may be to imagine, The Council has no way of keeping track of what's coming up, what's been postponed or what's been re-scheduled or when.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "Patch (Lake Forest, CA) \u00b7 Jim Gardner, Lake Forest City Council"
+            },
+            {
+              "type": "p",
+              "text": "\u201cReno is changing rapidly, and as many point out, the ball seems to be in the court of developers with armies of lawyers, lobbyists and PR teams, with deep pockets for contributing to the campaigns of many of our current city council members.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "Our Town Reno (Substack) \u00b7 Our Town Reno"
+            },
+            {
+              "type": "h",
+              "text": "WHERE THEY GATHER"
+            },
+            {
+              "type": "p",
+              "text": "Hobbyist operators have shipped city-specific council tracking sites in r/Tempe, r/Sacramento, r/boulder, r/montereypark, r/Portland, and r/asheville within the last 14 months, each sharing a different self-built tool. Six separate cities, same job, same solo-builder pattern.Visit"
+            },
+            {
+              "type": "p",
+              "text": "r/Zoning has 1,100+ followers; r/Journalism thread \"How to cover 'boring' city council meetings\" drew 10+ comments 10 months ago. Niche but active communities exist around this work.Visit"
+            },
+            {
+              "type": "p",
+              "text": "r/Journalism threads from local reporters show the beat is structurally impossible: one poster said their boss expected them to cover around 10 meetings a month across 17 townships. Another thread, \"How to cover 'boring' city council meetings without burning out,\" has 10+ comments.Visit"
+            },
+            {
+              "type": "p",
+              "text": "Individual neighborhoods run paid-content newsletters today to do the work of continuity tracking: the Lafayette, CO political-hobbyist Substack lists \"Over 1,000 subscribers\" who follow one volunteer's reports from council meetings, developer presentations, and candidate rundowns.Visit"
+            }
+          ]
+        }
+      },
+      {
+        "id": "whitespace",
+        "kicker": "Whitespace",
+        "data": {
+          "gap": "Everyone sells search. Nobody sells the story of what happened to your issue over three years",
+          "wedge": [
+            "Continuity and status tracking across years, not just search and alerts. Competitors like OpenPublica (free search/alerts) and Council Data Project (open-source transcripts) leave the resident to assemble the story; this product delivers the story already assembled and kept current."
+          ],
+          "incumbent": {
+            "name": "Citizen Portal AI",
+            "href": "https://citizenportal.ai/memberships"
+          },
+          "other": []
+        },
+        "more": {
+          "label": "Understand the opening",
+          "title": "The opening.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The market splits into three camps, and none of them deliver what a residents' association actually needs."
+            },
+            {
+              "type": "p",
+              "text": "Camp one: resident-facing search and alerts. Citizen Portal AI charges residents $15/mo or a $299 one-time Founding Member deal, has cataloged more than 2 million meetings, and is on pace to transcribe 625,000 hours of government proceedings in 2026 across city councils, county commissions, and school boards. OpenPublica does the same job for free, no account required, with transcripts and summaries for Warwick, Folsom, Colorado Springs, Honolulu, Columbus, and Fort Worth already published. OpenCity Record gives you one city free and charges for multi-city. These products answer \"what was said this week.\" They do not answer \"what happened to the traffic-calming request we filed in 2022.\""
+            },
+            {
+              "type": "p",
+              "text": "Camp two: hobbyist single-city sites. citymeetings.nyc (built solo by Vikram Oberoi) serves NYC same-day summaries, free, with 10,000+ monthly visitors and endorsements from an NYC Council member and the New York Times. Council Data Project is an open-source backend that any city can deploy, free apart from hosting, and already runs for Seattle and King County. New hobbyist sites shipped in the last 14 months for Tempe, Sacramento, Boulder, Monterey Park, Portland, and Asheville. Breadth is not the problem. Continuity across years, for one issue, is."
+            },
+            {
+              "type": "p",
+              "text": "Camp three: govtech sold TO cities, not residents. Granicus owns the meeting-posting layer and charges cities from about $4,000/yr (Oradell NJ) to $62,490/yr (Ocala FL Legistar), with roughly 10% annual price increases flagged by one council in public. Zencity has 400+ government customers and $90M raised, priced $10K-$20K/yr for small cities up to $1M/yr for the largest. Polimorphic raised $18.6M Series A and charges cities $5,600-$33,600/yr for AI chatbots. All of them sell to the city clerk. None of them sell to the neighborhood watching the city."
+            },
+            {
+              "type": "p",
+              "text": "The gap: a maintained timeline for one specific issue (this zoning case, this park plan, this traffic-calming petition) that shows what was requested, when it was heard, what was recommended, whether it was funded, and whether it was built, kept current across years and shareable in one link. Camp one shows you what happened this week. Camp two shows you one city. Camp three sells to the other side of the table. A sitting Lake Forest councilman wrote publicly that even the council itself cannot keep track of what is coming up, what has been postponed, or what has been rescheduled. If the council can't see it, the neighborhood association cannot buy it from anyone today."
+            },
+            {
+              "type": "p",
+              "text": "Who the founder is really up against: Citizen Portal AI. It is the only priced resident-facing product in this market, it is already running a real editorial model with human local editors on top of AI, and its $299 lifetime deal anchors what a resident will pay for anything that looks like \"follow my city.\" A continuity-tracking product has to be visibly different from \"better search,\" or Citizen Portal adds an issue-timeline view in one quarter and absorbs the wedge."
+            },
+            {
+              "type": "p",
+              "text": "Resident-facing paid anchor: $15/mo or $299 lifetime (Citizen Portal AI). This is what residents have shown they will pay for \"see my city.\""
+            },
+            {
+              "type": "p",
+              "text": "Resident-facing free anchors: OpenPublica (nationwide, free), citymeetings.nyc (NYC, free), Council Data Project (open-source, self-host), plus hobbyist sites in 6+ named cities in the last 14 months."
+            },
+            {
+              "type": "p",
+              "text": "City-side govtech anchor: $4K-$1M+/yr (Granicus, Zencity, Polimorphic). None sells to residents' associations; all sell to clerks and city managers."
+            },
+            {
+              "type": "p",
+              "text": "Dead in this market: Neighborland sold resident engagement to cities at $1,000-$2,000/mo, got acquired by Nextdoor, and was shut down by 2023. Resident-side SaaS has a graveyard here."
+            },
+            {
+              "type": "p",
+              "text": "The gap nobody fills: a dated, sourced timeline per issue, maintained across years, delivered as one shareable link. No competitor sells this; the closest adjacent product (Citizen Portal) is one feature away."
+            },
+            {
+              "type": "p",
+              "text": "Your way in: Continuity and status tracking across years, not just search and alerts. Competitors like OpenPublica (free search/alerts) and Council Data Project (open-source transcripts) leave the resident to assemble the story; this product delivers the story already assembled and kept current."
+            },
+            {
+              "type": "h",
+              "text": "WHO\u2019S ALREADY IN THE MARKET"
+            }
+          ]
+        }
+      },
+      {
+        "id": "proof",
+        "kicker": "Proof & signals",
+        "data": {
+          "items": [
+            {
+              "text": "The U.S. has roughly 373,000 community associations (HOAs, condos, co-ops) home to 78.1 million residents as of 2025, per the Foundation for Community Association Research. This is the maximum universe of mandatory-dues associations with any annual budget.",
+              "source": "FOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)",
+              "href": "https://hoareviewer.com/hoa-statistics"
+            },
+            {
+              "text": "Only 543 U.S. neighborhood and block associations file Form 990 tax returns (the volunteer-led civic bodies this product targets, as distinct from HOAs with mandatory dues). The addressable pool of formal, budgeted residents' associations is thin.",
+              "source": "PHILANTHROPY.ORG IRS 990 DIRECTORY",
+              "href": "https://philanthropy.org/990/nonprofits/neighborhood-and-block-associations/all"
+            },
+            {
+              "text": "Citizen Portal AI reported cataloging more than 2 million meetings and being on pace to transcribe 625,000 hours of government proceedings in 2026, covering city councils, county commissions, and school boards. Their editorial model combines AI with named local human editors who take responsibility for coverage.",
+              "source": "TECHBUZZ NEWS",
+              "href": "https://www.techbuzznews.com/citizen-portal-ai-local-government-news/"
+            },
+            {
+              "text": "The whole govtech-to-cities channel sells the opposite product: Granicus, Zencity, and Polimorphic have collectively raised well over $100M and already own the pipes (agenda posting, sentiment, chatbots) between cities and residents. None sells issue-continuity tracking to residents' associations. This is where a new entrant has room, but also where a well-funded incumbent could add a \"resident view\" feature if the wedge proves out.",
+              "source": "GRANICUS, ZENCITY, POLIMORPHIC",
+              "href": "https://getcoai.com/news/polimorphic-raises-18-6m-to-bring-ai-chatbots-to-local-governments/"
+            }
+          ]
+        },
+        "more": {
+          "label": "Explore the evidence",
+          "title": "Proof & signals.",
+          "blocks": [
+            {
+              "type": "h",
+              "text": "THE HARD NUMBERS"
+            },
+            {
+              "type": "h",
+              "text": "WHAT THE RESEARCH SAYS"
+            },
+            {
+              "type": "p",
+              "text": "An explicit request for printable histories of meeting minutes"
+            },
+            {
+              "type": "p",
+              "text": "Adjacent civic tools and funded products show real activity\u2014but not proven demand for this exact offer"
+            },
+            {
+              "type": "p",
+              "text": "The core commercial question remains whether anyone will pay repeatedly"
+            },
+            {
+              "type": "p",
+              "text": "There is credible problem-level evidence for a service that turns scattered council records into maintained, source-linked issue histories. The clearest direct signal is a public request for a printable history made from meeting minutes. Broader context points to unmet local-information needs, active civic-data projects, and growing automation of meeting information. However, the analysis explicitly reports no verified paid demand for this exact service. Treat these as reasons to run a narrow paid pilot\u2014not as proof of a scalable subscription market."
+            }
+          ]
+        }
+      },
+      {
+        "id": "competitors",
+        "kicker": "Who you're up against",
+        "data": {
+          "count": 11,
+          "players": [
+            {
+              "name": "Citizen Portal AI",
+              "incumbent": true,
+              "description": "Sells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro is $15/mo for unlimited articles, AI breakdowns, and topic alerts; Founding Member Lifetime is a one-time $299 (listed at 70% off $999).",
+              "href": "https://citizenportal.ai/memberships"
+            },
+            {
+              "name": "OpenPublica",
+              "incumbent": false,
+              "description": "Files AI transcripts, summaries, and topic indexes for city council meetings across the U.S. for free, no account required, publishing on both openpublica.com and the Internet Archive.",
+              "href": "https://www.openpublica.com/"
+            },
+            {
+              "name": "OpenCity Record",
+              "incumbent": false,
+              "description": "Offers tracking of 1 city free with alerts and MCP access; paid plans unlock multiple cities, states, or national follow.",
+              "href": "https://thehackstack.com/s/opencityrecord/"
+            },
+            {
+              "name": "citymeetings.nyc",
+              "incumbent": false,
+              "description": "(built solo by Vikram Oberoi) turns NYC Council meetings into short AI-summarized, human-oversight segments same-day.",
+              "href": "https://citymeetings.nyc"
+            },
+            {
+              "name": "Council Data Project",
+              "incumbent": false,
+              "description": "(CDP) is an open-source stack for ingesting, transcribing, indexing, and publishing municipal council data, deployed for Seattle City Council, King County Council, and others.",
+              "href": "https://councildataproject.org"
+            },
+            {
+              "name": "Granicus",
+              "incumbent": false,
+              "description": "The dominant incumbent selling agenda and meeting management software to cities (not residents).",
+              "href": "https://granicus.com"
+            },
+            {
+              "name": "Zencity",
+              "incumbent": false,
+              "description": "Sells a civic engagement and sentiment platform to governments, not residents.",
+              "href": "https://zencity.io"
+            },
+            {
+              "name": "Polimorphic",
+              "incumbent": false,
+              "description": "Sells AI chatbots, voice assistants, and CRM to local governments (not residents).",
+              "href": "https://www.polimorphic.com/ai-chatbot-search"
+            }
+          ]
+        }
+      },
+      {
+        "id": "asking",
+        "kicker": "People are asking for it",
+        "data": {
+          "quotes": [
+            {
+              "quote": "\u201cElizabeth then brought up pledges made in 2018 from a Stockton City Council general plan that she said \"haven't been fulfilled\" to restrict tobacco-selling in already high-concentrated areas where tobacco is sold.\u201d",
+              "source": "CBS News Sacramento \u00b7 CBS News Sacramento (reporting Stockton resident Elizabeth)",
+              "href": "https://www.cbsnews.com/amp/sacramento/news/stockton-residents-calling-for-action-amidst-city-council-chaos",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cI recently learned that it currently takes the city 5.5 years to approve and install one speed hump.\u201d",
+              "source": "r/memphis \u00b7 r/memphis poster",
+              "href": "https://www.reddit.com/r/memphis/comments/1sz4dwo/traffic_calming_survey/",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cCity residents have been begging for traffic calming in public meetings for years so people stop getting killed by cars on our streets.\u201d",
+              "source": "r/StLouis \u00b7 r/StLouis commenter",
+              "href": "https://www.reddit.com/r/StLouis/comments/1s9lndl/city_removing_traffic_calming/",
+              "platform": "REDDIT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "verdict",
+        "kicker": "The verdict",
+        "data": {
+          "title": "Should you build this?",
+          "build": [
+            "The pain is unusually well documented: a sitting Lake Forest councilman says the council itself cannot track what is coming up, and residents are posting 5.5-year speed-hump timelines in Memphis and unfulfilled 2018 pledges in Stockton. People already live the problem.",
+            "The timing math is loud: 213 U.S. counties have zero local news, 136 newspapers closed in 2025, and transcription dropped to $0.04-$0.36 per hour. One operator with AI agents can now do what a two-person newsroom used to do.",
+            "The wedge exists in plain sight: Citizen Portal AI ($15/mo, 2M meetings cataloged), OpenPublica (free), and citymeetings.nyc all sell search and alerts; nobody sells the dated, sourced story of what happened to one issue across three years, which is the thing a resident actually wants.",
+            "Hyperlocal Substack conversion sits at 15-25% in tiny-town newsletters versus 3% for national news, so the $8 Reader tier riding one city's audience has a credible shot at $2K-$3K MRR in year one on one city."
+          ],
+          "notBuild": [
+            "Solution-side search is dead zero. Council meeting monitoring, municipal issue tracker, and council promise tracking all returned 0 searches/mo on Google Ads, so every paid subscriber costs comment-writing hours and growth stalls if the founder hates Reddit.",
+            "The named resident buyer barely exists at scale. Only 543 U.S. neighborhood and block associations file a Form 990, and the drift note confirms none of the loud first-person pain comes from an association board saying they will pay.",
+            "The incumbents can ship this as a feature. Citizen Portal AI has 2M meetings and the audience, OpenPublica is free and nationwide, and Granicus, Zencity, and Polimorphic have raised over $100M selling to the city side. The timeline-per-issue feature is one sprint away for them.",
+            "The honest ceiling is a content company, not a SaaS. $1.5M-$2.5M ARR at 40-60 cities means hiring and managing 20 freelance civic hobbyists; one operator plus agents breaks past roughly 20 cities before editorial quality cracks.",
+            "POTENTIAL PIVOT",
+            "Change the primary buyer from volunteer residents' association boards to the civic hobbyist writer and the small local newsroom. Lead with a $49/mo Operator tier for that writer (five maintained timelines per city, embeddable) and an $8/mo Reader tier direct to residents. Keep the $500-$1,500/mo Agency tier for advocacy groups, developers, and zoning committees (the real \"residents' association\" buyers who actually transact). Validate in one city before any second city."
+          ]
+        }
+      },
+      {
+        "id": "founderFit",
+        "kicker": "Founder fit",
+        "data": {
+          "title": "Not every good idea is good for you.",
+          "bestFor": [
+            "Solo researchers with local-government knowledge who can verify records and r...",
+            "Technical and civic-engagement cofounders pairing data workflows with communi...",
+            "Founders without research or civic-domain experience may need support interpr...",
+            "Teams relying on automation alone may struggle with disputed claims, privacy,..."
+          ],
+          "persona": [
+            "A civic-obsessed writer in one specific city who already comments on local politics online, knows the players by name, and will spend 10 hours a week building the first six timelines by hand. Bonus points if they have been to a city council meeting this year. Technical skill is not the bottleneck: coding agents ship the pipeline in a weekend. What is scarce is the willingness to sit in a Nextdoor thread for a year while the first 300 readers find you. The founder who thinks they will automate this and skip the comment work will lose to the Lafayette hobbyist with 1,000 subscribers who does it by hand."
+          ],
+          "demands": [
+            {
+              "label": "Distribution",
+              "score": 9.0
+            },
+            {
+              "label": "Writing",
+              "score": 8.0
+            },
+            {
+              "label": "Civic taste",
+              "score": 9.0
+            },
+            {
+              "label": "Build",
+              "score": 4.0
+            },
+            {
+              "label": "Capital",
+              "score": 2.0
+            }
+          ],
+          "reality": [
+            {
+              "label": "FIRST REVENUE",
+              "value": "90-120 days"
+            },
+            {
+              "label": "CAPITAL IN",
+              "value": "$2K-$10K"
+            },
+            {
+              "label": "DIFFICULTY",
+              "value": "Moderate"
+            }
+          ]
+        }
+      },
+      {
+        "id": "valueLadder",
+        "kicker": "What you'd sell",
+        "data": {
+          "title": "The value ladder.",
+          "intro": [
+            "Operator tier ($49/mo): one city, five live issue timelines, dated source links to every meeting, email digest when any timeline changes. Reader tier ($8/mo or $80/yr): direct-to-resident version of the same timelines, delivered as a weekly email. Agency tier (starts at $500/mo): a zoning committee, advocacy group, or developer gets custom issue tracking with Slack/email updates and a weekly analyst note."
+          ],
+          "steps": [
+            {
+              "step": 1,
+              "tier": "LEAD MAGNET",
+              "name": "The Open Timeline",
+              "price": "Free",
+              "description": "One public timeline of a live local fight in one target city, updated weekly. Shared on r/[city] and in local Substack comments. Proves the tool works and seeds email signups."
+            },
+            {
+              "step": 2,
+              "tier": "FRONTEND",
+              "name": "Reader subscription",
+              "price": "$8/mo or $80/yr",
+              "description": "Direct-to-resident. Weekly email with all five issue timelines for one city plus alerts when anything moves. Sits under the Citizen Portal AI $15/mo anchor."
+            },
+            {
+              "step": 3,
+              "tier": "CORE",
+              "name": "Operator tier",
+              "price": "$49/mo per city",
+              "description": "For the civic hobbyist, newsroom, or Substack writer. Five maintained timelines, embeddable widgets, raw source links. They pay to save the 6-meetings-a-week research grind."
+            },
+            {
+              "step": 4,
+              "tier": "CONTINUITY",
+              "name": "Agency tier",
+              "price": "$500-$1,500/mo",
+              "description": ""
+            }
+          ]
+        },
+        "more": {
+          "label": "View the full value ladder",
+          "title": "The full value ladder.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "For advocacy groups, developers, or zoning committees tracking one consequential fight. Custom issues, Slack updates, and a weekly analyst note from the operator."
+            }
+          ]
+        }
+      },
+      {
+        "id": "plan",
+        "kicker": "The plan",
+        "data": {
+          "title": "If you started today.",
+          "subtitle": "First up.",
+          "paragraphs": [
+            "Nobody searches for this yet. Google Ads shows zero monthly searches for council meeting monitoring, municipal issue tracker, and council promise tracking. The first 100 customers do not come from SEO or paid ads. They come from showing up where the work already happens, one city at a time."
+          ]
+        },
+        "more": {
+          "label": "See the detailed plan",
+          "title": null,
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Launch a lightweight civic-tracking SaaS with five human-verified issue timelines, dated source links, clear decision-status labels, and email updates. Add AI-assisted record discovery with human approval, then test a paid pilot with residents\u2019 associations and measure renewal, research time, and verification costs. Next, scale subscriptions and coverage only when the economics hold\u2014ready to prove repeatable demand?"
+            },
+            {
+              "type": "h",
+              "text": "THE FIRST MOVES"
+            },
+            {
+              "type": "p",
+              "text": "Within 7 days, choose one municipality and conduct at least eight buyer interviews with residents\u2019 association coordinators."
+            },
+            {
+              "type": "p",
+              "text": "Within 7 days, audit source availability and compare free tools for five candidate issues; document gaps, terminology changes, and likely review effort."
+            },
+            {
+              "type": "p",
+              "text": "Within 7 days, create one source-linked sample timeline and send a clearly priced paid-pilot proposal to qualified organizations."
+            },
+            {
+              "type": "h",
+              "text": "THE MVP"
+            },
+            {
+              "type": "p",
+              "text": "Build a lightweight SaaS workspace for one municipality and five manually verified issue timelines, with dated source links, status labels, uncertainty and missing-record flags, correction history, and email updates. Use AI-assisted discovery and drafting only where it reduces measured effort; require human approval for material status changes."
+            },
+            {
+              "type": "h",
+              "text": "WHERE THE FIRST USERS COME FROM"
+            },
+            {
+              "type": "p",
+              "text": "Residents\u2019 association outreach \u00b7 Directly reaches the initial buyer and supports discovery of budget authority and active issues."
+            },
+            {
+              "type": "p",
+              "text": "Local newsroom outreach \u00b7 Newsrooms may value time saved and citation-ready histories, but must be validated separately from associations."
+            },
+            {
+              "type": "p",
+              "text": "Local civic groups and public sample pages \u00b7 Issue-focused local communities can help recruit users and surface relevant records, though engagement is not proof of payment."
+            },
+            {
+              "type": "h",
+              "text": "TIMELINE"
+            },
+            {
+              "type": "p",
+              "text": "1-2 weeks"
+            },
+            {
+              "type": "h",
+              "text": "BUDGET"
+            },
+            {
+              "type": "p",
+              "text": "$0-10K"
+            },
+            {
+              "type": "h",
+              "text": "THE MILESTONE"
+            },
+            {
+              "type": "p",
+              "text": "Secure three paying organizations in one defined segment, demonstrate repeat use and at least one renewal, and show that verified-update delivery costs support a sustainable subscription margin."
+            }
+          ]
+        }
+      },
+      {
+        "id": "napkin",
+        "kicker": "Napkin math",
+        "data": {
+          "title": "Year one, on a napkin.",
+          "intro": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.",
+          "rows": [
+            {
+              "label": "Free timelines shipped in city 1 (6 live issues)",
+              "value": "6"
+            },
+            {
+              "label": "Email signups in year 1 (assumption)",
+              "value": "2,000"
+            },
+            {
+              "label": "Reader tier conversion (hyperlocal 15%)",
+              "value": "300 paid"
+            },
+            {
+              "label": "Reader revenue: 300 x $8/mo",
+              "value": "$2,400/mo"
+            },
+            {
+              "label": "Operator buyers: hobbyist + newsroom",
+              "value": "2 x $49/mo"
+            },
+            {
+              "label": "Agency buyers (assumption): 1 advocacy group",
+              "value": "1 x $500/mo"
+            },
+            {
+              "label": "Year 1 MRR, city 1",
+              "value": "~$3,000/mo"
+            },
+            {
+              "label": "Year 1 ARR, city 1",
+              "value": "~$36K"
+            }
+          ],
+          "summary": [
+            "One city, one year, done honestly: about $35K-$45K ARR. Most of it is Reader tier revenue riding the hyperlocal Substack conversion math. Operator and Agency tiers are gravy that pays the content costs."
+          ],
+          "ceiling": "$1.5M-$2.5M ARR"
+        }
+      }
+    ],
+    "popups": [
+      {
+        "label": "THE CEILING IF IT COMPOUNDS $1.5M-$2.5M ARR",
+        "title": "Where the ceiling comes from.",
+        "blocks": [
+          {
+            "type": "h",
+            "text": "WHAT $1.5M ARR TAKES"
+          },
+          {
+            "type": "p",
+            "text": "Target cities covered (ambition)"
+          },
+          {
+            "type": "p",
+            "text": "50"
+          },
+          {
+            "type": "p",
+            "text": "Avg Reader subs per city"
+          },
+          {
+            "type": "p",
+            "text": "400"
+          },
+          {
+            "type": "p",
+            "text": "Reader revenue ($8/mo)"
+          },
+          {
+            "type": "p",
+            "text": "$1.92M/yr"
+          },
+          {
+            "type": "p",
+            "text": "Operator tier: 50 cities x 2 buyers x $49"
+          },
+          {
+            "type": "p",
+            "text": "$58.8K/yr"
+          },
+          {
+            "type": "p",
+            "text": "Agency tier: 50 cities x 2 buyers x $500"
+          },
+          {
+            "type": "p",
+            "text": "$600K/yr"
+          },
+          {
+            "type": "p",
+            "text": "Gross ceiling"
+          },
+          {
+            "type": "p",
+            "text": "$2.58M/yr"
+          },
+          {
+            "type": "p",
+            "text": "Minus 10% Substack fee + 30% editor splits"
+          },
+          {
+            "type": "p",
+            "text": "~$1.6M net"
+          },
+          {
+            "type": "p",
+            "text": "The ceiling is 40-60 cities covered, not 400. One operator plus AI agents can realistically maintain the timeline work for maybe 20 cities before quality breaks. Beyond that, you hire city editors (the hobbyists you converted) and split revenue. The path to $1M+ ARR exists, but it is a content company staffed with freelancers, not a self-serve SaaS."
+          },
+          {
+            "type": "h",
+            "text": "THE CEILING"
+          }
+        ]
+      }
+    ],
+    "inlineLinks": [
+      {
+        "text": "Citizen Portal AI",
+        "href": "https://citizenportal.ai/memberships"
+      },
+      {
+        "text": "newspapers.org",
+        "href": "https://www.newspapers.org/stories/news-deserts-hit-new-high-and-50-million-have-limited-access-to-local-news-study-finds,4166285"
+      },
+      {
+        "text": "Medill Local News Initiative",
+        "href": "https://localnewsinitiative.northwestern.edu/posts/2026/02/10/news-deserts-social-media-local-news-medill-survey/index.html"
+      },
+      {
+        "text": "OpenAI API pricing",
+        "href": "https://diyai.io/ai-tools/speech-to-text/openai-whisper-api-pricing-2026/"
+      },
+      {
+        "text": "Columbia Journalism Review",
+        "href": "https://www.cjr.org/analysis/ai-local-news-civic-sunlight-maine.php"
+      },
+      {
+        "text": "FOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)",
+        "href": "https://hoareviewer.com/hoa-statistics"
+      },
+      {
+        "text": "PHILANTHROPY.ORG IRS 990 DIRECTORY",
+        "href": "https://philanthropy.org/990/nonprofits/neighborhood-and-block-associations/all"
+      },
+      {
+        "text": "TECHBUZZ NEWS",
+        "href": "https://www.techbuzznews.com/citizen-portal-ai-local-government-news/"
+      },
+      {
+        "text": "GRANICUS, ZENCITY, POLIMORPHIC",
+        "href": "https://getcoai.com/news/polimorphic-raises-18-6m-to-bring-ai-chatbots-to-local-governments/"
+      },
+      {
+        "text": "The Startup Ideas Podcast",
+        "href": "https://www.youtube.com/@GregIsenberg"
+      },
+      {
+        "text": "Visit",
+        "href": "https://www.reddit.com/r/localgovernment/comments/1qcphvc/resource_tool_that_summarizes_city_council/"
+      }
+    ],
+    "linkCount": 37,
+    "sourceUrl": "https://www.ideabrowser.com/hub/ideas/today"
+  },
+  "rawText": "Home\nBrowse\nAgents\nMy Stuff\nAbout me\nAccelerator\nProjects\nExample project\nConnect your AI\nTool deals\nAbout Ideabrowser\nHelp & training\n\u00a9 2026 Ideabrowser\n\u00b7\nLegal\nToggle Sidebar\nIdea of the Day\nBuild Gallery\n1\nGo Pro\nS\n\nIDEA OF THE DAY\u00b7NOV 21, 2026\n\nPrevious\nBrowse all\nSaaS platform that tracks civic issues across council meetings for residents' associations\n\nIB Index 6.5\n\u00b7\nService\n\u00b7\n$1.5M-$2.5M ARR\n\nCONCEPT MOCKUP\n\nSOLO BUILDERS SHIPPING\n\n6+ cities\n\nself-built council trackers posted to Reddit in 14 months\n\nWHAT IT DEMANDS\n\nDistribution\nWriting\nCivic taste\nBuild\nCapital\n\nTHE REALITY\n\nFIRST REVENUE\n90-120 days\nCAPITAL IN\n$2K-$10K\nDIFFICULTY\nModerate\n\nUP AGAINST\n\nCitizen Portal AI\n\nSells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro i\u2026\n\n+ 10 more mapped\n\nTHE PITCH\n\nA Memphis resident posted that it takes the city 5.5 years to approve and install one speed hump. A Stockton resident testified that 2018 general-plan pledges have never been kept. A sitting Lake Forest councilman wrote that the council itself has no way of tracking what is coming up, what was postponed, or what was rescheduled. Meanwhile 213 U.S. counties have no local news outlet, 136 newspapers closed in 2025, and one Lafayette hobbyist is sitting through six city meetings a week to keep 1,000 Substack readers caught up. Residents live inside civic fights that take years, and nobody is keeping the scoreboard.\n\nWHO IT'S FOR\n\nResidents' associations following consequential live local issues (zoning fights, park plans, traffic calming, development approvals). Secondary tests: local newsrooms and advocacy groups.\n\nTHE GAP\n\nEveryone sells search. Nobody sells the story of what happened to your issue over three years\n\nWHY NOW\n\nRecord news deserts and $0.36-per-hour transcription just made solo civic monitoring possible\n\nAT A GLANCE\n\nSolo builders shipping\n6+ cities\nPricing\nFree to $500-$1,500/mo\nYear one\n$30K-$60K\nCeiling\n$1.5M-$2.5M ARR\n\nWHAT YOU SELL\n\nOperator tier$49/mo per city\n\nBIGGEST RISK\n\nReader tier does not convert at hyperlocal rates. The 15-25% benchmark comes from Sebastopol-style tiny-town newsletters with one trusted human voice. A SaaS-s\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nRecord news deserts and $0.36-per-hour transcription just made solo civic monitoring possible\n\nTwo curves crossed in 2025. One went up, one went down, and the gap is where this business lives.\n\nThe up curve: local news collapse hit a record. The 2025 Medill State of Local News Report counted 213 U.S. counties with no local news outlet (up from 206 in 2024) and 1,524 counties with only one, usually a weekly newspaper. 136 newspapers closed in 2025, more than two per week. Roughly 50 million Americans now have limited or no access to local reporting. A February 2026 Medill survey found 51% of news-desert residents rely on non-journalistic sources, 42% check social media news groups daily, and 30% get local information from influencers. Trust in local news media in deserts is 46%, against 59% in news-rich counties. The reporter who used to sit through the zoning hearing is gone. The residents still need to know what happened.\n\nSOURCES\nnewspapers.org\nMedill Local News Initiative\nOpenAI API pricing\nColumbia Journalism Review\nSee the full timing case\n\nMARKET SNAPSHOT\n\nThe receipts.\n\nPAIN\n\n7/10 SEVERITY\n\n\u201cThe city is pretty good at uploading city council meeting VODs and records but searching through the archives doesn't really exist, most of what...\u201d\n\nr/Sacramento\n\n\u201cThe goal is to make it easier for folks to stay informed, whether you're a professional who needs to track decisions or just a neighbor who cares\u201d\n\nr/boulder\n\n\u201cI attended all the meetings and I know many of you are waiting to hear what happened at the ones you missed. I was awake at 4 this morning while my brain was trying to figure out how to write about it. I am somewhere around 6 city meetings this week alone.\u201d\n\nReports From a Political Hobbyist in Lafayette, Colorado (Substack) \u00b7 Karen Norback\n\nAll 8 receipts, and where these people gather\n\nWHITESPACE\n\nMARKET GAP\n\nEveryone sells search. Nobody sells the story of what happened to your issue over three years\n\nUnderstand the opening\n\nTHE WEDGE\n\nContinuity and status tracking across years, not just search and alerts. Competitors like OpenPublica (free search/alerts) and Council Data Project (open-source transcripts) leave the resident to assemble the story; this product delivers the story already assembled and kept current.\n\nThe incumbent to beat: Citizen Portal AI\n\nPROOF & SIGNALS\n\nThe U.S. has roughly 373,000 community associations (HOAs, condos, co-ops) home to 78.1 million residents as of 2025, per the Foundation for Community Association Research. This is the maximum universe of mandatory-dues associations with any annual budget.\n\nFOUNDATION FOR COMMUNITY ASSOCIATION RESEARCH (VIA HOAREVIEWER.COM)\n\nOnly 543 U.S. neighborhood and block associations file Form 990 tax returns (the volunteer-led civic bodies this product targets, as distinct from HOAs with mandatory dues). The addressable pool of formal, budgeted residents' associations is thin.\n\nPHILANTHROPY.ORG IRS 990 DIRECTORY\n\nCitizen Portal AI reported cataloging more than 2 million meetings and being on pace to transcribe 625,000 hours of government proceedings in 2026, covering city councils, county commissions, and school boards. Their editorial model combines AI with named local human editors who take responsibility for coverage.\n\nTECHBUZZ NEWS\n\nThe whole govtech-to-cities channel sells the opposite product: Granicus, Zencity, and Polimorphic have collectively raised well over $100M and already own the pipes (agenda posting, sentiment, chatbots) between cities and residents. None sells issue-continuity tracking to residents' associations. This is where a new entrant has room, but also where a well-funded incumbent could add a \"resident view\" feature if the wedge proves out.\n\nGRANICUS, ZENCITY, POLIMORPHIC\nExplore the evidence\n\nWHO YOU'RE UP AGAINST\n\n11 PLAYERS\n\nCitizen Portal AI\n\nINCUMBENT\n\nSells direct-to-resident council monitoring: free tier browses meetings and follows 1 location; Citizen Pro is $15/mo for unlimited articles, AI breakdowns, and topic alerts; Founding Member Lifetime is a one-time $299 (listed at 70% off $999).\n\nOpenPublica\n\nFiles AI transcripts, summaries, and topic indexes for city council meetings across the U.S. for free, no account required, publishing on both openpublica.com and the Internet Archive.\n\nOpenCity Record\n\nOffers tracking of 1 city free with alerts and MCP access; paid plans unlock multiple cities, states, or national follow.\n\ncitymeetings.nyc\n\n(built solo by Vikram Oberoi) turns NYC Council meetings into short AI-summarized, human-oversight segments same-day.\n\nCouncil Data Project\n\n(CDP) is an open-source stack for ingesting, transcribing, indexing, and publishing municipal council data, deployed for Seattle City Council, King County Council, and others.\n\nGranicus\n\nThe dominant incumbent selling agenda and meeting management software to cities (not residents).\n\nZencity\n\nSells a civic engagement and sentiment platform to governments, not residents.\n\nPolimorphic\n\nSells AI chatbots, voice assistants, and CRM to local governments (not residents).\n\nPEOPLE ARE ASKING FOR IT\n\nREDDIT\n\n\u201cElizabeth then brought up pledges made in 2018 from a Stockton City Council general plan that she said \"haven't been fulfilled\" to restrict tobacco-selling in already high-concentrated areas where tobacco is sold.\u201d\n\nCBS News Sacramento \u00b7 CBS News Sacramento (reporting Stockton resident Elizabeth)\n\n\u201cI recently learned that it currently takes the city 5.5 years to approve and install one speed hump.\u201d\n\nr/memphis \u00b7 r/memphis poster\n\n\u201cCity residents have been begging for traffic calming in public meetings for years so people stop getting killed by cars on our streets.\u201d\n\nr/StLouis \u00b7 r/StLouis commenter\n\nTHE VERDICT\n\nShould you build this?\n\nREASONS TO BUILD\n\nThe pain is unusually well documented: a sitting Lake Forest councilman says the council itself cannot track what is coming up, and residents are posting 5.5-year speed-hump timelines in Memphis and unfulfilled 2018 pledges in Stockton. People already live the problem.\nThe timing math is loud: 213 U.S. counties have zero local news, 136 newspapers closed in 2025, and transcription dropped to $0.04-$0.36 per hour. One operator with AI agents can now do what a two-person newsroom used to do.\nThe wedge exists in plain sight: Citizen Portal AI ($15/mo, 2M meetings cataloged), OpenPublica (free), and citymeetings.nyc all sell search and alerts; nobody sells the dated, sourced story of what happened to one issue across three years, which is the thing a resident actually wants.\nHyperlocal Substack conversion sits at 15-25% in tiny-town newsletters versus 3% for national news, so the $8 Reader tier riding one city's audience has a credible shot at $2K-$3K MRR in year one on one city.\n\nREASONS TO NOT BUILD\n\nSolution-side search is dead zero. Council meeting monitoring, municipal issue tracker, and council promise tracking all returned 0 searches/mo on Google Ads, so every paid subscriber costs comment-writing hours and growth stalls if the founder hates Reddit.\nThe named resident buyer barely exists at scale. Only 543 U.S. neighborhood and block associations file a Form 990, and the drift note confirms none of the loud first-person pain comes from an association board saying they will pay.\nThe incumbents can ship this as a feature. Citizen Portal AI has 2M meetings and the audience, OpenPublica is free and nationwide, and Granicus, Zencity, and Polimorphic have raised over $100M selling to the city side. The timeline-per-issue feature is one sprint away for them.\nThe honest ceiling is a content company, not a SaaS. $1.5M-$2.5M ARR at 40-60 cities means hiring and managing 20 freelance civic hobbyists; one operator plus agents breaks past roughly 20 cities before editorial quality cracks.\nRoast it with your agent\n\nPOTENTIAL PIVOT\n\nChange the primary buyer from volunteer residents' association boards to the civic hobbyist writer and the small local newsroom. Lead with a $49/mo Operator tier for that writer (five maintained timelines per city, embeddable) and an $8/mo Reader tier direct to residents. Keep the $500-$1,500/mo Agency tier for advocacy groups, developers, and zoning committees (the real \"residents' association\" buyers who actually transact). Validate in one city before any second city.\n\nRun this angle with your agent\n\nFOUNDER FIT\n\nNot every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo researchers with local-government knowledge who can verify records and r...\nTechnical and civic-engagement cofounders pairing data workflows with communi...\nFounders without research or civic-domain experience may need support interpr...\nTeams relying on automation alone may struggle with disputed claims, privacy,...\n\nA civic-obsessed writer in one specific city who already comments on local politics online, knows the players by name, and will spend 10 hours a week building the first six timelines by hand. Bonus points if they have been to a city council meeting this year. Technical skill is not the bottleneck: coding agents ship the pipeline in a weekend. What is scarce is the willingness to sit in a Nextdoor thread for a year while the first 300 readers find you. The founder who thinks they will automate this and skip the comment work will lose to the Lafayette hobbyist with 1,000 subscribers who does it by hand.\n\nWHAT IT DEMANDS\n\nDistribution\n9\nWriting\n8\nCivic taste\n9\nBuild\n4\nCapital\n2\n\nTHE REALITY\n\nFIRST REVENUE\n\n90-120 days\n\nCAPITAL IN\n\n$2K-$10K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card\n\nWHAT YOU'D SELL\n\nThe value ladder.\n\nOperator tier ($49/mo): one city, five live issue timelines, dated source links to every meeting, email digest when any timeline changes. Reader tier ($8/mo or $80/yr): direct-to-resident version of the same timelines, delivered as a weekly email. Agency tier (starts at $500/mo): a zoning committee, advocacy group, or developer gets custom issue tracking with Slack/email updates and a weekly analyst note.\n\n1\n\nLEAD MAGNET\n\nThe Open Timeline(Free)\n\nOne public timeline of a live local fight in one target city, updated weekly. Shared on r/[city] and in local Substack comments. Proves the tool works and seeds email signups.\n\n2\n\nFRONTEND\n\nReader subscription($8/mo or $80/yr)\n\nDirect-to-resident. Weekly email with all five issue timelines for one city plus alerts when anything moves. Sits under the Citizen Portal AI $15/mo anchor.\n\n3\n\nCORE\n\nOperator tier($49/mo per city)\n\nFor the civic hobbyist, newsroom, or Substack writer. Five maintained timelines, embeddable widgets, raw source links. They pay to save the 6-meetings-a-week research grind.\n\n4\n\nCONTINUITY\n\nAgency tier($500-$1,500/mo)\n\nView the full value ladder\n\nTHE PLAN\n\nIf you started today.\nFirst up.\n\nNobody searches for this yet. Google Ads shows zero monthly searches for council meeting monitoring, municipal issue tracker, and council promise tracking. The first 100 customers do not come from SEO or paid ads. They come from showing up where the work already happens, one city at a time.\n\nSee the detailed plan\nYear one, on a napkin.\nNAPKIN MATH\n\nWhat the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nFree timelines shipped in city 1 (6 live issues)\n6\nEmail signups in year 1 (assumption)\n2,000\nReader tier conversion (hyperlocal 15%)\n300 paid\nReader revenue: 300 x $8/mo\n$2,400/mo\nOperator buyers: hobbyist + newsroom\n2 x $49/mo\nAgency buyers (assumption): 1 advocacy group\n1 x $500/mo\nYear 1 MRR, city 1\n~$3,000/mo\nYear 1 ARR, city 1\n~$36K\n\nOne city, one year, done honestly: about $35K-$45K ARR. Most of it is Reader tier revenue riding the hyperlocal Substack conversion math. Operator and Agency tiers are gravy that pays the content costs.\n\nTHE CEILING IF IT COMPOUNDS\n$1.5M-$2.5M ARR\nRun the model on your numbers\n\nTHE AGENTS\n\nJam on it with your agent.\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCursor\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cTiming scored 8/10 for \"SaaS platform that tracks civic issues across\u2026\" \u2014 argue the other side.\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+  "status": "not_started",
+  "notes": "",
+  "_source_url": "https://www.ideabrowser.com/hub/ideas/today",
+  "_scraped_at": "2026-11-21T14:58:45.498778+00:00",
+  "_crawl_had_errors": true
+}

@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-21",
+      "title": "SaaS platform that tracks civic issues across council meetings for residents' associations",
+      "path": "library/2026/2026-11-21.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-20",
       "title": "SaaS platform that turns low-stock QR scans into vendor orders for facilities buying consumables",
       "path": "library/2026/2026-11-20.json",
