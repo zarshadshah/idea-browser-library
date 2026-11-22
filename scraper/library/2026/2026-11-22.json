@@ -1,0 +1,1162 @@
+{
+  "id": "2026-11-22",
+  "date": "2026-11-22",
+  "title": "SaaS tool that adapts prescribed workouts to hotel gym equipment for traveling strength clients",
+  "tagline": "A strength client lands in a hotel at 9pm. Their coach's prescribed Tuesday is a trap-bar deadlift top set, a Bulgarian split squat, and a lat pulldown. The hot...",
+  "badges": [],
+  "description": "A strength client lands in a hotel at 9pm. Their coach's prescribed Tuesday is a trap-bar deadlift top set, a Bulgarian split squat, and a lat pulldown. The hotel gym has two 50-lb dumbbells, a Smith machine, and a cable stack that goes to 80 pounds. The client stares at the printout, picks something wrong, and loses the week. The coach gets a text at 10pm. US business travel hit a record $423B in 2026 and 1,590 people a month type 'hotel room workout' or 'hotel gym workout' into Google looking for a fix.",
+  "scores": {
+    "opportunity": {
+      "score": null,
+      "label": ""
+    },
+    "problem": {
+      "score": null,
+      "label": ""
+    },
+    "feasibility": {
+      "score": null,
+      "label": ""
+    },
+    "whyNow": {
+      "score": null,
+      "label": ""
+    }
+  },
+  "keywords": [],
+  "marketGap": "",
+  "executionPlan": "",
+  "executionDifficulty": {
+    "score": null,
+    "note": ""
+  },
+  "categorization": {
+    "type": null,
+    "market": null,
+    "target": null,
+    "competitor": null
+  },
+  "communitySignals": {},
+  "communitySignalsDetail": "",
+  "communitySignalsRich": {},
+  "otherCommunitiesExtra": {},
+  "businessFitDeep": {},
+  "scoreCardsDeep": {},
+  "valueEquation": "",
+  "marketMatrix": "",
+  "acpFramework": "",
+  "valueLadderDetail": "",
+  "proofSignals": "",
+  "whyNowDetail": "",
+  "keywordAnalysisDetail": "",
+  "newLayoutSections": {
+    "At a Glance": "Fitbod iOS MRR\n$1M/mo\nPricing\nFree to $19-$49/mo flat\nYear one\n$60K-$120K\nCeiling\n$2M-$4M ARR\n\nWHAT YOU SELL\n\nTraveler Monthly$9.99/mo\n\nBIGGEST RISK\n\nEverfit and Trainerize ship the coach-set substitution feature today, so the coach white-label tier is a thin add-on against platforms the coach already pays;\u2026\n\nInterested?\nAdd to project\nBuild this idea",
+    "Why Now": "Vision got 133x cheaper, business travel hit record highs, hybrid coaching is now default\n\nAT A GLANCE\n\nFitbod iOS MRR\n$1M/mo\nPricing\nFree to $19-$49/mo flat\nYear one\n$60K-$120K\nCeiling\n$2M-$4M ARR\n\nWHAT YOU SELL\n\nTraveler Monthly$9.99/mo\n\nBIGGEST RISK\n\nEverfit and Trainerize ship the coach-set substitution feature today, so the coach white-label tier is a thin add-on against platforms the coach already pays;\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nVision got 133x cheaper, business travel hit record highs, hybrid coaching is now default\n\nThree waves hit at once in 2026. First, AI vision APIs collapsed in price. GPT-4 Vision cost $10 per million input tokens in 2024. Today the same work runs about $0.075 per million tokens on budget-tier models, a 133x cut in two years. That drops the cost of reading a hotel-gym photo to less than a tenth of a cent. A solo builder can now ship a 'take a picture of the gym, get your session' flow without a vision team or a cloud budget.\n\nSecond, the pain is at peak volume. The Global Business Travel Association projects US business travel at $423 billion in 2026 and global corporate travel at $1.71 trillion, up 7.2% year on year and above the 2019 baseline for the first time. Deloitte's October 2026 survey says US travel budgets are up 12% and trip volume up 6%. More trips means more clients in strange hotel gyms every week. Third, the buyer finally lives online: ABC Trainerize's 2026 report says 48% of coaches now run a hybrid (in-person + online) model, NASM says top-earning trainers are 2.2x more likely to be remote or hybrid, and 64% of coaches already use or explore AI. A per-seat SaaS add-on no longer feels foreign to this persona.",
+    "Proof & Signals": "YouTube has dozens of \"hotel gym workout\" videos aimed at travelers (Anton Antipov circuit, \"6 Workouts for TRAVEL - HOTELS\", \"DB ONLY HOTEL GYM FULL BODY WORKOUT\"); content supply confirms consumer-side content demand rather than coach-side.\n\nYOUTUBE\n\nThe status-quo DIY alternative for traveling clients today is a coach-sent canned bodyweight circuit over chat or the client Googling a hotel-gym workout, with content supply dominated by free YouTube tutorials rather than any purpose-built tool.\n\nYOUTUBE HOTEL-GYM SEARCH\n\nAI vision API pricing dropped from $10 per million input tokens for GPT-4 Vision in 2024 to roughly $0.075 per million tokens by mid-2026, a 133x price cut in two years, making per-image analysis cost less than a tenth of a cent on budget-tier models.\n\nAICOSTCHECK.COM AI VISION PRICING 2026\n\nThe Global Business Travel Association projects US business travel spending of $423 billion in 2026 and worldwide corporate travel spending of $1.71 trillion, with managed corporate spend expected to exceed pre-pandemic (2019) levels for the first time in 2026 at 7.2% annual growth.\n\nGBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)\nExplore the evidence",
+    "Market Snapshot": "The receipts.\n\nPAIN\n\n7/10 SEVERITY\n\n\u201cOne of her main complaints is that when her clients go on vacation, they ask her to switch\u201d\n\nr/personaltraining\n\n\u201cI hear the same worry from clients every June: \"I'm going away for a week, am I going to lose everything?\"\u201d\n\nTurnFit Personal Trainers Vancouver \u00b7 TurnFit coach\n\n\u201cBefore you leave, your coach adjusts your plan around your travel dates and the equipment you expect to find. Mid-trip, we check in to see how the sessions felt and tweak on the fly, more support if the room only has bands, less if you lucked into a full set\u2026\u201d\n\nTurnFit Personal Trainers Vancouver \u00b7 TurnFit coach\n\nAll 10 receipts, and where these people gather",
+    "Whitespace": "MARKET GAP\n\nEverfit and Trainerize already ship the feature; the real gap is the hotel equipment list\n\nUnderstand the opening\n\nTHE WEDGE\n\nBeats manual coach edits and generic apps (Fitbod, Adapt Fitness, FitTraveler) by staying inside the coach's program intent: it imports the prescribed session, respects the coach's substitution rules, and escalates edge cases instead of generating a new workout from scratch.\n\nThe incumbent to beat: Everfit\n\nPROOF & SIGNALS\n\nYouTube has dozens of \"hotel gym workout\" videos aimed at travelers (Anton Antipov circuit, \"6 Workouts for TRAVEL - HOTELS\", \"DB ONLY HOTEL GYM FULL BODY WORKOUT\"); content supply confirms consumer-side content demand rather than coach-side.\n\nYOUTUBE\n\nThe status-quo DIY alternative for traveling clients today is a coach-sent canned bodyweight circuit over chat or the client Googling a hotel-gym workout, with content supply dominated by free YouTube tutorials rather than any purpose-built tool.\n\nYOUTUBE HOTEL-GYM SEARCH\n\nAI vision API pricing dropped from $10 per million input tokens for GPT-4 Vision in 2024 to roughly $0.075 per million tokens by mid-2026, a 133x price cut in two years, making per-image analysis cost less than a tenth of a cent on budget-tier models.\n\nAICOSTCHECK.COM AI VISION PRICING 2026\n\nThe Global Business Travel Association projects US business travel spending of $423 billion in 2026 and worldwide corporate travel spending of $1.71 trillion, with managed corporate spend expected to exceed pre-pandemic (2019) levels for the first time in 2026 at 7.2% annual growth.\n\nGBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)\nExplore the evidence",
+    "Who You're Up Against": "10 PLAYERS\n\nApp Store\n\nFitbod (consumer gym-adaptation app) earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo and 290,185 reviews, proving massive paid demand for \"adapt workout to the equipment you have\" when sold direct to consumers.\n\nApp Store\n\nTravelTone, a direct-match hotel-gym-reviews app, gets 865 est. downloads/mo on iOS with only 9 reviews and no estimated revenue; solo-built attempt at the same niche with weak traction.\n\nTrueCoach\n\nA personal-trainer SaaS with a 3,000+ exercise video library and drag-and-drop workout builder; pricing runs $29.98/mo at 5 clients, $69.98 at 20, and $164.98 at 50.\n\nTrainHeroic\n\nPrices coach seats by athlete count: $9.99/mo for 1 athlete, $17.99 for 5, $34.99 for 15, $44.99 for 25, $74.99 for 50, $99.99 for 100, up to $399.99 for 1,000; marketplace sales take $1/athlete plus 2.9% + $0.30 per transaction.\n\nEverfit\n\nINCUMBENT\n\nAlready ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so clients can swap when equipment is missing, with coach-controlled allow-lists and a per-client Replace Exercise toggle; serves 380,000+ coaches across 184 countries.\n\nTrainerize\n\nShipped coach-and-client exercise substitution with quick filters for Same Muscle Group, Same Equipment, and Same Movement; coaches can also pre-set alternate options on an exercise.\n\nFitbod\n\n, a consumer gym-adaptation app, earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo; a direct consumer competitor that already adapts workouts to whatever equipment a lifter has.\n\nGymverse\n\nMarkets equipment-flexible workout plans for travelers direct to consumers at $19.99/mo or $119.99/yr, built by real coaches, with a 7-day trial; the exact \"adapts to any hotel gym\" positioning but sold B2C, not B2B2C.",
+    "People Are Asking For It": "REDDIT\n\n\u201cYour trainer adjusts the plan. If you are traveling and only have a hotel gym, your trainer rebuilds the relevant sessions around that equipment.\u201d\n\nTrainwell \u00b7 Trainwell editorial\n\n\u201cLack of equipment and an accessible place can make you fall into repetitive, draining workout programming, especially if your clients travel for weeks.\u201d\n\nEverfit blog \u00b7 Everfit\n\n\u201cI recently just talked to my friend who is a trainer. One of her main complaints is that when her clients go on vacation, they ask her to switch programming.\u201d\n\nr/personaltraining \u00b7 r/personaltraining poster",
+    "The Verdict": "Should you build this?\n\nREASONS TO BUILD\n\nThe pain is named by real operators on both sides: TurnFit coaches hear the same panic every June, Everfit calls travel rewrites a burnout driver, and a StrongFirst lifter spends half his month Googling hotel gym workouts; this is a workflow problem people already pay humans to solve.\nFitbod earns about $1M a month on iOS alone selling equipment-adaptive workouts to consumers, which sets a ceiling anchor and proves travelers will pay for the exact mechanic, so a coach-respecting version has a real wedge Fitbod cannot copy without breaking its own product.\nTiming is unusually clean for a solo builder: AI vision dropped 133x in cost since 2024, US business travel hit a record $423B in 2026, and 48% of coaches now run hybrid as their primary model, so the build is cheap and the buyer pool is at peak volume.\nDistribution has one unfair channel: 1,590 US searches a month for hotel room and hotel gym workouts currently return travel-blog listicles, not tools, which an AI-agent-driven content ops can take over in 90 days before any paid ad spend.\n\nREASONS TO NOT BUILD\n\nEverfit and Trainerize already ship coach-set alternate exercises with equipment and muscle-group filters for the 380K+ coaches they serve, so the coach white-label SKU is a thin feature add-on to platforms the coach already pays $45 to $135 a month for.\nFitbod could ship an 'import your coach's program' button in one sprint and absorb the wedge; they already have the consumers, the exercise library, and the brand, so the window is the first-mover year, not a durable moat.\nZero Google search volume for the coach-side solution terms means outbound to coaches has to carry 100% of the acquisition load, and coaches do not buy through content SEO; the traveler side works but the economics are a $29 trip and a $9.99 monthly with brutal Q4 churn as travel goes seasonal.\nSafety and liability on an automated substitution that hurts a traveling client in a hotel room is a lawsuit a solo founder cannot afford on $29 of trip revenue, and liability insurance for automated program adjustments is a real cost nobody has priced into the napkin math.\nRoast it with your agent\n\nPOTENTIAL PIVOT\n\nChange the primary buyer from coach-per-seat to traveler-direct. Lead SKU: $29 one-trip adaptation plus $9.99/mo for frequent travelers, sold off a free 'Hotel Gym Decoder' photo tool. Keep coach white-label as a flat roster-priced second SKU ($19 to $49/mo), not a per-seat add-on on top of Trainerize or TrueCoach. Distribution shifts to SEO on hotel-gym queries and r/personaltraining comments, not cold coach outreach.\n\nRun this angle with your agent",
+    "Founder Fit": "Not every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo coaches who code and understand strength programming, with access to tra...\nSmall teams pairing fitness-coaching expertise with product or AI engineering\nB2B founders experienced in selling workflow tools to independent professionals\nConsumer fitness founders without coach relationships or B2B sales experience\nAI builders unfamiliar with exercise programming and safe substitution bounda...\n\nA current or former online strength coach who codes with AI agents, has run hybrid programming for traveling clients, and already has 2,000+ followers in the lifting or hybrid-coach community. The domain judgment on what a safe substitution is (never swap a heavy deadlift for a kettlebell swing with a deconditioned client) matters more than the AI engineering. The founder who wins has opinions about trap-bar substitutions for conventional pulls and can defend them on a podcast. If you have never written a strength program, you will ship a toy that lifters can smell in one session.\n\nWHAT IT DEMANDS\n\nDomain depth\n9\nContent SEO\n8\nCommunity presence\n8\nProduct taste\n6\nCoding\n4\n\nTHE REALITY\n\nFIRST REVENUE\n\n60-90 days\n\nCAPITAL IN\n\n$3K-$15K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card",
+    "What You'd Sell": "The value ladder.\n\nLead with a $29 one-trip adaptation sold direct to the traveler; frictionless first yes. Upsell $9.99 a month for traveler subscription (frequent flyers, consultants, sales teams). Coach white-label at $19 a month flat (up to 10 clients) or $49 (up to 50 clients); priced on roster, not seats.\n\n1\n\nLEAD MAGNET\n\nHotel Gym Decoder(Free)\n\nSnap a photo of the hotel gym, get one free session adapted; email captures both travelers and coaches.\n\n2\n\nFRONTEND\n\nOne-Trip Adaptation($29 per trip)\n\nUpload the coach's prescribed session plus a hotel gym photo, get the full week adapted; impulse buy before a flight.\n\n3\n\nCORE\n\nTraveler Monthly($9.99/mo)\n\nUnlimited trips, saved coach program, saved hotel history; sold direct to the frequent-traveler lifter.\n\n4\n\nCONTINUITY\n\nCoach White-Label($19-$49/mo flat)\n\nView the full value ladder",
+    "The Plan": "If you started today.\nFirst up.\n\nNobody searches for 'exercise substitution app' or 'workout adaptation hotel gym'. Those keywords return near zero. Coaches do not shop for this tool, so cold outreach to coaches will stall. The first 100 customers come from the traveler side, where 1,590 US searches a month across 'hotel room workout' and 'hotel gym workout' point to warm intent, and from one subreddit where the exact buyer already talks about the pain.\n\nSee the detailed plan\nYear one, on a napkin.",
+    "Napkin Math": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nMonthly US searches for 'hotel room workout' + 'hotel gym workout'\n1,590\nSEO capture at 50 city pages, rank 3-5 (assumption)\n8% CTR = 127/mo\nReddit comment funnel, 1/day x 30 days (assumption)\n30 clicks/day\nTotal top-of-funnel visitors, month 6\n~1,000/mo\nFree-trial to paid conversion (assumption, SaaS benchmark)\n3%\nNew paying travelers per month, month 6\n30\nAverage price blend (one-trip $29, monthly $9.99)\n$18\nMonthly traveler revenue, month 6\n$540\nCoach white-label partners signed (year one, assumption)\n15\nCoach white-label MRR at $19-$49 blended $30\n$450\nBlended MRR exiting month 12\n~$2,500\nYear-one revenue (ramp from zero)\n$15K-$25K\n\nMost rows are assumptions. The sourced numbers are the 1,590 search volume, Fitbod's $1M/mo as a ceiling anchor, and incumbent prices. A conservative year-one path lands at $15K-$25K; a competent founder with content velocity gets to $60K-$120K if SEO hits and one coach partnership compounds.\n\nTHE CEILING IF IT COMPOUNDS\n$2M-$4M ARR\nRun the model on your numbers\n\nTHE AGENTS\n\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCursor\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cPain scored 7/10 for \"SaaS tool that adapts prescribed workouts to\u2026\" \u2014 argue the other side.\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nProblem\nI'd like a reply"
+  },
+  "newLayoutExpandedSections": {
+    "The Full Timing Case": {
+      "text": "7\n/10\nTIMING\n\nThree tailwinds land in 2026: business travel crossed its pre-pandemic baseline at $423B, 48% of coaches run hybrid as primary, and vision cost collapsed; the counter is zero search volume for the coach-side solution term.\n\nThree waves hit at once in 2026. First, AI vision APIs collapsed in price. GPT-4 Vision cost $10 per million input tokens in 2024. Today the same work runs about $0.075 per million tokens on budget-tier models, a 133x cut in two years. That drops the cost of reading a hotel-gym photo to less than a tenth of a cent. A solo builder can now ship a 'take a picture of the gym, get your session' flow without a vision team or a cloud budget.\n\nSecond, the pain is at peak volume. The Global Business Travel Association projects US business travel at $423 billion in 2026 and global corporate travel at $1.71 trillion, up 7.2% year on year and above the 2019 baseline for the first time. Deloitte's October 2026 survey says US travel budgets are up 12% and trip volume up 6%. More trips means more clients in strange hotel gyms every week. Third, the buyer finally lives online: ABC Trainerize's 2026 report says 48% of coaches now run a hybrid (in-person + online) model, NASM says top-earning trainers are 2.2x more likely to be remote or hybrid, and 64% of coaches already use or explore AI. A per-seat SaaS add-on no longer feels foreign to this persona.\n\nTHE SIGNALS\n\nAI vision cost per image down 133x since 2024, from $10/M tokens to $0.075/M (budget tier under a tenth of a cent per image).\nUS business travel $423B in 2026, global $1.71T, above 2019 for the first time at 7.2% growth (GBTA).\nUS corporate travel budgets up 12%, trip volume up 6% in 2026 (Deloitte Oct 2026 survey).\n48% of personal trainers now run hybrid as their primary model; top earners 2.2x more likely to be remote (ABC Trainerize + NASM, 2026).\nVirtual fitness market $43.78B in 2026, up from $34.25B in 2025 (Fortune Business Insights).\nHonest counter: timing enables the build, not the sale. Coaches do not search for 'exercise substitution app' or 'workout adaptation hotel gym' (near-zero volume), and Everfit and Trainerize have already shipped coach-set alternate exercises. The vision wave helps every incumbent too, so first-mover is the window, not a durable moat.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Everfit": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "aicostcheck.com AI Vision Pricing 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 Business Travel Index": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "Deloitte 2026 Corporate Travel Study": "https://www.micetraveladvisor.com/news/article/illinois-new-york-and-other-us-states-keep-americas-corporate-travel-industry-moving-in-2026/",
+        "trainerize.com": "https://www.trainerize.com/blog/personal-trainer-industry-statistics/",
+        "\u201cOne of her main complaints is that when her clients go on vacation, they ask her to switch\u201d\n\nr/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on/",
+        "\u201cI hear the same worry from clients every June: \"I'm going away for a week, am I going to lose everything?\"\u201d\n\nTurnFit Personal Trainers Vancouver \u00b7 TurnFit coach": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "\u201cBefore you leave, your coach adjusts your plan around your travel dates and the equipment you expect to find. Mid-trip, we check in to see how the sessions felt and tweak on the fly, more support if": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "YOUTUBE": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "YOUTUBE HOTEL-GYM SEARCH": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "AICOSTCHECK.COM AI VISION PRICING 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "App Store\n\nFitbod (consumer gym-adaptation app) earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo and 290,185 reviews, proving massive paid demand for \"adapt workout to": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "App Store\n\nTravelTone, a direct-match hotel-gym-reviews app, gets 865 est. downloads/mo on iOS with only 9 reviews and no estimated revenue; solo-built attempt at the same niche with weak traction.": "https://apps.apple.com/us/app/traveltone-hotel-gym-reviews/id6738668429",
+        "TrueCoach\n\nA personal-trainer SaaS with a 3,000+ exercise video library and drag-and-drop workout builder; pricing runs $29.98/mo at 5 clients, $69.98 at 20, and $164.98 at 50.": "https://truecoach.co/",
+        "TrainHeroic\n\nPrices coach seats by athlete count: $9.99/mo for 1 athlete, $17.99 for 5, $34.99 for 15, $44.99 for 25, $74.99 for 50, $99.99 for 100, up to $399.99 for 1,000; marketplace sales take $1/": "https://www.trainheroic.com/pricing/",
+        "Everfit\n\nINCUMBENT\n\nAlready ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so clients can swap when equipment is missing, with coach-controlled allow-li": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "Trainerize\n\nShipped coach-and-client exercise substitution with quick filters for Same Muscle Group, Same Equipment, and Same Movement; coaches can also pre-set alternate options on an exercise.": "https://help.trainerize.com/hc/en-us/articles/46226883603604-How-to-Substitute-Exercises-During-a-Workout",
+        "Fitbod\n\n, a consumer gym-adaptation app, earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo; a direct consumer competitor that already adapts workouts to whatever equipm": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "Gymverse\n\nMarkets equipment-flexible workout plans for travelers direct to consumers at $19.99/mo or $119.99/yr, built by real coaches, with a 7-day trial; the exact \"adapts to any hotel gym\" position": "https://www.hotelgyms.com/blog/gymverse-fitness-app-review",
+        "\u201cYour trainer adjusts the plan. If you are traveling and only have a hotel gym, your trainer rebuilds the relevant sessions around that equipment.\u201d\n\nTrainwell \u00b7 Trainwell editorial": "https://www.trainwell.net/blog/best-online-strength-training-programs-with-a-real-coach",
+        "\u201cLack of equipment and an accessible place can make you fall into repetitive, draining workout programming, especially if your clients travel for weeks.\u201d\n\nEverfit blog \u00b7 Everfit": "https://blog.everfit.io/how-to-avoid-burnout-when-your-customers-travel",
+        "\u201cI recently just talked to my friend who is a trainer. One of her main complaints is that when her clients go on vacation, they ask her to switch programming.\u201d\n\nr/personaltraining \u00b7 r/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on_vacation/"
+      }
+    },
+    "Proof & Signals (Full)": {
+      "text": "THE HARD NUMBERS\n\nYouTube has dozens of \"hotel gym workout\" videos aimed at travelers (Anton Antipov circuit, \"6 Workouts for TRAVEL - HOTELS\", \"DB ONLY HOTEL GYM FULL BODY WORKOUT\"); content supply confirms consumer-side content demand rather than coach-side.\n\nYOUTUBE\n\nThe status-quo DIY alternative for traveling clients today is a coach-sent canned bodyweight circuit over chat or the client Googling a hotel-gym workout, with content supply dominated by free YouTube tutorials rather than any purpose-built tool.\n\nYOUTUBE HOTEL-GYM SEARCH\n\nAI vision API pricing dropped from $10 per million input tokens for GPT-4 Vision in 2024 to roughly $0.075 per million tokens by mid-2026, a 133x price cut in two years, making per-image analysis cost less than a tenth of a cent on budget-tier models.\n\nAICOSTCHECK.COM AI VISION PRICING 2026\n\nThe Global Business Travel Association projects US business travel spending of $423 billion in 2026 and worldwide corporate travel spending of $1.71 trillion, with managed corporate spend expected to exceed pre-pandemic (2019) levels for the first time in 2026 at 7.2% annual growth.\n\nGBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)\n\nPEOPLE ARE ASKING FOR IT\n\n\u201cYour trainer adjusts the plan. If you are traveling and only have a hotel gym, your trainer rebuilds the relevant sessions around that equipment.\u201d\n\nTrainwell \u00b7 Trainwell editorial\n\n\u201cLack of equipment and an accessible place can make you fall into repetitive, draining workout programming, especially if your clients travel for weeks.\u201d\n\nEverfit blog \u00b7 Everfit\n\n\u201cI recently just talked to my friend who is a trainer. One of her main complaints is that when her clients go on vacation, they ask her to switch programming.\u201d\n\nr/personaltraining \u00b7 r/personaltraining poster\n\nWHAT THE RESEARCH SAYS\n\nPrescribed sessions can break when hotel equipment differs\nThe need arises when clients travel, but frequency is unverified\nExisting tools and manual workarounds may already be sufficient\nAdjacent products show the problem is recognizable, not that coaches will pay\n\nThe clearest demand evidence is a credible recurring-workflow pain: hotel equipment can differ from what a coach prescribed, prompting edits, improvisation, skipped exercises, or delayed replies. Adjacent products explicitly market equipment-aware and travel-workout adaptation, which supports problem recognition and technical feasibility. But the supplied evidence does not verify how often coaches face this task, whether existing platforms already solve it adequately, or whether coaches will pay for a separate product. Treat this as a paid-pilot hypothesis, not validated standalone SaaS demand.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Everfit": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "aicostcheck.com AI Vision Pricing 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 Business Travel Index": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "Deloitte 2026 Corporate Travel Study": "https://www.micetraveladvisor.com/news/article/illinois-new-york-and-other-us-states-keep-americas-corporate-travel-industry-moving-in-2026/",
+        "trainerize.com": "https://www.trainerize.com/blog/personal-trainer-industry-statistics/",
+        "\u201cOne of her main complaints is that when her clients go on vacation, they ask her to switch\u201d\n\nr/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on/",
+        "\u201cI hear the same worry from clients every June: \"I'm going away for a week, am I going to lose everything?\"\u201d\n\nTurnFit Personal Trainers Vancouver \u00b7 TurnFit coach": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "\u201cBefore you leave, your coach adjusts your plan around your travel dates and the equipment you expect to find. Mid-trip, we check in to see how the sessions felt and tweak on the fly, more support if": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "YOUTUBE": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "YOUTUBE HOTEL-GYM SEARCH": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "AICOSTCHECK.COM AI VISION PRICING 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "App Store\n\nFitbod (consumer gym-adaptation app) earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo and 290,185 reviews, proving massive paid demand for \"adapt workout to": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "App Store\n\nTravelTone, a direct-match hotel-gym-reviews app, gets 865 est. downloads/mo on iOS with only 9 reviews and no estimated revenue; solo-built attempt at the same niche with weak traction.": "https://apps.apple.com/us/app/traveltone-hotel-gym-reviews/id6738668429",
+        "TrueCoach\n\nA personal-trainer SaaS with a 3,000+ exercise video library and drag-and-drop workout builder; pricing runs $29.98/mo at 5 clients, $69.98 at 20, and $164.98 at 50.": "https://truecoach.co/",
+        "TrainHeroic\n\nPrices coach seats by athlete count: $9.99/mo for 1 athlete, $17.99 for 5, $34.99 for 15, $44.99 for 25, $74.99 for 50, $99.99 for 100, up to $399.99 for 1,000; marketplace sales take $1/": "https://www.trainheroic.com/pricing/",
+        "Everfit\n\nINCUMBENT\n\nAlready ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so clients can swap when equipment is missing, with coach-controlled allow-li": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "Trainerize\n\nShipped coach-and-client exercise substitution with quick filters for Same Muscle Group, Same Equipment, and Same Movement; coaches can also pre-set alternate options on an exercise.": "https://help.trainerize.com/hc/en-us/articles/46226883603604-How-to-Substitute-Exercises-During-a-Workout",
+        "Fitbod\n\n, a consumer gym-adaptation app, earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo; a direct consumer competitor that already adapts workouts to whatever equipm": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "Gymverse\n\nMarkets equipment-flexible workout plans for travelers direct to consumers at $19.99/mo or $119.99/yr, built by real coaches, with a 7-day trial; the exact \"adapts to any hotel gym\" position": "https://www.hotelgyms.com/blog/gymverse-fitness-app-review",
+        "\u201cYour trainer adjusts the plan. If you are traveling and only have a hotel gym, your trainer rebuilds the relevant sessions around that equipment.\u201d\n\nTrainwell \u00b7 Trainwell editorial": "https://www.trainwell.net/blog/best-online-strength-training-programs-with-a-real-coach",
+        "\u201cLack of equipment and an accessible place can make you fall into repetitive, draining workout programming, especially if your clients travel for weeks.\u201d\n\nEverfit blog \u00b7 Everfit": "https://blog.everfit.io/how-to-avoid-burnout-when-your-customers-travel",
+        "\u201cI recently just talked to my friend who is a trainer. One of her main complaints is that when her clients go on vacation, they ask her to switch programming.\u201d\n\nr/personaltraining \u00b7 r/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on_vacation/"
+      }
+    },
+    "The Opening (Full Market Analysis)": {
+      "text": "The coaching software market splits into five big platforms and one price ceiling. TrainHeroic starts at $9.99/mo for one athlete and climbs to $74.99 at 50 athletes. Everfit runs $19 at 5 clients and $95 at 50. Trainerize is $25 and $135. TrueCoach sits at $29.98 and $164.98. Adiletix undercuts all of them at a flat $39.99. A coach with 20 clients is already paying $45 to $80 a month for the platform itself. A new per-seat add-on at $15 to $50 is asking for a 30-70% uplift on that line item, for one feature.\n\nThe real gap, if one exists, is not substitution logic. It is the hotel equipment list. None of the coaching platforms ingest a picture of the hotel gym and map it to the coach's prescribed session. The substitution engines all assume the client picks from a static alternate list the coach built months ago, which breaks when the hotel has a Smith machine, two dumbbells under 50 lb, and a broken cable column. A tool that solved only this (photo of the hotel gym in, equipment-tagged session out, pushed into the coach's existing Everfit or Trainerize program) would be a feature, not a product. Everfit could ship it in a quarter if a founder proved coaches would pay for it.\n\nTrainHeroic: $9.99-$74.99/mo per coach by athlete tier, no coach-set substitution library.\n\nEverfit: $19-$95/mo, ships coach-set alternate exercises with per-client Replace permissions, used by 380K+ coaches.\n\nTrainerize: $25-$135/mo, ships Substitute button with Same Equipment and Same Muscle filters plus trainer-pre-set alternates on roadmap.\n\nTrueCoach: $29.98-$164.98/mo, 3,000+ exercise video library, no built-in substitution engine (coach manually edits).\n\nFitbod: ~$1M/mo iOS revenue selling equipment-adaptive workouts direct to consumers, bypassing coaches entirely.\n\nGymverse: $19.99/mo direct-to-traveler, markets as coach-built plans that adapt to any hotel gym.\n\nAdapt Fitness: consumer app asking each session for home/gym/travel equipment and auto-adapting; names the pain in its marketing.\n\nTrainwell: done-for-you human coaches selling hotel-gym rewrites as a product feature.\n\nYour way in: Beats manual coach edits and generic apps (Fitbod, Adapt Fitness, FitTraveler) by staying inside the coach's program intent: it imports the prescribed session, respects the coach's substitution rules, and escalates edge cases instead of generating a new workout from scratch.\n\nThe incumbent to beat: Everfit\n\nWHO\u2019S ALREADY IN THE MARKET\n\nApp Store\n\nFitbod (consumer gym-adaptation app) earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo and 290,185 reviews, proving massive paid demand for \"adapt workout to the equipment you have\" when sold direct to consumers.\n\nApp Store\n\nTravelTone, a direct-match hotel-gym-reviews app, gets 865 est. downloads/mo on iOS with only 9 reviews and no estimated revenue; solo-built attempt at the same niche with weak traction.\n\nTrueCoach\n\nA personal-trainer SaaS with a 3,000+ exercise video library and drag-and-drop workout builder; pricing runs $29.98/mo at 5 clients, $69.98 at 20, and $164.98 at 50.\n\nTrainHeroic\n\nPrices coach seats by athlete count: $9.99/mo for 1 athlete, $17.99 for 5, $34.99 for 15, $44.99 for 25, $74.99 for 50, $99.99 for 100, up to $399.99 for 1,000; marketplace sales take $1/athlete plus 2.9% + $0.30 per transaction.\n\nEverfit\n\nINCUMBENT\n\nAlready ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so clients can swap when equipment is missing, with coach-controlled allow-lists and a per-client Replace Exercise toggle; serves 380,000+ coaches across 184 countries.\n\nTrainerize\n\nShipped coach-and-client exercise substitution with quick filters for Same Muscle Group, Same Equipment, and Same Movement; coaches can also pre-set alternate options on an exercise.\n\nFitbod\n\n, a consumer gym-adaptation app, earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo; a direct consumer competitor that already adapts workouts to whatever equipment a lifter has.\n\nGymverse\n\nMarkets equipment-flexible workout plans for travelers direct to consumers at $19.99/mo or $119.99/yr, built by real coaches, with a 7-day trial; the exact \"adapts to any hotel gym\" positioning but sold B2C, not B2B2C.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Everfit": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "aicostcheck.com AI Vision Pricing 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 Business Travel Index": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "Deloitte 2026 Corporate Travel Study": "https://www.micetraveladvisor.com/news/article/illinois-new-york-and-other-us-states-keep-americas-corporate-travel-industry-moving-in-2026/",
+        "trainerize.com": "https://www.trainerize.com/blog/personal-trainer-industry-statistics/",
+        "\u201cOne of her main complaints is that when her clients go on vacation, they ask her to switch\u201d\n\nr/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on/",
+        "\u201cI hear the same worry from clients every June: \"I'm going away for a week, am I going to lose everything?\"\u201d\n\nTurnFit Personal Trainers Vancouver \u00b7 TurnFit coach": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "\u201cBefore you leave, your coach adjusts your plan around your travel dates and the equipment you expect to find. Mid-trip, we check in to see how the sessions felt and tweak on the fly, more support if": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "YOUTUBE": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "YOUTUBE HOTEL-GYM SEARCH": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "AICOSTCHECK.COM AI VISION PRICING 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "App Store\n\nFitbod (consumer gym-adaptation app) earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo and 290,185 reviews, proving massive paid demand for \"adapt workout to": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "App Store\n\nTravelTone, a direct-match hotel-gym-reviews app, gets 865 est. downloads/mo on iOS with only 9 reviews and no estimated revenue; solo-built attempt at the same niche with weak traction.": "https://apps.apple.com/us/app/traveltone-hotel-gym-reviews/id6738668429",
+        "TrueCoach\n\nA personal-trainer SaaS with a 3,000+ exercise video library and drag-and-drop workout builder; pricing runs $29.98/mo at 5 clients, $69.98 at 20, and $164.98 at 50.": "https://truecoach.co/",
+        "TrainHeroic\n\nPrices coach seats by athlete count: $9.99/mo for 1 athlete, $17.99 for 5, $34.99 for 15, $44.99 for 25, $74.99 for 50, $99.99 for 100, up to $399.99 for 1,000; marketplace sales take $1/": "https://www.trainheroic.com/pricing/",
+        "Everfit\n\nINCUMBENT\n\nAlready ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so clients can swap when equipment is missing, with coach-controlled allow-li": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "Trainerize\n\nShipped coach-and-client exercise substitution with quick filters for Same Muscle Group, Same Equipment, and Same Movement; coaches can also pre-set alternate options on an exercise.": "https://help.trainerize.com/hc/en-us/articles/46226883603604-How-to-Substitute-Exercises-During-a-Workout",
+        "Fitbod\n\n, a consumer gym-adaptation app, earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo; a direct consumer competitor that already adapts workouts to whatever equipm": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "Gymverse\n\nMarkets equipment-flexible workout plans for travelers direct to consumers at $19.99/mo or $119.99/yr, built by real coaches, with a 7-day trial; the exact \"adapts to any hotel gym\" position": "https://www.hotelgyms.com/blog/gymverse-fitness-app-review",
+        "\u201cYour trainer adjusts the plan. If you are traveling and only have a hotel gym, your trainer rebuilds the relevant sessions around that equipment.\u201d\n\nTrainwell \u00b7 Trainwell editorial": "https://www.trainwell.net/blog/best-online-strength-training-programs-with-a-real-coach",
+        "\u201cLack of equipment and an accessible place can make you fall into repetitive, draining workout programming, especially if your clients travel for weeks.\u201d\n\nEverfit blog \u00b7 Everfit": "https://blog.everfit.io/how-to-avoid-burnout-when-your-customers-travel",
+        "\u201cI recently just talked to my friend who is a trainer. One of her main complaints is that when her clients go on vacation, they ask her to switch programming.\u201d\n\nr/personaltraining \u00b7 r/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on_vacation/"
+      }
+    },
+    "The Detailed Plan": {
+      "text": "Launch a responsive SaaS that adapts prescribed workouts to confirmed hotel equipment using coach-approved rules, with uncertain cases routed for review. Start with workout import, an equipment checklist, and an approve/edit/reject queue; then test a paid pilot with one coach and ten travelling clients to prove repeat usage and time saved. Next, scale through coach referrals\u2014ready to earn 25 renewing coaches?\n\nTHE FIRST MOVES\n\n1\nContact 15 independent strength coaches and ask for details of their last three travel-related workout adaptations.\n2\nCreate a one-page SaaS pilot offer with scope, measurement plan, clear safety boundaries, and a real paid price test.\n3\nPrototype one end-to-end case: import a prescribed workout, confirm equipment, suggest bounded alternatives, and route exceptions to coach review.\n\nTHE MVP\n\nBuild a responsive SaaS web app for workout import, client equipment confirmation, coach-approved substitution suggestions, and an approve/edit/reject queue. Start with one coach, about ten travelling clients, and a limited exercise library; defer computer vision, native apps, and broad integrations.\n\nWHERE THE FIRST USERS COME FROM\n\nFounder-led coach outreach \u00b7 Direct conversations reach the buyer and surface recent, measurable examples of the problem.\n\nCoach communities and professional networks \u00b7 Relevant professional groups can provide design partners and referrals.\n\nTargeted content and landing-page tests \u00b7 Demonstrations can make the coach-control distinction clear against generic workout generation.\n\nTIMELINE\n\n1-2 weeks\n\nBUDGET\n\n$0-10K\n\nTHE MILESTONE\n\nWithin 12 months, secure 25 paying coaches with repeat monthly usage, measurable net time savings, and evidence that customers renew.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Everfit": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "aicostcheck.com AI Vision Pricing 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 Business Travel Index": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "Deloitte 2026 Corporate Travel Study": "https://www.micetraveladvisor.com/news/article/illinois-new-york-and-other-us-states-keep-americas-corporate-travel-industry-moving-in-2026/",
+        "trainerize.com": "https://www.trainerize.com/blog/personal-trainer-industry-statistics/",
+        "\u201cOne of her main complaints is that when her clients go on vacation, they ask her to switch\u201d\n\nr/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on/",
+        "\u201cI hear the same worry from clients every June: \"I'm going away for a week, am I going to lose everything?\"\u201d\n\nTurnFit Personal Trainers Vancouver \u00b7 TurnFit coach": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "\u201cBefore you leave, your coach adjusts your plan around your travel dates and the equipment you expect to find. Mid-trip, we check in to see how the sessions felt and tweak on the fly, more support if": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "YOUTUBE": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "YOUTUBE HOTEL-GYM SEARCH": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "AICOSTCHECK.COM AI VISION PRICING 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "App Store\n\nFitbod (consumer gym-adaptation app) earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo and 290,185 reviews, proving massive paid demand for \"adapt workout to": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "App Store\n\nTravelTone, a direct-match hotel-gym-reviews app, gets 865 est. downloads/mo on iOS with only 9 reviews and no estimated revenue; solo-built attempt at the same niche with weak traction.": "https://apps.apple.com/us/app/traveltone-hotel-gym-reviews/id6738668429",
+        "TrueCoach\n\nA personal-trainer SaaS with a 3,000+ exercise video library and drag-and-drop workout builder; pricing runs $29.98/mo at 5 clients, $69.98 at 20, and $164.98 at 50.": "https://truecoach.co/",
+        "TrainHeroic\n\nPrices coach seats by athlete count: $9.99/mo for 1 athlete, $17.99 for 5, $34.99 for 15, $44.99 for 25, $74.99 for 50, $99.99 for 100, up to $399.99 for 1,000; marketplace sales take $1/": "https://www.trainheroic.com/pricing/",
+        "Everfit\n\nINCUMBENT\n\nAlready ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so clients can swap when equipment is missing, with coach-controlled allow-li": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "Trainerize\n\nShipped coach-and-client exercise substitution with quick filters for Same Muscle Group, Same Equipment, and Same Movement; coaches can also pre-set alternate options on an exercise.": "https://help.trainerize.com/hc/en-us/articles/46226883603604-How-to-Substitute-Exercises-During-a-Workout",
+        "Fitbod\n\n, a consumer gym-adaptation app, earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo; a direct consumer competitor that already adapts workouts to whatever equipm": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "Gymverse\n\nMarkets equipment-flexible workout plans for travelers direct to consumers at $19.99/mo or $119.99/yr, built by real coaches, with a 7-day trial; the exact \"adapts to any hotel gym\" position": "https://www.hotelgyms.com/blog/gymverse-fitness-app-review",
+        "\u201cYour trainer adjusts the plan. If you are traveling and only have a hotel gym, your trainer rebuilds the relevant sessions around that equipment.\u201d\n\nTrainwell \u00b7 Trainwell editorial": "https://www.trainwell.net/blog/best-online-strength-training-programs-with-a-real-coach",
+        "\u201cLack of equipment and an accessible place can make you fall into repetitive, draining workout programming, especially if your clients travel for weeks.\u201d\n\nEverfit blog \u00b7 Everfit": "https://blog.everfit.io/how-to-avoid-burnout-when-your-customers-travel",
+        "\u201cI recently just talked to my friend who is a trainer. One of her main complaints is that when her clients go on vacation, they ask her to switch programming.\u201d\n\nr/personaltraining \u00b7 r/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on_vacation/"
+      }
+    },
+    "The Full Value Ladder": {
+      "text": "1\n\nLEAD MAGNET\n\nHotel Gym Decoder(Free)\n\nSnap a photo of the hotel gym, get one free session adapted; email captures both travelers and coaches.\n\n2\n\nFRONTEND\n\nOne-Trip Adaptation($29 per trip)\n\nUpload the coach's prescribed session plus a hotel gym photo, get the full week adapted; impulse buy before a flight.\n\n3\n\nCORE\n\nTraveler Monthly($9.99/mo)\n\nUnlimited trips, saved coach program, saved hotel history; sold direct to the frequent-traveler lifter.\n\n4\n\nCONTINUITY\n\nCoach White-Label($19-$49/mo flat)\n\nCoach-branded tool with coach-set substitution rules; priced on roster band, not per seat; sold as a retention add-on to TrueCoach and Trainerize users.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Everfit": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "aicostcheck.com AI Vision Pricing 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 Business Travel Index": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "Deloitte 2026 Corporate Travel Study": "https://www.micetraveladvisor.com/news/article/illinois-new-york-and-other-us-states-keep-americas-corporate-travel-industry-moving-in-2026/",
+        "trainerize.com": "https://www.trainerize.com/blog/personal-trainer-industry-statistics/",
+        "\u201cOne of her main complaints is that when her clients go on vacation, they ask her to switch\u201d\n\nr/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on/",
+        "\u201cI hear the same worry from clients every June: \"I'm going away for a week, am I going to lose everything?\"\u201d\n\nTurnFit Personal Trainers Vancouver \u00b7 TurnFit coach": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "\u201cBefore you leave, your coach adjusts your plan around your travel dates and the equipment you expect to find. Mid-trip, we check in to see how the sessions felt and tweak on the fly, more support if": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "YOUTUBE": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "YOUTUBE HOTEL-GYM SEARCH": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "AICOSTCHECK.COM AI VISION PRICING 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "App Store\n\nFitbod (consumer gym-adaptation app) earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo and 290,185 reviews, proving massive paid demand for \"adapt workout to": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "App Store\n\nTravelTone, a direct-match hotel-gym-reviews app, gets 865 est. downloads/mo on iOS with only 9 reviews and no estimated revenue; solo-built attempt at the same niche with weak traction.": "https://apps.apple.com/us/app/traveltone-hotel-gym-reviews/id6738668429",
+        "TrueCoach\n\nA personal-trainer SaaS with a 3,000+ exercise video library and drag-and-drop workout builder; pricing runs $29.98/mo at 5 clients, $69.98 at 20, and $164.98 at 50.": "https://truecoach.co/",
+        "TrainHeroic\n\nPrices coach seats by athlete count: $9.99/mo for 1 athlete, $17.99 for 5, $34.99 for 15, $44.99 for 25, $74.99 for 50, $99.99 for 100, up to $399.99 for 1,000; marketplace sales take $1/": "https://www.trainheroic.com/pricing/",
+        "Everfit\n\nINCUMBENT\n\nAlready ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so clients can swap when equipment is missing, with coach-controlled allow-li": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "Trainerize\n\nShipped coach-and-client exercise substitution with quick filters for Same Muscle Group, Same Equipment, and Same Movement; coaches can also pre-set alternate options on an exercise.": "https://help.trainerize.com/hc/en-us/articles/46226883603604-How-to-Substitute-Exercises-During-a-Workout",
+        "Fitbod\n\n, a consumer gym-adaptation app, earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo; a direct consumer competitor that already adapts workouts to whatever equipm": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "Gymverse\n\nMarkets equipment-flexible workout plans for travelers direct to consumers at $19.99/mo or $119.99/yr, built by real coaches, with a 7-day trial; the exact \"adapts to any hotel gym\" position": "https://www.hotelgyms.com/blog/gymverse-fitness-app-review",
+        "\u201cYour trainer adjusts the plan. If you are traveling and only have a hotel gym, your trainer rebuilds the relevant sessions around that equipment.\u201d\n\nTrainwell \u00b7 Trainwell editorial": "https://www.trainwell.net/blog/best-online-strength-training-programs-with-a-real-coach",
+        "\u201cLack of equipment and an accessible place can make you fall into repetitive, draining workout programming, especially if your clients travel for weeks.\u201d\n\nEverfit blog \u00b7 Everfit": "https://blog.everfit.io/how-to-avoid-burnout-when-your-customers-travel",
+        "\u201cI recently just talked to my friend who is a trainer. One of her main complaints is that when her clients go on vacation, they ask her to switch programming.\u201d\n\nr/personaltraining \u00b7 r/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on_vacation/"
+      }
+    }
+  },
+  "glancePopups": {
+    "THE CEILING IF IT COMPOUNDS $2M-$4M ARR": {
+      "text": "Where the ceiling comes from.\nWHAT $2M ARR TAKES\nTraveler subscription: 20K paid x $9.99/mo\n$2.4M/yr\nOne-trip adaptation: 60K trips/yr x $29\n$1.74M/yr\nCoach white-label: 500 coaches x $35/mo avg\n$210K/yr\nCorporate wellness: 40 accounts x $500/mo\n$240K/yr\nHotel chain partnership (Marriott Bonvoy-style)\n$200K-$500K/yr\nAffiliate (gym gear, resistance bands)\n$50K-$100K/yr\nFitbod proves $1M/mo of iOS-only consumer demand for equipment-adaptive workouts exists. Capturing 2-4% of that adjacent demand with a coach-aware twist puts the honest ceiling at $2M-$4M ARR. Not venture-scale, but a real cash business.\nTHE CEILING\nTHE NEXT STEP\nIf you're serious about building a cash-flowing business.",
+      "links": {
+        "Everfit": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "aicostcheck.com AI Vision Pricing 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 Business Travel Index": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "Deloitte 2026 Corporate Travel Study": "https://www.micetraveladvisor.com/news/article/illinois-new-york-and-other-us-states-keep-americas-corporate-travel-industry-moving-in-2026/",
+        "trainerize.com": "https://www.trainerize.com/blog/personal-trainer-industry-statistics/",
+        "\u201cOne of her main complaints is that when her clients go on vacation, they ask her to switch\u201d\n\nr/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on/",
+        "\u201cI hear the same worry from clients every June: \"I'm going away for a week, am I going to lose everything?\"\u201d\n\nTurnFit Personal Trainers Vancouver \u00b7 TurnFit coach": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "\u201cBefore you leave, your coach adjusts your plan around your travel dates and the equipment you expect to find. Mid-trip, we check in to see how the sessions felt and tweak on the fly, more support if": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+        "YOUTUBE": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "YOUTUBE HOTEL-GYM SEARCH": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel",
+        "AICOSTCHECK.COM AI VISION PRICING 2026": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "GBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/",
+        "App Store\n\nFitbod (consumer gym-adaptation app) earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo and 290,185 reviews, proving massive paid demand for \"adapt workout to": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "App Store\n\nTravelTone, a direct-match hotel-gym-reviews app, gets 865 est. downloads/mo on iOS with only 9 reviews and no estimated revenue; solo-built attempt at the same niche with weak traction.": "https://apps.apple.com/us/app/traveltone-hotel-gym-reviews/id6738668429",
+        "TrueCoach\n\nA personal-trainer SaaS with a 3,000+ exercise video library and drag-and-drop workout builder; pricing runs $29.98/mo at 5 clients, $69.98 at 20, and $164.98 at 50.": "https://truecoach.co/",
+        "TrainHeroic\n\nPrices coach seats by athlete count: $9.99/mo for 1 athlete, $17.99 for 5, $34.99 for 15, $44.99 for 25, $74.99 for 50, $99.99 for 100, up to $399.99 for 1,000; marketplace sales take $1/": "https://www.trainheroic.com/pricing/",
+        "Everfit\n\nINCUMBENT\n\nAlready ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so clients can swap when equipment is missing, with coach-controlled allow-li": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise",
+        "Trainerize\n\nShipped coach-and-client exercise substitution with quick filters for Same Muscle Group, Same Equipment, and Same Movement; coaches can also pre-set alternate options on an exercise.": "https://help.trainerize.com/hc/en-us/articles/46226883603604-How-to-Substitute-Exercises-During-a-Workout",
+        "Fitbod\n\n, a consumer gym-adaptation app, earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo; a direct consumer competitor that already adapts workouts to whatever equipm": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+        "Gymverse\n\nMarkets equipment-flexible workout plans for travelers direct to consumers at $19.99/mo or $119.99/yr, built by real coaches, with a 7-day trial; the exact \"adapts to any hotel gym\" position": "https://www.hotelgyms.com/blog/gymverse-fitness-app-review",
+        "\u201cYour trainer adjusts the plan. If you are traveling and only have a hotel gym, your trainer rebuilds the relevant sessions around that equipment.\u201d\n\nTrainwell \u00b7 Trainwell editorial": "https://www.trainwell.net/blog/best-online-strength-training-programs-with-a-real-coach",
+        "\u201cLack of equipment and an accessible place can make you fall into repetitive, draining workout programming, especially if your clients travel for weeks.\u201d\n\nEverfit blog \u00b7 Everfit": "https://blog.everfit.io/how-to-avoid-burnout-when-your-customers-travel",
+        "\u201cI recently just talked to my friend who is a trainer. One of her main complaints is that when her clients go on vacation, they ask her to switch programming.\u201d\n\nr/personaltraining \u00b7 r/personaltraining": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on_vacation/"
+      }
+    }
+  },
+  "overallScore": null,
+  "painScore": null,
+  "timingScore": null,
+  "layoutDetected": "new",
+  "siteView": {
+    "version": "v3",
+    "dateLabel": "NOV 22, 2026",
+    "title": "SaaS tool that adapts prescribed workouts to hotel gym equipment for traveling strength clients",
+    "ibIndex": "6.5",
+    "tags": [
+      "SaaS",
+      "$2M-$4M ARR"
+    ],
+    "painSeverity": "7",
+    "hero": [
+      {
+        "label": "FITBOD IOS MRR",
+        "lines": [
+          "$1M/mo",
+          "consumer equipment-adaptation app, 170K downloads/mo"
+        ],
+        "prose": false
+      },
+      {
+        "label": "WHAT IT DEMANDS",
+        "lines": [
+          "Domain depth",
+          "Content SEO",
+          "Community presence",
+          "Product taste",
+          "Coding"
+        ],
+        "prose": false
+      },
+      {
+        "label": "THE REALITY",
+        "lines": [
+          "FIRST REVENUE",
+          "60-90 days",
+          "CAPITAL IN",
+          "$3K-$15K",
+          "DIFFICULTY",
+          "Moderate"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "FIRST REVENUE",
+            "value": "60-90 days"
+          },
+          {
+            "label": "CAPITAL IN",
+            "value": "$3K-$15K"
+          },
+          {
+            "label": "DIFFICULTY",
+            "value": "Moderate"
+          }
+        ]
+      },
+      {
+        "label": "UP AGAINST",
+        "lines": [
+          "Everfit",
+          "Already ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so cli\u2026",
+          "+ 9 more mapped"
+        ],
+        "prose": false,
+        "href": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise"
+      },
+      {
+        "label": "THE PITCH",
+        "lines": [
+          "A strength client lands in a hotel at 9pm. Their coach's prescribed Tuesday is a trap-bar deadlift top set, a Bulgarian split squat, and a lat pulldown. The hotel gym has two 50-lb dumbbells, a Smith machine, and a cable stack that goes to 80 pounds. The client stares at the printout, picks something wrong, and loses the week. The coach gets a text at 10pm. US business travel hit a record $423B in 2026 and 1,590 people a month type 'hotel room workout' or 'hotel gym workout' into Google looking for a fix."
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHO IT'S FOR",
+        "lines": [
+          "Independent strength coaches who manage clients that travel often for work, typically 10 to 50 one-to-one remote clients paying $200 to $500 per month."
+        ],
+        "prose": true
+      },
+      {
+        "label": "THE GAP",
+        "lines": [
+          "Everfit and Trainerize already ship the feature; the real gap is the hotel equipment list"
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHY NOW",
+        "lines": [
+          "Vision got 133x cheaper, business travel hit record highs, hybrid coaching is now default"
+        ],
+        "prose": true
+      },
+      {
+        "label": "AT A GLANCE",
+        "lines": [
+          "Fitbod iOS MRR",
+          "$1M/mo",
+          "Pricing",
+          "Free to $19-$49/mo flat",
+          "Year one",
+          "$60K-$120K",
+          "Ceiling",
+          "$2M-$4M ARR"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "Fitbod iOS MRR",
+            "value": "$1M/mo"
+          },
+          {
+            "label": "Pricing",
+            "value": "Free to $19-$49/mo flat"
+          },
+          {
+            "label": "Year one",
+            "value": "$60K-$120K"
+          },
+          {
+            "label": "Ceiling",
+            "value": "$2M-$4M ARR"
+          }
+        ]
+      },
+      {
+        "label": "WHAT YOU SELL",
+        "lines": [
+          "Traveler Monthly$9.99/mo"
+        ],
+        "prose": false,
+        "name": "Traveler Monthly",
+        "price": "$9.99/mo"
+      },
+      {
+        "label": "BIGGEST RISK",
+        "lines": [
+          "Everfit and Trainerize ship the coach-set substitution feature today, so the coach white-label tier is a thin add-on against platforms the coach already pays;\u2026"
+        ],
+        "prose": true
+      }
+    ],
+    "heroMore": null,
+    "sections": [
+      {
+        "id": "whyNow",
+        "kicker": "Why now",
+        "data": {
+          "headline": "Vision got 133x cheaper, business travel hit record highs, hybrid coaching is now default",
+          "paragraphs": [
+            "Three waves hit at once in 2026. First, AI vision APIs collapsed in price. GPT-4 Vision cost $10 per million input tokens in 2024. Today the same work runs about $0.075 per million tokens on budget-tier models, a 133x cut in two years. That drops the cost of reading a hotel-gym photo to less than a tenth of a cent. A solo builder can now ship a 'take a picture of the gym, get your session' flow without a vision team or a cloud budget.",
+            "Second, the pain is at peak volume. The Global Business Travel Association projects US business travel at $423 billion in 2026 and global corporate travel at $1.71 trillion, up 7.2% year on year and above the 2019 baseline for the first time. Deloitte's October 2026 survey says US travel budgets are up 12% and trip volume up 6%. More trips means more clients in strange hotel gyms every week. Third, the buyer finally lives online: ABC Trainerize's 2026 report says 48% of coaches now run a hybrid (in-person + online) model, NASM says top-earning trainers are 2.2x more likely to be remote or hybrid, and 64% of coaches already use or explore AI. A per-seat SaaS add-on no longer feels foreign to this persona."
+          ],
+          "sources": [
+            {
+              "label": "aicostcheck.com AI Vision Pricing 2026",
+              "href": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026"
+            },
+            {
+              "label": "GBTA 2026 Business Travel Index",
+              "href": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/"
+            },
+            {
+              "label": "Deloitte 2026 Corporate Travel Study",
+              "href": "https://www.micetraveladvisor.com/news/article/illinois-new-york-and-other-us-states-keep-americas-corporate-travel-industry-moving-in-2026/"
+            },
+            {
+              "label": "trainerize.com",
+              "href": "https://www.trainerize.com/blog/personal-trainer-industry-statistics/"
+            }
+          ]
+        },
+        "more": {
+          "label": "See the full timing case",
+          "title": "The full timing case.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "7"
+            },
+            {
+              "type": "p",
+              "text": "/10"
+            },
+            {
+              "type": "h",
+              "text": "TIMING"
+            },
+            {
+              "type": "p",
+              "text": "Three tailwinds land in 2026: business travel crossed its pre-pandemic baseline at $423B, 48% of coaches run hybrid as primary, and vision cost collapsed; the counter is zero search volume for the coach-side solution term."
+            },
+            {
+              "type": "h",
+              "text": "THE SIGNALS"
+            },
+            {
+              "type": "p",
+              "text": "AI vision cost per image down 133x since 2024, from $10/M tokens to $0.075/M (budget tier under a tenth of a cent per image)."
+            },
+            {
+              "type": "p",
+              "text": "US business travel $423B in 2026, global $1.71T, above 2019 for the first time at 7.2% growth (GBTA)."
+            },
+            {
+              "type": "p",
+              "text": "US corporate travel budgets up 12%, trip volume up 6% in 2026 (Deloitte Oct 2026 survey)."
+            },
+            {
+              "type": "p",
+              "text": "48% of personal trainers now run hybrid as their primary model; top earners 2.2x more likely to be remote (ABC Trainerize + NASM, 2026)."
+            },
+            {
+              "type": "p",
+              "text": "Virtual fitness market $43.78B in 2026, up from $34.25B in 2025 (Fortune Business Insights)."
+            },
+            {
+              "type": "p",
+              "text": "Honest counter: timing enables the build, not the sale. Coaches do not search for 'exercise substitution app' or 'workout adaptation hotel gym' (near-zero volume), and Everfit and Trainerize have already shipped coach-set alternate exercises. The vision wave helps every incumbent too, so first-mover is the window, not a durable moat."
+            }
+          ]
+        }
+      },
+      {
+        "id": "marketSnapshot",
+        "kicker": "Market snapshot",
+        "data": {
+          "title": "The receipts.",
+          "painSeverity": "7",
+          "quotes": [
+            {
+              "quote": "\u201cOne of her main complaints is that when her clients go on vacation, they ask her to switch\u201d",
+              "source": "r/personaltraining",
+              "href": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cI hear the same worry from clients every June: \"I'm going away for a week, am I going to lose everything?\"\u201d",
+              "source": "TurnFit Personal Trainers Vancouver \u00b7 TurnFit coach",
+              "href": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cBefore you leave, your coach adjusts your plan around your travel dates and the equipment you expect to find. Mid-trip, we check in to see how the sessions felt and tweak on the fly, more support if the room only has bands, less if you lucked into a full set\u2026\u201d",
+              "source": "TurnFit Personal Trainers Vancouver \u00b7 TurnFit coach",
+              "href": "https://turnfit.ca/hotel-gym-workout-women-over-40/",
+              "platform": null
+            }
+          ],
+          "receiptsLabel": "All 10 receipts, and where these people gather"
+        },
+        "more": {
+          "label": "All receipts",
+          "title": "Where the pain lives.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "\u201cI'm driving myself crazy with too much searching, googling etc. ... I also travel about half the month and have to experience the dreaded hotel gym. ... Can someone please give me a program I can do every single time I am in a hotel gym with dumbells and\u2026\u201d"
+            },
+            {
+              "type": "p",
+              "text": "StrongFirst community forum \u00b7 Greg H, StrongFirst member"
+            },
+            {
+              "type": "p",
+              "text": "\u201cI have spent an inordinate amount of time training 'on the road'. ... Some hotel gyms are better equipped than others as well. I have been in ones that have, large DB's, KB's, power racks and Olympic bars. And ones that have a broken treadmill and a bosu ball.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "StrongFirst community forum \u00b7 offwidth, StrongFirst Level 7 member"
+            },
+            {
+              "type": "p",
+              "text": "\u201cChanges in job schedules, travel, finances, and family responsibilities often disrupt training. Many ex-clients say they stopped when \"life got in the way\" and the training plan didn't adjust to those shifts.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "Trainerize blog \u00b7 Trainerize"
+            },
+            {
+              "type": "p",
+              "text": "\u201cI'd love the option to have a client easily swap out an exercise if they do not have the necessary equipment available. This would be helpful for those who may only have gym access a few days a week or if their gym doesn't have necessary equipment.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "Trainerize feature forum"
+            },
+            {
+              "type": "h",
+              "text": "WHERE THEY GATHER"
+            },
+            {
+              "type": "p",
+              "text": "r/personaltraining thread titled \"What do you do when clients suddenly have no gym access?\" posted 1 week ago (Nov 2026) asks whether coaches rewrite the whole week or keep alternative workouts ready; 7 comments, confirms problem is active and current among coaches.Visit"
+            },
+            {
+              "type": "p",
+              "text": "Multiple r/personaltraining threads (2 years ago to 1 week ago) discuss travel-client programming: \"How do you help your clients stay accountable on vacation?\" (10+ comments), \"Training geared towards traveling clients\" (4 comments), \"Planning for travel as a personal trainer\" (7 comments); the pain exists but thread volume is thin.Visit"
+            },
+            {
+              "type": "p",
+              "text": "r/personaltraining is where independent trainers discuss these travel-client problems; the subreddit has 99.2K+ followers, giving a reachable audience of the exact buyer persona.Visit"
+            },
+            {
+              "type": "p",
+              "text": "StrongFirst community forum hosts recurring \"hotel gym\" threads where strength-focused travelers trade templates for limited-equipment sessions; the pain is chronic enough that it has its own ongoing thread lineage.Visit"
+            }
+          ]
+        }
+      },
+      {
+        "id": "whitespace",
+        "kicker": "Whitespace",
+        "data": {
+          "gap": "Everfit and Trainerize already ship the feature; the real gap is the hotel equipment list",
+          "wedge": [
+            "Beats manual coach edits and generic apps (Fitbod, Adapt Fitness, FitTraveler) by staying inside the coach's program intent: it imports the prescribed session, respects the coach's substitution rules, and escalates edge cases instead of generating a new workout from scratch."
+          ],
+          "incumbent": {
+            "name": "Everfit",
+            "href": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise"
+          },
+          "other": []
+        },
+        "more": {
+          "label": "Understand the opening",
+          "title": "The opening.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The coaching software market splits into five big platforms and one price ceiling. TrainHeroic starts at $9.99/mo for one athlete and climbs to $74.99 at 50 athletes. Everfit runs $19 at 5 clients and $95 at 50. Trainerize is $25 and $135. TrueCoach sits at $29.98 and $164.98. Adiletix undercuts all of them at a flat $39.99. A coach with 20 clients is already paying $45 to $80 a month for the platform itself. A new per-seat add-on at $15 to $50 is asking for a 30-70% uplift on that line item, for one feature."
+            },
+            {
+              "type": "p",
+              "text": "The real gap, if one exists, is not substitution logic. It is the hotel equipment list. None of the coaching platforms ingest a picture of the hotel gym and map it to the coach's prescribed session. The substitution engines all assume the client picks from a static alternate list the coach built months ago, which breaks when the hotel has a Smith machine, two dumbbells under 50 lb, and a broken cable column. A tool that solved only this (photo of the hotel gym in, equipment-tagged session out, pushed into the coach's existing Everfit or Trainerize program) would be a feature, not a product. Everfit could ship it in a quarter if a founder proved coaches would pay for it."
+            },
+            {
+              "type": "p",
+              "text": "TrainHeroic: $9.99-$74.99/mo per coach by athlete tier, no coach-set substitution library."
+            },
+            {
+              "type": "p",
+              "text": "Everfit: $19-$95/mo, ships coach-set alternate exercises with per-client Replace permissions, used by 380K+ coaches."
+            },
+            {
+              "type": "p",
+              "text": "Trainerize: $25-$135/mo, ships Substitute button with Same Equipment and Same Muscle filters plus trainer-pre-set alternates on roadmap."
+            },
+            {
+              "type": "p",
+              "text": "TrueCoach: $29.98-$164.98/mo, 3,000+ exercise video library, no built-in substitution engine (coach manually edits)."
+            },
+            {
+              "type": "p",
+              "text": "Fitbod: ~$1M/mo iOS revenue selling equipment-adaptive workouts direct to consumers, bypassing coaches entirely."
+            },
+            {
+              "type": "p",
+              "text": "Gymverse: $19.99/mo direct-to-traveler, markets as coach-built plans that adapt to any hotel gym."
+            },
+            {
+              "type": "p",
+              "text": "Adapt Fitness: consumer app asking each session for home/gym/travel equipment and auto-adapting; names the pain in its marketing."
+            },
+            {
+              "type": "p",
+              "text": "Trainwell: done-for-you human coaches selling hotel-gym rewrites as a product feature."
+            },
+            {
+              "type": "p",
+              "text": "Your way in: Beats manual coach edits and generic apps (Fitbod, Adapt Fitness, FitTraveler) by staying inside the coach's program intent: it imports the prescribed session, respects the coach's substitution rules, and escalates edge cases instead of generating a new workout from scratch."
+            },
+            {
+              "type": "h",
+              "text": "WHO\u2019S ALREADY IN THE MARKET"
+            }
+          ]
+        }
+      },
+      {
+        "id": "proof",
+        "kicker": "Proof & signals",
+        "data": {
+          "items": [
+            {
+              "text": "YouTube has dozens of \"hotel gym workout\" videos aimed at travelers (Anton Antipov circuit, \"6 Workouts for TRAVEL - HOTELS\", \"DB ONLY HOTEL GYM FULL BODY WORKOUT\"); content supply confirms consumer-side content demand rather than coach-side.",
+              "source": "YOUTUBE",
+              "href": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel"
+            },
+            {
+              "text": "The status-quo DIY alternative for traveling clients today is a coach-sent canned bodyweight circuit over chat or the client Googling a hotel-gym workout, with content supply dominated by free YouTube tutorials rather than any purpose-built tool.",
+              "source": "YOUTUBE HOTEL-GYM SEARCH",
+              "href": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel"
+            },
+            {
+              "text": "AI vision API pricing dropped from $10 per million input tokens for GPT-4 Vision in 2024 to roughly $0.075 per million tokens by mid-2026, a 133x price cut in two years, making per-image analysis cost less than a tenth of a cent on budget-tier models.",
+              "source": "AICOSTCHECK.COM AI VISION PRICING 2026",
+              "href": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026"
+            },
+            {
+              "text": "The Global Business Travel Association projects US business travel spending of $423 billion in 2026 and worldwide corporate travel spending of $1.71 trillion, with managed corporate spend expected to exceed pre-pandemic (2019) levels for the first time in 2026 at 7.2% annual growth.",
+              "source": "GBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)",
+              "href": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/"
+            }
+          ]
+        },
+        "more": {
+          "label": "Explore the evidence",
+          "title": "Proof & signals.",
+          "blocks": [
+            {
+              "type": "h",
+              "text": "THE HARD NUMBERS"
+            },
+            {
+              "type": "h",
+              "text": "WHAT THE RESEARCH SAYS"
+            },
+            {
+              "type": "p",
+              "text": "Prescribed sessions can break when hotel equipment differs"
+            },
+            {
+              "type": "p",
+              "text": "The need arises when clients travel, but frequency is unverified"
+            },
+            {
+              "type": "p",
+              "text": "Existing tools and manual workarounds may already be sufficient"
+            },
+            {
+              "type": "p",
+              "text": "Adjacent products show the problem is recognizable, not that coaches will pay"
+            },
+            {
+              "type": "p",
+              "text": "The clearest demand evidence is a credible recurring-workflow pain: hotel equipment can differ from what a coach prescribed, prompting edits, improvisation, skipped exercises, or delayed replies. Adjacent products explicitly market equipment-aware and travel-workout adaptation, which supports problem recognition and technical feasibility. But the supplied evidence does not verify how often coaches face this task, whether existing platforms already solve it adequately, or whether coaches will pay for a separate product. Treat this as a paid-pilot hypothesis, not validated standalone SaaS demand."
+            }
+          ]
+        }
+      },
+      {
+        "id": "competitors",
+        "kicker": "Who you're up against",
+        "data": {
+          "count": 10,
+          "players": [
+            {
+              "name": "App Store",
+              "incumbent": false,
+              "description": "Fitbod (consumer gym-adaptation app) earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo and 290,185 reviews, proving massive paid demand for \"adapt workout to the equipment you have\" when sold direct to consumers.",
+              "href": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543"
+            },
+            {
+              "name": "App Store",
+              "incumbent": false,
+              "description": "TravelTone, a direct-match hotel-gym-reviews app, gets 865 est. downloads/mo on iOS with only 9 reviews and no estimated revenue; solo-built attempt at the same niche with weak traction.",
+              "href": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543"
+            },
+            {
+              "name": "TrueCoach",
+              "incumbent": false,
+              "description": "A personal-trainer SaaS with a 3,000+ exercise video library and drag-and-drop workout builder; pricing runs $29.98/mo at 5 clients, $69.98 at 20, and $164.98 at 50.",
+              "href": "https://truecoach.co/"
+            },
+            {
+              "name": "TrainHeroic",
+              "incumbent": false,
+              "description": "Prices coach seats by athlete count: $9.99/mo for 1 athlete, $17.99 for 5, $34.99 for 15, $44.99 for 25, $74.99 for 50, $99.99 for 100, up to $399.99 for 1,000; marketplace sales take $1/athlete plus 2.9% + $0.30 per transaction.",
+              "href": "https://www.trainheroic.com/pricing/"
+            },
+            {
+              "name": "Everfit",
+              "incumbent": true,
+              "description": "Already ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so clients can swap when equipment is missing, with coach-controlled allow-lists and a per-client Replace Exercise toggle; serves 380,000+ coaches across 184 countries.",
+              "href": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise"
+            },
+            {
+              "name": "Trainerize",
+              "incumbent": false,
+              "description": "Shipped coach-and-client exercise substitution with quick filters for Same Muscle Group, Same Equipment, and Same Movement; coaches can also pre-set alternate options on an exercise.",
+              "href": "https://help.trainerize.com/hc/en-us/articles/46226883603604-How-to-Substitute-Exercises-During-a-Workout"
+            },
+            {
+              "name": "Fitbod",
+              "incumbent": false,
+              "description": ", a consumer gym-adaptation app, earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo; a direct consumer competitor that already adapts workouts to whatever equipment a lifter has.",
+              "href": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543"
+            },
+            {
+              "name": "Gymverse",
+              "incumbent": false,
+              "description": "Markets equipment-flexible workout plans for travelers direct to consumers at $19.99/mo or $119.99/yr, built by real coaches, with a 7-day trial; the exact \"adapts to any hotel gym\" positioning but sold B2C, not B2B2C.",
+              "href": "https://www.hotelgyms.com/blog/gymverse-fitness-app-review"
+            }
+          ]
+        }
+      },
+      {
+        "id": "asking",
+        "kicker": "People are asking for it",
+        "data": {
+          "quotes": [
+            {
+              "quote": "\u201cYour trainer adjusts the plan. If you are traveling and only have a hotel gym, your trainer rebuilds the relevant sessions around that equipment.\u201d",
+              "source": "Trainwell \u00b7 Trainwell editorial",
+              "href": "https://www.trainwell.net/blog/best-online-strength-training-programs-with-a-real-coach",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cLack of equipment and an accessible place can make you fall into repetitive, draining workout programming, especially if your clients travel for weeks.\u201d",
+              "source": "Everfit blog \u00b7 Everfit",
+              "href": "https://blog.everfit.io/how-to-avoid-burnout-when-your-customers-travel",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cI recently just talked to my friend who is a trainer. One of her main complaints is that when her clients go on vacation, they ask her to switch programming.\u201d",
+              "source": "r/personaltraining \u00b7 r/personaltraining poster",
+              "href": "https://www.reddit.com/r/personaltraining/comments/1bdgvul/how_do_you_help_your_clients_stay_accountable_on_vacation/",
+              "platform": "REDDIT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "verdict",
+        "kicker": "The verdict",
+        "data": {
+          "title": "Should you build this?",
+          "build": [
+            "The pain is named by real operators on both sides: TurnFit coaches hear the same panic every June, Everfit calls travel rewrites a burnout driver, and a StrongFirst lifter spends half his month Googling hotel gym workouts; this is a workflow problem people already pay humans to solve.",
+            "Fitbod earns about $1M a month on iOS alone selling equipment-adaptive workouts to consumers, which sets a ceiling anchor and proves travelers will pay for the exact mechanic, so a coach-respecting version has a real wedge Fitbod cannot copy without breaking its own product.",
+            "Timing is unusually clean for a solo builder: AI vision dropped 133x in cost since 2024, US business travel hit a record $423B in 2026, and 48% of coaches now run hybrid as their primary model, so the build is cheap and the buyer pool is at peak volume.",
+            "Distribution has one unfair channel: 1,590 US searches a month for hotel room and hotel gym workouts currently return travel-blog listicles, not tools, which an AI-agent-driven content ops can take over in 90 days before any paid ad spend."
+          ],
+          "notBuild": [
+            "Everfit and Trainerize already ship coach-set alternate exercises with equipment and muscle-group filters for the 380K+ coaches they serve, so the coach white-label SKU is a thin feature add-on to platforms the coach already pays $45 to $135 a month for.",
+            "Fitbod could ship an 'import your coach's program' button in one sprint and absorb the wedge; they already have the consumers, the exercise library, and the brand, so the window is the first-mover year, not a durable moat.",
+            "Zero Google search volume for the coach-side solution terms means outbound to coaches has to carry 100% of the acquisition load, and coaches do not buy through content SEO; the traveler side works but the economics are a $29 trip and a $9.99 monthly with brutal Q4 churn as travel goes seasonal.",
+            "Safety and liability on an automated substitution that hurts a traveling client in a hotel room is a lawsuit a solo founder cannot afford on $29 of trip revenue, and liability insurance for automated program adjustments is a real cost nobody has priced into the napkin math.",
+            "POTENTIAL PIVOT",
+            "Change the primary buyer from coach-per-seat to traveler-direct. Lead SKU: $29 one-trip adaptation plus $9.99/mo for frequent travelers, sold off a free 'Hotel Gym Decoder' photo tool. Keep coach white-label as a flat roster-priced second SKU ($19 to $49/mo), not a per-seat add-on on top of Trainerize or TrueCoach. Distribution shifts to SEO on hotel-gym queries and r/personaltraining comments, not cold coach outreach."
+          ]
+        }
+      },
+      {
+        "id": "founderFit",
+        "kicker": "Founder fit",
+        "data": {
+          "title": "Not every good idea is good for you.",
+          "bestFor": [
+            "Solo coaches who code and understand strength programming, with access to tra...",
+            "Small teams pairing fitness-coaching expertise with product or AI engineering",
+            "B2B founders experienced in selling workflow tools to independent professionals",
+            "Consumer fitness founders without coach relationships or B2B sales experience",
+            "AI builders unfamiliar with exercise programming and safe substitution bounda..."
+          ],
+          "persona": [
+            "A current or former online strength coach who codes with AI agents, has run hybrid programming for traveling clients, and already has 2,000+ followers in the lifting or hybrid-coach community. The domain judgment on what a safe substitution is (never swap a heavy deadlift for a kettlebell swing with a deconditioned client) matters more than the AI engineering. The founder who wins has opinions about trap-bar substitutions for conventional pulls and can defend them on a podcast. If you have never written a strength program, you will ship a toy that lifters can smell in one session."
+          ],
+          "demands": [
+            {
+              "label": "Domain depth",
+              "score": 9.0
+            },
+            {
+              "label": "Content SEO",
+              "score": 8.0
+            },
+            {
+              "label": "Community presence",
+              "score": 8.0
+            },
+            {
+              "label": "Product taste",
+              "score": 6.0
+            },
+            {
+              "label": "Coding",
+              "score": 4.0
+            }
+          ],
+          "reality": [
+            {
+              "label": "FIRST REVENUE",
+              "value": "60-90 days"
+            },
+            {
+              "label": "CAPITAL IN",
+              "value": "$3K-$15K"
+            },
+            {
+              "label": "DIFFICULTY",
+              "value": "Moderate"
+            }
+          ]
+        }
+      },
+      {
+        "id": "valueLadder",
+        "kicker": "What you'd sell",
+        "data": {
+          "title": "The value ladder.",
+          "intro": [
+            "Lead with a $29 one-trip adaptation sold direct to the traveler; frictionless first yes. Upsell $9.99 a month for traveler subscription (frequent flyers, consultants, sales teams). Coach white-label at $19 a month flat (up to 10 clients) or $49 (up to 50 clients); priced on roster, not seats."
+          ],
+          "steps": [
+            {
+              "step": 1,
+              "tier": "LEAD MAGNET",
+              "name": "Hotel Gym Decoder",
+              "price": "Free",
+              "description": "Snap a photo of the hotel gym, get one free session adapted; email captures both travelers and coaches."
+            },
+            {
+              "step": 2,
+              "tier": "FRONTEND",
+              "name": "One-Trip Adaptation",
+              "price": "$29 per trip",
+              "description": "Upload the coach's prescribed session plus a hotel gym photo, get the full week adapted; impulse buy before a flight."
+            },
+            {
+              "step": 3,
+              "tier": "CORE",
+              "name": "Traveler Monthly",
+              "price": "$9.99/mo",
+              "description": "Unlimited trips, saved coach program, saved hotel history; sold direct to the frequent-traveler lifter."
+            },
+            {
+              "step": 4,
+              "tier": "CONTINUITY",
+              "name": "Coach White-Label",
+              "price": "$19-$49/mo flat",
+              "description": ""
+            }
+          ]
+        },
+        "more": {
+          "label": "View the full value ladder",
+          "title": "The full value ladder.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Coach-branded tool with coach-set substitution rules; priced on roster band, not per seat; sold as a retention add-on to TrueCoach and Trainerize users."
+            }
+          ]
+        }
+      },
+      {
+        "id": "plan",
+        "kicker": "The plan",
+        "data": {
+          "title": "If you started today.",
+          "subtitle": "First up.",
+          "paragraphs": [
+            "Nobody searches for 'exercise substitution app' or 'workout adaptation hotel gym'. Those keywords return near zero. Coaches do not shop for this tool, so cold outreach to coaches will stall. The first 100 customers come from the traveler side, where 1,590 US searches a month across 'hotel room workout' and 'hotel gym workout' point to warm intent, and from one subreddit where the exact buyer already talks about the pain."
+          ]
+        },
+        "more": {
+          "label": "See the detailed plan",
+          "title": null,
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Launch a responsive SaaS that adapts prescribed workouts to confirmed hotel equipment using coach-approved rules, with uncertain cases routed for review. Start with workout import, an equipment checklist, and an approve/edit/reject queue; then test a paid pilot with one coach and ten travelling clients to prove repeat usage and time saved. Next, scale through coach referrals\u2014ready to earn 25 renewing coaches?"
+            },
+            {
+              "type": "h",
+              "text": "THE FIRST MOVES"
+            },
+            {
+              "type": "p",
+              "text": "Contact 15 independent strength coaches and ask for details of their last three travel-related workout adaptations."
+            },
+            {
+              "type": "p",
+              "text": "Create a one-page SaaS pilot offer with scope, measurement plan, clear safety boundaries, and a real paid price test."
+            },
+            {
+              "type": "p",
+              "text": "Prototype one end-to-end case: import a prescribed workout, confirm equipment, suggest bounded alternatives, and route exceptions to coach review."
+            },
+            {
+              "type": "h",
+              "text": "THE MVP"
+            },
+            {
+              "type": "p",
+              "text": "Build a responsive SaaS web app for workout import, client equipment confirmation, coach-approved substitution suggestions, and an approve/edit/reject queue. Start with one coach, about ten travelling clients, and a limited exercise library; defer computer vision, native apps, and broad integrations."
+            },
+            {
+              "type": "h",
+              "text": "WHERE THE FIRST USERS COME FROM"
+            },
+            {
+              "type": "p",
+              "text": "Founder-led coach outreach \u00b7 Direct conversations reach the buyer and surface recent, measurable examples of the problem."
+            },
+            {
+              "type": "p",
+              "text": "Coach communities and professional networks \u00b7 Relevant professional groups can provide design partners and referrals."
+            },
+            {
+              "type": "p",
+              "text": "Targeted content and landing-page tests \u00b7 Demonstrations can make the coach-control distinction clear against generic workout generation."
+            },
+            {
+              "type": "h",
+              "text": "TIMELINE"
+            },
+            {
+              "type": "p",
+              "text": "1-2 weeks"
+            },
+            {
+              "type": "h",
+              "text": "BUDGET"
+            },
+            {
+              "type": "p",
+              "text": "$0-10K"
+            },
+            {
+              "type": "h",
+              "text": "THE MILESTONE"
+            },
+            {
+              "type": "p",
+              "text": "Within 12 months, secure 25 paying coaches with repeat monthly usage, measurable net time savings, and evidence that customers renew."
+            }
+          ]
+        }
+      },
+      {
+        "id": "napkin",
+        "kicker": "Napkin math",
+        "data": {
+          "title": "Year one, on a napkin.",
+          "intro": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.",
+          "rows": [
+            {
+              "label": "Monthly US searches for 'hotel room workout' + 'hotel gym workout'",
+              "value": "1,590"
+            },
+            {
+              "label": "SEO capture at 50 city pages, rank 3-5 (assumption)",
+              "value": "8% CTR = 127/mo"
+            },
+            {
+              "label": "Reddit comment funnel, 1/day x 30 days (assumption)",
+              "value": "30 clicks/day"
+            },
+            {
+              "label": "Total top-of-funnel visitors, month 6",
+              "value": "~1,000/mo"
+            },
+            {
+              "label": "Free-trial to paid conversion (assumption, SaaS benchmark)",
+              "value": "3%"
+            },
+            {
+              "label": "New paying travelers per month, month 6",
+              "value": "30"
+            },
+            {
+              "label": "Average price blend (one-trip $29, monthly $9.99)",
+              "value": "$18"
+            },
+            {
+              "label": "Monthly traveler revenue, month 6",
+              "value": "$540"
+            },
+            {
+              "label": "Coach white-label partners signed (year one, assumption)",
+              "value": "15"
+            },
+            {
+              "label": "Coach white-label MRR at $19-$49 blended $30",
+              "value": "$450"
+            },
+            {
+              "label": "Blended MRR exiting month 12",
+              "value": "~$2,500"
+            },
+            {
+              "label": "Year-one revenue (ramp from zero)",
+              "value": "$15K-$25K"
+            }
+          ],
+          "summary": [
+            "Most rows are assumptions. The sourced numbers are the 1,590 search volume, Fitbod's $1M/mo as a ceiling anchor, and incumbent prices. A conservative year-one path lands at $15K-$25K; a competent founder with content velocity gets to $60K-$120K if SEO hits and one coach partnership compounds."
+          ],
+          "ceiling": "$2M-$4M ARR"
+        }
+      }
+    ],
+    "popups": [
+      {
+        "label": "THE CEILING IF IT COMPOUNDS $2M-$4M ARR",
+        "title": "Where the ceiling comes from.",
+        "blocks": [
+          {
+            "type": "h",
+            "text": "WHAT $2M ARR TAKES"
+          },
+          {
+            "type": "p",
+            "text": "Traveler subscription: 20K paid x $9.99/mo"
+          },
+          {
+            "type": "p",
+            "text": "$2.4M/yr"
+          },
+          {
+            "type": "p",
+            "text": "One-trip adaptation: 60K trips/yr x $29"
+          },
+          {
+            "type": "p",
+            "text": "$1.74M/yr"
+          },
+          {
+            "type": "p",
+            "text": "Coach white-label: 500 coaches x $35/mo avg"
+          },
+          {
+            "type": "p",
+            "text": "$210K/yr"
+          },
+          {
+            "type": "p",
+            "text": "Corporate wellness: 40 accounts x $500/mo"
+          },
+          {
+            "type": "p",
+            "text": "$240K/yr"
+          },
+          {
+            "type": "p",
+            "text": "Hotel chain partnership (Marriott Bonvoy-style)"
+          },
+          {
+            "type": "p",
+            "text": "$200K-$500K/yr"
+          },
+          {
+            "type": "p",
+            "text": "Affiliate (gym gear, resistance bands)"
+          },
+          {
+            "type": "p",
+            "text": "$50K-$100K/yr"
+          },
+          {
+            "type": "p",
+            "text": "Fitbod proves $1M/mo of iOS-only consumer demand for equipment-adaptive workouts exists. Capturing 2-4% of that adjacent demand with a coach-aware twist puts the honest ceiling at $2M-$4M ARR. Not venture-scale, but a real cash business."
+          },
+          {
+            "type": "h",
+            "text": "THE CEILING"
+          }
+        ]
+      }
+    ],
+    "inlineLinks": [
+      {
+        "text": "Everfit",
+        "href": "https://help.everfit.io/en/articles/3365668-add-an-alternate-exercise"
+      },
+      {
+        "text": "aicostcheck.com AI Vision Pricing 2026",
+        "href": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026"
+      },
+      {
+        "text": "GBTA 2026 Business Travel Index",
+        "href": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/"
+      },
+      {
+        "text": "Deloitte 2026 Corporate Travel Study",
+        "href": "https://www.micetraveladvisor.com/news/article/illinois-new-york-and-other-us-states-keep-americas-corporate-travel-industry-moving-in-2026/"
+      },
+      {
+        "text": "trainerize.com",
+        "href": "https://www.trainerize.com/blog/personal-trainer-industry-statistics/"
+      },
+      {
+        "text": "YOUTUBE",
+        "href": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel"
+      },
+      {
+        "text": "YOUTUBE HOTEL-GYM SEARCH",
+        "href": "https://www.youtube.com/results?search_query=hotel+gym+workout+travel"
+      },
+      {
+        "text": "AICOSTCHECK.COM AI VISION PRICING 2026",
+        "href": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026"
+      },
+      {
+        "text": "GBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)",
+        "href": "https://www.travelandtourworld.com/news/article/2f9f7hkdyxkx/"
+      },
+      {
+        "text": "The Startup Ideas Podcast",
+        "href": "https://www.youtube.com/@GregIsenberg"
+      },
+      {
+        "text": "Visit",
+        "href": "https://www.reddit.com/r/personaltraining/comments/1xnrqbc/what_do_you_do_when_clients_suddenly_have_no_gym/"
+      }
+    ],
+    "linkCount": 38,
+    "sourceUrl": "https://www.ideabrowser.com/hub/ideas/today"
+  },
+  "rawText": "Home\nBrowse\nAgents\nMy Stuff\nAbout me\nAccelerator\nProjects\nExample project\nConnect your AI\nTool deals\nAbout Ideabrowser\nHelp & training\n\u00a9 2026 Ideabrowser\n\u00b7\nLegal\nToggle Sidebar\nIdea of the Day\nBuild Gallery\n1\nGo Pro\nS\n\nIDEA OF THE DAY\u00b7NOV 22, 2026\n\nPrevious\nBrowse all\nSaaS tool that adapts prescribed workouts to hotel gym equipment for traveling strength clients\n\nIB Index 6.5\n\u00b7\nSaaS\n\u00b7\n$2M-$4M ARR\n\nCONCEPT MOCKUP\n\nFITBOD IOS MRR\n\n$1M/mo\n\nconsumer equipment-adaptation app, 170K downloads/mo\n\nWHAT IT DEMANDS\n\nDomain depth\nContent SEO\nCommunity presence\nProduct taste\nCoding\n\nTHE REALITY\n\nFIRST REVENUE\n60-90 days\nCAPITAL IN\n$3K-$15K\nDIFFICULTY\nModerate\n\nUP AGAINST\n\nEverfit\n\nAlready ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so cli\u2026\n\n+ 9 more mapped\n\nTHE PITCH\n\nA strength client lands in a hotel at 9pm. Their coach's prescribed Tuesday is a trap-bar deadlift top set, a Bulgarian split squat, and a lat pulldown. The hotel gym has two 50-lb dumbbells, a Smith machine, and a cable stack that goes to 80 pounds. The client stares at the printout, picks something wrong, and loses the week. The coach gets a text at 10pm. US business travel hit a record $423B in 2026 and 1,590 people a month type 'hotel room workout' or 'hotel gym workout' into Google looking for a fix.\n\nWHO IT'S FOR\n\nIndependent strength coaches who manage clients that travel often for work, typically 10 to 50 one-to-one remote clients paying $200 to $500 per month.\n\nTHE GAP\n\nEverfit and Trainerize already ship the feature; the real gap is the hotel equipment list\n\nWHY NOW\n\nVision got 133x cheaper, business travel hit record highs, hybrid coaching is now default\n\nAT A GLANCE\n\nFitbod iOS MRR\n$1M/mo\nPricing\nFree to $19-$49/mo flat\nYear one\n$60K-$120K\nCeiling\n$2M-$4M ARR\n\nWHAT YOU SELL\n\nTraveler Monthly$9.99/mo\n\nBIGGEST RISK\n\nEverfit and Trainerize ship the coach-set substitution feature today, so the coach white-label tier is a thin add-on against platforms the coach already pays;\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nVision got 133x cheaper, business travel hit record highs, hybrid coaching is now default\n\nThree waves hit at once in 2026. First, AI vision APIs collapsed in price. GPT-4 Vision cost $10 per million input tokens in 2024. Today the same work runs about $0.075 per million tokens on budget-tier models, a 133x cut in two years. That drops the cost of reading a hotel-gym photo to less than a tenth of a cent. A solo builder can now ship a 'take a picture of the gym, get your session' flow without a vision team or a cloud budget.\n\nSecond, the pain is at peak volume. The Global Business Travel Association projects US business travel at $423 billion in 2026 and global corporate travel at $1.71 trillion, up 7.2% year on year and above the 2019 baseline for the first time. Deloitte's October 2026 survey says US travel budgets are up 12% and trip volume up 6%. More trips means more clients in strange hotel gyms every week. Third, the buyer finally lives online: ABC Trainerize's 2026 report says 48% of coaches now run a hybrid (in-person + online) model, NASM says top-earning trainers are 2.2x more likely to be remote or hybrid, and 64% of coaches already use or explore AI. A per-seat SaaS add-on no longer feels foreign to this persona.\n\nSOURCES\naicostcheck.com AI Vision Pricing 2026\nGBTA 2026 Business Travel Index\nDeloitte 2026 Corporate Travel Study\ntrainerize.com\nSee the full timing case\n\nMARKET SNAPSHOT\n\nThe receipts.\n\nPAIN\n\n7/10 SEVERITY\n\n\u201cOne of her main complaints is that when her clients go on vacation, they ask her to switch\u201d\n\nr/personaltraining\n\n\u201cI hear the same worry from clients every June: \"I'm going away for a week, am I going to lose everything?\"\u201d\n\nTurnFit Personal Trainers Vancouver \u00b7 TurnFit coach\n\n\u201cBefore you leave, your coach adjusts your plan around your travel dates and the equipment you expect to find. Mid-trip, we check in to see how the sessions felt and tweak on the fly, more support if the room only has bands, less if you lucked into a full set\u2026\u201d\n\nTurnFit Personal Trainers Vancouver \u00b7 TurnFit coach\n\nAll 10 receipts, and where these people gather\n\nWHITESPACE\n\nMARKET GAP\n\nEverfit and Trainerize already ship the feature; the real gap is the hotel equipment list\n\nUnderstand the opening\n\nTHE WEDGE\n\nBeats manual coach edits and generic apps (Fitbod, Adapt Fitness, FitTraveler) by staying inside the coach's program intent: it imports the prescribed session, respects the coach's substitution rules, and escalates edge cases instead of generating a new workout from scratch.\n\nThe incumbent to beat: Everfit\n\nPROOF & SIGNALS\n\nYouTube has dozens of \"hotel gym workout\" videos aimed at travelers (Anton Antipov circuit, \"6 Workouts for TRAVEL - HOTELS\", \"DB ONLY HOTEL GYM FULL BODY WORKOUT\"); content supply confirms consumer-side content demand rather than coach-side.\n\nYOUTUBE\n\nThe status-quo DIY alternative for traveling clients today is a coach-sent canned bodyweight circuit over chat or the client Googling a hotel-gym workout, with content supply dominated by free YouTube tutorials rather than any purpose-built tool.\n\nYOUTUBE HOTEL-GYM SEARCH\n\nAI vision API pricing dropped from $10 per million input tokens for GPT-4 Vision in 2024 to roughly $0.075 per million tokens by mid-2026, a 133x price cut in two years, making per-image analysis cost less than a tenth of a cent on budget-tier models.\n\nAICOSTCHECK.COM AI VISION PRICING 2026\n\nThe Global Business Travel Association projects US business travel spending of $423 billion in 2026 and worldwide corporate travel spending of $1.71 trillion, with managed corporate spend expected to exceed pre-pandemic (2019) levels for the first time in 2026 at 7.2% annual growth.\n\nGBTA 2026 BUSINESS TRAVEL INDEX (REPORTED IN TRAVEL AND TOUR WORLD)\nExplore the evidence\n\nWHO YOU'RE UP AGAINST\n\n10 PLAYERS\n\nApp Store\n\nFitbod (consumer gym-adaptation app) earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo and 290,185 reviews, proving massive paid demand for \"adapt workout to the equipment you have\" when sold direct to consumers.\n\nApp Store\n\nTravelTone, a direct-match hotel-gym-reviews app, gets 865 est. downloads/mo on iOS with only 9 reviews and no estimated revenue; solo-built attempt at the same niche with weak traction.\n\nTrueCoach\n\nA personal-trainer SaaS with a 3,000+ exercise video library and drag-and-drop workout builder; pricing runs $29.98/mo at 5 clients, $69.98 at 20, and $164.98 at 50.\n\nTrainHeroic\n\nPrices coach seats by athlete count: $9.99/mo for 1 athlete, $17.99 for 5, $34.99 for 15, $44.99 for 25, $74.99 for 50, $99.99 for 100, up to $399.99 for 1,000; marketplace sales take $1/athlete plus 2.9% + $0.30 per transaction.\n\nEverfit\n\nINCUMBENT\n\nAlready ships the exact feature this idea proposes: coaches set \"Alternate Exercises\" on each movement so clients can swap when equipment is missing, with coach-controlled allow-lists and a per-client Replace Exercise toggle; serves 380,000+ coaches across 184 countries.\n\nTrainerize\n\nShipped coach-and-client exercise substitution with quick filters for Same Muscle Group, Same Equipment, and Same Movement; coaches can also pre-set alternate options on an exercise.\n\nFitbod\n\n, a consumer gym-adaptation app, earns $1,004,924 est. monthly revenue on iOS alone with 170,833 est. downloads/mo; a direct consumer competitor that already adapts workouts to whatever equipment a lifter has.\n\nGymverse\n\nMarkets equipment-flexible workout plans for travelers direct to consumers at $19.99/mo or $119.99/yr, built by real coaches, with a 7-day trial; the exact \"adapts to any hotel gym\" positioning but sold B2C, not B2B2C.\n\nPEOPLE ARE ASKING FOR IT\n\nREDDIT\n\n\u201cYour trainer adjusts the plan. If you are traveling and only have a hotel gym, your trainer rebuilds the relevant sessions around that equipment.\u201d\n\nTrainwell \u00b7 Trainwell editorial\n\n\u201cLack of equipment and an accessible place can make you fall into repetitive, draining workout programming, especially if your clients travel for weeks.\u201d\n\nEverfit blog \u00b7 Everfit\n\n\u201cI recently just talked to my friend who is a trainer. One of her main complaints is that when her clients go on vacation, they ask her to switch programming.\u201d\n\nr/personaltraining \u00b7 r/personaltraining poster\n\nTHE VERDICT\n\nShould you build this?\n\nREASONS TO BUILD\n\nThe pain is named by real operators on both sides: TurnFit coaches hear the same panic every June, Everfit calls travel rewrites a burnout driver, and a StrongFirst lifter spends half his month Googling hotel gym workouts; this is a workflow problem people already pay humans to solve.\nFitbod earns about $1M a month on iOS alone selling equipment-adaptive workouts to consumers, which sets a ceiling anchor and proves travelers will pay for the exact mechanic, so a coach-respecting version has a real wedge Fitbod cannot copy without breaking its own product.\nTiming is unusually clean for a solo builder: AI vision dropped 133x in cost since 2024, US business travel hit a record $423B in 2026, and 48% of coaches now run hybrid as their primary model, so the build is cheap and the buyer pool is at peak volume.\nDistribution has one unfair channel: 1,590 US searches a month for hotel room and hotel gym workouts currently return travel-blog listicles, not tools, which an AI-agent-driven content ops can take over in 90 days before any paid ad spend.\n\nREASONS TO NOT BUILD\n\nEverfit and Trainerize already ship coach-set alternate exercises with equipment and muscle-group filters for the 380K+ coaches they serve, so the coach white-label SKU is a thin feature add-on to platforms the coach already pays $45 to $135 a month for.\nFitbod could ship an 'import your coach's program' button in one sprint and absorb the wedge; they already have the consumers, the exercise library, and the brand, so the window is the first-mover year, not a durable moat.\nZero Google search volume for the coach-side solution terms means outbound to coaches has to carry 100% of the acquisition load, and coaches do not buy through content SEO; the traveler side works but the economics are a $29 trip and a $9.99 monthly with brutal Q4 churn as travel goes seasonal.\nSafety and liability on an automated substitution that hurts a traveling client in a hotel room is a lawsuit a solo founder cannot afford on $29 of trip revenue, and liability insurance for automated program adjustments is a real cost nobody has priced into the napkin math.\nRoast it with your agent\n\nPOTENTIAL PIVOT\n\nChange the primary buyer from coach-per-seat to traveler-direct. Lead SKU: $29 one-trip adaptation plus $9.99/mo for frequent travelers, sold off a free 'Hotel Gym Decoder' photo tool. Keep coach white-label as a flat roster-priced second SKU ($19 to $49/mo), not a per-seat add-on on top of Trainerize or TrueCoach. Distribution shifts to SEO on hotel-gym queries and r/personaltraining comments, not cold coach outreach.\n\nRun this angle with your agent\n\nFOUNDER FIT\n\nNot every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo coaches who code and understand strength programming, with access to tra...\nSmall teams pairing fitness-coaching expertise with product or AI engineering\nB2B founders experienced in selling workflow tools to independent professionals\nConsumer fitness founders without coach relationships or B2B sales experience\nAI builders unfamiliar with exercise programming and safe substitution bounda...\n\nA current or former online strength coach who codes with AI agents, has run hybrid programming for traveling clients, and already has 2,000+ followers in the lifting or hybrid-coach community. The domain judgment on what a safe substitution is (never swap a heavy deadlift for a kettlebell swing with a deconditioned client) matters more than the AI engineering. The founder who wins has opinions about trap-bar substitutions for conventional pulls and can defend them on a podcast. If you have never written a strength program, you will ship a toy that lifters can smell in one session.\n\nWHAT IT DEMANDS\n\nDomain depth\n9\nContent SEO\n8\nCommunity presence\n8\nProduct taste\n6\nCoding\n4\n\nTHE REALITY\n\nFIRST REVENUE\n\n60-90 days\n\nCAPITAL IN\n\n$3K-$15K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card\n\nWHAT YOU'D SELL\n\nThe value ladder.\n\nLead with a $29 one-trip adaptation sold direct to the traveler; frictionless first yes. Upsell $9.99 a month for traveler subscription (frequent flyers, consultants, sales teams). Coach white-label at $19 a month flat (up to 10 clients) or $49 (up to 50 clients); priced on roster, not seats.\n\n1\n\nLEAD MAGNET\n\nHotel Gym Decoder(Free)\n\nSnap a photo of the hotel gym, get one free session adapted; email captures both travelers and coaches.\n\n2\n\nFRONTEND\n\nOne-Trip Adaptation($29 per trip)\n\nUpload the coach's prescribed session plus a hotel gym photo, get the full week adapted; impulse buy before a flight.\n\n3\n\nCORE\n\nTraveler Monthly($9.99/mo)\n\nUnlimited trips, saved coach program, saved hotel history; sold direct to the frequent-traveler lifter.\n\n4\n\nCONTINUITY\n\nCoach White-Label($19-$49/mo flat)\n\nView the full value ladder\n\nTHE PLAN\n\nIf you started today.\nFirst up.\n\nNobody searches for 'exercise substitution app' or 'workout adaptation hotel gym'. Those keywords return near zero. Coaches do not shop for this tool, so cold outreach to coaches will stall. The first 100 customers come from the traveler side, where 1,590 US searches a month across 'hotel room workout' and 'hotel gym workout' point to warm intent, and from one subreddit where the exact buyer already talks about the pain.\n\nSee the detailed plan\nYear one, on a napkin.\nNAPKIN MATH\n\nWhat the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nMonthly US searches for 'hotel room workout' + 'hotel gym workout'\n1,590\nSEO capture at 50 city pages, rank 3-5 (assumption)\n8% CTR = 127/mo\nReddit comment funnel, 1/day x 30 days (assumption)\n30 clicks/day\nTotal top-of-funnel visitors, month 6\n~1,000/mo\nFree-trial to paid conversion (assumption, SaaS benchmark)\n3%\nNew paying travelers per month, month 6\n30\nAverage price blend (one-trip $29, monthly $9.99)\n$18\nMonthly traveler revenue, month 6\n$540\nCoach white-label partners signed (year one, assumption)\n15\nCoach white-label MRR at $19-$49 blended $30\n$450\nBlended MRR exiting month 12\n~$2,500\nYear-one revenue (ramp from zero)\n$15K-$25K\n\nMost rows are assumptions. The sourced numbers are the 1,590 search volume, Fitbod's $1M/mo as a ceiling anchor, and incumbent prices. A conservative year-one path lands at $15K-$25K; a competent founder with content velocity gets to $60K-$120K if SEO hits and one coach partnership compounds.\n\nTHE CEILING IF IT COMPOUNDS\n$2M-$4M ARR\nRun the model on your numbers\n\nTHE AGENTS\n\nJam on it with your agent.\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCursor\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cPain scored 7/10 for \"SaaS tool that adapts prescribed workouts to\u2026\" \u2014 argue the other side.\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+  "status": "not_started",
+  "notes": "",
+  "_source_url": "https://www.ideabrowser.com/hub/ideas/today",
+  "_scraped_at": "2026-11-22T14:56:59.118394+00:00",
+  "_crawl_had_errors": true
+}
