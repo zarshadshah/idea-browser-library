@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-23",
+      "title": "SaaS platform that turns family stories into ready-to-host game shows for milestone celebrations",
+      "path": "library/2026/2026-11-23.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-22",
       "title": "SaaS tool that adapts prescribed workouts to hotel gym equipment for traveling strength clients",
       "path": "library/2026/2026-11-22.json",
