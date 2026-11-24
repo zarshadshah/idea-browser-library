@@ -1,0 +1,1125 @@
+{
+  "id": "2026-11-24",
+  "date": "2026-11-24",
+  "title": "Mobile app that photographs, voice-logs, and catalogues salvaged appliance parts",
+  "tagline": "A used-appliance shop owner runs a 3,200-listing eBay store, grosses $69K a year, and nets about $1,300 a month after eBay fees, shipping, and two payroll emplo...",
+  "badges": [],
+  "description": "A used-appliance shop owner runs a 3,200-listing eBay store, grosses $69K a year, and nets about $1,300 a month after eBay fees, shipping, and two payroll employees. Half his listings are wrong on photos or part numbers. On r/ApplianceTechTalk a different owner posted asking if any parts recyclers exist, because donor washers and dryers pile up faster than he can sort them. The teardown is fast. The listing is slow: 30 to 60 minutes per unit, and that time is where the margin disappears.",
+  "scores": {
+    "opportunity": {
+      "score": null,
+      "label": ""
+    },
+    "problem": {
+      "score": null,
+      "label": ""
+    },
+    "feasibility": {
+      "score": null,
+      "label": ""
+    },
+    "whyNow": {
+      "score": null,
+      "label": ""
+    }
+  },
+  "keywords": [],
+  "marketGap": "",
+  "executionPlan": "",
+  "executionDifficulty": {
+    "score": null,
+    "note": ""
+  },
+  "categorization": {
+    "type": null,
+    "market": null,
+    "target": null,
+    "competitor": null
+  },
+  "communitySignals": {},
+  "communitySignalsDetail": "",
+  "communitySignalsRich": {},
+  "otherCommunitiesExtra": {},
+  "businessFitDeep": {},
+  "scoreCardsDeep": {},
+  "valueEquation": "",
+  "marketMatrix": "",
+  "acpFramework": "",
+  "valueLadderDetail": "",
+  "proofSignals": "",
+  "whyNowDetail": "",
+  "keywordAnalysisDetail": "",
+  "newLayoutSections": {
+    "At a Glance": "Niche shop count\n<5K shops\nPricing\nFree to $99/mo\nYear one\n$30K-$50K\nCeiling\n$300K-$600K ARR\n\nWHAT YOU SELL\n\nShelf App Subscription$49/mo\n\nBIGGEST RISK\n\nOrdovee ships a $29 to $59 mobile tier within two quarters. They already have scanner-first capture, the appliance vertical, and paying customers. A stripped-d\u2026\n\nInterested?\nAdd to project\nBuild this idea",
+    "Why Now": "Capture costs dropped to pennies per part while 25.75% of Americans got right-to-repair protection\n\nAT A GLANCE\n\nNiche shop count\n<5K shops\nPricing\nFree to $99/mo\nYear one\n$30K-$50K\nCeiling\n$300K-$600K ARR\n\nWHAT YOU SELL\n\nShelf App Subscription$49/mo\n\nBIGGEST RISK\n\nOrdovee ships a $29 to $59 mobile tier within two quarters. They already have scanner-first capture, the appliance vertical, and paying customers. A stripped-d\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nCapture costs dropped to pennies per part while 25.75% of Americans got right-to-repair protection\n\nThe capture stack a solo builder needs for this product stopped being expensive this year. On-device OCR reads 94.1% of fields correctly on clean phone-camera photos, instant, free, and offline. Whisper voice transcription is $0.006 per minute, with gpt-4o-mini-transcribe at $0.003 ($0.18 per hour). GPT-4o-mini vision costs roughly $0.0001 to $0.0003 per 1024 pixel image, and Gemini 2.0 Flash is cheaper still. A shop that photographs a data plate and a part, and dictates 30 seconds of condition notes on 100 parts per day, runs under 20 cents per day in inference. Two years ago that same workflow needed custom models, server costs, and a six-figure build.\n\nAt the same time, used appliance parts just became a bigger, more protected business. 13 states have enacted right-to-repair laws as of July 2026, up from 4 in 2023. About 25.75% of Americans now live under an enforceable law. California's Right to Repair Act explicitly covers appliances with a 7-year parts obligation. Colorado banned parts pairing on appliances and HVAC on January 1, 2026, and Connecticut and Texas added appliance coverage in July and September 2026. Independent shops get legal access to OEM parts and diagnostics they did not have before, which raises the floor on what a salvaged-part inventory is worth.",
+    "Proof & Signals": "The US has 37,769 appliance repair businesses as of 2025 per IBISWorld, in a $7.0B industry; AHAM notes nearly 90% of ~20,000 US servicer shops employ 10 or fewer people, matching the small-shop ICP.\n\nIBISWORLD / AHAM\n\nIndustry data indicates only ~30% of repair businesses maintain in-house parts inventories, which caps the salvage-cataloguing TAM to maybe 10,000-15,000 US shops that actually part out machines.\n\nAPPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)\n\nIn May 2026 Solera previewed Hollander Powerlink 4.0 with Direct-Hit by Identifix repair intelligence and InsightsConnect analytics embedded, pushing the dominant auto-recycler YMS further into AI-assisted merchandising and analytics (same company could add appliance teardown vertical with one SKU change).\n\nGLOBENEWSWIRE\n\nThe auto-recycler YMS market has three dominant players (Hollander Powerlink, Pinnacle Professional, Car-Part Checkmate), all with private tiered-subscription pricing; Hollander is the default across ARA-certified yards and most Car-Part.com inventory feeds flow from it.\n\nAUTO RECYCLING MARKETERS\nExplore the evidence",
+    "Market Snapshot": "The receipts.\n\nPAIN\n\n7/10 SEVERITY\n\n\u201cYou might have to wait months for someone to buy those parts off of you, and now you have to store them somewhere while you're waiting.\u201d\n\nr/LifeProTips\n\n\u201cOut of my 3200 listings I would gamble that 1/2 of them are fucked up. Nobody will buy your stuff if it has a bad picture, incomplete part #, etc.\u201d\n\nAppliantology (Master Samurai Tech forum) \u00b7 Eugene (appliance shop owner)\n\n\u201cI was surprised on how small the bottom line was, I'm sure you are too. As i write this, I consider the benefit of having that space empty, filled up with more new/ used appliances. Is $1300/ month worth it? I really don't have the answer for that.\u201d\n\nAppliantology (Master Samurai Tech forum) \u00b7 Eugene (appliance shop owner)\n\nAll 8 receipts, and where these people gather",
+    "Whitespace": "MARKET GAP\n\nThe teardown-to-shelf job is already a feature of bigger systems. The appliance version is only Ordovee\n\nUnderstand the opening\n\nTHE WEDGE\n\nSeconds per part, not minutes. Photo plus voice plus confirm, instead of typing records into a desktop inventory screen.\n\nThe incumbent to beat: Ordovee\n\nPROOF & SIGNALS\n\nThe US has 37,769 appliance repair businesses as of 2025 per IBISWorld, in a $7.0B industry; AHAM notes nearly 90% of ~20,000 US servicer shops employ 10 or fewer people, matching the small-shop ICP.\n\nIBISWORLD / AHAM\n\nIndustry data indicates only ~30% of repair businesses maintain in-house parts inventories, which caps the salvage-cataloguing TAM to maybe 10,000-15,000 US shops that actually part out machines.\n\nAPPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)\n\nIn May 2026 Solera previewed Hollander Powerlink 4.0 with Direct-Hit by Identifix repair intelligence and InsightsConnect analytics embedded, pushing the dominant auto-recycler YMS further into AI-assisted merchandising and analytics (same company could add appliance teardown vertical with one SKU change).\n\nGLOBENEWSWIRE\n\nThe auto-recycler YMS market has three dominant players (Hollander Powerlink, Pinnacle Professional, Car-Part Checkmate), all with private tiered-subscription pricing; Hollander is the default across ARA-certified yards and most Car-Part.com inventory feeds flow from it.\n\nAUTO RECYCLING MARKETERS\nExplore the evidence",
+    "Who You're Up Against": "10 PLAYERS\n\nOrdovee\n\nINCUMBENT\n\nCharges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of guided launch included; this is the direct competitor already serving appliance teardown shops.\n\nOrdovee\n\nAlready markets \"scanner-first execution\", photos per part, model-plate-to-part capture, and lists appliance repair parts (washers, dryers, ranges, fridges) as a target vertical, directly occupying the \"fast cataloguing of salvaged parts\" wedge.\n\nTaskrol\n\nFree for solo appliance repair techs and focuses on van/warehouse inventory tied to service jobs, not teardown cataloguing of donor machines; data-plate photo capture is already built in.\n\nCar-Part.com\n\nRuns Checkmate, Bidmate, Partmate and Trading Partners for auto recyclers: inventory management, part photos, scan-to-update, interchange lookup, and a recycler-to-recycler locating network across 4,200 recyclers.\n\nOrderry\n\nAn appliance repair shop system with parts database by brand/model, van and warehouse stock, barcode, and low-stock alerts; priced at $39/mo Hobby, $69/mo Startup, $99/mo Business, $199/mo Enterprise, with 2-3 employees per plan and extra seats $6-$19/mo.\n\nSortly\n\nA photo-first visual inventory app with barcode/QR scanning and a mobile offline app, priced $0 free (100 items, 1 user), $24-49/mo Advanced (500 items, 2 users), $74-149/mo Ultra (2,000 items, 5 users), $299/mo Premium (5,000 items, 8 users); serves 15,000+ customers across construction, field service, healthcare.\n\nWe Buy Appliance Parts\n\nOffers to buy a shop's entire new, used, or obsolete appliance parts inventory with free pickup and instant payment after submitting photos and basic info, pitching 24-48 hour offer turnaround to shops closing or liquidating stock.\n\nHollander Powerlink\n\nThe industry-standard yard management system for auto recyclers, built around the proprietary Hollander Interchange database; pricing is private/quote-based across all three major YMS vendors (Hollander, Pinnacle, Checkmate), with Hollander and Pinnacle typically in higher tiers.",
+    "People Are Asking For It": "REDDIT\n\n\u201cI have an appliance store that sells and services new and used appliances. We get many that are not worth repairing but have many valuable and usable parts.\u201d\n\nr/ApplianceTechTalk \u00b7 anonymous store owner\n\n\u201cWe used to scramble during downtime because the one part we needed was missing, or buried in a drawer. Has anyone here figured out a solid system for this?\u201d\n\nr/maintenance \u00b7 anonymous maintenance operator\n\n\u201cParting out adds serious margin. An extra 30-60 minutes per appliance can turn your $25 scrap haul into $150+ in parts sales.\u201d\n\nTakeMyAppliance partner guide",
+    "The Verdict": "Should you build this?\n\nREASONS TO BUILD\n\nThe pain is receipted: a real shop owner runs 3,200 eBay listings, nets $1,300 a month, and openly admits half his photos and part numbers are wrong, which is exactly the problem the app fixes.\nThe capture stack is a weekend build now: on-device OCR hits 94.1% accuracy, Whisper runs $0.003 a minute, and vision calls cost under a tenth of a cent per image, so an AI-leveraged solo founder ships the MVP fast.\nThe money works as a service-first blend: a $2,500 backlog cleanout against a shop's existing pile is a clean yes, and 20 to 30 of those shops roll into a $29 to $49 subscription floor for year-one revenue of $30K to $50K.\nThe channel is concrete and cheap: r/ApplianceTechTalk has 2,327 members and Appliantology hosts the exact owner-economics threads, so the first 10 customers come from posting a free listing audit, not buying ads.\n\nREASONS TO NOT BUILD\n\nOrdovee already ships scanner-first photo capture with model-plate extraction for the appliance vertical at $299 a month; a stripped-down $59 mobile tier from them in two quarters eats the whole wedge.\nSearch demand for the exact solution is zero across every variant tested, so there is no SEO or paid-search lane, only a year of cold DMs to a 2,327-person subreddit and hand-picked eBay sellers.\nShops have a cheaper exit than cataloguing: We Buy Appliance Parts, UpFix, and WhoBuysApplianceParts pay cash in 24 to 48 hours with free pickup, and for a $1,300-a-month operation that math is hard to beat.\nThe paid pool caps at a few thousand US shops that both part out donor machines and will pay, so pure SaaS tops near $200K ARR and the real story is a services-plus-software niche, not a venture-scale business.\nRoast it with your agent\n\nPOTENTIAL PIVOT\n\nFlip the money model from \"SaaS subscription with optional backlog\" to \"backlog cleanout service as the frontend lead product ($1,500 to $3,000 flat), subscription as the retention floor ($29 to $49).\" Keep the customer, the product mechanics, and the Ordovee-export positioning. Expect a services-first P&L with software ARR as a secondary line, not the other way around. Builder must be an appliance operator or willing to fly to five shops in year one.\n\nRun this angle with your agent",
+    "Founder Fit": "Not every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo founders with appliance repair experience who can build or prototype a m...\nTeams pairing a technical product builder with a shop owner or technician for...\nFounders without access to repair shops or experience observing workshop rout...\nTeams focused on AI features but lacking inventory accuracy and customer disc...\n\nAn operator who has either run a repair or refurb shop, worked at a used-parts eBay operation, or spent real time inside the auto-recycler world and wants to port the playbook to appliances. They have to be willing to post on Appliantology, fly to five shops in year one to do backlog cleanouts by hand, and sell a $2,500 service over the phone. A coding solo founder with no appliance background will get the app built in a month and then stall for a year trying to get Appliantology regulars to return a DM. The AGI lens flips feasibility: the app is easy, the sales grind is not.\n\nWHAT IT DEMANDS\n\nDistribution\n9\nDomain depth\n8\nSales\n8\nBuild\n3\nCapital\n3\n\nTHE REALITY\n\nFIRST REVENUE\n\n60-90 days\n\nCAPITAL IN\n\n$5K-$15K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card",
+    "What You'd Sell": "The value ladder.\n\nLead magnet: a free eBay listing audit. Frontend: one-time Backlog Cataloguing Service, $1,500 to $3,000, done-for-you capture of 500 to 1,500 existing parts with photos, voice-noted condition, model-plate linkage, and eBay listing drafts. Core: Shelf app subscription, $49 a month per shop, unlimited parts, photo plus voice plus confirm, exports to Ordovee, Orderry, spreadsheet, and eBay Seller Hub CSV.\n\n1\n\nLEAD MAGNET\n\nFree Listing Audit(Free)\n\nShop sends 20 live eBay listings. Tool returns a report on wrong part numbers, missing compatible models, and photo quality fails. One pass, no signup.\n\n2\n\nFRONTEND\n\nBacklog Cataloguing Service($1,500-$3,000)\n\nFlat fee done-for-you capture of 500 to 1,500 existing shelf parts in two weeks. Photos, voice-dictated condition, model-plate linkage, eBay listing drafts. Shop keeps the records and the app.\n\n3\n\nCORE\n\nShelf App Subscription($49/mo)\n\nMobile capture app for ongoing teardowns. Photo plus voice plus confirm per part. Exports to Ordovee, Orderry, spreadsheet, and eBay Seller Hub CSV. Solo tier $29/mo.\n\n4\n\nCONTINUITY\n\nListed+ Auto-Publish($99/mo)\n\nView the full value ladder",
+    "The Plan": "If you started today.\nFirst up.\n\nThe search channel is dead for this product. Google Ads returns essentially zero volume for \"salvaged appliance parts inventory\", \"used appliance parts software\", and the exact-match variants, and only 10 to 70 a month for the adjacent terms. There is no SEO play. There is no paid search play. Shops are not typing this into Google because they have given up on the category existing.\n\nSee the detailed plan\nYear one, on a napkin.",
+    "Napkin Math": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nAppliantology + subreddit audit signups (first 90 days)\n40 shops\nAudit-to-backlog conversion (assumption 25%)\n10 shops\nBacklog service price (verified vs pile-sale offers)\n$2,500 avg\nYear-one backlog revenue\n$25,000\nBacklog-to-subscription conversion (assumption 80%)\n8 shops\nDirect eBay-seller outreach subscribers (assumption)\n12 shops\nTotal year-one subscribers at $49/mo\n20 shops\nSubscription ARR exiting year one\n$11,760\nTotal year-one revenue (services + sub)\n~$30K-$40K\n\n20 subscribers at $49/mo is $11,760 ARR; the backlog services do the heavy lifting in year one. Three of the four rows are assumptions, not sourced numbers; the pool of in-scope shops is capped at ~10,000 to 15,000 US shops, so growth past this scenario depends on a much slower word-of-mouth loop.\n\nTHE CEILING IF IT COMPOUNDS\n$300K-$600K ARR\nRun the model on your numbers\n\nTHE AGENTS\n\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCursor\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cPain scored 7/10 for \"Mobile app that photographs, voice-logs, and\u2026\" \u2014 argue the other side.\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nProblem\nI'd like a reply"
+  },
+  "newLayoutExpandedSections": {
+    "The Full Timing Case": {
+      "text": "5\n/10\nTIMING\n\nTool costs collapsed and 13 right-to-repair states cover 25.75% of Americans, but no demand catalyst, no search spike, and Ordovee plus Hollander are already moving into AI-assisted teardown.\n\nThe capture stack a solo builder needs for this product stopped being expensive this year. On-device OCR reads 94.1% of fields correctly on clean phone-camera photos, instant, free, and offline. Whisper voice transcription is $0.006 per minute, with gpt-4o-mini-transcribe at $0.003 ($0.18 per hour). GPT-4o-mini vision costs roughly $0.0001 to $0.0003 per 1024 pixel image, and Gemini 2.0 Flash is cheaper still. A shop that photographs a data plate and a part, and dictates 30 seconds of condition notes on 100 parts per day, runs under 20 cents per day in inference. Two years ago that same workflow needed custom models, server costs, and a six-figure build.\n\nAt the same time, used appliance parts just became a bigger, more protected business. 13 states have enacted right-to-repair laws as of July 2026, up from 4 in 2023. About 25.75% of Americans now live under an enforceable law. California's Right to Repair Act explicitly covers appliances with a 7-year parts obligation. Colorado banned parts pairing on appliances and HVAC on January 1, 2026, and Connecticut and Texas added appliance coverage in July and September 2026. Independent shops get legal access to OEM parts and diagnostics they did not have before, which raises the floor on what a salvaged-part inventory is worth.\n\nThe honest counter: none of this proves shops will pay for this specific product. Search volume for the exact solution is zero, the US auto-recycler incumbents (Hollander, Car-Part, Pinnacle) are shipping AI-assisted teardown features (Powerlink 4.0 previewed May 2026 with Identifix repair intelligence embedded), and Ordovee already markets scanner-first photo capture into the appliance vertical. Cheap tools do not create demand; they just lower the ante. The timing claim is \"a solo builder can now ship this for the first time,\" not \"the market just woke up.\"\n\nTHE SIGNALS\n\nOn-device OCR: 94.1% field accuracy on clean phone photos, free and offline. Model-plate and part-label reads are a solved problem in 2026, not a research project.\nVoice: $0.003 to $0.006 per minute transcription. A part dictation runs a fraction of a cent, and quality on technical jargon (model numbers, part names) is high enough for confirm-and-save workflows.\nVision: under $0.001 per image on mini models. A whole shelf of 100 parts photographed and interpreted costs less than a coffee.\nRight-to-repair: 13 states enacted, 25.75% of US population covered, appliances explicitly in scope in California, Colorado, Connecticut, and Minnesota. Used parts become a sanctioned repair input, not a gray-market workaround.\nE-waste supply holds: ~23 million small appliances discarded per year in the US, and formal recycling stays at 15 to 25%. Donor machines are not going away.\nThe counter: no search spike, no funding wave, no verified shop-side pull. Auto-recycler incumbents are adding AI-teardown features (Hollander Powerlink 4.0, May 2026) and could port to appliances before a solo builder gets traction. Ordovee already ships scanner-first photo capture in this exact vertical.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Ordovee": "https://ordovee.com/pricing/",
+        "prasad.tech on-device OCR benchmark": "https://prasad.tech/blog/benchmarking-on-device-ocr/",
+        "OpenAI transcription pricing": "https://www.cartesia.ai/learn/openai-whisper-api-pricing",
+        "aicostcheck.com": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "faegredrinker.com": "https://www.faegredrinker.com/en/insights/publications/2026/7/unlocking-the-right-to-repair-the-expanding-compliance-landscape",
+        "\u201cYou might have to wait months for someone to buy those parts off of you, and now you have to store them somewhere while you're waiting.\u201d\n\nr/LifeProTips": "https://www.reddit.com/r/LifeProTips/comments/1i1oyoh/lpt_when_discarding_an_appliance_sell_any_working/",
+        "\u201cOut of my 3200 listings I would gamble that 1/2 of them are fucked up. Nobody will buy your stuff if it has a bad picture, incomplete part #, etc.\u201d\n\nAppliantology (Master Samurai Tech forum) \u00b7 Eugene": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "\u201cI was surprised on how small the bottom line was, I'm sure you are too. As i write this, I consider the benefit of having that space empty, filled up with more new/ used appliances. Is $1300/ month w": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "IBISWORLD / AHAM": "https://bozmanfix.com/appliance-repair-statistics/",
+        "APPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)": "https://worldmetrics.org/appliance-repair-industry-statistics/",
+        "GLOBENEWSWIRE": "https://www.globenewswire.com/news-release/2026/05/06/3289085/0/en/solera-accelerates-innovation-with-hollander-powerlink-new-embedded-integrations-and-preview-of-powerlink-4-0-to-help-recyclers-sell-smarter-and-operate-with-confidence.html",
+        "AUTO RECYCLING MARKETERS": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "Ordovee\n\nINCUMBENT\n\nCharges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of guided launch included; this is the direct competitor already serving app": "https://ordovee.com/pricing/",
+        "Ordovee\n\nAlready markets \"scanner-first execution\", photos per part, model-plate-to-part capture, and lists appliance repair parts (washers, dryers, ranges, fridges) as a target vertical, directly occ": "https://ordovee.com/guide/designed-for-teardown/",
+        "Taskrol\n\nFree for solo appliance repair techs and focuses on van/warehouse inventory tied to service jobs, not teardown cataloguing of donor machines; data-plate photo capture is already built in.": "https://taskrol.com/free-appliance-repair-software/",
+        "Car-Part.com\n\nRuns Checkmate, Bidmate, Partmate and Trading Partners for auto recyclers: inventory management, part photos, scan-to-update, interchange lookup, and a recycler-to-recycler locating netw": "https://products.car-part.com/",
+        "Orderry\n\nAn appliance repair shop system with parts database by brand/model, van and warehouse stock, barcode, and low-stock alerts; priced at $39/mo Hobby, $69/mo Startup, $99/mo Business, $199/mo En": "https://orderry.com/appliance-repair-software-20152/",
+        "Sortly\n\nA photo-first visual inventory app with barcode/QR scanning and a mobile offline app, priced $0 free (100 items, 1 user), $24-49/mo Advanced (500 items, 2 users), $74-149/mo Ultra (2,000 items": "https://checkthat.ai/brands/sortly",
+        "We Buy Appliance Parts\n\nOffers to buy a shop's entire new, used, or obsolete appliance parts inventory with free pickup and instant payment after submitting photos and basic info, pitching 24-48 hour": "https://webuyapplianceparts.com/",
+        "Hollander Powerlink\n\nThe industry-standard yard management system for auto recyclers, built around the proprietary Hollander Interchange database; pricing is private/quote-based across all three major": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "\u201cI have an appliance store that sells and services new and used appliances. We get many that are not worth repairing but have many valuable and usable parts.\u201d\n\nr/ApplianceTechTalk \u00b7 anonymous store ow": "https://www.reddit.com/r/ApplianceTechTalk/comments/1lahejz/any_appliance_parts_recyclers_out_there/",
+        "\u201cWe used to scramble during downtime because the one part we needed was missing, or buried in a drawer. Has anyone here figured out a solid system for this?\u201d\n\nr/maintenance \u00b7 anonymous maintenance ope": "https://www.reddit.com/r/maintenance/comments/1lun2nw/how_do_you_keep_track_of_spare_parts/",
+        "\u201cParting out adds serious margin. An extra 30-60 minutes per appliance can turn your $25 scrap haul into $150+ in parts sales.\u201d\n\nTakeMyAppliance partner guide": "https://www.takemyappliance.com/partners/resources/selling-appliance-parts"
+      }
+    },
+    "Proof & Signals (Full)": {
+      "text": "THE HARD NUMBERS\n\nThe US has 37,769 appliance repair businesses as of 2025 per IBISWorld, in a $7.0B industry; AHAM notes nearly 90% of ~20,000 US servicer shops employ 10 or fewer people, matching the small-shop ICP.\n\nIBISWORLD / AHAM\n\nIndustry data indicates only ~30% of repair businesses maintain in-house parts inventories, which caps the salvage-cataloguing TAM to maybe 10,000-15,000 US shops that actually part out machines.\n\nAPPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)\n\nIn May 2026 Solera previewed Hollander Powerlink 4.0 with Direct-Hit by Identifix repair intelligence and InsightsConnect analytics embedded, pushing the dominant auto-recycler YMS further into AI-assisted merchandising and analytics (same company could add appliance teardown vertical with one SKU change).\n\nGLOBENEWSWIRE\n\nThe auto-recycler YMS market has three dominant players (Hollander Powerlink, Pinnacle Professional, Car-Part Checkmate), all with private tiered-subscription pricing; Hollander is the default across ARA-certified yards and most Car-Part.com inventory feeds flow from it.\n\nAUTO RECYCLING MARKETERS\n\nPEOPLE ARE ASKING FOR IT\n\n\u201cI have an appliance store that sells and services new and used appliances. We get many that are not worth repairing but have many valuable and usable parts.\u201d\n\nr/ApplianceTechTalk \u00b7 anonymous store owner\n\n\u201cWe used to scramble during downtime because the one part we needed was missing, or buried in a drawer. Has anyone here figured out a solid system for this?\u201d\n\nr/maintenance \u00b7 anonymous maintenance operator\n\n\u201cParting out adds serious margin. An extra 30-60 minutes per appliance can turn your $25 scrap haul into $150+ in parts sales.\u201d\n\nTakeMyAppliance partner guide\n\nWHAT THE RESEARCH SAYS\n\nThe pain is plausible, but no paid demand is verified\nExisting products validate the workflow\u2014and raise the bar\nBest next signal: paid pilot plus repeat use\n\nThe strongest demand evidence is for the surrounding workflow: existing products support appliance inventory, recovered parts, donor relationships, and locations. The analyses also describe a concrete operational problem\u2014parts are hard to identify or locate, and staff may have to create records manually\u2014but provide no independently documented customer interviews, paid pilots, conversion, retention, or willingness to pay for this specific photo-and-voice capture offer. Community engagement and broad search activity are useful discovery clues, not proof of purchase intent. Proceed with a narrow paid pilot, not a broad SaaS launch.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Ordovee": "https://ordovee.com/pricing/",
+        "prasad.tech on-device OCR benchmark": "https://prasad.tech/blog/benchmarking-on-device-ocr/",
+        "OpenAI transcription pricing": "https://www.cartesia.ai/learn/openai-whisper-api-pricing",
+        "aicostcheck.com": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "faegredrinker.com": "https://www.faegredrinker.com/en/insights/publications/2026/7/unlocking-the-right-to-repair-the-expanding-compliance-landscape",
+        "\u201cYou might have to wait months for someone to buy those parts off of you, and now you have to store them somewhere while you're waiting.\u201d\n\nr/LifeProTips": "https://www.reddit.com/r/LifeProTips/comments/1i1oyoh/lpt_when_discarding_an_appliance_sell_any_working/",
+        "\u201cOut of my 3200 listings I would gamble that 1/2 of them are fucked up. Nobody will buy your stuff if it has a bad picture, incomplete part #, etc.\u201d\n\nAppliantology (Master Samurai Tech forum) \u00b7 Eugene": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "\u201cI was surprised on how small the bottom line was, I'm sure you are too. As i write this, I consider the benefit of having that space empty, filled up with more new/ used appliances. Is $1300/ month w": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "IBISWORLD / AHAM": "https://bozmanfix.com/appliance-repair-statistics/",
+        "APPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)": "https://worldmetrics.org/appliance-repair-industry-statistics/",
+        "GLOBENEWSWIRE": "https://www.globenewswire.com/news-release/2026/05/06/3289085/0/en/solera-accelerates-innovation-with-hollander-powerlink-new-embedded-integrations-and-preview-of-powerlink-4-0-to-help-recyclers-sell-smarter-and-operate-with-confidence.html",
+        "AUTO RECYCLING MARKETERS": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "Ordovee\n\nINCUMBENT\n\nCharges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of guided launch included; this is the direct competitor already serving app": "https://ordovee.com/pricing/",
+        "Ordovee\n\nAlready markets \"scanner-first execution\", photos per part, model-plate-to-part capture, and lists appliance repair parts (washers, dryers, ranges, fridges) as a target vertical, directly occ": "https://ordovee.com/guide/designed-for-teardown/",
+        "Taskrol\n\nFree for solo appliance repair techs and focuses on van/warehouse inventory tied to service jobs, not teardown cataloguing of donor machines; data-plate photo capture is already built in.": "https://taskrol.com/free-appliance-repair-software/",
+        "Car-Part.com\n\nRuns Checkmate, Bidmate, Partmate and Trading Partners for auto recyclers: inventory management, part photos, scan-to-update, interchange lookup, and a recycler-to-recycler locating netw": "https://products.car-part.com/",
+        "Orderry\n\nAn appliance repair shop system with parts database by brand/model, van and warehouse stock, barcode, and low-stock alerts; priced at $39/mo Hobby, $69/mo Startup, $99/mo Business, $199/mo En": "https://orderry.com/appliance-repair-software-20152/",
+        "Sortly\n\nA photo-first visual inventory app with barcode/QR scanning and a mobile offline app, priced $0 free (100 items, 1 user), $24-49/mo Advanced (500 items, 2 users), $74-149/mo Ultra (2,000 items": "https://checkthat.ai/brands/sortly",
+        "We Buy Appliance Parts\n\nOffers to buy a shop's entire new, used, or obsolete appliance parts inventory with free pickup and instant payment after submitting photos and basic info, pitching 24-48 hour": "https://webuyapplianceparts.com/",
+        "Hollander Powerlink\n\nThe industry-standard yard management system for auto recyclers, built around the proprietary Hollander Interchange database; pricing is private/quote-based across all three major": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "\u201cI have an appliance store that sells and services new and used appliances. We get many that are not worth repairing but have many valuable and usable parts.\u201d\n\nr/ApplianceTechTalk \u00b7 anonymous store ow": "https://www.reddit.com/r/ApplianceTechTalk/comments/1lahejz/any_appliance_parts_recyclers_out_there/",
+        "\u201cWe used to scramble during downtime because the one part we needed was missing, or buried in a drawer. Has anyone here figured out a solid system for this?\u201d\n\nr/maintenance \u00b7 anonymous maintenance ope": "https://www.reddit.com/r/maintenance/comments/1lun2nw/how_do_you_keep_track_of_spare_parts/",
+        "\u201cParting out adds serious margin. An extra 30-60 minutes per appliance can turn your $25 scrap haul into $150+ in parts sales.\u201d\n\nTakeMyAppliance partner guide": "https://www.takemyappliance.com/partners/resources/selling-appliance-parts"
+      }
+    },
+    "The Opening (Full Market Analysis)": {
+      "text": "Draw the map and the appliance shop sits between four groups that already have the shop's money or the shop's attention. One group is the one direct player: Ordovee, which runs scanner-first teardown, photos per part, and model-plate-to-part capture at $299 to $699 a month. One group is the auto-recycler world, where Hollander Powerlink, Car-Part Checkmate, and Pinnacle Pro each run $350 to $769 a month with interchange databases and eBay feeds, and a May 2026 Powerlink 4.0 release adds Identifix repair intelligence and analytics. One group is the appliance-service tools: Orderry at $39 to $199, Taskrol free, Bella FSM, and BlueSuite, all built around the service call and the van, not the pulled-parts shelf. One group is the generic visual-inventory tool: Sortly at $24 to $299 a month with photo-first capture, barcode and QR, and an offline mobile app, serving 15,000-plus small businesses already.\n\nThe honest status quo for a 5-person appliance shop is still eBay Seller Hub, a CSV template, and a shelf of parts photographed on a phone one at a time. The guide most sellers follow spells out the pain: for every part, write a title in the form [Brand] [Part Name] [Part Number] [Model Compatibility], copy a description template, cross-reference compatible models, and set a price from completed-listing comps. For a dryer timer worth $20 to $50, that is the margin. The second escape hatch is just sell the whole pile: We Buy Appliance Parts and UpFix offer 24 to 48 hour cash offers and free pickup for the shop's entire new, used, or obsolete parts inventory, so the shop never has to catalog at all.\n\nThe gap worth building into is narrow and real. Nobody ships a phone-native photo-plus-voice capture tool, priced for a 1 to 3 person shop ($29 to $59 a month), that treats the output as an eBay listing draft and an Ordovee or spreadsheet row at the same time. Ordovee is the closest, but it starts at $299 a month for 3 users and assumes a desktop scanner workflow; a 2-person shop with 100 to 300 parts on the shelf will not pay that. Sortly is cheap and visual, but has no appliance model intelligence, no compatible-model lookup, and no eBay listing export. The auto-recycler stack has the interchange database answer but has no appliance SKU and no reason to build one. The eBay route is free but costs 30 to 60 minutes per unit in listing time, which is where one owner we found lost half of 3,200 listings to wrong photos or wrong part numbers.\n\nOrdovee is the only direct appliance-teardown tool. $299 for 3 users, $499 for 10, $699+ for 10+, scanner-first with photos per part and model-plate capture. A 2-person refurb shop will not pay $299 a month for parts cataloguing alone.\n\nAuto-recycler YMS (Hollander Powerlink, Car-Part Checkmate, Pinnacle Pro) runs the exact same teardown workflow at scale for cars. $350 to $769 a month, quote-based at the top tiers, with proprietary interchange databases. Nobody has ported the model to appliances; the TAM may not justify them doing so.\n\nAppliance repair software (Orderry at $39 to $199, Taskrol free, Bella FSM, BlueSuite) covers truck stock and job-linked parts, not pulled-donor-part cataloguing. The appliance record exists, the teardown shelf does not.\n\nSortly ($24 to $299, 15,000+ customers) owns the generic photo-first inventory job. No voice entry, no appliance-model intelligence, no compatible-model lookup, no eBay listing export. The shop still has to type model numbers and compatibility per part.\n\nThe escape hatch is dumping the pile. We Buy Appliance Parts, UpFix, and WhoBuysApplianceParts buy whole inventories with 24 to 48 hour offers and free pickup. For many shops this is cheaper than paying to catalog and listing one part at a time.\n\nThe real gap: a $29 to $59 a month phone-native capture app that outputs both an Ordovee or spreadsheet row AND an eBay listing draft, with built-in appliance model and compatibility lookup. Nobody ships this. Ordovee is the one incumbent that could close it in a quarter by shipping a stripped-down mobile tier.\n\nYour way in: Seconds per part, not minutes. Photo plus voice plus confirm, instead of typing records into a desktop inventory screen.\n\nThe incumbent to beat: Ordovee\n\nWHO\u2019S ALREADY IN THE MARKET\n\nOrdovee\n\nINCUMBENT\n\nCharges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of guided launch included; this is the direct competitor already serving appliance teardown shops.\n\nOrdovee\n\nAlready markets \"scanner-first execution\", photos per part, model-plate-to-part capture, and lists appliance repair parts (washers, dryers, ranges, fridges) as a target vertical, directly occupying the \"fast cataloguing of salvaged parts\" wedge.\n\nTaskrol\n\nFree for solo appliance repair techs and focuses on van/warehouse inventory tied to service jobs, not teardown cataloguing of donor machines; data-plate photo capture is already built in.\n\nCar-Part.com\n\nRuns Checkmate, Bidmate, Partmate and Trading Partners for auto recyclers: inventory management, part photos, scan-to-update, interchange lookup, and a recycler-to-recycler locating network across 4,200 recyclers.\n\nOrderry\n\nAn appliance repair shop system with parts database by brand/model, van and warehouse stock, barcode, and low-stock alerts; priced at $39/mo Hobby, $69/mo Startup, $99/mo Business, $199/mo Enterprise, with 2-3 employees per plan and extra seats $6-$19/mo.\n\nSortly\n\nA photo-first visual inventory app with barcode/QR scanning and a mobile offline app, priced $0 free (100 items, 1 user), $24-49/mo Advanced (500 items, 2 users), $74-149/mo Ultra (2,000 items, 5 users), $299/mo Premium (5,000 items, 8 users); serves 15,000+ customers across construction, field service, healthcare.\n\nWe Buy Appliance Parts\n\nOffers to buy a shop's entire new, used, or obsolete appliance parts inventory with free pickup and instant payment after submitting photos and basic info, pitching 24-48 hour offer turnaround to shops closing or liquidating stock.\n\nHollander Powerlink\n\nThe industry-standard yard management system for auto recyclers, built around the proprietary Hollander Interchange database; pricing is private/quote-based across all three major YMS vendors (Hollander, Pinnacle, Checkmate), with Hollander and Pinnacle typically in higher tiers.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Ordovee": "https://ordovee.com/pricing/",
+        "prasad.tech on-device OCR benchmark": "https://prasad.tech/blog/benchmarking-on-device-ocr/",
+        "OpenAI transcription pricing": "https://www.cartesia.ai/learn/openai-whisper-api-pricing",
+        "aicostcheck.com": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "faegredrinker.com": "https://www.faegredrinker.com/en/insights/publications/2026/7/unlocking-the-right-to-repair-the-expanding-compliance-landscape",
+        "\u201cYou might have to wait months for someone to buy those parts off of you, and now you have to store them somewhere while you're waiting.\u201d\n\nr/LifeProTips": "https://www.reddit.com/r/LifeProTips/comments/1i1oyoh/lpt_when_discarding_an_appliance_sell_any_working/",
+        "\u201cOut of my 3200 listings I would gamble that 1/2 of them are fucked up. Nobody will buy your stuff if it has a bad picture, incomplete part #, etc.\u201d\n\nAppliantology (Master Samurai Tech forum) \u00b7 Eugene": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "\u201cI was surprised on how small the bottom line was, I'm sure you are too. As i write this, I consider the benefit of having that space empty, filled up with more new/ used appliances. Is $1300/ month w": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "IBISWORLD / AHAM": "https://bozmanfix.com/appliance-repair-statistics/",
+        "APPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)": "https://worldmetrics.org/appliance-repair-industry-statistics/",
+        "GLOBENEWSWIRE": "https://www.globenewswire.com/news-release/2026/05/06/3289085/0/en/solera-accelerates-innovation-with-hollander-powerlink-new-embedded-integrations-and-preview-of-powerlink-4-0-to-help-recyclers-sell-smarter-and-operate-with-confidence.html",
+        "AUTO RECYCLING MARKETERS": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "Ordovee\n\nINCUMBENT\n\nCharges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of guided launch included; this is the direct competitor already serving app": "https://ordovee.com/pricing/",
+        "Ordovee\n\nAlready markets \"scanner-first execution\", photos per part, model-plate-to-part capture, and lists appliance repair parts (washers, dryers, ranges, fridges) as a target vertical, directly occ": "https://ordovee.com/guide/designed-for-teardown/",
+        "Taskrol\n\nFree for solo appliance repair techs and focuses on van/warehouse inventory tied to service jobs, not teardown cataloguing of donor machines; data-plate photo capture is already built in.": "https://taskrol.com/free-appliance-repair-software/",
+        "Car-Part.com\n\nRuns Checkmate, Bidmate, Partmate and Trading Partners for auto recyclers: inventory management, part photos, scan-to-update, interchange lookup, and a recycler-to-recycler locating netw": "https://products.car-part.com/",
+        "Orderry\n\nAn appliance repair shop system with parts database by brand/model, van and warehouse stock, barcode, and low-stock alerts; priced at $39/mo Hobby, $69/mo Startup, $99/mo Business, $199/mo En": "https://orderry.com/appliance-repair-software-20152/",
+        "Sortly\n\nA photo-first visual inventory app with barcode/QR scanning and a mobile offline app, priced $0 free (100 items, 1 user), $24-49/mo Advanced (500 items, 2 users), $74-149/mo Ultra (2,000 items": "https://checkthat.ai/brands/sortly",
+        "We Buy Appliance Parts\n\nOffers to buy a shop's entire new, used, or obsolete appliance parts inventory with free pickup and instant payment after submitting photos and basic info, pitching 24-48 hour": "https://webuyapplianceparts.com/",
+        "Hollander Powerlink\n\nThe industry-standard yard management system for auto recyclers, built around the proprietary Hollander Interchange database; pricing is private/quote-based across all three major": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "\u201cI have an appliance store that sells and services new and used appliances. We get many that are not worth repairing but have many valuable and usable parts.\u201d\n\nr/ApplianceTechTalk \u00b7 anonymous store ow": "https://www.reddit.com/r/ApplianceTechTalk/comments/1lahejz/any_appliance_parts_recyclers_out_there/",
+        "\u201cWe used to scramble during downtime because the one part we needed was missing, or buried in a drawer. Has anyone here figured out a solid system for this?\u201d\n\nr/maintenance \u00b7 anonymous maintenance ope": "https://www.reddit.com/r/maintenance/comments/1lun2nw/how_do_you_keep_track_of_spare_parts/",
+        "\u201cParting out adds serious margin. An extra 30-60 minutes per appliance can turn your $25 scrap haul into $150+ in parts sales.\u201d\n\nTakeMyAppliance partner guide": "https://www.takemyappliance.com/partners/resources/selling-appliance-parts"
+      }
+    },
+    "The Detailed Plan": {
+      "text": "Launch a mobile-first SaaS that turns paired donor-label and part photos, plus voice notes, into searchable, human-verified records\u2014then exports them to shops\u2019 existing inventory tools. Start with a paid 100-part pilot, using OCR, speech capture, and CSV export to prove faster intake and reliable records. Next, validate repeat use and expand to teams and integrations: can 10 shops make this a habit?\n\nTHE FIRST MOVES\n\n1\nWithin 7 days, schedule 5 shop interviews and request observation of the current intake and retrieval workflow before showing a product concept.\n2\nWithin 7 days, create a one-page pilot offer for 100 parts in one appliance category, including baseline measures, export destination, payment, and follow-up criteria.\n3\nWithin 7 days, prototype the capture-to-confirmation-to-CSV flow with sample labels and voice notes; test errors and estimate per-record API and storage costs.\n\nTHE MVP\n\nBuild a mobile-first self-serve SaaS for paired donor-label and part photos, OCR draft fields, voice notes, human confirmation, provenance labels, location, search, and CSV export. Pilot 100 parts in one appliance category and compare against each shop\u2019s existing process; do not build a broad inventory suite or present inferred compatibility as verified.\n\nWHERE THE FIRST USERS COME FROM\n\nFounder-led direct outreach and shop visits \u00b7 Direct observation reaches buyers and users and enables honest baseline comparisons.\n\nTrade associations and repair/refurbishment events \u00b7 Repair and refurbishment associations provide access to relevant operators and referrals.\n\nPermission-based online technician communities \u00b7 Technician communities can help recruit users and expose real edge cases, though engagement is not proof of buying intent.\n\nTIMELINE\n\n1-2 weeks\n\nBUDGET\n\n$0-10K\n\nTHE MILESTONE\n\nWithin 6-12 months, achieve 10 paying shops, with at least 5 continuing paid use after their initial backlog is catalogued and measured improvements in capture time, retrieval, and record freshness.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Ordovee": "https://ordovee.com/pricing/",
+        "prasad.tech on-device OCR benchmark": "https://prasad.tech/blog/benchmarking-on-device-ocr/",
+        "OpenAI transcription pricing": "https://www.cartesia.ai/learn/openai-whisper-api-pricing",
+        "aicostcheck.com": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "faegredrinker.com": "https://www.faegredrinker.com/en/insights/publications/2026/7/unlocking-the-right-to-repair-the-expanding-compliance-landscape",
+        "\u201cYou might have to wait months for someone to buy those parts off of you, and now you have to store them somewhere while you're waiting.\u201d\n\nr/LifeProTips": "https://www.reddit.com/r/LifeProTips/comments/1i1oyoh/lpt_when_discarding_an_appliance_sell_any_working/",
+        "\u201cOut of my 3200 listings I would gamble that 1/2 of them are fucked up. Nobody will buy your stuff if it has a bad picture, incomplete part #, etc.\u201d\n\nAppliantology (Master Samurai Tech forum) \u00b7 Eugene": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "\u201cI was surprised on how small the bottom line was, I'm sure you are too. As i write this, I consider the benefit of having that space empty, filled up with more new/ used appliances. Is $1300/ month w": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "IBISWORLD / AHAM": "https://bozmanfix.com/appliance-repair-statistics/",
+        "APPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)": "https://worldmetrics.org/appliance-repair-industry-statistics/",
+        "GLOBENEWSWIRE": "https://www.globenewswire.com/news-release/2026/05/06/3289085/0/en/solera-accelerates-innovation-with-hollander-powerlink-new-embedded-integrations-and-preview-of-powerlink-4-0-to-help-recyclers-sell-smarter-and-operate-with-confidence.html",
+        "AUTO RECYCLING MARKETERS": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "Ordovee\n\nINCUMBENT\n\nCharges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of guided launch included; this is the direct competitor already serving app": "https://ordovee.com/pricing/",
+        "Ordovee\n\nAlready markets \"scanner-first execution\", photos per part, model-plate-to-part capture, and lists appliance repair parts (washers, dryers, ranges, fridges) as a target vertical, directly occ": "https://ordovee.com/guide/designed-for-teardown/",
+        "Taskrol\n\nFree for solo appliance repair techs and focuses on van/warehouse inventory tied to service jobs, not teardown cataloguing of donor machines; data-plate photo capture is already built in.": "https://taskrol.com/free-appliance-repair-software/",
+        "Car-Part.com\n\nRuns Checkmate, Bidmate, Partmate and Trading Partners for auto recyclers: inventory management, part photos, scan-to-update, interchange lookup, and a recycler-to-recycler locating netw": "https://products.car-part.com/",
+        "Orderry\n\nAn appliance repair shop system with parts database by brand/model, van and warehouse stock, barcode, and low-stock alerts; priced at $39/mo Hobby, $69/mo Startup, $99/mo Business, $199/mo En": "https://orderry.com/appliance-repair-software-20152/",
+        "Sortly\n\nA photo-first visual inventory app with barcode/QR scanning and a mobile offline app, priced $0 free (100 items, 1 user), $24-49/mo Advanced (500 items, 2 users), $74-149/mo Ultra (2,000 items": "https://checkthat.ai/brands/sortly",
+        "We Buy Appliance Parts\n\nOffers to buy a shop's entire new, used, or obsolete appliance parts inventory with free pickup and instant payment after submitting photos and basic info, pitching 24-48 hour": "https://webuyapplianceparts.com/",
+        "Hollander Powerlink\n\nThe industry-standard yard management system for auto recyclers, built around the proprietary Hollander Interchange database; pricing is private/quote-based across all three major": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "\u201cI have an appliance store that sells and services new and used appliances. We get many that are not worth repairing but have many valuable and usable parts.\u201d\n\nr/ApplianceTechTalk \u00b7 anonymous store ow": "https://www.reddit.com/r/ApplianceTechTalk/comments/1lahejz/any_appliance_parts_recyclers_out_there/",
+        "\u201cWe used to scramble during downtime because the one part we needed was missing, or buried in a drawer. Has anyone here figured out a solid system for this?\u201d\n\nr/maintenance \u00b7 anonymous maintenance ope": "https://www.reddit.com/r/maintenance/comments/1lun2nw/how_do_you_keep_track_of_spare_parts/",
+        "\u201cParting out adds serious margin. An extra 30-60 minutes per appliance can turn your $25 scrap haul into $150+ in parts sales.\u201d\n\nTakeMyAppliance partner guide": "https://www.takemyappliance.com/partners/resources/selling-appliance-parts"
+      }
+    },
+    "The Full Value Ladder": {
+      "text": "1\n\nLEAD MAGNET\n\nFree Listing Audit(Free)\n\nShop sends 20 live eBay listings. Tool returns a report on wrong part numbers, missing compatible models, and photo quality fails. One pass, no signup.\n\n2\n\nFRONTEND\n\nBacklog Cataloguing Service($1,500-$3,000)\n\nFlat fee done-for-you capture of 500 to 1,500 existing shelf parts in two weeks. Photos, voice-dictated condition, model-plate linkage, eBay listing drafts. Shop keeps the records and the app.\n\n3\n\nCORE\n\nShelf App Subscription($49/mo)\n\nMobile capture app for ongoing teardowns. Photo plus voice plus confirm per part. Exports to Ordovee, Orderry, spreadsheet, and eBay Seller Hub CSV. Solo tier $29/mo.\n\n4\n\nCONTINUITY\n\nListed+ Auto-Publish($99/mo)\n\nAuto-posts parts to eBay Seller Hub on capture, syncs sold-status back, flags cross-shop buy requests through a small shop network.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "Ordovee": "https://ordovee.com/pricing/",
+        "prasad.tech on-device OCR benchmark": "https://prasad.tech/blog/benchmarking-on-device-ocr/",
+        "OpenAI transcription pricing": "https://www.cartesia.ai/learn/openai-whisper-api-pricing",
+        "aicostcheck.com": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "faegredrinker.com": "https://www.faegredrinker.com/en/insights/publications/2026/7/unlocking-the-right-to-repair-the-expanding-compliance-landscape",
+        "\u201cYou might have to wait months for someone to buy those parts off of you, and now you have to store them somewhere while you're waiting.\u201d\n\nr/LifeProTips": "https://www.reddit.com/r/LifeProTips/comments/1i1oyoh/lpt_when_discarding_an_appliance_sell_any_working/",
+        "\u201cOut of my 3200 listings I would gamble that 1/2 of them are fucked up. Nobody will buy your stuff if it has a bad picture, incomplete part #, etc.\u201d\n\nAppliantology (Master Samurai Tech forum) \u00b7 Eugene": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "\u201cI was surprised on how small the bottom line was, I'm sure you are too. As i write this, I consider the benefit of having that space empty, filled up with more new/ used appliances. Is $1300/ month w": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "IBISWORLD / AHAM": "https://bozmanfix.com/appliance-repair-statistics/",
+        "APPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)": "https://worldmetrics.org/appliance-repair-industry-statistics/",
+        "GLOBENEWSWIRE": "https://www.globenewswire.com/news-release/2026/05/06/3289085/0/en/solera-accelerates-innovation-with-hollander-powerlink-new-embedded-integrations-and-preview-of-powerlink-4-0-to-help-recyclers-sell-smarter-and-operate-with-confidence.html",
+        "AUTO RECYCLING MARKETERS": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "Ordovee\n\nINCUMBENT\n\nCharges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of guided launch included; this is the direct competitor already serving app": "https://ordovee.com/pricing/",
+        "Ordovee\n\nAlready markets \"scanner-first execution\", photos per part, model-plate-to-part capture, and lists appliance repair parts (washers, dryers, ranges, fridges) as a target vertical, directly occ": "https://ordovee.com/guide/designed-for-teardown/",
+        "Taskrol\n\nFree for solo appliance repair techs and focuses on van/warehouse inventory tied to service jobs, not teardown cataloguing of donor machines; data-plate photo capture is already built in.": "https://taskrol.com/free-appliance-repair-software/",
+        "Car-Part.com\n\nRuns Checkmate, Bidmate, Partmate and Trading Partners for auto recyclers: inventory management, part photos, scan-to-update, interchange lookup, and a recycler-to-recycler locating netw": "https://products.car-part.com/",
+        "Orderry\n\nAn appliance repair shop system with parts database by brand/model, van and warehouse stock, barcode, and low-stock alerts; priced at $39/mo Hobby, $69/mo Startup, $99/mo Business, $199/mo En": "https://orderry.com/appliance-repair-software-20152/",
+        "Sortly\n\nA photo-first visual inventory app with barcode/QR scanning and a mobile offline app, priced $0 free (100 items, 1 user), $24-49/mo Advanced (500 items, 2 users), $74-149/mo Ultra (2,000 items": "https://checkthat.ai/brands/sortly",
+        "We Buy Appliance Parts\n\nOffers to buy a shop's entire new, used, or obsolete appliance parts inventory with free pickup and instant payment after submitting photos and basic info, pitching 24-48 hour": "https://webuyapplianceparts.com/",
+        "Hollander Powerlink\n\nThe industry-standard yard management system for auto recyclers, built around the proprietary Hollander Interchange database; pricing is private/quote-based across all three major": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "\u201cI have an appliance store that sells and services new and used appliances. We get many that are not worth repairing but have many valuable and usable parts.\u201d\n\nr/ApplianceTechTalk \u00b7 anonymous store ow": "https://www.reddit.com/r/ApplianceTechTalk/comments/1lahejz/any_appliance_parts_recyclers_out_there/",
+        "\u201cWe used to scramble during downtime because the one part we needed was missing, or buried in a drawer. Has anyone here figured out a solid system for this?\u201d\n\nr/maintenance \u00b7 anonymous maintenance ope": "https://www.reddit.com/r/maintenance/comments/1lun2nw/how_do_you_keep_track_of_spare_parts/",
+        "\u201cParting out adds serious margin. An extra 30-60 minutes per appliance can turn your $25 scrap haul into $150+ in parts sales.\u201d\n\nTakeMyAppliance partner guide": "https://www.takemyappliance.com/partners/resources/selling-appliance-parts"
+      }
+    }
+  },
+  "glancePopups": {
+    "THE CEILING IF IT COMPOUNDS $300K-$600K ARR": {
+      "text": "Where the ceiling comes from.\nWHAT $300K ARR TAKES\nCore subscription: 300 shops at $49/mo\n$176K ARR\nSolo tier: 200 shops at $29/mo\n$70K ARR\nBacklog service: 40 jobs/yr at $2,500\n$100K/yr\nListed+ upsell: 50 shops at $99/mo\n$59K ARR\nPile-sale referral fee (assumption)\n$15K-$30K/yr\nHonest ceiling is $300K-$600K ARR all-in. SaaS alone tops out around $120K to $240K because the US pool of shops that both part out donor machines and will pay monthly is a few thousand. Backlog services scale with the founder's hands or a hire. Listing-platform referrals and the pile-sale affiliate add a floor. The brief's $100K to $300K ARR is achievable; past that the model needs a second product or an adjacent vertical.\nTHE CEILING\nTHE NEXT STEP\nIf you're serious about building a cash-flowing business.",
+      "links": {
+        "Ordovee": "https://ordovee.com/pricing/",
+        "prasad.tech on-device OCR benchmark": "https://prasad.tech/blog/benchmarking-on-device-ocr/",
+        "OpenAI transcription pricing": "https://www.cartesia.ai/learn/openai-whisper-api-pricing",
+        "aicostcheck.com": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026",
+        "faegredrinker.com": "https://www.faegredrinker.com/en/insights/publications/2026/7/unlocking-the-right-to-repair-the-expanding-compliance-landscape",
+        "\u201cYou might have to wait months for someone to buy those parts off of you, and now you have to store them somewhere while you're waiting.\u201d\n\nr/LifeProTips": "https://www.reddit.com/r/LifeProTips/comments/1i1oyoh/lpt_when_discarding_an_appliance_sell_any_working/",
+        "\u201cOut of my 3200 listings I would gamble that 1/2 of them are fucked up. Nobody will buy your stuff if it has a bad picture, incomplete part #, etc.\u201d\n\nAppliantology (Master Samurai Tech forum) \u00b7 Eugene": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "\u201cI was surprised on how small the bottom line was, I'm sure you are too. As i write this, I consider the benefit of having that space empty, filled up with more new/ used appliances. Is $1300/ month w": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+        "IBISWORLD / AHAM": "https://bozmanfix.com/appliance-repair-statistics/",
+        "APPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)": "https://worldmetrics.org/appliance-repair-industry-statistics/",
+        "GLOBENEWSWIRE": "https://www.globenewswire.com/news-release/2026/05/06/3289085/0/en/solera-accelerates-innovation-with-hollander-powerlink-new-embedded-integrations-and-preview-of-powerlink-4-0-to-help-recyclers-sell-smarter-and-operate-with-confidence.html",
+        "AUTO RECYCLING MARKETERS": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "Ordovee\n\nINCUMBENT\n\nCharges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of guided launch included; this is the direct competitor already serving app": "https://ordovee.com/pricing/",
+        "Ordovee\n\nAlready markets \"scanner-first execution\", photos per part, model-plate-to-part capture, and lists appliance repair parts (washers, dryers, ranges, fridges) as a target vertical, directly occ": "https://ordovee.com/guide/designed-for-teardown/",
+        "Taskrol\n\nFree for solo appliance repair techs and focuses on van/warehouse inventory tied to service jobs, not teardown cataloguing of donor machines; data-plate photo capture is already built in.": "https://taskrol.com/free-appliance-repair-software/",
+        "Car-Part.com\n\nRuns Checkmate, Bidmate, Partmate and Trading Partners for auto recyclers: inventory management, part photos, scan-to-update, interchange lookup, and a recycler-to-recycler locating netw": "https://products.car-part.com/",
+        "Orderry\n\nAn appliance repair shop system with parts database by brand/model, van and warehouse stock, barcode, and low-stock alerts; priced at $39/mo Hobby, $69/mo Startup, $99/mo Business, $199/mo En": "https://orderry.com/appliance-repair-software-20152/",
+        "Sortly\n\nA photo-first visual inventory app with barcode/QR scanning and a mobile offline app, priced $0 free (100 items, 1 user), $24-49/mo Advanced (500 items, 2 users), $74-149/mo Ultra (2,000 items": "https://checkthat.ai/brands/sortly",
+        "We Buy Appliance Parts\n\nOffers to buy a shop's entire new, used, or obsolete appliance parts inventory with free pickup and instant payment after submitting photos and basic info, pitching 24-48 hour": "https://webuyapplianceparts.com/",
+        "Hollander Powerlink\n\nThe industry-standard yard management system for auto recyclers, built around the proprietary Hollander Interchange database; pricing is private/quote-based across all three major": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle",
+        "\u201cI have an appliance store that sells and services new and used appliances. We get many that are not worth repairing but have many valuable and usable parts.\u201d\n\nr/ApplianceTechTalk \u00b7 anonymous store ow": "https://www.reddit.com/r/ApplianceTechTalk/comments/1lahejz/any_appliance_parts_recyclers_out_there/",
+        "\u201cWe used to scramble during downtime because the one part we needed was missing, or buried in a drawer. Has anyone here figured out a solid system for this?\u201d\n\nr/maintenance \u00b7 anonymous maintenance ope": "https://www.reddit.com/r/maintenance/comments/1lun2nw/how_do_you_keep_track_of_spare_parts/",
+        "\u201cParting out adds serious margin. An extra 30-60 minutes per appliance can turn your $25 scrap haul into $150+ in parts sales.\u201d\n\nTakeMyAppliance partner guide": "https://www.takemyappliance.com/partners/resources/selling-appliance-parts"
+      }
+    }
+  },
+  "overallScore": null,
+  "painScore": null,
+  "timingScore": null,
+  "layoutDetected": "new",
+  "siteView": {
+    "version": "v3",
+    "dateLabel": "NOV 24, 2026",
+    "title": "Mobile app that photographs, voice-logs, and catalogues salvaged appliance parts",
+    "ibIndex": "5.5",
+    "tags": [
+      "SaaS",
+      "$300K-$600K ARR"
+    ],
+    "painSeverity": "7",
+    "hero": [
+      {
+        "label": "NICHE SHOP COUNT",
+        "lines": [
+          "<5K shops",
+          "US appliance parts recyclers, the real buyer pool"
+        ],
+        "prose": false
+      },
+      {
+        "label": "WHAT IT DEMANDS",
+        "lines": [
+          "Distribution",
+          "Domain depth",
+          "Sales",
+          "Build",
+          "Capital"
+        ],
+        "prose": false
+      },
+      {
+        "label": "THE REALITY",
+        "lines": [
+          "FIRST REVENUE",
+          "60-90 days",
+          "CAPITAL IN",
+          "$5K-$15K",
+          "DIFFICULTY",
+          "Moderate"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "FIRST REVENUE",
+            "value": "60-90 days"
+          },
+          {
+            "label": "CAPITAL IN",
+            "value": "$5K-$15K"
+          },
+          {
+            "label": "DIFFICULTY",
+            "value": "Moderate"
+          }
+        ]
+      },
+      {
+        "label": "UP AGAINST",
+        "lines": [
+          "Ordovee",
+          "Charges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of gu\u2026",
+          "+ 9 more mapped"
+        ],
+        "prose": false,
+        "href": "https://ordovee.com/pricing/"
+      },
+      {
+        "label": "THE PITCH",
+        "lines": [
+          "A used-appliance shop owner runs a 3,200-listing eBay store, grosses $69K a year, and nets about $1,300 a month after eBay fees, shipping, and two payroll employees. Half his listings are wrong on photos or part numbers. On r/ApplianceTechTalk a different owner posted asking if any parts recyclers exist, because donor washers and dryers pile up faster than he can sort them. The teardown is fast. The listing is slow: 30 to 60 minutes per unit, and that time is where the margin disappears."
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHO IT'S FOR",
+        "lines": [
+          "Small appliance repair and refurbishment shops that dismantle donor machines (washers, dryers, ranges, dishwashers, microwaves) and keep usable components on shelves for resale or reuse in future repairs."
+        ],
+        "prose": true
+      },
+      {
+        "label": "THE GAP",
+        "lines": [
+          "The teardown-to-shelf job is already a feature of bigger systems. The appliance version is only Ordovee"
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHY NOW",
+        "lines": [
+          "Capture costs dropped to pennies per part while 25.75% of Americans got right-to-repair protection"
+        ],
+        "prose": true
+      },
+      {
+        "label": "AT A GLANCE",
+        "lines": [
+          "Niche shop count",
+          "<5K shops",
+          "Pricing",
+          "Free to $99/mo",
+          "Year one",
+          "$30K-$50K",
+          "Ceiling",
+          "$300K-$600K ARR"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "Niche shop count",
+            "value": "<5K shops"
+          },
+          {
+            "label": "Pricing",
+            "value": "Free to $99/mo"
+          },
+          {
+            "label": "Year one",
+            "value": "$30K-$50K"
+          },
+          {
+            "label": "Ceiling",
+            "value": "$300K-$600K ARR"
+          }
+        ]
+      },
+      {
+        "label": "WHAT YOU SELL",
+        "lines": [
+          "Shelf App Subscription$49/mo"
+        ],
+        "prose": false,
+        "name": "Shelf App Subscription",
+        "price": "$49/mo"
+      },
+      {
+        "label": "BIGGEST RISK",
+        "lines": [
+          "Ordovee ships a $29 to $59 mobile tier within two quarters. They already have scanner-first capture, the appliance vertical, and paying customers. A stripped-d\u2026"
+        ],
+        "prose": true
+      }
+    ],
+    "heroMore": null,
+    "sections": [
+      {
+        "id": "whyNow",
+        "kicker": "Why now",
+        "data": {
+          "headline": "Capture costs dropped to pennies per part while 25.75% of Americans got right-to-repair protection",
+          "paragraphs": [
+            "The capture stack a solo builder needs for this product stopped being expensive this year. On-device OCR reads 94.1% of fields correctly on clean phone-camera photos, instant, free, and offline. Whisper voice transcription is $0.006 per minute, with gpt-4o-mini-transcribe at $0.003 ($0.18 per hour). GPT-4o-mini vision costs roughly $0.0001 to $0.0003 per 1024 pixel image, and Gemini 2.0 Flash is cheaper still. A shop that photographs a data plate and a part, and dictates 30 seconds of condition notes on 100 parts per day, runs under 20 cents per day in inference. Two years ago that same workflow needed custom models, server costs, and a six-figure build.",
+            "At the same time, used appliance parts just became a bigger, more protected business. 13 states have enacted right-to-repair laws as of July 2026, up from 4 in 2023. About 25.75% of Americans now live under an enforceable law. California's Right to Repair Act explicitly covers appliances with a 7-year parts obligation. Colorado banned parts pairing on appliances and HVAC on January 1, 2026, and Connecticut and Texas added appliance coverage in July and September 2026. Independent shops get legal access to OEM parts and diagnostics they did not have before, which raises the floor on what a salvaged-part inventory is worth."
+          ],
+          "sources": [
+            {
+              "label": "prasad.tech on-device OCR benchmark",
+              "href": "https://prasad.tech/blog/benchmarking-on-device-ocr/"
+            },
+            {
+              "label": "OpenAI transcription pricing",
+              "href": "https://www.cartesia.ai/learn/openai-whisper-api-pricing"
+            },
+            {
+              "label": "aicostcheck.com",
+              "href": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026"
+            },
+            {
+              "label": "faegredrinker.com",
+              "href": "https://www.faegredrinker.com/en/insights/publications/2026/7/unlocking-the-right-to-repair-the-expanding-compliance-landscape"
+            }
+          ]
+        },
+        "more": {
+          "label": "See the full timing case",
+          "title": "The full timing case.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "5"
+            },
+            {
+              "type": "p",
+              "text": "/10"
+            },
+            {
+              "type": "h",
+              "text": "TIMING"
+            },
+            {
+              "type": "p",
+              "text": "Tool costs collapsed and 13 right-to-repair states cover 25.75% of Americans, but no demand catalyst, no search spike, and Ordovee plus Hollander are already moving into AI-assisted teardown."
+            },
+            {
+              "type": "p",
+              "text": "The honest counter: none of this proves shops will pay for this specific product. Search volume for the exact solution is zero, the US auto-recycler incumbents (Hollander, Car-Part, Pinnacle) are shipping AI-assisted teardown features (Powerlink 4.0 previewed May 2026 with Identifix repair intelligence embedded), and Ordovee already markets scanner-first photo capture into the appliance vertical. Cheap tools do not create demand; they just lower the ante. The timing claim is \"a solo builder can now ship this for the first time,\" not \"the market just woke up.\""
+            },
+            {
+              "type": "h",
+              "text": "THE SIGNALS"
+            },
+            {
+              "type": "p",
+              "text": "On-device OCR: 94.1% field accuracy on clean phone photos, free and offline. Model-plate and part-label reads are a solved problem in 2026, not a research project."
+            },
+            {
+              "type": "p",
+              "text": "Voice: $0.003 to $0.006 per minute transcription. A part dictation runs a fraction of a cent, and quality on technical jargon (model numbers, part names) is high enough for confirm-and-save workflows."
+            },
+            {
+              "type": "p",
+              "text": "Vision: under $0.001 per image on mini models. A whole shelf of 100 parts photographed and interpreted costs less than a coffee."
+            },
+            {
+              "type": "p",
+              "text": "Right-to-repair: 13 states enacted, 25.75% of US population covered, appliances explicitly in scope in California, Colorado, Connecticut, and Minnesota. Used parts become a sanctioned repair input, not a gray-market workaround."
+            },
+            {
+              "type": "p",
+              "text": "E-waste supply holds: ~23 million small appliances discarded per year in the US, and formal recycling stays at 15 to 25%. Donor machines are not going away."
+            },
+            {
+              "type": "p",
+              "text": "The counter: no search spike, no funding wave, no verified shop-side pull. Auto-recycler incumbents are adding AI-teardown features (Hollander Powerlink 4.0, May 2026) and could port to appliances before a solo builder gets traction. Ordovee already ships scanner-first photo capture in this exact vertical."
+            }
+          ]
+        }
+      },
+      {
+        "id": "marketSnapshot",
+        "kicker": "Market snapshot",
+        "data": {
+          "title": "The receipts.",
+          "painSeverity": "7",
+          "quotes": [
+            {
+              "quote": "\u201cYou might have to wait months for someone to buy those parts off of you, and now you have to store them somewhere while you're waiting.\u201d",
+              "source": "r/LifeProTips",
+              "href": "https://www.reddit.com/r/LifeProTips/comments/1i1oyoh/lpt_when_discarding_an_appliance_sell_any_working/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cOut of my 3200 listings I would gamble that 1/2 of them are fucked up. Nobody will buy your stuff if it has a bad picture, incomplete part #, etc.\u201d",
+              "source": "Appliantology (Master Samurai Tech forum) \u00b7 Eugene (appliance shop owner)",
+              "href": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cI was surprised on how small the bottom line was, I'm sure you are too. As i write this, I consider the benefit of having that space empty, filled up with more new/ used appliances. Is $1300/ month worth it? I really don't have the answer for that.\u201d",
+              "source": "Appliantology (Master Samurai Tech forum) \u00b7 Eugene (appliance shop owner)",
+              "href": "https://appliantology.org/blogs/entry/949-the-ebay-store-is-it-worth-it/",
+              "platform": null
+            }
+          ],
+          "receiptsLabel": "All 8 receipts, and where these people gather"
+        },
+        "more": {
+          "label": "All receipts",
+          "title": "Where the pain lives.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "\u201cAppliance records by make, model and serial, with the service history attached to the machine rather than to the address... Parts identified before the visit where possible, and ordered against the specific job when not.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "Fieldproxy guide for appliance repair software"
+            },
+            {
+              "type": "p",
+              "text": "\u201ci recommend keeping a truck stock list, and track the parts you replace regularly and keep those on your truck. i use an excel spreadsheet for this.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "Appliantology (Parts inventory, you say?? thread) \u00b7 appliance tech, Coast Appliance Parts account holder"
+            },
+            {
+              "type": "h",
+              "text": "WHERE THEY GATHER"
+            },
+            {
+              "type": "p",
+              "text": "A used-appliance store owner posted on r/ApplianceTechTalk 1 year ago asking if any appliance parts recyclers exist, saying they get many donor units with usable parts, which directly matches the ICP.Visit"
+            },
+            {
+              "type": "p",
+              "text": "The appliance-repair owner community on Reddit discusses used parts actively: a \"Selling used appliance parts?\" thread was posted 3 months ago on r/appliancerepair with 10+ comments, showing recurring recent chatter on parting-out for resale.Visit"
+            },
+            {
+              "type": "p",
+              "text": "HERO: Only ~566 US small-appliance-repair services are catalogued in B2B listings (phone-level), and the directly relevant appliance-recycler Reddit thread drew 10+ comments 1 year ago - the paid target shop count is a few thousand at most, not tens of thousands.Visit"
+            },
+            {
+              "type": "p",
+              "text": "r/ApplianceTechTalk has only 2,327 members as the main US community for appliance repair techs discussing trade pain; this is the ICP's main online gathering spot, and it is small.Visit"
+            },
+            {
+              "type": "p",
+              "text": "Appliantology, a dedicated master-tech forum, hosts the owner-economics discussion, confirming the trade concentrates on a small number of long-running niche sites more than large general subreddits.Visit"
+            }
+          ]
+        }
+      },
+      {
+        "id": "whitespace",
+        "kicker": "Whitespace",
+        "data": {
+          "gap": "The teardown-to-shelf job is already a feature of bigger systems. The appliance version is only Ordovee",
+          "wedge": [
+            "Seconds per part, not minutes. Photo plus voice plus confirm, instead of typing records into a desktop inventory screen."
+          ],
+          "incumbent": {
+            "name": "Ordovee",
+            "href": "https://ordovee.com/pricing/"
+          },
+          "other": []
+        },
+        "more": {
+          "label": "Understand the opening",
+          "title": "The opening.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Draw the map and the appliance shop sits between four groups that already have the shop's money or the shop's attention. One group is the one direct player: Ordovee, which runs scanner-first teardown, photos per part, and model-plate-to-part capture at $299 to $699 a month. One group is the auto-recycler world, where Hollander Powerlink, Car-Part Checkmate, and Pinnacle Pro each run $350 to $769 a month with interchange databases and eBay feeds, and a May 2026 Powerlink 4.0 release adds Identifix repair intelligence and analytics. One group is the appliance-service tools: Orderry at $39 to $199, Taskrol free, Bella FSM, and BlueSuite, all built around the service call and the van, not the pulled-parts shelf. One group is the generic visual-inventory tool: Sortly at $24 to $299 a month with photo-first capture, barcode and QR, and an offline mobile app, serving 15,000-plus small businesses already."
+            },
+            {
+              "type": "p",
+              "text": "The honest status quo for a 5-person appliance shop is still eBay Seller Hub, a CSV template, and a shelf of parts photographed on a phone one at a time. The guide most sellers follow spells out the pain: for every part, write a title in the form [Brand] [Part Name] [Part Number] [Model Compatibility], copy a description template, cross-reference compatible models, and set a price from completed-listing comps. For a dryer timer worth $20 to $50, that is the margin. The second escape hatch is just sell the whole pile: We Buy Appliance Parts and UpFix offer 24 to 48 hour cash offers and free pickup for the shop's entire new, used, or obsolete parts inventory, so the shop never has to catalog at all."
+            },
+            {
+              "type": "p",
+              "text": "The gap worth building into is narrow and real. Nobody ships a phone-native photo-plus-voice capture tool, priced for a 1 to 3 person shop ($29 to $59 a month), that treats the output as an eBay listing draft and an Ordovee or spreadsheet row at the same time. Ordovee is the closest, but it starts at $299 a month for 3 users and assumes a desktop scanner workflow; a 2-person shop with 100 to 300 parts on the shelf will not pay that. Sortly is cheap and visual, but has no appliance model intelligence, no compatible-model lookup, and no eBay listing export. The auto-recycler stack has the interchange database answer but has no appliance SKU and no reason to build one. The eBay route is free but costs 30 to 60 minutes per unit in listing time, which is where one owner we found lost half of 3,200 listings to wrong photos or wrong part numbers."
+            },
+            {
+              "type": "p",
+              "text": "Ordovee is the only direct appliance-teardown tool. $299 for 3 users, $499 for 10, $699+ for 10+, scanner-first with photos per part and model-plate capture. A 2-person refurb shop will not pay $299 a month for parts cataloguing alone."
+            },
+            {
+              "type": "p",
+              "text": "Auto-recycler YMS (Hollander Powerlink, Car-Part Checkmate, Pinnacle Pro) runs the exact same teardown workflow at scale for cars. $350 to $769 a month, quote-based at the top tiers, with proprietary interchange databases. Nobody has ported the model to appliances; the TAM may not justify them doing so."
+            },
+            {
+              "type": "p",
+              "text": "Appliance repair software (Orderry at $39 to $199, Taskrol free, Bella FSM, BlueSuite) covers truck stock and job-linked parts, not pulled-donor-part cataloguing. The appliance record exists, the teardown shelf does not."
+            },
+            {
+              "type": "p",
+              "text": "Sortly ($24 to $299, 15,000+ customers) owns the generic photo-first inventory job. No voice entry, no appliance-model intelligence, no compatible-model lookup, no eBay listing export. The shop still has to type model numbers and compatibility per part."
+            },
+            {
+              "type": "p",
+              "text": "The escape hatch is dumping the pile. We Buy Appliance Parts, UpFix, and WhoBuysApplianceParts buy whole inventories with 24 to 48 hour offers and free pickup. For many shops this is cheaper than paying to catalog and listing one part at a time."
+            },
+            {
+              "type": "p",
+              "text": "The real gap: a $29 to $59 a month phone-native capture app that outputs both an Ordovee or spreadsheet row AND an eBay listing draft, with built-in appliance model and compatibility lookup. Nobody ships this. Ordovee is the one incumbent that could close it in a quarter by shipping a stripped-down mobile tier."
+            },
+            {
+              "type": "p",
+              "text": "Your way in: Seconds per part, not minutes. Photo plus voice plus confirm, instead of typing records into a desktop inventory screen."
+            },
+            {
+              "type": "h",
+              "text": "WHO\u2019S ALREADY IN THE MARKET"
+            }
+          ]
+        }
+      },
+      {
+        "id": "proof",
+        "kicker": "Proof & signals",
+        "data": {
+          "items": [
+            {
+              "text": "The US has 37,769 appliance repair businesses as of 2025 per IBISWorld, in a $7.0B industry; AHAM notes nearly 90% of ~20,000 US servicer shops employ 10 or fewer people, matching the small-shop ICP.",
+              "source": "IBISWORLD / AHAM",
+              "href": "https://bozmanfix.com/appliance-repair-statistics/"
+            },
+            {
+              "text": "Industry data indicates only ~30% of repair businesses maintain in-house parts inventories, which caps the salvage-cataloguing TAM to maybe 10,000-15,000 US shops that actually part out machines.",
+              "source": "APPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)",
+              "href": "https://worldmetrics.org/appliance-repair-industry-statistics/"
+            },
+            {
+              "text": "In May 2026 Solera previewed Hollander Powerlink 4.0 with Direct-Hit by Identifix repair intelligence and InsightsConnect analytics embedded, pushing the dominant auto-recycler YMS further into AI-assisted merchandising and analytics (same company could add appliance teardown vertical with one SKU change).",
+              "source": "GLOBENEWSWIRE",
+              "href": "https://www.globenewswire.com/news-release/2026/05/06/3289085/0/en/solera-accelerates-innovation-with-hollander-powerlink-new-embedded-integrations-and-preview-of-powerlink-4-0-to-help-recyclers-sell-smarter-and-operate-with-confidence.html"
+            },
+            {
+              "text": "The auto-recycler YMS market has three dominant players (Hollander Powerlink, Pinnacle Professional, Car-Part Checkmate), all with private tiered-subscription pricing; Hollander is the default across ARA-certified yards and most Car-Part.com inventory feeds flow from it.",
+              "source": "AUTO RECYCLING MARKETERS",
+              "href": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle"
+            }
+          ]
+        },
+        "more": {
+          "label": "Explore the evidence",
+          "title": "Proof & signals.",
+          "blocks": [
+            {
+              "type": "h",
+              "text": "THE HARD NUMBERS"
+            },
+            {
+              "type": "h",
+              "text": "WHAT THE RESEARCH SAYS"
+            },
+            {
+              "type": "p",
+              "text": "The pain is plausible, but no paid demand is verified"
+            },
+            {
+              "type": "p",
+              "text": "Existing products validate the workflow\u2014and raise the bar"
+            },
+            {
+              "type": "p",
+              "text": "Best next signal: paid pilot plus repeat use"
+            },
+            {
+              "type": "p",
+              "text": "The strongest demand evidence is for the surrounding workflow: existing products support appliance inventory, recovered parts, donor relationships, and locations. The analyses also describe a concrete operational problem\u2014parts are hard to identify or locate, and staff may have to create records manually\u2014but provide no independently documented customer interviews, paid pilots, conversion, retention, or willingness to pay for this specific photo-and-voice capture offer. Community engagement and broad search activity are useful discovery clues, not proof of purchase intent. Proceed with a narrow paid pilot, not a broad SaaS launch."
+            }
+          ]
+        }
+      },
+      {
+        "id": "competitors",
+        "kicker": "Who you're up against",
+        "data": {
+          "count": 10,
+          "players": [
+            {
+              "name": "Ordovee",
+              "incumbent": true,
+              "description": "Charges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of guided launch included; this is the direct competitor already serving appliance teardown shops.",
+              "href": "https://ordovee.com/pricing/"
+            },
+            {
+              "name": "Ordovee",
+              "incumbent": false,
+              "description": "Already markets \"scanner-first execution\", photos per part, model-plate-to-part capture, and lists appliance repair parts (washers, dryers, ranges, fridges) as a target vertical, directly occupying the \"fast cataloguing of salvaged parts\" wedge.",
+              "href": "https://ordovee.com/pricing/"
+            },
+            {
+              "name": "Taskrol",
+              "incumbent": false,
+              "description": "Free for solo appliance repair techs and focuses on van/warehouse inventory tied to service jobs, not teardown cataloguing of donor machines; data-plate photo capture is already built in.",
+              "href": "https://taskrol.com/free-appliance-repair-software/"
+            },
+            {
+              "name": "Car-Part.com",
+              "incumbent": false,
+              "description": "Runs Checkmate, Bidmate, Partmate and Trading Partners for auto recyclers: inventory management, part photos, scan-to-update, interchange lookup, and a recycler-to-recycler locating network across 4,200 recyclers.",
+              "href": "https://products.car-part.com/"
+            },
+            {
+              "name": "Orderry",
+              "incumbent": false,
+              "description": "An appliance repair shop system with parts database by brand/model, van and warehouse stock, barcode, and low-stock alerts; priced at $39/mo Hobby, $69/mo Startup, $99/mo Business, $199/mo Enterprise, with 2-3 employees per plan and extra seats $6-$19/mo.",
+              "href": "https://orderry.com/appliance-repair-software-20152/"
+            },
+            {
+              "name": "Sortly",
+              "incumbent": false,
+              "description": "A photo-first visual inventory app with barcode/QR scanning and a mobile offline app, priced $0 free (100 items, 1 user), $24-49/mo Advanced (500 items, 2 users), $74-149/mo Ultra (2,000 items, 5 users), $299/mo Premium (5,000 items, 8 users); serves 15,000+ customers across construction, field service, healthcare.",
+              "href": "https://checkthat.ai/brands/sortly"
+            },
+            {
+              "name": "We Buy Appliance Parts",
+              "incumbent": false,
+              "description": "Offers to buy a shop's entire new, used, or obsolete appliance parts inventory with free pickup and instant payment after submitting photos and basic info, pitching 24-48 hour offer turnaround to shops closing or liquidating stock.",
+              "href": "https://webuyapplianceparts.com/"
+            },
+            {
+              "name": "Hollander Powerlink",
+              "incumbent": false,
+              "description": "The industry-standard yard management system for auto recyclers, built around the proprietary Hollander Interchange database; pricing is private/quote-based across all three major YMS vendors (Hollander, Pinnacle, Checkmate), with Hollander and Pinnacle typically in higher tiers.",
+              "href": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle"
+            }
+          ]
+        }
+      },
+      {
+        "id": "asking",
+        "kicker": "People are asking for it",
+        "data": {
+          "quotes": [
+            {
+              "quote": "\u201cI have an appliance store that sells and services new and used appliances. We get many that are not worth repairing but have many valuable and usable parts.\u201d",
+              "source": "r/ApplianceTechTalk \u00b7 anonymous store owner",
+              "href": "https://www.reddit.com/r/ApplianceTechTalk/comments/1lahejz/any_appliance_parts_recyclers_out_there/",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cWe used to scramble during downtime because the one part we needed was missing, or buried in a drawer. Has anyone here figured out a solid system for this?\u201d",
+              "source": "r/maintenance \u00b7 anonymous maintenance operator",
+              "href": "https://www.reddit.com/r/maintenance/comments/1lun2nw/how_do_you_keep_track_of_spare_parts/",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cParting out adds serious margin. An extra 30-60 minutes per appliance can turn your $25 scrap haul into $150+ in parts sales.\u201d",
+              "source": "TakeMyAppliance partner guide",
+              "href": "https://www.takemyappliance.com/partners/resources/selling-appliance-parts",
+              "platform": "REDDIT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "verdict",
+        "kicker": "The verdict",
+        "data": {
+          "title": "Should you build this?",
+          "build": [
+            "The pain is receipted: a real shop owner runs 3,200 eBay listings, nets $1,300 a month, and openly admits half his photos and part numbers are wrong, which is exactly the problem the app fixes.",
+            "The capture stack is a weekend build now: on-device OCR hits 94.1% accuracy, Whisper runs $0.003 a minute, and vision calls cost under a tenth of a cent per image, so an AI-leveraged solo founder ships the MVP fast.",
+            "The money works as a service-first blend: a $2,500 backlog cleanout against a shop's existing pile is a clean yes, and 20 to 30 of those shops roll into a $29 to $49 subscription floor for year-one revenue of $30K to $50K.",
+            "The channel is concrete and cheap: r/ApplianceTechTalk has 2,327 members and Appliantology hosts the exact owner-economics threads, so the first 10 customers come from posting a free listing audit, not buying ads."
+          ],
+          "notBuild": [
+            "Ordovee already ships scanner-first photo capture with model-plate extraction for the appliance vertical at $299 a month; a stripped-down $59 mobile tier from them in two quarters eats the whole wedge.",
+            "Search demand for the exact solution is zero across every variant tested, so there is no SEO or paid-search lane, only a year of cold DMs to a 2,327-person subreddit and hand-picked eBay sellers.",
+            "Shops have a cheaper exit than cataloguing: We Buy Appliance Parts, UpFix, and WhoBuysApplianceParts pay cash in 24 to 48 hours with free pickup, and for a $1,300-a-month operation that math is hard to beat.",
+            "The paid pool caps at a few thousand US shops that both part out donor machines and will pay, so pure SaaS tops near $200K ARR and the real story is a services-plus-software niche, not a venture-scale business.",
+            "POTENTIAL PIVOT",
+            "Flip the money model from \"SaaS subscription with optional backlog\" to \"backlog cleanout service as the frontend lead product ($1,500 to $3,000 flat), subscription as the retention floor ($29 to $49).\" Keep the customer, the product mechanics, and the Ordovee-export positioning. Expect a services-first P&L with software ARR as a secondary line, not the other way around. Builder must be an appliance operator or willing to fly to five shops in year one."
+          ]
+        }
+      },
+      {
+        "id": "founderFit",
+        "kicker": "Founder fit",
+        "data": {
+          "title": "Not every good idea is good for you.",
+          "bestFor": [
+            "Solo founders with appliance repair experience who can build or prototype a m...",
+            "Teams pairing a technical product builder with a shop owner or technician for...",
+            "Founders without access to repair shops or experience observing workshop rout...",
+            "Teams focused on AI features but lacking inventory accuracy and customer disc..."
+          ],
+          "persona": [
+            "An operator who has either run a repair or refurb shop, worked at a used-parts eBay operation, or spent real time inside the auto-recycler world and wants to port the playbook to appliances. They have to be willing to post on Appliantology, fly to five shops in year one to do backlog cleanouts by hand, and sell a $2,500 service over the phone. A coding solo founder with no appliance background will get the app built in a month and then stall for a year trying to get Appliantology regulars to return a DM. The AGI lens flips feasibility: the app is easy, the sales grind is not."
+          ],
+          "demands": [
+            {
+              "label": "Distribution",
+              "score": 9.0
+            },
+            {
+              "label": "Domain depth",
+              "score": 8.0
+            },
+            {
+              "label": "Sales",
+              "score": 8.0
+            },
+            {
+              "label": "Build",
+              "score": 3.0
+            },
+            {
+              "label": "Capital",
+              "score": 3.0
+            }
+          ],
+          "reality": [
+            {
+              "label": "FIRST REVENUE",
+              "value": "60-90 days"
+            },
+            {
+              "label": "CAPITAL IN",
+              "value": "$5K-$15K"
+            },
+            {
+              "label": "DIFFICULTY",
+              "value": "Moderate"
+            }
+          ]
+        }
+      },
+      {
+        "id": "valueLadder",
+        "kicker": "What you'd sell",
+        "data": {
+          "title": "The value ladder.",
+          "intro": [
+            "Lead magnet: a free eBay listing audit. Frontend: one-time Backlog Cataloguing Service, $1,500 to $3,000, done-for-you capture of 500 to 1,500 existing parts with photos, voice-noted condition, model-plate linkage, and eBay listing drafts. Core: Shelf app subscription, $49 a month per shop, unlimited parts, photo plus voice plus confirm, exports to Ordovee, Orderry, spreadsheet, and eBay Seller Hub CSV."
+          ],
+          "steps": [
+            {
+              "step": 1,
+              "tier": "LEAD MAGNET",
+              "name": "Free Listing Audit",
+              "price": "Free",
+              "description": "Shop sends 20 live eBay listings. Tool returns a report on wrong part numbers, missing compatible models, and photo quality fails. One pass, no signup."
+            },
+            {
+              "step": 2,
+              "tier": "FRONTEND",
+              "name": "Backlog Cataloguing Service",
+              "price": "$1,500-$3,000",
+              "description": "Flat fee done-for-you capture of 500 to 1,500 existing shelf parts in two weeks. Photos, voice-dictated condition, model-plate linkage, eBay listing drafts. Shop keeps the records and the app."
+            },
+            {
+              "step": 3,
+              "tier": "CORE",
+              "name": "Shelf App Subscription",
+              "price": "$49/mo",
+              "description": "Mobile capture app for ongoing teardowns. Photo plus voice plus confirm per part. Exports to Ordovee, Orderry, spreadsheet, and eBay Seller Hub CSV. Solo tier $29/mo."
+            },
+            {
+              "step": 4,
+              "tier": "CONTINUITY",
+              "name": "Listed+ Auto-Publish",
+              "price": "$99/mo",
+              "description": ""
+            }
+          ]
+        },
+        "more": {
+          "label": "View the full value ladder",
+          "title": "The full value ladder.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Auto-posts parts to eBay Seller Hub on capture, syncs sold-status back, flags cross-shop buy requests through a small shop network."
+            }
+          ]
+        }
+      },
+      {
+        "id": "plan",
+        "kicker": "The plan",
+        "data": {
+          "title": "If you started today.",
+          "subtitle": "First up.",
+          "paragraphs": [
+            "The search channel is dead for this product. Google Ads returns essentially zero volume for \"salvaged appliance parts inventory\", \"used appliance parts software\", and the exact-match variants, and only 10 to 70 a month for the adjacent terms. There is no SEO play. There is no paid search play. Shops are not typing this into Google because they have given up on the category existing."
+          ]
+        },
+        "more": {
+          "label": "See the detailed plan",
+          "title": null,
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Launch a mobile-first SaaS that turns paired donor-label and part photos, plus voice notes, into searchable, human-verified records\u2014then exports them to shops\u2019 existing inventory tools. Start with a paid 100-part pilot, using OCR, speech capture, and CSV export to prove faster intake and reliable records. Next, validate repeat use and expand to teams and integrations: can 10 shops make this a habit?"
+            },
+            {
+              "type": "h",
+              "text": "THE FIRST MOVES"
+            },
+            {
+              "type": "p",
+              "text": "Within 7 days, schedule 5 shop interviews and request observation of the current intake and retrieval workflow before showing a product concept."
+            },
+            {
+              "type": "p",
+              "text": "Within 7 days, create a one-page pilot offer for 100 parts in one appliance category, including baseline measures, export destination, payment, and follow-up criteria."
+            },
+            {
+              "type": "p",
+              "text": "Within 7 days, prototype the capture-to-confirmation-to-CSV flow with sample labels and voice notes; test errors and estimate per-record API and storage costs."
+            },
+            {
+              "type": "h",
+              "text": "THE MVP"
+            },
+            {
+              "type": "p",
+              "text": "Build a mobile-first self-serve SaaS for paired donor-label and part photos, OCR draft fields, voice notes, human confirmation, provenance labels, location, search, and CSV export. Pilot 100 parts in one appliance category and compare against each shop\u2019s existing process; do not build a broad inventory suite or present inferred compatibility as verified."
+            },
+            {
+              "type": "h",
+              "text": "WHERE THE FIRST USERS COME FROM"
+            },
+            {
+              "type": "p",
+              "text": "Founder-led direct outreach and shop visits \u00b7 Direct observation reaches buyers and users and enables honest baseline comparisons."
+            },
+            {
+              "type": "p",
+              "text": "Trade associations and repair/refurbishment events \u00b7 Repair and refurbishment associations provide access to relevant operators and referrals."
+            },
+            {
+              "type": "p",
+              "text": "Permission-based online technician communities \u00b7 Technician communities can help recruit users and expose real edge cases, though engagement is not proof of buying intent."
+            },
+            {
+              "type": "h",
+              "text": "TIMELINE"
+            },
+            {
+              "type": "p",
+              "text": "1-2 weeks"
+            },
+            {
+              "type": "h",
+              "text": "BUDGET"
+            },
+            {
+              "type": "p",
+              "text": "$0-10K"
+            },
+            {
+              "type": "h",
+              "text": "THE MILESTONE"
+            },
+            {
+              "type": "p",
+              "text": "Within 6-12 months, achieve 10 paying shops, with at least 5 continuing paid use after their initial backlog is catalogued and measured improvements in capture time, retrieval, and record freshness."
+            }
+          ]
+        }
+      },
+      {
+        "id": "napkin",
+        "kicker": "Napkin math",
+        "data": {
+          "title": "Year one, on a napkin.",
+          "intro": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.",
+          "rows": [
+            {
+              "label": "Appliantology + subreddit audit signups (first 90 days)",
+              "value": "40 shops"
+            },
+            {
+              "label": "Audit-to-backlog conversion (assumption 25%)",
+              "value": "10 shops"
+            },
+            {
+              "label": "Backlog service price (verified vs pile-sale offers)",
+              "value": "$2,500 avg"
+            },
+            {
+              "label": "Year-one backlog revenue",
+              "value": "$25,000"
+            },
+            {
+              "label": "Backlog-to-subscription conversion (assumption 80%)",
+              "value": "8 shops"
+            },
+            {
+              "label": "Direct eBay-seller outreach subscribers (assumption)",
+              "value": "12 shops"
+            },
+            {
+              "label": "Total year-one subscribers at $49/mo",
+              "value": "20 shops"
+            },
+            {
+              "label": "Subscription ARR exiting year one",
+              "value": "$11,760"
+            },
+            {
+              "label": "Total year-one revenue (services + sub)",
+              "value": "~$30K-$40K"
+            }
+          ],
+          "summary": [
+            "20 subscribers at $49/mo is $11,760 ARR; the backlog services do the heavy lifting in year one. Three of the four rows are assumptions, not sourced numbers; the pool of in-scope shops is capped at ~10,000 to 15,000 US shops, so growth past this scenario depends on a much slower word-of-mouth loop."
+          ],
+          "ceiling": "$300K-$600K ARR"
+        }
+      }
+    ],
+    "popups": [
+      {
+        "label": "THE CEILING IF IT COMPOUNDS $300K-$600K ARR",
+        "title": "Where the ceiling comes from.",
+        "blocks": [
+          {
+            "type": "h",
+            "text": "WHAT $300K ARR TAKES"
+          },
+          {
+            "type": "p",
+            "text": "Core subscription: 300 shops at $49/mo"
+          },
+          {
+            "type": "h",
+            "text": "$176K ARR"
+          },
+          {
+            "type": "p",
+            "text": "Solo tier: 200 shops at $29/mo"
+          },
+          {
+            "type": "h",
+            "text": "$70K ARR"
+          },
+          {
+            "type": "p",
+            "text": "Backlog service: 40 jobs/yr at $2,500"
+          },
+          {
+            "type": "p",
+            "text": "$100K/yr"
+          },
+          {
+            "type": "p",
+            "text": "Listed+ upsell: 50 shops at $99/mo"
+          },
+          {
+            "type": "h",
+            "text": "$59K ARR"
+          },
+          {
+            "type": "p",
+            "text": "Pile-sale referral fee (assumption)"
+          },
+          {
+            "type": "p",
+            "text": "$15K-$30K/yr"
+          },
+          {
+            "type": "p",
+            "text": "Honest ceiling is $300K-$600K ARR all-in. SaaS alone tops out around $120K to $240K because the US pool of shops that both part out donor machines and will pay monthly is a few thousand. Backlog services scale with the founder's hands or a hire. Listing-platform referrals and the pile-sale affiliate add a floor. The brief's $100K to $300K ARR is achievable; past that the model needs a second product or an adjacent vertical."
+          },
+          {
+            "type": "h",
+            "text": "THE CEILING"
+          }
+        ]
+      }
+    ],
+    "inlineLinks": [
+      {
+        "text": "Ordovee",
+        "href": "https://ordovee.com/pricing/"
+      },
+      {
+        "text": "prasad.tech on-device OCR benchmark",
+        "href": "https://prasad.tech/blog/benchmarking-on-device-ocr/"
+      },
+      {
+        "text": "OpenAI transcription pricing",
+        "href": "https://www.cartesia.ai/learn/openai-whisper-api-pricing"
+      },
+      {
+        "text": "aicostcheck.com",
+        "href": "https://aicostcheck.com/blog/ai-vision-multimodal-api-pricing-2026"
+      },
+      {
+        "text": "faegredrinker.com",
+        "href": "https://www.faegredrinker.com/en/insights/publications/2026/7/unlocking-the-right-to-repair-the-expanding-compliance-landscape"
+      },
+      {
+        "text": "IBISWORLD / AHAM",
+        "href": "https://bozmanfix.com/appliance-repair-statistics/"
+      },
+      {
+        "text": "APPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)",
+        "href": "https://worldmetrics.org/appliance-repair-industry-statistics/"
+      },
+      {
+        "text": "GLOBENEWSWIRE",
+        "href": "https://www.globenewswire.com/news-release/2026/05/06/3289085/0/en/solera-accelerates-innovation-with-hollander-powerlink-new-embedded-integrations-and-preview-of-powerlink-4-0-to-help-recyclers-sell-smarter-and-operate-with-confidence.html"
+      },
+      {
+        "text": "AUTO RECYCLING MARKETERS",
+        "href": "https://autorecyclingmarketers.com/pages/blog/hollander-vs-checkmate-vs-pinnacle"
+      },
+      {
+        "text": "The Startup Ideas Podcast",
+        "href": "https://www.youtube.com/@GregIsenberg"
+      },
+      {
+        "text": "Visit",
+        "href": "https://www.reddit.com/r/ApplianceTechTalk/comments/1lahejz/any_appliance_parts_recyclers_out_there/"
+      }
+    ],
+    "linkCount": 37,
+    "sourceUrl": "https://www.ideabrowser.com/hub/ideas/today"
+  },
+  "rawText": "Home\nBrowse\nAgents\nMy Stuff\nAbout me\nAccelerator\nProjects\nExample project\nConnect your AI\nTool deals\nAbout Ideabrowser\nHelp & training\n\u00a9 2026 Ideabrowser\n\u00b7\nLegal\nToggle Sidebar\nIdea of the Day\n1\nGo Pro\nS\n\nIDEA OF THE DAY\u00b7NOV 24, 2026\n\nPrevious\nBrowse all\nMobile app that photographs, voice-logs, and catalogues salvaged appliance parts\n\nIB Index 5.5\n\u00b7\nSaaS\n\u00b7\n$300K-$600K ARR\n\nCONCEPT MOCKUP\n\nNICHE SHOP COUNT\n\n<5K shops\n\nUS appliance parts recyclers, the real buyer pool\n\nWHAT IT DEMANDS\n\nDistribution\nDomain depth\nSales\nBuild\nCapital\n\nTHE REALITY\n\nFIRST REVENUE\n60-90 days\nCAPITAL IN\n$5K-$15K\nDIFFICULTY\nModerate\n\nUP AGAINST\n\nOrdovee\n\nCharges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of gu\u2026\n\n+ 9 more mapped\n\nTHE PITCH\n\nA used-appliance shop owner runs a 3,200-listing eBay store, grosses $69K a year, and nets about $1,300 a month after eBay fees, shipping, and two payroll employees. Half his listings are wrong on photos or part numbers. On r/ApplianceTechTalk a different owner posted asking if any parts recyclers exist, because donor washers and dryers pile up faster than he can sort them. The teardown is fast. The listing is slow: 30 to 60 minutes per unit, and that time is where the margin disappears.\n\nWHO IT'S FOR\n\nSmall appliance repair and refurbishment shops that dismantle donor machines (washers, dryers, ranges, dishwashers, microwaves) and keep usable components on shelves for resale or reuse in future repairs.\n\nTHE GAP\n\nThe teardown-to-shelf job is already a feature of bigger systems. The appliance version is only Ordovee\n\nWHY NOW\n\nCapture costs dropped to pennies per part while 25.75% of Americans got right-to-repair protection\n\nAT A GLANCE\n\nNiche shop count\n<5K shops\nPricing\nFree to $99/mo\nYear one\n$30K-$50K\nCeiling\n$300K-$600K ARR\n\nWHAT YOU SELL\n\nShelf App Subscription$49/mo\n\nBIGGEST RISK\n\nOrdovee ships a $29 to $59 mobile tier within two quarters. They already have scanner-first capture, the appliance vertical, and paying customers. A stripped-d\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nCapture costs dropped to pennies per part while 25.75% of Americans got right-to-repair protection\n\nThe capture stack a solo builder needs for this product stopped being expensive this year. On-device OCR reads 94.1% of fields correctly on clean phone-camera photos, instant, free, and offline. Whisper voice transcription is $0.006 per minute, with gpt-4o-mini-transcribe at $0.003 ($0.18 per hour). GPT-4o-mini vision costs roughly $0.0001 to $0.0003 per 1024 pixel image, and Gemini 2.0 Flash is cheaper still. A shop that photographs a data plate and a part, and dictates 30 seconds of condition notes on 100 parts per day, runs under 20 cents per day in inference. Two years ago that same workflow needed custom models, server costs, and a six-figure build.\n\nAt the same time, used appliance parts just became a bigger, more protected business. 13 states have enacted right-to-repair laws as of July 2026, up from 4 in 2023. About 25.75% of Americans now live under an enforceable law. California's Right to Repair Act explicitly covers appliances with a 7-year parts obligation. Colorado banned parts pairing on appliances and HVAC on January 1, 2026, and Connecticut and Texas added appliance coverage in July and September 2026. Independent shops get legal access to OEM parts and diagnostics they did not have before, which raises the floor on what a salvaged-part inventory is worth.\n\nSOURCES\nprasad.tech on-device OCR benchmark\nOpenAI transcription pricing\naicostcheck.com\nfaegredrinker.com\nSee the full timing case\n\nMARKET SNAPSHOT\n\nThe receipts.\n\nPAIN\n\n7/10 SEVERITY\n\n\u201cYou might have to wait months for someone to buy those parts off of you, and now you have to store them somewhere while you're waiting.\u201d\n\nr/LifeProTips\n\n\u201cOut of my 3200 listings I would gamble that 1/2 of them are fucked up. Nobody will buy your stuff if it has a bad picture, incomplete part #, etc.\u201d\n\nAppliantology (Master Samurai Tech forum) \u00b7 Eugene (appliance shop owner)\n\n\u201cI was surprised on how small the bottom line was, I'm sure you are too. As i write this, I consider the benefit of having that space empty, filled up with more new/ used appliances. Is $1300/ month worth it? I really don't have the answer for that.\u201d\n\nAppliantology (Master Samurai Tech forum) \u00b7 Eugene (appliance shop owner)\n\nAll 8 receipts, and where these people gather\n\nWHITESPACE\n\nMARKET GAP\n\nThe teardown-to-shelf job is already a feature of bigger systems. The appliance version is only Ordovee\n\nUnderstand the opening\n\nTHE WEDGE\n\nSeconds per part, not minutes. Photo plus voice plus confirm, instead of typing records into a desktop inventory screen.\n\nThe incumbent to beat: Ordovee\n\nPROOF & SIGNALS\n\nThe US has 37,769 appliance repair businesses as of 2025 per IBISWorld, in a $7.0B industry; AHAM notes nearly 90% of ~20,000 US servicer shops employ 10 or fewer people, matching the small-shop ICP.\n\nIBISWORLD / AHAM\n\nIndustry data indicates only ~30% of repair businesses maintain in-house parts inventories, which caps the salvage-cataloguing TAM to maybe 10,000-15,000 US shops that actually part out machines.\n\nAPPLIANCE REPAIR INDUSTRY STATISTICS (WORLDMETRICS.ORG)\n\nIn May 2026 Solera previewed Hollander Powerlink 4.0 with Direct-Hit by Identifix repair intelligence and InsightsConnect analytics embedded, pushing the dominant auto-recycler YMS further into AI-assisted merchandising and analytics (same company could add appliance teardown vertical with one SKU change).\n\nGLOBENEWSWIRE\n\nThe auto-recycler YMS market has three dominant players (Hollander Powerlink, Pinnacle Professional, Car-Part Checkmate), all with private tiered-subscription pricing; Hollander is the default across ARA-certified yards and most Car-Part.com inventory feeds flow from it.\n\nAUTO RECYCLING MARKETERS\nExplore the evidence\n\nWHO YOU'RE UP AGAINST\n\n10 PLAYERS\n\nOrdovee\n\nINCUMBENT\n\nCharges $299/mo (3 users), $499/mo (10 users), and $699+/mo for 10+ users, month-to-month, with 3 hours of guided launch included; this is the direct competitor already serving appliance teardown shops.\n\nOrdovee\n\nAlready markets \"scanner-first execution\", photos per part, model-plate-to-part capture, and lists appliance repair parts (washers, dryers, ranges, fridges) as a target vertical, directly occupying the \"fast cataloguing of salvaged parts\" wedge.\n\nTaskrol\n\nFree for solo appliance repair techs and focuses on van/warehouse inventory tied to service jobs, not teardown cataloguing of donor machines; data-plate photo capture is already built in.\n\nCar-Part.com\n\nRuns Checkmate, Bidmate, Partmate and Trading Partners for auto recyclers: inventory management, part photos, scan-to-update, interchange lookup, and a recycler-to-recycler locating network across 4,200 recyclers.\n\nOrderry\n\nAn appliance repair shop system with parts database by brand/model, van and warehouse stock, barcode, and low-stock alerts; priced at $39/mo Hobby, $69/mo Startup, $99/mo Business, $199/mo Enterprise, with 2-3 employees per plan and extra seats $6-$19/mo.\n\nSortly\n\nA photo-first visual inventory app with barcode/QR scanning and a mobile offline app, priced $0 free (100 items, 1 user), $24-49/mo Advanced (500 items, 2 users), $74-149/mo Ultra (2,000 items, 5 users), $299/mo Premium (5,000 items, 8 users); serves 15,000+ customers across construction, field service, healthcare.\n\nWe Buy Appliance Parts\n\nOffers to buy a shop's entire new, used, or obsolete appliance parts inventory with free pickup and instant payment after submitting photos and basic info, pitching 24-48 hour offer turnaround to shops closing or liquidating stock.\n\nHollander Powerlink\n\nThe industry-standard yard management system for auto recyclers, built around the proprietary Hollander Interchange database; pricing is private/quote-based across all three major YMS vendors (Hollander, Pinnacle, Checkmate), with Hollander and Pinnacle typically in higher tiers.\n\nPEOPLE ARE ASKING FOR IT\n\nREDDIT\n\n\u201cI have an appliance store that sells and services new and used appliances. We get many that are not worth repairing but have many valuable and usable parts.\u201d\n\nr/ApplianceTechTalk \u00b7 anonymous store owner\n\n\u201cWe used to scramble during downtime because the one part we needed was missing, or buried in a drawer. Has anyone here figured out a solid system for this?\u201d\n\nr/maintenance \u00b7 anonymous maintenance operator\n\n\u201cParting out adds serious margin. An extra 30-60 minutes per appliance can turn your $25 scrap haul into $150+ in parts sales.\u201d\n\nTakeMyAppliance partner guide\n\nTHE VERDICT\n\nShould you build this?\n\nREASONS TO BUILD\n\nThe pain is receipted: a real shop owner runs 3,200 eBay listings, nets $1,300 a month, and openly admits half his photos and part numbers are wrong, which is exactly the problem the app fixes.\nThe capture stack is a weekend build now: on-device OCR hits 94.1% accuracy, Whisper runs $0.003 a minute, and vision calls cost under a tenth of a cent per image, so an AI-leveraged solo founder ships the MVP fast.\nThe money works as a service-first blend: a $2,500 backlog cleanout against a shop's existing pile is a clean yes, and 20 to 30 of those shops roll into a $29 to $49 subscription floor for year-one revenue of $30K to $50K.\nThe channel is concrete and cheap: r/ApplianceTechTalk has 2,327 members and Appliantology hosts the exact owner-economics threads, so the first 10 customers come from posting a free listing audit, not buying ads.\n\nREASONS TO NOT BUILD\n\nOrdovee already ships scanner-first photo capture with model-plate extraction for the appliance vertical at $299 a month; a stripped-down $59 mobile tier from them in two quarters eats the whole wedge.\nSearch demand for the exact solution is zero across every variant tested, so there is no SEO or paid-search lane, only a year of cold DMs to a 2,327-person subreddit and hand-picked eBay sellers.\nShops have a cheaper exit than cataloguing: We Buy Appliance Parts, UpFix, and WhoBuysApplianceParts pay cash in 24 to 48 hours with free pickup, and for a $1,300-a-month operation that math is hard to beat.\nThe paid pool caps at a few thousand US shops that both part out donor machines and will pay, so pure SaaS tops near $200K ARR and the real story is a services-plus-software niche, not a venture-scale business.\nRoast it with your agent\n\nPOTENTIAL PIVOT\n\nFlip the money model from \"SaaS subscription with optional backlog\" to \"backlog cleanout service as the frontend lead product ($1,500 to $3,000 flat), subscription as the retention floor ($29 to $49).\" Keep the customer, the product mechanics, and the Ordovee-export positioning. Expect a services-first P&L with software ARR as a secondary line, not the other way around. Builder must be an appliance operator or willing to fly to five shops in year one.\n\nRun this angle with your agent\n\nFOUNDER FIT\n\nNot every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo founders with appliance repair experience who can build or prototype a m...\nTeams pairing a technical product builder with a shop owner or technician for...\nFounders without access to repair shops or experience observing workshop rout...\nTeams focused on AI features but lacking inventory accuracy and customer disc...\n\nAn operator who has either run a repair or refurb shop, worked at a used-parts eBay operation, or spent real time inside the auto-recycler world and wants to port the playbook to appliances. They have to be willing to post on Appliantology, fly to five shops in year one to do backlog cleanouts by hand, and sell a $2,500 service over the phone. A coding solo founder with no appliance background will get the app built in a month and then stall for a year trying to get Appliantology regulars to return a DM. The AGI lens flips feasibility: the app is easy, the sales grind is not.\n\nWHAT IT DEMANDS\n\nDistribution\n9\nDomain depth\n8\nSales\n8\nBuild\n3\nCapital\n3\n\nTHE REALITY\n\nFIRST REVENUE\n\n60-90 days\n\nCAPITAL IN\n\n$5K-$15K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card\n\nWHAT YOU'D SELL\n\nThe value ladder.\n\nLead magnet: a free eBay listing audit. Frontend: one-time Backlog Cataloguing Service, $1,500 to $3,000, done-for-you capture of 500 to 1,500 existing parts with photos, voice-noted condition, model-plate linkage, and eBay listing drafts. Core: Shelf app subscription, $49 a month per shop, unlimited parts, photo plus voice plus confirm, exports to Ordovee, Orderry, spreadsheet, and eBay Seller Hub CSV.\n\n1\n\nLEAD MAGNET\n\nFree Listing Audit(Free)\n\nShop sends 20 live eBay listings. Tool returns a report on wrong part numbers, missing compatible models, and photo quality fails. One pass, no signup.\n\n2\n\nFRONTEND\n\nBacklog Cataloguing Service($1,500-$3,000)\n\nFlat fee done-for-you capture of 500 to 1,500 existing shelf parts in two weeks. Photos, voice-dictated condition, model-plate linkage, eBay listing drafts. Shop keeps the records and the app.\n\n3\n\nCORE\n\nShelf App Subscription($49/mo)\n\nMobile capture app for ongoing teardowns. Photo plus voice plus confirm per part. Exports to Ordovee, Orderry, spreadsheet, and eBay Seller Hub CSV. Solo tier $29/mo.\n\n4\n\nCONTINUITY\n\nListed+ Auto-Publish($99/mo)\n\nView the full value ladder\n\nTHE PLAN\n\nIf you started today.\nFirst up.\n\nThe search channel is dead for this product. Google Ads returns essentially zero volume for \"salvaged appliance parts inventory\", \"used appliance parts software\", and the exact-match variants, and only 10 to 70 a month for the adjacent terms. There is no SEO play. There is no paid search play. Shops are not typing this into Google because they have given up on the category existing.\n\nSee the detailed plan\nYear one, on a napkin.\nNAPKIN MATH\n\nWhat the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nAppliantology + subreddit audit signups (first 90 days)\n40 shops\nAudit-to-backlog conversion (assumption 25%)\n10 shops\nBacklog service price (verified vs pile-sale offers)\n$2,500 avg\nYear-one backlog revenue\n$25,000\nBacklog-to-subscription conversion (assumption 80%)\n8 shops\nDirect eBay-seller outreach subscribers (assumption)\n12 shops\nTotal year-one subscribers at $49/mo\n20 shops\nSubscription ARR exiting year one\n$11,760\nTotal year-one revenue (services + sub)\n~$30K-$40K\n\n20 subscribers at $49/mo is $11,760 ARR; the backlog services do the heavy lifting in year one. Three of the four rows are assumptions, not sourced numbers; the pool of in-scope shops is capped at ~10,000 to 15,000 US shops, so growth past this scenario depends on a much slower word-of-mouth loop.\n\nTHE CEILING IF IT COMPOUNDS\n$300K-$600K ARR\nRun the model on your numbers\n\nTHE AGENTS\n\nJam on it with your agent.\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCursor\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cPain scored 7/10 for \"Mobile app that photographs, voice-logs, and\u2026\" \u2014 argue the other side.\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+  "status": "not_started",
+  "notes": "",
+  "_source_url": "https://www.ideabrowser.com/hub/ideas/today",
+  "_scraped_at": "2026-11-24T18:26:34.881516+00:00",
+  "_crawl_had_errors": true
+}

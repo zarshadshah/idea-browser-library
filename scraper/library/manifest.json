@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-24",
+      "title": "Mobile app that photographs, voice-logs, and catalogues salvaged appliance parts",
+      "path": "library/2026/2026-11-24.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-23",
       "title": "SaaS platform that turns family stories into ready-to-host game shows for milestone celebrations",
       "path": "library/2026/2026-11-23.json",
