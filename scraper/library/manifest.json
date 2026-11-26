@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-26",
+      "title": "Campaign management software that designs profitable season-pass promotions for multi-location restaurants",
+      "path": "library/2026/2026-11-26.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-25",
       "title": "Browser game platform for bowling centers that turns lane-wait time into cooperative play",
       "path": "library/2026/2026-11-25.json",
