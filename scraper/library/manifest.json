@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-27",
+      "title": "A movie outfit database that links to real vintage for sale",
+      "path": "library/2026/2026-11-27.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-26",
       "title": "Campaign management software that designs profitable season-pass promotions for multi-location restaurants",
       "path": "library/2026/2026-11-26.json",
