@@ -1,6 +1,12 @@
 {
   "ideas": [
     {
+      "id": "2026-11-28",
+      "title": "A tool to track which ads turn into paid jobs for local service businesses",
+      "path": "library/2026/2026-11-28.json",
+      "had_errors": true
+    },
+    {
       "id": "2026-11-27",
       "title": "A movie outfit database that links to real vintage for sale",
       "path": "library/2026/2026-11-27.json",

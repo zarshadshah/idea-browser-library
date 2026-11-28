@@ -1,0 +1,1202 @@
+{
+  "id": "2026-11-28",
+  "date": "2026-11-28",
+  "title": "A tool to track which ads turn into paid jobs for local service businesses",
+  "tagline": "A landscaper on Reddit is six months and $10,000 into Google Ads with an agency on retainer and still asks strangers if the ads work. A painter pays $3,000 a mo...",
+  "badges": [],
+  "description": "A landscaper on Reddit is six months and $10,000 into Google Ads with an agency on retainer and still asks strangers if the ads work. A painter pays $3,000 a month to an agency and cannot tell either. In 2026 Google handed the levers to AI: 51% of advertisers now put over half their budget into Performance Max, HVAC adoption doubled in one month, and Google opened the Conversion Lift proof test on October 7, 2026 but gated it behind 1,000 conversions and $5,000 of spend. A $2K-$20K/month local shop cannot clear that floor. Haus tested 640 Meta accounts and found Advantage+ beat manual only 42% of the time with 12% lower incremental\u2026",
+  "scores": {
+    "opportunity": {
+      "score": null,
+      "label": ""
+    },
+    "problem": {
+      "score": null,
+      "label": ""
+    },
+    "feasibility": {
+      "score": null,
+      "label": ""
+    },
+    "whyNow": {
+      "score": null,
+      "label": ""
+    }
+  },
+  "keywords": [],
+  "marketGap": "",
+  "executionPlan": "",
+  "executionDifficulty": {
+    "score": null,
+    "note": ""
+  },
+  "categorization": {
+    "type": null,
+    "market": null,
+    "target": null,
+    "competitor": null
+  },
+  "communitySignals": {},
+  "communitySignalsDetail": "",
+  "communitySignalsRich": {},
+  "otherCommunitiesExtra": {},
+  "businessFitDeep": {},
+  "scoreCardsDeep": {},
+  "valueEquation": "",
+  "marketMatrix": "",
+  "acpFramework": "",
+  "valueLadderDetail": "",
+  "proofSignals": "",
+  "whyNowDetail": "",
+  "keywordAnalysisDetail": "",
+  "newLayoutSections": {
+    "At a Glance": "Reddit threads\n20+ comments\nPricing\n$0 to $249/mo\nYear one\n$80K-$180K\nCeiling\n$3M-$6M ARR\n\nWHAT YOU SELL\n\nMulti-Location Plan$199/mo\n\nBIGGEST RISK\n\nServiceTitan Marketing Pro, Rivet, Sourceloop, Scorpion RevenueMAX and Hatch all already sell a version of \"cost per booked job by channel.\" The gap is real bu\u2026\n\nInterested?\nAdd to project\nBuild this idea",
+    "Why Now": "Google handed the ad levers to AI, then locked small advertisers out of the proof test\n\nAT A GLANCE\n\nReddit threads\n20+ comments\nPricing\n$0 to $249/mo\nYear one\n$80K-$180K\nCeiling\n$3M-$6M ARR\n\nWHAT YOU SELL\n\nMulti-Location Plan$199/mo\n\nBIGGEST RISK\n\nServiceTitan Marketing Pro, Rivet, Sourceloop, Scorpion RevenueMAX and Hatch all already sell a version of \"cost per booked job by channel.\" The gap is real bu\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nGoogle handed the ad levers to AI, then locked small advertisers out of the proof test\n\nThree things changed in 2026 that make this product urgent, not optional. In January 2026, SearchLight counted 370 HVAC accounts running Performance Max, roughly double the December 2025 number. Across 24,702 PMax campaigns, 51% of advertisers now put over half of their budget into PMax. Over 1 million advertisers use it. The owner no longer picks keywords, audiences, or placements. Google's AI does. The owner picks a budget and a goal.\n\nThen on October 7, 2026, Google opened self-serve Conversion Lift for Search and PMax. This is the real incrementality test, the one that answers whether the ads caused the sale or took credit for it. Google capped access at 1,000 conversions and a $5,000 campaign budget. A dentist, HVAC shop or roofer doing $3,000 a month in ad spend and 40 booked jobs cannot run it. The bigger brands can measure causality; local service owners cannot. Haus already showed what happens when you do not test: across 640 Meta experiments, Advantage+ beat manual in only 42% of accounts and over-reported ROAS by 12 points. The AI dashboards look good; the booked calendar does not move.",
+    "Proof & Signals": "Rivet cites an industry benchmark that cost per booked job should run below 10-15% of average job revenue, and that most contractors see cost per booked job 3-5x their cost per lead. The gap between the two metrics is the pain.\n\nRIVET\n\nPipelineOn cites average cost-per-lead of $90.92 for home service contractors; close-rate math turns that into $200-$533 per booked job depending on sales conversion, and few contractors track the latter.\n\nPIPELINEON\n\nRivet's own guide says a home-service marketing stack is 6 tools and runs $200-$600/month (CRM $50-200, call tracking $45-95, review tool $50-100, attribution layer $100-200) on top of ad spend; the attribution layer is a specific line item, proving the budget is already in the market.\n\nRIVET\n\nGoogle opened self-serve Conversion Lift to Search and Performance Max campaigns on October 7, 2026, but gated it behind at least 1,000 observed conversions and a $5,000 minimum campaign budget, locking out smaller advertisers from the easier incrementality test.\n\nSEARCH ENGINE LAND\nExplore the evidence",
+    "Market Snapshot": "The receipts.\n\nPAIN\n\n8/10 SEVERITY\n\n\u201cMy clients often use closed CRM's i.e. Jobber, housecall pro etc. It is often difficult to pass the gclid to these systems then have them pass that\u201d\n\nr/PPC\n\n\u201cI am a landscaper and have invested about $10k into Google Ads over the last 6 months, plus more on google guarentee. This includes one marketing agency\u201d\n\nr/googleads \u00b7 OP of \"Do ads actually work for home service companies?\"\n\n\u201cI own a home services company. How much are you spending on Google Ads per month, and are you actually happy with the results? I keep hearing mixed opinions\u201d\n\nr/smallbusiness \u00b7 OP of \"is google ads still worth it for home services company?\"\n\nAll 10 receipts, and where these people gather",
+    "Whitespace": "MARKET GAP\n\nCall-tracking owns the lead. Nobody owns the weekly profit verdict for the owner\n\nUnderstand the opening\n\nTHE WEDGE\n\nEcommerce has TrueProfit, Triple Whale, BeProfit and TrueMargin at $19-$149/month, but those are Shopify-bound. Local services get call-tracking (CallRail) that stops at the lead, not the booked job and margin.\n\nThe incumbent to beat: CallRail\n\nPROOF & SIGNALS\n\nRivet cites an industry benchmark that cost per booked job should run below 10-15% of average job revenue, and that most contractors see cost per booked job 3-5x their cost per lead. The gap between the two metrics is the pain.\n\nRIVET\n\nPipelineOn cites average cost-per-lead of $90.92 for home service contractors; close-rate math turns that into $200-$533 per booked job depending on sales conversion, and few contractors track the latter.\n\nPIPELINEON\n\nRivet's own guide says a home-service marketing stack is 6 tools and runs $200-$600/month (CRM $50-200, call tracking $45-95, review tool $50-100, attribution layer $100-200) on top of ad spend; the attribution layer is a specific line item, proving the budget is already in the market.\n\nRIVET\n\nGoogle opened self-serve Conversion Lift to Search and Performance Max campaigns on October 7, 2026, but gated it behind at least 1,000 observed conversions and a $5,000 minimum campaign budget, locking out smaller advertisers from the easier incrementality test.\n\nSEARCH ENGINE LAND\nExplore the evidence",
+    "Who You're Up Against": "11 PLAYERS\n\nRivet\n\n(rivetops.io) sells exactly the pitch: connects Google Ads, Facebook and LSA spend to ServiceTitan, Jobber, and Housecall Pro job data and reports cost per booked job by channel, campaign, keyword.\n\nServiceTitan\n\nMarketing Pro already does revenue attribution (ad spend to booked job to invoice) inside the CRM, costs $200-$600/month, and is bundled with ServiceTitan which has ~10,800 customers and $772M ARR.\n\nSourceloop\n\n.ai shows a live dashboard for home services with \"cost per booked job by channel\" (Google LSA $38, Google Ads $61, Meta $74 example).\n\nWhatConverts\n\nCharges $30/mo entry and $160/mo for Elite plan with Customer Journey multi-click attribution; CallRail charges $50/mo entry with Lead Conversion at $150.\n\nCallRail\n\nINCUMBENT\n\nSells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 local numbers, 250 minutes and 25 texts, with per-minute and per-number usage billed on top; it is the dominant call-tracking incumbent for local service businesses.\n\nWhatConverts\n\nSells four single-account plans at $30, $60, $100 and $160/mo, with multi-click Customer Journey attribution on the $160 Elite tier; agency plans run $500, $800 and $1,250/mo for unlimited accounts and are the lower-priced head-to-head versus CallRail.\n\nSourceloop\n\nSells three attribution plans at $49, $99 and $249/mo with multi-touch attribution on every tier and CRM sync on the $99 Professional plan; its home-services page markets cost per booked job by channel (Google LSA $38, Google Ads $61, Meta $74 as example tiles).\n\nCallTrackingMetrics\n\n(CTM) sells four plans at $79, $179, $329 and $1,999/mo (monthly; $65/$149/$274 annual), priced as a premium call-tracking + contact-center tool; AskAI call summaries cost $0.05 each on top and most AI features sit on Pro and above.",
+    "People Are Asking For It": "REDDIT\n\n\u201cStruggling to Get Google Ads to Work for My Local Painting Business - Advice Needed! Agency managing our Google Ads account for $3,000/month\u201d\n\nr/googleads \u00b7 Local painting business owner\n\n\u201cI work in marketing for a dental clinic in Canada, and we're struggling to attract new patients for general checkups, cavities, tooth pain\u201d\n\nr/DigitalMarketing \u00b7 In-house marketer at a Canadian dental clinic\n\n\u201cGoogle optimizes for people who tap the button, not patients who book. You need calls with a minimum duration (e.g. 60-90 seconds) as the\u201d\n\nr/adwords \u00b7 PPC manager commenting on r/adwords",
+    "The Verdict": "Should you build this?\n\nREASONS TO BUILD\n\nThe pain shows up in the raw: a landscaper six months and $10,000 into Google Ads asking strangers if his ads work, a painter paying $3,000/mo to an agency and unable to tell. These owners already pay to solve this and the current answer leaves them in the dark.\nGoogle stacked the timing: 51% of advertisers put most of budget into PMax, Conversion Lift opened October 7 2026 but is gated at $5,000 and 1,000 conversions, and LSA folds into PMax in August 2026. The small advertiser lost the proof test the same year they lost the levers.\nPricing anchors exist and rhyme: CallRail $50-$195, WhatConverts $30-$160, Sourceloop $49-$249. $99/mo for the weekly verdict sits exactly in the band owners already pay, with the booked-job loop CallRail does not close.\nAI coding agents ship the integrations, so a solo operator with home-services domain fluency can own this; 150 owners at $99 plus 20 agencies at $249 is a real $20K MRR path in year one.\n\nREASONS TO NOT BUILD\n\nFive named competitors already sell this: ServiceTitan Marketing Pro ($200-$600/mo, locked to ~10,800 ServiceTitan customers), Rivet, Sourceloop ($49-$249), Scorpion RevenueMAX, and Hatch (2,000+ home-service customers). The wedge is real only in the sub-ServiceTitan long tail; a founder who cannot name why a Jobber owner picks them over Sourceloop at $49 loses.\nIntegration sprawl is the time sink. A PPC manager on r/PPC called passing gclid through Jobber painful; Housecall Pro, GoHighLevel and dental PMS each add months, and one wrong weekly verdict loses an owner who was already skeptical of their agency.\nNobody searches for this yet: 320/mo for 'marketing attribution software', 110 for 'ServiceTitan Marketing Pro'. The first 100 customers come from Reddit presence and agency outbound, which is slow sales work, not an SEO flywheel.\nThe ceiling is honest: $2M-$4M ARR over five years at 1,500 owners and 300 agencies. This is a real business, not a venture outcome, and the founder needs to be fine with that.\nRoast it with your agent",
+    "Founder Fit": "Not every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo technical founders skilled in OAuth, APIs, and data reconciliation\nTeams pairing local-service sales or operations expertise with integration en...\nFounders without experience selling to small businesses or agencies\nTeams seeking a simple dashboard without integration and onboarding work\n\nA founder who ran paid ads for home-service clients for 3+ years, has a working Rolodex of HVAC/plumbing/roofing/dental agencies and ServiceTitan/Jobber contacts, and is comfortable spending the first 90 days in Reddit comments and on 20-minute agency Zooms. Ex-Scorpion, ex-Rivet, ex-WhatConverts, or an operator from a home-services agency are the archetype. An AI-leveraged solo founder can ship the integrations with coding agents; what cannot be bought is the domain fluency and the agency Rolodex that gets 300 outbound emails replied to at 15% instead of 2%.\n\nWHAT IT DEMANDS\n\nIntegrations\n9\nDistribution\n9\nSales grind\n8\nDomain depth\n8\nCapital\n3\n\nTHE REALITY\n\nFIRST REVENUE\n\n60-120 days\n\nCAPITAL IN\n\n$10K-$30K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card",
+    "What You'd Sell": "The value ladder.\n\nCore offer. Price anchors. Hook.\n\n1\n\nLEAD MAGNET\n\nFree 90-Day Ad Spend Audit($0)\n\nConnect Google Ads and CRM in 10 minutes. Get a one-page PDF: ad spend, booked jobs, cost per booked job, top 3 wasted queries. Does the selling.\n\n2\n\nFRONTEND\n\nOwner Plan (single location)($99/mo)\n\nWeekly profit verdict email + dashboard. One location. One Google Ads + Meta + CRM connection. Priced against CallRail Pro ($95) with the booked-job loop added.\n\n3\n\nCORE\n\nMulti-Location Plan($199/mo)\n\nUp to 5 locations. Per-location cost per booked job and per-channel margin. For small HVAC, dental, roofing chains below the ServiceTitan line.\n\n4\n\nCONTINUITY\n\nAgency White-Label($249/mo)\n\nView the full value ladder",
+    "The Plan": "If you started today.\nFirst up.\n\nSearch volume for this exact pitch is thin. \"Marketing attribution software\" gets 320 US searches a month. \"CallRail alternative\" gets 140. \"ServiceTitan Marketing Pro\" gets 110. Nobody wakes up and Googles \"weekly profit verdict for my HVAC Google Ads.\" The first 100 customers come from being in the comments of the right threads and from agencies who already have 20 service businesses on retainer, one conversation at a time. This is a demand-harvesting problem solved with presence, not an SEO problem solved with content.\n\nSee the detailed plan\nYear one, on a napkin.",
+    "Napkin Math": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nr/googleads followers (Reddit, public counter)\n83,600\nUseful comments across target subs, 90 days\n90\nAudit sign-ups from comments (assumption, 3%)\n~250\nAgency outbound list (built from public sources)\n300\nAgency reply rate (assumption, 15%)\n45 convos\nAgency audits completed (assumption, 60%)\n27 audits\nAudit to paid conversion (assumption, 25%)\n~70 paid\nMix: 50 owners at $99 + 20 agencies at $249\n70 customers\nMonth 6 MRR\n$9,930\nMonth 12 MRR (same funnel + referrals)\n$19,830\nYear 1 revenue (ramp from 0 to $20K MRR)\n~$120K\n\n150 service owners at $99 + 20 agencies at $249 = $19,830 MRR / ~$238K ARR in year one if the Reddit + agency motion works. Close rates are assumptions; everything else traces to real prices and real community sizes.\n\nTHE CEILING IF IT COMPOUNDS\n$3M-$6M ARR\nRun the model on your numbers\n\nTHE AGENTS\n\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCursor\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cPain scored 8/10 for \"A tool to track which ads turn into paid jobs\u2026\" \u2014 argue the other side.\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nProblem\nI'd like a reply"
+  },
+  "newLayoutExpandedSections": {
+    "The Full Timing Case": {
+      "text": "8\n/10\nTIMING\n\nPMax at 51% of budgets, HVAC adoption doubled Dec-to-Jan, Conversion Lift gated at $5K/1K conversions on October 7 2026, LSA folds into PMax August 2026.\n\nThree things changed in 2026 that make this product urgent, not optional. In January 2026, SearchLight counted 370 HVAC accounts running Performance Max, roughly double the December 2025 number. Across 24,702 PMax campaigns, 51% of advertisers now put over half of their budget into PMax. Over 1 million advertisers use it. The owner no longer picks keywords, audiences, or placements. Google's AI does. The owner picks a budget and a goal.\n\nThen on October 7, 2026, Google opened self-serve Conversion Lift for Search and PMax. This is the real incrementality test, the one that answers whether the ads caused the sale or took credit for it. Google capped access at 1,000 conversions and a $5,000 campaign budget. A dentist, HVAC shop or roofer doing $3,000 a month in ad spend and 40 booked jobs cannot run it. The bigger brands can measure causality; local service owners cannot. Haus already showed what happens when you do not test: across 640 Meta experiments, Advantage+ beat manual in only 42% of accounts and over-reported ROAS by 12 points. The AI dashboards look good; the booked calendar does not move.\n\nThe third catalyst closes the loop. Starting August 2026, Google is folding Local Services Ads into PMax. LSA has driven booked jobs for plumbers, HVAC, electrical, roofers, pest control and cleaners since 2016, on a clean pay-per-lead meter. Now it becomes a PMax goal, inside the same AI auction. Contractors that did not need attribution before (LSA told them the lead was real) now will. CallRail's own 2026 benchmark says feeding booked-job data back to Google cuts cost per lead by $38 and lifts booked-job CPA by 41% in 90 days. ServiceTitan Marketing Pro finds 40-60% of ad budget wasted on campaigns that never produce a booked job. The weekly verdict on whether the AI paid for itself is the product the market is now forced to buy.\n\nTHE SIGNALS\n\nAI took the wheel. 51% of advertisers put over half of budget into PMax (Optmyzr, 24,702 campaigns, Q1 2026). HVAC adoption doubled in one month (SearchLight, Dec 2025 to Jan 2026).\nThe proof test got gated. Google opened self-serve Conversion Lift to Search and PMax on October 7, 2026, with a 1,000-conversion and $5,000-budget floor. Local service owners doing $2K-$20K/mo cannot clear it.\nAdvantage+ beats manual only 42% of the time. 640 Haus tests: 12% lower incremental ROAS at 18% lower spend, 2.4% higher reported ROAS. The dashboard lies by 12 points on average.\nLSA moves into PMax in August 2026. Plumbers, HVAC, electrical, roofers and six more trades lose the clean pay-per-lead meter and inherit PMax attribution.\nFixing it matters. CallRail's 2026 benchmark: offline conversion imports cut cost per lead by $38 and lift booked-job CPA by 41% inside 90 days.\nHonest counter. PMax can win big for contractors (5.54x ROAS versus 2.58x for non-branded search across 524 plumbers, SearchLight Q1 2026), but only when booked-job data is fed back. Without the loop the product closes, that number is an illusion.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "CallRail": "https://www.callrail.com/pricing",
+        "Search Engine Land": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Haus": "https://www.haus.io/blog/is-meta-incremental",
+        "SearchLight Digital": "https://pipelineon.com/blog/performance-max-campaigns-home-services/",
+        "Optmyzr Q1 2026 benchmarks": "https://www.scubemarketing.com/blog/performance-max-statistics-2026-adoption-roas-benchmarks",
+        "\u201cMy clients often use closed CRM's i.e. Jobber, housecall pro etc. It is often difficult to pass the gclid to these systems then have them pass that\u201d\n\nr/PPC": "https://www.reddit.com/r/PPC/comments/1uozvh7/what_is_your_stack_for_offline_conversions/",
+        "\u201cI am a landscaper and have invested about $10k into Google Ads over the last 6 months, plus more on google guarentee. This includes one marketing agency\u201d\n\nr/googleads \u00b7 OP of \"Do ads actually work fo": "https://www.reddit.com/r/googleads/comments/1wj2yyv/do_ads_actually_work_for_home_service_companies/",
+        "\u201cI own a home services company. How much are you spending on Google Ads per month, and are you actually happy with the results? I keep hearing mixed opinions\u201d\n\nr/smallbusiness \u00b7 OP of \"is google ads s": "https://www.reddit.com/r/smallbusiness/comments/1wbr7j3/is_google_ads_still_worth_it_for_home_services/",
+        "RIVET": "https://www.rivetops.io/cost-per-booked-job",
+        "PIPELINEON": "https://pipelineon.com/blog/marketing-attribution-home-service/",
+        "SEARCH ENGINE LAND": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Rivet\n\n(rivetops.io) sells exactly the pitch: connects Google Ads, Facebook and LSA spend to ServiceTitan, Jobber, and Housecall Pro job data and reports cost per booked job by channel, campaign, keyw": "https://www.rivetops.io/cost-per-booked-job",
+        "ServiceTitan\n\nMarketing Pro already does revenue attribution (ad spend to booked job to invoice) inside the CRM, costs $200-$600/month, and is bundled with ServiceTitan which has ~10,800 customers and": "https://www.rivetops.io/track-marketing-roi-servicetitan",
+        "Sourceloop\n\n.ai shows a live dashboard for home services with \"cost per booked job by channel\" (Google LSA $38, Google Ads $61, Meta $74 example).": "https://sourceloop.ai/solutions/home-services/",
+        "WhatConverts\n\nCharges $30/mo entry and $160/mo for Elite plan with Customer Journey multi-click attribution; CallRail charges $50/mo entry with Lead Conversion at $150.": "https://calltracker.io/blog/2026-06-23-whatconverts-vs-callrail/",
+        "CallRail\n\nINCUMBENT\n\nSells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 local numbers, 250 minutes and 25 texts, with per-minute and per-number": "https://www.callrail.com/pricing",
+        "WhatConverts\n\nSells four single-account plans at $30, $60, $100 and $160/mo, with multi-click Customer Journey attribution on the $160 Elite tier; agency plans run $500, $800 and $1,250/mo for unlimit": "https://www.whatconverts.com/pricing/",
+        "Sourceloop\n\nSells three attribution plans at $49, $99 and $249/mo with multi-touch attribution on every tier and CRM sync on the $99 Professional plan; its home-services page markets cost per booked j": "https://sourceloop.ai/pricing/",
+        "CallTrackingMetrics\n\n(CTM) sells four plans at $79, $179, $329 and $1,999/mo (monthly; $65/$149/$274 annual), priced as a premium call-tracking + contact-center tool; AskAI call summaries cost $0.05 e": "https://www.calltrackingmetrics.com/plans",
+        "\u201cStruggling to Get Google Ads to Work for My Local Painting Business - Advice Needed! Agency managing our Google Ads account for $3,000/month\u201d\n\nr/googleads \u00b7 Local painting business owner": "https://www.reddit.com/r/googleads/comments/1rlrw9k/firing_google_ad_agency_and_moving_inhouse_with/",
+        "\u201cI work in marketing for a dental clinic in Canada, and we're struggling to attract new patients for general checkups, cavities, tooth pain\u201d\n\nr/DigitalMarketing \u00b7 In-house marketer at a Canadian denta": "https://www.reddit.com/r/DigitalMarketing/comments/1xjllv8/dental_clinic_marketing_getting_leads_but_no/",
+        "\u201cGoogle optimizes for people who tap the button, not patients who book. You need calls with a minimum duration (e.g. 60-90 seconds) as the\u201d\n\nr/adwords \u00b7 PPC manager commenting on r/adwords": "https://www.reddit.com/r/adwords/comments/1xj30jn/help_my_google_ads_arent_working_as_before/"
+      }
+    },
+    "Proof & Signals (Full)": {
+      "text": "THE HARD NUMBERS\n\nRivet cites an industry benchmark that cost per booked job should run below 10-15% of average job revenue, and that most contractors see cost per booked job 3-5x their cost per lead. The gap between the two metrics is the pain.\n\nRIVET\n\nPipelineOn cites average cost-per-lead of $90.92 for home service contractors; close-rate math turns that into $200-$533 per booked job depending on sales conversion, and few contractors track the latter.\n\nPIPELINEON\n\nRivet's own guide says a home-service marketing stack is 6 tools and runs $200-$600/month (CRM $50-200, call tracking $45-95, review tool $50-100, attribution layer $100-200) on top of ad spend; the attribution layer is a specific line item, proving the budget is already in the market.\n\nRIVET\n\nGoogle opened self-serve Conversion Lift to Search and Performance Max campaigns on October 7, 2026, but gated it behind at least 1,000 observed conversions and a $5,000 minimum campaign budget, locking out smaller advertisers from the easier incrementality test.\n\nSEARCH ENGINE LAND\n\nPEOPLE ARE ASKING FOR IT\n\n\u201cStruggling to Get Google Ads to Work for My Local Painting Business - Advice Needed! Agency managing our Google Ads account for $3,000/month\u201d\n\nr/googleads \u00b7 Local painting business owner\n\n\u201cI work in marketing for a dental clinic in Canada, and we're struggling to attract new patients for general checkups, cavities, tooth pain\u201d\n\nr/DigitalMarketing \u00b7 In-house marketer at a Canadian dental clinic\n\n\u201cGoogle optimizes for people who tap the button, not patients who book. You need calls with a minimum duration (e.g. 60-90 seconds) as the\u201d\n\nr/adwords \u00b7 PPC manager commenting on r/adwords\n\nWHAT THE RESEARCH SAYS\n\nOwners need to know whether leads become profitable jobs\nAutomated ads make downstream outcome data more important\nExisting tools cover parts of the workflow\u2014but leave a potential reconciliation gap\nInterest signals exist, but paid demand and community evidence remain unverified\n\nThe analyses support a real, consequential problem: ad platforms emphasize leads and modeled conversions, while local businesses care about booked, completed, and profitable work. Offline conversion guidance and existing call-tracking/field-service integrations confirm that downstream outcomes matter and can be connected. However, this is not proof of an open product gap: some incumbents already link campaign sources to jobs and revenue, and local-service willingness to pay for a separate product has not been demonstrated. Treat the evidence as validation to run focused, paid data pilots\u2014not as product-market-fit proof.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "CallRail": "https://www.callrail.com/pricing",
+        "Search Engine Land": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Haus": "https://www.haus.io/blog/is-meta-incremental",
+        "SearchLight Digital": "https://pipelineon.com/blog/performance-max-campaigns-home-services/",
+        "Optmyzr Q1 2026 benchmarks": "https://www.scubemarketing.com/blog/performance-max-statistics-2026-adoption-roas-benchmarks",
+        "\u201cMy clients often use closed CRM's i.e. Jobber, housecall pro etc. It is often difficult to pass the gclid to these systems then have them pass that\u201d\n\nr/PPC": "https://www.reddit.com/r/PPC/comments/1uozvh7/what_is_your_stack_for_offline_conversions/",
+        "\u201cI am a landscaper and have invested about $10k into Google Ads over the last 6 months, plus more on google guarentee. This includes one marketing agency\u201d\n\nr/googleads \u00b7 OP of \"Do ads actually work fo": "https://www.reddit.com/r/googleads/comments/1wj2yyv/do_ads_actually_work_for_home_service_companies/",
+        "\u201cI own a home services company. How much are you spending on Google Ads per month, and are you actually happy with the results? I keep hearing mixed opinions\u201d\n\nr/smallbusiness \u00b7 OP of \"is google ads s": "https://www.reddit.com/r/smallbusiness/comments/1wbr7j3/is_google_ads_still_worth_it_for_home_services/",
+        "RIVET": "https://www.rivetops.io/cost-per-booked-job",
+        "PIPELINEON": "https://pipelineon.com/blog/marketing-attribution-home-service/",
+        "SEARCH ENGINE LAND": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Rivet\n\n(rivetops.io) sells exactly the pitch: connects Google Ads, Facebook and LSA spend to ServiceTitan, Jobber, and Housecall Pro job data and reports cost per booked job by channel, campaign, keyw": "https://www.rivetops.io/cost-per-booked-job",
+        "ServiceTitan\n\nMarketing Pro already does revenue attribution (ad spend to booked job to invoice) inside the CRM, costs $200-$600/month, and is bundled with ServiceTitan which has ~10,800 customers and": "https://www.rivetops.io/track-marketing-roi-servicetitan",
+        "Sourceloop\n\n.ai shows a live dashboard for home services with \"cost per booked job by channel\" (Google LSA $38, Google Ads $61, Meta $74 example).": "https://sourceloop.ai/solutions/home-services/",
+        "WhatConverts\n\nCharges $30/mo entry and $160/mo for Elite plan with Customer Journey multi-click attribution; CallRail charges $50/mo entry with Lead Conversion at $150.": "https://calltracker.io/blog/2026-06-23-whatconverts-vs-callrail/",
+        "CallRail\n\nINCUMBENT\n\nSells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 local numbers, 250 minutes and 25 texts, with per-minute and per-number": "https://www.callrail.com/pricing",
+        "WhatConverts\n\nSells four single-account plans at $30, $60, $100 and $160/mo, with multi-click Customer Journey attribution on the $160 Elite tier; agency plans run $500, $800 and $1,250/mo for unlimit": "https://www.whatconverts.com/pricing/",
+        "Sourceloop\n\nSells three attribution plans at $49, $99 and $249/mo with multi-touch attribution on every tier and CRM sync on the $99 Professional plan; its home-services page markets cost per booked j": "https://sourceloop.ai/pricing/",
+        "CallTrackingMetrics\n\n(CTM) sells four plans at $79, $179, $329 and $1,999/mo (monthly; $65/$149/$274 annual), priced as a premium call-tracking + contact-center tool; AskAI call summaries cost $0.05 e": "https://www.calltrackingmetrics.com/plans",
+        "\u201cStruggling to Get Google Ads to Work for My Local Painting Business - Advice Needed! Agency managing our Google Ads account for $3,000/month\u201d\n\nr/googleads \u00b7 Local painting business owner": "https://www.reddit.com/r/googleads/comments/1rlrw9k/firing_google_ad_agency_and_moving_inhouse_with/",
+        "\u201cI work in marketing for a dental clinic in Canada, and we're struggling to attract new patients for general checkups, cavities, tooth pain\u201d\n\nr/DigitalMarketing \u00b7 In-house marketer at a Canadian denta": "https://www.reddit.com/r/DigitalMarketing/comments/1xjllv8/dental_clinic_marketing_getting_leads_but_no/",
+        "\u201cGoogle optimizes for people who tap the button, not patients who book. You need calls with a minimum duration (e.g. 60-90 seconds) as the\u201d\n\nr/adwords \u00b7 PPC manager commenting on r/adwords": "https://www.reddit.com/r/adwords/comments/1xj30jn/help_my_google_ads_arent_working_as_before/"
+      }
+    },
+    "The Opening (Full Market Analysis)": {
+      "text": "Local service attribution splits into four camps, and every one of them has the owner paying somebody else first. CallRail is the default. Four plans at $50, $95, $150 and $195 a month plus per-minute usage, and every HVAC or plumbing shop running Google Ads already has a login. It stops at the call. It tells the owner how many leads a campaign produced, not whether those leads became booked jobs at a margin that paid for the ads. WhatConverts undercuts it at $30-$160/mo single-account and $500-$1,250/mo agency, adds multi-click Customer Journey attribution on the $160 Elite tier, and still lives in the same lead-tracking frame.\n\nCallTrackingMetrics plays premium at $79-$1,999/mo with contact-center features most one-truck shops do not want. Then the closed-loop layer sits above all of them. Rivet (rivetops.io) sells the exact cost-per-booked-job pitch, connects Google Ads, Meta and LSA to ServiceTitan, Jobber and Housecall Pro, and hides its price (its own stack guide pegs the attribution layer at $100-$200/mo). Sourceloop does the same multi-touch attribution for home services at $49, $99 and $249/mo with pricing on the page. ServiceTitan Marketing Pro already does revenue attribution from ad spend to invoice at $200-$600/mo, inside the CRM that ~10,800 contractors use. Scorpion sells the whole thing as a service with RevenueMAX, and Hatch (now owned by Yelp, $700-$1,500/mo) attributes $5.1B in customer revenue through its AI CSR.\n\nSo where is the gap? It is not the integration. Rivet, Sourceloop and ServiceTitan Marketing Pro have already proven the pipes work. The gap is the buyer. ServiceTitan Marketing Pro only ships to the ~10,800 contractors on ServiceTitan. Rivet and Sourceloop lead with agency sales and dashboard UX. Nobody has built the owner-facing product: the one that pulls data from whatever CRM the shop already has (Jobber, Housecall Pro, GoHighLevel, Jobtread, PestPac, dental PMS), ignores the dashboard, and sends one plain-English weekly text that says this week your ads spent $2,140, booked 7 jobs worth $14,800, net profit $4,600, and PMax is wasting $400 on parts queries.\n\nThere is a second gap underneath: verticals outside home services. The dental practice, the med spa, the single-location clinic, the specialty attorney, the roofing shop too small for ServiceTitan. These owners spend $1K-$10K/month on ads, use the same AI-run PMax and Advantage+ campaigns, pay an agency $1,500-$3,000 on top, and have no attribution layer at all. CallRail sold them call tracking. They never bought the booking math.\n\nHonest risk: CallRail or ServiceTitan can close this in a quarter. CallRail already owns the login and the trusted brand with owners. ServiceTitan already owns the booked-job data. If either ships a plain-English weekly verdict over SMS, the wedge collapses. The wedge the founder has to defend is the owner-only product tone and the CRM-agnostic distribution, not the technology.\n\nCallRail. The default call tracker. $50-$195/mo plus usage. Stops at the lead; no booked-job or margin view. Owns the mindshare in local services.\n\nWhatConverts. Lower-priced call tracking plus multi-click attribution on the $160 Elite tier. $30-$160/mo single-account, $500-$1,250/mo agency. Same lead-centric frame.\n\nCallTrackingMetrics. Premium call tracking plus contact-center at $79-$1,999/mo. AI call summaries billed per event. Built for agencies and contact centers, not solo contractors.\n\nRivet (rivetops.io). Direct hit on the thesis: cost per booked job by channel, integrates Google Ads, Meta, LSA with ServiceTitan, Jobber, Housecall Pro. Pricing not published; its own stack guide prices the attribution layer at $100-$200/mo.\n\nSourceloop. $49, $99, $249/mo with multi-touch attribution on every plan. Home services page markets cost per booked job by channel. Self-serve, agency-flavored.\n\nServiceTitan Marketing Pro. $200-$600/mo inside ServiceTitan. Already does revenue attribution from ad spend to invoice. Locked to the ~10,800 ServiceTitan customers.\n\nScorpion + RevenueMAX. Agency-plus-tech model. ServiceTitan's only preferred digital marketing partner. Sold as a service, not as a weekly verdict a solo owner buys self-serve.\n\nHatch (Yelp). $700-$1,500/mo AI CSR with closed-loop ROI dashboards. 2,000+ home-service customers, $5.1B attributed revenue. Enterprise-contracted, mid-market and up.\n\nThe gap. No owner-facing weekly profit verdict for the sub-ServiceTitan long tail (Jobber, Housecall Pro, dental PMS, GoHighLevel, roofers) delivered as plain-English SMS, not a dashboard.\n\nYour way in: Ecommerce has TrueProfit, Triple Whale, BeProfit and TrueMargin at $19-$149/month, but those are Shopify-bound. Local services get call-tracking (CallRail) that stops at the lead, not the booked job and margin.\n\nThe incumbent to beat: CallRail\n\nWHO\u2019S ALREADY IN THE MARKET\n\nRivet\n\n(rivetops.io) sells exactly the pitch: connects Google Ads, Facebook and LSA spend to ServiceTitan, Jobber, and Housecall Pro job data and reports cost per booked job by channel, campaign, keyword.\n\nServiceTitan\n\nMarketing Pro already does revenue attribution (ad spend to booked job to invoice) inside the CRM, costs $200-$600/month, and is bundled with ServiceTitan which has ~10,800 customers and $772M ARR.\n\nSourceloop\n\n.ai shows a live dashboard for home services with \"cost per booked job by channel\" (Google LSA $38, Google Ads $61, Meta $74 example).\n\nWhatConverts\n\nCharges $30/mo entry and $160/mo for Elite plan with Customer Journey multi-click attribution; CallRail charges $50/mo entry with Lead Conversion at $150.\n\nCallRail\n\nINCUMBENT\n\nSells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 local numbers, 250 minutes and 25 texts, with per-minute and per-number usage billed on top; it is the dominant call-tracking incumbent for local service businesses.\n\nWhatConverts\n\nSells four single-account plans at $30, $60, $100 and $160/mo, with multi-click Customer Journey attribution on the $160 Elite tier; agency plans run $500, $800 and $1,250/mo for unlimited accounts and are the lower-priced head-to-head versus CallRail.\n\nSourceloop\n\nSells three attribution plans at $49, $99 and $249/mo with multi-touch attribution on every tier and CRM sync on the $99 Professional plan; its home-services page markets cost per booked job by channel (Google LSA $38, Google Ads $61, Meta $74 as example tiles).\n\nCallTrackingMetrics\n\n(CTM) sells four plans at $79, $179, $329 and $1,999/mo (monthly; $65/$149/$274 annual), priced as a premium call-tracking + contact-center tool; AskAI call summaries cost $0.05 each on top and most AI features sit on Pro and above.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "CallRail": "https://www.callrail.com/pricing",
+        "Search Engine Land": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Haus": "https://www.haus.io/blog/is-meta-incremental",
+        "SearchLight Digital": "https://pipelineon.com/blog/performance-max-campaigns-home-services/",
+        "Optmyzr Q1 2026 benchmarks": "https://www.scubemarketing.com/blog/performance-max-statistics-2026-adoption-roas-benchmarks",
+        "\u201cMy clients often use closed CRM's i.e. Jobber, housecall pro etc. It is often difficult to pass the gclid to these systems then have them pass that\u201d\n\nr/PPC": "https://www.reddit.com/r/PPC/comments/1uozvh7/what_is_your_stack_for_offline_conversions/",
+        "\u201cI am a landscaper and have invested about $10k into Google Ads over the last 6 months, plus more on google guarentee. This includes one marketing agency\u201d\n\nr/googleads \u00b7 OP of \"Do ads actually work fo": "https://www.reddit.com/r/googleads/comments/1wj2yyv/do_ads_actually_work_for_home_service_companies/",
+        "\u201cI own a home services company. How much are you spending on Google Ads per month, and are you actually happy with the results? I keep hearing mixed opinions\u201d\n\nr/smallbusiness \u00b7 OP of \"is google ads s": "https://www.reddit.com/r/smallbusiness/comments/1wbr7j3/is_google_ads_still_worth_it_for_home_services/",
+        "RIVET": "https://www.rivetops.io/cost-per-booked-job",
+        "PIPELINEON": "https://pipelineon.com/blog/marketing-attribution-home-service/",
+        "SEARCH ENGINE LAND": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Rivet\n\n(rivetops.io) sells exactly the pitch: connects Google Ads, Facebook and LSA spend to ServiceTitan, Jobber, and Housecall Pro job data and reports cost per booked job by channel, campaign, keyw": "https://www.rivetops.io/cost-per-booked-job",
+        "ServiceTitan\n\nMarketing Pro already does revenue attribution (ad spend to booked job to invoice) inside the CRM, costs $200-$600/month, and is bundled with ServiceTitan which has ~10,800 customers and": "https://www.rivetops.io/track-marketing-roi-servicetitan",
+        "Sourceloop\n\n.ai shows a live dashboard for home services with \"cost per booked job by channel\" (Google LSA $38, Google Ads $61, Meta $74 example).": "https://sourceloop.ai/solutions/home-services/",
+        "WhatConverts\n\nCharges $30/mo entry and $160/mo for Elite plan with Customer Journey multi-click attribution; CallRail charges $50/mo entry with Lead Conversion at $150.": "https://calltracker.io/blog/2026-06-23-whatconverts-vs-callrail/",
+        "CallRail\n\nINCUMBENT\n\nSells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 local numbers, 250 minutes and 25 texts, with per-minute and per-number": "https://www.callrail.com/pricing",
+        "WhatConverts\n\nSells four single-account plans at $30, $60, $100 and $160/mo, with multi-click Customer Journey attribution on the $160 Elite tier; agency plans run $500, $800 and $1,250/mo for unlimit": "https://www.whatconverts.com/pricing/",
+        "Sourceloop\n\nSells three attribution plans at $49, $99 and $249/mo with multi-touch attribution on every tier and CRM sync on the $99 Professional plan; its home-services page markets cost per booked j": "https://sourceloop.ai/pricing/",
+        "CallTrackingMetrics\n\n(CTM) sells four plans at $79, $179, $329 and $1,999/mo (monthly; $65/$149/$274 annual), priced as a premium call-tracking + contact-center tool; AskAI call summaries cost $0.05 e": "https://www.calltrackingmetrics.com/plans",
+        "\u201cStruggling to Get Google Ads to Work for My Local Painting Business - Advice Needed! Agency managing our Google Ads account for $3,000/month\u201d\n\nr/googleads \u00b7 Local painting business owner": "https://www.reddit.com/r/googleads/comments/1rlrw9k/firing_google_ad_agency_and_moving_inhouse_with/",
+        "\u201cI work in marketing for a dental clinic in Canada, and we're struggling to attract new patients for general checkups, cavities, tooth pain\u201d\n\nr/DigitalMarketing \u00b7 In-house marketer at a Canadian denta": "https://www.reddit.com/r/DigitalMarketing/comments/1xjllv8/dental_clinic_marketing_getting_leads_but_no/",
+        "\u201cGoogle optimizes for people who tap the button, not patients who book. You need calls with a minimum duration (e.g. 60-90 seconds) as the\u201d\n\nr/adwords \u00b7 PPC manager commenting on r/adwords": "https://www.reddit.com/r/adwords/comments/1xj30jn/help_my_google_ads_arent_working_as_before/"
+      }
+    },
+    "The Detailed Plan": {
+      "text": "Launch a self-serve SaaS that reconciles ad spend with booked and completed jobs\u2014and stands out by showing data gaps, assumptions, and confidence, not just lead counts. Start with one home-service trade, connecting one ad platform to call tracking and a CRM or field-service system; then prove the weekly verdict changes decisions and earns $99\u2013$199 monthly subscriptions. Next, deepen integrations and scale to more locations and agency portfolios\u2014ready to validate the gap with real-data pilots?\n\nTHE FIRST MOVES\n\n1\nWithin 2 days, select one non-health trade and create a competitor/workflow comparison of CallRail, ServiceTitan, the target CRM or field-service system, and agency reporting.\n2\nWithin 4 days, recruit 10 qualified owners for discovery calls and ask to inspect anonymized examples of how they currently connect ad spend to booked and completed jobs.\n3\nWithin 7 days, publish a simple data-readiness calculator and offer a paid, consent-based pilot to the first qualified businesses; do not commit to broad product development before pilot evidence.\n\nTHE MVP\n\nFirst audit the current CallRail, ServiceTitan, CRM, agency, and spreadsheet workflows of one non-health home-service vertical; proceed only if pilots reveal a recurring unmet need. Build a self-serve SaaS MVP for one ad platform, one call-tracking source, and one CRM or field-service system, showing booked/completed outcomes, revenue where available, unmatched records, coverage, and explicit uncertainty.\n\nWHERE THE FIRST USERS COME FROM\n\nFounder-led outreach to HVAC, plumbing, roofing, or restoration businesses \u00b7 Reach owners with a specific trade and operational stack for direct discovery and pilot recruitment.\n\nLocal-service PPC agencies and CRM/field-service consultants \u00b7 Agencies and implementers see multiple customer stacks and can refer qualified businesses if the product solves a real reporting gap.\n\nSearch-focused educational content and data-readiness tool \u00b7 Searchers already seek adjacent solutions for lead tracking, lead management, and marketing ROI, although this does not yet prove demand for this exact product.\n\nTIMELINE\n\n1-2 weeks\n\nBUDGET\n\n$0-10K\n\nTHE MILESTONE\n\nBy month 18, reach 100 paying locations with at least 80% source-to-lead and lead-to-job matching in suitable accounts, repeat weekly usage, and demonstrated 60\u201390-day retention.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "CallRail": "https://www.callrail.com/pricing",
+        "Search Engine Land": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Haus": "https://www.haus.io/blog/is-meta-incremental",
+        "SearchLight Digital": "https://pipelineon.com/blog/performance-max-campaigns-home-services/",
+        "Optmyzr Q1 2026 benchmarks": "https://www.scubemarketing.com/blog/performance-max-statistics-2026-adoption-roas-benchmarks",
+        "\u201cMy clients often use closed CRM's i.e. Jobber, housecall pro etc. It is often difficult to pass the gclid to these systems then have them pass that\u201d\n\nr/PPC": "https://www.reddit.com/r/PPC/comments/1uozvh7/what_is_your_stack_for_offline_conversions/",
+        "\u201cI am a landscaper and have invested about $10k into Google Ads over the last 6 months, plus more on google guarentee. This includes one marketing agency\u201d\n\nr/googleads \u00b7 OP of \"Do ads actually work fo": "https://www.reddit.com/r/googleads/comments/1wj2yyv/do_ads_actually_work_for_home_service_companies/",
+        "\u201cI own a home services company. How much are you spending on Google Ads per month, and are you actually happy with the results? I keep hearing mixed opinions\u201d\n\nr/smallbusiness \u00b7 OP of \"is google ads s": "https://www.reddit.com/r/smallbusiness/comments/1wbr7j3/is_google_ads_still_worth_it_for_home_services/",
+        "RIVET": "https://www.rivetops.io/cost-per-booked-job",
+        "PIPELINEON": "https://pipelineon.com/blog/marketing-attribution-home-service/",
+        "SEARCH ENGINE LAND": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Rivet\n\n(rivetops.io) sells exactly the pitch: connects Google Ads, Facebook and LSA spend to ServiceTitan, Jobber, and Housecall Pro job data and reports cost per booked job by channel, campaign, keyw": "https://www.rivetops.io/cost-per-booked-job",
+        "ServiceTitan\n\nMarketing Pro already does revenue attribution (ad spend to booked job to invoice) inside the CRM, costs $200-$600/month, and is bundled with ServiceTitan which has ~10,800 customers and": "https://www.rivetops.io/track-marketing-roi-servicetitan",
+        "Sourceloop\n\n.ai shows a live dashboard for home services with \"cost per booked job by channel\" (Google LSA $38, Google Ads $61, Meta $74 example).": "https://sourceloop.ai/solutions/home-services/",
+        "WhatConverts\n\nCharges $30/mo entry and $160/mo for Elite plan with Customer Journey multi-click attribution; CallRail charges $50/mo entry with Lead Conversion at $150.": "https://calltracker.io/blog/2026-06-23-whatconverts-vs-callrail/",
+        "CallRail\n\nINCUMBENT\n\nSells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 local numbers, 250 minutes and 25 texts, with per-minute and per-number": "https://www.callrail.com/pricing",
+        "WhatConverts\n\nSells four single-account plans at $30, $60, $100 and $160/mo, with multi-click Customer Journey attribution on the $160 Elite tier; agency plans run $500, $800 and $1,250/mo for unlimit": "https://www.whatconverts.com/pricing/",
+        "Sourceloop\n\nSells three attribution plans at $49, $99 and $249/mo with multi-touch attribution on every tier and CRM sync on the $99 Professional plan; its home-services page markets cost per booked j": "https://sourceloop.ai/pricing/",
+        "CallTrackingMetrics\n\n(CTM) sells four plans at $79, $179, $329 and $1,999/mo (monthly; $65/$149/$274 annual), priced as a premium call-tracking + contact-center tool; AskAI call summaries cost $0.05 e": "https://www.calltrackingmetrics.com/plans",
+        "\u201cStruggling to Get Google Ads to Work for My Local Painting Business - Advice Needed! Agency managing our Google Ads account for $3,000/month\u201d\n\nr/googleads \u00b7 Local painting business owner": "https://www.reddit.com/r/googleads/comments/1rlrw9k/firing_google_ad_agency_and_moving_inhouse_with/",
+        "\u201cI work in marketing for a dental clinic in Canada, and we're struggling to attract new patients for general checkups, cavities, tooth pain\u201d\n\nr/DigitalMarketing \u00b7 In-house marketer at a Canadian denta": "https://www.reddit.com/r/DigitalMarketing/comments/1xjllv8/dental_clinic_marketing_getting_leads_but_no/",
+        "\u201cGoogle optimizes for people who tap the button, not patients who book. You need calls with a minimum duration (e.g. 60-90 seconds) as the\u201d\n\nr/adwords \u00b7 PPC manager commenting on r/adwords": "https://www.reddit.com/r/adwords/comments/1xj30jn/help_my_google_ads_arent_working_as_before/"
+      }
+    },
+    "The Full Value Ladder": {
+      "text": "1\n\nLEAD MAGNET\n\nFree 90-Day Ad Spend Audit($0)\n\nConnect Google Ads and CRM in 10 minutes. Get a one-page PDF: ad spend, booked jobs, cost per booked job, top 3 wasted queries. Does the selling.\n\n2\n\nFRONTEND\n\nOwner Plan (single location)($99/mo)\n\nWeekly profit verdict email + dashboard. One location. One Google Ads + Meta + CRM connection. Priced against CallRail Pro ($95) with the booked-job loop added.\n\n3\n\nCORE\n\nMulti-Location Plan($199/mo)\n\nUp to 5 locations. Per-location cost per booked job and per-channel margin. For small HVAC, dental, roofing chains below the ServiceTitan line.\n\n4\n\nCONTINUITY\n\nAgency White-Label($249/mo)\n\n10+ client accounts, white-label weekly verdict emails and PDFs. Agencies bundle into $1,500-$3,000/mo client retainers.\n\nTHE NEXT STEP\n\nIf you're serious about building a cash-flowing business.\n\nGo Pro",
+      "links": {
+        "CallRail": "https://www.callrail.com/pricing",
+        "Search Engine Land": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Haus": "https://www.haus.io/blog/is-meta-incremental",
+        "SearchLight Digital": "https://pipelineon.com/blog/performance-max-campaigns-home-services/",
+        "Optmyzr Q1 2026 benchmarks": "https://www.scubemarketing.com/blog/performance-max-statistics-2026-adoption-roas-benchmarks",
+        "\u201cMy clients often use closed CRM's i.e. Jobber, housecall pro etc. It is often difficult to pass the gclid to these systems then have them pass that\u201d\n\nr/PPC": "https://www.reddit.com/r/PPC/comments/1uozvh7/what_is_your_stack_for_offline_conversions/",
+        "\u201cI am a landscaper and have invested about $10k into Google Ads over the last 6 months, plus more on google guarentee. This includes one marketing agency\u201d\n\nr/googleads \u00b7 OP of \"Do ads actually work fo": "https://www.reddit.com/r/googleads/comments/1wj2yyv/do_ads_actually_work_for_home_service_companies/",
+        "\u201cI own a home services company. How much are you spending on Google Ads per month, and are you actually happy with the results? I keep hearing mixed opinions\u201d\n\nr/smallbusiness \u00b7 OP of \"is google ads s": "https://www.reddit.com/r/smallbusiness/comments/1wbr7j3/is_google_ads_still_worth_it_for_home_services/",
+        "RIVET": "https://www.rivetops.io/cost-per-booked-job",
+        "PIPELINEON": "https://pipelineon.com/blog/marketing-attribution-home-service/",
+        "SEARCH ENGINE LAND": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Rivet\n\n(rivetops.io) sells exactly the pitch: connects Google Ads, Facebook and LSA spend to ServiceTitan, Jobber, and Housecall Pro job data and reports cost per booked job by channel, campaign, keyw": "https://www.rivetops.io/cost-per-booked-job",
+        "ServiceTitan\n\nMarketing Pro already does revenue attribution (ad spend to booked job to invoice) inside the CRM, costs $200-$600/month, and is bundled with ServiceTitan which has ~10,800 customers and": "https://www.rivetops.io/track-marketing-roi-servicetitan",
+        "Sourceloop\n\n.ai shows a live dashboard for home services with \"cost per booked job by channel\" (Google LSA $38, Google Ads $61, Meta $74 example).": "https://sourceloop.ai/solutions/home-services/",
+        "WhatConverts\n\nCharges $30/mo entry and $160/mo for Elite plan with Customer Journey multi-click attribution; CallRail charges $50/mo entry with Lead Conversion at $150.": "https://calltracker.io/blog/2026-06-23-whatconverts-vs-callrail/",
+        "CallRail\n\nINCUMBENT\n\nSells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 local numbers, 250 minutes and 25 texts, with per-minute and per-number": "https://www.callrail.com/pricing",
+        "WhatConverts\n\nSells four single-account plans at $30, $60, $100 and $160/mo, with multi-click Customer Journey attribution on the $160 Elite tier; agency plans run $500, $800 and $1,250/mo for unlimit": "https://www.whatconverts.com/pricing/",
+        "Sourceloop\n\nSells three attribution plans at $49, $99 and $249/mo with multi-touch attribution on every tier and CRM sync on the $99 Professional plan; its home-services page markets cost per booked j": "https://sourceloop.ai/pricing/",
+        "CallTrackingMetrics\n\n(CTM) sells four plans at $79, $179, $329 and $1,999/mo (monthly; $65/$149/$274 annual), priced as a premium call-tracking + contact-center tool; AskAI call summaries cost $0.05 e": "https://www.calltrackingmetrics.com/plans",
+        "\u201cStruggling to Get Google Ads to Work for My Local Painting Business - Advice Needed! Agency managing our Google Ads account for $3,000/month\u201d\n\nr/googleads \u00b7 Local painting business owner": "https://www.reddit.com/r/googleads/comments/1rlrw9k/firing_google_ad_agency_and_moving_inhouse_with/",
+        "\u201cI work in marketing for a dental clinic in Canada, and we're struggling to attract new patients for general checkups, cavities, tooth pain\u201d\n\nr/DigitalMarketing \u00b7 In-house marketer at a Canadian denta": "https://www.reddit.com/r/DigitalMarketing/comments/1xjllv8/dental_clinic_marketing_getting_leads_but_no/",
+        "\u201cGoogle optimizes for people who tap the button, not patients who book. You need calls with a minimum duration (e.g. 60-90 seconds) as the\u201d\n\nr/adwords \u00b7 PPC manager commenting on r/adwords": "https://www.reddit.com/r/adwords/comments/1xj30jn/help_my_google_ads_arent_working_as_before/"
+      }
+    }
+  },
+  "glancePopups": {
+    "THE CEILING IF IT COMPOUNDS $3M-$6M ARR": {
+      "text": "Where the ceiling comes from.\nWHAT $3M ARR TAKES\nUS home-service businesses (Census, ~500K addressable)\n500,000\nRealistic 5-year single-location capture (assumption, 0.3%)\n1,500 owners\nOwner ARPU at Owner plan $99/mo\n$1,188/yr\nOwner ARR ceiling\n$1.78M\nUS home-service marketing agencies (assumption, ~3K)\n3,000\nRealistic 5-year agency capture (assumption, 10%)\n300 agencies\nAgency ARPU at $249/mo\n$2,988/yr\nAgency ARR ceiling\n$896K\nMulti-location mid-market (assumption, 200 at $199)\n$478K ARR\nEnterprise / white-label upsell (assumption)\n$500K-$2M ARR\nTotal ceiling range\nHonest ceiling is $3M-$6M ARR as a bootstrapped SaaS: 1,500 owners + 300 agencies + a small ServiceTitan-adjacent enterprise tail. Rivet and Sourceloop have taken the easy air out of the top; the win is the sub-ServiceTitan long tail nobody has consolidated.\nTHE CEILING\nTHE NEXT STEP\nIf you're serious about building a cash-flowing business.",
+      "links": {
+        "CallRail": "https://www.callrail.com/pricing",
+        "Search Engine Land": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Haus": "https://www.haus.io/blog/is-meta-incremental",
+        "SearchLight Digital": "https://pipelineon.com/blog/performance-max-campaigns-home-services/",
+        "Optmyzr Q1 2026 benchmarks": "https://www.scubemarketing.com/blog/performance-max-statistics-2026-adoption-roas-benchmarks",
+        "\u201cMy clients often use closed CRM's i.e. Jobber, housecall pro etc. It is often difficult to pass the gclid to these systems then have them pass that\u201d\n\nr/PPC": "https://www.reddit.com/r/PPC/comments/1uozvh7/what_is_your_stack_for_offline_conversions/",
+        "\u201cI am a landscaper and have invested about $10k into Google Ads over the last 6 months, plus more on google guarentee. This includes one marketing agency\u201d\n\nr/googleads \u00b7 OP of \"Do ads actually work fo": "https://www.reddit.com/r/googleads/comments/1wj2yyv/do_ads_actually_work_for_home_service_companies/",
+        "\u201cI own a home services company. How much are you spending on Google Ads per month, and are you actually happy with the results? I keep hearing mixed opinions\u201d\n\nr/smallbusiness \u00b7 OP of \"is google ads s": "https://www.reddit.com/r/smallbusiness/comments/1wbr7j3/is_google_ads_still_worth_it_for_home_services/",
+        "RIVET": "https://www.rivetops.io/cost-per-booked-job",
+        "PIPELINEON": "https://pipelineon.com/blog/marketing-attribution-home-service/",
+        "SEARCH ENGINE LAND": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195",
+        "Rivet\n\n(rivetops.io) sells exactly the pitch: connects Google Ads, Facebook and LSA spend to ServiceTitan, Jobber, and Housecall Pro job data and reports cost per booked job by channel, campaign, keyw": "https://www.rivetops.io/cost-per-booked-job",
+        "ServiceTitan\n\nMarketing Pro already does revenue attribution (ad spend to booked job to invoice) inside the CRM, costs $200-$600/month, and is bundled with ServiceTitan which has ~10,800 customers and": "https://www.rivetops.io/track-marketing-roi-servicetitan",
+        "Sourceloop\n\n.ai shows a live dashboard for home services with \"cost per booked job by channel\" (Google LSA $38, Google Ads $61, Meta $74 example).": "https://sourceloop.ai/solutions/home-services/",
+        "WhatConverts\n\nCharges $30/mo entry and $160/mo for Elite plan with Customer Journey multi-click attribution; CallRail charges $50/mo entry with Lead Conversion at $150.": "https://calltracker.io/blog/2026-06-23-whatconverts-vs-callrail/",
+        "CallRail\n\nINCUMBENT\n\nSells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 local numbers, 250 minutes and 25 texts, with per-minute and per-number": "https://www.callrail.com/pricing",
+        "WhatConverts\n\nSells four single-account plans at $30, $60, $100 and $160/mo, with multi-click Customer Journey attribution on the $160 Elite tier; agency plans run $500, $800 and $1,250/mo for unlimit": "https://www.whatconverts.com/pricing/",
+        "Sourceloop\n\nSells three attribution plans at $49, $99 and $249/mo with multi-touch attribution on every tier and CRM sync on the $99 Professional plan; its home-services page markets cost per booked j": "https://sourceloop.ai/pricing/",
+        "CallTrackingMetrics\n\n(CTM) sells four plans at $79, $179, $329 and $1,999/mo (monthly; $65/$149/$274 annual), priced as a premium call-tracking + contact-center tool; AskAI call summaries cost $0.05 e": "https://www.calltrackingmetrics.com/plans",
+        "\u201cStruggling to Get Google Ads to Work for My Local Painting Business - Advice Needed! Agency managing our Google Ads account for $3,000/month\u201d\n\nr/googleads \u00b7 Local painting business owner": "https://www.reddit.com/r/googleads/comments/1rlrw9k/firing_google_ad_agency_and_moving_inhouse_with/",
+        "\u201cI work in marketing for a dental clinic in Canada, and we're struggling to attract new patients for general checkups, cavities, tooth pain\u201d\n\nr/DigitalMarketing \u00b7 In-house marketer at a Canadian denta": "https://www.reddit.com/r/DigitalMarketing/comments/1xjllv8/dental_clinic_marketing_getting_leads_but_no/",
+        "\u201cGoogle optimizes for people who tap the button, not patients who book. You need calls with a minimum duration (e.g. 60-90 seconds) as the\u201d\n\nr/adwords \u00b7 PPC manager commenting on r/adwords": "https://www.reddit.com/r/adwords/comments/1xj30jn/help_my_google_ads_arent_working_as_before/"
+      }
+    }
+  },
+  "overallScore": null,
+  "painScore": null,
+  "timingScore": null,
+  "layoutDetected": "new",
+  "siteView": {
+    "version": "v3",
+    "dateLabel": "NOV 28, 2026",
+    "title": "A tool to track which ads turn into paid jobs for local service businesses",
+    "ibIndex": "7.0",
+    "tags": [
+      "B2B",
+      "SaaS",
+      "$3M-$6M ARR"
+    ],
+    "painSeverity": "8",
+    "hero": [
+      {
+        "label": "REDDIT THREADS",
+        "lines": [
+          "20+ comments",
+          "r/PPC offline conversion attribution, 4 months ago"
+        ],
+        "prose": false
+      },
+      {
+        "label": "WHAT IT DEMANDS",
+        "lines": [
+          "Integrations",
+          "Distribution",
+          "Sales grind",
+          "Domain depth",
+          "Capital"
+        ],
+        "prose": false
+      },
+      {
+        "label": "THE REALITY",
+        "lines": [
+          "FIRST REVENUE",
+          "60-120 days",
+          "CAPITAL IN",
+          "$10K-$30K",
+          "DIFFICULTY",
+          "Moderate"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "FIRST REVENUE",
+            "value": "60-120 days"
+          },
+          {
+            "label": "CAPITAL IN",
+            "value": "$10K-$30K"
+          },
+          {
+            "label": "DIFFICULTY",
+            "value": "Moderate"
+          }
+        ]
+      },
+      {
+        "label": "UP AGAINST",
+        "lines": [
+          "CallRail",
+          "Sells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 lo\u2026",
+          "+ 10 more mapped"
+        ],
+        "prose": false,
+        "href": "https://www.callrail.com/pricing"
+      },
+      {
+        "label": "THE PITCH",
+        "lines": [
+          "A landscaper on Reddit is six months and $10,000 into Google Ads with an agency on retainer and still asks strangers if the ads work. A painter pays $3,000 a month to an agency and cannot tell either. In 2026 Google handed the levers to AI: 51% of advertisers now put over half their budget into Performance Max, HVAC adoption doubled in one month, and Google opened the Conversion Lift proof test on October 7, 2026 but gated it behind 1,000 conversions and $5,000 of spend. A $2K-$20K/month local shop cannot clear that floor. Haus tested 640 Meta accounts and found Advantage+ beat manual only 42% of the time with 12% lower incremental\u2026"
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHO IT'S FOR",
+        "lines": [
+          "Local service and lead-gen small businesses (dentists, HVAC, plumbers, roofers, med spas, clinics) running AI-managed Google and Meta campaigns, usually $2K-$20K/month in ad spend."
+        ],
+        "prose": true
+      },
+      {
+        "label": "THE GAP",
+        "lines": [
+          "Call-tracking owns the lead. Nobody owns the weekly profit verdict for the owner"
+        ],
+        "prose": true
+      },
+      {
+        "label": "WHY NOW",
+        "lines": [
+          "Google handed the ad levers to AI, then locked small advertisers out of the proof test"
+        ],
+        "prose": true
+      },
+      {
+        "label": "AT A GLANCE",
+        "lines": [
+          "Reddit threads",
+          "20+ comments",
+          "Pricing",
+          "$0 to $249/mo",
+          "Year one",
+          "$80K-$180K",
+          "Ceiling",
+          "$3M-$6M ARR"
+        ],
+        "prose": false,
+        "pairs": [
+          {
+            "label": "Reddit threads",
+            "value": "20+ comments"
+          },
+          {
+            "label": "Pricing",
+            "value": "$0 to $249/mo"
+          },
+          {
+            "label": "Year one",
+            "value": "$80K-$180K"
+          },
+          {
+            "label": "Ceiling",
+            "value": "$3M-$6M ARR"
+          }
+        ]
+      },
+      {
+        "label": "WHAT YOU SELL",
+        "lines": [
+          "Multi-Location Plan$199/mo"
+        ],
+        "prose": false,
+        "name": "Multi-Location Plan",
+        "price": "$199/mo"
+      },
+      {
+        "label": "BIGGEST RISK",
+        "lines": [
+          "ServiceTitan Marketing Pro, Rivet, Sourceloop, Scorpion RevenueMAX and Hatch all already sell a version of \"cost per booked job by channel.\" The gap is real bu\u2026"
+        ],
+        "prose": true
+      }
+    ],
+    "heroMore": null,
+    "sections": [
+      {
+        "id": "whyNow",
+        "kicker": "Why now",
+        "data": {
+          "headline": "Google handed the ad levers to AI, then locked small advertisers out of the proof test",
+          "paragraphs": [
+            "Three things changed in 2026 that make this product urgent, not optional. In January 2026, SearchLight counted 370 HVAC accounts running Performance Max, roughly double the December 2025 number. Across 24,702 PMax campaigns, 51% of advertisers now put over half of their budget into PMax. Over 1 million advertisers use it. The owner no longer picks keywords, audiences, or placements. Google's AI does. The owner picks a budget and a goal.",
+            "Then on October 7, 2026, Google opened self-serve Conversion Lift for Search and PMax. This is the real incrementality test, the one that answers whether the ads caused the sale or took credit for it. Google capped access at 1,000 conversions and a $5,000 campaign budget. A dentist, HVAC shop or roofer doing $3,000 a month in ad spend and 40 booked jobs cannot run it. The bigger brands can measure causality; local service owners cannot. Haus already showed what happens when you do not test: across 640 Meta experiments, Advantage+ beat manual in only 42% of accounts and over-reported ROAS by 12 points. The AI dashboards look good; the booked calendar does not move."
+          ],
+          "sources": [
+            {
+              "label": "Search Engine Land",
+              "href": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195"
+            },
+            {
+              "label": "Haus",
+              "href": "https://www.haus.io/blog/is-meta-incremental"
+            },
+            {
+              "label": "SearchLight Digital",
+              "href": "https://pipelineon.com/blog/performance-max-campaigns-home-services/"
+            },
+            {
+              "label": "Optmyzr Q1 2026 benchmarks",
+              "href": "https://www.scubemarketing.com/blog/performance-max-statistics-2026-adoption-roas-benchmarks"
+            }
+          ]
+        },
+        "more": {
+          "label": "See the full timing case",
+          "title": "The full timing case.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "/10"
+            },
+            {
+              "type": "h",
+              "text": "TIMING"
+            },
+            {
+              "type": "p",
+              "text": "PMax at 51% of budgets, HVAC adoption doubled Dec-to-Jan, Conversion Lift gated at $5K/1K conversions on October 7 2026, LSA folds into PMax August 2026."
+            },
+            {
+              "type": "p",
+              "text": "The third catalyst closes the loop. Starting August 2026, Google is folding Local Services Ads into PMax. LSA has driven booked jobs for plumbers, HVAC, electrical, roofers, pest control and cleaners since 2016, on a clean pay-per-lead meter. Now it becomes a PMax goal, inside the same AI auction. Contractors that did not need attribution before (LSA told them the lead was real) now will. CallRail's own 2026 benchmark says feeding booked-job data back to Google cuts cost per lead by $38 and lifts booked-job CPA by 41% in 90 days. ServiceTitan Marketing Pro finds 40-60% of ad budget wasted on campaigns that never produce a booked job. The weekly verdict on whether the AI paid for itself is the product the market is now forced to buy."
+            },
+            {
+              "type": "h",
+              "text": "THE SIGNALS"
+            },
+            {
+              "type": "p",
+              "text": "AI took the wheel. 51% of advertisers put over half of budget into PMax (Optmyzr, 24,702 campaigns, Q1 2026). HVAC adoption doubled in one month (SearchLight, Dec 2025 to Jan 2026)."
+            },
+            {
+              "type": "p",
+              "text": "The proof test got gated. Google opened self-serve Conversion Lift to Search and PMax on October 7, 2026, with a 1,000-conversion and $5,000-budget floor. Local service owners doing $2K-$20K/mo cannot clear it."
+            },
+            {
+              "type": "p",
+              "text": "Advantage+ beats manual only 42% of the time. 640 Haus tests: 12% lower incremental ROAS at 18% lower spend, 2.4% higher reported ROAS. The dashboard lies by 12 points on average."
+            },
+            {
+              "type": "p",
+              "text": "LSA moves into PMax in August 2026. Plumbers, HVAC, electrical, roofers and six more trades lose the clean pay-per-lead meter and inherit PMax attribution."
+            },
+            {
+              "type": "p",
+              "text": "Fixing it matters. CallRail's 2026 benchmark: offline conversion imports cut cost per lead by $38 and lift booked-job CPA by 41% inside 90 days."
+            },
+            {
+              "type": "p",
+              "text": "Honest counter. PMax can win big for contractors (5.54x ROAS versus 2.58x for non-branded search across 524 plumbers, SearchLight Q1 2026), but only when booked-job data is fed back. Without the loop the product closes, that number is an illusion."
+            }
+          ]
+        }
+      },
+      {
+        "id": "marketSnapshot",
+        "kicker": "Market snapshot",
+        "data": {
+          "title": "The receipts.",
+          "painSeverity": "8",
+          "quotes": [
+            {
+              "quote": "\u201cMy clients often use closed CRM's i.e. Jobber, housecall pro etc. It is often difficult to pass the gclid to these systems then have them pass that\u201d",
+              "source": "r/PPC",
+              "href": "https://www.reddit.com/r/PPC/comments/1uozvh7/what_is_your_stack_for_offline_conversions/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cI am a landscaper and have invested about $10k into Google Ads over the last 6 months, plus more on google guarentee. This includes one marketing agency\u201d",
+              "source": "r/googleads \u00b7 OP of \"Do ads actually work for home service companies?\"",
+              "href": "https://www.reddit.com/r/googleads/comments/1wj2yyv/do_ads_actually_work_for_home_service_companies/",
+              "platform": null
+            },
+            {
+              "quote": "\u201cI own a home services company. How much are you spending on Google Ads per month, and are you actually happy with the results? I keep hearing mixed opinions\u201d",
+              "source": "r/smallbusiness \u00b7 OP of \"is google ads still worth it for home services company?\"",
+              "href": "https://www.reddit.com/r/smallbusiness/comments/1wbr7j3/is_google_ads_still_worth_it_for_home_services/",
+              "platform": null
+            }
+          ],
+          "receiptsLabel": "All 10 receipts, and where these people gather"
+        },
+        "more": {
+          "label": "All receipts",
+          "title": "Where the pain lives.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "\u201cSpent $800 in two weeks. Got 2 calls. Neither booked.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "Digital Media Group (agency page citing contractor feedback) \u00b7 Home service contractor client quoted by Digital Media Group"
+            },
+            {
+              "type": "p",
+              "text": "\u201cConversions are up, cost per conversion looks fine, and your calendar hasn't changed. For home service contractors, Performance Max is usually the reason\u201d"
+            },
+            {
+              "type": "p",
+              "text": "United Foundry (home service PPC agency) \u00b7 United Foundry"
+            },
+            {
+              "type": "p",
+              "text": "\u201cPMax was burning $1,400/month on \"plumber jobs,\" \"plumbing parts near me,\" and \"plumbing apprentice salary.\" Three hours building a 140-term campaign-level negative list dropped wasted spend to $310/month inside 30 days.\u201d"
+            },
+            {
+              "type": "p",
+              "text": "r/sweatystartup (via PipelineOn case writeup) \u00b7 Plumbing owner on r/sweatystartup"
+            },
+            {
+              "type": "p",
+              "text": "\u201cIt's almost never a lead generation problem with the trades; I work with a lot of HVAC and contractor agencies, runs their exact margin for not\u201d"
+            },
+            {
+              "type": "p",
+              "text": "r/gohighlevel \u00b7 Agency owner serving trades, r/gohighlevel"
+            },
+            {
+              "type": "h",
+              "text": "WHERE THEY GATHER"
+            },
+            {
+              "type": "p",
+              "text": "The r/PPC thread \"What is your stack for offline conversions?\" (4 months old) has 20+ comments, with PPC managers naming Jobber and Housecall Pro as hard to pass gclid through for closed-loop attribution. Live, recent practitioner pain on the exact problem.Visit"
+            },
+            {
+              "type": "p",
+              "text": "The r/googleads thread \"Best way to track real phone-call conversions for local\" is 2 months old with 30+ comments. Comments push \"compare actual booked jobs after 2 weeks not just form fills\", which is exactly the pitch of the idea.Visit"
+            },
+            {
+              "type": "p",
+              "text": "r/HVACDigitalMarketing exists and leads with the claim that \"conversion tracking\" is the foundation of HVAC Google Ads campaigns, naming it as the gap agencies see at HVAC companies. Subreddit volume signals a vertical audience.Visit"
+            },
+            {
+              "type": "p",
+              "text": "The home service ad attribution pain lives on r/googleads (83.6K+ followers), r/smallbusiness, r/PPC, r/sweatystartup and niche subs like r/HVACDigitalMarketing and r/GrowDental.Visit"
+            },
+            {
+              "type": "p",
+              "text": "r/GrowDental hosts a specific thread calling out that dental practices overpay on Google Ads and do not track who actually booked after visiting.Visit"
+            }
+          ]
+        }
+      },
+      {
+        "id": "whitespace",
+        "kicker": "Whitespace",
+        "data": {
+          "gap": "Call-tracking owns the lead. Nobody owns the weekly profit verdict for the owner",
+          "wedge": [
+            "Ecommerce has TrueProfit, Triple Whale, BeProfit and TrueMargin at $19-$149/month, but those are Shopify-bound. Local services get call-tracking (CallRail) that stops at the lead, not the booked job and margin."
+          ],
+          "incumbent": {
+            "name": "CallRail",
+            "href": "https://www.callrail.com/pricing"
+          },
+          "other": []
+        },
+        "more": {
+          "label": "Understand the opening",
+          "title": "The opening.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Local service attribution splits into four camps, and every one of them has the owner paying somebody else first. CallRail is the default. Four plans at $50, $95, $150 and $195 a month plus per-minute usage, and every HVAC or plumbing shop running Google Ads already has a login. It stops at the call. It tells the owner how many leads a campaign produced, not whether those leads became booked jobs at a margin that paid for the ads. WhatConverts undercuts it at $30-$160/mo single-account and $500-$1,250/mo agency, adds multi-click Customer Journey attribution on the $160 Elite tier, and still lives in the same lead-tracking frame."
+            },
+            {
+              "type": "p",
+              "text": "CallTrackingMetrics plays premium at $79-$1,999/mo with contact-center features most one-truck shops do not want. Then the closed-loop layer sits above all of them. Rivet (rivetops.io) sells the exact cost-per-booked-job pitch, connects Google Ads, Meta and LSA to ServiceTitan, Jobber and Housecall Pro, and hides its price (its own stack guide pegs the attribution layer at $100-$200/mo). Sourceloop does the same multi-touch attribution for home services at $49, $99 and $249/mo with pricing on the page. ServiceTitan Marketing Pro already does revenue attribution from ad spend to invoice at $200-$600/mo, inside the CRM that ~10,800 contractors use. Scorpion sells the whole thing as a service with RevenueMAX, and Hatch (now owned by Yelp, $700-$1,500/mo) attributes $5.1B in customer revenue through its AI CSR."
+            },
+            {
+              "type": "p",
+              "text": "So where is the gap? It is not the integration. Rivet, Sourceloop and ServiceTitan Marketing Pro have already proven the pipes work. The gap is the buyer. ServiceTitan Marketing Pro only ships to the ~10,800 contractors on ServiceTitan. Rivet and Sourceloop lead with agency sales and dashboard UX. Nobody has built the owner-facing product: the one that pulls data from whatever CRM the shop already has (Jobber, Housecall Pro, GoHighLevel, Jobtread, PestPac, dental PMS), ignores the dashboard, and sends one plain-English weekly text that says this week your ads spent $2,140, booked 7 jobs worth $14,800, net profit $4,600, and PMax is wasting $400 on parts queries."
+            },
+            {
+              "type": "p",
+              "text": "There is a second gap underneath: verticals outside home services. The dental practice, the med spa, the single-location clinic, the specialty attorney, the roofing shop too small for ServiceTitan. These owners spend $1K-$10K/month on ads, use the same AI-run PMax and Advantage+ campaigns, pay an agency $1,500-$3,000 on top, and have no attribution layer at all. CallRail sold them call tracking. They never bought the booking math."
+            },
+            {
+              "type": "p",
+              "text": "Honest risk: CallRail or ServiceTitan can close this in a quarter. CallRail already owns the login and the trusted brand with owners. ServiceTitan already owns the booked-job data. If either ships a plain-English weekly verdict over SMS, the wedge collapses. The wedge the founder has to defend is the owner-only product tone and the CRM-agnostic distribution, not the technology."
+            },
+            {
+              "type": "p",
+              "text": "CallRail. The default call tracker. $50-$195/mo plus usage. Stops at the lead; no booked-job or margin view. Owns the mindshare in local services."
+            },
+            {
+              "type": "p",
+              "text": "WhatConverts. Lower-priced call tracking plus multi-click attribution on the $160 Elite tier. $30-$160/mo single-account, $500-$1,250/mo agency. Same lead-centric frame."
+            },
+            {
+              "type": "p",
+              "text": "CallTrackingMetrics. Premium call tracking plus contact-center at $79-$1,999/mo. AI call summaries billed per event. Built for agencies and contact centers, not solo contractors."
+            },
+            {
+              "type": "p",
+              "text": "Rivet (rivetops.io). Direct hit on the thesis: cost per booked job by channel, integrates Google Ads, Meta, LSA with ServiceTitan, Jobber, Housecall Pro. Pricing not published; its own stack guide prices the attribution layer at $100-$200/mo."
+            },
+            {
+              "type": "p",
+              "text": "Sourceloop. $49, $99, $249/mo with multi-touch attribution on every plan. Home services page markets cost per booked job by channel. Self-serve, agency-flavored."
+            },
+            {
+              "type": "p",
+              "text": "ServiceTitan Marketing Pro. $200-$600/mo inside ServiceTitan. Already does revenue attribution from ad spend to invoice. Locked to the ~10,800 ServiceTitan customers."
+            },
+            {
+              "type": "p",
+              "text": "Scorpion + RevenueMAX. Agency-plus-tech model. ServiceTitan's only preferred digital marketing partner. Sold as a service, not as a weekly verdict a solo owner buys self-serve."
+            },
+            {
+              "type": "p",
+              "text": "Hatch (Yelp). $700-$1,500/mo AI CSR with closed-loop ROI dashboards. 2,000+ home-service customers, $5.1B attributed revenue. Enterprise-contracted, mid-market and up."
+            },
+            {
+              "type": "p",
+              "text": "The gap. No owner-facing weekly profit verdict for the sub-ServiceTitan long tail (Jobber, Housecall Pro, dental PMS, GoHighLevel, roofers) delivered as plain-English SMS, not a dashboard."
+            },
+            {
+              "type": "p",
+              "text": "Your way in: Ecommerce has TrueProfit, Triple Whale, BeProfit and TrueMargin at $19-$149/month, but those are Shopify-bound. Local services get call-tracking (CallRail) that stops at the lead, not the booked job and margin."
+            },
+            {
+              "type": "h",
+              "text": "WHO\u2019S ALREADY IN THE MARKET"
+            }
+          ]
+        }
+      },
+      {
+        "id": "proof",
+        "kicker": "Proof & signals",
+        "data": {
+          "items": [
+            {
+              "text": "Rivet cites an industry benchmark that cost per booked job should run below 10-15% of average job revenue, and that most contractors see cost per booked job 3-5x their cost per lead. The gap between the two metrics is the pain.",
+              "source": "RIVET",
+              "href": "https://www.rivetops.io/cost-per-booked-job"
+            },
+            {
+              "text": "PipelineOn cites average cost-per-lead of $90.92 for home service contractors; close-rate math turns that into $200-$533 per booked job depending on sales conversion, and few contractors track the latter.",
+              "source": "PIPELINEON",
+              "href": "https://pipelineon.com/blog/marketing-attribution-home-service/"
+            },
+            {
+              "text": "Rivet's own guide says a home-service marketing stack is 6 tools and runs $200-$600/month (CRM $50-200, call tracking $45-95, review tool $50-100, attribution layer $100-200) on top of ad spend; the attribution layer is a specific line item, proving the budget is already in the market.",
+              "source": "RIVET",
+              "href": "https://www.rivetops.io/cost-per-booked-job"
+            },
+            {
+              "text": "Google opened self-serve Conversion Lift to Search and Performance Max campaigns on October 7, 2026, but gated it behind at least 1,000 observed conversions and a $5,000 minimum campaign budget, locking out smaller advertisers from the easier incrementality test.",
+              "source": "SEARCH ENGINE LAND",
+              "href": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195"
+            }
+          ]
+        },
+        "more": {
+          "label": "Explore the evidence",
+          "title": "Proof & signals.",
+          "blocks": [
+            {
+              "type": "h",
+              "text": "THE HARD NUMBERS"
+            },
+            {
+              "type": "h",
+              "text": "WHAT THE RESEARCH SAYS"
+            },
+            {
+              "type": "p",
+              "text": "Owners need to know whether leads become profitable jobs"
+            },
+            {
+              "type": "p",
+              "text": "Automated ads make downstream outcome data more important"
+            },
+            {
+              "type": "p",
+              "text": "Existing tools cover parts of the workflow\u2014but leave a potential reconciliation gap"
+            },
+            {
+              "type": "p",
+              "text": "Interest signals exist, but paid demand and community evidence remain unverified"
+            },
+            {
+              "type": "p",
+              "text": "The analyses support a real, consequential problem: ad platforms emphasize leads and modeled conversions, while local businesses care about booked, completed, and profitable work. Offline conversion guidance and existing call-tracking/field-service integrations confirm that downstream outcomes matter and can be connected. However, this is not proof of an open product gap: some incumbents already link campaign sources to jobs and revenue, and local-service willingness to pay for a separate product has not been demonstrated. Treat the evidence as validation to run focused, paid data pilots\u2014not as product-market-fit proof."
+            }
+          ]
+        }
+      },
+      {
+        "id": "competitors",
+        "kicker": "Who you're up against",
+        "data": {
+          "count": 11,
+          "players": [
+            {
+              "name": "Rivet",
+              "incumbent": false,
+              "description": "(rivetops.io) sells exactly the pitch: connects Google Ads, Facebook and LSA spend to ServiceTitan, Jobber, and Housecall Pro job data and reports cost per booked job by channel, campaign, keyword.",
+              "href": "https://www.rivetops.io/cost-per-booked-job"
+            },
+            {
+              "name": "ServiceTitan",
+              "incumbent": false,
+              "description": "Marketing Pro already does revenue attribution (ad spend to booked job to invoice) inside the CRM, costs $200-$600/month, and is bundled with ServiceTitan which has ~10,800 customers and $772M ARR.",
+              "href": "https://www.rivetops.io/track-marketing-roi-servicetitan"
+            },
+            {
+              "name": "Sourceloop",
+              "incumbent": false,
+              "description": ".ai shows a live dashboard for home services with \"cost per booked job by channel\" (Google LSA $38, Google Ads $61, Meta $74 example).",
+              "href": "https://sourceloop.ai/solutions/home-services/"
+            },
+            {
+              "name": "WhatConverts",
+              "incumbent": false,
+              "description": "Charges $30/mo entry and $160/mo for Elite plan with Customer Journey multi-click attribution; CallRail charges $50/mo entry with Lead Conversion at $150.",
+              "href": "https://calltracker.io/blog/2026-06-23-whatconverts-vs-callrail/"
+            },
+            {
+              "name": "CallRail",
+              "incumbent": true,
+              "description": "Sells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 local numbers, 250 minutes and 25 texts, with per-minute and per-number usage billed on top; it is the dominant call-tracking incumbent for local service businesses.",
+              "href": "https://www.callrail.com/pricing"
+            },
+            {
+              "name": "WhatConverts",
+              "incumbent": false,
+              "description": "Sells four single-account plans at $30, $60, $100 and $160/mo, with multi-click Customer Journey attribution on the $160 Elite tier; agency plans run $500, $800 and $1,250/mo for unlimited accounts and are the lower-priced head-to-head versus CallRail.",
+              "href": "https://calltracker.io/blog/2026-06-23-whatconverts-vs-callrail/"
+            },
+            {
+              "name": "Sourceloop",
+              "incumbent": false,
+              "description": "Sells three attribution plans at $49, $99 and $249/mo with multi-touch attribution on every tier and CRM sync on the $99 Professional plan; its home-services page markets cost per booked job by channel (Google LSA $38, Google Ads $61, Meta $74 as example tiles).",
+              "href": "https://sourceloop.ai/solutions/home-services/"
+            },
+            {
+              "name": "CallTrackingMetrics",
+              "incumbent": false,
+              "description": "(CTM) sells four plans at $79, $179, $329 and $1,999/mo (monthly; $65/$149/$274 annual), priced as a premium call-tracking + contact-center tool; AskAI call summaries cost $0.05 each on top and most AI features sit on Pro and above.",
+              "href": "https://www.calltrackingmetrics.com/plans"
+            }
+          ]
+        }
+      },
+      {
+        "id": "asking",
+        "kicker": "People are asking for it",
+        "data": {
+          "quotes": [
+            {
+              "quote": "\u201cStruggling to Get Google Ads to Work for My Local Painting Business - Advice Needed! Agency managing our Google Ads account for $3,000/month\u201d",
+              "source": "r/googleads \u00b7 Local painting business owner",
+              "href": "https://www.reddit.com/r/googleads/comments/1rlrw9k/firing_google_ad_agency_and_moving_inhouse_with/",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cI work in marketing for a dental clinic in Canada, and we're struggling to attract new patients for general checkups, cavities, tooth pain\u201d",
+              "source": "r/DigitalMarketing \u00b7 In-house marketer at a Canadian dental clinic",
+              "href": "https://www.reddit.com/r/DigitalMarketing/comments/1xjllv8/dental_clinic_marketing_getting_leads_but_no/",
+              "platform": "REDDIT"
+            },
+            {
+              "quote": "\u201cGoogle optimizes for people who tap the button, not patients who book. You need calls with a minimum duration (e.g. 60-90 seconds) as the\u201d",
+              "source": "r/adwords \u00b7 PPC manager commenting on r/adwords",
+              "href": "https://www.reddit.com/r/adwords/comments/1xj30jn/help_my_google_ads_arent_working_as_before/",
+              "platform": "REDDIT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "verdict",
+        "kicker": "The verdict",
+        "data": {
+          "title": "Should you build this?",
+          "build": [
+            "The pain shows up in the raw: a landscaper six months and $10,000 into Google Ads asking strangers if his ads work, a painter paying $3,000/mo to an agency and unable to tell. These owners already pay to solve this and the current answer leaves them in the dark.",
+            "Google stacked the timing: 51% of advertisers put most of budget into PMax, Conversion Lift opened October 7 2026 but is gated at $5,000 and 1,000 conversions, and LSA folds into PMax in August 2026. The small advertiser lost the proof test the same year they lost the levers.",
+            "Pricing anchors exist and rhyme: CallRail $50-$195, WhatConverts $30-$160, Sourceloop $49-$249. $99/mo for the weekly verdict sits exactly in the band owners already pay, with the booked-job loop CallRail does not close.",
+            "AI coding agents ship the integrations, so a solo operator with home-services domain fluency can own this; 150 owners at $99 plus 20 agencies at $249 is a real $20K MRR path in year one."
+          ],
+          "notBuild": [
+            "Five named competitors already sell this: ServiceTitan Marketing Pro ($200-$600/mo, locked to ~10,800 ServiceTitan customers), Rivet, Sourceloop ($49-$249), Scorpion RevenueMAX, and Hatch (2,000+ home-service customers). The wedge is real only in the sub-ServiceTitan long tail; a founder who cannot name why a Jobber owner picks them over Sourceloop at $49 loses.",
+            "Integration sprawl is the time sink. A PPC manager on r/PPC called passing gclid through Jobber painful; Housecall Pro, GoHighLevel and dental PMS each add months, and one wrong weekly verdict loses an owner who was already skeptical of their agency.",
+            "Nobody searches for this yet: 320/mo for 'marketing attribution software', 110 for 'ServiceTitan Marketing Pro'. The first 100 customers come from Reddit presence and agency outbound, which is slow sales work, not an SEO flywheel.",
+            "The ceiling is honest: $2M-$4M ARR over five years at 1,500 owners and 300 agencies. This is a real business, not a venture outcome, and the founder needs to be fine with that."
+          ]
+        }
+      },
+      {
+        "id": "founderFit",
+        "kicker": "Founder fit",
+        "data": {
+          "title": "Not every good idea is good for you.",
+          "bestFor": [
+            "Solo technical founders skilled in OAuth, APIs, and data reconciliation",
+            "Teams pairing local-service sales or operations expertise with integration en...",
+            "Founders without experience selling to small businesses or agencies",
+            "Teams seeking a simple dashboard without integration and onboarding work"
+          ],
+          "persona": [
+            "A founder who ran paid ads for home-service clients for 3+ years, has a working Rolodex of HVAC/plumbing/roofing/dental agencies and ServiceTitan/Jobber contacts, and is comfortable spending the first 90 days in Reddit comments and on 20-minute agency Zooms. Ex-Scorpion, ex-Rivet, ex-WhatConverts, or an operator from a home-services agency are the archetype. An AI-leveraged solo founder can ship the integrations with coding agents; what cannot be bought is the domain fluency and the agency Rolodex that gets 300 outbound emails replied to at 15% instead of 2%."
+          ],
+          "demands": [
+            {
+              "label": "Integrations",
+              "score": 9.0
+            },
+            {
+              "label": "Distribution",
+              "score": 9.0
+            },
+            {
+              "label": "Sales grind",
+              "score": 8.0
+            },
+            {
+              "label": "Domain depth",
+              "score": 8.0
+            },
+            {
+              "label": "Capital",
+              "score": 3.0
+            }
+          ],
+          "reality": [
+            {
+              "label": "FIRST REVENUE",
+              "value": "60-120 days"
+            },
+            {
+              "label": "CAPITAL IN",
+              "value": "$10K-$30K"
+            },
+            {
+              "label": "DIFFICULTY",
+              "value": "Moderate"
+            }
+          ]
+        }
+      },
+      {
+        "id": "valueLadder",
+        "kicker": "What you'd sell",
+        "data": {
+          "title": "The value ladder.",
+          "intro": [
+            "Core offer. Price anchors. Hook."
+          ],
+          "steps": [
+            {
+              "step": 1,
+              "tier": "LEAD MAGNET",
+              "name": "Free 90-Day Ad Spend Audit",
+              "price": "$0",
+              "description": "Connect Google Ads and CRM in 10 minutes. Get a one-page PDF: ad spend, booked jobs, cost per booked job, top 3 wasted queries. Does the selling."
+            },
+            {
+              "step": 2,
+              "tier": "FRONTEND",
+              "name": "Owner Plan (single location)",
+              "price": "$99/mo",
+              "description": "Weekly profit verdict email + dashboard. One location. One Google Ads + Meta + CRM connection. Priced against CallRail Pro ($95) with the booked-job loop added."
+            },
+            {
+              "step": 3,
+              "tier": "CORE",
+              "name": "Multi-Location Plan",
+              "price": "$199/mo",
+              "description": "Up to 5 locations. Per-location cost per booked job and per-channel margin. For small HVAC, dental, roofing chains below the ServiceTitan line."
+            },
+            {
+              "step": 4,
+              "tier": "CONTINUITY",
+              "name": "Agency White-Label",
+              "price": "$249/mo",
+              "description": ""
+            }
+          ]
+        },
+        "more": {
+          "label": "View the full value ladder",
+          "title": "The full value ladder.",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "10+ client accounts, white-label weekly verdict emails and PDFs. Agencies bundle into $1,500-$3,000/mo client retainers."
+            }
+          ]
+        }
+      },
+      {
+        "id": "plan",
+        "kicker": "The plan",
+        "data": {
+          "title": "If you started today.",
+          "subtitle": "First up.",
+          "paragraphs": [
+            "Search volume for this exact pitch is thin. \"Marketing attribution software\" gets 320 US searches a month. \"CallRail alternative\" gets 140. \"ServiceTitan Marketing Pro\" gets 110. Nobody wakes up and Googles \"weekly profit verdict for my HVAC Google Ads.\" The first 100 customers come from being in the comments of the right threads and from agencies who already have 20 service businesses on retainer, one conversation at a time. This is a demand-harvesting problem solved with presence, not an SEO problem solved with content."
+          ]
+        },
+        "more": {
+          "label": "See the detailed plan",
+          "title": null,
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Launch a self-serve SaaS that reconciles ad spend with booked and completed jobs\u2014and stands out by showing data gaps, assumptions, and confidence, not just lead counts. Start with one home-service trade, connecting one ad platform to call tracking and a CRM or field-service system; then prove the weekly verdict changes decisions and earns $99\u2013$199 monthly subscriptions. Next, deepen integrations and scale to more locations and agency portfolios\u2014ready to validate the gap with real-data pilots?"
+            },
+            {
+              "type": "h",
+              "text": "THE FIRST MOVES"
+            },
+            {
+              "type": "p",
+              "text": "Within 2 days, select one non-health trade and create a competitor/workflow comparison of CallRail, ServiceTitan, the target CRM or field-service system, and agency reporting."
+            },
+            {
+              "type": "p",
+              "text": "Within 4 days, recruit 10 qualified owners for discovery calls and ask to inspect anonymized examples of how they currently connect ad spend to booked and completed jobs."
+            },
+            {
+              "type": "p",
+              "text": "Within 7 days, publish a simple data-readiness calculator and offer a paid, consent-based pilot to the first qualified businesses; do not commit to broad product development before pilot evidence."
+            },
+            {
+              "type": "h",
+              "text": "THE MVP"
+            },
+            {
+              "type": "p",
+              "text": "First audit the current CallRail, ServiceTitan, CRM, agency, and spreadsheet workflows of one non-health home-service vertical; proceed only if pilots reveal a recurring unmet need. Build a self-serve SaaS MVP for one ad platform, one call-tracking source, and one CRM or field-service system, showing booked/completed outcomes, revenue where available, unmatched records, coverage, and explicit uncertainty."
+            },
+            {
+              "type": "h",
+              "text": "WHERE THE FIRST USERS COME FROM"
+            },
+            {
+              "type": "p",
+              "text": "Founder-led outreach to HVAC, plumbing, roofing, or restoration businesses \u00b7 Reach owners with a specific trade and operational stack for direct discovery and pilot recruitment."
+            },
+            {
+              "type": "p",
+              "text": "Local-service PPC agencies and CRM/field-service consultants \u00b7 Agencies and implementers see multiple customer stacks and can refer qualified businesses if the product solves a real reporting gap."
+            },
+            {
+              "type": "p",
+              "text": "Search-focused educational content and data-readiness tool \u00b7 Searchers already seek adjacent solutions for lead tracking, lead management, and marketing ROI, although this does not yet prove demand for this exact product."
+            },
+            {
+              "type": "h",
+              "text": "TIMELINE"
+            },
+            {
+              "type": "p",
+              "text": "1-2 weeks"
+            },
+            {
+              "type": "h",
+              "text": "BUDGET"
+            },
+            {
+              "type": "p",
+              "text": "$0-10K"
+            },
+            {
+              "type": "h",
+              "text": "THE MILESTONE"
+            },
+            {
+              "type": "p",
+              "text": "By month 18, reach 100 paying locations with at least 80% source-to-lead and lead-to-job matching in suitable accounts, repeat weekly usage, and demonstrated 60\u201390-day retention."
+            }
+          ]
+        }
+      },
+      {
+        "id": "napkin",
+        "kicker": "Napkin math",
+        "data": {
+          "title": "Year one, on a napkin.",
+          "intro": "What the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.",
+          "rows": [
+            {
+              "label": "r/googleads followers (Reddit, public counter)",
+              "value": "83,600"
+            },
+            {
+              "label": "Useful comments across target subs, 90 days",
+              "value": "90"
+            },
+            {
+              "label": "Audit sign-ups from comments (assumption, 3%)",
+              "value": "~250"
+            },
+            {
+              "label": "Agency outbound list (built from public sources)",
+              "value": "300"
+            },
+            {
+              "label": "Agency reply rate (assumption, 15%)",
+              "value": "45 convos"
+            },
+            {
+              "label": "Agency audits completed (assumption, 60%)",
+              "value": "27 audits"
+            },
+            {
+              "label": "Audit to paid conversion (assumption, 25%)",
+              "value": "~70 paid"
+            },
+            {
+              "label": "Mix: 50 owners at $99 + 20 agencies at $249",
+              "value": "70 customers"
+            },
+            {
+              "label": "Month 6 MRR",
+              "value": "$9,930"
+            },
+            {
+              "label": "Month 12 MRR (same funnel + referrals)",
+              "value": "$19,830"
+            },
+            {
+              "label": "Year 1 revenue (ramp from 0 to $20K MRR)",
+              "value": "~$120K"
+            }
+          ],
+          "summary": [
+            "150 service owners at $99 + 20 agencies at $249 = $19,830 MRR / ~$238K ARR in year one if the Reddit + agency motion works. Close rates are assumptions; everything else traces to real prices and real community sizes."
+          ],
+          "ceiling": "$3M-$6M ARR"
+        }
+      }
+    ],
+    "popups": [
+      {
+        "label": "THE CEILING IF IT COMPOUNDS $3M-$6M ARR",
+        "title": "Where the ceiling comes from.",
+        "blocks": [
+          {
+            "type": "h",
+            "text": "WHAT $3M ARR TAKES"
+          },
+          {
+            "type": "p",
+            "text": "US home-service businesses (Census, ~500K addressable)"
+          },
+          {
+            "type": "p",
+            "text": "500,000"
+          },
+          {
+            "type": "p",
+            "text": "Realistic 5-year single-location capture (assumption, 0.3%)"
+          },
+          {
+            "type": "p",
+            "text": "1,500 owners"
+          },
+          {
+            "type": "p",
+            "text": "Owner ARPU at Owner plan $99/mo"
+          },
+          {
+            "type": "p",
+            "text": "$1,188/yr"
+          },
+          {
+            "type": "p",
+            "text": "Owner ARR ceiling"
+          },
+          {
+            "type": "p",
+            "text": "$1.78M"
+          },
+          {
+            "type": "p",
+            "text": "US home-service marketing agencies (assumption, ~3K)"
+          },
+          {
+            "type": "p",
+            "text": "3,000"
+          },
+          {
+            "type": "p",
+            "text": "Realistic 5-year agency capture (assumption, 10%)"
+          },
+          {
+            "type": "p",
+            "text": "300 agencies"
+          },
+          {
+            "type": "p",
+            "text": "Agency ARPU at $249/mo"
+          },
+          {
+            "type": "p",
+            "text": "$2,988/yr"
+          },
+          {
+            "type": "p",
+            "text": "Agency ARR ceiling"
+          },
+          {
+            "type": "p",
+            "text": "$896K"
+          },
+          {
+            "type": "p",
+            "text": "Multi-location mid-market (assumption, 200 at $199)"
+          },
+          {
+            "type": "h",
+            "text": "$478K ARR"
+          },
+          {
+            "type": "p",
+            "text": "Enterprise / white-label upsell (assumption)"
+          },
+          {
+            "type": "h",
+            "text": "$500K-$2M ARR"
+          },
+          {
+            "type": "p",
+            "text": "Total ceiling range"
+          },
+          {
+            "type": "p",
+            "text": "Honest ceiling is $3M-$6M ARR as a bootstrapped SaaS: 1,500 owners + 300 agencies + a small ServiceTitan-adjacent enterprise tail. Rivet and Sourceloop have taken the easy air out of the top; the win is the sub-ServiceTitan long tail nobody has consolidated."
+          },
+          {
+            "type": "h",
+            "text": "THE CEILING"
+          }
+        ]
+      }
+    ],
+    "inlineLinks": [
+      {
+        "text": "CallRail",
+        "href": "https://www.callrail.com/pricing"
+      },
+      {
+        "text": "Search Engine Land",
+        "href": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195"
+      },
+      {
+        "text": "Haus",
+        "href": "https://www.haus.io/blog/is-meta-incremental"
+      },
+      {
+        "text": "SearchLight Digital",
+        "href": "https://pipelineon.com/blog/performance-max-campaigns-home-services/"
+      },
+      {
+        "text": "Optmyzr Q1 2026 benchmarks",
+        "href": "https://www.scubemarketing.com/blog/performance-max-statistics-2026-adoption-roas-benchmarks"
+      },
+      {
+        "text": "RIVET",
+        "href": "https://www.rivetops.io/cost-per-booked-job"
+      },
+      {
+        "text": "PIPELINEON",
+        "href": "https://pipelineon.com/blog/marketing-attribution-home-service/"
+      },
+      {
+        "text": "SEARCH ENGINE LAND",
+        "href": "https://searchengineland.com/google-opens-conversion-lift-to-search-and-performance-max-494195"
+      },
+      {
+        "text": "The Startup Ideas Podcast",
+        "href": "https://www.youtube.com/@GregIsenberg"
+      },
+      {
+        "text": "Visit",
+        "href": "https://www.reddit.com/r/PPC/comments/1uozvh7/what_is_your_stack_for_offline_conversions/"
+      }
+    ],
+    "linkCount": 40,
+    "sourceUrl": "https://www.ideabrowser.com/hub/ideas/today"
+  },
+  "rawText": "Home\nBrowse\nAgents\nMy Stuff\nAbout me\nAccelerator\nProjects\nExample project\nConnect your AI\nTool deals\nAbout Ideabrowser\nHelp & training\n\u00a9 2026 Ideabrowser\n\u00b7\nLegal\nToggle Sidebar\nIdea of the Day\n1\nGo Pro\nS\n\nIDEA OF THE DAY\u00b7NOV 28, 2026\n\nPrevious\nBrowse all\nA tool to track which ads turn into paid jobs for local service businesses\n\nIB Index 7.0\n\u00b7\nB2B \u00b7 SaaS\n\u00b7\n$3M-$6M ARR\n\nCONCEPT MOCKUP\n\nREDDIT THREADS\n\n20+ comments\n\nr/PPC offline conversion attribution, 4 months ago\n\nWHAT IT DEMANDS\n\nIntegrations\nDistribution\nSales grind\nDomain depth\nCapital\n\nTHE REALITY\n\nFIRST REVENUE\n60-120 days\nCAPITAL IN\n$10K-$30K\nDIFFICULTY\nModerate\n\nUP AGAINST\n\nCallRail\n\nSells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 lo\u2026\n\n+ 10 more mapped\n\nTHE PITCH\n\nA landscaper on Reddit is six months and $10,000 into Google Ads with an agency on retainer and still asks strangers if the ads work. A painter pays $3,000 a month to an agency and cannot tell either. In 2026 Google handed the levers to AI: 51% of advertisers now put over half their budget into Performance Max, HVAC adoption doubled in one month, and Google opened the Conversion Lift proof test on October 7, 2026 but gated it behind 1,000 conversions and $5,000 of spend. A $2K-$20K/month local shop cannot clear that floor. Haus tested 640 Meta accounts and found Advantage+ beat manual only 42% of the time with 12% lower incremental\u2026\n\nWHO IT'S FOR\n\nLocal service and lead-gen small businesses (dentists, HVAC, plumbers, roofers, med spas, clinics) running AI-managed Google and Meta campaigns, usually $2K-$20K/month in ad spend.\n\nTHE GAP\n\nCall-tracking owns the lead. Nobody owns the weekly profit verdict for the owner\n\nWHY NOW\n\nGoogle handed the ad levers to AI, then locked small advertisers out of the proof test\n\nAT A GLANCE\n\nReddit threads\n20+ comments\nPricing\n$0 to $249/mo\nYear one\n$80K-$180K\nCeiling\n$3M-$6M ARR\n\nWHAT YOU SELL\n\nMulti-Location Plan$199/mo\n\nBIGGEST RISK\n\nServiceTitan Marketing Pro, Rivet, Sourceloop, Scorpion RevenueMAX and Hatch all already sell a version of \"cost per booked job by channel.\" The gap is real bu\u2026\n\nInterested?\nAdd to project\nBuild this idea\n\nWHY NOW\n\nGoogle handed the ad levers to AI, then locked small advertisers out of the proof test\n\nThree things changed in 2026 that make this product urgent, not optional. In January 2026, SearchLight counted 370 HVAC accounts running Performance Max, roughly double the December 2025 number. Across 24,702 PMax campaigns, 51% of advertisers now put over half of their budget into PMax. Over 1 million advertisers use it. The owner no longer picks keywords, audiences, or placements. Google's AI does. The owner picks a budget and a goal.\n\nThen on October 7, 2026, Google opened self-serve Conversion Lift for Search and PMax. This is the real incrementality test, the one that answers whether the ads caused the sale or took credit for it. Google capped access at 1,000 conversions and a $5,000 campaign budget. A dentist, HVAC shop or roofer doing $3,000 a month in ad spend and 40 booked jobs cannot run it. The bigger brands can measure causality; local service owners cannot. Haus already showed what happens when you do not test: across 640 Meta experiments, Advantage+ beat manual in only 42% of accounts and over-reported ROAS by 12 points. The AI dashboards look good; the booked calendar does not move.\n\nSOURCES\nSearch Engine Land\nHaus\nSearchLight Digital\nOptmyzr Q1 2026 benchmarks\nSee the full timing case\n\nMARKET SNAPSHOT\n\nThe receipts.\n\nPAIN\n\n8/10 SEVERITY\n\n\u201cMy clients often use closed CRM's i.e. Jobber, housecall pro etc. It is often difficult to pass the gclid to these systems then have them pass that\u201d\n\nr/PPC\n\n\u201cI am a landscaper and have invested about $10k into Google Ads over the last 6 months, plus more on google guarentee. This includes one marketing agency\u201d\n\nr/googleads \u00b7 OP of \"Do ads actually work for home service companies?\"\n\n\u201cI own a home services company. How much are you spending on Google Ads per month, and are you actually happy with the results? I keep hearing mixed opinions\u201d\n\nr/smallbusiness \u00b7 OP of \"is google ads still worth it for home services company?\"\n\nAll 10 receipts, and where these people gather\n\nWHITESPACE\n\nMARKET GAP\n\nCall-tracking owns the lead. Nobody owns the weekly profit verdict for the owner\n\nUnderstand the opening\n\nTHE WEDGE\n\nEcommerce has TrueProfit, Triple Whale, BeProfit and TrueMargin at $19-$149/month, but those are Shopify-bound. Local services get call-tracking (CallRail) that stops at the lead, not the booked job and margin.\n\nThe incumbent to beat: CallRail\n\nPROOF & SIGNALS\n\nRivet cites an industry benchmark that cost per booked job should run below 10-15% of average job revenue, and that most contractors see cost per booked job 3-5x their cost per lead. The gap between the two metrics is the pain.\n\nRIVET\n\nPipelineOn cites average cost-per-lead of $90.92 for home service contractors; close-rate math turns that into $200-$533 per booked job depending on sales conversion, and few contractors track the latter.\n\nPIPELINEON\n\nRivet's own guide says a home-service marketing stack is 6 tools and runs $200-$600/month (CRM $50-200, call tracking $45-95, review tool $50-100, attribution layer $100-200) on top of ad spend; the attribution layer is a specific line item, proving the budget is already in the market.\n\nRIVET\n\nGoogle opened self-serve Conversion Lift to Search and Performance Max campaigns on October 7, 2026, but gated it behind at least 1,000 observed conversions and a $5,000 minimum campaign budget, locking out smaller advertisers from the easier incrementality test.\n\nSEARCH ENGINE LAND\nExplore the evidence\n\nWHO YOU'RE UP AGAINST\n\n11 PLAYERS\n\nRivet\n\n(rivetops.io) sells exactly the pitch: connects Google Ads, Facebook and LSA spend to ServiceTitan, Jobber, and Housecall Pro job data and reports cost per booked job by channel, campaign, keyword.\n\nServiceTitan\n\nMarketing Pro already does revenue attribution (ad spend to booked job to invoice) inside the CRM, costs $200-$600/month, and is bundled with ServiceTitan which has ~10,800 customers and $772M ARR.\n\nSourceloop\n\n.ai shows a live dashboard for home services with \"cost per booked job by channel\" (Google LSA $38, Google Ads $61, Meta $74 example).\n\nWhatConverts\n\nCharges $30/mo entry and $160/mo for Elite plan with Customer Journey multi-click attribution; CallRail charges $50/mo entry with Lead Conversion at $150.\n\nCallRail\n\nINCUMBENT\n\nSells four plans at $50, $95, $150 and $195 a month on annual billing ($55-$215 monthly), each including 5 local numbers, 250 minutes and 25 texts, with per-minute and per-number usage billed on top; it is the dominant call-tracking incumbent for local service businesses.\n\nWhatConverts\n\nSells four single-account plans at $30, $60, $100 and $160/mo, with multi-click Customer Journey attribution on the $160 Elite tier; agency plans run $500, $800 and $1,250/mo for unlimited accounts and are the lower-priced head-to-head versus CallRail.\n\nSourceloop\n\nSells three attribution plans at $49, $99 and $249/mo with multi-touch attribution on every tier and CRM sync on the $99 Professional plan; its home-services page markets cost per booked job by channel (Google LSA $38, Google Ads $61, Meta $74 as example tiles).\n\nCallTrackingMetrics\n\n(CTM) sells four plans at $79, $179, $329 and $1,999/mo (monthly; $65/$149/$274 annual), priced as a premium call-tracking + contact-center tool; AskAI call summaries cost $0.05 each on top and most AI features sit on Pro and above.\n\nPEOPLE ARE ASKING FOR IT\n\nREDDIT\n\n\u201cStruggling to Get Google Ads to Work for My Local Painting Business - Advice Needed! Agency managing our Google Ads account for $3,000/month\u201d\n\nr/googleads \u00b7 Local painting business owner\n\n\u201cI work in marketing for a dental clinic in Canada, and we're struggling to attract new patients for general checkups, cavities, tooth pain\u201d\n\nr/DigitalMarketing \u00b7 In-house marketer at a Canadian dental clinic\n\n\u201cGoogle optimizes for people who tap the button, not patients who book. You need calls with a minimum duration (e.g. 60-90 seconds) as the\u201d\n\nr/adwords \u00b7 PPC manager commenting on r/adwords\n\nTHE VERDICT\n\nShould you build this?\n\nREASONS TO BUILD\n\nThe pain shows up in the raw: a landscaper six months and $10,000 into Google Ads asking strangers if his ads work, a painter paying $3,000/mo to an agency and unable to tell. These owners already pay to solve this and the current answer leaves them in the dark.\nGoogle stacked the timing: 51% of advertisers put most of budget into PMax, Conversion Lift opened October 7 2026 but is gated at $5,000 and 1,000 conversions, and LSA folds into PMax in August 2026. The small advertiser lost the proof test the same year they lost the levers.\nPricing anchors exist and rhyme: CallRail $50-$195, WhatConverts $30-$160, Sourceloop $49-$249. $99/mo for the weekly verdict sits exactly in the band owners already pay, with the booked-job loop CallRail does not close.\nAI coding agents ship the integrations, so a solo operator with home-services domain fluency can own this; 150 owners at $99 plus 20 agencies at $249 is a real $20K MRR path in year one.\n\nREASONS TO NOT BUILD\n\nFive named competitors already sell this: ServiceTitan Marketing Pro ($200-$600/mo, locked to ~10,800 ServiceTitan customers), Rivet, Sourceloop ($49-$249), Scorpion RevenueMAX, and Hatch (2,000+ home-service customers). The wedge is real only in the sub-ServiceTitan long tail; a founder who cannot name why a Jobber owner picks them over Sourceloop at $49 loses.\nIntegration sprawl is the time sink. A PPC manager on r/PPC called passing gclid through Jobber painful; Housecall Pro, GoHighLevel and dental PMS each add months, and one wrong weekly verdict loses an owner who was already skeptical of their agency.\nNobody searches for this yet: 320/mo for 'marketing attribution software', 110 for 'ServiceTitan Marketing Pro'. The first 100 customers come from Reddit presence and agency outbound, which is slow sales work, not an SEO flywheel.\nThe ceiling is honest: $2M-$4M ARR over five years at 1,500 owners and 300 agencies. This is a real business, not a venture outcome, and the founder needs to be fine with that.\nRoast it with your agent\n\nFOUNDER FIT\n\nNot every good idea is good for you.\n\nWHO IT\u2019S BEST FOR\n\nSolo technical founders skilled in OAuth, APIs, and data reconciliation\nTeams pairing local-service sales or operations expertise with integration en...\nFounders without experience selling to small businesses or agencies\nTeams seeking a simple dashboard without integration and onboarding work\n\nA founder who ran paid ads for home-service clients for 3+ years, has a working Rolodex of HVAC/plumbing/roofing/dental agencies and ServiceTitan/Jobber contacts, and is comfortable spending the first 90 days in Reddit comments and on 20-minute agency Zooms. Ex-Scorpion, ex-Rivet, ex-WhatConverts, or an operator from a home-services agency are the archetype. An AI-leveraged solo founder can ship the integrations with coding agents; what cannot be bought is the domain fluency and the agency Rolodex that gets 300 outbound emails replied to at 15% instead of 2%.\n\nWHAT IT DEMANDS\n\nIntegrations\n9\nDistribution\n9\nSales grind\n8\nDomain depth\n8\nCapital\n3\n\nTHE REALITY\n\nFIRST REVENUE\n\n60-120 days\n\nCAPITAL IN\n\n$10K-$30K\n\nDIFFICULTY\n\nModerate\n\nSo, is it good for you?\n\nA checklist can't answer that. It comes down to your skills, your hours, and your appetite for the grind. Jam it out with your agent.\n\nTest the fit with your agent\nTHE ORACLE\nSERIES 1\n+ THE DEALMAKER\nBUILDER\nRISK\nENERGY\nLEVER\nREV\nCREATOR-LED\nBET BIG\nMARATHON\nAUDIENCE\nHIGH-TICKET\nGREG ISENBERG\n#001\n\ud83d\udd2e THE ORACLE\n+ \ud83e\udd1d\n\u201cSee where the internet's going. Build the room before the crowd shows up.\u201d\nBUILDS\nTrend-Based Media\nCommunity Platforms\nAVOID\nFaceless Backend SaaS\nRegulated Slow-Burn Niches\nWINGS\nSTRESS\nTHRIVE\nThe Alchemist\nOver-researches to validate what he already knows\nThe Performer\nThe thesis becomes content, the audience becomes distribution\nOPTIMIZES FOR\nIMPACT\nwith a hint of Freedom\nBEST PARTNER\n\u2699\ufe0f\nOperator: Executes the vision while you spot the next one\nIdeaBrowser \u00b7 Founder Series 1\n#001 / 500\n\nFOUNDER ARCHETYPE\n\nSee if you match this idea.\n\nSee the fit here. Filter every idea after.\n\nGet your card\n\nWHAT YOU'D SELL\n\nThe value ladder.\n\nCore offer. Price anchors. Hook.\n\n1\n\nLEAD MAGNET\n\nFree 90-Day Ad Spend Audit($0)\n\nConnect Google Ads and CRM in 10 minutes. Get a one-page PDF: ad spend, booked jobs, cost per booked job, top 3 wasted queries. Does the selling.\n\n2\n\nFRONTEND\n\nOwner Plan (single location)($99/mo)\n\nWeekly profit verdict email + dashboard. One location. One Google Ads + Meta + CRM connection. Priced against CallRail Pro ($95) with the booked-job loop added.\n\n3\n\nCORE\n\nMulti-Location Plan($199/mo)\n\nUp to 5 locations. Per-location cost per booked job and per-channel margin. For small HVAC, dental, roofing chains below the ServiceTitan line.\n\n4\n\nCONTINUITY\n\nAgency White-Label($249/mo)\n\nView the full value ladder\n\nTHE PLAN\n\nIf you started today.\nFirst up.\n\nSearch volume for this exact pitch is thin. \"Marketing attribution software\" gets 320 US searches a month. \"CallRail alternative\" gets 140. \"ServiceTitan Marketing Pro\" gets 110. Nobody wakes up and Googles \"weekly profit verdict for my HVAC Google Ads.\" The first 100 customers come from being in the comments of the right threads and from agencies who already have 20 service businesses on retainer, one conversation at a time. This is a demand-harvesting problem solved with presence, not an SEO problem solved with content.\n\nSee the detailed plan\nYear one, on a napkin.\nNAPKIN MATH\n\nWhat the first push looks like if the assumptions hold. The ceiling below is the different question: what this becomes at scale.\n\nr/googleads followers (Reddit, public counter)\n83,600\nUseful comments across target subs, 90 days\n90\nAudit sign-ups from comments (assumption, 3%)\n~250\nAgency outbound list (built from public sources)\n300\nAgency reply rate (assumption, 15%)\n45 convos\nAgency audits completed (assumption, 60%)\n27 audits\nAudit to paid conversion (assumption, 25%)\n~70 paid\nMix: 50 owners at $99 + 20 agencies at $249\n70 customers\nMonth 6 MRR\n$9,930\nMonth 12 MRR (same funnel + referrals)\n$19,830\nYear 1 revenue (ramp from 0 to $20K MRR)\n~$120K\n\n150 service owners at $99 + 20 agencies at $249 = $19,830 MRR / ~$238K ARR in year one if the Reddit + agency motion works. Close rates are assumptions; everything else traces to real prices and real community sizes.\n\nTHE CEILING IF IT COMPOUNDS\n$3M-$6M ARR\nRun the model on your numbers\n\nTHE AGENTS\n\nJam on it with your agent.\n\nYour agent runs these on this idea with everything behind this brief, live, in your chat, in your words. Start with the build plan.\n\nSTART HERE\n\nGet the build plan.\n\nMVP scope, stack, what to ship in week one, and how to validate it, so you can decide if it\u2019s yours and go build.\n\n15\u201325 MIN\n\nRoast This Idea\n\nCustomer, competitor, investor, mentor. No mercy.\n\n5\u201315 MIN\n\nMaster Money Model\n\nPricing, revenue streams, and the napkin math.\n\n30\u201360 MIN\n\nShow more agents\nCONNECTOR\n\nYour agent finally says NO.\n\nPushback with market truth and expert frameworks, before you waste 6 months building the wrong thing.\n\nUpgrade\n\nRevenue estimates, scores, and market data are illustrative. Results vary. Not investment advice.\n\nAGENT NOT CONNECTED\n\nThe plugin that briefs your \nCursor\n on this idea\n\nTRY ASKING\n\nCopy\n\n\u201cPain scored 8/10 for \"A tool to track which ads turn into paid jobs\u2026\" \u2014 argue the other side.\u201d\n\nClaude\nCodex\nHermes\nCursor\nGemini\nGrok Bot\nUpgrade\nWhat'd you think of this idea?\nChef's kiss\nPretty interesting\nYou didn't bring the heat\nSend us feedback\n\nWHAT KIND OF FEEDBACK?\n\nShare a win\nSomething I love\nFeature request\nProblem\nI'd like a reply\nSend feedback\nHide this widget on this device\nFeedback",
+  "status": "not_started",
+  "notes": "",
+  "_source_url": "https://www.ideabrowser.com/hub/ideas/today",
+  "_scraped_at": "2026-11-28T15:52:31.911846+00:00",
+  "_crawl_had_errors": true
+}
